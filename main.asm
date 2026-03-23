@@ -157,7 +157,11 @@ INCLUDE "data/trainers/class_names.asm"
 INCLUDE "engine/battle/ai/redundant.asm"
 INCLUDE "engine/events/move_deleter.asm"
 INCLUDE "engine/items/tmhm2.asm"
-INCLUDE "data/moves/descriptions.asm"
+if DEF(_LOCALE_FR)
+	INCLUDE "locale/fr/data/moves/descriptions.asm"
+else
+	INCLUDE "data/moves/descriptions.asm"
+endc
 INCLUDE "engine/events/pokerus/pokerus.asm"
 INCLUDE "engine/battle/start_battle.asm"
 INCLUDE "engine/gfx/place_graphic.asm"
