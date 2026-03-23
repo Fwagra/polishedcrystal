@@ -685,7 +685,11 @@ INCLUDE "data/events/badge_names.asm"
 
 SECTION "Move Names", ROMX
 
-INCLUDE "data/moves/names.asm"
+if DEF(_LOCALE_FR)
+	INCLUDE "locale/fr/data/moves/names.asm"
+else
+	INCLUDE "data/moves/names.asm"
+endc
 
 
 SECTION "Crystal Events", ROMX
