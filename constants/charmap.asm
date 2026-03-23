@@ -244,10 +244,15 @@ DEF FIRST_REGULAR_TEXT_CHAR EQU $7f
 	charmap "━",        $fe
 	charmap "┘",        $ff
 
-; temporary french character aliases
+; temporary french character aliases (ne pas redéfinir é/É/ê : déjà en ctxtmap)
 	charmap "â", 'a'
+	charmap "à", 'a'
+	charmap "ç", 'c'
 	charmap "è", 'e'
 	charmap "ï", 'i'
+	charmap "ô", 'o'
+	charmap "ù", 'u'
+	charmap "û", 'u'
 	charmap "Œ", 'O'
 	charmap "œ", 'o'
 	charmap "’", '?'

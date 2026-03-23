@@ -671,7 +671,11 @@ INCLUDE "data/pokemon/body_data.asm"
 
 SECTION "Pokemon Names", ROMX
 
-INCLUDE "data/pokemon/names.asm"
+if DEF(_LOCALE_FR)
+	INCLUDE "locale/fr/data/pokemon/names.asm"
+else
+	INCLUDE "data/pokemon/names.asm"
+endc
 
 
 SECTION "Badge Names", ROMX
