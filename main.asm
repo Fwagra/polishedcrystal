@@ -661,10 +661,17 @@ INCLUDE "engine/battle/stats.asm"
 
 SECTION "Item Text", ROMX
 
-INCLUDE "data/items/names.asm"
-INCLUDE "data/items/key_names.asm"
-INCLUDE "data/items/special_names.asm"
-INCLUDE "data/items/apricorn_names.asm"
+if DEF(_LOCALE_FR)
+	INCLUDE "locale/fr/data/items/names.asm"
+	INCLUDE "locale/fr/data/items/key_names.asm"
+	INCLUDE "locale/fr/data/items/special_names.asm"
+	INCLUDE "locale/fr/data/items/apricorn_names.asm"
+else
+	INCLUDE "data/items/names.asm"
+	INCLUDE "data/items/key_names.asm"
+	INCLUDE "data/items/special_names.asm"
+	INCLUDE "data/items/apricorn_names.asm"
+endc
 INCLUDE "engine/items/print_item_description.asm"
 
 
