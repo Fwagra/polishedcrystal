@@ -39,4 +39,8 @@ PrintTMHMDescription:
 	ld [wCurMove], a
 	predef_jump PrintMoveDesc
 
-INCLUDE "data/items/descriptions.asm"
+if DEF(_LOCALE_FR)
+	INCLUDE "locale/fr/data/items/descriptions.asm"
+else
+	INCLUDE "data/items/descriptions.asm"
+endc

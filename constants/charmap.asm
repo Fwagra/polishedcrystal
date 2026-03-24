@@ -249,6 +249,7 @@ DEF FIRST_REGULAR_TEXT_CHAR EQU $7f
 	charmap "à", 'a'
 	charmap "ç", 'c'
 	charmap "è", 'e'
+	charmap "î", 'i'
 	charmap "ï", 'i'
 	charmap "ô", 'o'
 	charmap "ù", 'u'
