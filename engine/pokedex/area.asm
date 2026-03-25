@@ -1,3 +1,6 @@
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/data/pokedex_area_types.asm"
+else
 Pokedex_AreaTypeLists:
 	list_start
 	setcharmap no_ngrams
@@ -18,6 +21,7 @@ endc
 	li "Roaming"
 	setcharmap default
 	assert_list_length NUM_DEXAREAS
+endc
 
 Pokedex_Area:
 	ldh a, [rWBK]

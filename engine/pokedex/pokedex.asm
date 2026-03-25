@@ -1617,7 +1617,11 @@ Pokedex_Main:
 	jmp Pokedex_ScheduleScreenUpdateWithHBlank
 
 .ResultString:
+if DEF(_LOCALE_FR)
+	db " Result./ @"
+else
 	db " Results/  @"
+endc
 
 Pokedex_Bio:
 	ld a, DEXDISP_BIO
@@ -2208,6 +2212,9 @@ _Pokedex_Mode:
 	ld b, 1
 	jr .change_menu
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/data/pokedex_mode_strings.asm"
+else
 .UnownMode:
 	db "Unown Mode@"
 
@@ -2223,6 +2230,7 @@ _Pokedex_Mode:
 
 	db   "Return to the <PK><MN>"
 	next "list.@"
+endc
 
 Pokedex_Search:
 ; Call to fully initialize Search page and reset cursor pos
@@ -2544,7 +2552,11 @@ _Pokedex_Search:
 	dr .byNameString
 
 .byNameString:
+if DEF(_LOCALE_FR)
+	db "par nom   @"
+else
 	db "by Name  @"
+endc
 
 .BlankDefaultString:
 	; Blanks the default "----" string.
