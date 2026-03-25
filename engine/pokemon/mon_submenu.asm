@@ -1,4 +1,8 @@
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/data/mon_menu.asm"
+else
 INCLUDE "data/mon_menu.asm"
+endc
 
 MonSubmenu:
 	xor a

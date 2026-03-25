@@ -1848,7 +1848,11 @@ Pokedex_Bio:
 .AllString:
 	db "100%@"
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/data/pokedex_bio.asm"
+else
 INCLUDE "data/pokedex_bio.asm"
+endc
 
 Pokedex_Stats:
 	xor a
