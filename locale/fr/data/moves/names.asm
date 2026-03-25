@@ -42,7 +42,7 @@ MoveNames::
 	li "Dard-Venin"
 	li "Demi-Tour"
 	li "Dard-Nuée"
-	li "Groz’Yeux"
+	li "Groz'Yeux"
 	li "Morsure"
 	li "Rugissement"
 	li "Hurlement"

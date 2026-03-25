@@ -61,7 +61,11 @@ INCBIN "gfx/battle/status-enemy.2bpp"
 
 TypeIconGFX:
 	table_width 4 * TILE_1BPP_SIZE
+if DEF(_LOCALE_FR)
+INCBIN "gfx/battle/types_fr.1bpp"
+else
 INCBIN "gfx/battle/types.1bpp"
+endc
 	assert_table_length NUM_TYPES + 1
 
 CategoryIconGFX:

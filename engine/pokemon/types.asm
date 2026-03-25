@@ -13,4 +13,8 @@ GetTypeName:
 	rst CopyBytes
 	ret
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/data/types/names.asm"
+else
 INCLUDE "data/types/names.asm"
+endc
