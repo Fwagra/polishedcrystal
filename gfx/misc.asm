@@ -70,7 +70,11 @@ TradeScreenGFX:: INCBIN "gfx/trade/trade_screen.2bpp.lz"
 SECTION "Stats Graphics", ROMX
 
 GFX_Summary:: INCBIN "gfx/stats/summary.2bpp.lz"
+if DEF(_LOCALE_FR)
+GFX_Summary_Sprites:: INCBIN "gfx/stats/summary_sprites_fr.2bpp.lz"
+else
 GFX_Summary_Sprites:: INCBIN "gfx/stats/summary_sprites.2bpp.lz"
+endc
 GFX_Balls:: INCBIN "gfx/stats/balls.2bpp.lz"
 
 
@@ -81,24 +85,51 @@ TownMapGFX:: INCBIN "gfx/town_map/town_map.2bpp.lz"
 
 SECTION "Pack Graphics", ROMX
 
+if DEF(_LOCALE_FR)
+PackM0GFX:: INCBIN "gfx/pack/pack_m0_fr.2bpp.lz"
+PackM1GFX:: INCBIN "gfx/pack/pack_m1_fr.2bpp.lz"
+else
 PackM0GFX:: INCBIN "gfx/pack/pack_m0.2bpp.lz"
 PackM1GFX:: INCBIN "gfx/pack/pack_m1.2bpp.lz"
+endc
 PackM2GFX:: INCBIN "gfx/pack/pack_m2.2bpp.lz"
+if DEF(_LOCALE_FR)
+PackM3GFX:: INCBIN "gfx/pack/pack_m3_fr.2bpp.lz"
+PackM4GFX:: INCBIN "gfx/pack/pack_m4_fr.2bpp.lz"
+PackM5GFX:: INCBIN "gfx/pack/pack_m5_fr.2bpp.lz"
+PackF0GFX:: INCBIN "gfx/pack/pack_f0_fr.2bpp.lz"
+PackF1GFX:: INCBIN "gfx/pack/pack_f1_fr.2bpp.lz"
+else
 PackM3GFX:: INCBIN "gfx/pack/pack_m3.2bpp.lz"
 PackM4GFX:: INCBIN "gfx/pack/pack_m4.2bpp.lz"
 PackM5GFX:: INCBIN "gfx/pack/pack_m5.2bpp.lz"
 PackF0GFX:: INCBIN "gfx/pack/pack_f0.2bpp.lz"
 PackF1GFX:: INCBIN "gfx/pack/pack_f1.2bpp.lz"
+endc
 PackF2GFX:: INCBIN "gfx/pack/pack_f2.2bpp.lz"
+if DEF(_LOCALE_FR)
+PackF3GFX:: INCBIN "gfx/pack/pack_f3_fr.2bpp.lz"
+PackF4GFX:: INCBIN "gfx/pack/pack_f4_fr.2bpp.lz"
+PackF5GFX:: INCBIN "gfx/pack/pack_f5_fr.2bpp.lz"
+PackX0GFX:: INCBIN "gfx/pack/pack_x0_fr.2bpp.lz"
+PackX1GFX:: INCBIN "gfx/pack/pack_x1_fr.2bpp.lz"
+else
 PackF3GFX:: INCBIN "gfx/pack/pack_f3.2bpp.lz"
 PackF4GFX:: INCBIN "gfx/pack/pack_f4.2bpp.lz"
 PackF5GFX:: INCBIN "gfx/pack/pack_f5.2bpp.lz"
 PackX0GFX:: INCBIN "gfx/pack/pack_x0.2bpp.lz"
 PackX1GFX:: INCBIN "gfx/pack/pack_x1.2bpp.lz"
+endc
 PackX2GFX:: INCBIN "gfx/pack/pack_x2.2bpp.lz"
+if DEF(_LOCALE_FR)
+PackX3GFX:: INCBIN "gfx/pack/pack_x3_fr.2bpp.lz"
+PackX4GFX:: INCBIN "gfx/pack/pack_x4_fr.2bpp.lz"
+PackX5GFX:: INCBIN "gfx/pack/pack_x5_fr.2bpp.lz"
+else
 PackX3GFX:: INCBIN "gfx/pack/pack_x3.2bpp.lz"
 PackX4GFX:: INCBIN "gfx/pack/pack_x4.2bpp.lz"
 PackX5GFX:: INCBIN "gfx/pack/pack_x5.2bpp.lz"
+endc
 
 
 SECTION "Trainer Card Pics", ROMX

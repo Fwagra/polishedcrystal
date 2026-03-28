@@ -1431,7 +1431,11 @@ Text_MoveItemWhere:
 	text_end
 
 PackInterfaceGFX:
+if DEF(_LOCALE_FR)
+INCBIN "gfx/pack/pack_top_left_fr.2bpp.lz"
+else
 INCBIN "gfx/pack/pack_top_left.2bpp.lz"
+endc
 
 Special_ChooseItem::
 	call DisableSpriteUpdates

@@ -171,12 +171,22 @@ BT_SwapRentals:
 	farjp BT_SetRentalOT
 
 .MustSwapBetweenTeams:
+if DEF(_LOCALE_FR)
+	text "Tu dois échanger"
+	line "de <PK><MN> entre"
+	cont "les équipes!"
+else
 	text "You must trade <PK><MN>"
 	line "between the teams!"
+endc
 	prompt
 
 .TradeWhichPKMN:
+if DEF(_LOCALE_FR)
+	db "Échanger quel <PK><MN>? @"
+else
 	db "Trade which <PK><MN>?   @"
+endc
 
 BT_PartySelect:
 	ld a, PARTYMENUACTION_BATTLE_TOWER
@@ -214,7 +224,7 @@ BT_PartySelect:
 	dec a ; Enter
 	jr z, .Enter
 	dec a ; Stats
-	jr z, .Stats
+	jp z, .Stats
 	jr .loop ; Cancel
 
 .return
@@ -276,8 +286,13 @@ BT_PartySelect:
 	jmp .loop
 
 .too_many_mons_text
+if DEF(_LOCALE_FR)
+	text "Tu ne peux entrer"
+	line "qu'avec 3 #mon!"
+else
 	text "You may only enter"
 	line "with 3 #mon!"
+endc
 	prompt
 
 .Stats:
@@ -296,9 +311,15 @@ BT_PartySelect:
 .MenuData:
 	db $c0 ; flags
 	db 3 ; items
+if DEF(_LOCALE_FR)
+	db "Entrer@"
+	db "Résumé@"
+	db "Retour@"
+else
 	db "Enter@"
 	db "Summary@"
 	db "Cancel@"
+endc
 
 .BannedMenuHeader:
 	db $00 ; flags
@@ -309,21 +330,42 @@ BT_PartySelect:
 .BannedMenuData:
 	db $c0 ; flags
 	db 2 ; items
+if DEF(_LOCALE_FR)
+	db "Résumé@"
+	db "Retour@"
+else
 	db "Summary@"
 	db "Cancel@"
+endc
 
 BTText_EnterBattle:
+if DEF(_LOCALE_FR)
+	db "Entrer en combat?@"
+else
 	db "Enter battle?@"
+endc
 
 BTText_SameSpecies:
+if DEF(_LOCALE_FR)
+	text "Les #mon doivent"
+	line "être d'espèces"
+	cont "différentes!"
+else
 	text "The #mon must"
 	line "be of different"
 	cont "species!"
+endc
 	prompt
 
 BTText_SameItem:
+if DEF(_LOCALE_FR)
+	text "Les objets tenus"
+	line "doivent être"
+	cont "différents!"
+else
 	text "The #mon's held"
 	line "items must differ!"
+endc
 	prompt
 
 BT_ConfirmPartySelection:
@@ -349,8 +391,13 @@ BT_ConfirmPartySelection:
 .YesNoMenuData:
 	db $c0 ; flags
 	db 2 ; items
+if DEF(_LOCALE_FR)
+	db "Oui@"
+	db "Non@"
+else
 	db "Yes@"
 	db "No@"
+endc
 
 BT_DisplayMenu:
 	call CopyMenuHeader
@@ -586,7 +633,11 @@ PlacePartyNicknames:
 	ret
 
 .Cancel:
+if DEF(_LOCALE_FR)
+	db "Retour@"
+else
 	db "Cancel@"
+endc
 
 PlacePartyHPBar:
 	xor a
@@ -847,13 +898,25 @@ PlacePartyMonTMHMCompatibility:
 	ret
 
 .string_able
+if DEF(_LOCALE_FR)
+	db "Apte@"
+else
 	db "Able@"
+endc
 
 .string_not_able
+if DEF(_LOCALE_FR)
+	db "Inapte@"
+else
 	db "Not able@"
+endc
 
 .string_learned
+if DEF(_LOCALE_FR)
+	db "Appris@"
+else
 	db "Learned@"
+endc
 
 PlacePartyMonEvoStoneCompatibility:
 	ld a, [wPartyCount]
@@ -931,9 +994,17 @@ PlacePartyMonEvoStoneCompatibility:
 	ret
 
 .string_able
+if DEF(_LOCALE_FR)
+	db "Apte@"
+else
 	db "Able@"
+endc
 .string_not_able
+if DEF(_LOCALE_FR)
+	db "Inapte@"
+else
 	db "Not able@"
+endc
 
 PlacePartyMonGender:
 	ld a, [wPartyCount]
@@ -1066,22 +1137,46 @@ PlacePartyMonBattleTower:
 	jr .loop
 
 .Banned
+if DEF(_LOCALE_FR)
+	db "Banni@"
+else
 	db "Banned@"
+endc
 
 .Able
+if DEF(_LOCALE_FR)
+	db "Apte@"
+else
 	db "Able@"
+endc
 
 .First
+if DEF(_LOCALE_FR)
+	db "1er@"
+else
 	db "First@"
+endc
 
 .Second
+if DEF(_LOCALE_FR)
+	db "2e@"
+else
 	db "Second@"
+endc
 
 .Third
+if DEF(_LOCALE_FR)
+	db "3e@"
+else
 	db "Third@"
+endc
 
 .LastFoe
+if DEF(_LOCALE_FR)
+	db "Dernier@"
+else
 	db "Last foe@"
+endc
 
 PartyMenuCheckEgg:
 	push hl
@@ -1302,24 +1397,60 @@ PartyMenuStrings:
 	dw Choose3MonString
 
 ChooseAMonString:
+if DEF(_LOCALE_FR)
+	db "Choisir un #mon.@"
+else
 	db "Choose a #mon.@"
+endc
 UseOnWhichPKMNString:
+if DEF(_LOCALE_FR)
+	db "Utiliser sur quel <PK><MN>?@"
+else
 	db "Use on which <PK><MN>?@"
+endc
 WhichPKMNString:
+if DEF(_LOCALE_FR)
+	db "Quel <PK><MN>?@"
+else
 	db "Which <PK><MN>?@"
+endc
 TeachWhichPKMNString:
+if DEF(_LOCALE_FR)
+	db "Apprendre à quel <PK><MN>?@"
+else
 	db "Teach which <PK><MN>?@"
+endc
 TutorWhichPKMNString:
+if DEF(_LOCALE_FR)
+	db "Apprendre à quel <PK><MN>?@"
+else
 	db "Tutor which <PK><MN>?@"
+endc
 Choose3MonString:
+if DEF(_LOCALE_FR)
+	db "Choisir 3 @<PK><MN>"
+else
 	db "Choose 3 battle <PK><MN>@"
+endc
 MoveToWhereString:
+if DEF(_LOCALE_FR)
+	db "Déplacer où?@"
+else
 	db "Move to where?@"
+endc
 ToWhichPKMNString:
+if DEF(_LOCALE_FR)
+	db "A quel <PK><MN>?@"
+else
 	db "To which <PK><MN>?@"
+endc
 
 YouHaveNoPKMNString:
+if DEF(_LOCALE_FR)
+	db "Vous n'avez pas de <PK><MN>!@"
+else
 	db "You have no <PK><MN>!@"
+endc
 
 PrintPartyMenuActionText:
 	ld a, [wCurPartyMon]

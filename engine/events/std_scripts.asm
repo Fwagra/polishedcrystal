@@ -340,19 +340,47 @@ DayToTextScript:
 	getstring .SaturdayText, STRING_BUFFER_3
 	end
 .SundayText:
+if DEF(_LOCALE_FR)
+	db "Dimanche@"
+else
 	db "Sunday@"
+endc
 .MondayText:
+if DEF(_LOCALE_FR)
+	db "Lundi@"
+else
 	db "Monday@"
+endc
 .TuesdayText:
+if DEF(_LOCALE_FR)
+	db "Mardi@"
+else
 	db "Tuesday@"
+endc
 .WednesdayText:
+if DEF(_LOCALE_FR)
+	db "Mercredi@"
+else
 	db "Wednesday@"
+endc
 .ThursdayText:
+if DEF(_LOCALE_FR)
+	db "Jeudi@"
+else
 	db "Thursday@"
+endc
 .FridayText:
+if DEF(_LOCALE_FR)
+	db "Vendredi@"
+else
 	db "Friday@"
+endc
 .SaturdayText:
+if DEF(_LOCALE_FR)
+	db "Samedi@"
+else
 	db "Saturday@"
+endc
 
 BugContestResultsWarpScript:
 	special ClearBGPalettes
@@ -1597,7 +1625,11 @@ CoinVendor_IntroScript:
 	db 3 ; items
 	db " 50 :  ¥1000@"
 	db "500 : ¥10000@"
-	db "Cancel@"
+	if DEF(_LOCALE_FR)
+		db "Retour@"
+	else
+		db "Cancel@"
+	endc
 
 HappinessCheckScript:
 	faceplayer
@@ -1720,10 +1752,17 @@ VendingMachineScript:
 .MenuData2:
 	db $80 ; flags
 	db 4 ; items
-	db "Fresh Water  ¥200@"
-	db "Soda Pop     ¥300@"
-	db "Lemonade     ¥350@"
-	db "Cancel@"
+	if DEF(_LOCALE_FR)
+		db "Eau Fraiche  ¥200@"
+		db "Soda Cool     ¥300@"
+		db "Limonade     ¥350@"
+		db "Retour@"
+	else
+		db "Fresh Water  ¥200@"
+		db "Soda Pop     ¥300@"
+		db "Lemonade     ¥350@"
+		db "Cancel@"
+	endc
 
 TreeGrottoScript:
 	scall _HiddenGrottoInitScript

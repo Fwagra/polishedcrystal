@@ -430,6 +430,15 @@ Special_SetDayOfWeek:
 	dw .Saturday
 	dw .Sunday
 
+if DEF(_LOCALE_FR)
+.Sunday:    db "Dimanche@"
+.Monday:    db "Lundi@"
+.Tuesday:   db "Mardi@"
+.Wednesday: db "Mercredi@"
+.Thursday:  db "Jeudi@"
+.Friday:    db "Vendredi@"
+.Saturday:  db "Samedi@"
+else
 .Sunday:    db " Sunday@"
 .Monday:    db " Monday@"
 .Tuesday:   db " Tuesday@"
@@ -437,6 +446,7 @@ Special_SetDayOfWeek:
 .Thursday:  db "Thursday@"
 .Friday:    db " Friday@"
 .Saturday:  db "Saturday@"
+endc
 
 .WhatDayIsItText:
 	; What day is it?
@@ -558,10 +568,17 @@ TimeOfDayStrings:
 	dr EVE_String
 	assert_table_length NUM_DAYTIMES
 
+if DEF(_LOCALE_FR)
+NITE_String: db "Nuit@"
+MORN_String: db "Matin@"
+DAY_String:  db "Jour@"
+EVE_String:  db "Soir@"
+else
 NITE_String: db "Night@"
 MORN_String: db "Morning@"
 DAY_String:  db "Day@"
 EVE_String:  db "Evening@"
+endc
 
 PlaceCaughtTimeOfDayString::
 	and CAUGHT_TIME_MASK

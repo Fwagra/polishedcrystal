@@ -336,6 +336,15 @@ TrainerCard_PrintTopHalfOfCard:
 	jmp PrintNum
 
 .Top_Headings:
+if DEF(_LOCALE_FR)
+	db     '┌' - 4, "Nom/<LNBRK>"
+	db     '┌' - 4, "<ID>№.<LNBRK>"
+	db     '┌' - 3
+	ds 11, '┌' - 2
+	db     '┌' - 1, "<LNBRK>"
+	db     "<LNBRK>"
+	db     " Arg.@"
+else
 	db     '┌' - 4, "Name/<LNBRK>"
 	db     '┌' - 4, "<ID>№.<LNBRK>"
 	db     '┌' - 3
@@ -343,6 +352,7 @@ TrainerCard_PrintTopHalfOfCard:
 	db     '┌' - 1, "<LNBRK>"
 	db     "<LNBRK>"
 	db     " Money@"
+endc
 
 TrainerCardSetup_ClearBottomHalf:
 	hlcoord 1, 10
@@ -407,11 +417,19 @@ TrainerCard_Page1_PrintDexCaught_GameTime:
 	jr .star_loop
 
 .Dex_PlayTime_BP:
+if DEF(_LOCALE_FR)
+	text "#dex"
+	next "Temps jeu"
+	next "Pts Combat"
+	next "          Badges"
+	done
+else
 	text "#dex"
 	next "Play Time"
 	next "Battle Pts"
 	next "          Badges"
 	done
+endc
 
 TrainerCard_Page1_PrintGameTime:
 	hlcoord 11, 12

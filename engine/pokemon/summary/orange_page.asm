@@ -44,7 +44,11 @@ SummaryScreen_OrangePage:
 INCLUDE "gfx/stats/orange_page.pal"
 
 .NatureString:
+if DEF(_LOCALE_FR)
 	db "Nature/@"
+else
+	db "Nature/@"
+endc
 
 .CharacterString:
 if DEF(_LOCALE_FR)
@@ -78,10 +82,18 @@ endc
 	ret
 
 .battle_factory
+if DEF(_LOCALE_FR)
+	db "Usine de Combat@"
+else
 	db "Battle Factory@"
+endc
 
 .event
+if DEF(_LOCALE_FR)
+	db "#mon évènement@"
+else
 	db "Event #mon@"
+endc
 
 .TN_PrintLV:
 	ld a, [wTempMonCaughtLevel]
@@ -113,13 +125,25 @@ endc
 	ret
 
 .str_level
+if DEF(_LOCALE_FR)
+	db "au <LV>@"
+else
 	db "at <LV>@"
+endc
 
 .str_hatched
+if DEF(_LOCALE_FR)
+	db "sorti d'un Oeuf@"
+else
 	db "from Egg@"
+endc
 
 .str_traded
+if DEF(_LOCALE_FR)
+	db "par échange@"
+else
 	db "by trade@"
+endc
 
 .TN_PrintCharacteristics:
 	; b = value of best DV, c = index of best DV

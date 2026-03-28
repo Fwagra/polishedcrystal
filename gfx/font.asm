@@ -51,7 +51,11 @@ BattleExtrasGFX:
 INCBIN "gfx/battle/hpexpbars.2bpp.lz"
 
 SummaryStatusIconGFX:
+if DEF(_LOCALE_FR)
+INCBIN "gfx/stats/status_fr.2bpp"
+else
 INCBIN "gfx/stats/status.2bpp"
+endc
 
 StatusIconGFX:
 INCBIN "gfx/battle/status.2bpp"

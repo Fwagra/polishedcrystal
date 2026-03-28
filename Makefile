@@ -224,6 +224,7 @@ gfx/overworld/overworld.2bpp: gfx/overworld/puddle_splash.2bpp gfx/overworld/cut
 
 gfx/pack/pack_left.2bpp: tools/gfx += --trim-whitespace
 gfx/pack/pack_top_left.2bpp: gfx/pack/pack_top.2bpp gfx/pack/pack_left.2bpp ; $Qcat $^ > $@
+gfx/pack/pack_top_left_fr.2bpp: gfx/pack/pack_top_fr.2bpp gfx/pack/pack_left.2bpp ; $Qcat $^ > $@
 
 gfx/paintings/%.2bpp: RGBGFXFLAGS += -Z
 

@@ -1612,6 +1612,19 @@ Pokedex_Main:
 
 	call Pokedex_GetCursorMon
 
+if DEF(_LOCALE_FR)
+	; Replace  "Seen/Own" from tilemap to FR.
+	hlcoord 9, 6
+	lb bc, 1, 11
+	call ClearBox
+	hlcoord 9, 6
+	ld de, .SeenFR
+	rst PlaceString
+	hlcoord 15, 6
+	ld de, .OwnedFR
+	rst PlaceString
+endc
+
 	ld a, $3f
 	ld de, PHB_Row1
 	jmp Pokedex_ScheduleScreenUpdateWithHBlank
@@ -1621,6 +1634,11 @@ if DEF(_LOCALE_FR)
 	db " Result./ @"
 else
 	db " Results/  @"
+endc
+
+if DEF(_LOCALE_FR)
+.SeenFR:  db "Vus/@"
+.OwnedFR: db "Pris/@"
 endc
 
 Pokedex_Bio:

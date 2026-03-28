@@ -40,4 +40,8 @@ GetLandmarkName::
 
 	jmp PopBCDEHL
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/data/maps/landmarks.asm"
+else
 INCLUDE "data/maps/landmarks.asm"
+endc

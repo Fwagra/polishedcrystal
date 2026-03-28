@@ -738,7 +738,11 @@ INCLUDE "engine/events/weather.asm"
 
 SECTION "Exp Candy Names", ROMX
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/data/items/exp_candy_names.asm"
+else
 INCLUDE "data/items/exp_candy_names.asm"
+endc
 
 
 SECTION "GB Printer", ROMX

@@ -492,7 +492,11 @@ ScrollingMenu_IsTerminator:
 	ret
 
 ScrollingMenu_CancelString:
+if DEF(_LOCALE_FR)
+	db "Annuler@"
+else
 	db "Cancel@"
+endc
 
 ScrollingMenu_CallFunctions1and2:
 	push hl

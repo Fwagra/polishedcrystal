@@ -669,7 +669,11 @@ GetPocketName:
 	ld hl, wStringBuffer3
 	jmp CopyName2
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/data/items/pocket_names.asm"
+else
 INCLUDE "data/items/pocket_names.asm"
+endc
 
 GetKeyItemPocketName:
 	ld hl, ItemPocketNames.Key

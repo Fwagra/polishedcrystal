@@ -8,7 +8,7 @@ MACRO LOCALE
 	endc
 ENDM
 
-LOCALE MainMenuDataHeader, Untranslated
+LOCALE MainMenuDataHeader, Translated
 	menu_coords 0, 0, 16, 7
 	dw .MenuData2
 	db 1 ; default option
@@ -21,8 +21,8 @@ LOCALE MainMenuDataHeader, Untranslated
 	dw .Strings
 
 .Strings:
-	db "Continue@"
-	db "New Game@"
-	db "New Game+@"
+	db "Continuer@"
+	db "Nouveau jeu@"
+	db "Nouveau jeu+@"
 	db "Options@"
-	db "Music Player@"
+	db "Musiques@"

@@ -172,13 +172,38 @@ StartMenu::
 
 .PokedexString:  db "#dex@"
 .PartyString:    db "#mon@"
-.PackString:     db "Bag@"
+.PackString:
+if DEF(_LOCALE_FR)
+	db "Sac@"
+else
+	db "Bag@"
+endc
 .StatusString:   db "<PLAYER>@"
-.SaveString:     db "Save@"
+.SaveString:
+if DEF(_LOCALE_FR)
+	db "Sauver@"
+else
+	db "Save@"
+endc
 .OptionString:   db "Options@"
-.ExitString:     db "Exit@"
-.PokegearString: db "<PO><KE>gear@"
-.QuitString:     db "Quit@"
+.ExitString:
+if DEF(_LOCALE_FR)
+	db "Retour@"
+else
+	db "Exit@"
+endc
+.PokegearString:
+if DEF(_LOCALE_FR)
+	db "<PO><KE>matos@"
+else
+	db "<PO><KE>gear@"
+endc
+.QuitString:
+if DEF(_LOCALE_FR)
+	db "Quitter@"
+else
+	db "Quit@"
+endc
 
 .OpenMenu:
 	ld a, [wMenuSelection]

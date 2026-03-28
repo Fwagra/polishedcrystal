@@ -306,7 +306,11 @@ GetStatName:
 	rst CopyBytes
 	ret
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/data/battle/stat_names.asm"
+else
 INCLUDE "data/battle/stat_names.asm"
+endc
 
 DoLowerStat:
 	or 1

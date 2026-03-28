@@ -249,7 +249,7 @@ INCLUDE "gfx/stats/pink_page.pal"
 	db 31, 128, SUMMARY_TILE_OAM_STATUS + 1, 5
 
 .OTStr:
-	text "OT/"
+	text "DO/"
 	done
 
 .IDStr
@@ -257,18 +257,18 @@ INCLUDE "gfx/stats/pink_page.pal"
 	done
 
 .Rental_OT:
-	text  "Rental"
+	text  "Loué"
 	next1 "  #mon"
 	done
 
 .ExpPointStr:
-	db "Exp.Points@"
+	db "Points Exp@"
 
 .LevelUpStr:
-	db "Level Up@"
+	db "Niv. suiv.@"
 
 .ToStr:
-	db "to@"
+	db "au@"
 
 CopyNickname:
 	ld de, wStringBuffer1

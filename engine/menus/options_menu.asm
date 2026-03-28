@@ -266,7 +266,11 @@ OptionsMenu_PlaceOptionName:
 	rst PlaceString
 	ret
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/data/options/names.asm"
+else
 INCLUDE "data/options/names.asm"
+endc
 
 OptionsMenu_PlaceOptionValue:
 	ld a, [wMenuSelection]
@@ -356,13 +360,29 @@ Options_TextSpeed:
 	assert_table_length TEXT_DELAY_MASK >> TZCOUNT(TEXT_DELAY_MASK) + 1
 
 .Slow:
+if DEF(_LOCALE_FR)
+	db "Lent   @"
+else
 	db "Slow   @"
+endc
 .Medium:
+if DEF(_LOCALE_FR)
+	db "Moyen  @"
+else
 	db "Medium @"
+endc
 .Fast:
+if DEF(_LOCALE_FR)
+	db "Rapide @"
+else
 	db "Fast   @"
+endc
 .Instant:
+if DEF(_LOCALE_FR)
 	db "Instant@"
+else
+	db "Instant@"
+endc
 
 Options_BattleEffects:
 	ld hl, wOptions1
@@ -429,11 +449,23 @@ Options_BattleStyle:
 	jmp OptionsMenu_PlaceStringAtValueCoord
 
 .Set:
+if DEF(_LOCALE_FR)
+	db "Fixe   @"
+else
 	db "Set    @"
+endc
 .Switch:
+if DEF(_LOCALE_FR)
+	db "Changt.@"
+else
 	db "Switch @"
+endc
 .Predict:
+if DEF(_LOCALE_FR)
+	db "Prédire@"
+else
 	db "Predict@"
+endc
 
 Options_RunningShoes:
 	ld hl, wOptions2
@@ -459,9 +491,17 @@ Options_RunningShoes:
 	jmp OptionsMenu_PlaceStringAtValueCoord
 
 OffString:
+if DEF(_LOCALE_FR)
+	db "Non@"
+else
 	db "Off@"
+endc
 OnString:
+if DEF(_LOCALE_FR)
+	db "Oui@"
+else
 	db "On @"
+endc
 
 Options_Frame:
 	ld hl, wTextboxFrame
@@ -525,9 +565,17 @@ Options_Sound:
 	jmp OptionsMenu_PlaceStringAtValueCoord
 
 .Mono:
+if DEF(_LOCALE_FR)
 	db "Mono  @"
+else
+	db "Mono  @"
+endc
 .Stereo:
+if DEF(_LOCALE_FR)
+	db "Stéréo@"
+else
 	db "Stereo@"
+endc
 
 Options_ClockFormat:
 	ld hl, wOptions2
@@ -553,9 +601,17 @@ Options_ClockFormat:
 	jmp OptionsMenu_PlaceStringAtValueCoord
 
 .Twelve:
+if DEF(_LOCALE_FR)
+	db "12 h@"
+else
 	db "12-hour@"
+endc
 .TwentyFour:
+if DEF(_LOCALE_FR)
+	db "24 h@"
+else
 	db "24-hour@"
+endc
 
 Options_PokedexUnits:
 	ld hl, wOptions2
@@ -581,9 +637,17 @@ Options_PokedexUnits:
 	jmp OptionsMenu_PlaceStringAtValueCoord
 
 .Imperial:
+if DEF(_LOCALE_FR)
+	db "Impérial@"
+else
 	db "Imperial@"
+endc
 .Metric:
+if DEF(_LOCALE_FR)
+	db "Métrique@"
+else
 	db "Metric  @"
+endc
 
 Options_TextAutoscroll:
 	ldh a, [hJoyPressed]
@@ -627,13 +691,29 @@ endr
 	assert_table_length (AUTOSCROLL_MASK >> TZCOUNT(AUTOSCROLL_MASK)) + 1
 
 .None:
+if DEF(_LOCALE_FR)
+	db "Aucun @"
+else
 	db "None  @"
+endc
 .Start:
+if DEF(_LOCALE_FR)
 	db "Start @"
+else
+	db "Start @"
+endc
 .B:
+if DEF(_LOCALE_FR)
 	db "B     @"
+else
+	db "B     @"
+endc
 .AorB:
+if DEF(_LOCALE_FR)
+	db "A ou B@"
+else
 	db "A or B@"
+endc
 
 Options_TurningSpeed:
 	ldh a, [hJoyPressed]
@@ -663,9 +743,17 @@ endr
 	assert_table_length (TURNING_SPEED_MASK >> TZCOUNT(TURNING_SPEED_MASK)) + 1
 
 .Slow:
+if DEF(_LOCALE_FR)
+	db "Lent@"
+else
 	db "Slow@"
+endc
 .Fast:
+if DEF(_LOCALE_FR)
+	db "Rapide@"
+else
 	db "Fast@"
+endc
 
 Options_Typeface:
 	ld hl, wOptions2
@@ -730,21 +818,53 @@ Options_Typeface:
 	assert_table_length NUM_FONTS
 
 .Normal:
+if DEF(_LOCALE_FR)
 	db "Normal @"
+else
+	db "Normal @"
+endc
 .Narrow:
+if DEF(_LOCALE_FR)
+	db "Etroit @"
+else
 	db "Narrow @"
+endc
 .Bold:
+if DEF(_LOCALE_FR)
+	db "Gras   @"
+else
 	db "Bold   @"
+endc
 .Italic:
+if DEF(_LOCALE_FR)
+	db "Italique@"
+else
 	db "Italic @"
+endc
 .Serif:
+if DEF(_LOCALE_FR)
 	db "Serif  @"
+else
+	db "Serif  @"
+endc
 .Chicago:
+if DEF(_LOCALE_FR)
 	db "Chicago@"
+else
+	db "Chicago@"
+endc
 .MICR:
+if DEF(_LOCALE_FR)
 	db "MICR   @"
+else
+	db "MICR   @"
+endc
 .Unown:
+if DEF(_LOCALE_FR)
+	db "Zarbi  @"
+else
 	db "Unown  @"
+endc
 
 Options_Keyboard:
 	ld hl, wOptions3

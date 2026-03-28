@@ -120,13 +120,25 @@ endr
 	ret
 
 AllStatNames:
+if DEF(_LOCALE_FR)
+	db   "PV<NEXT>"
+else
 	db   "Health<NEXT>"
+endc
 MostStatNames:
+if DEF(_LOCALE_FR)
+	db   "Attaque"
+	next "Défense"
+	next "Att.Spé"
+	next "Déf.Spé"
+	next "Vitesse"
+else
 	db   "Attack"
 	next "Defense"
 	next "Sp.Atk"
 	next "Sp.Def"
 	next "Speed"
+endc
 	next "@"
 
 PrintStatDifferences:

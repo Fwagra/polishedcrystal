@@ -996,7 +996,11 @@ _GetStatString:
 	rst CopyBytes
 	ret
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/data/battle/stat_strings.asm"
+else
 INCLUDE "data/battle/stat_strings.asm"
+endc
 
 GetEVRelativePointer:
 	ld a, [wCurItem]
@@ -2061,30 +2065,58 @@ WingCase_MonSelected:
 	jmp PlaceWholeStringInBoxAtOnce
 
 .RaisesStat:
+if DEF(_LOCALE_FR)
+	text "Monte "
+else
 	text "Raises "
+endc
 	text_ram wStringBuffer2
 	text "."
 	done
 
 .CancelStr:
+if DEF(_LOCALE_FR)
+	db "Ne pas util.      @"
+else
 	db "Don't use.         @"
+endc
 
 .YouDontHaveAny:
+if DEF(_LOCALE_FR)
+	db "Vous n'en avez pas."
+else
 	db "You don't have any."
+endc
 	prompt
 
 .UseHowManyText:
+if DEF(_LOCALE_FR)
+	db "Utiliser cmb?     @"
+else
 	db "Use how many?     @"
+endc
 
 OnlyXWillBeAppliedText:
+if DEF(_LOCALE_FR)
+	db "Seuls "
+XWillBeAppliedText:
+	text_decimal wItemQuantityChangeBuffer, 1, 3
+	text " seront"
+	line "utilisés. OK?"
+else
 	db "Only "
 XWillBeAppliedText:
 	text_decimal wItemQuantityChangeBuffer, 1, 3
 	text " will be"
 	line "applied. Proceed?"
+endc
 	done
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/data/items/wing_names.asm"
+else
 INCLUDE "data/items/wing_names.asm"
+endc
 
 CandyJar_MonSelected:
 ; Runs when a mon has been selected.
@@ -2429,7 +2461,11 @@ CandyJar_MonSelected:
 	assert_table_length NUM_CANDIES
 
 .GivesExp:
+if DEF(_LOCALE_FR)
+	text "Donne "
+else
 	text "Gives "
+endc
 	text_decimal wStringBuffer2, 2, 5
 	text " Exp."
 	done

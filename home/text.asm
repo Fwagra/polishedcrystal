@@ -734,6 +734,17 @@ PrintDayOfWeek::
 	dr .Fri
 	dr .Satur
 
+.if_fr
+if DEF(_LOCALE_FR)
+.Sun:    db "Dimanche@"
+.Mon:    db "Lundi@"
+.Tues:   db "Mardi@"
+.Wednes: db "Mercredi@"
+.Thurs:  db "Jeudi@"
+.Fri:    db "Vendredi@"
+.Satur:  db "Samedi@"
+.Day:    db "@"
+else
 .Sun:    db "Sun@"
 .Mon:    db "Mon@"
 .Tues:   db "Tues@"
@@ -742,6 +753,7 @@ PrintDayOfWeek::
 .Fri:    db "Fri@"
 .Satur:  db "Satur@"
 .Day:    db "day@"
+endc
 
 DecompressString::
 	; save starting coords

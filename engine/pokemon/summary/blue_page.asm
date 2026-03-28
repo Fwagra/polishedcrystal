@@ -114,7 +114,11 @@ INCLUDE "gfx/stats/blue_page.pal"
 INCLUDE "gfx/stats/blue_hp_bars.pal"
 
 .HPString:
+if DEF(_LOCALE_FR)
+	db "PV@"
+else
 	db "HP@"
+endc
 
 .AbilityTiles:
 	db SUMMARY_TILE_HIDDEN_H, "1", "2", SUMMARY_TILE_HIDDEN_H
