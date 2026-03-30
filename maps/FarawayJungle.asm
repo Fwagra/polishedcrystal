@@ -36,6 +36,13 @@ FarawayJungleMew:
 .nocatch
 	end
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/FarawayJungle.asm"
+
+else
+
 MewText:
 	text "Mew!"
 	done
+
+endc

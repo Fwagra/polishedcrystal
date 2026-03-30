@@ -134,6 +134,10 @@ GenericTrainerSchoolgirlImogen:
 	cont "in my class."
 	done
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/Route33.asm"
+else
+
 HikerAnthony1SeenText:
 	text "I came through the"
 	line "tunnel, but I"
@@ -177,3 +181,5 @@ SchoolgirlImogenBeatenText:
 Route33SignText:
 	text "Route 33"
 	done
+
+endc

@@ -99,6 +99,11 @@ MahoganyTownRageCandyBarMerchantReturnsMovement:
 	turn_head_down
 	step_end
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/MahoganyTown.asm"
+
+else
+
 RageCandyBarMerchantTryOneText:
 	text "Hiya, kid!"
 
@@ -207,3 +212,5 @@ MahoganyGymSignText:
 	para "The Teacher of"
 	line "Winter's Harshness"
 	done
+
+endc

@@ -110,6 +110,11 @@ PewterCityPokefanMScript:
 	line "cash for them!"
 	done
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/PewterCity.asm"
+
+else
+
 PewterCityCooltrainerFText:
 	text "#mon can only"
 	line "be two types at"
@@ -233,3 +238,5 @@ PewterCityTrainerTipsText:
 	cont "have a baby with"
 	cont "a rare ability."
 	done
+
+endc

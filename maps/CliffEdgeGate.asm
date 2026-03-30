@@ -53,6 +53,11 @@ GenericTrainerGruntM12:
 	line "all for ourselves!"
 	done
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/CliffEdgeGate.asm"
+
+else
+
 CliffEdgeGateReceptionistText:
 	text "Yellow Forest is"
 	line "this way!"
@@ -132,4 +137,6 @@ GruntM12BeatenText:
 	text "You were supposed"
 	line "to lose!"
 	done
+
+endc
 

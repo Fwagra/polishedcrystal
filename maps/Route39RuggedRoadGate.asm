@@ -124,6 +124,11 @@ Route39RuggedRoadGateCannotPassMovement:
 	turn_head_up
 	step_end
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/Route39RuggedRoadGate.asm"
+
+else
+
 Route39RuggedRoadGateOfficerCannotPassText:
 	text "Whoa, where are"
 	line "you going?"
@@ -146,3 +151,5 @@ Route39RuggedRoadGateOfficerText:
 	line "mon Center was"
 	cont "built there."
 	done
+
+endc

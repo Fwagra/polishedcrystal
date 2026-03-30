@@ -80,41 +80,12 @@ VioletOutskirtsHouseCaretakerScript:
 	checkevent EVENT_TALKED_TO_VIOLET_CEMETERY_CARETAKER
 	iftrue_jumptextfaceplayer VioletOutskirtsHouseCaretakerThankYouText
 	setevent EVENT_TALKED_TO_VIOLET_CEMETERY_CARETAKER
-	jumpthistextfaceplayer
+	jumptextfaceplayer VioletOutskirtsHouseCaretakerFoundFriendText
 
-	text "…… ……"
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/VioletOutskirtsHouse.asm"
 
-	para "You found my"
-	line "friend…"
-
-	para "It would guide"
-	line "departed spirits"
-	cont "to the next life…"
-
-	para "As I tended to"
-	line "their graves…"
-
-	para "…… ……"
-
-	para "That was so"
-	line "long ago…"
-
-	para "No one visits"
-	line "any more…"
-
-	para "The graves are"
-	line "left untended…"
-
-	para "But you… still"
-	line "came here…"
-
-	para "…… ……"
-
-	para "Thank you…"
-
-	para "Please take care"
-	line "of my… friend…"
-	done
+else
 
 VioletOutskirtsHouseOldShrineText:
 	text "It's a very old"
@@ -165,3 +136,5 @@ VioletOutskirtsHouseNotAloneText:
 	line "that something"
 	cont "is watching you…"
 	done
+
+endc

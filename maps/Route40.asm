@@ -182,6 +182,11 @@ MonicaNotMondayScript:
 MonicaDoneScript:
 	end
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/Route40.asm"
+
+else
+
 SwimmermSimonSeenText:
 	text "You have to warm"
 	line "up before going"
@@ -344,3 +349,5 @@ Route40SignText:
 	para "Cianwood City -"
 	line "Olivine City"
 	done
+
+endc

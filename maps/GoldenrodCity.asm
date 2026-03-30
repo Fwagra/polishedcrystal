@@ -228,6 +228,11 @@ GoldenrodCityPanUpMovementData:
 	step_up
 	step_end
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/GoldenrodCity.asm"
+
+else
+
 GoldenrodCityPokefanMText:
 	text "They built the new"
 	line "Radio Tower to"
@@ -535,3 +540,5 @@ GoldenrodCityMoveTutorYouDontHaveEnoughCoinsText:
 	text "…You don't have"
 	line "enough coins here…"
 	done
+
+endc

@@ -18,6 +18,11 @@ Route32RuinsOfAlphGate_MapScriptHeader:
 	object_event  8,  2, SPRITE_HIKER, SPRITEMOVEDATA_WALK_UP_DOWN, 1, 0, -1, 0, OBJECTTYPE_COMMAND, jumptextfaceplayer, Route32RuinsOfAlphGatePokefanMText, -1
 	object_event  1,  6, SPRITE_CAMPER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, 0, OBJECTTYPE_COMMAND, jumptextfaceplayer, Route32RuinsOfAlphGateYoungsterText, -1
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/Route32RuinsOfAlphGate.asm"
+
+else
+
 Route32RuinsOfAlphGateOfficerText:
 	text "Ruins of Alph"
 
@@ -44,3 +49,5 @@ Route32RuinsOfAlphGateYoungsterText:
 	line "them. I wonder"
 	cont "what they are."
 	done
+
+endc

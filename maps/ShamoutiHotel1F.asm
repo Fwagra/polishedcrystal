@@ -26,6 +26,11 @@ ShamoutiHotel1FRestaurantTrigger:
 	setmapscene SHAMOUTI_HOTEL_RESTAURANT, $0
 	endcallback
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/ShamoutiHotel1F.asm"
+
+else
+
 ShamoutiHotel1FReceptionistText:
 	text "Welcome to the"
 	line "Shamouti Hotel."
@@ -132,3 +137,5 @@ ShamoutiHotel1FYoungsterText:
 ShamoutiHotelRestaurantSignText:
 	text "Oasis Restaurant"
 	done
+
+endc

@@ -253,6 +253,11 @@ TrainerOfficerDirk:
 .NotNight:
 	jumpopenedtext OfficerDirkPrettyToughText
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/Route35.asm"
+
+else
+
 CamperIvanSeenText:
 	text "I've been getting"
 	line "#mon data off"
@@ -403,3 +408,5 @@ Route35AdvancedTipsSignText:
 	line "use via the"
 	cont "Select button!"
 	done
+
+endc

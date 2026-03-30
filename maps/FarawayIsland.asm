@@ -138,6 +138,11 @@ FarawayIslandSailorArrive2MovementData:
 	turn_head_up
 	step_end
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/FarawayIsland.asm"
+
+else
+
 SeagallopFerryFarawayToVermilionQuestionText:
 	text "Ready to head back"
 	line "to Vermilion City?"
@@ -227,3 +232,5 @@ FarawayIslandSignText:
 
 	para "…ji”"
 	done
+
+endc

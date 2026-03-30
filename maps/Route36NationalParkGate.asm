@@ -304,6 +304,11 @@ Route36NationalParkGatePlayerWaitWithContestantsMovement:
 	turn_head_up
 	step_end
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/Route36NationalParkGate.asm"
+
+else
+
 Route36NationalParkGateOfficer1WaitHereForAnnouncementText:
 	text "OK. Please wait"
 	line "here for the"
@@ -474,3 +479,5 @@ Route36NationalParkGateOfficer1HeresThePrizeText:
 	line "we were holding"
 	cont "for you."
 	done
+
+endc

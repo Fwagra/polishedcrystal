@@ -27,6 +27,11 @@ Route36VioletGateOfficerScript:
 .ClearedSudowoodo
 	jumpopenedtext Route36VioletGateOfficerText2
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/Route36VioletGate.asm"
+
+else
+
 Route36VioletGateOfficerText1:
 	text "Lately, I don't"
 	line "see people coming"
@@ -54,3 +59,5 @@ Route36VioletGateYoungsterText:
 	line "move around from"
 	cont "time to time!"
 	done
+
+endc

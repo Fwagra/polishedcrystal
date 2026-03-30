@@ -262,6 +262,11 @@ GenericTrainerAceDuoZacandjen2:
 	cont "I thought."
 	done
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/Route3.asm"
+
+else
+
 Route3MeteoriteText:
 	text "Never seen a stone"
 	line "like this before!"
@@ -274,3 +279,5 @@ Route3MeteoriteText:
 Route3MtMoonSquareSignText:
 	text "Mt.Moon Tunnel"
 	done
+
+endc

@@ -24,6 +24,11 @@ Route49_MapScriptHeader:
 	cuttree_event 26, 12, EVENT_ROUTE_49_CUT_TREE_1
 	cuttree_event 20, 15, EVENT_ROUTE_49_CUT_TREE_2
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/Route49.asm"
+
+else
+
 Route49LadyText:
 	text "Look at the grass"
 	line "and trees here!"
@@ -143,3 +148,5 @@ Route49SignText:
 	text "Route 49"
 	line "Valencia Island"
 	done
+
+endc

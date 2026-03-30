@@ -42,6 +42,11 @@ GenericTrainerBikerReilly:
 	line "you Johto punk!"
 	done
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/Route17.asm"
+
+else
+
 BikerReillySeenText:
 	text "Hey, you! You're"
 	line "from Johto, huh?"
@@ -288,3 +293,5 @@ Route17Notice2Text:
 	line "game, throw #"
 	cont "Balls instead!"
 	done
+
+endc

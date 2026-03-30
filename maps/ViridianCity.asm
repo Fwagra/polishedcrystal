@@ -80,6 +80,11 @@ ViridianCityTutorDreamEaterScript:
 	takeitem SILVER_LEAF
 	jumpopenedtext Text_ViridianCityTutorTaught
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/ViridianCity.asm"
+
+else
+
 ViridianCityCoffeeGrampsQuestionText:
 	text "Hey, kid! I just"
 	line "had a double shot"
@@ -262,3 +267,5 @@ TrainerHouseSignText:
 	para "The Club for Top"
 	line "Trainer Battles"
 	done
+
+endc

@@ -39,6 +39,11 @@ GenericTrainerSwimmerfNicole:
 	line "for you."
 	done
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/Route20.asm"
+
+else
+
 SwimmerfNicoleSeenText:
 	text "I feel so much"
 	line "lighter in water."
@@ -285,3 +290,5 @@ CinnabarGymSignText:
 SeafoamIslandsSignText:
 	text "Seafoam Islands"
 	done
+
+endc

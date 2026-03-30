@@ -55,6 +55,45 @@ BlackthornCitySantosCallback:
 	appear BLACKTHORNCITY_SANTOS
 	endcallback
 
+SantosScript:
+	checkevent EVENT_GOT_SPELL_TAG_FROM_SANTOS
+	iftrue_jumptextfaceplayer SantosSaturdayText
+	readvar VAR_WEEKDAY
+	ifnotequal SATURDAY, .NotSaturday
+	faceplayer
+	opentext
+	checkevent EVENT_MET_SANTOS_OF_SATURDAY
+	iftruefwd .MetSantos
+	writetext SantosMeetText
+	promptbutton
+	setevent EVENT_MET_SANTOS_OF_SATURDAY
+.MetSantos:
+	writetext SantosGivesGiftText
+	promptbutton
+	verbosegiveitem SPELL_TAG
+	iffalse_endtext
+	setevent EVENT_GOT_SPELL_TAG_FROM_SANTOS
+	jumpopenedtext SantosOpenText
+.NotSaturday:
+	jumptextfaceplayer SantosNotSaturdayText
+
+BlackthornDragonTamer1Script:
+	checkevent EVENT_BEAT_CLAIR
+	iftrue_jumptextfaceplayer BlackthornDragonTamer1ClairIsBeatenText
+	checkevent EVENT_CLEARED_RADIO_TOWER
+	iftrue_jumptextfaceplayer BlackthornDragonTamer1ClairIsInText
+	jumptextfaceplayer BlackthornDragonTamer1DefaultText
+
+BlackthornBlackbeltScript:
+	checkevent EVENT_CLEARED_RADIO_TOWER
+	iftrue_jumptextfaceplayer BlackthornBlackbeltText2
+	jumptextfaceplayer BlackthornBlackbeltText1
+
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/BlackthornCity.asm"
+
+else
+
 BlackthornCitySignText:
 	text "Blackthorn City"
 
@@ -92,26 +131,7 @@ BlackthornCityTrainerTipsText:
 	cont "problem."
 	done
 
-SantosScript:
-	checkevent EVENT_GOT_SPELL_TAG_FROM_SANTOS
-	iftrue_jumptextfaceplayer .SaturdayText
-	readvar VAR_WEEKDAY
-	ifnotequal SATURDAY, .NotSaturday
-	faceplayer
-	opentext
-	checkevent EVENT_MET_SANTOS_OF_SATURDAY
-	iftruefwd .MetSantos
-	writetext .MeetText
-	promptbutton
-	setevent EVENT_MET_SANTOS_OF_SATURDAY
-.MetSantos:
-	writetext .GivesGiftText
-	promptbutton
-	verbosegiveitem SPELL_TAG
-	iffalse_endtext
-	setevent EVENT_GOT_SPELL_TAG_FROM_SANTOS
-	jumpthisopenedtext
-
+SantosOpenText:
 	text "Santos: …"
 
 	para "Spell Tag…"
@@ -123,14 +143,12 @@ SantosScript:
 	line "you…"
 	done
 
-.NotSaturday:
-	jumpthistextfaceplayer
-
+SantosNotSaturdayText:
 	text "Santos: Today's"
 	line "not Saturday…"
 	done
 
-.MeetText:
+SantosMeetText:
 	text "Santos: …"
 
 	para "It's Saturday…"
@@ -139,11 +157,11 @@ SantosScript:
 	line "Saturday…"
 	done
 
-.GivesGiftText:
+SantosGivesGiftText:
 	text "You can have this…"
 	done
 
-.SaturdayText:
+SantosSaturdayText:
 	text "Santos: …"
 
 	para "See you again on"
@@ -153,13 +171,7 @@ SantosScript:
 	line "more gifts…"
 	done
 
-BlackthornDragonTamer1Script:
-	checkevent EVENT_BEAT_CLAIR
-	iftrue_jumptextfaceplayer .ClairIsBeatenText
-	checkevent EVENT_CLEARED_RADIO_TOWER
-	iftrue_jumptextfaceplayer .ClairIsInText
-	jumpthistextfaceplayer
-
+BlackthornDragonTamer1DefaultText:
 	text "I am sorry."
 
 	para "Clair, our Gym"
@@ -173,7 +185,7 @@ BlackthornDragonTamer1Script:
 	cont "will return."
 	done
 
-.ClairIsInText:
+BlackthornDragonTamer1ClairIsInText:
 	text "Clair, our Gym"
 	line "Leader, is waiting"
 	cont "for you."
@@ -185,7 +197,7 @@ BlackthornDragonTamer1Script:
 	line "trainer to win."
 	done
 
-.ClairIsBeatenText:
+BlackthornDragonTamer1ClairIsBeatenText:
 	text "You defeated"
 	line "Clair?"
 
@@ -198,17 +210,13 @@ BlackthornDragonTamer1Script:
 	line "her cousin Lance."
 	done
 
-BlackthornBlackbeltScript:
-	checkevent EVENT_CLEARED_RADIO_TOWER
-	iftrue_jumptextfaceplayer .Text2
-	jumpthistextfaceplayer
-
+BlackthornBlackbeltText1:
 	text "My radio's busted?"
 	line "Lately, I only get"
 	cont "this weird signal."
 	done
 
-.Text2:
+BlackthornBlackbeltText2:
 	text "Arooo! Voices in"
 	line "my head!"
 
@@ -286,3 +294,5 @@ BlackthornDragonTamer3Text:
 	line "er's cousin, you"
 	cont "know!"
 	done
+
+endc

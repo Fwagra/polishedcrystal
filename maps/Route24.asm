@@ -115,6 +115,11 @@ Route24RocketScript:
 	playmusic MUSIC_NUGGET_BRIDGE_HGSS
 	end
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/Route24.asm"
+
+else
+
 Route24RocketSeenText:
 	text "Hey, kid! Me am a"
 	line "Team Rocket member"
@@ -215,3 +220,5 @@ Route24AdvancedTipsSignText:
 	para "by a held Life Orb"
 	line "is ignored!"
 	done
+
+endc

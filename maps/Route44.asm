@@ -423,6 +423,11 @@ GenericTrainerCooltrainermAllen:
 	line "me."
 	done
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/Route44.asm"
+
+else
+
 FisherWilton1SeenText:
 	text "Aack! You made me"
 	line "lose a Poliwag!"
@@ -566,3 +571,5 @@ Route44Sign2Text:
 	para "Mahogany Town -"
 	line "Blackthorn City"
 	done
+
+endc

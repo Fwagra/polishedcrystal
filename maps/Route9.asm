@@ -81,6 +81,11 @@ GenericTrainerHikerSidney:
 	cont "river."
 	done
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/Route9.asm"
+
+else
+
 CamperDeanSeenText:
 	text "I came to explore"
 	line "Rock Tunnel."
@@ -173,3 +178,5 @@ Route9AdvancedTipsSignText:
 	para "an advantage by"
 	line "boosting Attack!"
 	done
+
+endc

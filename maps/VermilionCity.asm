@@ -213,6 +213,11 @@ VermilionCitySuperNerd2Script:
 	cont "it's useless!"
 	done
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/VermilionCity.asm"
+
+else
+
 VermilionCityBadgeGuyBattleEdgeText:
 	text "Having a variety"
 	line "of #mon types"
@@ -453,3 +458,5 @@ VermilionCityBattleFactorySignText:
 	para "Win it All with"
 	line "Rental #mon!"
 	done
+
+endc

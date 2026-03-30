@@ -245,6 +245,11 @@ Route35NationalParkGateTutorCharmScript:
 	line "cuter already!"
 	done
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/Route35NationalParkGate.asm"
+
+else
+
 Route35NationalParkGateOfficer1AskToParticipateText:
 	text "Today's "
 	text_ram wStringBuffer3
@@ -484,3 +489,5 @@ Text_Route35NationalParkGateTutorQuestion:
 	para "can I teach Charm?"
 	line "Pretty please?"
 	done
+
+endc

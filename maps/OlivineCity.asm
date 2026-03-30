@@ -169,6 +169,11 @@ OlivineCityMovementData_RivalLeavesLighthouse:
 	step_left
 	step_end
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/OlivineCity.asm"
+
+else
+
 OlivineCityRivalGymText:
 	text "…"
 
@@ -418,3 +423,5 @@ OlivineCityBattleTowerSignText:
 OlivineCityCafeSignText:
 	text "Olivine Café"
 	done
+
+endc

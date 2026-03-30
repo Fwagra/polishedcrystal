@@ -119,6 +119,11 @@ Route25CooltrainerMovementData:
 	step_right
 	step_end
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/Route25.asm"
+
+else
+
 SchoolboyDudleySeenText:
 	text "Beat the six of us"
 	line "trainers to win a"
@@ -268,3 +273,5 @@ NuggetBridgeNotClearedText:
 	line "just below us back"
 	cont "to Route 24."
 	done
+
+endc

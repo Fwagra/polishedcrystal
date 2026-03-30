@@ -151,6 +151,11 @@ ShamoutiShrineRuinsLawrenceScript:
 	para "Farewell."
 	done
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/ShamoutiShrineRuins.asm"
+
+else
+
 ShamoutiShrineRuinsGrampsText:
 	text "This shrine was"
 	line "magnificent when"
@@ -187,3 +192,5 @@ ShamoutiShrineRuinsLadyText:
 	line "a talking #mon"
 	cont "here somewhere."
 	done
+
+endc

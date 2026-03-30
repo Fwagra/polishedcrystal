@@ -138,6 +138,11 @@ KukuiScript:
 	para "I respect that!"
 	done
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/Route22.asm"
+
+else
+
 Route22CooltrainerfText:
 	text "The name “Kanto”"
 	line "means “east of the"
@@ -168,3 +173,5 @@ Route22AdvancedTipsSignText:
 	para "any #mon stored"
 	line "in the PC!"
 	done
+
+endc

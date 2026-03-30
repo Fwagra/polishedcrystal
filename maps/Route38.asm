@@ -270,6 +270,11 @@ GenericTrainerBeautyOlivia:
 	cont "a time!"
 	done
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/Route38.asm"
+
+else
+
 Bird_keeperTobySeenText:
 	text "Fly high into the"
 	line "sky, my beloved"
@@ -406,3 +411,5 @@ Route38AdvancedTipsText:
 	para "A button does"
 	line "for #mon!"
 	done
+
+endc

@@ -47,6 +47,11 @@ FuchsiaCityFlyPoint:
 	setflag ENGINE_FLYPOINT_FUCHSIA
 	endcallback
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/FuchsiaCity.asm"
+
+else
+
 FuchsiaCityYoungsterText:
 	text "One of the Elite"
 	line "Four used to be"
@@ -162,3 +167,5 @@ FuchsiaCityCarefulSwimmingSignText:
 
 	para "Fuchsia Police"
 	done
+
+endc

@@ -37,6 +37,11 @@ VictoryRoadGateBadgeCheckScript:
 	setscene $1
 	end
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/PokemonLeagueGate.asm"
+
+else
+
 VictoryRoadGateOfficerText:
 	text "Only trainers who"
 	line "have proven them-"
@@ -71,3 +76,5 @@ VictoryRoadGateRightBlackBeltText:
 	para "scary, and they're"
 	line "ready for you!"
 	done
+
+endc

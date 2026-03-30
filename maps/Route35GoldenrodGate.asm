@@ -85,6 +85,11 @@ Route35GoldenrodGatePokefanFScript:
 .aftersudowoodo
 	jumpopenedtext Route35GoldenrodGatePokefanFText_FoughtSudowoodo
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/Route35GoldenrodGate.asm"
+
+else
+
 Route35GoldenrodGateRandyAskTakeThisMonToMyFriendText:
 	text "Excuse me, kid!"
 	line "Can you do a guy"
@@ -185,3 +190,5 @@ Route35GoldenrodGateFisherText:
 	para "there were 150"
 	line "different kinds."
 	done
+
+endc

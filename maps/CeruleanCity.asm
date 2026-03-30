@@ -104,6 +104,11 @@ CeruleanCityYoungsterScript:
 	turnobject CERULEANCITY_YOUNGSTER, LEFT
 	jumptext CeruleanCityYoungsterText2
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/CeruleanCity.asm"
+
+else
+
 CeruleanCityCooltrainerMText1:
 	text "Kanto's Power"
 	line "Plant?"
@@ -266,3 +271,5 @@ CeruleanTrainerTipsText:
 	para "beneath rocks,"
 	line "or under water."
 	done
+
+endc

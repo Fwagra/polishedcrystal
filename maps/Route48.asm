@@ -108,6 +108,11 @@ Archer2Script:
 	disappear ROUTE48_NURSE
 	end
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/Route48.asm"
+
+else
+
 Route48JessieJamesSeenText:
 	text "Stop right there,"
 	line "twerp!"
@@ -206,3 +211,5 @@ Route48YellowForestSignText:
 	para "North to"
 	line "Yellow Forest"
 	done
+
+endc

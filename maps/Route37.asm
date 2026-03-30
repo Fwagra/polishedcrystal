@@ -109,6 +109,11 @@ GenericTrainerBeautyCassandra:
 	line "young…"
 	done
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/Route37.asm"
+
+else
+
 TwinsToriandtil1SeenText:
 	text "Til: Tori and I"
 	line "are in this to-"
@@ -222,3 +227,5 @@ BeautyCassandraBeatenText:
 Route37SignText:
 	text "Route 37"
 	done
+
+endc

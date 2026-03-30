@@ -158,6 +158,10 @@ VioletCitySpinningEarl_MovementData:
 	turn_head_down
 	step_end
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/VioletCity.asm"
+else
+
 Text_EarlAsksIfYouBeatFalkner:
 	text "Hello!"
 	line "You are trainer?"
@@ -300,3 +304,5 @@ EarlsPokemonAcademySignText:
 	text "Earl's #mon"
 	line "Academy"
 	done
+
+endc

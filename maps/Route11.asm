@@ -37,6 +37,11 @@ GenericTrainerYoungsterOwen:
 	line "this at all."
 	done
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/Route11.asm"
+
+else
+
 YoungsterOwenSeenText:
 	text "There's no cheat-"
 	line "ing in #mon."
@@ -226,3 +231,5 @@ GenericTrainerGuitaristfRitsuko:
 Route11SignText:
 	text "Route 11"
 	done
+
+endc

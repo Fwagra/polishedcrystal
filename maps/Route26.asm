@@ -271,6 +271,11 @@ GenericTrainerDragonTamerErick:
 	cont "way through it."
 	done
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/Route26.asm"
+
+else
+
 DragonTamerKazuSeenText:
 	text "I'm making my"
 	line "final preparations"
@@ -404,3 +409,5 @@ Route26SignText:
 	para "#mon League"
 	line "Reception Gate"
 	done
+
+endc

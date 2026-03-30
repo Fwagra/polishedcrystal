@@ -392,6 +392,11 @@ GenericTrainerCamperQuentin:
 	line "there, but…"
 	done
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/Route45.asm"
+
+else
+
 BattleGirlNozomiSeenText:
 	text "This is no place"
 	line "for weak #mon!"
@@ -558,3 +563,5 @@ Route45SignText:
 	text "Route 45"
 	line "Mountain Rd. Ahead"
 	done
+
+endc

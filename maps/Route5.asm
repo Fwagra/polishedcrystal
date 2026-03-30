@@ -18,6 +18,11 @@ Route5_MapScriptHeader:
 	def_object_events
 	object_event 17, 28, SPRITE_POKEFAN_M, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, PAL_NPC_BROWN, OBJECTTYPE_COMMAND, jumptextfaceplayer, Route5PokefanMText, EVENT_ROUTE_5_6_POKEFAN_M_BLOCKS_UNDERGROUND_PATH
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/Route5.asm"
+
+else
+
 Route5PokefanMText:
 	text "The road is closed"
 	line "until the problem"
@@ -48,3 +53,5 @@ Route5AdvancedTipsSignText:
 	para "Ability won't"
 	line "get confused!"
 	done
+
+endc

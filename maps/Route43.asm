@@ -475,6 +475,11 @@ PicnickerTiffany1Script:
 .PackFull:
 	jumpstd packfullf
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/Route43.asm"
+
+else
+
 PokemaniacBenSeenText:
 	text "I love #mon!"
 
@@ -670,3 +675,5 @@ Route43AdvancedTipsText:
 	line "offspring with a"
 	cont "hidden Ability!"
 	done
+
+endc

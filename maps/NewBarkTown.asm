@@ -235,6 +235,10 @@ Movement_LyraSaysGoodbye3_NBT:
 	step_down
 	step_end
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/NewBarkTown.asm"
+else
+
 Text_GearIsImpressive:
 	text "Wow, your #gear"
 	line "is impressive!"
@@ -422,3 +426,5 @@ ElmsLabSignText:
 LyrasHouseSignText:
 	text "Lyra's House"
 	done
+
+endc

@@ -109,6 +109,11 @@ GenericTrainerLassRose:
 	cont "#mon Center!"
 	done
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/Route35CoastSouth.asm"
+
+else
+
 SwimmermWalterSeenText:
 	text "I forgot to wear"
 	line "sunscreen, so I'm"
@@ -212,3 +217,5 @@ LassRoseBeatenText:
 	line "I went around the"
 	cont "world for these!"
 	done
+
+endc

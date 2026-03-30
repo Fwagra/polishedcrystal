@@ -17,6 +17,11 @@ Route31VioletGate_MapScriptHeader:
 	object_event  5,  2, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, PAL_NPC_RED, OBJECTTYPE_COMMAND, jumptextfaceplayer, Route31VioletGateOfficerText, -1
 	object_event  1,  2, SPRITE_BATTLE_GIRL, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, PAL_NPC_BLUE, OBJECTTYPE_COMMAND, jumptextfaceplayer, Route31VioletGateCooltrainerFText, -1
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/Route31VioletGate.asm"
+
+else
+
 Route31VioletGateOfficerText:
 	text "Hi there!"
 	line "Did you visit"
@@ -28,3 +33,5 @@ Route31VioletGateCooltrainerFText:
 	line "out. I'd better"
 	cont "phone home!"
 	done
+
+endc

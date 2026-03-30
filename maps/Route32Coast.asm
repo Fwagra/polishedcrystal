@@ -263,6 +263,11 @@ GenericTrainerCoupleFoxandrae2:
 	line "beat Fox and me?"
 	done
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/Route32Coast.asm"
+
+else
+
 Route32CoastLassText:
 	text "Pant, pant…"
 
@@ -293,3 +298,5 @@ Route32CoastUnionCaveSignText:
 	text "Union Cave"
 	line "Ahead"
 	done
+
+endc

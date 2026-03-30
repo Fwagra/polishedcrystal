@@ -596,17 +596,6 @@ TrainerCooltrainerfKate:
 	setevent EVENT_GOT_POWER_HERB_FROM_KATE
 	jumpthisopenedtext
 
-CooltrainerfKateAfterText:
-	text "Kate: I'm sorry we"
-	line "jumped you."
-
-	para "We never expected"
-	line "anyone to find us"
-
-	para "here. You sure"
-	line "startled us."
-	done
-
 Route34MovementData_DayCareManWalksBackInside_WalkAroundPlayer:
 	slow_step_up
 	slow_step_right
@@ -623,6 +612,22 @@ Route34MovementData_LyraEntersDayCare:
 	step_right
 	step_right
 	step_end
+
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/Route34.asm"
+
+else
+
+CooltrainerfKateAfterText:
+	text "Kate: I'm sorry we"
+	line "jumped you."
+
+	para "We never expected"
+	line "anyone to find us"
+
+	para "here. You sure"
+	line "startled us."
+	done
 
 Route34LyraText_Grandpa:
 	text "Lyra: Grandpa!"
@@ -908,3 +913,5 @@ DayCareSignText:
 	para "Let Us Raise Your"
 	line "#mon For You!"
 	done
+
+endc

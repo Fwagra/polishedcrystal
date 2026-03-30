@@ -152,12 +152,7 @@ CherrygroveRivalTriggerNorth:
 CherrygroveYoungsterScript:
 	checkflag ENGINE_POKEDEX
 	iftrue_jumptextfaceplayer CherrygroveYoungsterText_HavePokedex
-	jumpthistextfaceplayer
-
-	text "Mr.#mon's house"
-	line "is still farther"
-	cont "up ahead."
-	done
+	jumptextfaceplayer CherrygroveYoungsterText_NoPokedex
 
 MysticWaterGuy:
 	checkevent EVENT_GOT_MYSTIC_WATER_IN_CHERRYGROVE
@@ -170,11 +165,6 @@ MysticWaterGuy:
 	iffalse_endtext
 	setevent EVENT_GOT_MYSTIC_WATER_IN_CHERRYGROVE
 	jumpthisopenedtext
-
-MysticWaterGuyTextAfter:
-	text "Back to fishing"
-	line "for me, then."
-	done
 
 GuideGentMovement1:
 	step_left
@@ -269,6 +259,10 @@ CherrygroveCity_RivalComesBack:
 	run_step_right
 	turn_head_down
 	step_end
+
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/CherrygroveCity.asm"
+else
 
 GuideGentIntroText:
 	text "You're a rookie"
@@ -471,3 +465,16 @@ CherrygroveCityAdvancedTipsSignText:
 	line "every purchase of"
 	cont "ten # Balls!"
 	done
+
+CherrygroveYoungsterText_NoPokedex:
+	text "Mr.#mon's house"
+	line "is still farther"
+	cont "up ahead."
+	done
+
+MysticWaterGuyTextAfter:
+	text "Back to fishing"
+	line "for me, then."
+	done
+
+endc

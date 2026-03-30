@@ -119,6 +119,11 @@ Route19Fisher2Script:
 	iffalse_jumptextfaceplayer Route19EngineerText1
 	jumptextfaceplayer Route19EngineerText2
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/Route19.asm"
+
+else
+
 SwimmerfDawnSeenText:
 	text "I'm disgusted by"
 	line "wimpy people!"
@@ -222,3 +227,5 @@ CarefulSwimmingSignText:
 
 	para "Fuchsia Police"
 	done
+
+endc

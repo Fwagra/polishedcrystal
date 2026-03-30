@@ -166,6 +166,11 @@ LavenderTownFinishExpositionScript:
 	big_step_up
 	step_end
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/LavenderTown.asm"
+
+else
+
 LavenderTownSignText:
 	text "Lavender Town"
 
@@ -252,3 +257,5 @@ LavenderTownRockerText:
 	para "going back there"
 	line "until it's safe."
 	done
+
+endc

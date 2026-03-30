@@ -17,6 +17,11 @@ Route36RuinsOfAlphGate_MapScriptHeader:
 	object_event  0,  4, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, PAL_NPC_RED, OBJECTTYPE_COMMAND, jumptextfaceplayer, Route36RuinsOfAlphGateOfficerText, -1
 	object_event  7,  5, SPRITE_GRAMPS, SPRITEMOVEDATA_WANDER, 2, 1, -1, 0, OBJECTTYPE_COMMAND, jumptextfaceplayer, Route36RuinsOfAlphGateGrampsText, -1
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/Route36RuinsOfAlphGate.asm"
+
+else
+
 Route36RuinsOfAlphGateOfficerText:
 	text "Don't you wonder"
 	line "who'd make some-"
@@ -35,3 +40,5 @@ Route36RuinsOfAlphGateGrampsText:
 	para "are visiting the"
 	line "Ruins of Alph."
 	done
+
+endc

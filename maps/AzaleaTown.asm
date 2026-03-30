@@ -76,13 +76,13 @@ AzaleaTownRivalBattleTrigger2:
 	faceobject AZALEATOWN_RIVAL, PLAYER
 	faceobject PLAYER, AZALEATOWN_RIVAL
 	playmusic MUSIC_RIVAL_ENCOUNTER
-	showtext .SeenText
+	showtext AzaleaTownRivalBeforeText
 	setevent EVENT_RIVAL_AZALEA_TOWN
 	checkevent EVENT_GOT_TOTODILE_FROM_ELM
 	iftruefwd .Totodile
 	checkevent EVENT_GOT_CHIKORITA_FROM_ELM
 	iftruefwd .Chikorita
-	winlosstext .WinText, .LossText
+	winlosstext AzaleaTownRivalWinText, AzaleaTownRivalLossText
 	setlasttalked AZALEATOWN_RIVAL
 	loadtrainer RIVAL1, RIVAL1_6
 	startbattle
@@ -91,7 +91,7 @@ AzaleaTownRivalBattleTrigger2:
 	sjumpfwd .AfterBattle
 
 .Totodile:
-	winlosstext .WinText, .LossText
+	winlosstext AzaleaTownRivalWinText, AzaleaTownRivalLossText
 	setlasttalked AZALEATOWN_RIVAL
 	loadtrainer RIVAL1, RIVAL1_4
 	startbattle
@@ -100,7 +100,7 @@ AzaleaTownRivalBattleTrigger2:
 	sjumpfwd .AfterBattle
 
 .Chikorita:
-	winlosstext .WinText, .LossText
+	winlosstext AzaleaTownRivalWinText, AzaleaTownRivalLossText
 	setlasttalked AZALEATOWN_RIVAL
 	loadtrainer RIVAL1, RIVAL1_5
 	startbattle
@@ -111,7 +111,7 @@ AzaleaTownRivalBattleTrigger2:
 .AfterBattle:
 	special DeleteSavedMusic
 	playmusic MUSIC_RIVAL_AFTER
-	showtext .AfterText
+	showtext AzaleaTownRivalAfterText
 	turnobject PLAYER, LEFT
 	applymovement AZALEATOWN_RIVAL, .ExitMovement
 	playsound SFX_EXIT_BUILDING
@@ -121,69 +121,6 @@ AzaleaTownRivalBattleTrigger2:
 	waitsfx
 	playmapmusic
 	end
-
-.SeenText:
-	text "…Tell me some-"
-	line "thing."
-
-	para "Is it true that"
-	line "Team Rocket has"
-	cont "returned?"
-
-	para "What? You beat"
-	line "them? Hah! Quit"
-	cont "lying."
-
-	para "You're not joking?"
-	line "Then let's see how"
-	cont "good you are."
-	done
-
-.WinText:
-	text "…Humph! Useless"
-	line "#mon!"
-
-	para "Listen, you. You"
-	line "only won because"
-
-	para "my #mon were"
-	line "weak."
-	done
-
-.LossText:
-	text "…Humph! I knew"
-	line "you were lying."
-	done
-
-.AfterText:
-	text "I hate the weak."
-
-	para "#mon, trainers."
-	line "It doesn't matter"
-	cont "who or what."
-
-	para "I'm going to be"
-	line "strong and wipe"
-	cont "out the weak."
-
-	para "That goes for Team"
-	line "Rocket too."
-
-	para "They act big and"
-	line "tough in a group."
-
-	para "But get them"
-	line "alone, and they're"
-	cont "weak."
-
-	para "I hate them all."
-
-	para "You stay out of my"
-	line "way. A weakling"
-
-	para "like you is only a"
-	line "distraction."
-	done
 
 .ApproachMovement:
 	step_left
@@ -203,18 +140,10 @@ AzaleaTownRivalBattleTrigger2:
 AzaleaTown_CelebiTrigger:
 	applymovement PLAYER, .WalkOutOfKurtsHouseMovement
 	opentext
-	writethistext
-		text "Ilex Forest is"
-		line "restless!"
-
-		para "What is going on?"
-		done
+	writetext AzaleaTownCelebiText1
 	promptbutton
 	turnobject AZALEATOWN_KURT, RIGHT
-	writethistext
-		text "<PLAYER>, here's"
-		line "your GS Ball back!"
-		done
+	writetext AzaleaTownCelebiText2
 	promptbutton
 	writetext AzaleaTownKurtText
 	waitbutton
@@ -232,6 +161,54 @@ AzaleaTown_CelebiTrigger:
 	step_up
 	turn_head_left
 	step_end
+
+AzaleaTownGrampsScript:
+	checkevent EVENT_CLEARED_SLOWPOKE_WELL
+	iftrue_jumptextfaceplayer AzaleaTownGrampsTextAfter
+	jumptextfaceplayer AzaleaTownGrampsTextBefore
+
+AzaleaTownTeacherScript:
+	checkevent EVENT_CLEARED_SLOWPOKE_WELL
+	iffalse_jumptextfaceplayer AzaleaTownTeacherText1
+	checkevent EVENT_GOT_CLEAR_AMULET_IN_AZALEA
+	iftrue_jumptextfaceplayer AzaleaTownTeacherText2
+	faceplayer
+	opentext
+	writetext AzaleaTownTeacherText3
+	promptbutton
+	verbosegiveitem CLEAR_AMULET
+	iffalse_endtext
+	setevent EVENT_GOT_CLEAR_AMULET_IN_AZALEA
+	jumpopenedtext AzaleaTownTeacherText3
+
+AzaleaTownSlowpokeScript:
+	opentext
+	writetext AzaleaTownSlowpokeText1
+	pause 60
+	writetext AzaleaTownSlowpokeText2
+	cry SLOWPOKE
+	waitendtext
+
+AzaleaTownKurtScript:
+	showtextfaceplayer AzaleaTownKurtText
+	turnobject LAST_TALKED, LEFT
+	end
+
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/AzaleaTown.asm"
+else
+
+AzaleaTownCelebiText1:
+	text "Ilex Forest is"
+	line "restless!"
+
+	para "What is going on?"
+	done
+
+AzaleaTownCelebiText2:
+	text "<PLAYER>, here's"
+	line "your GS Ball back!"
+	done
 
 AzaleaTownSignText:
 	text "Azalea Town"
@@ -297,81 +274,6 @@ AzaleaTownAdvancedTipsSignText:
 	line "style does not!"
 	done
 
-AzaleaTownGrampsScript:
-	checkevent EVENT_CLEARED_SLOWPOKE_WELL
-	iftrue_jumptextfaceplayer .Text2
-	jumpthistextfaceplayer
-
-	text "The Slowpoke have"
-	line "disappeared from"
-	cont "town…"
-
-	para "I heard their"
-	line "Tails are being"
-	cont "sold somewhere."
-	done
-
-.Text2:
-	text "The Slowpoke have"
-	line "returned."
-
-	para "Knowing them, they"
-	line "could've just been"
-
-	para "goofing off some-"
-	line "where."
-	done
-
-AzaleaTownTeacherScript:
-	checkevent EVENT_CLEARED_SLOWPOKE_WELL
-	iffalse_jumptextfaceplayer .Text1
-	checkevent EVENT_GOT_CLEAR_AMULET_IN_AZALEA
-	iftrue_jumptextfaceplayer .Text2
-	faceplayer
-	opentext
-	writetext .Text3
-	promptbutton
-	verbosegiveitem CLEAR_AMULET
-	iffalse_endtext
-	setevent EVENT_GOT_CLEAR_AMULET_IN_AZALEA
-	jumpthisopenedtext
-
-.Text2:
-	text "He has changed,"
-	line "but he'll always be"
-
-	para "my little Wooster"
-	line "to me."
-	done
-
-.Text1:
-	text "It hasn't rained"
-	line "since the Slow-"
-	cont "poke vanished."
-
-	para "My poor Wooster"
-	line "can't thrive in"
-	cont "this weather…"
-	done
-
-.Text3:
-	text "In a sudden down-"
-	line "pour, my Wooster"
-	cont "evolved!"
-
-	para "Oh? You brought"
-	line "the Slowpoke back?"
-
-	para "They brought the"
-	line "rain with them!"
-
-	para "Thank you so"
-	line "much!"
-
-	para "Please take this,"
-	line "you deserve it!"
-	done
-
 AzaleaTownWoosterText:
 	text "Wooster: Gugyoo…"
 	done
@@ -410,27 +312,140 @@ AzaleaTownRocket2Text:
 	line "told you that?"
 	done
 
-AzaleaTownSlowpokeScript:
-	opentext
-	writethistext
-		text "Slowpoke: …"
-
-		para "…… …… ……"
-		done
-	pause 60
-	writethistext
-		text "…… ……Yawn?"
-		done
-	cry SLOWPOKE
-	waitendtext
-
-AzaleaTownKurtScript:
-	showtextfaceplayer AzaleaTownKurtText
-	turnobject LAST_TALKED, LEFT
-	end
-
 AzaleaTownKurtText:
 	text "Could you go see"
 	line "why Ilex Forest is"
 	cont "so restless?"
 	done
+
+AzaleaTownGrampsTextBefore:
+	text "The Slowpoke have"
+	line "disappeared from"
+	cont "town…"
+
+	para "I heard their"
+	line "Tails are being"
+	cont "sold somewhere."
+	done
+
+AzaleaTownGrampsTextAfter:
+	text "The Slowpoke have"
+	line "returned."
+
+	para "Knowing them, they"
+	line "could've just been"
+
+	para "goofing off some-"
+	line "where."
+	done
+
+AzaleaTownTeacherText1:
+	text "It hasn't rained"
+	line "since the Slow-"
+	cont "poke vanished."
+
+	para "My poor Wooster"
+	line "can't thrive in"
+	cont "this weather…"
+	done
+
+AzaleaTownTeacherText2:
+	text "He has changed,"
+	line "but he'll always be"
+
+	para "my little Wooster"
+	line "to me."
+	done
+
+AzaleaTownTeacherText3:
+	text "In a sudden down-"
+	line "pour, my Wooster"
+	cont "evolved!"
+
+	para "Oh? You brought"
+	line "the Slowpoke back?"
+
+	para "They brought the"
+	line "rain with them!"
+
+	para "Thank you so"
+	line "much!"
+
+	para "Please take this,"
+	line "you deserve it!"
+	done
+
+AzaleaTownSlowpokeText1:
+	text "Slowpoke: …"
+
+	para "…… …… ……"
+	done
+
+AzaleaTownSlowpokeText2:
+	text "…… ……Yawn?"
+	done
+
+AzaleaTownRivalBeforeText:
+	text "…Tell me some-"
+	line "thing."
+
+	para "Is it true that"
+	line "Team Rocket has"
+	cont "returned?"
+
+	para "What? You beat"
+	line "them? Hah! Quit"
+	cont "lying."
+
+	para "You're not joking?"
+	line "Then let's see how"
+	cont "good you are."
+	done
+
+AzaleaTownRivalWinText:
+	text "…Humph! Useless"
+	line "#mon!"
+
+	para "Listen, you. You"
+	line "only won because"
+
+	para "my #mon were"
+	line "weak."
+	done
+
+AzaleaTownRivalLossText:
+	text "…Humph! I knew"
+	line "you were lying."
+	done
+
+AzaleaTownRivalAfterText:
+	text "I hate the weak."
+
+	para "#mon, trainers."
+	line "It doesn't matter"
+	cont "who or what."
+
+	para "I'm going to be"
+	line "strong and wipe"
+	cont "out the weak."
+
+	para "That goes for Team"
+	line "Rocket too."
+
+	para "They act big and"
+	line "tough in a group."
+
+	para "But get them"
+	line "alone, and they're"
+	cont "weak."
+
+	para "I hate them all."
+
+	para "You stay out of my"
+	line "way. A weakling"
+
+	para "like you is only a"
+	line "distraction."
+	done
+
+endc

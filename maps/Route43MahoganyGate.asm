@@ -28,8 +28,15 @@ Route43MahoganyGateOfficer:
 	line "here lately."
 	done
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/Route43MahoganyGate.asm"
+
+else
+
 Route43MahoganyGateOfficerRocketsClearedText:
 	text "Nobody goes up to"
 	line "Lake of Rage these"
 	cont "days."
 	done
+
+endc

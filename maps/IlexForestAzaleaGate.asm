@@ -43,6 +43,11 @@ ProfOaksAide1Script:
 .NoRoom
 	jumpopenedtext ProfOaksAide1NoRoomText
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/IlexForestAzaleaGate.asm"
+
+else
+
 IlexForestAzaleaGateOfficerText:
 	text "Ilex Forest is"
 	line "big. Be careful!"
@@ -119,3 +124,5 @@ ProfOaksAide1ExplainText:
 	para "Use it to com-"
 	line "plete the #dex!"
 	done
+
+endc

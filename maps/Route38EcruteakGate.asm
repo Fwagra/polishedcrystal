@@ -42,6 +42,11 @@ ProfOaksAide2Script:
 .NoRoom
 	jumpopenedtext ProfOaksAide2NoRoomText
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/Route38EcruteakGate.asm"
+
+else
+
 Route38EcruteakGateOfficerText:
 	text "Where did you say"
 	line "you're from?"
@@ -118,3 +123,5 @@ ProfOaksAide2ExplainText:
 	para "Use it to com-"
 	line "plete the #dex!"
 	done
+
+endc

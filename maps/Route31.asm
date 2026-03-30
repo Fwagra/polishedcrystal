@@ -351,6 +351,10 @@ ReceivedSpearowMailText:
 	next "to another road@"
 	setcharmap default
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/Route31.asm"
+else
+
 Bug_catcherWade1SeenText:
 	text "I caught a bunch"
 	line "of #mon. Let me"
@@ -512,3 +516,5 @@ Route31AdvancedTipsSignText:
 	line "the Bag to sort"
 	cont "an item pocket!"
 	done
+
+endc

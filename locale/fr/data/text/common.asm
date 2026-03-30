@@ -2333,9 +2333,9 @@ _AskItemMoveText::
 
 SECTION "Text_AreYouABoyOrAreYouAGirl", ROMX
 Text_AreYouABoyOrAreYouAGirl::
-	text "Quelle photo figure"
-	line "sur votre carte"
-	cont "de Dresseur ?"
+	text "Quelle photo choi-"
+	line "sis-tu pour ta"
+	cont "carte de Dresseur?"
 	done
 
 SECTION "Text_SoThisIsYou", ROMX

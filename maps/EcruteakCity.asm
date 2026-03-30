@@ -66,6 +66,11 @@ EcruteakCityFisherScript:
 	iftrue_jumptextfaceplayer EcruteakCityFisherText_JasmineReturned
 	jumptextfaceplayer EcruteakCityFisherText
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/EcruteakCity.asm"
+
+else
+
 EcruteakCityGramps1Text:
 	text "Ecruteak used to"
 	line "have two towers:"
@@ -259,3 +264,5 @@ EcruteakBarrierStationSign:
 	para "No Trespassing by"
 	line "the Unworthy"
 	done
+
+endc

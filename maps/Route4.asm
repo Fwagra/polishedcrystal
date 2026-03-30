@@ -145,6 +145,11 @@ Route4EngineerScript:
 	turnobject LAST_TALKED, UP
 	end
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/Route4.asm"
+
+else
+
 YoungsterOliverSeenText:
 	text "Hi! What's your"
 	line "name? Where are"
@@ -300,3 +305,5 @@ CableCarSignText:
 	text "Cable Car to"
 	line "Mt.Moon Square"
 	done
+
+endc

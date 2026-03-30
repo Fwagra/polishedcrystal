@@ -90,6 +90,11 @@ CeladonCityTutorSwaggerScript:
 	takeitem SILVER_LEAF
 	jumpopenedtext Text_CeladonCityTutorTaught
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/CeladonCity.asm"
+
+else
+
 CeladonCityRichBoyText:
 	text "Is my suit not"
 	line "bedazzling?"
@@ -354,3 +359,5 @@ CeladonCityTrainerTips2Text:
 	cont "of day, and"
 	cont "Evolution stones."
 	done
+
+endc

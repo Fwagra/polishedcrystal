@@ -108,6 +108,11 @@ GenericTrainerLassMeadow:
 	line "being competitive."
 	done
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/Route8.asm"
+
+else
+
 Route8BikerDwayneProtestText:
 	text "We're the Kanto"
 	line "#mon Federation"
@@ -243,3 +248,5 @@ Route8UndergroundPathSignText:
 	para "It's impossible to"
 	line "read…"
 	done
+
+endc

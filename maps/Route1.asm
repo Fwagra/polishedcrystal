@@ -53,6 +53,11 @@ GenericTrainerCooltrainerfQuinn:
 	line "have trained hard."
 	done
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/Route1.asm"
+
+else
+
 SchoolboyDannySeenText:
 	text "If trainers meet,"
 	line "the first thing to"
@@ -103,3 +108,5 @@ Route1SignText:
 	para "Pallet Town -"
 	line "Viridian City"
 	done
+
+endc

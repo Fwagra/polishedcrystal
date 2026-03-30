@@ -289,6 +289,11 @@ TrainerPokefanfJaime:
 .NotNight:
 	jumpopenedtext PokefanfJaimeHopeItGetsDarkText
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/Route39.asm"
+
+else
+
 Route39MiltankText:
 	text "Miltank: Mooo!"
 	done
@@ -494,3 +499,5 @@ Route39TrainerTipsText:
 	para "Use Headbutt on"
 	line "any tree you see!"
 	done
+
+endc

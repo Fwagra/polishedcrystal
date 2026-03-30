@@ -16,6 +16,11 @@ Route42EcruteakGate_MapScriptHeader:
 	def_object_events
 	object_event  5,  2, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, PAL_NPC_RED, OBJECTTYPE_COMMAND, jumptextfaceplayer, Route42EcruteakGateOfficerText, -1
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/Route42EcruteakGate.asm"
+
+else
+
 Route42EcruteakGateOfficerText:
 	text "Mt.Mortar is like"
 	line "a maze inside."
@@ -23,3 +28,5 @@ Route42EcruteakGateOfficerText:
 	para "Be careful. Don't"
 	line "get lost in there."
 	done
+
+endc

@@ -35,6 +35,11 @@ GenericTrainerSwimmerfNikki:
 	cont "caused by the sun."
 	done
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/Route21.asm"
+
+else
+
 SwimmerfNikkiSeenText:
 	text "If I win, you have"
 	line "to help me with my"
@@ -271,4 +276,6 @@ GenericTrainerBird_keeperEaston:
 	text "I couldn't handle"
 	line "it…"
 	done
+
+endc
 

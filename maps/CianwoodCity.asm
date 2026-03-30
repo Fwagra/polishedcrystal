@@ -137,6 +137,11 @@ CianwoodCityEusineDepartMovement:
 	step_down
 	step_end
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/CianwoodCity.asm"
+
+else
+
 ChucksWifeEasierToFlyText:
 	text "You crossed the"
 	line "sea to get here?"
@@ -361,3 +366,5 @@ CianwoodAdvancedTipsSignText:
 	line "back the original"
 	cont "# Ball!"
 	done
+
+endc

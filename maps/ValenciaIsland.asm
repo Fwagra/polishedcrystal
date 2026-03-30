@@ -26,6 +26,11 @@ ValenciaIslandFlyPoint:
 	setflag ENGINE_FLYPOINT_VALENCIA
 	endcallback
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/ValenciaIsland.asm"
+
+else
+
 ValenciaIslandCooltrainermText:
 	text "A couple of strong"
 	line "trainers live in"
@@ -81,3 +86,5 @@ IvysLabSignText:
 IvysHouseSignText:
 	text "Ivy's House"
 	done
+
+endc

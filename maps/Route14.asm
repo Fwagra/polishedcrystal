@@ -37,6 +37,11 @@ GenericTrainerPokefanmTrevor:
 	line "check its stats!"
 	done
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/Route14.asm"
+
+else
+
 PokefanmTrevorSeenText:
 	text "Hi. Did you know…?"
 
@@ -199,4 +204,6 @@ GenericTrainerTeacherClarice:
 	line "concludes today's"
 	cont "battle."
 	done
+
+endc
 

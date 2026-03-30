@@ -111,6 +111,11 @@ GenericTrainerTwinsKayandtia2:
 	line "Tia! Absolutely!"
 	done
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/Route15.asm"
+
+else
+
 TeacherColetteSeenText:
 	text "Have you forgotten"
 	line "anything?"
@@ -234,3 +239,5 @@ Route15SignText:
 	para "Fuchsia City -"
 	line "Lavender Town"
 	done
+
+endc

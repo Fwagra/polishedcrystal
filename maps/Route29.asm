@@ -167,6 +167,10 @@ LyraMovementData3:
 	step_left
 	step_end
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/Route29.asm"
+else
+
 CatchingTutorialIntroText:
 	text "Lyra: <PLAYER>!"
 
@@ -331,3 +335,5 @@ Route29AdvancedTipsSignText:
 	line "reset the initial"
 	cont "game options!"
 	done
+
+endc

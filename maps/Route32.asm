@@ -726,6 +726,10 @@ Movement_Route32CooltrainerMReset:
 	step_right
 	step_end
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/Route32.asm"
+else
+
 Route32CooltrainerMText_WhatsTheHurry:
 	text "Wait up!"
 	line "What's the hurry?"
@@ -1007,3 +1011,5 @@ Route32AdvancedTips2Text:
 	line "on how many Badges"
 	cont "you own!"
 	done
+
+endc

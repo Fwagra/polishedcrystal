@@ -430,6 +430,11 @@ Route27FisherStepLeftTwiceMovement:
 	turn_head_left
 	step_end
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/Route27.asm"
+
+else
+
 Route27FisherHeyText:
 	text "Hey!"
 	done
@@ -551,3 +556,5 @@ TohjoFallsSignText:
 	para "The Link Between"
 	line "Kanto and Johto"
 	done
+
+endc

@@ -27,6 +27,11 @@ PalletTownFlyPoint:
 	setflag ENGINE_FLYPOINT_PALLET
 	endcallback
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/PalletTown.asm"
+
+else
+
 PalletTownTeacherText:
 	text "I'm raising #-"
 	line "mon too."
@@ -77,3 +82,5 @@ OaksLabSignText:
 BluesHouseSignText:
 	text "Blue's House"
 	done
+
+endc

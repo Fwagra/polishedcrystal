@@ -1,0 +1,3 @@
+MewText:
+	text "Mew!"
+	done

@@ -464,6 +464,11 @@ Route36SuicuneMovement:
 	fast_jump_step_right
 	step_end
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/Route36.asm"
+
+else
+
 UseSquirtbottleText:
 	text "It's a weird tree."
 	line "Use SquirtBottle?"
@@ -760,3 +765,5 @@ Route36AdvancedTips2Text:
 	para "in battles due to"
 	line "their affection!"
 	done
+
+endc

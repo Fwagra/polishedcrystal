@@ -40,6 +40,11 @@ VioletOutskirtsAvalanche:
 .end
 	endcallback
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/VioletOutskirts.asm"
+
+else
+
 VioletOutskirtsCemeterySignText:
 	text "Violet Cemetery"
 	line "Caretaker's House"
@@ -49,3 +54,5 @@ VioletOutskirtsHeadstoneText:
 	text "It's too faded"
 	line "to read…"
 	done
+
+endc

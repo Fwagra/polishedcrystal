@@ -218,6 +218,10 @@ Route30_MikeysPidgeyAttacksMovement:
 	run_step_up
 	step_end
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/Route30.asm"
+else
+
 Text_UseTackle:
 	text "Go, Rattata!"
 
@@ -372,3 +376,5 @@ YoungsterJoeyText_GiveHPUpAfterBattle:
 	para "I'm going to get"
 	line "tougher too."
 	done
+
+endc

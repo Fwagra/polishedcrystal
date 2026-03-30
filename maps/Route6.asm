@@ -35,6 +35,11 @@ GenericTrainerPokefanmRex:
 	cont "your heart melt?"
 	done
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/Route6.asm"
+
+else
+
 PokefanmRexSeenText:
 	text "My Phanpy is the"
 	line "cutest in the"
@@ -210,3 +215,5 @@ Route6AdvancedTipsSignText:
 	line "item with the"
 	cont "opponent!"
 	done
+
+endc

@@ -65,16 +65,6 @@ Route34IlexForestGateTeacherScript:
 	setevent EVENT_GOT_TM54_FALSE_SWIPE
 	jumpthisopenedtext
 
-Route34IlexForestGateTeacher_GotSweetScent:
-	text "It's False Swipe."
-
-	para "It won't knock"
-	line "out wild #mon,"
-
-	para "so they'll be"
-	line "easier to catch."
-	done
-
 Route34IlexForestGateTeacherBlocksPlayerMovement:
 	step_up
 	step_up
@@ -84,6 +74,21 @@ Route34IlexForestGateTeacherReturnsMovement:
 	step_down
 	step_right
 	step_end
+
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/Route34IlexForestGate.asm"
+
+else
+
+Route34IlexForestGateTeacher_GotSweetScent:
+	text "It's False Swipe."
+
+	para "It won't knock"
+	line "out wild #mon,"
+
+	para "so they'll be"
+	line "easier to catch."
+	done
 
 Route34IlexForestGateTeacherText:
 	text "Oh, hello. You're"
@@ -122,3 +127,5 @@ Route34IlexForestGateLassText:
 	line "must be a Grass-"
 	cont "type #mon."
 	done
+
+endc

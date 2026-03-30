@@ -22,6 +22,11 @@ Route35CoastNorth_MapScriptHeader:
 	smashrock_event  8, 17
 	smashrock_event 11, 20
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/Route35CoastNorth.asm"
+
+else
+
 Route35CoastNorthPokeathlonDomeSignText:
 	text "The #athlon"
 	line "Project Has"
@@ -37,3 +42,5 @@ Route35CoastNorthAdvancedTipsSignText:
 	para "from a Surfing"
 	line "#mon's back!"
 	done
+
+endc

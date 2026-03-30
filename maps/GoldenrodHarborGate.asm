@@ -16,6 +16,11 @@ GoldenrodHarborGate_MapScriptHeader:
 	def_object_events
 	object_event  5,  2, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, PAL_NPC_RED, OBJECTTYPE_COMMAND, jumptextfaceplayer, GoldenrodHarborGateOfficerText, -1
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/GoldenrodHarborGate.asm"
+
+else
+
 GoldenrodHarborGateOfficerText:
 	text "If your #mon"
 	line "knows how to Surf,"
@@ -23,3 +28,5 @@ GoldenrodHarborGateOfficerText:
 	para "you can head north"
 	line "to Olivine City."
 	done
+
+endc

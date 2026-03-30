@@ -73,6 +73,11 @@ SaffronCityFisherScript:
 	iftrue_jumptextfaceplayer SaffronCityFisherText_ReturnedMachinePart
 	jumptextfaceplayer SaffronCityFisherText
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/SaffronCity.asm"
+
+else
+
 SaffronCityLass1Text:
 	text "A little girl who"
 	line "is an expert at"
@@ -323,3 +328,5 @@ SaffronTrainerTips2Text:
 	para "but they're more"
 	line "convenient."
 	done
+
+endc

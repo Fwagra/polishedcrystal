@@ -61,6 +61,11 @@ ValenciaPortSailorScript:
 	line "right here."
 	done
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/ValenciaPort.asm"
+
+else
+
 ValenciaPortFisherText:
 	text "Have you noticed"
 	line "the sea?"
@@ -71,3 +76,5 @@ ValenciaPortFisherText:
 	para "those found in"
 	line "Kanto and Johto."
 	done
+
+endc

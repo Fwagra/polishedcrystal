@@ -256,6 +256,11 @@ GenericTrainerSwimmermLewis:
 	line "in the water."
 	done
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/Route41.asm"
+
+else
+
 SwimmermCharlieSeenText:
 	text "The water's warm"
 	line "here. I'm loose"
@@ -386,3 +391,5 @@ SwimmerfWendySeenText:
 SwimmerfWendyBeatenText:
 	text "Oh, dear…"
 	done
+
+endc

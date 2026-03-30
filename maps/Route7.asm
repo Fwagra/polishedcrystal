@@ -79,6 +79,11 @@ Route7Snorlax:
 	para "Snorlax woke up!"
 	done
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/Route7.asm"
+
+else
+
 Route7UndergroundPathSignText:
 	text "What's this flyer?"
 
@@ -101,3 +106,5 @@ Route7UndergroundPathSignText:
 Route7LockedDoorText:
 	text "It's locked…"
 	done
+
+endc

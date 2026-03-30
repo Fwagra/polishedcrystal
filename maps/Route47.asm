@@ -290,6 +290,11 @@ GenericTrainerGruntM26:
 	cont "of your business!"
 	done
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/Route47.asm"
+
+else
+
 HikerDevinSeenText:
 	text "Battles are"
 	line "battles, so"
@@ -443,3 +448,5 @@ Route47AdvancedTipsSignText:
 	para "or inherited via"
 	line "breeding!"
 	done
+
+endc

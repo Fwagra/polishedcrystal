@@ -329,6 +329,11 @@ Route42SuicuneMovement:
 	fast_jump_step_right
 	step_end
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/Route42.asm"
+
+else
+
 Route42LyraGreetingText:
 	text "Lyra: Hi, <PLAYER>!"
 
@@ -478,3 +483,5 @@ Route42Sign2Text:
 	para "Ecruteak City -"
 	line "Mahogany Town"
 	done
+
+endc

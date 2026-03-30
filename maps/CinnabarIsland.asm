@@ -53,6 +53,11 @@ CinnabarIslandBlue:
 	clearevent EVENT_VIRIDIAN_GYM_BLUE
 	end
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/CinnabarIsland.asm"
+
+else
+
 CinnabarIslandBlueText:
 	text "Who are you?"
 
@@ -168,3 +173,5 @@ CinnabarIslandVolcanoWarningSignText:
 	line "volcano without"
 	cont "a means of escape!"
 	done
+
+endc

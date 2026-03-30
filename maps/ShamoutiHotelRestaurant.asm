@@ -139,7 +139,14 @@ ShamoutiHotelRestaurantLeaveScript:
 	warp SHAMOUTI_HOTEL_1F, 14, 0
 	end
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/ShamoutiHotelRestaurant.asm"
+
+else
+
 ShamoutiHotelRestaurantReceptionistText:
 	text "Please enjoy a"
 	line "meal and a battle."
 	done
+
+endc

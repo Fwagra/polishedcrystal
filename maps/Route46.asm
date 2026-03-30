@@ -187,6 +187,11 @@ GenericTrainerHikerBailey:
 	cont "are like that."
 	done
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/Route46.asm"
+
+else
+
 Route46HikerText:
 	text "A Donphan charged"
 	line "at me and I roll-"
@@ -306,3 +311,5 @@ Route46LassText:
 	para "I didn't know this"
 	line "was only one way."
 	done
+
+endc

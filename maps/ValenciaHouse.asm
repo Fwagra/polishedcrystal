@@ -14,6 +14,11 @@ ValenciaHouse_MapScriptHeader:
 	def_object_events
 	object_event  2,  3, SPRITE_CUTE_GIRL, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, PAL_NPC_RED, OBJECTTYPE_COMMAND, jumptextfaceplayer, ValenciaHouseLassText, -1
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/ValenciaHouse.asm"
+
+else
+
 ValenciaHouseLassText:
 	text "Prof.Ivy is really"
 	line "cool!"
@@ -22,3 +27,5 @@ ValenciaHouseLassText:
 	line "#mon when they"
 	cont "were sick!"
 	done
+
+endc

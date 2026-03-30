@@ -114,6 +114,11 @@ ShamoutiIslandWilhomenaScript:
 	cont "souvenir."
 	done
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/ShamoutiIsland.asm"
+
+else
+
 ShamoutiIslandPikabluText:
 	text "Pikablu: Rill!"
 	done
@@ -145,3 +150,5 @@ ShamoutiTouristCenterSignText:
 	text "Shamouti Tourist"
 	line "Center"
 	done
+
+endc
