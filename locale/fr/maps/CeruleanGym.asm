@@ -1,5 +1,5 @@
 CeruleanGymGruntIntroText:
-	text "... Oh noes!"
+	text "… Oh noes!"
 	line "You m'a déjà seen!"
 	done
 
@@ -61,7 +61,7 @@ MistyIntroText:
 	done
 
 MistyWinLossText:
-	text "Ondine: OK..."
+	text "Ondine: OK…"
 	line "Je reconnais que"
 	cont "t'es loin"
 

@@ -36,7 +36,7 @@ LanceSeenText:
 	done
 
 LanceBeatenText:
-	text "... C'est fini."
+	text "… C'est fini."
 
 	para "Bizarre"
 	line "sensation."
@@ -57,7 +57,7 @@ LanceBeatenText:
 	done
 
 LanceAfterText:
-	text "... Ouf."
+	text "… Ouf."
 
 	para "Tu es"
 	line "devenu"
@@ -206,7 +206,7 @@ LanceMaryText2:
 LanceLeavingText:
 	text "Peter: Ca"
 	line "devient"
-	cont "bruyant..."
+	cont "bruyant…"
 
 	para "<PLAYER>,"
 	line "viens"

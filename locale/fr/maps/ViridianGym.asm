@@ -10,7 +10,7 @@ LeaderBlueBeforeText:
 	line "d'envie de"
 	cont "me battre!"
 
-	para "..."
+	para "…"
 
 	para "Tu dis quoi?"
 	line "Tu as conquis"
@@ -41,9 +41,9 @@ LeaderBlueWinText:
 	line "contre un"
 	cont "Dresseur pareil!"
 
-	para "..."
+	para "…"
 
-	para "... Pfff..."
+	para "… Pfff…"
 	line "Tant pis."
 
 	para "Tiens, prends ce"
@@ -85,7 +85,7 @@ ViridianGymGuyText:
 	para "tu devrais ranger"
 	line "ton #mon."
 
-	para "... Bien!"
+	para "… Bien!"
 
 	para "Le Champion de"
 	line "cette Arène a"

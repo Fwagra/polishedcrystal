@@ -53,7 +53,7 @@ BugsyAfterText:
 	line "au bout"
 	cont "de mes"
 
-	para "recherches..."
+	para "recherches…"
 
 	para "Toi aussi, tu"
 	line "ferais bien"

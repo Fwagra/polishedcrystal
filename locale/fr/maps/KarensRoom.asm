@@ -5,9 +5,9 @@ KarenSeenText:
 	para "Tu dois être"
 	line "<PLAYER>?"
 
-	para "Hum... Tu as"
+	para "Hum… Tu as"
 	line "l'air"
-	cont "intéressant..."
+	cont "intéressant…"
 
 	para "Ce que j'aime,"
 	line "ce sont"

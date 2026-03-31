@@ -1,17 +1,17 @@
 ErikaBeforeBattleText:
 	text "Erika: Bien le"
-	line "bonjour..."
+	line "bonjour…"
 
 	para "Le temps est"
 	line "admirable,"
-	cont "aujourd'hui..."
+	cont "aujourd'hui…"
 
 	para "On a envie de"
 	line "fermer les yeux"
 	cont "et de"
 
 	para "se laisser"
-	line "glisser..."
+	line "glisser…"
 
 	para "Moi je suis Erika,"
 	line "Champion de"
@@ -19,7 +19,7 @@ ErikaBeforeBattleText:
 
 	para "Céladopole."
 
-	para "... Oh?"
+	para "… Oh?"
 	line "Tu viens de"
 	cont "Johto?"
 
@@ -28,7 +28,7 @@ ErikaBeforeBattleText:
 
 	para "Bien sûr, tu es"
 	line "la pour"
-	cont "te battre..."
+	cont "te battre…"
 
 	para "Cela me servira"
 	line "d'entraînement"
@@ -45,7 +45,7 @@ ErikaBeforeBattleText:
 
 ErikaBeatenText:
 	text "Erika: J'ai"
-	line "perdu..."
+	line "perdu…"
 
 	para "Tu es incroyable!"
 
@@ -82,7 +82,7 @@ ErikaOutroText:
 	para "ton #mon."
 
 	para "Vraiment"
-	line "incroyable..."
+	line "incroyable…"
 	done
 
 ErikaAfterBattleText:
@@ -91,7 +91,7 @@ ErikaAfterBattleText:
 	cont "peu triste"
 
 	para "de perdre un"
-	line "combat..."
+	line "combat…"
 
 	para "Mais c'est aussi"
 	line "stimulant de"

@@ -13,17 +13,17 @@ Jasmine_SteelTypeIntro:
 	line "Champion d'Arène."
 
 	para "Et j'utilise des"
-	line "#mon de type..."
+	line "#mon de type…"
 
 	para "Tadam!"
-	line "A... Acier!"
+	line "A… Acier!"
 
 	para "Tu connais le"
 	line "type Acier, non?"
 
 	para "Ils sont durs,"
 	line "froids, et très"
-	cont "pui... puissants!"
+	cont "pui… puissants!"
 
 	para "Hein?"
 	line "N'est-ce pas?"
@@ -55,16 +55,16 @@ Jasmine_BadgeSpeech:
 	para "jusqu'au N."
 	line "<LV>70."
 
-	para "... Et puis,"
+	para "… Et puis,"
 	line "c'est aussi"
-	cont "pour toi..."
+	cont "pour toi…"
 	done
 
 Jasmine_IronTailText:
 	text "Avec cette"
 	line "capacité,"
 
-	para "Queue de Fer..."
+	para "Queue de Fer…"
 
 	para "Grâce à sa queue"
 	line "très dure, ton"
@@ -82,9 +82,9 @@ Jasmine_GoodLuck:
 
 	para "pour les"
 	line "encouragements,"
-	cont "mais..."
+	cont "mais…"
 
-	para "... Bon courage!"
+	para "… Bon courage!"
 	done
 
 OlivineGymGuyPreText:
@@ -96,7 +96,7 @@ OlivineGymGuyPreText:
 	cont "Phare."
 
 	para "parce qu'il est"
-	line "malade..."
+	line "malade…"
 
 	para "Elle est"
 	line "incroyable!"

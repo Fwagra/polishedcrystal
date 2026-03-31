@@ -6,7 +6,7 @@ ChuckIntroText1:
 	cont "sans cesse"
 
 	para "sur mon crane"
-	line "viril me..."
+	line "viril me…"
 
 	para "He! Toi,"
 	line "la demi-portion!"
@@ -30,9 +30,9 @@ ChuckIntroText1:
 	done
 
 ChuckIntroText2:
-	text "Urgh..."
+	text "Urgh…"
 
-	para "..."
+	para "…"
 
 	para "Aaaaargh!!!"
 	done
@@ -57,7 +57,7 @@ ChuckIntroText3:
 	done
 
 ChuckLossText:
-	text "Chuck: Ca alors..."
+	text "Chuck: Ca alors…"
 
 	para "Je m'attendais"
 	line "pas a perdre!"

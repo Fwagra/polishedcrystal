@@ -21,7 +21,7 @@ BrunoSeenText:
 
 	para "Ho, ça ne"
 	line "t'intimide"
-	cont "pas..."
+	cont "pas…"
 
 	para "Très bien!"
 	line "Ton visage"

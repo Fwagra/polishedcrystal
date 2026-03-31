@@ -2,7 +2,7 @@ JanineText_DisappointYou:
 	text "Hahaha!"
 
 	para "Dommage, mais"
-	line "c'est raté..."
+	line "c'est raté…"
 
 	para "Eh non! C'etait"
 	line "encore un"
@@ -25,7 +25,7 @@ JanineText_ToughOne:
 	cont "à"
 
 	para "vaincre Koga, du"
-	line "Conseil 4..."
+	line "Conseil 4…"
 
 	para "C'est-a-dire"
 	line "mon papa!"
@@ -156,7 +156,7 @@ FuchsiaGymGuyText:
 	line "de Jeannine,"
 
 	para "Champion de"
-	line "l'Arène..."
+	line "l'Arène…"
 
 	para "Sauras-tu"
 	line "decouvrir"

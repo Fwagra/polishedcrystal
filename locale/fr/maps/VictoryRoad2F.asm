@@ -1,11 +1,11 @@
 VictoryRoadRivalBeforeText:
 	text "Minute."
 
-	para "... Tu vas relever"
+	para "… Tu vas relever"
 	line "le défi de la"
 	cont "Ligue #mon?"
 
-	para "... Ne me fais"
+	para "… Ne me fais"
 	line "pas rire."
 
 	para "Tu es bien plus"
@@ -28,30 +28,30 @@ VictoryRoadRivalBeforeText:
 	done
 
 VictoryRoadRivalDefeatText:
-	text "... Je n'ai pas"
-	line "pu gagner..."
+	text "… Je n'ai pas"
+	line "pu gagner…"
 
 	para "J'ai tout"
-	line "donné..."
+	line "donné…"
 
 	para "Ce que tu as,"
-	line "et moi pas..."
+	line "et moi pas…"
 
 	para "Je commence à"
 	line "comprendre"
 
 	para "ce que le maître"
-	line "Draco m'a dit..."
+	line "Draco m'a dit…"
 	done
 
 VictoryRoadRivalAfterText:
-	text "... Je n'ai pas"
+	text "… Je n'ai pas"
 	line "abandonné"
 	cont "mon rêve"
 
 	para "de devenir le"
 	line "plus grand des"
-	cont "Dresseurs..."
+	cont "Dresseurs…"
 
 	para "Je comprendrai"
 	line "pourquoi"
@@ -71,14 +71,14 @@ VictoryRoadRivalAfterText:
 	para "combat, et tu"
 	line "perdras."
 
-	para "... Pfff!"
+	para "… Pfff!"
 
 	para "Accroche-toi,"
 	line "minable!"
 	done
 
 VictoryRoadRivalVictoryText:
-	text "... Pfff!"
+	text "… Pfff!"
 
 	para "Au final, rien"
 	line "ne bat la"
@@ -110,6 +110,6 @@ VeteranfJonetSeenText:
 VeteranfJonetBeatenText:
 	text "J'aurais gagné"
 	line "avec un #mon"
-	cont "légendaire..."
+	cont "légendaire…"
 	done
 

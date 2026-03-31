@@ -96,7 +96,7 @@ MortyIntroText:
 	cont "venir"
 
 	para "le #mon de la"
-	line "legende..."
+	line "legende…"
 
 	para "C'est moi,"
 	line "je suis l'élu!"
@@ -114,11 +114,11 @@ MortyWinLossText:
 	line "n'aurais jamais"
 	cont "du"
 
-	para "perdre pourtant..."
+	para "perdre pourtant…"
 
-	para "Toi... toi... tu"
+	para "Toi… toi… tu"
 	line "as quelque chose"
-	cont "qui..."
+	cont "qui…"
 
 	para "Tout est clair."
 	line "Reçois ce Badge"
@@ -147,7 +147,7 @@ MortyText_FogBadgeSpeech:
 
 	para "à tout moment."
 
-	para "Enfin..."
+	para "Enfin…"
 	line "Ceci est"
 	cont "également"
 
@@ -177,20 +177,20 @@ MortyText_ShadowBallSpeech:
 	done
 
 MortyFightDoneText:
-	text "Mortimer: Ainsi..."
+	text "Mortimer: Ainsi…"
 
 	para "Les femmes en"
 	line "kimono parlaient"
 	cont "de toi"
 
 	para "en fin de"
-	line "compte..."
+	line "compte…"
 
 	para "Oh! Non! Rien!"
 	line "Je me parlais"
 	cont "à"
 
-	para "moi-même..."
+	para "moi-même…"
 
 	para "Avec une force"
 	line "pareille, tu"
@@ -211,7 +211,7 @@ MortyFightDoneText:
 
 	para "Va maintenant,"
 	line "poursuis ton"
-	cont "chemin..."
+	cont "chemin…"
 	done
 
 SageJeffreySeenText:
@@ -269,7 +269,7 @@ EcruteakGymGuyText:
 	cont "#mon Spectre!"
 
 	para "Fantomes,"
-	line "illusions..."
+	line "illusions…"
 
 	para "Insensibles a la"
 	line "force brute!"

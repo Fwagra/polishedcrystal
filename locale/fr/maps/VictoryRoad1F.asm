@@ -12,6 +12,6 @@ VeteranmMattSeenText:
 
 VeteranmMattBeatenText:
 	text "J'avais une"
-	line "chance..."
+	line "chance…"
 	done
 

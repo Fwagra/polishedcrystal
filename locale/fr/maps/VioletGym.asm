@@ -16,7 +16,7 @@ FalknerIntroText:
 
 	para "de type Vol,"
 	line "et ils se"
-	cont "moquent..."
+	cont "moquent…"
 
 	para "Mais je leur"
 	line "ferai ravaler"
@@ -33,14 +33,14 @@ FalknerIntroText:
 
 FalknerWinLossText:
 	text "Albert: Comment"
-	line "est-ce possible..."
+	line "est-ce possible…"
 
 	para "Mon pere avait"
 	line "pourtant tant"
 	cont "pris soin"
 
 	para "de ces #mon,"
-	line "et ils sont..."
+	line "et ils sont…"
 
 	para "Mais je reconnais"
 	line "ma défaite."
@@ -128,7 +128,7 @@ FalknerTMMudSlapText:
 	line "très utile!"
 
 	para "La prochaine"
-	line "devrait etre..."
+	line "devrait etre…"
 
 	para "Ah, ca devrait"
 	line "etre Ecorcia,"
@@ -144,10 +144,10 @@ FalknerFightDoneText:
 	line "visiter, et"
 	cont "de Champions"
 
-	para "a qui te mesurer.."
+	para "a qui te mesurer…"
 
 	para "La prochaine"
-	line "devrait etre..."
+	line "devrait etre…"
 	cont "Ecorcia,"
 
 	para "j'imagine."

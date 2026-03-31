@@ -1,5 +1,5 @@
 KogaSeenText:
-	text "... Fwah! Ha! Ha!"
+	text "… Fwah! Ha! Ha!"
 
 	para "Je suis Koga du"
 	line "Conseil 4."
@@ -16,7 +16,7 @@ KogaSeenText:
 	cont "l'ennemi,"
 
 	para "le déconcentrer,"
-	line "l'empoisonner..."
+	line "l'empoisonner…"
 
 	para "Je suis"
 	line "imprévisible!"
@@ -44,9 +44,9 @@ KogaBeatenText:
 KogaAfterText:
 	text "J'ai combattu de"
 	line "toutes mes"
-	cont "forces..."
+	cont "forces…"
 
-	para "Mais..."
+	para "Mais…"
 
 	para "Je ne suis pas"
 	line "assez fort."

@@ -37,7 +37,7 @@ BrockWinLossText:
 	line "attaques ont"
 
 	para "surpasse ma"
-	line "défense..."
+	line "défense…"
 
 	para "Je ne m'attendais"
 	line "pas a ca!"
@@ -72,7 +72,7 @@ BrockBoulderBadgeText:
 
 BrockFightDoneText:
 	text "Pierre: Le monde"
-	line "est vaste..."
+	line "est vaste…"
 
 	para "Il reste encore"
 	line "d'innombrables"

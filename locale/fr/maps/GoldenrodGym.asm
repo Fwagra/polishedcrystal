@@ -30,8 +30,8 @@ WhitneyShouldntBeSoSeriousText:
 
 	para "OUIN!!!"
 
-	para "... NON!"
-	line "... T'as pas"
+	para "… NON!"
+	line "… T'as pas"
 	cont "le droit!"
 	done
 
@@ -83,13 +83,13 @@ WhitneyFightDoneText:
 	done
 
 WhitneyShouldntBeSoSeriousText2:
-	text "..."
+	text "…"
 	done
 
 LassCathySeenText:
 	text "Cath: Je perds"
 	line "toujours contre"
-	cont "Blanche..."
+	cont "Blanche…"
 
 	para "C'est déprimant."
 
@@ -154,7 +154,7 @@ BeautyVictoriaSeenText:
 	done
 
 BeautyVictoriaBeatenText:
-	text "Voyons... Oups,"
+	text "Voyons… Oups,"
 	line "c'est fini?"
 	done
 

@@ -4,7 +4,7 @@
 	cont "venu ici"
 
 	para "depuis si"
-	line "longtemps..."
+	line "longtemps…"
 
 	para "Ce lieu"
 	line "consacre"

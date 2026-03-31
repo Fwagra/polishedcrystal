@@ -28,8 +28,8 @@ WillSeenText:
 	done
 
 WillBeatenText:
-	text "Je... je n'y"
-	line "crois pas..."
+	text "Je… je n'y"
+	line "crois pas…"
 	done
 
 WillAfterText:

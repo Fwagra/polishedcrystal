@@ -36,17 +36,17 @@ SabrinaIntroText:
 SabrinaWinLossText:
 	text "Morgane: Ta"
 	line "force est"
-	cont "grande..."
+	cont "grande…"
 
 	para "Plus encore que"
 	line "je ne l'avais"
-	cont "prévu..."
+	cont "prévu…"
 
 	para "Peut-être qu'il"
 	line "est impossible de"
 
 	para "prédire totalement"
-	line "l'avenir..."
+	line "l'avenir…"
 
 	para "Bien."
 	line "Tu as mérité"
@@ -60,14 +60,14 @@ SabrinaMarshBadgeText:
 	line "été incapable"
 	cont "de prévoir"
 
-	para "ta puissance..."
+	para "ta puissance…"
 
 	para "Cela signifie"
 	line "que ta puissance"
 
 	para "dépasse mes"
 	line "pouvoirs"
-	cont "psychiques..."
+	cont "psychiques…"
 
 	para "Tu mérites de"
 	line "recevoir en"
@@ -84,7 +84,7 @@ SabrinaFightDoneText:
 
 	para "brouille mes"
 	line "pouvoirs"
-	cont "psychiques..."
+	cont "psychiques…"
 
 	para "Je pense que"
 	line "l'amour est"
@@ -92,7 +92,7 @@ SabrinaFightDoneText:
 
 	para "sorte de"
 	line "pouvoir"
-	cont "surnaturel..."
+	cont "surnaturel…"
 	done
 
 MediumDorisSeenText:
