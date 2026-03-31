@@ -185,6 +185,10 @@ VermilionGymStatue:
 .Beaten:
 	jumpstd gymstatue2
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/VermilionGym.asm"
+else
+
 LtSurgeIntroText:
 	text "Surge: Hey, you"
 	line "little tyke!"
@@ -361,6 +365,8 @@ VermilionGymElectricFenceText:
 	text "An electric fence!"
 	line "Don't touch it!"
 	done
+
+endc
 
 SampleVermilionGymTrashCans:
 	ldh a, [rWBK]

@@ -118,6 +118,10 @@ ViridianGymStatue:
 .Beaten:
 	jumpstd gymstatue2
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/ViridianGym.asm"
+else
+
 LeaderBlueBeforeText:
 	text "Blue: Yo! Finally"
 	line "got here, huh?"
@@ -323,4 +327,6 @@ AceDuoElanandida2BeatenText:
 	text "Ida: Wow. You're"
 	line "really something."
 	done
+
+endc
 

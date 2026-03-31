@@ -17,7 +17,7 @@ CeruleanCityCooltrainerMText2:
 	cont "différents?"
 
 	para "Ca doit pas être"
-	line "super facile..."
+	line "super facile…"
 	cont "Mais ça doit être"
 	cont "rigolo, non?"
 	done
@@ -71,7 +71,7 @@ CeruleanCityYoungsterText2:
 	text "Quoi?"
 
 	para "Mon CHERCH'OBJET"
-	line "vient de sonner..."
+	line "vient de sonner…"
 	done
 
 CeruleanCityYoungsterText:
@@ -113,16 +113,16 @@ CeruleanGymSignText:
 
 CeruleanBikeShopSignText:
 	text "Il y a une"
-	line "affiche..."
+	line "affiche…"
 
 	para "Les CYCLES A GOGO"
 	line "sont à DOUBLON-"
-	cont "VILLE à JOHTO..."
+	cont "VILLE à JOHTO…"
 	done
 
 CeruleanPoliceSignText:
 	text "Il y a une affiche"
-	line "ici..."
+	line "ici…"
 
 	para "Non au vol."
 	line "Oui au bonheur."

@@ -25,7 +25,7 @@ ShamoutiHotel1FLadyText:
 	line "une Capsule Argt"
 	cont "en pêchant?"
 
-	para "À Alola, d'où je"
+	para "A Alola, d'où je"
 	line "viens, il y a un"
 	para "homme qui peut"
 	line "'surentraîner' tes"

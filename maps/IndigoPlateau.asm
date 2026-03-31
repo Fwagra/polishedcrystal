@@ -20,6 +20,17 @@ IndigoPlateauFlyPoint:
 	endcallback
 
 IndigoPlateauSignText:
+if DEF(_LOCALE_FR)
+	text "Plateau Indigo"
+
+	para "Le sommet de la"
+	line "carrière de"
+	cont "Dresseur!"
+
+	para "QG de la"
+	line "Ligue Pokémon"
+	done
+else
 	text "Indigo Plateau"
 
 	para "The Ultimate Goal"
@@ -27,3 +38,4 @@ IndigoPlateauSignText:
 
 	para "#mon League HQ"
 	done
+endc

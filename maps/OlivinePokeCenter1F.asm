@@ -27,6 +27,19 @@ PokemonJournalJasmineScript:
 	setflag ENGINE_READ_JASMINE_JOURNAL
 	jumpthistext
 
+if DEF(_LOCALE_FR)
+	text "Journal #mon"
+
+	para "Dossier special:"
+	line "Jasmine!"
+
+	para "On raconte que"
+	line "Jasmine et Erika"
+
+	para "parlent mode"
+	line "ensemble."
+	done
+else
 	text "#mon Journal"
 
 	para "Special Feature:"
@@ -39,6 +52,7 @@ PokemonJournalJasmineScript:
 	line "Leader, chat about"
 	cont "fashion together."
 	done
+endc
 
 BeautyCharlotteScript:
 	checkevent EVENT_BEAT_BEAUTY_CHARLOTTE
@@ -60,12 +74,33 @@ BeautyCharlotteScript:
 	jumpthistext
 
 .AfterText:
+if DEF(_LOCALE_FR)
+	text "C'est génial"
+	line "d'avoir un"
+	cont "#mon rare!"
+	done
+else
 	text "How cool is it"
 	line "to have such a"
 	cont "special #mon?"
 	done
+endc
 
 .GreetingText:
+if DEF(_LOCALE_FR)
+	text "Oh, tu es"
+	line "Dresseur?"
+
+	para "Tu arrives"
+	line "pile!"
+
+	para "Mon #mon rare"
+	line "est soigne."
+
+	para "Tu veux te"
+	line "battre?"
+	done
+else
 	text "Oh, are you a"
 	line "trainer?"
 
@@ -82,25 +117,56 @@ BeautyCharlotteScript:
 	para "amazed by my"
 	line "#mon?"
 	done
+endc
 
 .NoBattleText:
+if DEF(_LOCALE_FR)
+	text "Oh? Reviens"
+	line "si tu veux"
+	cont "te battre!"
+	done
+else
 	text "Oh, really? Talk"
 	line "to me if you want"
 
 	para "to battle some"
 	line "time!"
 	done
+endc
 
 .SeenText:
+if DEF(_LOCALE_FR)
+	text "Entendu!"
+	line "On est parti!"
+	done
+else
 	text "All right!"
 	line "Here I come!"
 	done
+endc
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "Super combat!"
+	done
+else
 	text "Amazing battle!"
 	done
+endc
 
 OlivinePokeCenter1FFisherText:
+if DEF(_LOCALE_FR)
+	text "A Irisia, un type"
+	line "a l'air faible."
+
+	para "Mais il a appris"
+	line "Force a mon"
+	cont "#mon."
+
+	para "Il bouge des"
+	line "rochers!"
+	done
+else
 	text "There's this guy in"
 	line "Cianwood City who"
 	cont "looks weak, but he"
@@ -111,8 +177,15 @@ OlivinePokeCenter1FFisherText:
 	para "Now it can move"
 	line "big boulders."
 	done
+endc
 
 OlivinePokeCenter1FTeacherText:
+if DEF(_LOCALE_FR)
+	text "A Irisia, un gars"
+	line "se vante de son"
+	cont "#mon rare."
+	done
+else
 	text "There's a person"
 	line "in Cianwood City"
 	cont "across the sea."
@@ -121,3 +194,4 @@ OlivinePokeCenter1FTeacherText:
 	line "ging about his"
 	cont "rare #mon."
 	done
+endc

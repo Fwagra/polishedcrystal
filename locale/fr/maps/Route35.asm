@@ -66,7 +66,7 @@ JugglerIrwin1BeatenText:
 JugglerIrwinAfterBattleText:
 	text "J'allais t'éblouir"
 	line "avec mon nouveau"
-	cont "#mon..."
+	cont "#mon…"
 
 	para "Mais tu es trop"
 	line "rapide!"
@@ -130,7 +130,7 @@ OfficerDirkPrettyToughText:
 	line "l'air fort."
 
 	para "Tu es en sécurité"
-	line "avec eux..."
+	line "avec eux…"
 	done
 
 Route35SignText:

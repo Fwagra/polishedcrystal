@@ -104,6 +104,10 @@ HallOfFameEntranceTrigger:
 	turn_head_left
 	step_end
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/HallOfFame.asm"
+else
+
 .LanceText1:
 	text "Lance: It's been a"
 	line "long time since I"
@@ -179,3 +183,5 @@ HallOfFameEntranceTrigger:
 	text "Silver Trophy"
 	line "was sent home."
 	done
+
+endc

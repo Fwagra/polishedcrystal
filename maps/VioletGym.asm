@@ -102,6 +102,10 @@ VioletGymStatue:
 .LyraToo
 	jumpstd gymstatue3
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/VioletGym.asm"
+else
+
 FalknerIntroText:
 	text "I'm Falkner, the"
 	line "Violet #mon Gym"
@@ -255,3 +259,5 @@ VioletGymGuyFalknerAwayText:
 
 	para "Come back later."
 	done
+
+endc

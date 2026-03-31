@@ -17,6 +17,19 @@ PewterMart_MapScriptHeader:
 	object_event  6,  6, SPRITE_POKEMANIAC, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, PAL_NPC_RED, OBJECTTYPE_COMMAND, jumptextfaceplayer, PewterMartSuperNerdText, -1
 
 PewterMartYoungsterText:
+if DEF(_LOCALE_FR)
+	text "Salut! Regarde"
+	line "mon Léviator!"
+
+	para "Je l'ai élevé"
+	line "depuis"
+	cont "Magicarpe."
+
+	para "Il est"
+	line "devenu"
+	cont "trop fort!"
+	done
+else
 	text "Hi! Check out my"
 	line "Gyarados!"
 
@@ -26,8 +39,21 @@ PewterMartYoungsterText:
 	para "believe how strong"
 	line "it has become."
 	done
+endc
 
 PewterMartSuperNerdText:
+if DEF(_LOCALE_FR)
+	text "Avant, un"
+	line "vieux vendait"
+	cont "Magicarpe."
+
+	para "Il disait que"
+	line "ceux du"
+	cont "Lac Colère"
+
+	para "étaient top."
+	done
+else
 	text "There once was a"
 	line "weird old man who"
 	cont "sold Magikarp."
@@ -38,3 +64,4 @@ PewterMartSuperNerdText:
 	para "Lake of Rage were"
 	line "excellent."
 	done
+endc

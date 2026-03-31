@@ -24,6 +24,22 @@ PokemonJournalBrockScript:
 	setflag ENGINE_READ_BROCK_JOURNAL
 	jumpthistext
 
+if DEF(_LOCALE_FR)
+	text "Journal #mon"
+
+	para "Dossier special:"
+	line "Pierre!"
+
+	para "Pierre rit"
+	line "rarement."
+
+	para "Mais quand il"
+	line "commence,"
+
+	para "il ne peut"
+	line "plus s'arreter."
+	done
+else
 	text "#mon Journal"
 
 	para "Special Feature:"
@@ -36,6 +52,7 @@ PokemonJournalBrockScript:
 	line "to stop if he"
 	cont "starts."
 	done
+endc
 
 PewterJigglypuffText:
 	text "Jigglypuff:"
@@ -43,6 +60,26 @@ PewterJigglypuffText:
 	done
 
 PewterPokeCenter1FTeacherText:
+if DEF(_LOCALE_FR)
+	text "Et puis, tu sais,"
+	line "l'Arène de"
+	cont "Cramois'Ile,"
+
+	para "eh bien elle"
+	line "a disparu!"
+
+	para "Moi aussi! J'en"
+	line "reviens toujours"
+	cont "pas!"
+
+	para "… Quoi? J'suis"
+	line "au téléphone,"
+	cont "là!"
+
+	para "Fiche-moi"
+	line "la paix!"
+	done
+else
 	text "…Yeah, and the"
 	line "Gym in Cinnabar's"
 
@@ -52,8 +89,29 @@ PewterPokeCenter1FTeacherText:
 	para "…Yes? I'm on the"
 	line "phone. Go away!"
 	done
+endc
 
 PewterPokeCenter1FChildText:
+if DEF(_LOCALE_FR)
+	text "La plupart des"
+	line "Pokémon"
+	cont "s'endorment"
+
+	para "en entendant"
+	line "un RONDOUDOU"
+	cont "chanter."
+
+	para "Et il y a"
+	line "certaines"
+	cont "capacités"
+
+	para "qu'un Pokémon"
+	line "ne peut"
+	cont "utiliser"
+
+	para "qu'en dormant!"
+	done
+else
 	text "Most #mon get"
 	line "drowsy if they"
 
@@ -66,3 +124,4 @@ PewterPokeCenter1FChildText:
 	para "used only while a"
 	line "#mon is asleep."
 	done
+endc

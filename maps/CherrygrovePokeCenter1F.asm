@@ -22,8 +22,27 @@ CherrygrovePokeCenter1F_MapScriptHeader:
 
 PokemonJournalRedScript:
 	setflag ENGINE_READ_RED_JOURNAL
-	jumpthistext
+	jumptext PokemonJournalRedText
 
+PokemonJournalRedText:
+if DEF(_LOCALE_FR)
+	text "Journal #mon"
+
+	para "Dossier spécial:"
+	line "Red!"
+
+	para "On dit que Red"
+	line "a battu"
+	cont "Blue"
+
+	para "et est devenu"
+	line "Maître de la"
+	cont "Ligue"
+
+	para "en un temps"
+	line "record."
+	done
+else
 	text "#mon Journal"
 
 	para "Special Feature:"
@@ -38,12 +57,25 @@ PokemonJournalRedScript:
 	para "League Champion in"
 	line "record time."
 	done
+endc
 
 CherrygrovePokeCenter1FTeacherScript:
 	checkevent EVENT_GAVE_MYSTERY_EGG_TO_ELM
-	iftrue_jumptextfaceplayer .Text2
-	jumpthistextfaceplayer
+	iftrue_jumptextfaceplayer CherrygrovePokeCenter1FTeacherText2
+	jumptextfaceplayer CherrygrovePokeCenter1FTeacherText1
 
+CherrygrovePokeCenter1FTeacherText1:
+if DEF(_LOCALE_FR)
+	text "Ils installent"
+	line "un centre de"
+	cont "connexion"
+
+	line "à l'étage."
+
+	para "Mais il n'est"
+	line "pas encore prêt."
+	done
+else
 	text "The Communication"
 	line "Center upstairs"
 	cont "was just built."
@@ -51,8 +83,21 @@ CherrygrovePokeCenter1FTeacherScript:
 	para "But they're still"
 	line "finishing it up."
 	done
+endc
 
-.Text2:
+CherrygrovePokeCenter1FTeacherText2:
+if DEF(_LOCALE_FR)
+	text "Ils ont installé"
+	line "un centre de"
+	cont "connexion"
+
+	line "à l'étage."
+
+	para "J'ai déjà fait"
+	line "un échange de"
+	cont "Pokémon!"
+	done
+else
 	text "The Communication"
 	line "Center upstairs"
 	cont "was just built."
@@ -60,22 +105,63 @@ CherrygrovePokeCenter1FTeacherScript:
 	para "I traded #mon"
 	line "there already!"
 	done
+endc
 
 CherrygrovePokeCenter1FFisherText:
+if DEF(_LOCALE_FR)
+	text "Heureusement"
+	line "qu'on peut"
+	cont "laisser"
+
+	para "autant de Pokémon"
+	line "qu'on veut"
+	cont "gratuitement!"
+	done
+else
 	text "It's great. I can"
 	line "store any number"
 
 	para "of #mon, and"
 	line "it's all free."
 	done
+endc
 
 CherrygrovePokeCenter1FGentlemanText:
+if DEF(_LOCALE_FR)
+	text "Le PC posé là-bas"
+	line "peut être utilisé"
+
+	para "par n'importe quel"
+	line "Dresseur,"
+
+	para "alors ne te gêne"
+	line "pas!"
+	done
+else
 	text "That PC is free"
 	line "for any trainer"
 	cont "to use."
 	done
+endc
 
 CherrygrovePokeCenter1FLadyText:
+if DEF(_LOCALE_FR)
+	text "Le Journal #mon"
+	line "a des"
+	cont "histoires"
+
+	para "passionnantes!"
+
+	para "Je viens ici"
+	line "pour le"
+	cont "dernier."
+
+	para "Mais on peut"
+	line "s'abonner"
+
+	para "ailleurs aussi."
+	done
+else
 	text "#mon Journal"
 	line "has such fascin-"
 	cont "ating stories!"
@@ -89,3 +175,4 @@ CherrygrovePokeCenter1FLadyText:
 	para "only place with"
 	line "a subscription."
 	done
+endc

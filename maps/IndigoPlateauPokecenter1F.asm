@@ -194,6 +194,36 @@ PlateauRivalBattleTrigger2:
 	end
 
 PlateauRivalText1:
+if DEF(_LOCALE_FR)
+	text "<PLAYER>: Plus"
+	line "un geste."
+
+	para "Tu vas relever"
+	line "le défi de la"
+	cont "Ligue #mon?"
+
+	para "Hélas…"
+	line "Tu peux faire"
+	cont "une croix"
+
+	para "dessus."
+
+	para "Mes #mon sont"
+	line "devenus si"
+	cont "puissants"
+
+	para "que tu ne vas pas"
+	line "les reconnaître."
+
+	para "Tu vas mordre la"
+	line "poussière!"
+
+	para "Ici et"
+	line "maintenant!"
+
+	para "En garde!"
+	done
+else
 	text "Hold it."
 
 	para "You're going to"
@@ -214,14 +244,55 @@ PlateauRivalText1:
 	para "<PLAYER>!"
 	line "I challenge you!"
 	done
+endc
 
 PlateauRivalWinText:
+if DEF(_LOCALE_FR)
+	text "…"
+
+	para "OK… J'ai"
+	line "perdu…"
+	done
+else
 	text "…"
 
 	para "OK--I lost…"
 	done
+endc
 
 PlateauRivalText2:
+if DEF(_LOCALE_FR)
+	text "<PLAYER>: Gh…"
+
+	para "Tout cela n'a"
+	line "donc pas suffi…"
+
+	para "Est-ce…"
+
+	para "Est-ce donc pour"
+	line "ça que je dois"
+
+	para "avoir davantage"
+	line "confiance dans"
+	cont "mes #mon…"
+
+	para "… Bah, pas"
+	line "grave."
+
+	para "Désolé de"
+	line "t'avoir retardé."
+
+	para "Si tu veux te"
+	line "mesurer au"
+	cont "Maître,"
+
+	para "n'oublie pas"
+	line "d'aller soigner"
+	cont "tes #mon"
+
+	para "avant."
+	done
+else
 	text "…Darn… I still"
 	line "can't win…"
 
@@ -232,8 +303,21 @@ PlateauRivalText2:
 	para "Humph! Try not to"
 	line "lose!"
 	done
+endc
 
 PlateauRivalLoseText:
+if DEF(_LOCALE_FR)
+	text "…"
+
+	para "Pff…"
+
+	para "Avec mes"
+	line "partenaires,"
+
+	para "je vais etre"
+	line "le Champion!"
+	done
+else
 	text "…"
 
 	para "Whew…"
@@ -242,8 +326,34 @@ PlateauRivalLoseText:
 	para "I'm going to be"
 	line "the Champion!"
 	done
+endc
 
 PlateauLyraText1:
+if DEF(_LOCALE_FR)
+	text "<PLAYER>!"
+
+	para "J'ai voyagé"
+	line "à Johto,"
+
+	para "gagné des Badges"
+	line "et pris de"
+	cont "la force."
+
+	para "Tu vois, <PLAYER>."
+
+	para "Et maintenant…"
+
+	para "Me voilà au"
+	line "Plateau Indigo."
+
+	para "Tu sais ce que"
+	line "ça veut dire?"
+
+	para "Je peux te defier,"
+	line "pas seulement"
+	cont "comme amie,"
+	done
+else
 	text "<PLAYER>!"
 
 	para "I've been travel-"
@@ -268,22 +378,67 @@ PlateauLyraText1:
 	line "you, not only as"
 	cont "my friend, but"
 	done
+endc
 
 PlateauLyraText2:
+if DEF(_LOCALE_FR)
+	text "mais aussi comme"
+	line "Maître de la"
+	cont "Ligue #mon!"
+	done
+else
 	text "as the #mon"
 	line "League Champion!"
 	done
+endc
 
 PlateauLyraWinText:
+if DEF(_LOCALE_FR)
+	text "Tu es encore"
+	line "plus fort…"
+	done
+else
 	text "So you're still"
 	line "stronger than me…"
 	done
+endc
 
 PlateauLyraLoseText:
+if DEF(_LOCALE_FR)
+	text "… J'ai gagné?"
+	done
+else
 	text "…I won?"
 	done
+endc
 
 PlateauLyraText3:
+if DEF(_LOCALE_FR)
+	text "Je suis pas"
+	line "fâchée."
+
+	para "J'ai exploré"
+	line "Johto,"
+
+	para "rencontré du"
+	line "monde,"
+	line "et élevé"
+	cont "mes #mon."
+
+	para "Ils sont plus"
+	line "forts que"
+	cont "je pensais…"
+
+	para "Et j'ai pu"
+	line "te combattre"
+	cont "à fond."
+
+	para "Tu m'as battue."
+
+	para "Va battre la"
+	line "Ligue #mon!"
+	done
+else
 	text "I'm not angry that"
 	line "I lost."
 
@@ -305,6 +460,7 @@ PlateauLyraText3:
 	line "go beat the #-"
 	cont "mon League!"
 	done
+endc
 
 PlateauRivalApproachesMovement:
 	step_up
@@ -326,6 +482,27 @@ PokemonJournalGiovanniScript:
 	setflag ENGINE_READ_GIOVANNI_JOURNAL
 	jumpthistext
 
+if DEF(_LOCALE_FR)
+	text "Journal #mon"
+
+	para "Dossier spécial:"
+	line "Boss Giovanni!"
+
+	para "Quand la police"
+	line "a fouillé"
+	cont "l'Arène"
+
+	para "de Jadielle,"
+	line "elle a"
+	cont "découvert"
+
+	para "que son Champion,"
+	line "Giovanni, était"
+
+	para "aussi le boss de"
+	line "la Team Rocket."
+	done
+else
 	text "#mon Journal"
 
 	para "Special Feature:"
@@ -342,6 +519,7 @@ PokemonJournalGiovanniScript:
 	para "also been the"
 	line "Team Rocket Boss."
 	done
+endc
 
 IndigoPlateauYellowScript:
 	faceplayer
@@ -394,6 +572,17 @@ IndigoPlateauYellowScript:
 	end
 
 .PartyAndBoxFullText:
+if DEF(_LOCALE_FR)
+	text "Yellow: Oh…"
+	line "Tu ne peux pas"
+
+	para "porter un"
+	line "#mon de plus…"
+
+	para "Et ta Boite"
+	line "est pleine…"
+	done
+else
 	text "Yellow: Oh…"
 	line "You can't carry"
 
@@ -403,15 +592,36 @@ IndigoPlateauYellowScript:
 	para "And your Box is"
 	line "full, too…"
 	done
+endc
 
 .GreetingText:
+if DEF(_LOCALE_FR)
+	text "Yellow: Salut,"
+	line "<PLAYER>!"
+
+	para "Je regardais le"
+	line "Conseil 4."
+
+	para "C'est intense…"
+
+	para "Et ils ont un"
+	line "lien fort"
+	cont "avec"
+
+	para "leurs #mon…"
+
+	para "Un jour, je serai"
+	line "a leur"
+	cont "niveau."
+	done
+else
 	text "Yellow: Hi,"
 	line "<PLAYER>!"
 
 	para "I was watching the"
 	line "Elite Four fight."
 
-	para "They're so intense…"
+	para "So intense…"
 	line "And they have such"
 
 	para "strong bonds with"
@@ -421,15 +631,35 @@ IndigoPlateauYellowScript:
 	line "to reach their"
 	cont "level."
 	done
+endc
 
 .QuestionText:
+if DEF(_LOCALE_FR)
+	text "Yellow: <PLAYER>,"
+	line "tu peux"
+	cont "m'aider?"
+
+	para "J'ai un #mon"
+	line "que je ne peux"
+	cont "pas"
+
+	para "elever, et je"
+	line "veux pas le"
+	cont "laisser"
+
+	para "au PC."
+
+	para "Tu peux le"
+	line "prendre?"
+	done
+else
 	text "Yellow: <PLAYER>,"
 	line "can you do me a"
 	cont "favor?"
 
 	para "I have a #mon"
 	line "that I can't raise"
-	cont "myself, and I don't"
+	cont "myself, and I"
 
 	para "want to leave it"
 	line "in PC storage."
@@ -437,20 +667,49 @@ IndigoPlateauYellowScript:
 	para "Will you take it,"
 	line "please?"
 	done
+endc
 
 .GiveStarterText:
+if DEF(_LOCALE_FR)
+	text "Yellow: Merci,"
+	line "<PLAYER>!"
+
+	para "Tiens!"
+	done
+else
 	text "Yellow: Thanks,"
 	line "<PLAYER>! Here"
 	cont "you go!"
 	done
+endc
 
 .RefusedText:
+if DEF(_LOCALE_FR)
+	text "Yellow: Oh…"
+
+	para "Et le #mon?"
+	done
+else
 	text "Yellow: Oh…"
 	line "But what about the"
 	cont "#mon?"
 	done
+endc
 
 .GoodbyeText:
+if DEF(_LOCALE_FR)
+	text "Yellow: Prends"
+	line "bien soin de"
+
+	para ""
+	text_ram wStringBuffer3
+	text ","
+	line "<PLAYER>!"
+
+	para "On se reverra."
+	line "Bye-bye!"
+	done
+else
 	text "Yellow: You take"
 	line "good care of that"
 
@@ -463,6 +722,7 @@ IndigoPlateauYellowScript:
 	line "again."
 	cont "Bye-bye!"
 	done
+endc
 
 .DownMovement:
 	step_down
@@ -487,6 +747,34 @@ IndigoPlateauTeleportGuyScript:
 	end
 
 .Text:
+if DEF(_LOCALE_FR)
+	text "Les Dresseurs"
+	line "qui, une fois"
+
+	para "parvenus ici,"
+	line "ne se sentaient"
+	cont "plus"
+
+	para "de taille,"
+	line "se faisaient"
+
+	para "teleporter"
+	line "chez eux par"
+	cont "mon ABRA."
+
+	para "Mais ces temps-ci,"
+	line "ils peuvent"
+	cont "voler"
+
+	para "sans mon aide…"
+
+	para "Je suis un peu"
+	line "triste, et"
+	cont "mon"
+
+	para "ABRA aussi…"
+	done
+else
 	text "Ah! You're chal-"
 	line "lenging the Elite"
 
@@ -505,23 +793,55 @@ IndigoPlateauTeleportGuyScript:
 	para "Would you like to"
 	line "go home now?"
 	done
+endc
 
 .YesText:
+if DEF(_LOCALE_FR)
+	text "OK, OK. Pense"
+	line "a ta maison…"
+	done
+else
 	text "OK, OK. Picture"
 	line "your house in your"
 	cont "mind…"
 	done
+endc
 
 .NoText:
+if DEF(_LOCALE_FR)
+	text "OK, OK. Bonne"
+	line "chance!"
+	done
+else
 	text "OK, OK. The best"
 	line "of luck to you!"
 	done
+endc
 
 IndigoPlateauAbraText:
 	text "Abra: Aabra…"
 	done
 
 IndigoPlateauCooltrainermText:
+if DEF(_LOCALE_FR)
+	text "La Ligue #mon"
+	line "evalue ta"
+
+	para "capacite a"
+	line "vaincre"
+	cont "le"
+
+	para "terrible"
+	line "Conseil 4."
+
+	para "Et si tu perds,"
+	line "tu dois tout"
+
+	para "recommencer"
+	line "depuis le"
+	cont "debut!"
+	done
+else
 	text "At the #mon"
 	line "League, you'll get"
 
@@ -534,3 +854,4 @@ IndigoPlateauCooltrainermText:
 	para "lose, you have to"
 	line "start all over!"
 	done
+endc

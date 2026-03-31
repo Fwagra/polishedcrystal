@@ -24,6 +24,21 @@ PokemonJournalChuckScript:
 	setflag ENGINE_READ_CHUCK_JOURNAL
 	jumpthistext
 
+if DEF(_LOCALE_FR)
+	text "Journal #mon"
+
+	para "Dossier special:"
+	line "Chuck!"
+
+	para "On dit que Chuck"
+	line "aime les"
+	cont "desserts."
+
+	para "Mais il s'entraine"
+	line "sous une"
+	cont "cascade."
+	done
+else
 	text "#mon Journal"
 
 	para "Special Feature:"
@@ -40,6 +55,7 @@ PokemonJournalChuckScript:
 	line "heavy waterfall"
 	cont "to work them off."
 	done
+endc
 
 CianwoodGymGuyScript:
 	checkevent EVENT_GOT_HM04_STRENGTH
@@ -61,6 +77,43 @@ CianwoodGymGuyScript:
 	waitendtext
 
 .Text:
+if DEF(_LOCALE_FR)
+	text "Les Dresseurs"
+	line "ici sont"
+	cont "brutes."
+
+	para "Si je reste,"
+	line "ils vont me"
+	cont "chercher."
+
+	para "Conseil: le"
+	line "Champion est"
+
+	para "du type Combat."
+
+	para "Bats-le avec"
+	line "des #mon"
+	cont "Psy."
+
+	para "Bats-les"
+	line "avant qu'ils"
+
+	para "frappent fort."
+
+	para "Les rochers"
+	line "au milieu?"
+
+	para "Si tu les"
+	line "bouges mal,"
+
+	para "tu n'iras pas"
+	line "jusqu'au"
+	cont "Champion."
+
+	para "Si tu bloques,"
+	line "sors."
+	done
+else
 	text "The #mon Gym"
 	line "trainers here are"
 	cont "macho bullies."
@@ -98,8 +151,18 @@ CianwoodGymGuyScript:
 	para "If you get stuck,"
 	line "go outside."
 	done
+endc
 
 .StrengthText1:
+if DEF(_LOCALE_FR)
+	text "Tu ne peux pas"
+	line "bouger les"
+	cont "rochers?"
+
+	para "Prends ca et"
+	line "apprends Force!"
+	done
+else
 	text "You can't move the"
 	line "boulders aside?"
 
@@ -107,18 +170,41 @@ CianwoodGymGuyScript:
 	line "and teach your"
 	cont "#mon Strength!"
 	done
+endc
 
 .StrengthText2:
+if DEF(_LOCALE_FR)
+	text "Bonne chance!"
+	done
+else
 	text "Good luck!"
 	done
+endc
 
 .WinText:
+if DEF(_LOCALE_FR)
+	text "<PLAYER>!"
+	line "Tu as gagne!"
+
+	para "Je le voyais!"
+	done
+else
 	text "<PLAYER>! You won!"
 	line "I could tell by"
 	cont "looking at you!"
 	done
+endc
 
 CianwoodPokeCenter1FLassText:
+if DEF(_LOCALE_FR)
+	text "Tu as vu le"
+	line "#Maniac?"
+
+	para "Il se vante"
+	line "de son"
+	cont "#mon rare."
+	done
+else
 	text "Did you meet the"
 	line "#Maniac?"
 
@@ -126,8 +212,24 @@ CianwoodPokeCenter1FLassText:
 	line "ging about his"
 	cont "rare #mon."
 	done
+endc
 
 CianwoodPokeCenter1FSuperNerdText:
+if DEF(_LOCALE_FR)
+	text "J'adore frimer"
+	line "avec mes"
+	cont "#mon."
+
+	para "Pas toi?"
+
+	para "Je vais faire"
+	line "plein de"
+	cont "combats,"
+
+	para "pour les"
+	line "montrer!"
+	done
+else
 	text "I love showing off"
 	line "the #mon that"
 
@@ -140,8 +242,17 @@ CianwoodPokeCenter1FSuperNerdText:
 	para "battles, and show"
 	line "off my #mon!"
 	done
+endc
 
 CianwoodPokeCenter1FRichBoyText:
+if DEF(_LOCALE_FR)
+	text "Pas de # Mart"
+	line "ici."
+
+	para "On importe"
+	line "par la mer."
+	done
+else
 	text "There's no #"
 	line "Mart in this town,"
 
@@ -149,3 +260,4 @@ CianwoodPokeCenter1FRichBoyText:
 	line "port products from"
 	cont "across the sea."
 	done
+endc

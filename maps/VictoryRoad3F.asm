@@ -19,6 +19,10 @@ VictoryRoad3F_MapScriptHeader:
 GenericTrainerVeteranmRemy:
 	generictrainer VETERANM, REMY, EVENT_BEAT_VETERANM_REMY, VeteranmRemySeenText, VeteranmRemyBeatenText
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/VictoryRoad3F.asm"
+else
+
 	text "I can beat you"
 	line "when it comes to"
 
@@ -38,4 +42,6 @@ VeteranmRemyBeatenText:
 	text "No!"
 	line "Inconceivable!"
 	done
+
+endc
 

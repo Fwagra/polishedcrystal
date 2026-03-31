@@ -67,7 +67,7 @@ _PutAwayTheApricornText::
 SECTION "_NothingHereText", ROMX
 _NothingHereText::
 	text "Il n'y a rien"
-	line "ici..."
+	line "ici…"
 	done
 
 SECTION "_WantToUseMulchText", ROMX
@@ -357,7 +357,7 @@ _MomHiHowAreYouText::
 SECTION "_MomFoundAnItemText", ROMX
 _MomFoundAnItemText::
 	text "J'ai trouvé un bel"
-	line "objet à acheter..."
+	line "objet à acheter…"
 	prompt
 
 SECTION "_MomBoughtWithYourMoneyText", ROMX
@@ -377,7 +377,7 @@ _MomFoundADollText::
 	text "En faisant les"
 	line "courses j'ai vu"
 	cont "cette superbe"
-	cont "poupée, alors..."
+	cont "poupée, alors…"
 	prompt
 
 SECTION "_MomItsInYourRoomText", ROMX
@@ -761,7 +761,7 @@ _LC_Text8::
 
 SECTION "_LC_Text9", ROMX
 _LC_Text9::
-	line "Je répète..."
+	line "Je répète…"
 	done
 
 SECTION "_LC_Text10", ROMX
@@ -781,7 +781,7 @@ _LC_DragText1::
 
 SECTION "_LC_DragText2", ROMX
 _LC_DragText2::
-	line "répéter..."
+	line "répéter…"
 	done
 
 SECTION "_PnP_Text1", ROMX
@@ -895,7 +895,7 @@ _PnP_Text5::
 
 SECTION "_RocketRadioText1", ROMX
 _RocketRadioText1::
-	line "...Heu...on est"
+	line "…Heu…on est"
 	done
 
 SECTION "_RocketRadioText2", ROMX
@@ -962,7 +962,7 @@ _BuenaRadioText2::
 
 SECTION "_BuenaRadioText3", ROMX
 _BuenaRadioText3::
-	line "C'est..."
+	line "C'est…"
 	done
 
 SECTION "_BuenaRadioText4", ROMX
@@ -1215,8 +1215,8 @@ SECTION "_NPCTradeCancelText2", ROMX
 _NPCTradeCancelText2::
 	text "T'en as pas non"
 	line "plus?"
-	para "Pfff...."
-	line "Et zut..."
+	para "Pfff…"
+	line "Et zut…"
 	done
 
 SECTION "_NPCTradeWrongText2", ROMX
@@ -1263,7 +1263,7 @@ _NPCTradeIntroText3::
 SECTION "_NPCTradeCancelText3", ROMX
 _NPCTradeCancelText3::
 	text "Tu veux pas échan-"
-	line "ger? Bah mince..."
+	line "ger? Bah mince…"
 	done
 
 SECTION "_NPCTradeWrongText3", ROMX
@@ -1305,7 +1305,7 @@ _NPCTradeCompleteText4::
 SECTION "_NPCTradeAfterText4", ROMX
 _NPCTradeAfterText4::
 	text "Echanger c'est"
-	line "trop bizarre..."
+	line "trop bizarre…"
 	para "J'ai beaucoup à"
 	line "apprendre."
 	done
@@ -1316,12 +1316,12 @@ _MomLeavingText1::
 	line "#mon."
 	para "Où l'as-tu trouvé?"
 	line "Hein? Où ça?"
-	para "........."
+	para "………"
 	para "Alors t'aimes"
 	line "l'aventure, quoi."
 	para "OK!"
 	line "J'vais t'aider."
-	para "Mais..."
+	para "Mais…"
 	line "Que faire?"
 	para "Je sais! Je vais"
 	line "économiser pour"
@@ -1353,7 +1353,7 @@ SECTION "_MomIsThisAboutYourMoneyText", ROMX
 _MomIsThisAboutYourMoneyText::
 	text "Bienvenue!"
 	line "Tu fais des"
-	cont "efforts... C'est"
+	cont "efforts… C'est"
 	cont "dur l'aventure!"
 	para "J'ai rangé ta"
 	line "chambre."
@@ -1451,7 +1451,7 @@ _DayCareManIntroEggText::
 	cont "tu les OEUFS?"
 	para "J'élevais des"
 	line "#mon avec"
-	cont "ma femme et..."
+	cont "ma femme et…"
 	para "Surprise! On a"
 	line "trouvé un OEUF!"
 	para "C'est super dingue"
@@ -1481,7 +1481,7 @@ _DayCareLadyIntroEggText::
 	cont "tu les OEUFS?"
 	para "J'élevais des"
 	line "#mon avec"
-	cont "mon mari et..."
+	cont "mon mari et…"
 	para "Surprise! On a"
 	line "trouvé un OEUF!"
 	para "C'est super dingue"
@@ -1505,7 +1505,7 @@ _OnlyOneMonText::
 
 SECTION "_CantAcceptEggText", ROMX
 _CantAcceptEggText::
-	text "Ah... Je n'accepte"
+	text "Ah… Je n'accepte"
 	line "pas les OEUFS."
 	prompt
 
@@ -1614,7 +1614,7 @@ _ComeAgainText::
 
 SECTION "_NotYetText", ROMX
 _NotYetText::
-	text "Pas encore..."
+	text "Pas encore…"
 	done
 
 SECTION "_FoundAnEggAgainText", ROMX
@@ -1631,12 +1631,12 @@ SECTION "_FoundAnEggText", ROMX
 _FoundAnEggText::
 	text "Ah, c'est toi!"
 	para "On entraînait ton"
-	line "#mon, et..."
+	line "#mon, et…"
 	cont "Surprise totale!"
 	para "Ton #mon a"
 	line "pondu un OEUF!"
 	para "On sait pas trop"
-	line "comment mais..."
+	line "comment mais…"
 	para "Il est là en tout"
 	line "cas. Tu le veux?"
 	done
@@ -1654,7 +1654,7 @@ _TakeGoodCareOfEggText::
 
 SECTION "_IllKeepItThanksText", ROMX
 _IllKeepItThanksText::
-	text "Bon ben..."
+	text "Bon ben…"
 	line "J'le garde. Merci!"
 	done
 
@@ -1662,7 +1662,7 @@ SECTION "_NoRoomForEggText", ROMX
 _NoRoomForEggText::
 	text "Tu n'as pas de"
 	line "place dans ton"
-	cont "équipe..."
+	cont "équipe…"
 	done
 
 SECTION "_NameRaterHelloText", ROMX
@@ -1686,7 +1686,7 @@ _NameRaterWhichMonText::
 
 SECTION "_NameRaterBetterNameText", ROMX
 _NameRaterBetterNameText::
-	text "Hmm... "
+	text "Hmm… "
 	text_ram wStringBuffer1
 	text "."
 	line "C'est un nom"
@@ -1720,7 +1720,7 @@ _NameRaterComeAgainText::
 
 SECTION "_NameRaterPerfectNameText", ROMX
 _NameRaterPerfectNameText::
-	text "Hmm... "
+	text "Hmm… "
 	text_ram wStringBuffer1
 	text "?"
 	line "C'est un super"
@@ -1740,7 +1740,7 @@ _NameRaterEggText::
 SECTION "_NameRaterSameNameText", ROMX
 _NameRaterSameNameText::
 	text "Ca ressemble un"
-	line "peu à l'ancien..."
+	line "peu à l'ancien…"
 	para "Mais c'est mieux"
 	line "qu'avant!"
 	para "Bien joué!"
@@ -2045,7 +2045,7 @@ _UseHeadbuttText::
 
 SECTION "_HeadbuttNothingText", ROMX
 _HeadbuttNothingText::
-	text "Non. Rien..."
+	text "Non. Rien…"
 	done
 
 SECTION "_AskHeadbuttText", ROMX
@@ -2244,7 +2244,7 @@ endc
 SECTION "_SweetHoneyNothingText", ROMX
 _SweetHoneyNothingText::
 	text "Il n'y a rien"
-	line "dans le coin..."
+	line "dans le coin…"
 	done
 
 SECTION "_SquirtbottleNothingText", ROMX
@@ -2252,7 +2252,7 @@ _SquirtbottleNothingText::
 	text "<PLAYER> fait"
 	line "jaillir de l'eau."
 	para "Mais rien ne"
-	line "se passe..."
+	line "se passe…"
 	done
 
 SECTION "_UseSacredAshText", ROMX
@@ -2524,7 +2524,7 @@ ContestJudging_FirstPlaceText::
 	line "Concours de"
 	cont "Capture est@"
 	text_pause
-	text "..."
+	text "…"
 	para "@"
 	text_ram wBugContestWinnerName
 	text ","
@@ -2744,8 +2744,8 @@ _PokecenterOaksPCText::
 
 SECTION "_PokecenterPCOaksClosedText", ROMX
 _PokecenterPCOaksClosedText::
-	text "..."
-	line "Déconnexion..."
+text "…"
+line "Déconnexion…"
 	done
 
 SECTION "_OakPCText1", ROMX
@@ -2933,7 +2933,7 @@ _MemoryGameYeahText::
 
 SECTION "_MemoryGameDarnText", ROMX
 _MemoryGameDarnText::
-	text "Zut..."
+	text "Zut…"
 	done
 
 SECTION "_StartMenuContestEndText", ROMX
@@ -3112,7 +3112,7 @@ SECTION "_ElmText4", ROMX
 _ElmText4::
 	text "Humains et #mon"
 	line "vivent en parfaite"
-	cont "harmonie..."
+	cont "harmonie…"
 	para "Certains jouent"
 	line "avec les #mon,"
 	cont "d'autres font des"
@@ -3147,12 +3147,12 @@ _ElmText7::
 	cont "de commencer."
 	para "Joies et périls"
 	line "paveront ta"
-	cont "route..."
+	cont "route…"
 	para "Un monde de rêve,"
 	line "de dangers et de"
 	para "#mon t'attend!"
 	line "En avant!"
-	para "..."
+	para "…"
 	line "A plus tard."
 	done
 
@@ -3365,7 +3365,7 @@ _HerbShopLadyIntroText::
 	para "Ton #mon ne va"
 	line "peut-être pas"
 	cont "aimer."
-	para "Héhéhéhéhé..."
+	para "Héhéhéhéhé…"
 	done
 
 SECTION "_HerbalLadyFinalPriceText", ROMX
@@ -3382,7 +3382,7 @@ _HerbalLadyFinalPriceText::
 SECTION "_HerbalLadyThanksText", ROMX
 _HerbalLadyThanksText::
 	text "Merci."
-	line "Héhéhéhéhé..."
+	line "Héhéhéhéhé…"
 	done
 
 SECTION "_HerbalLadyPackFullText", ROMX
@@ -3400,7 +3400,7 @@ _HerbalLadyNoMoneyText::
 SECTION "_HerbalLadyComeAgainText", ROMX
 _HerbalLadyComeAgainText::
 	text "A bientôt!"
-	line "Héhéhéhéhéhé..."
+	line "Héhéhéhéhéhé…"
 	done
 
 SECTION "_BargainShopIntroText", ROMX
@@ -3410,7 +3410,7 @@ _BargainShopIntroText::
 	para "Je vends des ob-"
 	line "jets super rares!"
 	para "Et un de chaque"
-	line "type..."
+	line "type…"
 	done
 
 SECTION "_BargainShopFinalPriceText", ROMX
@@ -3631,8 +3631,8 @@ _SlotsNotEnoughCoinsText::
 
 SECTION "_SlotsRanOutOfCoinsText", ROMX
 _SlotsRanOutOfCoinsText::
-	text "Zut... plus de"
-	line "jetons..."
+	text "Zut… plus de"
+	line "jetons…"
 	done
 
 SECTION "_SlotsPlayAgainText", ROMX
@@ -3759,7 +3759,7 @@ _AskForgetMoveText::
 
 SECTION "Text_MoveForgetCount", ROMX
 Text_MoveForgetCount::
-	text "1, 2 et..."
+	text "1, 2 et…"
 	text_pause
 	text_end
 
@@ -3773,7 +3773,7 @@ _MoveForgotText::
 	line "@"
 	text_ram wStringBuffer1
 	text "."
-	para "Et..."
+	para "Et…"
 	prompt
 
 SECTION "_MoveCantForgetHMText", ROMX
@@ -3802,7 +3802,7 @@ _CardFlipChooseACardText::
 
 SECTION "_CardFlipPlaceYourBetText", ROMX
 _CardFlipPlaceYourBetText::
-	text "Parier..."
+	text "Parier…"
 	done
 
 SECTION "_CardFlipPlayAgainText", ROMX
@@ -3823,7 +3823,7 @@ _CardFlipYeahText::
 
 SECTION "_CardFlipDarnText", ROMX
 _CardFlipDarnText::
-	text "Zut..."
+	text "Zut…"
 	done
 
 SECTION "_GearTodayText", ROMX
@@ -4057,7 +4057,7 @@ _PPRestoredText::
 
 SECTION "_ItemLooksBitterText", ROMX
 _ItemLooksBitterText::
-	text "Ca a l'air amer..."
+text "Ca a l'air amer…"
 	prompt
 
 SECTION "_ItemCantUseOnEggText", ROMX

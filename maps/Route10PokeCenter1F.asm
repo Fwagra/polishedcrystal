@@ -23,6 +23,20 @@ PokemonJournalAgathaScript:
 	setflag ENGINE_READ_AGATHA_JOURNAL
 	jumpthistext
 
+if DEF(_LOCALE_FR)
+	text "Journal #mon"
+
+	para "Dossier special:"
+	line "Ex-Agatha!"
+
+	para "Jeunes, Agatha"
+	line "et Pr.Chen"
+
+	para "etaient rivaux,"
+	line "et se"
+	cont "defiaient."
+	done
+else
 	text "#mon Journal"
 
 	para "Special Feature:"
@@ -35,12 +49,27 @@ PokemonJournalAgathaScript:
 	para "who vied for supr-"
 	line "emacy as trainers."
 	done
+endc
 
 Route10PokeCenter1FGymGuyScript:
 	checkevent EVENT_RESTORED_POWER_TO_KANTO
 	iftrue_jumptextfaceplayer .Text2
 	jumpthistextfaceplayer
 
+if DEF(_LOCALE_FR)
+	text "Le chef de la"
+	line "Centrale"
+
+	para "cherche un"
+	line "bon Dresseur."
+
+	para "Il veut"
+	line "recuperer"
+
+	para "un objet"
+	line "vole."
+	done
+else
 	text "The Power Plant's"
 	line "Manager is looking"
 
@@ -53,8 +82,20 @@ Route10PokeCenter1FGymGuyScript:
 	para "something that"
 	line "was stolen."
 	done
+endc
 
 .Text2:
+if DEF(_LOCALE_FR)
+	text "La Team Rocket"
+	line "s'est refaite"
+
+	para "à Johto, puis"
+	line "dissoute."
+
+	para "Je n'étais pas"
+	line "au courant."
+	done
+else
 	text "I hear Team Rocket"
 	line "got back together"
 
@@ -64,16 +105,37 @@ Route10PokeCenter1FGymGuyScript:
 	para "I didn't know any-"
 	line "thing about that."
 	done
+endc
 
 Route10PokeCenter1FGentlemanText:
+if DEF(_LOCALE_FR)
+	text "C'est tellement"
+	line "pratique"
+	cont "d'avoir un"
+
+	para "Centre Pokémon"
+	line "près de la"
+	cont "caverne!"
+	done
+else
 	text "A #mon Center"
 	line "near a cave?"
 
 	para "That's mighty"
 	line "convenient."
 	done
+endc
 
 Route10PokeCenter1FCooltrainerfText:
+if DEF(_LOCALE_FR)
+	text "Dehors, tu vois"
+	line "un grand"
+	cont "toit."
+
+	para "C'est la"
+	line "Centrale."
+	done
+else
 	text "When you go out-"
 	line "side, you can see"
 
@@ -83,3 +145,4 @@ Route10PokeCenter1FCooltrainerfText:
 	para "That's the Power"
 	line "Plant."
 	done
+endc

@@ -126,7 +126,7 @@ CamperTodd1AfterText:
 
 	para "SION. Ou peut-"
 	line "être utiliser des"
-	cont "objets..."
+	cont "objets…"
 	done
 
 CamperToddSaleText:

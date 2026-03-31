@@ -18,7 +18,7 @@ TeacherHillarySeenText:
 
 TeacherHillaryBeatenText:
 	text "Perdre c'est mal."
-	line "Pfff..."
+	line "Pfff…"
 	done
 
 SchoolboyKippSeenText:
@@ -38,7 +38,7 @@ SchoolboyTommySeenText:
 	done
 
 SchoolboyTommyBeatenText:
-	text "Heu..."
+	text "Heu…"
 	line "Copain?"
 	done
 

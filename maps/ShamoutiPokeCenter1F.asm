@@ -24,6 +24,19 @@ PokemonJournalLoreleiScript:
 	setflag ENGINE_READ_LORELEI_JOURNAL
 	jumpthistext
 
+if DEF(_LOCALE_FR)
+	text "Journal #mon"
+
+	para "Dossier special:"
+	line "Olga!"
+
+	para "On dit qu'Olga a"
+	line "une collection"
+
+	para "complete de"
+	line "Poupées #mon."
+	done
+else
 	text "#mon Journal"
 
 	para "Special Feature:"
@@ -35,6 +48,7 @@ PokemonJournalLoreleiScript:
 	para "collection of"
 	line "#mon dolls."
 	done
+endc
 
 ShamoutiPokeCenter1FIvyScript:
 	faceplayer
@@ -110,13 +124,57 @@ ShamoutiPokeCenter1FIvyScript:
 	end
 
 .NoRoomText:
+if DEF(_LOCALE_FR)
+	text "Zut, pas de"
+	line "place"
+	cont "dans l'equipe"
+
+	para "ni dans"
+	line "les Boites…"
+	done
+else
 	text "Alas, it seems"
 	line "there's no room in"
 	cont "either your party"
 	cont "or your Box…"
 	done
+endc
 
 .GreetingText:
+if DEF(_LOCALE_FR)
+	text "Ivy: Oh! Tu es"
+	line "<PLAYER>,"
+	cont "le Maître!"
+
+	para "Ravie de"
+	line "te voir!"
+
+	para "Je suis Ivy,"
+	line "Prof #mon."
+
+	para "J'etudie les"
+	line "variantes"
+	cont "locales."
+
+	para "Certains #mon"
+	line "sauvages"
+
+	para "connaissent"
+	line "des coups"
+	cont "uniques."
+
+	para "Et meme deux"
+	line "#mon"
+
+	para "peuvent avoir"
+	line "des couleurs"
+	cont "different-"
+	cont "es…"
+
+	para "Pardon, je"
+	line "m'emballe…"
+	done
+else
 	text "Ivy: Oh! You're"
 	line "<PLAYER>, the new"
 	cont "Champion!"
@@ -148,8 +206,24 @@ ShamoutiPokeCenter1FIvyScript:
 	line "carried away some-"
 	cont "times."
 	done
+endc
 
 .OfferText:
+if DEF(_LOCALE_FR)
+	text "Ivy: Tu vas"
+	line "dans une"
+	cont "nouvelle"
+
+	para "region…"
+
+	para "Alors je te"
+	line "donne aussi"
+	cont "un #mon!"
+
+	para "Lequel tu"
+	line "veux?"
+	done
+else
 	text "Ivy: So you're"
 	line "taking a whole new"
 
@@ -163,14 +237,43 @@ ShamoutiPokeCenter1FIvyScript:
 	para "Which one do you"
 	line "want?"
 	done
+endc
 
 .ChoseKantoStarterText:
+if DEF(_LOCALE_FR)
+	text "Ivy: Super"
+	line "choix!"
+	done
+else
 	text "Ivy: I think"
 	line "that's a great"
 	cont "#mon too!"
 	done
+endc
 
 .GoodbyeText:
+if DEF(_LOCALE_FR)
+	text "Ivy: Le Prof.Orme"
+	line "t'a confie"
+	cont "un #mon,"
+
+	para "et Pr.Chen"
+	line "un #dex."
+
+	para "Je sais que tu"
+	line "prendras soin"
+	cont "de "
+	text_ram wStringBuffer3
+	text "."
+
+	para "Je reprends le"
+	line "ferry pour"
+	cont "Valencia."
+
+	para "Passe le bonjour"
+	line "a Pr.Chen!"
+	done
+else
 	text "Ivy: Prof.Elm"
 	line "trusted you with"
 	cont "a #mon, and"
@@ -193,6 +296,7 @@ ShamoutiPokeCenter1FIvyScript:
 	para "Say hi to Prof.Oak"
 	line "for me!"
 	done
+endc
 
 .DownMovement:
 	step_down

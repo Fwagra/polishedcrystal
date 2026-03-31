@@ -135,7 +135,7 @@ SaffronCityBlackBelt2Text:
 	done
 
 SaffronCitySuperNerdText:
-	text "À une époque, on"
+	text "A une époque, on"
 	line "pensait que les"
 
 	para "#mon PSY étaient"

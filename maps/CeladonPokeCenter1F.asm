@@ -24,6 +24,22 @@ PokemonJournalErikaScript:
 	setflag ENGINE_READ_ERIKA_JOURNAL
 	jumpthistext
 
+if DEF(_LOCALE_FR)
+	text "Journal #mon"
+
+	para "Dossier special:"
+	line "Erika!"
+
+	para "On raconte que"
+	line "si tu regardes"
+
+	para "dans l'Arène de"
+	line "Céladopole,"
+
+	para "tu verras souvent"
+	line "Erika dormir."
+	done
+else
 	text "#mon Journal"
 
 	para "Special Feature:"
@@ -36,8 +52,20 @@ PokemonJournalErikaScript:
 	para "can often see"
 	line "Erika snoozing."
 	done
+endc
 
 CeladonPokeCenter1FPharmacistText:
+if DEF(_LOCALE_FR)
+	text "Le repaire de"
+	line "la Team Rocket"
+
+	para "était au sous-sol"
+	line "du Casino."
+
+	para "Ah, ça date…"
+	line "Il y a 3 ans."
+	done
+else
 	text "Team Rocket's"
 	line "hideout is in the"
 
@@ -47,8 +75,20 @@ CeladonPokeCenter1FPharmacistText:
 	para "Oh, wait. That was"
 	line "three years ago."
 	done
+endc
 
 CeladonPokeCenter1FCooltrainerfText:
+if DEF(_LOCALE_FR)
+	text "Erika est"
+	line "une pro du"
+	cont "type Plante."
+
+	para "Si tu baisses"
+	line "ta garde,"
+
+	para "elle te punira!"
+	done
+else
 	text "Erika is a master"
 	line "of grass #mon."
 
@@ -56,11 +96,23 @@ CeladonPokeCenter1FCooltrainerfText:
 	line "pay if you don't"
 	cont "watch yourself."
 	done
+endc
 
 CeladonPokeCenter1FLassText:
+if DEF(_LOCALE_FR)
+	text "Erika n'est"
+	line "pas que"
+	cont "Champion."
+
+	para "Elle enseigne"
+	line "a l'univer-"
+	cont "site."
+	done
+else
 	text "Erika isn't just"
 	line "a Gym Leader."
 
 	para "She also lectures"
 	line "at the university."
 	done
+endc

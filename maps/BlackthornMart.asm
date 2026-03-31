@@ -18,6 +18,16 @@ BlackthornMart_MapScriptHeader:
 	object_event 11,  3, SPRITE_POKEMANIAC, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, 0, OBJECTTYPE_COMMAND, jumptextfaceplayer, BlackthornMartSuperNerdText, -1
 
 BlackthornMartCooltrainermText:
+if DEF(_LOCALE_FR)
+	text "Le Rappel Max"
+	line "soigne un"
+	cont "#mon K.O."
+
+	para "Mais il ne"
+	line "rend pas"
+	cont "les PP."
+	done
+else
 	text "You can't buy Max"
 	line "Revive, but it"
 
@@ -30,8 +40,18 @@ BlackthornMartCooltrainermText:
 	para "Power Points"
 	line "needed for moves."
 	done
+endc
 
 BlackthornMartBlackbeltText:
+if DEF(_LOCALE_FR)
+	text "Repousse Max"
+	line "eloigne"
+	cont "les faibles."
+
+	para "C'est le plus"
+	line "long."
+	done
+else
 	text "Max Repel keeps"
 	line "weak #mon away"
 	cont "from you."
@@ -40,8 +60,21 @@ BlackthornMartBlackbeltText:
 	line "lasting of the"
 	cont "Repel sprays."
 	done
+endc
 
 BlackthornMartSuperNerdText:
+if DEF(_LOCALE_FR)
+	text "Les villes"
+	line "de Johto"
+	cont "sont"
+
+	para "nommees"
+	line "comme des"
+	cont "plantes."
+
+	para "T'as vu?"
+	done
+else
 	text "The towns in Johto"
 	line "are all named"
 	cont "after plants."
@@ -49,3 +82,4 @@ BlackthornMartSuperNerdText:
 	para "Did you ever"
 	line "notice?"
 	done
+endc

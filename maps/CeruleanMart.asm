@@ -17,6 +17,18 @@ CeruleanMart_MapScriptHeader:
 	object_event  7,  2, SPRITE_BATTLE_GIRL, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 0, 2, -1, PAL_NPC_RED, OBJECTTYPE_COMMAND, jumptextfaceplayer, CeruleanMart_CooltrainerFText, -1
 
 CeruleanMart_CooltrainerMText:
+if DEF(_LOCALE_FR)
+	text "Vers le Cap"
+	line "Azuria, tu"
+	cont "verras"
+
+	para "plein de"
+	line "Dresseurs."
+
+	para "Ils veulent"
+	line "se comparer."
+	done
+else
 	text "You'll run into"
 	line "many trainers on"
 
@@ -29,8 +41,18 @@ CeruleanMart_CooltrainerMText:
 	para "up against other"
 	line "trainers."
 	done
+endc
 
 CeruleanMart_CooltrainerFText:
+if DEF(_LOCALE_FR)
+	text "Ondine est"
+	line "la seule ici"
+
+	para "qui bat les"
+	line "Dresseurs du"
+	cont "Cap Azuria."
+	done
+else
 	text "Misty is about the"
 	line "only person in"
 
@@ -38,3 +60,4 @@ CeruleanMart_CooltrainerFText:
 	line "the trainers at"
 	cont "Cerulean Cape."
 	done
+endc

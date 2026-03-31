@@ -84,6 +84,10 @@ PewterGymStatue:
 .Beaten:
 	jumpstd gymstatue2
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/PewterGym.asm"
+else
+
 BrockIntroText:
 	text "Brock: Wow, it's"
 	line "not often that we"
@@ -206,3 +210,5 @@ PewterGymGuyWinText:
 	para "inspiring. I mean"
 	line "that seriously."
 	done
+
+endc

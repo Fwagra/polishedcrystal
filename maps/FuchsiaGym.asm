@@ -200,6 +200,10 @@ Movement_NinjaSpin:
 	turn_head_down
 	step_end
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/FuchsiaGym.asm"
+else
+
 JanineText_DisappointYou:
 	text "Fufufufu…"
 
@@ -337,3 +341,5 @@ FuchsiaGymGuyWinText:
 	line "battle, trainer"
 	cont "from Johto!"
 	done
+
+endc

@@ -104,6 +104,10 @@ EcruteakGymClosed:
 	newloadmap MAPSETUP_DOOR
 	end
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/EcruteakGym.asm"
+else
+
 GenericTrainerSageJeffrey:
 	generictrainer SAGE, JEFFREY, EVENT_BEAT_SAGE_JEFFREY, SageJeffreySeenText, SageJeffreyBeatenText
 
@@ -336,3 +340,5 @@ EcruteakGymClosedText:
 
 	para "Hohohoho."
 	done
+
+endc

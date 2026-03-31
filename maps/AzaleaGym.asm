@@ -36,7 +36,7 @@ AzaleaGymStatue:
 
 AzaleaGymBugsyScript:
 	checkevent EVENT_BEAT_BUGSY
-	iftrue_jumptextfaceplayer .AfterText
+	iftrue_jumptextfaceplayer BugsyAfterText
 	showtextfaceplayer .SeenText
 	winlosstext .BeatenText, 0
 	loadtrainer BUGSY, 1
@@ -50,43 +50,11 @@ AzaleaGymBugsyScript:
 	setevent EVENT_BEAT_BUG_CATCHER_BENNY
 	setevent EVENT_BEAT_BUG_CATCHER_AL
 	setevent EVENT_BEAT_BUG_CATCHER_JOSH
-	writethistext
-		text "Do you know the"
-		line "benefits of the"
-		cont "Hive Badge?"
-
-		para "If you have it,"
-		line "#mon up to <LV>30"
-
-		para "will obey you,"
-		line "even traded ones."
-
-		para "#mon that know"
-		line "Cut will be able"
-
-		para "to use it outside"
-		line "of battle too."
-
-		para "Here, I also want"
-		line "you to have this."
-		done
+	writetext BugsyHiveBadgeText
 	promptbutton
 	verbosegivetmhm TM_U_TURN
 	setevent EVENT_GOT_TM69_U_TURN
-	jumpthisopenedtext
-
-	text "TM69 contains"
-	line "U-turn."
-
-	para "It lets your #-"
-	line "mon attack, then"
-
-	para "switch out right"
-	line "away."
-
-	para "Isn't that great?"
-	line "I discovered it!"
-	done
+	jumpopenedtext BugsyTM69Text
 
 .SeenText:
 	text "I'm Bugsy!"
@@ -116,17 +84,6 @@ AzaleaGymBugsyScript:
 
 	para "OK, you win. Take"
 	line "this Badge."
-	done
-
-.AfterText:
-	text "Bug #mon are"
-	line "deep. There are"
-
-	para "many mysteries to"
-	line "be explored."
-
-	para "Study your favor-"
-	line "ites thoroughly."
 	done
 
 AzaleaGymGuyScript:
@@ -268,3 +225,55 @@ TrainerTwinsAmyandmimiBeatenText:
 	text "Amy & Mimi: Oh,"
 	line "double goodness!"
 	done
+
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/AzaleaGym.asm"
+else
+
+BugsyHiveBadgeText:
+	text "Do you know the"
+	line "benefits of the"
+	cont "Hive Badge?"
+
+	para "If you have it,"
+	line "#mon up to <LV>30"
+
+	para "will obey you,"
+	line "even traded ones."
+
+	para "#mon that know"
+	line "Cut will be able"
+
+	para "to use it outside"
+	line "of battle too."
+
+	para "Here, I also want"
+	line "you to have this."
+	done
+
+BugsyTM69Text:
+	text "TM69 contains"
+	line "U-turn."
+
+	para "It lets your #-"
+	line "mon attack, then"
+
+	para "switch out right"
+	line "away."
+
+	para "Isn't that great?"
+	line "I discovered it!"
+	done
+
+BugsyAfterText:
+	text "Bug #mon are"
+	line "deep. There are"
+
+	para "many mysteries to"
+	line "be explored."
+
+	para "Study your favor-"
+	line "ites thoroughly."
+	done
+
+endc

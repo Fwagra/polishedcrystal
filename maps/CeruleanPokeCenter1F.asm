@@ -22,6 +22,19 @@ PokemonJournalMistyScript:
 	setflag ENGINE_READ_MISTY_JOURNAL
 	jumpthistext
 
+if DEF(_LOCALE_FR)
+	text "Journal #mon"
+
+	para "Dossier special:"
+	line "Ondine!"
+
+	para "On dit qu'Ondine"
+	line "admire Olga,"
+
+	para "ex-membre du"
+	line "Conseil 4."
+	done
+else
 	text "#mon Journal"
 
 	para "Special Feature:"
@@ -33,12 +46,25 @@ PokemonJournalMistyScript:
 	para "a former member of"
 	line "the Elite Four."
 	done
+endc
 
 CeruleanPokeCenter1FGymGuyScript:
 	checkunits
 	iftrue_jumptextfaceplayer .MetricText
 	jumpthistextfaceplayer
 
+if DEF(_LOCALE_FR)
+	text "Le Train Magnet"
+	line "va très vite."
+
+	para "Kanto a Johto,"
+	line "en un rien"
+	cont "de temps."
+
+	para "Johto est"
+	line "plus accessible."
+	done
+else
 	text "The Magnet Train"
 	line "travels at over"
 
@@ -51,8 +77,21 @@ CeruleanPokeCenter1FGymGuyScript:
 	para "It really makes"
 	line "Johto accessible."
 	done
+endc
 
 .MetricText:
+if DEF(_LOCALE_FR)
+	text "Le Train Magnet"
+	line "va très vite."
+
+	para "Kanto a Johto,"
+	line "en un rien"
+	cont "de temps."
+
+	para "Johto est"
+	line "plus accessible."
+	done
+else
 	text "The Magnet Train"
 	line "travels at over"
 
@@ -65,8 +104,29 @@ CeruleanPokeCenter1FGymGuyScript:
 	para "It really makes"
 	line "Johto accessible."
 	done
+endc
 
 CeruleanPokeCenter1FSuperNerdText:
+if DEF(_LOCALE_FR)
+	text "Contre un"
+	line "Dresseur, je"
+	cont "préfère"
+
+	para "envoyer un"
+	line "Pokémon que"
+	cont "j'ai bien"
+
+	para "entraîné, même"
+	line "s'il est"
+	cont "moins fort"
+
+	para "qu'un Pokémon"
+	line "que je"
+	cont "viendrais"
+
+	para "d'attraper."
+	done
+else
 	text "For battles, I'd"
 	line "much rather use"
 
@@ -77,3 +137,4 @@ CeruleanPokeCenter1FSuperNerdText:
 	line "than some newly"
 	cont "caught #mon."
 	done
+endc

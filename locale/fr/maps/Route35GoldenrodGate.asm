@@ -51,7 +51,7 @@ Route35GoldenrodGateRandyCantCarryAnotherMonText:
 
 Route35GoldenrodGateRandyOhNeverMindThenText:
 	text "Bon. Laisse tomber"
-	line "alors..."
+	line "alors…"
 	done
 
 Route35GoldenrodGateRandySomethingForYourTroubleText:

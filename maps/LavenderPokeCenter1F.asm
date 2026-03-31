@@ -23,6 +23,18 @@ PokemonJournalMrFujiScript:
 	setflag ENGINE_READ_MR_FUJI_JOURNAL
 	jumpthistext
 
+if DEF(_LOCALE_FR)
+	text "Journal #mon"
+
+	para "Editeur: M.Fuji"
+	line "a refuse"
+
+	para "l'interview."
+
+	para "Il est adore"
+	line "a Lavandia."
+	done
+else
 	text "#mon Journal"
 
 	para "Editor: The shy"
@@ -37,6 +49,7 @@ PokemonJournalMrFujiScript:
 	para "respected in Lav-"
 	line "ender Town."
 	done
+endc
 
 LavenderPokeCenter1FYoungsterScript:
 	checkevent EVENT_RESTORED_POWER_TO_KANTO
@@ -45,6 +58,21 @@ LavenderPokeCenter1FYoungsterScript:
 	iffalse_jumptextfaceplayer .NoExorcismText
 	jumpthistextfaceplayer
 
+if DEF(_LOCALE_FR)
+	text "Le directeur de"
+	line "la Tour Radio"
+
+	para "se réjouit que"
+	line "les émissions"
+
+	para "puissent"
+	line "reprendre,"
+	cont "maintenant"
+
+	para "que la Centrale"
+	line "est réparée."
+	done
+else
 	text "The Director of"
 	line "the Radio Station"
 	cont "sure was happy."
@@ -53,8 +81,24 @@ LavenderPokeCenter1FYoungsterScript:
 	line "finally back on"
 	cont "the air!"
 	done
+endc
 
 .NoMachinePartText:
+if DEF(_LOCALE_FR)
+	text "Si la Centrale"
+	line "ne marche pas,"
+
+	para "le Train"
+	line "Magnétique ne"
+	cont "peut pas circuler."
+
+	para "Et même la"
+	line "Tour Radio"
+
+	para "ne peut plus"
+	line "rien émettre."
+	done
+else
 	text "If the Power Plant"
 	line "isn't running, the"
 
@@ -65,8 +109,20 @@ LavenderPokeCenter1FYoungsterScript:
 	line "Radio Tower can't"
 	cont "broadcast…"
 	done
+endc
 
 .NoExorcismText:
+if DEF(_LOCALE_FR)
+	text "La Centrale"
+	line "marche, mais"
+	cont "la Tour Radio"
+
+	para "ne diffuse"
+	line "toujours pas."
+
+	para "Que se passe-t-il?"
+	done
+else
 	text "The Power Plant is"
 	line "running smoothly"
 	cont "again, but the"
@@ -77,8 +133,20 @@ LavenderPokeCenter1FYoungsterScript:
 	para "What's going on"
 	line "over there?"
 	done
+endc
 
 LavenderPokeCenter1FGentlemanText:
+if DEF(_LOCALE_FR)
+	text "Au nord de"
+	line "Lavandia,"
+
+	para "il y a la"
+	line "Grotte."
+
+	para "Traverse-la pour"
+	line "la Centrale."
+	done
+else
 	text "To the north of"
 	line "Lavender is Rock"
 
@@ -86,8 +154,18 @@ LavenderPokeCenter1FGentlemanText:
 	line "it to get to the"
 	cont "Power Plant."
 	done
+endc
 
 LavenderPokeCenter1FTeacherText:
+if DEF(_LOCALE_FR)
+	text "A la radio,"
+	line "il y a la"
+	cont "# Flute."
+
+	para "Mais il te faut"
+	line "la Carte+."
+	done
+else
 	text "There's a radio"
 	line "program that plays"
 	cont "# Flute music."
@@ -96,3 +174,4 @@ LavenderPokeCenter1FTeacherText:
 	line "needs an Expn.Card"
 	cont "to tune into it."
 	done
+endc

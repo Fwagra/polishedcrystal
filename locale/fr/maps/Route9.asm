@@ -34,14 +34,14 @@ PicnickerEdnaSeenText:
 	done
 
 PicnickerEdnaBeatenText:
-	text "Ohh...pas glop."
+	text "Ohh…pas glop."
 	done
 
 HikerTimSeenText:
 	text "Elle descend du"
 	line "MONT ARGENT à"
-	cont "cheval..."
-	cont "La la la la la..."
+	cont "cheval…"
+	cont "La la la la la…"
 
 	para "Le MONT ARGENT est"
 	line "à JOHTO, non?"
@@ -56,7 +56,7 @@ HikerSidneySeenText:
 	text "J'ai un secret"
 	line "pour toi."
 
-	para "Mais d'abord..."
+	para "Mais d'abord…"
 	line "Combat!"
 	done
 
@@ -72,7 +72,6 @@ Route9SignText:
 	line "GROTTE"
 	done
 
-; TODO: Route9AdvancedTipsSignText (pas de traduction officielle)
 Route9AdvancedTipsSignText:
 	text "Astuces !"
 	para "Un #mon tenant"

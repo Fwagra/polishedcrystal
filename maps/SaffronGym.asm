@@ -169,6 +169,10 @@ SaffronGymStatue:
 .Beaten:
 	jumpstd gymstatue2
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/SaffronGym.asm"
+else
+
 SabrinaIntroText:
 	text "Sabrina: I knew"
 	line "you were coming…"
@@ -341,3 +345,5 @@ SaffronGymGuyWinText:
 	text "That was another"
 	line "fantastic battle!"
 	done
+
+endc

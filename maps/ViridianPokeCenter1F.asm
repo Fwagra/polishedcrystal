@@ -23,6 +23,22 @@ PokemonJournalBlueScript:
 	setflag ENGINE_READ_BLUE_JOURNAL
 	jumpthistext
 
+if DEF(_LOCALE_FR)
+	text "Journal #mon"
+
+	para "Dossier special:"
+	line "Blue!"
+
+	para "On dit que Blue"
+	line "rend visite"
+
+	para "a ses #mon"
+	line "chaque annee"
+
+	para "a la Maison"
+	line "des Ames."
+	done
+else
 	text "#mon Journal"
 
 	para "Special Feature:"
@@ -35,20 +51,40 @@ PokemonJournalBlueScript:
 	para "every year in the"
 	line "House of Souls."
 	done
+endc
 
 ViridianPokeCenter1FCooltrainermScript:
 	checkevent EVENT_BLUE_IN_CINNABAR
 	iftrue_jumptextfaceplayer .BlueText
 	jumpthistextfaceplayer
 
+if DEF(_LOCALE_FR)
+	text "Ou est le"
+	line "Champion de"
+	cont "Jadielle?"
+
+	para "Je voulais le"
+	line "defier."
+	done
+else
 	text "Where in the world"
 	line "is Viridian's Gym"
 
 	para "Leader? I wanted"
 	line "to challenge him."
 	done
+endc
 
 .BlueText:
+if DEF(_LOCALE_FR)
+	text "Les Dresseurs de"
+	line "l'Arène sont"
+	cont "forts."
+
+	para "Un jour,"
+	line "j'en serai!"
+	done
+else
 	text "There are strong"
 	line "Gym Trainers at"
 	cont "the Viridian Gym."
@@ -56,8 +92,18 @@ ViridianPokeCenter1FCooltrainermScript:
 	para "Someday I'm going"
 	line "to join them!"
 	done
+endc
 
 ViridianPokeCenter1FCooltrainerfText:
+if DEF(_LOCALE_FR)
+	text "J'ai entendu que"
+	line "l'Arène"
+	cont "a disparu."
+
+	para "Que devient"
+	line "Auguste?"
+	done
+else
 	text "I heard that the"
 	line "Gym in Cinnabar is"
 	cont "gone."
@@ -66,8 +112,15 @@ ViridianPokeCenter1FCooltrainerfText:
 	line "came of Blaine,"
 	cont "the Gym Leader."
 	done
+endc
 
 ViridianPokeCenter1FBugCatcherText:
+if DEF(_LOCALE_FR)
+	text "Mon reve:"
+	line "etre Champion!"
+	done
+else
 	text "My dream is to be-"
 	line "come a Gym Leader."
 	done
+endc

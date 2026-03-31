@@ -18,5 +18,5 @@ Route7UndergroundPathSignText:
 	done
 
 Route7LockedDoorText:
-	text "C'est fermé..."
+	text "C'est fermé…"
 	done

@@ -7,7 +7,7 @@ PalletTownTeacherText:
 	done
 
 PalletTownFisherText:
-	text "Le progrès..."
+	text "Le progrès…"
 	line "C'est dingue!"
 
 	para "On peut maintenant"
@@ -17,7 +17,6 @@ PalletTownFisherText:
 	cont "e-mails."
 	done
 
-; TODO: PalletTownYoungsterText (pas de traduction officielle)
 PalletTownYoungsterText:
 	text "Tchao Minab'!"
 	para "…Les gens ont"

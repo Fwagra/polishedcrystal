@@ -19,6 +19,21 @@ AzaleaMart_MapScriptHeader:
 	object_event  8,  6, SPRITE_ROCKER, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 0, 1, (1 << EVE) | (1 << NITE), PAL_NPC_PURPLE, OBJECTTYPE_COMMAND, jumptextfaceplayer, AzaleaMartRockerText, -1
 
 AzaleaMartCooltrainermText:
+if DEF(_LOCALE_FR)
+	text "Pas de Super"
+	line "Ball ici."
+
+	para "Les # Balls"
+	line "feront"
+	cont "l'affaire."
+
+	para "J'aimerais que"
+	line "Kurt me fasse"
+
+	para "des Balls"
+	line "speciales."
+	done
+else
 	text "There's no Great"
 	line "Ball here. #"
 
@@ -29,8 +44,21 @@ AzaleaMartCooltrainermText:
 	line "make me some of"
 	cont "his custom Balls."
 	done
+endc
 
 AzaleaMartBugCatcherText:
+if DEF(_LOCALE_FR)
+	text "Une Super Ball"
+	line "est meilleure"
+
+	para "qu'une # Ball."
+
+	para "Mais celles de"
+	line "Kurt sont"
+	cont "parfois"
+	cont "mieux."
+	done
+else
 	text "A Great Ball is"
 	line "better for catch-"
 	cont "ing #mon than a"
@@ -40,8 +68,23 @@ AzaleaMartBugCatcherText:
 	line "be better some-"
 	cont "times."
 	done
+endc
 
 AzaleaMartLadyText:
+if DEF(_LOCALE_FR)
+	text "A Doublonville,"
+	line "j'achete"
+	cont "tout."
+
+	para "Mais pour"
+	line "booster le"
+	cont "type Feu,"
+
+	para "rien ne vaut"
+	line "le Charbon"
+	cont "d'Ecorcia!"
+	done
+else
 	text "I can buy many"
 	line "items at home in"
 	cont "Goldenrod City,"
@@ -52,8 +95,27 @@ AzaleaMartLadyText:
 	para "nothing beats"
 	line "Azalea's Charcoal!"
 	done
+endc
 
 AzaleaMartRockerText:
+if DEF(_LOCALE_FR)
+	text "Les prototypes"
+	line "de Kurt"
+
+	para "avaient des"
+	line "soucis."
+
+	para "Love Ball:"
+	line "meme sexe."
+
+	para "Speed Ball:"
+	line "3 especes."
+
+	para "Heureusement,"
+	line "c'est"
+	cont "corrige!"
+	done
+else
 	text "The prototype"
 	line "versions of"
 
@@ -74,3 +136,4 @@ AzaleaMartRockerText:
 	line "those problems"
 	cont "were fixed!"
 	done
+endc

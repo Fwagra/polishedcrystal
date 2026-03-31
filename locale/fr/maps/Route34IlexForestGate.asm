@@ -17,14 +17,14 @@ Route34IlexForestGateTeacherText:
 	line "quand les #mon"
 
 	para "ne veulent pas"
-	line "apparaître..."
+	line "apparaître…"
 	cont "Prends cette CT."
 	done
 
 Route34IlexForestGateTeacher_ForestIsRestless:
 	text "Il y a un problème"
 	line "dans le BOIS AUX"
-	cont "CHENES..."
+	cont "CHENES…"
 
 	para "Evite d'y aller"
 	line "pour l'instant."

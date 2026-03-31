@@ -22,6 +22,22 @@ PokemonJournalBlaineScript:
 	setflag ENGINE_READ_BLAINE_JOURNAL
 	jumpthistext
 
+if DEF(_LOCALE_FR)
+	text "Journal #mon"
+
+	para "Dossier special:"
+	line "Auguste!"
+
+	para "On dit qu'Auguste"
+	line "enleve ses"
+
+	para "lunettes noires"
+	line "pour inventer"
+
+	para "de nouvelles"
+	line "enigmes."
+	done
+else
 	text "#mon Journal"
 
 	para "Special Feature:"
@@ -34,8 +50,17 @@ PokemonJournalBlaineScript:
 	line "thinking up new"
 	cont "riddles."
 	done
+endc
 
 CinnabarPokeCenter1FCooltrainerfText:
+if DEF(_LOCALE_FR)
+	text "Auguste vit"
+	line "seul"
+
+	para "dans les Iles"
+	line "Ecume…"
+	done
+else
 	text "Cinnabar Gym's"
 	line "Blaine apparently"
 
@@ -43,9 +68,17 @@ CinnabarPokeCenter1FCooltrainerfText:
 	line "Seafoam Islands"
 	cont "cave…"
 	done
+endc
 
 CinnabarPokeCenter1FFisherText:
+if DEF(_LOCALE_FR)
+	text "Ca fait 1 an"
+	line "que le volcan"
+	cont "a explose."
+	done
+else
 	text "It's been a year"
 	line "since the volcano"
 	cont "erupted."
 	done
+endc

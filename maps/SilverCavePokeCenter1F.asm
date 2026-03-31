@@ -22,6 +22,20 @@ PokemonJournalLanceScript:
 	setflag ENGINE_READ_LANCE_JOURNAL
 	jumpthistext
 
+if DEF(_LOCALE_FR)
+	text "Journal #mon"
+
+	para "Dossier special:"
+	line "Peter!"
+
+	para "On dit que Peter"
+	line "achete ses"
+
+	para "capes au Centre"
+	line "Comm. de"
+	cont "Céladopole."
+	done
+else
 	text "#mon Journal"
 
 	para "Special Feature:"
@@ -33,6 +47,7 @@ PokemonJournalLanceScript:
 	para "his capes at Cel-"
 	line "adon Dept.Store."
 	done
+endc
 
 SilverCavePokeCenterGrampsScript:
 	checkevent EVENT_GOT_EXPERT_BELT
@@ -78,6 +93,16 @@ SilverCavePokeCenterGrampsScript:
 	jumpthisopenedtext
 
 .AfterText:
+if DEF(_LOCALE_FR)
+	text "Cette Ceinture"
+	line "n'est pas"
+	cont "pour frimer."
+
+	para "Elle booste un"
+	line "#mon qui"
+	cont "la tient."
+	done
+else
 	text "That Belt's not"
 	line "just for show."
 
@@ -85,8 +110,20 @@ SilverCavePokeCenterGrampsScript:
 	line "#mon if they"
 	cont "hold it."
 	done
+endc
 
 .GreetingText:
+if DEF(_LOCALE_FR)
+	text "Jeune, j'étais"
+	line "Dresseur."
+
+	para "Maintenant, je lis"
+	line "le Journal"
+	cont "#mon."
+
+	para "Tu lis aussi?"
+	done
+else
 	text "In my youth I was"
 	line "a talented trainer"
 	cont "myself."
@@ -98,8 +135,20 @@ SilverCavePokeCenterGrampsScript:
 	para "Are you a Journal"
 	line "reader too?"
 	done
+endc
 
 .ReadAllText:
+if DEF(_LOCALE_FR)
+	text "Tu les as tous"
+	line "lus?"
+
+	para "Alors tu es"
+	line "expert!"
+
+	para "Prends ca,"
+	line "fan!"
+	done
+else
 	text "You've read them"
 	line "all? Then you're"
 
@@ -109,8 +158,28 @@ SilverCavePokeCenterGrampsScript:
 	para "Take this to show"
 	line "you're a fan!"
 	done
+endc
 
 SilverCavePokeCenter1FGrannyText:
+if DEF(_LOCALE_FR)
+	text "Les Dresseurs qui"
+	line "recherchent le"
+	cont "pouvoir"
+
+	para "grimpent le"
+	line "Mont Argenté"
+	cont "malgré ses"
+
+	para "nombreux dangers."
+
+	para "Avec leurs Pokémon"
+	line "les plus forts,"
+
+	para "ils pensent"
+	line "pouvoir aller"
+	cont "partout…"
+	done
+else
 	text "Trainers who seek"
 	line "power climb Mt."
 
@@ -123,3 +192,4 @@ SilverCavePokeCenter1FGrannyText:
 	para "feel they can go"
 	line "anywhere…"
 	done
+endc

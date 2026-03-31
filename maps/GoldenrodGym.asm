@@ -181,6 +181,10 @@ JoWalksAwayMovement:
 	turn_head_left
 	step_end
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/GoldenrodGym.asm"
+else
+
 WhitneyBeforeText:
 	text "Hi! I'm Whitney!"
 
@@ -329,3 +333,5 @@ GoldenrodGymGuyWinText:
 	line "was busy admiring"
 	cont "the ladies here."
 	done
+
+endc

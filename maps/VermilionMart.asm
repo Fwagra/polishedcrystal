@@ -17,14 +17,34 @@ VermilionMart_MapScriptHeader:
 	object_event  8,  6, SPRITE_LADY, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 0, 1, -1, PAL_NPC_BLUE, OBJECTTYPE_COMMAND, jumptextfaceplayer, VermilionMartBeautyText, -1
 
 VermilionMartSuperNerdText:
+if DEF(_LOCALE_FR)
+	text "Il n'y a plus"
+	line "de Team Rocket"
+	cont "à Kanto."
+
+	para "Voilà qui suffit"
+	line "à me mettre"
+	cont "en joie!"
+	done
+else
 	text "Team Rocket is no"
 	line "longer in Kanto."
 
 	para "That alone makes"
 	line "me happy."
 	done
+endc
 
 VermilionMartBeautyText:
+if DEF(_LOCALE_FR)
+	text "Je vais"
+	line "à Safrania"
+	cont "acheter."
+
+	para "Ils vendent des"
+	line "Balls Luxe."
+	done
+else
 	text "I'm thinking about"
 	line "going shopping in"
 	cont "Saffron."
@@ -32,3 +52,4 @@ VermilionMartBeautyText:
 	para "They sell Luxury"
 	line "Balls there."
 	done
+endc

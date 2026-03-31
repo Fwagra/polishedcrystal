@@ -117,6 +117,10 @@ CianwoodGymMovement_ChuckChucksBoulder:
 	remove_sliding
 	step_end
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/CianwoodGym.asm"
+else
+
 ChuckIntroText1:
 	text "WAHAHAH!"
 
@@ -247,3 +251,5 @@ CianwoodGymBlackBeltText:
 
 	para "What a wimp!"
 	done
+
+endc

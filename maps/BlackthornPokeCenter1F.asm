@@ -24,6 +24,19 @@ PokemonJournalClairScript:
 	setflag ENGINE_READ_CLAIR_JOURNAL
 	jumpthistext
 
+if DEF(_LOCALE_FR)
+	text "Journal #mon"
+
+	para "Dossier special:"
+	line "Sandra!"
+
+	para "La tenue bleue"
+	line "de Sandra"
+
+	para "fait fureur"
+	line "dans la mode."
+	done
+else
 	text "#mon Journal"
 
 	para "Special Feature:"
@@ -36,6 +49,7 @@ PokemonJournalClairScript:
 	line "latest name in"
 	cont "fashion."
 	done
+endc
 
 ProfOaksAide4Script:
 	checkevent EVENT_GOT_LUCKY_EGG_FROM_PROF_OAKS_AIDE
@@ -71,6 +85,18 @@ ProfOaksAide4Script:
 	jumpthisopenedtext
 
 .ExplainText:
+if DEF(_LOCALE_FR)
+	text "Cet Oeuf Chance"
+	line "aide un #mon"
+
+	para "a gagner plus"
+	line "d'experience."
+
+	para "Utilise-le"
+	line "pour le"
+	cont "#dex!"
+	done
+else
 	text "That Lucky Egg"
 	line "helps a #mon"
 
@@ -80,8 +106,26 @@ ProfOaksAide4Script:
 	para "Use it to com-"
 	line "plete the #dex!"
 	done
+endc
 
 .HiText:
+if DEF(_LOCALE_FR)
+	text "Salut! Je suis"
+	line "l'aide de"
+	cont "Pr.Chen."
+
+	para "Si tu as 60"
+	line "especes,"
+
+	para "je dois te"
+	line "donner un"
+	cont "objet."
+
+	para "Alors, <PLAYER>,"
+	line "tu as"
+	cont "60 #mon?"
+	done
+else
 	text "Hello there! I'm"
 	line "Prof.Oak's aide."
 
@@ -97,6 +141,7 @@ ProfOaksAide4Script:
 	para "at least 60 kinds"
 	line "of #mon?"
 	done
+endc
 
 .HereYouGoText:
 	text "Let's see…"
@@ -112,12 +157,31 @@ ProfOaksAide4Script:
 	done
 
 .NoRoomText:
+if DEF(_LOCALE_FR)
+	text "Oh! Tu n'as"
+	line "plus de"
+	cont "place."
+	done
+else
 	text "Oh! I see you"
 	line "don't have any"
 	cont "room for this."
 	done
+endc
 
 BlackthornPokeCenter1FGentlemanText:
+if DEF(_LOCALE_FR)
+	text "Au fond du"
+	line "Plateau"
+	cont "Indigo,"
+
+	para "il y a la"
+	line "Ligue #mon."
+
+	para "Les meilleurs"
+	line "s'y reunissent."
+	done
+else
 	text "Deep inside far-"
 	line "off Indigo Plateau"
 
@@ -130,8 +194,22 @@ BlackthornPokeCenter1FGentlemanText:
 	para "there from around"
 	line "the country."
 	done
+endc
 
 BlackthornPokeCenter1FTwinText:
+if DEF(_LOCALE_FR)
+	text "Je devais"
+	line "apprendre"
+	cont "un coup."
+
+	para "Du coup, j'ai"
+	line "vu l'Effaceur"
+	cont "de Capacite."
+
+	para "Pour oublier"
+	line "une CS."
+	done
+else
 	text "There was this"
 	line "move I just had"
 
@@ -142,3 +220,4 @@ BlackthornPokeCenter1FTwinText:
 	line "Deleter to make it"
 	cont "forget an HM move."
 	done
+endc

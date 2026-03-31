@@ -26,8 +26,26 @@ VioletPokeCenter1F_MapScriptHeader:
 
 PokemonJournalFalknerScript:
 	setflag ENGINE_READ_FALKNER_JOURNAL
-	jumpthistext
+	jumptext PokemonJournalFalknerText
 
+PokemonJournalFalknerText:
+if DEF(_LOCALE_FR)
+	text "Journal #mon"
+
+	para "Dossier spécial:"
+	line "Albert!"
+
+	para "On dit qu'Albert"
+	line "vénère son"
+	cont "père,"
+
+	para "qui dirigeait"
+	line "l'Arène de"
+	cont "Mauville"
+
+	para "avant lui."
+	done
+else
 	text "#mon Journal"
 
 	para "Special Feature:"
@@ -40,44 +58,64 @@ PokemonJournalFalknerScript:
 	para "led the Violet Gym"
 	line "before him."
 	done
+endc
 
 VioletPokeCenter1FElmsAideScript:
 	faceplayer
 	opentext
 	checkevent EVENT_REFUSED_TO_TAKE_EGG_FROM_ELMS_AIDE
 	iftruefwd .SecondTimeAsking
-	writetext .IntroText
+	writetext VioletPokeCenter1FAideIntroText
 	sjumpfwd .AskTakeEgg
 .SecondTimeAsking:
-	writetext .QuestionText
+	writetext VioletPokeCenter1FAideQuestionText
 .AskTakeEgg:
 	yesorno
 	iffalsefwd .RefusedEgg
 	giveegg TOGEPI
-	iffalse_jumpopenedtext .PartyAndBoxFull
+	iffalse_jumpopenedtext VioletPokeCenter1FAidePartyAndBoxFullText
 	setevent EVENT_GOT_TOGEPI_EGG_FROM_ELMS_AIDE
 	clearevent EVENT_ELMS_AIDE_IN_LAB
 	clearevent EVENT_TOGEPI_HATCHED
 	setmapscene ROUTE_32, $1
-	writetext .GoodbyeText
+	writetext VioletPokeCenter1FAideGoodbyeText
 	waitbutton
 	closetext
 	readvar VAR_FACING
 	ifequalfwd UP, .AideWalksAroundPlayer
 	turnobject PLAYER, DOWN
-	applymovement VIOLETPOKECENTER1F_SCIENTIST, .WalkStraightMovement
+	applymovement VIOLETPOKECENTER1F_SCIENTIST, VioletPokeCenter1FAideWalkStraightMovement
 	sjumpfwd .Finish
 .AideWalksAroundPlayer:
-	applymovement VIOLETPOKECENTER1F_SCIENTIST, .WalkAroundMovement
+	applymovement VIOLETPOKECENTER1F_SCIENTIST, VioletPokeCenter1FAideWalkAroundMovement
 	turnobject PLAYER, DOWN
-	applymovement VIOLETPOKECENTER1F_SCIENTIST, .WalkDownMovement
+	applymovement VIOLETPOKECENTER1F_SCIENTIST, VioletPokeCenter1FAideWalkDownMovement
 .Finish:
 	playsound SFX_EXIT_BUILDING
 	disappear VIOLETPOKECENTER1F_SCIENTIST
 	waitsfx
 	end
 
-.PartyAndBoxFull:
+.RefusedEgg:
+	setevent EVENT_REFUSED_TO_TAKE_EGG_FROM_ELMS_AIDE
+	jumpthisopenedtext
+
+if DEF(_LOCALE_FR)
+	text "M-mais…"
+	line "Le Prof.Orme"
+	cont "te demande…"
+	done
+else
+	text "B-but… Prof.Elm"
+	line "asked for you…"
+	done
+endc
+
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/VioletPokeCenter1F.asm"
+else
+
+VioletPokeCenter1FAidePartyAndBoxFullText:
 	text "Oh, no. You can't"
 	line "carry any more"
 	cont "#mon with you."
@@ -90,15 +128,7 @@ VioletPokeCenter1FElmsAideScript:
 	cont "room for the Egg."
 	done
 
-.RefusedEgg:
-	setevent EVENT_REFUSED_TO_TAKE_EGG_FROM_ELMS_AIDE
-	jumpthisopenedtext
-
-	text "B-but… Prof.Elm"
-	line "asked for you…"
-	done
-
-.IntroText:
+VioletPokeCenter1FAideIntroText:
 	text "<PLAYER>, long"
 	line "time, no see."
 
@@ -117,12 +147,12 @@ VioletPokeCenter1FElmsAideScript:
 	line "#mon Egg?"
 	done
 
-.QuestionText:
+VioletPokeCenter1FAideQuestionText:
 	text "<PLAYER>, will you"
 	line "take the Egg?"
 	done
 
-.GoodbyeText:
+VioletPokeCenter1FAideGoodbyeText:
 	text "We discovered that"
 	line "a #mon will not"
 
@@ -142,7 +172,9 @@ VioletPokeCenter1FElmsAideScript:
 	cont "hatches!"
 	done
 
-.WalkAroundMovement:
+endc
+
+VioletPokeCenter1FAideWalkAroundMovement:
 	step_left
 	step_left
 	step_down
@@ -150,18 +182,22 @@ VioletPokeCenter1FElmsAideScript:
 	step_left
 	step_end
 
-.WalkStraightMovement:
+VioletPokeCenter1FAideWalkStraightMovement:
 	step_down
 	step_left
 	step_left
 	step_left
 	step_left
-.WalkDownMovement:
+VioletPokeCenter1FAideWalkDownMovement:
 	step_down
 	step_down
 	step_down
 	step_down
 	step_end
+
+if DEF(_LOCALE_FR)
+	; labels already defined in locale/fr/maps/VioletPokeCenter1F.asm
+else
 
 VioletPokeCenter1FGameboyKidText:
 	text "A guy named Bill"
@@ -209,3 +245,5 @@ VioletPokeCenter1FYoungsterText:
 	para "will just do as"
 	line "they please."
 	done
+
+endc

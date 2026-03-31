@@ -29,20 +29,66 @@ CherrygroveMartCooltrainerMScript:
 	iftrue_jumptextfaceplayer CherrygroveMartCooltrainerMText_PokeBallsInStock
 	jumpthistextfaceplayer
 
+if DEF(_LOCALE_FR)
+	text "Ils n'ont plus de"
+	line "Poké Balls!"
+
+	para "Je me demande"
+	line "quand ils"
+	cont "en recevront…"
+	done
+else
 	text "They're fresh out"
 	line "of # Balls!"
 
 	para "When will they get"
 	line "more of them?"
 	done
+endc
 
 CherrygroveMartCooltrainerMText_PokeBallsInStock:
+if DEF(_LOCALE_FR)
+	text "Les Poké Balls"
+	line "sont arrivées! Je"
+	cont "vais attraper"
+	cont "tous les Pokémon"
+	cont "en vue!"
+	done
+else
 	text "# Balls are in"
 	line "stock! Now I can"
 	cont "catch #mon!"
 	done
+endc
 
 CherrygroveMartYoungsterText:
+if DEF(_LOCALE_FR)
+	text "Je marchais"
+	line "dans"
+	cont "l'herbe et"
+
+	para "un #mon"
+	line "Insecte a"
+	cont "empoisonné"
+
+	para "le mien…"
+
+	para "Après, j'ai"
+	line "continué,"
+
+	para "et mon #mon"
+	line "allait"
+	cont "de plus en"
+	cont "plus mal!"
+
+	para "Il faut"
+	line "toujours"
+	cont "avoir de"
+
+	para "l'Antidote"
+	line "avec soi."
+	done
+else
 	text "When I was walking"
 	line "in the grass, a"
 
@@ -56,3 +102,4 @@ CherrygroveMartYoungsterText:
 	para "You should keep an"
 	line "Antidote with you."
 	done
+endc

@@ -23,6 +23,23 @@ PokemonJournalPryceScript:
 	setflag ENGINE_READ_PRYCE_JOURNAL
 	jumpthistext
 
+if DEF(_LOCALE_FR)
+	text "Journal #mon"
+
+	para "Dossier special:"
+	line "Fredo!"
+
+	para "On dit que son"
+	line "style est souple"
+
+	para "comme un saule"
+	line "en hiver."
+
+	para "D'ou son"
+	line "surnom:"
+	cont "l'Hiver."
+	done
+else
 	text "#mon Journal"
 
 	para "Special Feature:"
@@ -42,8 +59,18 @@ PokemonJournalPryceScript:
 	line "nickname “the"
 	cont "winter trainer”."
 	done
+endc
 
 MahoganyPokeCenter1FPokefanmText:
+if DEF(_LOCALE_FR)
+	text "Hein? La Team"
+	line "Rocket revient?"
+
+	para "J'ai vu des gars"
+	line "en noir au"
+	cont "Lac Colère…"
+	done
+else
 	text "What's this? Team"
 	line "Rocket has come"
 	cont "back?"
@@ -52,8 +79,21 @@ MahoganyPokeCenter1FPokefanmText:
 	line "black at Lake of"
 	cont "Rage…"
 	done
+endc
 
 MahoganyPokeCenter1FYoungsterText:
+if DEF(_LOCALE_FR)
+	text "J'empêche mes"
+	line "#mon d'évo-"
+	cont "luer trop tôt."
+
+	para "Je leur fais"
+	line "apprendre"
+	cont "des coups"
+
+	para "avant."
+	done
+else
 	text "I stop my #mon"
 	line "from evolving too"
 	cont "early."
@@ -63,8 +103,18 @@ MahoganyPokeCenter1FYoungsterText:
 	cont "fore I let them"
 	cont "evolve."
 	done
+endc
 
 MahoganyPokeCenter1FCooltrainerfText:
+if DEF(_LOCALE_FR)
+	text "Evoluer rend"
+	line "plus fort."
+
+	para "Mais on apprend"
+	line "des coups"
+	cont "plus lentement."
+	done
+else
 	text "#mon do become"
 	line "stronger when they"
 
@@ -72,3 +122,4 @@ MahoganyPokeCenter1FCooltrainerfText:
 	line "also learn moves"
 	cont "more slowly."
 	done
+endc

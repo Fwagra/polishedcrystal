@@ -105,7 +105,7 @@ Text_LyraGoodbye1:
 	line "as tous les badges"
 	cont "de Johto."
 
-	para "...Tu es vraiment"
+	para "…Tu es vraiment"
 	line "incroyable,"
 	cont "<PLAYER>."
 
@@ -120,7 +120,7 @@ Text_LyraGoodbye1:
 	line "jamais affronter"
 	cont "le Champion."
 
-	para "...Avant de"
+	para "…Avant de"
 	line "partir…"
 
 	para "Un dernier combat?"
@@ -142,7 +142,7 @@ Text_LyraGoodbyeLoss:
 	done
 
 Text_LyraGoodbye2:
-	text "...Merci, <PLAYER>."
+	text "…Merci, <PLAYER>."
 
 	para "Je vois combien"
 	line "de travail et"
@@ -150,7 +150,7 @@ Text_LyraGoodbye2:
 	cont "à dresser tes"
 	cont "#mon."
 
-	para "...C'est donc"
+	para "…C'est donc"
 	line "l'heure des"
 	cont "adieux."
 

@@ -23,6 +23,22 @@ PokemonJournalSabrinaScript:
 	setflag ENGINE_READ_SABRINA_JOURNAL
 	jumpthistext
 
+if DEF(_LOCALE_FR)
+	text "Journal #mon"
+
+	para "Dossier special:"
+	line "Morgane!"
+
+	para "On dit que"
+	line "Morgane"
+
+	para "parle a ses"
+	line "#mon"
+
+	para "sans un mot,"
+	line "en combat."
+	done
+else
 	text "#mon Journal"
 
 	para "Special Feature:"
@@ -36,12 +52,22 @@ PokemonJournalSabrinaScript:
 	line "battle without"
 	cont "speaking."
 	done
+endc
 
 SaffronPokeCenter1FFisherScript:
 	checkevent EVENT_RESTORED_POWER_TO_KANTO
 	iftrue_jumptextfaceplayer .Text2
 	jumpthistextfaceplayer
 
+if DEF(_LOCALE_FR)
+	text "Je sors de la"
+	line "Cave"
+	cont "Taupiqueur."
+
+	para "Ca bougeait"
+	line "a la Centrale."
+	done
+else
 	text "I just happened to"
 	line "come through Rock"
 
@@ -49,8 +75,25 @@ SaffronPokeCenter1FFisherScript:
 	line "some commotion at"
 	cont "the Power Plant."
 	done
+endc
 
 .Text2:
+if DEF(_LOCALE_FR)
+	text "Les grottes"
+	line "s'effondrent"
+	cont "vite."
+
+	para "Certaines ont"
+	line "disparu,"
+
+	para "comme celle"
+	line "pres de"
+	cont "Azuria."
+
+	para "Un Randonneur"
+	line "le sait."
+	done
+else
 	text "Caves collapse"
 	line "easily."
 
@@ -65,8 +108,23 @@ SaffronPokeCenter1FFisherScript:
 	line "that's common"
 	cont "knowledge."
 	done
+endc
 
 SaffronPokeCenter1FTeacherText:
+if DEF(_LOCALE_FR)
+	text "Les Centres"
+	line "#mon"
+	cont "de Johto?"
+
+	para "… Je vois."
+	line "Pareil"
+	cont "a Kanto."
+
+	para "Je peux y"
+	line "aller"
+	cont "tranquille!"
+	done
+else
 	text "What are Johto's"
 	line "#mon Centers"
 	cont "like?"
@@ -81,8 +139,17 @@ SaffronPokeCenter1FTeacherText:
 	line "without worrying,"
 	cont "then!"
 	done
+endc
 
 SaffronPokeCenter1FYoungsterText:
+if DEF(_LOCALE_FR)
+	text "A Safrania,"
+	line "va voir"
+
+	para "Silph Sarl"
+	line "et la Gare."
+	done
+else
 	text "Silph Co.'s Head"
 	line "Office and the"
 
@@ -92,3 +159,4 @@ SaffronPokeCenter1FYoungsterText:
 	para "places to see in"
 	line "Saffron."
 	done
+endc

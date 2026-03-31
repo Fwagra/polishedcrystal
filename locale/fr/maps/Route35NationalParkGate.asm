@@ -59,7 +59,7 @@ Route35NationalParkGateOfficer1ExplainsRulesText:
 	done
 
 Route35NationalParkGateOfficer1AskToUseFirstMonText:
-	text "Oh-oh..."
+	text "Oh-oh…"
 
 	para "Tu as plus d'un"
 	line "#mon."
@@ -101,7 +101,7 @@ Route35NationalParkGateOfficer1TakePartInFutureText:
 	done
 
 Route35NationalParkGateOfficer1FirstMonCantBattleText:
-	text "Oh-oh..."
+	text "Oh-oh…"
 	line "Le premier #mon"
 
 	para "de ton équipe ne"
@@ -115,7 +115,7 @@ Route35NationalParkGateOfficer1FirstMonCantBattleText:
 	done
 
 Route35NationalParkGateOfficer1MakeRoomText:
-	text "Oh-oh... Ton"
+	text "Oh-oh… Ton"
 	line "équipe et ta BOITE"
 	cont "PC sont pleines."
 
@@ -132,7 +132,7 @@ Route35NationalParkGateOfficer1MakeRoomText:
 	done
 
 Route35NationalParkGateOfficer1EggAsFirstMonText:
-	text "Oh-oh... Tu as un"
+	text "Oh-oh… Tu as un"
 	line "OEUF en premier"
 	cont "dans ton équipe."
 

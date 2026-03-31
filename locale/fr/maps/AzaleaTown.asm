@@ -186,7 +186,7 @@ AzaleaTownKurtText:
 	done
 
 AzaleaTownRivalBeforeText:
-	text "...Dis-moi quelque"
+	text "…Dis-moi quelque"
 	line "chose, p'tit"
 	cont "bouchon…"
 

@@ -59,7 +59,7 @@ CeladonCityPoliwrathText:
 CeladonCityTeacher1Text:
 	text "J'ai encore perdu"
 	line "aux machines à"
-	cont "sous..."
+	cont "sous…"
 
 	para "Les filles aiment"
 	line "bien jouer aussi."
@@ -82,7 +82,7 @@ CeladonCityGramps1Text:
 	para "D'où est-ce qu'ils"
 	line "viennent tous?"
 	cont "C'est un gros"
-	cont "problème..."
+	cont "problème…"
 	done
 
 CeladonCityGramps2Text:
@@ -109,7 +109,7 @@ CeladonCityYoungster2Text:
 
 	para "Rien que de les"
 	line "regarder me donne"
-	cont "mal au coeur..."
+	cont "mal au coeur…"
 	done
 
 CeladonCityTeacher2Text:
@@ -123,7 +123,7 @@ CeladonCityTeacher2Text:
 	para "c'est que tu n'as"
 	line "pas de chance."
 
-	para "...On dirait un"
+	para "…On dirait un"
 	line "slogan."
 	done
 

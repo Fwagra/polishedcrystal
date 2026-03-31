@@ -26,6 +26,22 @@ PokemonJournalJanineScript:
 	setflag ENGINE_READ_JANINE_JOURNAL
 	jumpthistext
 
+if DEF(_LOCALE_FR)
+	text "Journal #mon"
+
+	para "Dossier special:"
+	line "Jeannine!"
+
+	para "On dit que"
+	line "Jeannine"
+
+	para "aimait le Parc"
+	line "#mon"
+
+	para "de Parmanie"
+	line "petite."
+	done
+else
 	text "#mon Journal"
 
 	para "Special Feature:"
@@ -38,6 +54,7 @@ PokemonJournalJanineScript:
 	line "Fuchsia City"
 	cont "as a child."
 	done
+endc
 
 JanineImpersonatorScript:
 	showtextfaceplayer .Text1
@@ -53,14 +70,27 @@ JanineImpersonatorScript:
 	end
 
 .Text1:
+if DEF(_LOCALE_FR)
+	text "Je suis Jeannine!"
+	line "Abraca-"
+	cont "dabra…"
+	done
+else
 	text "I'm Janine! Hocus-"
 	line "pocus… Poof!"
 	done
+endc
 
 .Text2:
+if DEF(_LOCALE_FR)
+	text "Tu vois? Je lui"
+	line "ressemble!"
+	done
+else
 	text "See? I look just"
 	line "like her now!"
 	done
+endc
 
 .SpinMovement:
 rept 3
@@ -73,6 +103,16 @@ endr
 	step_end
 
 FuchsiaPokeCenter1FCooltrainerMText:
+if DEF(_LOCALE_FR)
+	text "He! Ton"
+	line "#dex est"
+	cont "bizarre."
+
+	para "C'est Pr.Chen"
+	line "qui te l'a"
+	cont "donné?"
+	done
+else
 	text "Hey! You have a"
 	line "brand new kind of"
 	cont "#dex."
@@ -80,8 +120,18 @@ FuchsiaPokeCenter1FCooltrainerMText:
 	para "Did Prof.Oak give"
 	line "that to you?"
 	done
+endc
 
 FuchsiaPokeCenter1FCooltrainerFText:
+if DEF(_LOCALE_FR)
+	text "Dans l'Arène, j'ai"
+	line "été choquée!"
+
+	para "Il y avait plein"
+	line "de filles"
+	cont "pareilles."
+	done
+else
 	text "I got quite a"
 	line "shock at the Gym."
 
@@ -89,3 +139,4 @@ FuchsiaPokeCenter1FCooltrainerFText:
 	line "these girls who"
 	cont "looked identical."
 	done
+endc

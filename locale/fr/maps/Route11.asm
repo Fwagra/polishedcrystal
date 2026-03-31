@@ -15,7 +15,7 @@ YoungsterJasonSeenText:
 	text "Porter des shorts"
 	line "dans l'herbe, ça"
 
-	para "pique à donf... "
+	para "pique à donf… "
 	line "Pas cool."
 	done
 
@@ -28,14 +28,14 @@ PsychicHermanBeatenText:
 	done
 
 PsychicFidelSeenText:
-	text "Je vois tout..."
+	text "Je vois tout…"
 
-	para "Présent, futur..."
+	para "Présent, futur…"
 	line "Combat!"
 	done
 
 PsychicFidelBeatenText:
-	text "Heu..."
+	text "Heu…"
 	line "Je l'avais prévu!"
 	done
 

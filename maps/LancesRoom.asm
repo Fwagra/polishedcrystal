@@ -73,25 +73,25 @@ LanceScript:
 	turnobject LANCESROOM_LANCE, LEFT
 	readvar VAR_BADGES
 	ifequalfwd 16, .Rematch
-	showtext .SeenText
-	winlosstext .BeatenText, 0
+	showtext LanceSeenText
+	winlosstext LanceBeatenText, 0
 	setlasttalked LANCESROOM_LANCE
 	loadtrainer CHAMPION, LANCE
 	startbattle
 	dontrestartmapmusic
 	reloadmapafterbattle
-	showtext .AfterText
+	showtext LanceAfterText
 	sjumpfwd .EndBattle
 
 .Rematch:
-	showtext .SeenRematchText
-	winlosstext .BeatenText, 0
+	showtext LanceSeenRematchText
+	winlosstext LanceBeatenText, 0
 	setlasttalked LANCESROOM_LANCE
 	loadtrainer CHAMPION, LANCE2
 	startbattle
 	dontrestartmapmusic
 	reloadmapafterbattle
-	showtext .AfterRematchText
+	showtext LanceAfterRematchText
 .EndBattle:
 	setevent EVENT_BEAT_CHAMPION_LANCE
 	playsound SFX_ENTER_DOOR
@@ -106,12 +106,12 @@ LanceScript:
 	pause 10
 	turnobject PLAYER, DOWN
 	appear LANCESROOM_MARY
-	applymovement LANCESROOM_MARY, .RushInMovement
-	showtext .MaryText1
+	applymovement LANCESROOM_MARY, RushInMovement
+	showtext LanceMaryText1
 	appear LANCESROOM_OAK
-	applymovement LANCESROOM_OAK, .WalkInMovement
+	applymovement LANCESROOM_OAK, WalkInMovement
 	follow LANCESROOM_MARY, LANCESROOM_OAK
-	applymovement LANCESROOM_MARY, .StepAsideMovement
+	applymovement LANCESROOM_MARY, StepAsideMovement
 	stopfollow
 	turnobject LANCESROOM_OAK, UP
 	turnobject LANCESROOM_LANCE, LEFT
@@ -119,17 +119,17 @@ LanceScript:
 	ifnotequal 16, .DefaultOakSpeech
 	checkevent EVENT_OPENED_MT_SILVER
 	iffalsefwd .DefaultOakSpeech
-	showtext .OakRematchSpeechText
+	showtext LanceOakRematchSpeechText
 	sjumpfwd .OakSpeechDone
 .DefaultOakSpeech
-	showtext .OakSpeechText
+	showtext LanceOakSpeechText
 .OakSpeechDone
-	applymovement LANCESROOM_MARY, .ApproachPlayerMovement
+	applymovement LANCESROOM_MARY, ApproachPlayerMovement
 	turnobject PLAYER, LEFT
-	showtext .MaryText2
-	applymovement LANCESROOM_LANCE, .WalkTowardExitMovement
+	showtext LanceMaryText2
+	applymovement LANCESROOM_LANCE, WalkTowardExitMovement
 	turnobject PLAYER, UP
-	showtext .LanceLeavingText
+	showtext LanceLeavingText
 	follow LANCESROOM_LANCE, PLAYER
 	turnobject LANCESROOM_MARY, UP
 	turnobject LANCESROOM_OAK, UP
@@ -140,19 +140,23 @@ LanceScript:
 	applyonemovement PLAYER, step_up
 	playsound SFX_EXIT_BUILDING
 	disappear PLAYER
-	applymovement LANCESROOM_MARY, .TryToFollowMovement
+	applymovement LANCESROOM_MARY, TryToFollowMovement
 	showemote EMOTE_SHOCK, LANCESROOM_MARY, 15
 	opentext
-	writetext .MaryText3
+	writetext LanceMaryText3
 	pause 30
 	closetext
-	applymovement LANCESROOM_MARY, .RunBackAndForthMovement
+	applymovement LANCESROOM_MARY, RunBackAndForthMovement
 	special FadeOutPalettes
 	pause 15
 	warpfacing UP, HALL_OF_FAME, 4, 13
 	end
 
-.SeenText:
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/LancesRoom.asm"
+else
+
+LanceSeenText:
 	text "Lance: I've been"
 	line "waiting for you."
 
@@ -184,7 +188,7 @@ LanceScript:
 	cont "your challenge!"
 	done
 
-.BeatenText:
+LanceBeatenText:
 	text "…It's over."
 
 	para "But it's an odd"
@@ -201,7 +205,7 @@ LanceScript:
 	line "Champion!"
 	done
 
-.AfterText:
+LanceAfterText:
 	text "…Whew."
 
 	para "You have become"
@@ -221,7 +225,7 @@ LanceScript:
 	line "your #mon."
 	done
 
-.SeenRematchText:
+LanceSeenRematchText:
 	text "Lance: There's no"
 	line "need for words"
 	cont "now."
@@ -237,7 +241,7 @@ LanceScript:
 	cont "your challenge!"
 	done
 
-.AfterRematchText:
+LanceAfterRematchText:
 	text "Just as I"
 	line "expected."
 
@@ -252,7 +256,7 @@ LanceScript:
 	line "your #mon."
 	done
 
-.MaryText1:
+LanceMaryText1:
 	text "Mary: Oh, no!"
 	line "It's all over!"
 
@@ -260,7 +264,7 @@ LanceScript:
 	line "weren't so slow…"
 	done
 
-.OakSpeechText:
+LanceOakSpeechText:
 	text "Prof.Oak: Ah,"
 	line "<PLAYER>!"
 
@@ -293,7 +297,7 @@ LanceScript:
 	line "<PLAYER>!"
 	done
 
-.OakRematchSpeechText:
+LanceOakRematchSpeechText:
 	text "Prof.Oak: Ah,"
 	line "<PLAYER>!"
 
@@ -322,13 +326,13 @@ LanceScript:
 	line "lab after this!"
 	done
 
-.MaryText2:
+LanceMaryText2:
 	text "Mary: Let's inter-"
 	line "view the brand new"
 	cont "Champion!"
 	done
 
-.LanceLeavingText:
+LanceLeavingText:
 	text "Lance: This is"
 	line "getting to be a"
 	cont "bit too noisy…"
@@ -337,47 +341,49 @@ LanceScript:
 	line "come with me?"
 	done
 
-.MaryText3:
+LanceMaryText3:
 	text "Mary: Oh, wait!"
 	line "We haven't done"
 	cont "the interview!"
 	done
 
-.RushInMovement:
+endc
+
+RushInMovement:
 	run_step_up
 	run_step_up
 	run_step_up
 	turn_head_down
 	step_end
 
-.WalkInMovement:
+WalkInMovement:
 	step_up
 	step_up
 	step_end
 
-.StepAsideMovement:
+StepAsideMovement:
 	step_left
 	turn_head_right
 	step_end
 
-.ApproachPlayerMovement:
+ApproachPlayerMovement:
 	run_step_up
 	turn_head_right
 	step_end
 
-.WalkTowardExitMovement:
+WalkTowardExitMovement:
 	step_up
 	step_left
 	turn_head_down
 	step_end
 
-.TryToFollowMovement:
+TryToFollowMovement:
 	step_up
 	step_right
 	turn_head_up
 	step_end
 
-.RunBackAndForthMovement:
+RunBackAndForthMovement:
 	run_step_right
 	run_step_right
 	run_step_left

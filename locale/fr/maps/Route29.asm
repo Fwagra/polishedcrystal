@@ -98,10 +98,10 @@ MeetTuscanyText:
 	done
 
 TuscanyGivesGiftText:
-	text "En cadeau..."
+	text "En cadeau…"
 	line "Permets-moi"
 
-	para "de t'offrir..."
+	para "de t'offrir…"
 	line "un MOUCH. SOIE."
 	done
 
@@ -133,7 +133,7 @@ TuscanyTuesdayText:
 TuscanyNotTuesdayText:
 	text "MARIE: Aujourd'hui"
 	line "n'est pas mardi."
-	cont "C'est dommage..."
+	cont "C'est dommage…"
 	done
 
 Route29Sign1Text:

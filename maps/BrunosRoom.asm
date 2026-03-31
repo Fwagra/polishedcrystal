@@ -50,24 +50,24 @@ BrunoScript:
 	readvar VAR_BADGES
 	ifequalfwd 16, .Rematch
 	checkevent EVENT_BEAT_ELITE_4_BRUNO
-	iftrue_jumptextfaceplayer .AfterText
-	showtextfaceplayer .SeenText
-	winlosstext .BeatenText, 0
+	iftrue_jumptextfaceplayer BrunoAfterText
+	showtextfaceplayer BrunoSeenText
+	winlosstext BrunoBeatenText, 0
 	loadtrainer BRUNO, 1
 	startbattle
 	reloadmapafterbattle
-	showtext .AfterText
+	showtext BrunoAfterText
 	sjumpfwd .EndBattle
 
 .Rematch:
 	checkevent EVENT_BEAT_ELITE_4_BRUNO
-	iftrue_jumptextfaceplayer .AfterRematchText
-	showtextfaceplayer .SeenRematchText
-	winlosstext .BeatenText, 0
+	iftrue_jumptextfaceplayer BrunoAfterRematchText
+	showtextfaceplayer BrunoSeenRematchText
+	winlosstext BrunoBeatenText, 0
 	loadtrainer BRUNO, 2
 	startbattle
 	reloadmapafterbattle
-	showtext .AfterRematchText
+	showtext BrunoAfterRematchText
 .EndBattle:
 	playsound SFX_ENTER_DOOR
 	changeblock 4, 2, $16
@@ -77,7 +77,11 @@ BrunoScript:
 	waitsfx
 	end
 
-.SeenText:
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/BrunosRoom.asm"
+else
+
+BrunoSeenText:
 	text "I am Bruno of the"
 	line "Elite Four."
 
@@ -107,12 +111,12 @@ BrunoScript:
 	para "Hoo hah!"
 	done
 
-.BeatenText:
+BrunoBeatenText:
 	text "Why? How could we"
 	line "lose?"
 	done
 
-.AfterText:
+BrunoAfterText:
 	text "Having lost, I"
 	line "have no right to"
 	cont "say anything…"
@@ -121,7 +125,7 @@ BrunoScript:
 	line "challenge!"
 	done
 
-.SeenRematchText:
+BrunoSeenRematchText:
 	text "Hello again."
 
 	para "As one of the"
@@ -137,8 +141,10 @@ BrunoScript:
 	para "Get ready!"
 	done
 
-.AfterRematchText:
+BrunoAfterRematchText:
 	text "We tried hard."
 
 	para "Continue on!"
 	done
+
+endc

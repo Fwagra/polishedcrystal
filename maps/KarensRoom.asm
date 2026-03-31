@@ -50,24 +50,24 @@ KarenScript:
 	readvar VAR_BADGES
 	ifequalfwd 16, .Rematch
 	checkevent EVENT_BEAT_ELITE_4_KAREN
-	iftrue_jumptextfaceplayer .AfterText
-	showtextfaceplayer .SeenText
-	winlosstext .BeatenText, 0
+	iftrue_jumptextfaceplayer KarenAfterText
+	showtextfaceplayer KarenSeenText
+	winlosstext KarenBeatenText, 0
 	loadtrainer KAREN, 1
 	startbattle
 	reloadmapafterbattle
-	showtext .AfterText
+	showtext KarenAfterText
 	sjumpfwd .EndBattle
 
 .Rematch:
 	checkevent EVENT_BEAT_ELITE_4_KAREN
-	iftrue_jumptextfaceplayer .AfterRematchText
-	showtextfaceplayer .SeenRematchText
-	winlosstext .BeatenText, 0
+	iftrue_jumptextfaceplayer KarenAfterRematchText
+	showtextfaceplayer KarenSeenRematchText
+	winlosstext KarenBeatenText, 0
 	loadtrainer KAREN, 2
 	startbattle
 	reloadmapafterbattle
-	showtext .AfterRematchText
+	showtext KarenAfterRematchText
 .EndBattle:
 	playsound SFX_ENTER_DOOR
 	changeblock 4, 2, $16
@@ -77,7 +77,11 @@ KarenScript:
 	waitsfx
 	end
 
-.SeenText:
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/KarensRoom.asm"
+else
+
+KarenSeenText:
 	text "I am Karen of the"
 	line "Elite Four."
 
@@ -100,13 +104,13 @@ KarenScript:
 	para "Let's go."
 	done
 
-.BeatenText:
+KarenBeatenText:
 	text "Well, aren't you"
 	line "good. I like that"
 	cont "in a trainer."
 	done
 
-.AfterText:
+KarenAfterText:
 	text "Strong #mon."
 
 	para "Weak #mon."
@@ -129,7 +133,7 @@ KarenScript:
 	line "pion is waiting."
 	done
 
-.SeenRematchText:
+KarenSeenRematchText:
 	text "You fought through"
 	line "the ranks to reach"
 	cont "me. I'm impressed."
@@ -143,7 +147,7 @@ KarenScript:
 	para "Let's begin!"
 	done
 
-.AfterRematchText:
+KarenAfterRematchText:
 	text "I will not stray"
 	line "from my chosen"
 	cont "path."
@@ -152,3 +156,5 @@ KarenScript:
 	line "forward to meeting"
 	cont "you again."
 	done
+
+endc

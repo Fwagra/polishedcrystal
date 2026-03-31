@@ -63,12 +63,12 @@ SupernerdSamBeatenText:
 	done
 
 SupernerdTomSeenText:
-	text "Hmm... Tu en as"
+	text "Hmm… Tu en as"
 	line "des bô BADGES."
 	done
 
 SupernerdTomBeatenText:
-	text "Pas mal..."
+	text "Pas mal…"
 	line "Je m'y attendais!"
 	done
 
@@ -115,7 +115,7 @@ LassMeadowBeatenText:
 	done
 
 Route8LockedDoorText:
-	text "C'est fermé..."
+	text "C'est fermé…"
 	done
 
 Route8UndergroundPathSignText:
@@ -123,7 +123,7 @@ Route8UndergroundPathSignText:
 	line "déchirée."
 
 	para "C'est impossible"
-	line "de la lire..."
+	line "de la lire…"
 	done
 
 Route8BikerHarrisProtestText:

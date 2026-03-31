@@ -25,7 +25,7 @@ PsychicGregSeenText:
 
 PsychicGregBeatenText:
 	text "Perdu. C'est"
-	line "pas cool, ça..."
+	line "pas cool, ça…"
 	done
 
 MeetSunnyText:
@@ -43,13 +43,13 @@ SunnyGivesGiftText:
 	done
 
 SunnyGaveGiftText:
-	text "DIMITRI: Ca..."
+	text "DIMITRI: Ca…"
 
-	para "Heu..."
+	para "Heu…"
 
-	para "...C'est..."
+	para "…C'est…"
 
-	para "..."
+	para "…"
 
 	para "Oh! Je me"
 	line "souviens!"

@@ -1,7 +1,7 @@
 Route36RuinsOfAlphGateOfficerText:
 	text "Qui a bien pu"
 	line "construire tout ça"
-	cont "et....."
+	cont "et…"
 	cont "Pourquoi?"
 	done
 

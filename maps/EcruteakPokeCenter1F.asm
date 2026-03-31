@@ -28,6 +28,25 @@ PokemonJournalMortyScript:
 	setflag ENGINE_READ_MORTY_JOURNAL
 	jumpthistext
 
+if DEF(_LOCALE_FR)
+	text "Journal #mon"
+
+	para "Dossier special:"
+	line "Mortimer!"
+
+	para "Mortimer dit"
+	line "avoir vu Entei."
+
+	para "C'était fou."
+	line "Entei m'a fixé."
+
+	para "Je n'oublierai"
+	line "jamais ses yeux."
+
+	para "Comme s'il voyait"
+	line "en moi."
+	done
+else
 	text "#mon Journal"
 
 	para "Special Feature:"
@@ -50,6 +69,7 @@ PokemonJournalMortyScript:
 	para "down into the dep-"
 	line "ths of my heart…”"
 	done
+endc
 
 EcruteakPokeCenter1FBillScript:
 	faceplayer
@@ -90,12 +110,41 @@ EcruteakPokeCenter1FBillScript:
 .NoRoom:
 	jumpthisopenedtext
 
+if DEF(_LOCALE_FR)
+	text "Ah, c'est pas"
+	line "possible,"
+	cont "tu ne peux"
+	cont "pas transporter"
+
+	line "plus de"
+	cont "Pokémon…"
+	done
+else
 	text "Whoa, wait. You"
 	line "can't carry any"
 	cont "more #mon."
 	done
+endc
 
 .IntroText:
+if DEF(_LOCALE_FR)
+	text "Salut, je suis"
+	line "Bill."
+
+	para "Et toi?"
+
+	para "Hmm, <PLAYER>?"
+	line "Tu arrives"
+	cont "pile."
+
+	para "Les Capsules"
+	line "Temporelles"
+	cont "grillent."
+
+	para "J'ai besoin"
+	line "de toi."
+	done
+else
 	text "Hi, I'm Bill. And"
 	line "who are you?"
 
@@ -109,8 +158,26 @@ EcruteakPokeCenter1FBillScript:
 	para "and I could use"
 	line "your help."
 	done
+endc
 
 .QuestionText:
+if DEF(_LOCALE_FR)
+	text "Bill: Cet Evoli"
+	line "est arrive"
+
+	para "juste avant la"
+	line "panne."
+
+	para "Il faut le"
+	line "garder,"
+
+	para "mais je n'aime"
+	line "pas sortir."
+
+	para "Tu joues avec,"
+	line "<PLAYER>?"
+	done
+else
 	text "Bill: This Eevee"
 	line "came over just"
 
@@ -127,8 +194,19 @@ EcruteakPokeCenter1FBillScript:
 	line "to play with it,"
 	cont "<PLAYER>?"
 	done
+endc
 
 .YesText:
+if DEF(_LOCALE_FR)
+	text "Bill: Je le"
+	line "savais!"
+
+	para "Parfait."
+	line "Je compte sur toi."
+
+	para "Prends-en soin!"
+	done
+else
 	text "Bill: I knew you'd"
 	line "come through!"
 
@@ -141,8 +219,24 @@ EcruteakPokeCenter1FBillScript:
 	para "Take good care of"
 	line "it!"
 	done
+endc
 
 .GoodbyeText:
+if DEF(_LOCALE_FR)
+	text "Bill: Le Prof.Orme"
+	line "dit qu'Evoli"
+
+	para "peut évoluer"
+	line "autrement."
+
+	para "Je retourne à"
+	line "Doublonville,"
+
+	para "puis à Kanto."
+
+	para "Salut!"
+	done
+else
 	text "Bill: Prof.Elm"
 	line "claims Eevee may"
 
@@ -158,11 +252,17 @@ EcruteakPokeCenter1FBillScript:
 
 	para "Buh-bye!"
 	done
+endc
 
 .NoText:
+if DEF(_LOCALE_FR)
+	text "Ah bon…"
+	done
+else
 	text "Oh… Now what to"
 	line "do?"
 	done
+endc
 
 .LeaveMovement:
 	step_down
@@ -256,17 +356,38 @@ EcruteakPokeCenter1FLassScript:
 	done
 
 .QuestionText:
+if DEF(_LOCALE_FR)
+	text "Tu connais"
+	line "Bill?"
+	done
+else
 	text "Do you know who"
 	line "Bill is?"
 	done
+endc
 
 .HereText:
+if DEF(_LOCALE_FR)
+	text "Alors, va lui"
+	line "parler!"
+	cont "Il est la!"
+	done
+else
 	text "Then go talk to"
 	line "him! He's right"
 	cont "by the counter!"
 	done
+endc
 
 EcruteakPokeCenter1FCooltrainerFText:
+if DEF(_LOCALE_FR)
+	text "Mortimer est"
+	line "trop cool."
+
+	para "Ses #mon"
+	line "sont durs."
+	done
+else
 	text "Morty, the Gym"
 	line "Leader, is soooo"
 	cont "cool."
@@ -274,8 +395,19 @@ EcruteakPokeCenter1FCooltrainerFText:
 	para "His #mon are"
 	line "really tough too."
 	done
+endc
 
 EcruteakPokeCenter1FGymGuyText:
+if DEF(_LOCALE_FR)
+	text "Lac Colère…"
+
+	para "Une horde de"
+	line "Léviator…"
+
+	para "Je sens un"
+	line "complot!"
+	done
+else
 	text "Lake of Rage…"
 
 	para "The appearance of"
@@ -284,3 +416,4 @@ EcruteakPokeCenter1FGymGuyText:
 	para "I smell a conspir-"
 	line "acy. I know it!"
 	done
+endc

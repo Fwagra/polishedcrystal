@@ -178,12 +178,30 @@ MahoganyMart1FLanceApproachHiddenStairsMovement:
 	step_end
 
 MahoganyMart1FPharmacistText_LanceEntered:
+if DEF(_LOCALE_FR)
+	text "Argh… Tu as"
+	line "trouve"
+	cont "l'escalier…"
+	done
+else
 	text "Arrgh… You found"
 	line "the secret stair-"
 	cont "way…"
 	done
+endc
 
 MahoganyMart1FBlackBeltText:
+if DEF(_LOCALE_FR)
+	text "Heheh! Ca"
+	line "marche!"
+
+	para "Magicarpe ne"
+	line "vaut rien."
+
+	para "Mais Leviator"
+	line "rapporte gros."
+	done
+else
 	text "Heheh! The experi-"
 	line "ment worked like a"
 	cont "charm."
@@ -194,20 +212,45 @@ MahoganyMart1FBlackBeltText:
 	para "Gyarados are big"
 	line "moneymakers."
 	done
+endc
 
 MahoganyMart1FBlackBeltText_LanceEntered:
+if DEF(_LOCALE_FR)
+	text "Urrgh…"
+
+	para "Son #mon Dragon"
+	line "est dur…"
+	done
+else
 	text "Urrgh…"
 
 	para "That guy's dragon"
 	line "#mon are tough…"
 	done
+endc
 
 MahoganyMart1FLanceDragoniteHyperBeamText:
+if DEF(_LOCALE_FR)
+	text "Peter: Dracolosse,"
+	line "Ultralaser."
+	done
+else
 	text "Lance: Dragonite,"
 	line "Hyper Beam."
 	done
+endc
 
 MahoganyMart1FLanceRadioText:
+if DEF(_LOCALE_FR)
+	text "<PLAYER>!"
+	line "Tu es la!"
+
+	para "Je le savais."
+
+	para "Ce signal radio"
+	line "vient d'ici."
+	done
+else
 	text "What took you,"
 	line "<PLAYER>?"
 
@@ -217,21 +260,49 @@ MahoganyMart1FLanceRadioText:
 	para "signal is coming"
 	line "from here."
 	done
+endc
 
 MahoganyMart1FLanceStairsText:
+if DEF(_LOCALE_FR)
+	text "Les escaliers"
+	line "sont… là!"
+	done
+else
 	text "The stairs are"
 	line "right here."
 	done
+endc
 
 MahoganyMart1FLanceSplitUpText:
+if DEF(_LOCALE_FR)
+	text "<PLAYER>, on"
+	line "se separe."
+
+	para "J'y vais"
+	line "d'abord."
+	done
+else
 	text "Lance: <PLAYER>, we"
 	line "should split up to"
 
 	para "check this place."
 	line "I'll go first."
 	done
+endc
 
 MahoganyMart1FVeteranFText:
+if DEF(_LOCALE_FR)
+	text "Avant, en bas,"
+	line "c'était un"
+	cont "repaire."
+
+	para "Des arts ont"
+	line "survécu."
+
+	para "Un art boostait"
+	line "la vitesse."
+	done
+else
 	text "Our basement used"
 	line "to be a ninja"
 	cont "hideout."
@@ -244,19 +315,34 @@ MahoganyMart1FVeteranFText:
 	line "greatly increase"
 	cont "their footspeed."
 	done
+endc
 
 Text_MahoganyMart1FTutorAgility:
+if DEF(_LOCALE_FR)
+	text "Je peux"
+	line "enseigner"
+	cont "Hate."
+	done
+else
 	text "If you'd like, I"
 	line "can teach your"
 
 	para "#mon the move"
 	line "Agility."
 	done
+endc
 
 Text_MahoganyMart1FTutorQuestion:
+if DEF(_LOCALE_FR)
+	text "Il me faut"
+	line "une Feuille"
+	cont "d'Argent."
+	done
+else
 	text "I just need a"
 	line "Silver Leaf first."
 	done
+endc
 
 PokemonJournalWillScript:
 	setflag ENGINE_READ_WILL_JOURNAL

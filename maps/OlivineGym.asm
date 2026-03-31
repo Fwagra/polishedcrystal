@@ -45,10 +45,17 @@ OlivineGymJasmineScript:
 	setevent EVENT_GOT_TM23_IRON_TAIL
 	jumpthisopenedtext
 
+if DEF(_LOCALE_FR)
+	writetext Jasmine_IronTailText
+	waitbutton
+	closetext
+	end
+else
 	text "…You could use"
 	line "that TM to teach"
 	cont "Iron Tail."
 	done
+endc
 
 OlivineGymGuyScript:
 	checkevent EVENT_BEAT_JASMINE
@@ -146,6 +153,10 @@ OlivineGymStatue:
 .LyraToo
 	jumpstd gymstatue3
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/OlivineGym.asm"
+else
+
 Jasmine_SteelTypeIntro:
 	text "…Thank you for"
 	line "your help at the"
@@ -228,3 +239,5 @@ OlivineGymGuyPreText:
 	line "has to be compas-"
 	cont "sionate."
 	done
+
+endc

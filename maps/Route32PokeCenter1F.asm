@@ -114,6 +114,22 @@ Route32PokeCenter1FPokefanMScript:
 	setevent EVENT_GOT_LURE_BALL_FROM_FRENCHMAN
 	jumpthisopenedtext
 
+if DEF(_LOCALE_FR)
+	text "Cette Ball"
+	line "attrape"
+	cont "vite"
+
+	para "les #mon"
+	line "peches!"
+
+	para "Kurt l'a faite"
+	line "avec un"
+	cont "Noigrume."
+
+	para "Noigrumes,"
+	line "hourrah!"
+	done
+else
 	text "This Ball easily"
 	line "catches #mon"
 	cont "hooked on a Rod!"
@@ -125,6 +141,7 @@ Route32PokeCenter1FPokefanMScript:
 	para "Apricorns,"
 	line "hourrah!"
 	done
+endc
 
 .NoRoom
 	endtext
@@ -161,6 +178,16 @@ Route32PokeCenter1FPokefanMScript:
 	done
 
 Route32Pokecenter1FCooltrainerFText:
+if DEF(_LOCALE_FR)
+	text "Que faire"
+	line "tenir"
+	cont "a mon #mon?"
+
+	para "Un objet"
+	line "pour booster"
+	cont "l'Attaque…"
+	done
+else
 	text "What should I make"
 	line "my #mon hold?"
 
@@ -168,3 +195,4 @@ Route32Pokecenter1FCooltrainerFText:
 	line "increases Attack"
 	cont "power…"
 	done
+endc

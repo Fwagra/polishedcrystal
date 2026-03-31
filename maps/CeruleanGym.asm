@@ -209,6 +209,10 @@ CeruleanGymGruntBacksAwayMovement:
 	remove_fixed_facing
 	step_end
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/CeruleanGym.asm"
+else
+
 CeruleanGymGruntIntroText:
 	text "Oops! I so sorry!"
 	line "You not hurt,"
@@ -399,3 +403,5 @@ CeruleanGymSomethingUnderwaterText:
 	para "Where did he run"
 	line "off to?"
 	done
+
+endc

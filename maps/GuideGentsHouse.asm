@@ -15,6 +15,22 @@ GuideGentsHouse_MapScriptHeader:
 	object_event  2,  3, SPRITE_GRAMPS, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, 0, OBJECTTYPE_COMMAND, jumptextfaceplayer, GuideGentsHouseGuideGentText, EVENT_GUIDE_GENT_VISIBLE_IN_CHERRYGROVE
 
 GuideGentsHouseGuideGentText:
+if DEF(_LOCALE_FR)
+	text "Quand j'etais"
+	line "petit,"
+
+	para "j'etais un"
+	line "Dresseur"
+	cont "genial!"
+
+	para "Conseil:"
+	line "capture des"
+	cont "#mon!"
+
+	para "Sois gentil"
+	line "avec eux!"
+	done
+else
 	text "When I was a wee"
 	line "lad, I was a hot-"
 	cont "shot trainer!"
@@ -26,3 +42,4 @@ GuideGentsHouseGuideGentText:
 	para "Treat them all"
 	line "with kindness!"
 	done
+endc

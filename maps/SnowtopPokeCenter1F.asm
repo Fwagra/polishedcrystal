@@ -20,6 +20,26 @@ PokemonJournalProfWillowScript:
 	setflag ENGINE_READ_PROF_WILLOW_JOURNAL
 	jumpthistext
 
+if DEF(_LOCALE_FR)
+	text "Journal #mon"
+
+	para "Dossier special:"
+	line "Pr.Saule!"
+
+	para "On dit que son"
+	line "reve est"
+
+	para "d'explorer des"
+	line "terres"
+	cont "inconnues"
+
+	para "et de noter des"
+	line "#mon"
+	cont "inconnus"
+
+	para "dans la nature."
+	done
+else
 	text "#mon Journal"
 
 	para "Special Feature:"
@@ -37,3 +57,4 @@ PokemonJournalProfWillowScript:
 	para "species in their"
 	line "natural habitat."
 	done
+endc

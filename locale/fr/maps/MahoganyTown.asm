@@ -13,7 +13,7 @@ RageCandyBarMerchantTryOneText:
 	done
 
 RageCandyBarMerchantRefusedText:
-	text "Oh, très bien..."
+	text "Oh, très bien…"
 	done
 
 RageCandyBarMerchantNoRoomText:

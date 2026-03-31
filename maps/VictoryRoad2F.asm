@@ -80,18 +80,32 @@ VictoryRoadRivalLeft:
 GenericTrainerVeteranfJoanne:
 	generictrainer VETERANF, JOANNE, EVENT_BEAT_VETERANF_JOANNE, VeteranfJoanneSeenText, VeteranfJoanneBeatenText
 
+if DEF(_LOCALE_FR)
+	text "Tu as mérité"
+	line "d'être sur la"
+	cont "Route Victoire!"
+	done
+else
 	text "You earned the"
 	line "right to be on"
 	cont "Victory Road!"
 	done
+endc
 
 GenericTrainerVeteranfJonet:
 	generictrainer VETERANF, JONET, EVENT_BEAT_VETERANF_JONET, VeteranfJonetSeenText, VeteranfJonetBeatenText
 
+if DEF(_LOCALE_FR)
+	text "Quelqu'un a"
+	line "déjà capturé"
+	cont "Sulfura?"
+	done
+else
 	text "Did somebody"
 	line "capture Moltres"
 	cont "already?"
 	done
+endc
 
 VictoryRoadRivalBattleApproachMovement1:
 	step_right
@@ -106,6 +120,10 @@ VictoryRoadRivalBattleExitMovement1:
 	step_left
 	step_left
 	step_end
+
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/VictoryRoad2F.asm"
+else
 
 VictoryRoadRivalBeforeText:
 	text "Hold it."
@@ -206,4 +224,6 @@ VeteranfJonetBeatenText:
 	line "I had a legendary"
 	cont "#mon…"
 	done
+
+endc
 

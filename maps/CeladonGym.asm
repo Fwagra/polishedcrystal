@@ -112,6 +112,10 @@ CeladonGymStatue:
 .Beaten:
 	jumpstd gymstatue2
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/CeladonGym.asm"
+else
+
 ErikaBeforeBattleText:
 	text "Erika: Hello…"
 	line "Lovely weather,"
@@ -245,4 +249,6 @@ TwinsJoandzoe2SeenText:
 TwinsJoandzoe2BeatenText:
 	text "We couldn't win…"
 	done
+
+endc
 

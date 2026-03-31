@@ -64,7 +64,7 @@ VioletOutskirtsHouseNotSafeHereText:
 	done
 
 VioletOutskirtsHouseRadioText:
-	text "Ça ne semble pas"
+	text "Ca ne semble pas"
 	line "marcher."
 	done
 

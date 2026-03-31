@@ -13,7 +13,7 @@ ValenciaIslandCooltrainermText:
 	done
 
 ValenciaIslandSignText:
-	text "Île Valencia"
+	text "Ile Valencia"
 
 	para "Oranges amères et"
 	line "brise sucrée"

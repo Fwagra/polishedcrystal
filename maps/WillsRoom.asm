@@ -49,24 +49,24 @@ WillScript:
 	readvar VAR_BADGES
 	ifequalfwd 16, .Rematch
 	checkevent EVENT_BEAT_ELITE_4_WILL
-	iftrue_jumptextfaceplayer .AfterText
-	showtextfaceplayer .SeenText
-	winlosstext .BeatenText, 0
+	iftrue_jumptextfaceplayer WillAfterText
+	showtextfaceplayer WillSeenText
+	winlosstext WillBeatenText, 0
 	loadtrainer WILL, 1
 	startbattle
 	reloadmapafterbattle
-	showtext .AfterText
+	showtext WillAfterText
 	sjumpfwd .EndBattle
 
 .Rematch:
 	checkevent EVENT_BEAT_ELITE_4_WILL
-	iftrue_jumptextfaceplayer .AfterRematchText
-	showtextfaceplayer .SeenRematchText
-	winlosstext .BeatenText, 0
+	iftrue_jumptextfaceplayer WillAfterRematchText
+	showtextfaceplayer WillSeenRematchText
+	winlosstext WillBeatenText, 0
 	loadtrainer WILL, 2
 	startbattle
 	reloadmapafterbattle
-	showtext .AfterRematchText
+	showtext WillAfterRematchText
 .EndBattle:
 	playsound SFX_ENTER_DOOR
 	changeblock 4, 2, $16
@@ -76,7 +76,11 @@ WillScript:
 	waitsfx
 	end
 
-.SeenText:
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/WillsRoom.asm"
+else
+
+WillSeenText:
 	text "Welcome to the"
 	line "#mon League,"
 	cont "<PLAYER>."
@@ -102,12 +106,12 @@ WillScript:
 	line "option!"
 	done
 
-.BeatenText:
+WillBeatenText:
 	text "I… I can't…"
 	line "believe it…"
 	done
 
-.AfterText:
+WillAfterText:
 	text "Even though I was"
 	line "defeated, I won't"
 	cont "change my course."
@@ -125,7 +129,7 @@ WillScript:
 	line "of the Elite Four."
 	done
 
-.SeenRematchText:
+WillSeenRematchText:
 	text "So, you have"
 	line "finally appeared."
 
@@ -141,7 +145,7 @@ WillScript:
 	line "battle!"
 	done
 
-.AfterRematchText:
+WillAfterRematchText:
 	text "I've expended all"
 	line "my power."
 
@@ -149,3 +153,5 @@ WillScript:
 	line "about losing"
 	cont "this way."
 	done
+
+endc

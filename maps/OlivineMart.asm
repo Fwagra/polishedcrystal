@@ -17,14 +17,44 @@ OlivineMart_MapScriptHeader:
 	object_event  1,  6, SPRITE_CUTE_GIRL, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, PAL_NPC_RED, OBJECTTYPE_COMMAND, jumptextfaceplayer, OlivineMartLassText, -1
 
 OlivineMartCooltrainerFText:
+if DEF(_LOCALE_FR)
+	text "Ton Pokémon"
+	line "connaît-il"
+	cont "déjà la"
+
+	para "capacité qui"
+	line "permet aux"
+	cont "gens de"
+
+	para "monter sur"
+	line "son dos pour"
+	cont "traverser"
+
+	para "la mer?"
+	done
+else
 	text "Do your #mon"
 	line "already know the"
 
 	para "move for carrying"
 	line "people on water?"
 	done
+endc
 
 OlivineMartLassText:
+if DEF(_LOCALE_FR)
+	text "Mon Papilusion"
+	line "vient de loin."
+
+	para "Il portait"
+	line "un Message."
+
+	para "Tu veux lire?"
+
+	para "Hehe… Non!"
+	line "Secret!"
+	done
+else
 	text "My Butterfree came"
 	line "from my boyfriend"
 	cont "overseas."
@@ -38,3 +68,4 @@ OlivineMartLassText:
 	para "Let's see… Nope!"
 	line "It's a secret!"
 	done
+endc

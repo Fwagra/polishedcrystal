@@ -23,6 +23,22 @@ PokemonJournalKarenScript:
 	setflag ENGINE_READ_KAREN_JOURNAL
 	jumpthistext
 
+if DEF(_LOCALE_FR)
+	text "Journal #mon"
+
+	para "Dossier special:"
+	line "Marion!"
+
+	para "On dit que Marion"
+	line "a entrainé"
+
+	para "des #mon"
+	line "Ténèbres"
+
+	para "pour changer"
+	line "leur image."
+	done
+else
 	text "#mon Journal"
 
 	para "Special Feature:"
@@ -37,8 +53,28 @@ PokemonJournalKarenScript:
 	para "their sinister"
 	line "reputation."
 	done
+endc
 
 Route3PokeCenter1FPokefanM1Text:
+if DEF(_LOCALE_FR)
+	text "Il y a des années,"
+	line "j'ai vendu"
+
+	para "un Magicarpe"
+	line "bizarre…"
+
+	para "Je croyais qu'il"
+	line "avait un"
+	cont "problème."
+
+	para "En fait, c'était"
+	line "un #mon"
+	cont "shiny!"
+
+	para "J'aurais du"
+	line "gagner plus!"
+	done
+else
 	text "A few years ago"
 	line "I sold a weird-"
 
@@ -56,8 +92,22 @@ Route3PokeCenter1FPokefanM1Text:
 	para "I could have made"
 	line "a lot more money!"
 	done
+endc
 
 Route3PokeCenter1FPokefanM2Text:
+if DEF(_LOCALE_FR)
+	text "Avant, il n'y"
+	line "avait rien"
+	cont "ici."
+
+	para "Quand j'ai gravi"
+	line "la montagne."
+
+	para "C'est plus"
+	line "pratique"
+	cont "maintenant."
+	done
+else
 	text "I remember there"
 	line "was nothing built"
 
@@ -67,8 +117,22 @@ Route3PokeCenter1FPokefanM2Text:
 	para "Things are more"
 	line "convenient now."
 	done
+endc
 
 Route3PokeCenter1FYoungsterText:
+if DEF(_LOCALE_FR)
+	text "Plein de Dresseurs"
+	line "sont la-haut."
+
+	para "Des #mon"
+	line "sauvages"
+	cont "aussi."
+
+	para "Tu ne sais"
+	line "jamais"
+	cont "qui croiser."
+	done
+else
 	text "Many trainers are"
 	line "on the mountain."
 
@@ -79,3 +143,4 @@ Route3PokeCenter1FYoungsterText:
 	line "or what you'll en-"
 	cont "counter."
 	done
+endc

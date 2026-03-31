@@ -58,7 +58,7 @@ LassShannonBeatenText:
 	done
 
 SupernerdPatSeenText:
-	text "Hin hin hin..."
+	text "Hin hin hin…"
 
 	para "Je me fiche des"
 	line "six autres dres-"

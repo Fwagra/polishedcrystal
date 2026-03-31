@@ -22,8 +22,26 @@ AzaleaPokeCenter1F_MapScriptHeader:
 
 PokemonJournalBugsyScript:
 	setflag ENGINE_READ_BUGSY_JOURNAL
-	jumpthistext
+	jumptext PokemonJournalBugsyText
 
+PokemonJournalBugsyText:
+if DEF(_LOCALE_FR)
+	text "Journal #mon"
+
+	para "Dossier spécial:"
+	line "Hector!"
+
+	para "On dit qu'Hector"
+	line "a tant gagné"
+
+	para "le Concours"
+	line "de Capture"
+
+	para "qu'il n'y"
+	line "participe"
+	cont "plus."
+	done
+else
 	text "#mon Journal"
 
 	para "Special Feature:"
@@ -38,12 +56,27 @@ PokemonJournalBugsyScript:
 	para "he no longer par-"
 	line "ticipates."
 	done
+endc
 
 AzaleaPokeCenter1FCooltrainermScript:
 	checktime (1 << EVE) | (1 << NITE)
-	iftrue_jumptextfaceplayer .NiteText
-	jumpthistextfaceplayer
+	iftrue_jumptextfaceplayer AzaleaPokeCenter1FCooltrainermNiteText
+	jumptextfaceplayer AzaleaPokeCenter1FCooltrainermDayText
 
+AzaleaPokeCenter1FCooltrainermDayText:
+if DEF(_LOCALE_FR)
+	text "Kurt fabrique"
+	line "des # Balls,"
+
+	para "mais il n'est"
+	line "pas fort."
+
+	para "Il a un #mon,"
+	line "mais il ne"
+	cont "s'en sert"
+	cont "presque pas."
+	done
+else
 	text "For a guy who"
 	line "makes # Balls,"
 
@@ -56,8 +89,21 @@ AzaleaPokeCenter1FCooltrainermScript:
 	para "doesn't use it"
 	line "much."
 	done
+endc
 
-.NiteText:
+AzaleaPokeCenter1FCooltrainermNiteText:
+if DEF(_LOCALE_FR)
+	text "Kurt et Pr.Chen"
+	line "sont amis."
+
+	para "Et ils sont"
+	line "proches"
+	cont "d'Agatha,"
+
+	para "ex-membre du"
+	line "Conseil 4."
+	done
+else
 	text "Kurt and Prof.Oak"
 	line "are old friends."
 
@@ -67,8 +113,18 @@ AzaleaPokeCenter1FCooltrainermScript:
 	para "former member of"
 	line "the Elite Four."
 	done
+endc
 
 AzaleaPokeCenter1FGentlemanText:
+if DEF(_LOCALE_FR)
+	text "Tes #mon"
+	line "connaissent"
+	cont "des CS?"
+
+	para "Elles marchent"
+	line "meme K.O."
+	done
+else
 	text "Do your #mon"
 	line "know HM moves?"
 
@@ -78,8 +134,21 @@ AzaleaPokeCenter1FGentlemanText:
 	para "your #mon has"
 	line "fainted."
 	done
+endc
 
 AzaleaPokeCenter1FSightseermText:
+if DEF(_LOCALE_FR)
+	text "Bill a cree"
+	line "le systeme"
+
+	para "PC pour les"
+	line "#mon."
+
+	para "Chaque Boite"
+	line "peut en"
+	cont "stocker 20."
+	done
+else
 	text "This Bill guy"
 	line "created the system"
 
@@ -90,8 +159,28 @@ AzaleaPokeCenter1FSightseermText:
 	line "store up to 20"
 	cont "#mon per Box."
 	done
+endc
 
 AzaleaPokeCenter1FPokefanfText:
+if DEF(_LOCALE_FR)
+	text "Tu connais les"
+	line "Noigrumes?"
+
+	para "On les vide,"
+	line "et on met"
+	cont "un outil."
+
+	para "Après, tu peux"
+	line "capturer"
+	cont "des #mon."
+
+	para "Avant les"
+	line "# Balls,"
+
+	para "tout le monde"
+	line "en utilisait."
+	done
+else
 	text "Do you know about"
 	line "Apricorns?"
 
@@ -110,3 +199,4 @@ AzaleaPokeCenter1FPokefanfText:
 	para "everyone used"
 	line "Apricorns."
 	done
+endc

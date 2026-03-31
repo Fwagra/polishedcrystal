@@ -17,6 +17,19 @@ ViridianMart_MapScriptHeader:
 	object_event  1,  6, SPRITE_COOL_DUDE, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, 0, OBJECTTYPE_COMMAND, jumptextfaceplayer, ViridianMartCooltrainerMText, -1
 
 ViridianMartLassText:
+if DEF(_LOCALE_FR)
+	text "Le Champion"
+	line "ici est"
+	cont "génial."
+
+	para "Il n'a pas"
+	line "de type"
+	cont "unique."
+
+	para "Il aime"
+	line "surprendre."
+	done
+else
 	text "The Gym Leader"
 	line "here is totally"
 	cont "cool."
@@ -28,11 +41,23 @@ ViridianMartLassText:
 	para "He likes to keep"
 	line "people guessing."
 	done
+endc
 
 ViridianMartCooltrainerMText:
+if DEF(_LOCALE_FR)
+	text "As-tu déjà"
+	line "été à"
+	cont "Cramois'Ile?"
+
+	line "Ca se trouve"
+	cont "très au sud,"
+	cont "dans l'océan!"
+	done
+else
 	text "Have you been to"
 	line "Cinnabar?"
 
 	para "It's an island way"
 	line "south of here."
 	done
+endc

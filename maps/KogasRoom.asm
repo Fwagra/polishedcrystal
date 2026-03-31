@@ -50,24 +50,24 @@ KogaScript:
 	readvar VAR_BADGES
 	ifequalfwd 16, .Rematch
 	checkevent EVENT_BEAT_ELITE_4_KOGA
-	iftrue_jumptextfaceplayer .AfterText
-	showtextfaceplayer .SeenText
-	winlosstext .BeatenText, 0
+	iftrue_jumptextfaceplayer KogaAfterText
+	showtextfaceplayer KogaSeenText
+	winlosstext KogaBeatenText, 0
 	loadtrainer KOGA, 1
 	startbattle
 	reloadmapafterbattle
-	showtext .AfterText
+	showtext KogaAfterText
 	sjumpfwd .EndBattle
 
 .Rematch:
 	checkevent EVENT_BEAT_ELITE_4_KOGA
-	iftrue_jumptextfaceplayer .AfterRematchText
-	showtextfaceplayer .SeenRematchText
-	winlosstext .BeatenText, 0
+	iftrue_jumptextfaceplayer KogaAfterRematchText
+	showtextfaceplayer KogaSeenRematchText
+	winlosstext KogaBeatenText, 0
 	loadtrainer KOGA, 2
 	startbattle
 	reloadmapafterbattle
-	showtext .AfterRematchText
+	showtext KogaAfterRematchText
 .EndBattle:
 	playsound SFX_ENTER_DOOR
 	changeblock 4, 2, $16
@@ -77,7 +77,11 @@ KogaScript:
 	waitsfx
 	end
 
-.SeenText:
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/KogasRoom.asm"
+else
+
+KogaSeenText:
 	text "Fwahahahaha!"
 
 	para "I am Koga of the"
@@ -106,13 +110,13 @@ KogaScript:
 	line "see soon enough!"
 	done
 
-.BeatenText:
+KogaBeatenText:
 	text "Ah!"
 	line "You have proven"
 	cont "your worth!"
 	done
 
-.AfterText:
+KogaAfterText:
 	text "I subjected you to"
 	line "everything I could"
 	cont "muster."
@@ -126,7 +130,7 @@ KogaScript:
 	cont "abilities to test!"
 	done
 
-.SeenRematchText:
+KogaSeenRematchText:
 	text "Your arrival is"
 	line "indeed impressive,"
 	cont "as is your look of"
@@ -141,7 +145,7 @@ KogaScript:
 	line "what I mean!"
 	done
 
-.AfterRematchText:
+KogaAfterRematchText:
 	text "Never have I met"
 	line "the likes of you."
 
@@ -149,3 +153,5 @@ KogaScript:
 	line "myself to my"
 	cont "training."
 	done
+
+endc

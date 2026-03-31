@@ -20,6 +20,10 @@ VictoryRoad1F_MapScriptHeader:
 GenericTrainerVeteranmMatt:
 	generictrainer VETERANM, MATT, EVENT_BEAT_VETERANM_MATT, VeteranmMattSeenText, VeteranmMattBeatenText
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/VictoryRoad1F.asm"
+else
+
 	text "I concede, you're"
 	line "better than me!"
 	done
@@ -33,4 +37,6 @@ VeteranmMattSeenText:
 VeteranmMattBeatenText:
 	text "I had a chance…"
 	done
+
+endc
 
