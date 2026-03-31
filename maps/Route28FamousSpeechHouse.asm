@@ -27,6 +27,18 @@ Celebrity:
 	endtext
 
 CelebrityText1:
+if DEF(_LOCALE_FR)
+	text "Oh ben mince."
+	line "Tu m'as trouvée."
+
+	para "Ne parle de moi à"
+	line "personne."
+
+	para "En échange je te"
+	line "donne ceci."
+	cont "Ca marche?"
+	done
+else
 	text "Oh, dear."
 	line "You've found me."
 
@@ -37,8 +49,20 @@ CelebrityText1:
 	line "for keeping my"
 	cont "secret. Please?"
 	done
+endc
 
 CelebrityText2:
+if DEF(_LOCALE_FR)
+	text "C'est dur d'être"
+	line "célèbre."
+
+	para "On me poursuit."
+	line "On me regarde."
+
+	para "J'te jure…"
+	line "C'est dur!"
+	done
+else
 	text "It's tough being a"
 	line "top celebrity."
 
@@ -48,7 +72,13 @@ CelebrityText2:
 	para "I just want to be"
 	line "left alone…"
 	done
+endc
 
 CelebritysSkarmoryText:
+if DEF(_LOCALE_FR)
+	text "Airmure: Aiiir!"
+	done
+else
 	text "Skarmory: Scree!"
 	done
+endc

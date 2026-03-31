@@ -27,14 +27,32 @@ Route26HealHouseTeacherScript:
 	jumptext Route26HealHouseKeepAtItText
 
 Route26HealHouseRestAWhileText:
+if DEF(_LOCALE_FR)
+	text "Tes #mon ont"
+	line "l'air fatigué."
+
+	para "Tu devrais les"
+	line "soigner."
+	done
+else
 	text "Your #mon look"
 	line "a little tired."
 
 	para "You should rest"
 	line "them a while."
 	done
+endc
 
 Route26HealHouseKeepAtItText:
+if DEF(_LOCALE_FR)
+	text "Voilà!"
+
+	para "Tes #mon ont"
+	line "la patate!"
+
+	para "Courage!"
+	done
+else
 	text "There!"
 
 	para "Your #mon are"
@@ -42,3 +60,4 @@ Route26HealHouseKeepAtItText:
 
 	para "Keep at it!"
 	done
+endc

@@ -15,6 +15,18 @@ VermilionHouseDiglettsCaveSpeechHouse_MapScriptHeader:
 	object_event  1,  3, SPRITE_GENTLEMAN, SPRITEMOVEDATA_WALK_UP_DOWN, 1, 0, -1, PAL_NPC_RED, OBJECTTYPE_COMMAND, jumptextfaceplayer, VermilionDiglettsCaveSpeechHouseGentlemanText, -1
 
 VermilionDiglettsCaveSpeechHouseGentlemanText:
+if DEF(_LOCALE_FR)
+	text "Pendant des années"
+	line "les Taupiqueur ont"
+	cont "creusé un"
+
+	para "énorme tunnel."
+
+	para "Ce tunnel va vers"
+	line "une ville loin-"
+	cont "taine."
+	done
+else
 	text "Over many years,"
 	line "Diglett dug a"
 	cont "large tunnel."
@@ -22,3 +34,4 @@ VermilionDiglettsCaveSpeechHouseGentlemanText:
 	para "That tunnel goes"
 	line "to a distant town."
 	done
+endc

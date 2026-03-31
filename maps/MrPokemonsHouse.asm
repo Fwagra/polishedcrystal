@@ -186,20 +186,59 @@ MrPokemonsHouse_OakExits:
 	step_end
 
 MrPokemonIntroText1:
+if DEF(_LOCALE_FR)
+	text "Hello! Tu dois"
+	line "être <PLAYER>."
+
+	para "Le Prof.Orme a dit"
+	line "que tu viendrais."
+	done
+else
 	text "Hello, hello! You"
 	line "must be <PLAYER>."
 
 	para "Prof.Elm said that"
 	line "you would visit."
 	done
+endc
 
 MrPokemonIntroText2:
+if DEF(_LOCALE_FR)
+	text "Voilà ce que je"
+	line "voudrais que le"
+	cont "Prof.Orme examine."
+	done
+else
 	text "This is what I"
 	line "want Prof.Elm to"
 	cont "examine."
 	done
+endc
 
 MrPokemonIntroText3:
+if DEF(_LOCALE_FR)
+	text "Je connais un cou-"
+	line "ple d'amis qui"
+	cont "dirige une"
+
+	para "PENSION pour"
+	line "#mon."
+
+	para "Ils m'ont donné"
+	line "cet OEUF."
+
+	para "Il m'a paru louche"
+	line "alors j'ai écrit"
+	cont "au Prof.Orme."
+
+	para "En ce qui concerne"
+	line "les évolutions de"
+	cont "#mon,"
+
+	para "le Prof.Orme est"
+	line "incollable."
+	done
+else
 	text "I know a couple"
 	line "who run a #mon"
 	cont "Day-Care service."
@@ -215,19 +254,42 @@ MrPokemonIntroText3:
 	line "tion, Prof.Elm is"
 	cont "the authority."
 	done
+endc
 
 MrPokemonIntroText4:
+if DEF(_LOCALE_FR)
+	text "Même le Prof.Chen"
+	line "le reconnaît."
+	done
+else
 	text "Even Prof.Oak here"
 	line "recognizes that."
 	done
+endc
 
 MrPokemonIntroText5:
+if DEF(_LOCALE_FR)
+	text "A mon avis, le"
+	line "Prof.Orme aura"
+	cont "une explication."
+	done
+else
 	text "If my assumption"
 	line "is correct, Prof."
 	cont "Elm will know it."
 	done
+endc
 
 MrPokemonsHouse_MrPokemonHealText:
+if DEF(_LOCALE_FR)
+	text "Tu retournes voir"
+	line "le Prof.Orme?"
+
+	para "Tiens. Tes #mon"
+	line "devraient se"
+	cont "reposer."
+	done
+else
 	text "You are returning"
 	line "to Prof.Elm?"
 
@@ -235,8 +297,34 @@ MrPokemonsHouse_MrPokemonHealText:
 	line "should have some"
 	cont "rest."
 	done
+endc
 
 MrPokemonText_OddSouvenir:
+if DEF(_LOCALE_FR)
+	text "Oh! Ce souvenir!"
+
+	para "J'en ai eu un"
+	line "lors de mon"
+	cont "voyage aux"
+
+	para "Iles Orange."
+
+	para "J'y ai vu aussi"
+	line "des #mon"
+	cont "bizarres!"
+
+	para "Hmm… Je me"
+	line "demande…"
+
+	para "Y a-t-il un"
+	line "lien entre ce"
+	cont "souvenir"
+
+	para "et ces formes"
+	line "étranges de"
+	cont "#mon?"
+	done
+else
 	text "Oh! That souvenir!"
 
 	para "I got one of those"
@@ -256,21 +344,128 @@ MrPokemonText_OddSouvenir:
 	line "those unusual"
 	cont "forms of #mon?"
 	done
+endc
 
 MrPokemonText_ImDependingOnYou:
+if DEF(_LOCALE_FR)
+	text "Je compte"
+	line "sur toi!"
+	done
+else
 	text "I'm depending on"
 	line "you!"
 	done
+endc
 
 MrPokemonText_AlwaysNewDiscoveries:
+if DEF(_LOCALE_FR)
+	text "C'est beau la vie!"
+	line "Il y a toujours"
+
+	para "quelque chose"
+	line "à découvrir!"
+	done
+else
 	text "Life is delight-"
 	line "ful! Always, new"
 
 	para "discoveries to be"
 	line "made!"
 	done
+endc
 
 MrPokemonsHouse_OakText1:
+if DEF(_LOCALE_FR)
+	text "Chen: Ahaa!"
+	line "C'est toi"
+	cont "<PLAYER>!"
+
+if !DEF(DEBUG)
+	para "Moi c'est Chen!"
+	line "Je suis un"
+	cont "chercheur"
+
+	para "#mon."
+
+	para "Je suis venu"
+	line "rendre visite"
+	cont "à mon"
+
+	para "vieil ami…"
+	line "M.#mon!"
+
+	para "On m'a dit que"
+	line "tu rendais"
+	cont "service au"
+
+	para "Prof.Orme,"
+	line "alors je"
+	cont "t'attendais."
+
+	para "Oh! C'est quoi"
+	line "ça?"
+	cont "Un #mon rare!"
+
+	para "Voyons…"
+
+	para "Hmm… Je vois!"
+
+	para "Je comprends"
+	line "pourquoi le"
+	cont "Prof.Orme"
+
+	para "t'a confié un"
+	line "#mon pour"
+	cont "cette mission."
+
+	para "Pour des"
+	line "chercheurs"
+	cont "comme moi"
+
+	para "et le Prof.Orme,"
+	line "les #mon"
+	cont "sont des amis."
+
+	para "Il a tout de"
+	line "suite compris"
+	cont "que tu"
+
+	para "ferais attention"
+	line "à ton #mon."
+
+	para "…Ah!"
+
+	para "On peut te"
+	line "faire"
+	cont "confiance."
+
+	para "Ca te dirait de"
+	line "me rendre"
+	cont "service?"
+
+	para "Regarde ça:"
+	line "c'est une"
+	cont "nouvelle"
+
+	para "version du"
+	line "#dex."
+
+	para "Il enregistre"
+	line "automati-"
+	cont "quement les"
+
+	para "données sur"
+	line "les #mon vus"
+	cont "ou pris."
+
+	para "C'est une"
+	line "encyclo-"
+	cont "pédie"
+
+	para "moderne!"
+endc
+	done
+else
 	text "Oak: Aha! So"
 	line "you're <PLAYER>!"
 
@@ -335,8 +530,33 @@ if !DEF(DEBUG)
 	line "encyclopedia!"
 endc
 	done
+endc
 
 MrPokemonsHouse_OakText2:
+if DEF(_LOCALE_FR)
+	text "Rencontre un maxi-"
+	line "mum de #mon et"
+
+	para "complète le"
+	line "#dex!"
+
+if !DEF(DEBUG)
+	para "Bon. Je dois"
+	line "y aller."
+
+	para "J'ai une"
+	line "émission de"
+	cont "radio à"
+
+	para "faire à"
+	line "Doublonville."
+
+	para "<PLAYER>, je"
+	line "compte sur"
+	cont "toi!"
+endc
+	done
+else
 	text "Go meet many kinds"
 	line "of #mon and"
 
@@ -355,8 +575,27 @@ if !DEF(DEBUG)
 	line "counting on you!"
 endc
 	done
+endc
 
 MrPokemonText_GimmeTheScale:
+if DEF(_LOCALE_FR)
+	text "Oh? Cette"
+	line "ECAILLE!"
+
+	para "C'est quoi?"
+	line "Un Léviator"
+	cont "rouge?"
+
+	para "C'est dingue!"
+	line "Je la veux…"
+
+	para "<PLAYER>, veux-tu"
+	line "l'échanger?"
+
+	para "Je peux te donner"
+	line "un #mon rare."
+	done
+else
 	text "Hm? That Scale!"
 	line "What's that?"
 	cont "A red Gyarados?"
@@ -375,60 +614,130 @@ MrPokemonText_GimmeTheScale:
 	para "I can offer you"
 	line "a rare #mon."
 	done
+endc
 
 MrPokemonText_GotShinyDitto:
+if DEF(_LOCALE_FR)
+	text "<PLAYER> reçoit"
+	line "un #mon."
+	done
+else
 	text "<PLAYER> received a"
 	line "#mon."
 	done
+endc
 
 MrPokemonText_SentToPC:
+if DEF(_LOCALE_FR)
+	text "Le #mon a été"
+	line "envoyé au PC"
+	cont "de "
+	text_ram wStringBuffer1
+	text "."
+	done
+else
 	text "The #mon was"
 	line "sent to "
 	text_ram wStringBuffer1
 	text "."
 	done
+endc
 
 MrPokemonText_PartyAndBoxFull:
+if DEF(_LOCALE_FR)
+	text "Tu n'as plus de"
+	line "place pour ça,"
+	cont "même au PC!"
+	done
+else
 	text "You don't have any"
 	line "room for this,"
 	cont "even in your Box!"
 	done
+endc
 
 MrPokemonText_Disappointed:
+if DEF(_LOCALE_FR)
+	text "C'est dommage."
+	line "C'est si rare…"
+	done
+else
 	text "That's disappoint-"
 	line "ing. That happens"
 	cont "to be very rare."
 	done
+endc
 
 MrPokemonsHouse_ForeignMagazinesText:
+if DEF(_LOCALE_FR)
+	text "Il y a plein de"
+	line "magazines"
+	cont "étrangers."
+
+	para "On ne comprend"
+	line "même pas les"
+	cont "titres."
+	done
+else
 	text "It's packed with"
 	line "foreign magazines."
 
 	para "Can't even read"
 	line "their titles…"
 	done
+endc
 
 MrPokemonsHouse_BrokenComputerText:
+if DEF(_LOCALE_FR)
+	text "Un gros ordinateur"
+	line "tout cassé…"
+	done
+else
 	text "It's a big com-"
 	line "puter. Hmm. It's"
 	cont "broken."
 	done
+endc
 
 MrPokemonsHouse_StrangeCoinsText:
+if DEF(_LOCALE_FR)
+	text "Un tas de pièces"
+	line "bizarres!"
+
+	para "Elles sont peut-"
+	line "être d'un autre"
+	cont "pays…"
+	done
+else
 	text "A whole pile of"
 	line "strange coins!"
 
 	para "Maybe they're from"
 	line "another country…"
 	done
+endc
 
 MrPokemonsHouse_CabinetText:
+if DEF(_LOCALE_FR)
+	text "Une collection"
+	line "d'objets"
+	cont "rares!"
+	done
+else
 	text "A collection of"
 	line "rare curiosities"
 	cont "from all over!"
 	done
+endc
 
 MrPokemonsHouse_RedScaleCabinetText:
+if DEF(_LOCALE_FR)
+	text "Parmi eux, il"
+	line "y a l'Ecaille"
+	cont "Rouge!"
+	done
+else
 	text "One of them is the"
 	line "shiny Red Scale!"
 	done
+endc

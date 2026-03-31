@@ -18,20 +18,44 @@ CeruleanTradeSpeechHouse_MapScriptHeader:
 	pokemon_event  5,  6, IVYSAUR, SPRITEMOVEDATA_POKEMON, -1, PAL_NPC_TEAL, CeruleanTradeSpeechHouseZubatText, -1
 
 CeruleanTradeSpeechHouseGrannyText:
+if DEF(_LOCALE_FR)
+	text "Mon mari aime les"
+	line "#mon qu'il a"
+	cont "eu en faisant"
+
+	para "des échanges."
+	done
+else
 	text "My husband lives"
 	line "happily with #-"
 	cont "mon he got through"
 	cont "trades."
 	done
+endc
 
 CeruleanTradeSpeechHouseGrampsText:
+if DEF(_LOCALE_FR)
+	text "Ah… Super…"
+	done
+else
 	text "Ah… I'm so happy…"
 	done
+endc
 
 CeruleanTradeSpeechHouseRhydonText:
+if DEF(_LOCALE_FR)
+	text "Tarpaud: Croak!"
+	done
+else
 	text "Poliwrath: Ribbit!"
 	done
+endc
 
 CeruleanTradeSpeechHouseZubatText:
+if DEF(_LOCALE_FR)
+	text "Herbizarre: Saaur!"
+	done
+else
 	text "Ivysaur: Sauur!"
 	done
+endc

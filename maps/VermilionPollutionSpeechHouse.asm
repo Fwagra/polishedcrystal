@@ -16,6 +16,19 @@ VermilionPollutionSpeechHouse_MapScriptHeader:
 	object_event  5,  3, SPRITE_COOL_DUDE, SPRITEMOVEDATA_STANDING_LEFT, 1, 0, -1, PAL_NPC_RED, OBJECTTYPE_COMMAND, jumptextfaceplayer, VermilionPollutionSpeechHouseCooltrainerMText, -1
 
 VermilionPollutionSpeechHouseBreederText:
+if DEF(_LOCALE_FR)
+	text "Carmin"
+	line "sur Mer est"
+	cont "super,"
+
+	para "mais dans un"
+	line "port, il faut"
+	cont "se méfier"
+
+	para "de la"
+	line "pollution!"
+	done
+else
 	text "Vermilion is a"
 	line "wonderful place,"
 
@@ -23,8 +36,20 @@ VermilionPollutionSpeechHouseBreederText:
 	line "this we have to be"
 	cont "wary of pollution!"
 	done
+endc
 
 VermilionPollutionSpeechHouseCooltrainerMText:
+if DEF(_LOCALE_FR)
+	text "Avec tous les"
+	line "paquebots qui"
+	cont "vont et"
+	cont "viennent,"
+
+	para "on reçoit des"
+	line "visiteurs"
+	cont "de partout!"
+	done
+else
 	text "Thanks to all the"
 	line "cruise ships that"
 	cont "come and go,"
@@ -32,3 +57,4 @@ VermilionPollutionSpeechHouseCooltrainerMText:
 	para "we get visitors"
 	line "from all over!"
 	done
+endc

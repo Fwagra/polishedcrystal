@@ -18,6 +18,16 @@ ViridianNicknameSpeechHouse_MapScriptHeader:
 	pokemon_event  6,  3, RATTATA, SPRITEMOVEDATA_POKEMON, -1, PAL_NPC_PURPLE, RatteyText, -1
 
 ViridianNicknameSpeechHousePokefanMText:
+if DEF(_LOCALE_FR)
+	text "Donnes-tu des"
+	line "surnoms cool à tes"
+	cont "#mon?"
+
+	para "C'est toujours"
+	line "amusant pendant"
+	cont "les échanges."
+	done
+else
 	text "Do you put a lot"
 	line "of thought into"
 
@@ -30,12 +40,20 @@ ViridianNicknameSpeechHousePokefanMText:
 	para "the fun of trading"
 	line "with others."
 	done
+endc
 
 ViridianNicknameSpeechHouseLassText:
+if DEF(_LOCALE_FR)
+	text "Voici Hooty, un"
+	line "Hoothoot, et"
+	cont "Rattey, un Rattata."
+	done
+else
 	text "They're Hooty--"
 	line "a Hoothoot--and"
 	cont "Rattey--a Rattata."
 	done
+endc
 
 HootyText:
 	text "Hooty: Hoot!"

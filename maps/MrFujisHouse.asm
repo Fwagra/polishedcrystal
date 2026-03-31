@@ -19,6 +19,17 @@ MrFujisHouse_MapScriptHeader:
 	pokemon_event  1,  3, PIDGEY, SPRITEMOVEDATA_POKEMON, -1, PAL_NPC_BROWN, MrFujisPidgeyText, -1
 
 MrFujisHouseSuperNerdText:
+if DEF(_LOCALE_FR)
+	text "M.Fuji vit ici"
+	line "mais il est"
+	cont "absent"
+
+	para "pour le moment."
+
+	para "Il est à la"
+	line "Maison des Ames."
+	done
+else
 	text "Mr.Fuji does live"
 	line "here, but he's not"
 	cont "home now."
@@ -26,8 +37,21 @@ MrFujisHouseSuperNerdText:
 	para "He might be at the"
 	line "House of Souls."
 	done
+endc
 
 MrFujisHouseLassText:
+if DEF(_LOCALE_FR)
+	text "Des gens sans"
+	line "coeur délaissent"
+	cont "leurs #mon."
+
+	para "Pépé s'occupe"
+	line "des #mon"
+	cont "abandonnés"
+
+	para "et les soigne."
+	done
+else
 	text "Some cold-hearted"
 	line "people stop caring"
 	cont "for their #mon."
@@ -38,15 +62,31 @@ MrFujisHouseLassText:
 	para "#mon and takes"
 	line "care of them."
 	done
+endc
 
 MrFujisPsyduckText:
+if DEF(_LOCALE_FR)
+	text "Psykokwak: Kwa?"
+	done
+else
 	text "Psyduck: Gu-guwa?"
 	done
+endc
 
 MrFujisNidorinoText:
+if DEF(_LOCALE_FR)
+	text "Nidorino: Nido!"
+	done
+else
 	text "Nidorino: Gyun!"
 	done
+endc
 
 MrFujisPidgeyText:
+if DEF(_LOCALE_FR)
+	text "Roucool: Rrrou!"
+	done
+else
 	text "Pidgey: Pijji!"
 	done
+endc

@@ -46,6 +46,21 @@ MrPsychicsHouseTutorZenHeadbuttScript:
 	jumpopenedtext Text_MrPsychicsHouseTutorTaught
 
 MrPsychicText:
+if DEF(_LOCALE_FR)
+	text "…"
+
+	para "…"
+
+	para "…"
+
+	para "… J'ai"
+	line "compris!"
+
+	para "Tu veux"
+	line "apprendre"
+	cont "Psykoud'Boul!"
+	done
+else
 	text "…"
 
 	para "…"
@@ -57,32 +72,73 @@ MrPsychicText:
 	para "You want to learn"
 	line "Zen Headbutt!"
 	done
+endc
 
 Text_MrPsychicsHouseTutorZenHeadbutt:
+if DEF(_LOCALE_FR)
+	text "Je peux"
+	line "enseigner"
+	cont "Psykoud'Boul"
+
+	para "contre une"
+	line "Feuille"
+	cont "d'Argent."
+	done
+else
 	text "I will teach your"
 	line "#mon to use Zen"
 
 	para "Headbutt for a"
 	line "Silver Leaf."
 	done
+endc
 
 Text_MrPsychicsHouseTutorNoSilverLeaf:
+if DEF(_LOCALE_FR)
+	text "Tu n'as pas de"
+	line "Feuille"
+	cont "d'Argent…"
+	done
+else
 	text "You don't have a"
 	line "Silver Leaf…"
 	done
+endc
 
 Text_MrPsychicsHouseTutorQuestion:
+if DEF(_LOCALE_FR)
+	text "Je dois"
+	line "enseigner"
+	cont "Psykoud'Boul"
+
+	para "a ton #mon?"
+	done
+else
 	text "Should I teach"
 	line "your #mon"
 	cont "Zen Headbutt?"
 	done
+endc
 
 Text_MrPsychicsHouseTutorRefused:
+if DEF(_LOCALE_FR)
+	text "… Je me suis"
+	line "trompé?"
+	done
+else
 	text "…I was wrong?"
 	done
+endc
 
 Text_MrPsychicsHouseTutorTaught:
+if DEF(_LOCALE_FR)
+	text "Ton #mon sait"
+	line "utiliser"
+	cont "Psykoud'Boul."
+	done
+else
 	text "Your #mon now"
 	line "knows how to use"
 	cont "Zen Headbutt."
 	done
+endc

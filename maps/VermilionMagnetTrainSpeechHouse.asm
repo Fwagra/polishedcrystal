@@ -16,6 +16,15 @@ VermilionMagnetTrainSpeechHouse_MapScriptHeader:
 	object_event  0,  3, SPRITE_SCHOOLBOY, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, PAL_NPC_GREEN, OBJECTTYPE_COMMAND, jumptextfaceplayer, VermilionMagnetTrainSpeechHouseYoungsterText, -1
 
 VermilionMagnetTrainSpeechHousePokefanFText:
+if DEF(_LOCALE_FR)
+	text "Tu connais le"
+	line "Train Magnétique?"
+
+	para "C'est un train qui"
+	line "relie Kanto et"
+	cont "Johto."
+	done
+else
 	text "Do you know about"
 	line "the Magnet Train?"
 
@@ -23,9 +32,21 @@ VermilionMagnetTrainSpeechHousePokefanFText:
 	line "that goes to Gol-"
 	cont "denrod in Johto."
 	done
+endc
 
 VermilionMagnetTrainSpeechHouseYoungsterText:
+if DEF(_LOCALE_FR)
+	text "Safrania! Safrania!"
+	line "Emmène-moi à"
+	cont "Safrania!"
+
+	para "Le train! Le train!"
+	line "Je veux voir le"
+	cont "Train Magnétique!"
+	done
+else
 	text "I want to go to"
 	line "Saffron to see"
 	cont "the Magnet Train."
 	done
+endc

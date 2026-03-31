@@ -17,14 +17,34 @@ Route16FuchsiaSpeechHouse_MapScriptHeader:
 	object_event  5,  4, SPRITE_LADY, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, PAL_NPC_BLUE, OBJECTTYPE_COMMAND, jumptextfaceplayer, Route16FuchsiaSpeechHouseLadyText, -1
 
 Route16FuchsiaSpeechHouseSuperNerdText:
+if DEF(_LOCALE_FR)
+	text "Si tu descends la"
+	line "Piste Cyclable, tu"
+
+	para "te retrouveras à"
+	line "Parmanie."
+	done
+else
 	text "If you cruise down"
 	line "Cycling Road, you"
 
 	para "will end up in"
 	line "Fuchsia City."
 	done
+endc
 
 Route16FuchsiaSpeechHouseLadyText:
+if DEF(_LOCALE_FR)
+	text "La personne qui"
+	line "vivait ici avant"
+
+	para "est partie il y a"
+	line "trois ans."
+
+	para "Je me demande où"
+	line "elle est allée?"
+	done
+else
 	text "The person who"
 	line "used to live here"
 
@@ -34,3 +54,4 @@ Route16FuchsiaSpeechHouseLadyText:
 	para "I wonder where"
 	line "she went?"
 	done
+endc

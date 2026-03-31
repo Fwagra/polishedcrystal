@@ -16,9 +16,19 @@ PewterNidoranSpeechHouse_MapScriptHeader:
 	pokemon_event  4,  5, NIDORAN_M, SPRITEMOVEDATA_POKEMON, -1, PAL_NPC_PURPLE, PewterNidoranText, -1
 
 PewterNidoranSpeechHouseSuperNerdText:
+if DEF(_LOCALE_FR)
+	text "Nidoran, couché!"
+	done
+else
 	text "Nidoran, shake!"
 	done
+endc
 
 PewterNidoranText:
+if DEF(_LOCALE_FR)
+	text "Nidoran: Nidôô!"
+	done
+else
 	text "Nidoran: Gau gau!"
 	done
+endc
