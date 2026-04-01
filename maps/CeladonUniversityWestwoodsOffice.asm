@@ -32,12 +32,40 @@ CeladonUniversityWestwoodsOfficeChildScript:
 	jumpthisopenedtext
 
 .Text2:
+if DEF(_LOCALE_FR)
+	text "Je vais prendre"
+	line "des ramens a la"
+
+	para "cafeteria."
+	done
+else
 	text "I'll just buy some"
 	line "ramen in the cafe-"
 	cont "teria."
 	done
+endc
 
 .Text1:
+if DEF(_LOCALE_FR)
+	text "On m'avait promis"
+	line "pizza gratuite!"
+
+	para "Elle est ou?!"
+
+	para "Je suis EN RAGE!"
+
+	para "…Je devrais"
+	line "arreter les"
+if DEF(FAITHFUL)
+	cont "RageCandyBars."
+else
+	cont "Cakes of Rage."
+endc
+
+	para "Tiens, prends"
+	line "celle-la."
+	done
+else
 	text "I was told there"
 	line "would be free"
 	cont "pizza here!"
@@ -57,8 +85,25 @@ endc
 	para "You can have this"
 	line "one."
 	done
+endc
 
 CeladonUniversityWestwoodsOfficeBookText:
+if DEF(_LOCALE_FR)
+	text "Cher journal,"
+
+	para "Compiler des"
+	line "entrees #dex"
+
+	para "rapporte toujours."
+	line "Meme sans bouger"
+
+	para "du bureau!"
+	line "Les rapports des"
+
+	para "autres suffisent"
+	line "souvent."
+	done
+else
 	text "Dear Diary,"
 
 	para "My work compiling"
@@ -80,21 +125,42 @@ CeladonUniversityWestwoodsOfficeBookText:
 	para "gets the job done"
 	line "just fine."
 	done
+endc
 
 CeladonUniversityWestwoodsOfficeSignpost1Text:
+if DEF(_LOCALE_FR)
+	text "Portrait de"
+	line "Westwood I."
+	done
+else
 	text "It's a portrait of"
 	line "Westwood I."
 	done
+endc
 
 CeladonUniversityWestwoodsOfficeSignpost2Text:
+if DEF(_LOCALE_FR)
+	text "Portrait de"
+	line "Westwood III."
+	done
+else
 	text "It's a portrait of"
 	line "Westwood III."
 	done
+endc
 
 CeladonUniversityWestwoodsOfficeBookshelfText:
+if DEF(_LOCALE_FR)
+	text "Oeuvres completes"
+	line "du Prof. Westwood."
+
+	para "…On peut passer."
+	done
+else
 	text "The Complete Works"
 	line "of Prof.Westwood."
 
 	para "…Might give that"
 	line "one a miss."
 	done
+endc

@@ -16,6 +16,20 @@ VioletOnixTradeHouse_MapScriptHeader:
 	object_event  6,  5, SPRITE_SCHOOLBOY, SPRITEMOVEDATA_WALK_UP_DOWN, 2, 0, -1, PAL_NPC_RED, OBJECTTYPE_COMMAND, trade, NPC_TRADE_KYLE, -1
 
 VioletKylesHousePokefanMText:
+if DEF(_LOCALE_FR)
+	text "Un #mon échangé"
+	line "grandit plus vite"
+	cont "qu'un #mon"
+	cont "attrapé."
+
+	para "Mais si tu n'as"
+	line "pas le bon Badge,"
+
+	para "il est possible"
+	line "qu'il ne t'obé-"
+	cont "isse pas."
+	done
+else
 	text "A #mon you get"
 	line "in a trade grows"
 	cont "quickly."
@@ -26,3 +40,4 @@ VioletKylesHousePokefanMText:
 	para "Badge, they may"
 	line "disobey you."
 	done
+endc

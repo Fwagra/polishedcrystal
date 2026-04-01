@@ -24,23 +24,49 @@ CeladonHomeDecorStore1F_MapScriptHeader:
 CeladonHomeDecorStore1FBulbasaurDollScript:
 	jumpthistext
 
+if DEF(_LOCALE_FR)
+	text "Poupée"
+	line "Bulbizarre!"
+
+	para "Elle est trop"
+	line "mignonne!"
+	done
+else
 	text "It's a cute"
 	line "Bulbasaur doll!"
 	done
+endc
 
 CeladonHomeDecorStore1FCharmanderDollScript:
 	jumpthistext
 
+if DEF(_LOCALE_FR)
+	text "Poupée"
+	line "Salameche!"
+
+	para "Elle a l'air"
+	line "costaud!"
+	done
+else
 	text "It's a tough"
 	line "Charmander doll!"
 	done
+endc
 
 CeladonHomeDecorStore1FSquirtleDollScript:
 	jumpthistext
 
+if DEF(_LOCALE_FR)
+	text "Poupée"
+	line "Carapuce!"
+
+	para "Trop cool!"
+	done
+else
 	text "It's a cool"
 	line "Squirtle doll!"
 	done
+endc
 
 CeladonHomeDecorStore1FClerkScript:
 	faceplayer
@@ -114,7 +140,11 @@ CeladonHomeDecorStore1FClerkScript:
 .MenuData:
 	db MENU_BACKUP_TILES
 	menu_coords 0, 2, 19, 11
+if DEF(_LOCALE_FR)
+	dw .MenuData2FR
+else
 	dw .MenuData2
+endc
 	db 1 ; default option
 
 .MenuData2:
@@ -125,7 +155,25 @@ CeladonHomeDecorStore1FClerkScript:
 	db "Squirtle   ¥16000@"
 	db "Cancel@"
 
+.MenuData2FR:
+	db $80 ; flags
+	db 4 ; items
+	db "Bulbasaur  ¥16000@"
+	db "Charmander ¥16000@"
+	db "Squirtle   ¥16000@"
+	db "Retour@"
+
 CeladonHomeDecorStore1FReceptionistText:
+if DEF(_LOCALE_FR)
+	text "Bonjour! Bienvenue"
+	line "au Centre Comm."
+
+	cont "Décoration maison!"
+
+	para "L'annuaire est"
+	line "au mur."
+	done
+else
 	text "Hello! Welcome to"
 	line "Celadon Dept."
 	cont "Store Home Decor!"
@@ -133,62 +181,137 @@ CeladonHomeDecorStore1FReceptionistText:
 	para "The directory is"
 	line "on the wall."
 	done
+endc
 
 CeladonHomeDecorStore1FClerkText:
+if DEF(_LOCALE_FR)
+	text "Souhaitez-vous une"
+	line "poupée souvenir"
+
+	para "de Céladopole?"
+	done
+else
 	text "Welcome! Would you"
 	line "like a doll as a"
 	cont "Celadon souvenir?"
 	done
+endc
 
 BoughtBulbasaurDollText:
+if DEF(_LOCALE_FR)
+	text "<PLAYER> a acheté"
+	line "Poupée Bulbizarre."
+	done
+else
 	text "<PLAYER> bought"
 	line "Bulbasaur Doll."
 	done
+endc
 
 BulbasaurDollSentText:
+if DEF(_LOCALE_FR)
+	text "Poupée Bulbizarre"
+	line "envoyée chez toi."
+	done
+else
 	text "Bulbasaur Doll"
 	line "was sent home."
 	done
+endc
 
 BoughtCharmanderDollText:
+if DEF(_LOCALE_FR)
+	text "<PLAYER> a acheté"
+	line "Poupée Salameche."
+	done
+else
 	text "<PLAYER> bought"
 	line "Charmander Doll."
 	done
+endc
 
 CharmanderDollSentText:
+if DEF(_LOCALE_FR)
+	text "Poupée Salameche"
+	line "envoyée chez toi."
+	done
+else
 	text "Charmander Doll"
 	line "was sent home."
 	done
+endc
 
 BoughtSquirtleDollText:
+if DEF(_LOCALE_FR)
+	text "<PLAYER> a acheté"
+	line "Poupée Carapuce."
+	done
+else
 	text "<PLAYER> bought"
 	line "Squirtle Doll."
 	done
+endc
 
 SquirtleDollSentText:
+if DEF(_LOCALE_FR)
+	text "Poupée Carapuce"
+	line "envoyée chez toi."
+	done
+else
 	text "Squirtle Doll"
 	line "was sent home."
 	done
+endc
 
 CeladonHomeDecorStore1FNoMoneyText:
+if DEF(_LOCALE_FR)
+	text "Tu n'as pas assez"
+	line "d'argent!"
+	done
+else
 	text "You can't afford"
 	line "that!"
 	done
+endc
 
 CeladonHomeDecorStore1FAlreadyBoughtText:
+if DEF(_LOCALE_FR)
+	text "Tu l'as déjà!"
+	done
+else
 	text "You already have"
 	line "that!"
 	done
+endc
 
 CeladonHomeDecorStore1FCooltrainerfText:
+if DEF(_LOCALE_FR)
+	text "Cette aile est"
+	line "plus chic que le"
+
+	para "Centre Comm."
+	line "principal."
+	done
+else
 	text "This new wing"
 	line "feels more upscale"
 
 	para "than the main"
 	line "Dept.Store."
 	done
+endc
 
 CeladonHomeDecorStore1FDirectoryText:
+if DEF(_LOCALE_FR)
+	text "1F: Accueil"
+
+	para "2F: Lits"
+
+	para "3F: Tapis"
+
+	para "4F: Peluches"
+	done
+else
 	text "1F: Lobby"
 
 	para "2F: Beds"
@@ -197,3 +320,4 @@ CeladonHomeDecorStore1FDirectoryText:
 
 	para "4F: Jumbo Dolls"
 	done
+endc

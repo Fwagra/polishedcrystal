@@ -137,7 +137,7 @@ GenericTrainerPsychicHerman:
 	text "…"
 
 	para "J'ai fermé les"
-	line "yeux e perdu…"
+	line "yeux et perdu…"
 	done
 
 PsychicHermanSeenText: ; text > text

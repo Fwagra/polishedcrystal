@@ -39,13 +39,16 @@ FloriaTextAfterPlainBadge:
 FloriaTextAfterSquirtBottle:
 	text "Je suis FLORIA de"
 	line "la Boutique Fleur!"
-	para "Quand j'ai parlé à"
-	line "ma soeur de l'arbre"
-	para "qui gigote, elle a"
-	line "dit que c'était"
-	cont "dangereux."
-	para "Oh, elle t'a prêté"
-	line "sa bouteille d'eau?"
+	para "Quand j'ai parlé"
+	line "a ma soeur de"
+
+	para "l'arbre qui"
+	line "gigote, elle a dit"
+	cont "c'était dangereux."
+
+	para "Oh, elle t'a"
+	line "prete sa bouteille"
+	cont "d'eau?"
 	para "T'es un bon"
 	line "dresseur, alors!"
 	para "Je te laisse"
@@ -242,18 +245,24 @@ Route36AdvancedTips1Text:
 	text "ASTUCE+"
 	para "Dans OPTIONS,"
 	line "tu peux choisir"
-	cont "parmi 20 cadres"
-	para "de texte et 8"
-	line "polices d'écriture!"
+
+	para "parmi 20 cadres"
+	line "de texte et 8"
+
+	para "polices d'"
+	line "ecriture!"
 	done
 
 Route36AdvancedTips2Text:
 	text "ASTUCE+"
 	para "Coiffures,"
-	line "bénédictions ou"
-	cont "massages rendent"
-	para "tes #mon plus"
-	line "attachés, donc plus"
-	para "prêts à t'aider en"
-	line "combat!"
+	line "benedictions ou"
+
+	para "massages rendent"
+	line "tes #mon plus"
+
+	para "attaches, donc"
+	line "plus prets a"
+
+	para "t'aider en combat!"
 	done

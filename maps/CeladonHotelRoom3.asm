@@ -16,6 +16,17 @@ CeladonHotelRoom3_MapScriptHeader:
 	itemball_event  5,  2, ROOM_SERVICE, 1, EVENT_CELADON_HOTEL_ROOM_3_ROOM_SERVICE
 
 CeladonHotelRoom3GrampsText:
+if DEF(_LOCALE_FR)
+	text "Je viens ici"
+	line "chaque annee"
+
+	para "depuis tout petit."
+	line "C'est presque"
+
+	para "une deuxieme"
+	line "maison!"
+	done
+else
 	text "I've been staying"
 	line "at this hotel"
 	cont "every year since"
@@ -25,3 +36,4 @@ CeladonHotelRoom3GrampsText:
 	line "like a second"
 	cont "home!"
 	done
+endc

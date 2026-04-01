@@ -17,5 +17,10 @@ Route16Northwest_MapScriptHeader:
 	cuttree_event -5,  2, EVENT_ROUTE_16_WEST_CUT_TREE
 
 Route16SignpostText:
+if DEF(_LOCALE_FR)
 	text "Route 16"
 	done
+else
+	text "Route 16"
+	done
+endc

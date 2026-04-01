@@ -27,12 +27,36 @@ Route30BerryHousePokefanMScript:
 .GotMulch:
 	jumpthisopenedtext
 
+if DEF(_LOCALE_FR)
+	text "J'achète du Mulch"
+	line "de qualité à"
+	cont "Doublonville."
+	done
+else
 	text "I buy top-quality"
 	line "Mulch in Goldenrod"
 	cont "City."
 	done
+endc
 
 Route30BerrySpeechHouseMonEatBerriesText:
+if DEF(_LOCALE_FR)
+	text "Tu sais, les"
+	line "#mon"
+	line "mangent des Baies."
+
+	para "Ca repousse lent-"
+	line "ement après la"
+	cont "cueillette,"
+
+	para "mais le Mulch sur"
+	line "la terre accélère"
+	cont "tout ca!"
+
+	para "Tiens. Je t'en"
+	line "donne un peu!"
+	done
+else
 	text "You know, #mon"
 	line "eat Berries."
 
@@ -47,3 +71,4 @@ Route30BerrySpeechHouseMonEatBerriesText:
 	para "Here. I'll share"
 	line "some with you!"
 	done
+endc

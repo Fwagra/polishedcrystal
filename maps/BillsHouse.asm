@@ -21,6 +21,26 @@ PokemonJournalBillScript:
 	setflag ENGINE_READ_BILL_JOURNAL
 	jumpthistext
 
+if DEF(_LOCALE_FR)
+	text "Journal #mon"
+
+	para "Article spécial:"
+	line "#Maniac Léo!"
+
+	para "Léo a inventé le"
+	line "Système de"
+	cont "Stockage"
+	cont "#mon"
+
+	para "pour sa vaste"
+	line "collection."
+
+	para "On dit que son"
+	line "premier #mon"
+
+	para "était un Abra."
+	done
+else
 	text "#mon Journal"
 
 	para "Special Feature:"
@@ -39,12 +59,19 @@ PokemonJournalBillScript:
 	para "caught was an"
 	line "Abra."
 	done
+endc
 
 BillsHousePCText:
+if DEF(_LOCALE_FR)
+	text "Un modèle 3D de"
+	line "Porygon tourne."
+	done
+else
 	text "There's a spinning"
 	line "3D model of a"
 	cont "Porygon."
 	done
+endc
 
 BillsHouseBillScript:
 	checkevent EVENT_BEAT_POKEMANIAC_BILL
@@ -66,6 +93,17 @@ BillsHouseBillScript:
 	jumpthistext
 
 .AfterText:
+if DEF(_LOCALE_FR)
+	text "Quel combat"
+	line "d'enfer!"
+
+	para "Tout #Maniac"
+	line "serait ravi"
+
+	para "de voir tes"
+	line "captures."
+	done
+else
 	text "That was one rad"
 	line "battle!"
 
@@ -75,8 +113,29 @@ BillsHouseBillScript:
 	para "to see what"
 	line "you've caught."
 	done
+endc
 
 .IntroText:
+if DEF(_LOCALE_FR)
+	text "Léo: Evoli est un"
+	line "#mon fascinant."
+
+	para "Certains disent"
+	line "que les 3 fauves"
+
+	para "légendaires de"
+	line "Johto étaient"
+
+	para "3 #mon qui"
+	line "évoluent d'Evoli."
+
+	para "Mais c'est peut-"
+	line "être une rumeur."
+
+	para "J'aimerais tant"
+	line "les voir…"
+	done
+else
 	text "Bill: Eevee is"
 	line "such a fascinating"
 	cont "#mon."
@@ -96,8 +155,32 @@ BillsHouseBillScript:
 	para "Still, I'd sure"
 	line "love to see them…"
 	done
+endc
 
 .SeenText:
+if DEF(_LOCALE_FR)
+	text "Tu as attrapé les"
+	line "3 fauves"
+	cont "légendaires?"
+
+	para "Trop cool,"
+	line "<PLAYER>!"
+
+	para "Tu crois qu'ils"
+	line "ont un lien"
+	cont "avec Evoli?"
+
+	para "Je dois te"
+	line "montrer mon"
+	cont "équipe!"
+
+	para "Compare les"
+	line "3 légendes"
+
+	para "a ma propre"
+	line "équipe #mon!"
+	done
+else
 	text "You caught all"
 	line "three of the"
 	cont "legendary beasts?"
@@ -119,7 +202,13 @@ BillsHouseBillScript:
 	para "you battled to"
 	line "my own #mon!"
 	done
+endc
 
 .BeatenText:
+if DEF(_LOCALE_FR)
 	text "Yeehah!"
 	done
+else
+	text "Yeehah!"
+	done
+endc

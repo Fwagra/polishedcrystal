@@ -17,15 +17,34 @@ PewterSnoozeSpeechHouse_MapScriptHeader:
 	object_event  2,  4, SPRITE_GRANNY, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, PAL_NPC_RED, OBJECTTYPE_COMMAND, jumptextfaceplayer, PewterSnoozeSpeechHouseGrannyText, -1
 
 PewterSnoozeSpeechHouseGrampsText:
+if DEF(_LOCALE_FR)
+	text "J'aime bien dor-"
+	line "mir avec la radio"
+	cont "allumée…"
+	cont "…Zzzz…"
+	done
+else
 	text "I like snoozing"
 	line "with the radio on…"
 	cont "…Zzzz…"
 	done
+endc
 
 PewterSnoozeSpeechHouseGrannyText:
+if DEF(_LOCALE_FR)
+	text "Pierre est l'aîné"
+	line "de dix enfants."
+
+	para "Je sais pas"
+	line "comment"
+	line "ses parents ont"
+	cont "tenu le coup!"
+	done
+else
 	text "Brock is the old-"
 	line "est of ten kids."
 
 	para "I don't know how"
 	line "his parents coped!"
 	done
+endc

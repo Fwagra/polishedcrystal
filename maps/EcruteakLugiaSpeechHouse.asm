@@ -17,6 +17,27 @@ EcruteakLugiaSpeechHouse_MapScriptHeader:
 	object_event  5,  4, SPRITE_SCHOOLBOY, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, 0, OBJECTTYPE_COMMAND, jumptextfaceplayer, EcruteakLugiaSpeechHouseYoungsterText, -1
 
 EcruteakLugiaSpeechHouseGrampsText:
+if DEF(_LOCALE_FR)
+	text "Ca s'est passé"
+	line "lorsque j'étais"
+	cont "jeune."
+
+	para "Le ciel est"
+	line "soudainement deve-"
+
+	para "nu noir. Un #-"
+	line "mon gigantesque"
+	cont "cachait les rayons"
+	cont "du soleil."
+
+	para "Je me demande quel"
+	line "#mon c'était..."
+
+	para "C'était comme un"
+	line "oiseau ou un"
+	cont "dragon."
+	done
+else
 	text "This happened when"
 	line "I was young."
 
@@ -33,11 +54,22 @@ EcruteakLugiaSpeechHouseGrampsText:
 	para "It was like a bird"
 	line "and a dragon."
 	done
+endc
 
 EcruteakLugiaSpeechHouseYoungsterText:
+if DEF(_LOCALE_FR)
+	text "Existe-t-il un"
+	line "#mon aussi"
+
+	para "grand? Si c'est le"
+	line "cas, il doit être"
+	cont "puissant."
+	done
+else
 	text "Is there really a"
 	line "#mon that big?"
 
 	para "If it exists, it"
 	line "must be powerful."
 	done
+endc

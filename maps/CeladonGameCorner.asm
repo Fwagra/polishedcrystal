@@ -185,6 +185,14 @@ CeladonGameCornerRichBoyTobin:
 	jumpthistextfaceplayer
 
 .SeenText:
+if DEF(_LOCALE_FR)
+	text "Tu fouilles ici"
+	line "pour quoi faire?"
+
+	para "Touche pas a la"
+	line "Team Valor!"
+	done
+else
 	text "What're you doing"
 	line "snooping around"
 	cont "here?"
@@ -193,11 +201,18 @@ CeladonGameCornerRichBoyTobin:
 	line "messing with Team"
 	cont "Valor!"
 	done
+endc
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "Je ne l'ai pas"
+	line "vu venir…"
+	done
+else
 	text "I didn't see that"
 	line "coming…"
 	done
+endc
 
 .AfterScript
 	showtext .AfterText
@@ -218,6 +233,16 @@ CeladonGameCornerRichBoyTobin:
 	end
 
 .AfterText
+if DEF(_LOCALE_FR)
+	text "Bon! Il n'y a"
+	line "rien ici de toute"
+
+	para "facon!"
+
+	para "L'affiche? Ha!"
+	line "C'est de la deco!"
+	done
+else
 	text "Fine! There's"
 	line "nothing here"
 	cont "anyway!"
@@ -225,6 +250,7 @@ CeladonGameCornerRichBoyTobin:
 	para "The poster? Ha!"
 	line "It's just decor!"
 	done
+endc
 
 .LeaveMovementPlayerUp
 	step_right
@@ -246,6 +272,16 @@ endr
 
 
 CeladonGameCornerReceptionistText:
+if DEF(_LOCALE_FR)
+	text "Bienvenue!"
+
+	para "Échange tes jetons"
+	line "contre des prix"
+
+	para "super a la"
+	line "boutique voisine."
+	done
+else
 	text "Welcome!"
 
 	para "You may exchange"
@@ -254,14 +290,34 @@ CeladonGameCornerReceptionistText:
 	para "fabulous prizes"
 	line "next door."
 	done
+endc
 
 CeladonGameCornerPokefanMText:
+if DEF(_LOCALE_FR)
+	text "Les machines a"
+	line "sous sont toutes"
+
+	para "tout dernier cri."
+	done
+else
 	text "The slot machines"
 	line "are all state of"
 	cont "the art."
 	done
+endc
 
 CeladonGameCornerTeacherText:
+if DEF(_LOCALE_FR)
+	text "C'est celle-la"
+	line "que je veux."
+
+	para "Elle m'a tout pris"
+	line "hier, alors"
+
+	para "aujourd'hui elle"
+	line "doit payer!"
+	done
+else
 	text "It's this machine"
 	line "I want."
 
@@ -271,8 +327,18 @@ CeladonGameCornerTeacherText:
 	para "should pay out"
 	line "today."
 	done
+endc
 
 CeladonGameCornerFishingGuruText:
+if DEF(_LOCALE_FR)
+	text "Je crois que ce"
+	line "bandit manchot"
+	cont "va payer…"
+
+	para "Les cotes varient"
+	line "entre machines."
+	done
+else
 	text "I think this slot"
 	line "machine will pay"
 	cont "out…"
@@ -280,8 +346,22 @@ CeladonGameCornerFishingGuruText:
 	para "The odds vary"
 	line "among machines."
 	done
+endc
 
 CeladonGameCornerFisherText1:
+if DEF(_LOCALE_FR)
+	text "Gahaha!"
+
+	para "Les jetons"
+	line "jaillissent!"
+
+	para "Hein? Tu veux"
+	line "jouer, gamin?"
+
+	para "Je partage ma"
+	line "chance avec toi!"
+	done
+else
 	text "Gahahaha!"
 
 	para "The coins just"
@@ -293,8 +373,16 @@ CeladonGameCornerFisherText1:
 	para "I'll share my luck"
 	line "with you!"
 	done
+endc
 
 CeladonGameCornerFisherText2:
+if DEF(_LOCALE_FR)
+	text "Gahaha!"
+
+	para "Ca fait du bien"
+	line "d'aider les gens!"
+	done
+else
 	text "Gahahaha!"
 
 	para "It makes me feel"
@@ -303,8 +391,18 @@ CeladonGameCornerFisherText2:
 	para "things for other"
 	line "people!"
 	done
+endc
 
 CeladonGameCornerFisherNoCoinCaseText:
+if DEF(_LOCALE_FR)
+	text "Hein, t'as pas de"
+	line "Boite Jetons."
+
+	para "Comment je te"
+	line "donne des jetons,"
+	cont "gamin?"
+	done
+else
 	text "Hey, you don't"
 	line "have a Coin Case."
 
@@ -312,8 +410,17 @@ CeladonGameCornerFisherNoCoinCaseText:
 	line "to give you any"
 	cont "coins, kid?"
 	done
+endc
 
 CeladonGameCornerFisherFullCoinCaseText:
+if DEF(_LOCALE_FR)
+	text "Ta Boite Jetons"
+	line "est pleine, gamin."
+
+	para "Tu dois etre en"
+	line "pleine serie!"
+	done
+else
 	text "Hey, your Coin"
 	line "Case is full, kid."
 
@@ -321,13 +428,30 @@ CeladonGameCornerFisherFullCoinCaseText:
 	line "a winning streak"
 	cont "too."
 	done
+endc
 
 CeladonGameCornerReceived18CoinsText:
+if DEF(_LOCALE_FR)
+	text "<PLAYER> recoit"
+	line "18 jetons!"
+	done
+else
 	text "<PLAYER> received"
 	line "18 Coins!"
 	done
+endc
 
 FisherOfferText:
+if DEF(_LOCALE_FR)
+	text "Hein? Tu veux"
+	line "encore jouer?"
+
+	para "Je sais! Pour 50"
+	line "jetons, tu joues."
+
+	para "Ca te va?"
+	done
+else
 	text "Hm? What, kid? You"
 	line "still want to"
 	cont "play?"
@@ -338,8 +462,17 @@ FisherOfferText:
 
 	para "How about it?"
 	done
+endc
 
 FisherNotEnoughText:
+if DEF(_LOCALE_FR)
+	text "Ta Boite Jetons"
+	line "est presque vide."
+
+	para "Ta chance doit"
+	line "s'essouffler."
+	done
+else
 	text "Hey, your Coin"
 	line "Case is almost"
 	cont "empty, kid."
@@ -347,8 +480,25 @@ FisherNotEnoughText:
 	para "Your luck must"
 	line "be running dry."
 	done
+endc
 
 CeladonGymGuyText:
+if DEF(_LOCALE_FR)
+	text "Hey! Futur"
+	line "Champion!"
+
+	para "Tu joues aux"
+	line "machines aussi?"
+
+	para "Je veux assez de"
+	line "jetons pour un"
+
+	para "prix #mon."
+
+	para "Mais j'en ai pas"
+	line "assez encore…"
+	done
+else
 	text "Hey! Champ in"
 	line "making!"
 
@@ -362,14 +512,26 @@ CeladonGymGuyText:
 	para "But I don't have"
 	line "enough coins yet…"
 	done
+endc
 
 CeladonGameCornerGrampsText:
+if DEF(_LOCALE_FR)
+	text "Hmm… Les cotes"
+	line "sont meilleures"
+
+	para "pour la lignee"
+	line "Pikachu, mais…"
+
+	para "Que choisir?"
+	done
+else
 	text "Hmmm… The odds are"
 	line "surely better for"
 
 	para "Pikachu's line,"
 	line "but… What to do?"
 	done
+endc
 
 CeladonGameCornerPosterScript:
 	checkevent EVENT_PUSHED_GAME_CORNER_SWITCH
@@ -386,25 +548,58 @@ CeladonGameCornerPosterScript:
 	end
 
 .AlreadyPushedText
+if DEF(_LOCALE_FR)
+	text "L'interrupteur a"
+	line "deja ete active."
+	done
+else
 	text "The switch has"
 	line "already been"
 	cont "pushed."
 	done
+endc
 
 .PushSwitchText
+if DEF(_LOCALE_FR)
+	text "Hey!"
+
+	para "Un bouton derriere"
+	line "l'affiche!?"
+
+	para "On appuie!"
+	done
+else
 	text "Hey!"
 
 	para "A switch behind"
 	line "the poster!?"
 	cont "Let's push it!"
 	done
+endc
 
 CeladonGameCornerLighterText:
+if DEF(_LOCALE_FR)
+	text "Il y a un"
+	line "briquet ici."
+	done
+else
 	text "There's a lighter"
 	line "here."
 	done
+endc
 
 CeladonGameCornerSodaCanText:
+if DEF(_LOCALE_FR)
+	text "Une canette de"
+	line "soda…"
+
+	para "Quelqu'un doit"
+	line "revenir…"
+
+	para "Hein? Elle est"
+	line "vide!"
+	done
+else
 	text "A can of soda…"
 
 	para "Someone must be"
@@ -412,3 +607,4 @@ CeladonGameCornerSodaCanText:
 
 	para "Huh? It's empty!"
 	done
+endc

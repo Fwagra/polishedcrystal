@@ -16,5 +16,10 @@ Route28_MapScriptHeader:
 	def_object_events
 
 Route28SignText: ; text > text
+if DEF(_LOCALE_FR)
 	text "Route 28"
 	done
+else
+	text "Route 28"
+	done
+endc

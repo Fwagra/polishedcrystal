@@ -16,19 +16,18 @@ GuideGentsHouse_MapScriptHeader:
 
 GuideGentsHouseGuideGentText:
 if DEF(_LOCALE_FR)
-	text "Quand j'etais"
-	line "petit,"
+	text "Quand je n'étais"
+	line "qu'un mioche,"
+	cont "j'étais un super"
+	cont "dresseur!"
 
-	para "j'etais un"
-	line "Dresseur"
-	cont "genial!"
-
-	para "Conseil:"
-	line "capture des"
+	para "Un p'tit conseil:"
+	line "attrape tous les"
 	cont "#mon!"
 
-	para "Sois gentil"
-	line "avec eux!"
+	para "Traite-les avec"
+	line "la plus grande"
+	cont "gentillesse!"
 	done
 else
 	text "When I was a wee"

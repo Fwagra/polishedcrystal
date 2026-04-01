@@ -180,6 +180,49 @@ BurnedTowerB1FEusineMovement1:
 	step_end
 
 BurnedTowerB1FEusineText:
+if DEF(_LOCALE_FR)
+	text "Eusine: J'ai creu-"
+	line "sé un trou ici…"
+
+	para "Quel choc!"
+
+	para "Suicune s'est mis"
+	line "à débouler juste"
+	cont "devant mes yeux!"
+
+	para "Cela faisait dix"
+	line "ans que je courais"
+
+	para "après Suicune…"
+	line "Enfin quelque"
+	cont "chose!"
+
+	para "Quel choc!"
+
+	para "<PLAYER>, je te"
+	line "dois beaucoup!"
+
+	para "Merci!"
+
+	para "On dit que les"
+	line "#mon légendai-"
+
+	para "res de Rosalia"
+	line "testent cer-"
+
+	para "tains humains en"
+	line "les laissant s'ap-"
+	cont "procher."
+
+	para "Je vais poursuivre"
+	line "Suicune."
+
+	para "<PLAYER>,"
+	line "à très bientôt!"
+
+	para "Au revoir!"
+	done
+else
 	text "Eusine: I dug a"
 	line "hole here, too…"
 
@@ -221,3 +264,4 @@ BurnedTowerB1FEusineText:
 
 	para "Farewell!"
 	done
+endc

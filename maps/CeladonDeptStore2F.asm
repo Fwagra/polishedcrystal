@@ -20,6 +20,18 @@ CeladonDeptStore2F_MapScriptHeader:
 	object_event  6,  2, SPRITE_SCHOOLBOY, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, PAL_NPC_GREEN, OBJECTTYPE_COMMAND, jumptextfaceplayer, CeladonDeptStore2FYoungsterText, -1
 
 CeladonDeptStore2FPokefanMText:
+if DEF(_LOCALE_FR)
+	text "Je suis tout neuf"
+	line "Dresseur."
+
+	para "Mon fils m'a"
+	line "encouragé."
+
+	para "Je suis bluffé"
+	line "par le choix d'"
+	cont "objets pratiques."
+	done
+else
 	text "I just recently"
 	line "became a trainer."
 
@@ -30,8 +42,17 @@ CeladonDeptStore2FPokefanMText:
 	line "the selection of"
 	cont "convenient items."
 	done
+endc
 
 CeladonDeptStore2FYoungsterText:
+if DEF(_LOCALE_FR)
+	text "Mon père a du mal"
+	line "à retenir les"
+
+	para "noms des objets"
+	line "et leurs usages…"
+	done
+else
 	text "My dad's having a"
 	line "hard time learning"
 
@@ -41,11 +62,21 @@ CeladonDeptStore2FYoungsterText:
 	para "supposed to be"
 	line "used…"
 	done
+endc
 
 CeladonDeptStore2FDirectoryText:
+if DEF(_LOCALE_FR)
+	text "Objets de choix"
+	line "pour Dresseurs!"
+
+	para "2F: Marché"
+	line "    Dresseur"
+	done
+else
 	text "Top Grade Items"
 	line "for Trainers!"
 
 	para "2F: Trainer's"
 	line "    Market"
 	done
+endc

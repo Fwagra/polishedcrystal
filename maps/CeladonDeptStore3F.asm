@@ -134,6 +134,15 @@ CeladonDeptStore3FWiiScript:
 	jumpopenedtext WiiSentText
 
 CeladonDeptStore3FClerk2Text:
+if DEF(_LOCALE_FR)
+	text "Il y a une attaque"
+	line "appelée Riposte."
+
+	para "Pas le même mot"
+	line "que ce comptoir,"
+	cont "hein!"
+	done
+else
 	text "There's a neat move"
 	line "called Counter."
 
@@ -141,36 +150,75 @@ CeladonDeptStore3FClerk2Text:
 	line "counter I'm leaning"
 	cont "on, mind you!"
 	done
+endc
 
 Text_CeladonDeptStore3FTutorCounter:
+if DEF(_LOCALE_FR)
+	text "J'enseigne Riposte"
+	line "à ton #mon pour"
+
+	para "une Feuille Arg."
+	done
+else
 	text "I'll teach your"
 	line "#mon how to use"
 
 	para "Counter if you pay"
 	line "me a Silver Leaf."
 	done
+endc
 
 Text_CeladonDeptStore3FTutorNoSilverLeaf:
+if DEF(_LOCALE_FR)
+	text "Tu n'as pas de"
+	line "Feuille Arg…"
+	done
+else
 	text "You don't have a"
 	line "Silver Leaf…"
 	done
+endc
 
 Text_CeladonDeptStore3FTutorQuestion:
+if DEF(_LOCALE_FR)
+	text "J'apprends Riposte"
+	line "à ton #mon?"
+	done
+else
 	text "Should I teach"
 	line "your #mon"
 	cont "Counter?"
 	done
+endc
 
 Text_CeladonDeptStore3FTutorRefused:
+if DEF(_LOCALE_FR)
+	text "Tant pis."
+	done
+else
 	text "Never mind."
 	done
+endc
 
 Text_CeladonDeptStore3FTutorTaught:
+if DEF(_LOCALE_FR)
+	text "Ton #mon sait"
+	line "faire Riposte."
+	done
+else
 	text "Now your #mon"
 	line "knows Counter."
 	done
+endc
 
 VideoGameClerkText:
+if DEF(_LOCALE_FR)
+	text "Consoles neuves"
+	line "et de collection!"
+
+	para "Viens essayer!"
+	done
+else
 	text "We sell brand-new"
 	line "and vintage game"
 	cont "systems!"
@@ -178,90 +226,198 @@ VideoGameClerkText:
 	para "Try them out for"
 	line "yourself!"
 	done
+endc
 
 VideoGameClerkNoSaleText:
+if DEF(_LOCALE_FR)
+	text "Vendeur: Bon, si"
+	line "vous voulez."
+	done
+else
 	text "Clerk: Well, if"
 	line "you say so."
 	done
+endc
 
 VideoGameClerkNoMoneyText:
+if DEF(_LOCALE_FR)
+	text "Vendeur: Pas assez"
+	line "d'argent!"
+	done
+else
 	text "Clerk: You can't"
 	line "afford it!"
 	done
+endc
 
 VideoGameClerkSellSnesText:
+if DEF(_LOCALE_FR)
+	text "Vendeur: la SNES"
+	line "peut être à vous"
+
+	para "pour ¥20000!"
+	line "Ca vous tente?"
+	done
+else
 	text "Clerk: That SNES"
 	line "can be yours for"
 
 	para "just ¥20,000!"
 	line "Want one?"
 	done
+endc
 
 VideoGameClerkSellN64Text:
+if DEF(_LOCALE_FR)
+	text "Vendeur: la N64"
+	line "peut être à vous"
+
+	para "pour ¥25000!"
+	line "Ca vous tente?"
+	done
+else
 	text "Clerk: That N64"
 	line "can be yours for"
 
 	para "just ¥25,000!"
 	line "Want one?"
 	done
+endc
 
 VideoGameClerkSellGameCubeText:
+if DEF(_LOCALE_FR)
+	text "Vendeur: la Game-"
+	line "Cube peut être"
+
+	para "à vous pour"
+	line "¥30000! Ca tente?"
+	done
+else
 	text "Clerk: That Game-"
 	line "Cube can be yours"
 
 	para "for just ¥30,000!"
 	line "Want one?"
 	done
+endc
 
 VideoGameClerkSellWiiText:
+if DEF(_LOCALE_FR)
+	text "Vendeur: la Wii"
+	line "peut être à vous"
+
+	para "pour ¥40000!"
+	line "Ca vous tente?"
+	done
+else
 	text "Clerk: That Wii"
 	line "can be yours for"
 
 	para "just ¥40,000!"
 	line "Want one?"
 	done
+endc
 
 BoughtSnesText:
+if DEF(_LOCALE_FR)
+	text "<PLAYER> a acheté"
+	line "Super NES."
+	done
+else
 	text "<PLAYER> bought"
 	line "Super NES."
 	done
+endc
 
 SnesSentText:
+if DEF(_LOCALE_FR)
+	text "Super NES"
+	line "envoyée chez toi."
+	done
+else
 	text "Super NES"
 	line "was sent home."
 	done
+endc
 
 BoughtN64Text:
+if DEF(_LOCALE_FR)
+	text "<PLAYER> a acheté"
+	line "Nintendo 64."
+	done
+else
 	text "<PLAYER> bought"
 	line "Nintendo 64."
 	done
+endc
 
 N64SentText:
+if DEF(_LOCALE_FR)
+	text "Nintendo 64"
+	line "envoyée chez toi."
+	done
+else
 	text "Nintendo 64"
 	line "was sent home."
 	done
+endc
 
 BoughtGameCubeText:
+if DEF(_LOCALE_FR)
+	text "<PLAYER> a acheté"
+	line "GameCube."
+	done
+else
 	text "<PLAYER> bought"
 	line "GameCube."
 	done
+endc
 
 GameCubeSentText:
+if DEF(_LOCALE_FR)
+	text "GameCube"
+	line "envoyée chez toi."
+	done
+else
 	text "GameCube"
 	line "was sent home."
 	done
+endc
 
 BoughtWiiText:
+if DEF(_LOCALE_FR)
+	text "<PLAYER> a acheté"
+	line "Wii."
+	done
+else
 	text "<PLAYER> bought"
 	line "Wii."
 	done
+endc
 
 WiiSentText:
+if DEF(_LOCALE_FR)
+	text "Wii"
+	line "envoyée chez toi."
+	done
+else
 	text "Wii"
 	line "was sent home."
 	done
+endc
 
 CeladonDeptStore3FYoungsterText:
+if DEF(_LOCALE_FR)
+	text "Je n'arrive pas à"
+	line "choisir sur quel"
+
+	para "#mon utiliser"
+	line "cette CT…"
+
+	para "Heureusement, elle"
+	line "ne s'épuise pas."
+	done
+else
 	text "I can't decide"
 	line "which #mon I"
 
@@ -271,64 +427,136 @@ CeladonDeptStore3FYoungsterText:
 	para "Good thing it"
 	line "doesn't run out."
 	done
+endc
 
 CeladonDeptStore3FSuperNerdText:
+if DEF(_LOCALE_FR)
+	text "Le Salon Tech"
+	line "a de super"
+	cont "consoles."
+	done
+else
 	text "The Tech Shop"
 	line "sells some cool"
 	cont "game systems."
 	done
+endc
 
 CeladonDeptStore3FDirectoryText:
+if DEF(_LOCALE_FR)
+	text "Renforcez vos"
+	line "#mon!"
+
+	para "3F: Salon Tech"
+	done
+else
 	text "Make Your #mon"
 	line "Stronger!"
 
 	para "3F: Tech Shop"
 	done
+endc
 
 CeladonDeptStore3FSnesText:
+if DEF(_LOCALE_FR)
+	text "Une Super NES!"
+
+	para "J'en ai une comme"
+	line "ca chez moi!"
+	done
+else
 	text "It's a Super NES!"
 
 	para "I have one of"
 	line "those at home!"
 	done
+endc
 
 CeladonDeptStore3FN64Text:
+if DEF(_LOCALE_FR)
+	text "Une N64!"
+
+	para "J'en ai une comme"
+	line "ca chez moi!"
+	done
+else
 	text "It's an N64!"
 
 	para "I have one of"
 	line "those at home!"
 	done
+endc
 
 CeladonDeptStore3FGameCubeText:
+if DEF(_LOCALE_FR)
+	text "Une GameCube!"
+
+	para "J'en ai une comme"
+	line "ca chez moi!"
+	done
+else
 	text "It's a GameCube!"
 
 	para "I have one of"
 	line "those at home!"
 	done
+endc
 
 CeladonDeptStore3FWiiText:
+if DEF(_LOCALE_FR)
+	text "Une Wii!"
+
+	para "J'en ai une comme"
+	line "ca chez moi!"
+	done
+else
 	text "It's a Wii!"
 
 	para "I have one of"
 	line "those at home!"
 	done
+endc
 
 CeladonDeptStore3FRPGText:
+if DEF(_LOCALE_FR)
+	text "Un RPG! Pas le"
+	line "temps pour ca!"
+	done
+else
 	text "An RPG! There's"
 	line "no time for that!"
 	done
+endc
 
 CeladonDeptStore3FSportsGameText:
+if DEF(_LOCALE_FR)
+	text "Un jeu de sport!"
+	line "Papa va adorer!"
+	done
+else
 	text "A sports game!"
 	line "Dad'll like that!"
 	done
+endc
 
 CeladonDeptStore3FPuzzleGameText:
+if DEF(_LOCALE_FR)
+	text "Un jeu de puzzle!"
+	line "Ca a l'air top!"
+	done
+else
 	text "A puzzle game!"
 	line "Looks addictive!"
 	done
+endc
 
 CeladonDeptStore3FFightingGameText:
+if DEF(_LOCALE_FR)
+	text "Un jeu de combat!"
+	line "Ca a l'air dur!"
+	done
+else
 	text "A fighting game!"
 	line "Looks tough!"
 	done
+endc

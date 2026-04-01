@@ -2,11 +2,11 @@ LeaderBlueBeforeText:
 	text "Blue: Ah! Te"
 	line "voilà enfin!"
 
-	para "J'etais pas trop"
-	line "motive a"
+	para "J'étais pas trop"
+	line "motivé à"
 	cont "Cramois'Ile,"
 
-	para "mais la, je creve"
+	para "mais là, je crève"
 	line "d'envie de"
 	cont "me battre!"
 
@@ -19,16 +19,16 @@ LeaderBlueBeforeText:
 	para "Arènes de Johto?"
 
 	para "Hahaha! Ils"
-	line "doivent etre"
+	line "doivent être"
 	cont "bien nuls,"
 
-	para "a Johto!"
+	para "à Johto!"
 
 	para "Bah, on s'en"
 	line "fiche."
 
 	para "C'est au combat"
-	line "qu'on evalue"
+	line "qu'on évalue"
 	cont "la force d'un"
 
 	para "Dresseur!"
@@ -65,7 +65,7 @@ BlueOutroText:
 	done
 
 LeaderBlueEpilogueText:
-	text "Blue: Ecoute."
+	text "Blue: Écoute."
 
 	para "Perds pas avant"
 	line "que je te batte."
@@ -80,7 +80,7 @@ ViridianGymGuyText:
 	cont "glissant."
 
 	para "Comme ca peut"
-	line "etre dangereux,"
+	line "être dangereux,"
 
 	para "tu devrais ranger"
 	line "ton #mon."
@@ -106,9 +106,9 @@ ViridianGymGuyWinText:
 
 	para "Alors toi,"
 	line "tu es vraiment"
-	cont "baleze!"
+	cont "balèze!"
 
-	para "Ca, c'etait du"
+	para "Ca, c'était du"
 	line "combat!"
 
 	para "J'en ai les"
@@ -152,13 +152,13 @@ CooltrainerfBonitaSeenText:
 	done
 
 CooltrainerfBonitaBeatenText:
-	text "OK… Bien joue."
+	text "OK… Bien joué."
 	done
 
 AceDuoElanandida1SeenText:
 	text "Elan: Tu es"
 	line "plus fort que"
-	cont "prevu!"
+	cont "prévu!"
 	done
 
 AceDuoElanandida1BeatenText:
@@ -166,7 +166,7 @@ AceDuoElanandida1BeatenText:
 	done
 
 AceDuoElanandida2SeenText:
-	text "Ida: La strategie"
+	text "Ida: La stratégie"
 	line "compte aussi!"
 	done
 

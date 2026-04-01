@@ -18,18 +18,20 @@ VioletMart_MapScriptHeader:
 
 VioletMartGrannyText:
 if DEF(_LOCALE_FR)
-	text "Quand tu cap-"
-	line "tures un #mon,"
+	text "Le premier #mon"
+	line "que tu attrapes"
+	cont "peut être tout"
+	cont "rikiki."
 
-	para "il peut etre"
-	line "faible."
+	para "Mais il peut sans"
+	line "aucun doute"
+	cont "devenir costaud."
 
-	para "Mais il"
-	line "deviendra"
-	cont "fort."
-
-	para "Aime bien"
-	line "tes #mon."
+	para "C'est la raison"
+	line "pour laquelle il"
+	cont "est primordial de"
+	cont "bercer d'amour ses"
+	cont "#mon."
 	done
 else
 	text "When you first"
@@ -49,20 +51,18 @@ endc
 VioletMartCooltrainerMText:
 if DEF(_LOCALE_FR)
 	text "Les #mon"
-	line "peuvent tenir"
-	cont "des objets,"
+	line "peuvent porter des"
+	cont "objets comme les"
+	cont "Potions ou les"
+	cont "Antidotes."
 
-	para "mais ils ne"
-	line "savent pas"
-	cont "se servir"
+	para "Mais ils semblent"
+	line "ne pas comprendre"
 
-	para "de ceux crees"
-	line "par les"
-	cont "humains,"
-
-	para "comme une"
-	line "Potion ou"
-	cont "un Antidote."
+	para "comment les utili-"
+	line "ser tout seuls."
+	cont "Donne-leur un"
+	cont "coup de main!"
 	done
 else
 	text "#mon can hold"

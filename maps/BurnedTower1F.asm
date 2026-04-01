@@ -122,16 +122,34 @@ BurnedTowerRivalBattleScript:
 GenericTrainerHexManiacTamara:
 	generictrainer HEX_MANIAC, TAMARA, EVENT_BEAT_HEX_MANIAC_TAMARA, HexManiacTamaraSeenText, HexManiacTamaraBeatenText
 
+if DEF(_LOCALE_FR)
+	text "Il existe des"
+	line "forces qui nous"
+
+	para "dépassent dans ce"
+	line "monde…"
+	done
+else
 	text "There are powers"
 	line "beyond our under-"
 
 	para "standing in the"
 	line "world…"
 	done
+endc
 
 GenericTrainerFirebreatherNed:
 	generictrainer FIREBREATHER, NED, EVENT_BEAT_FIREBREATHER_NED, FirebreatherNedSeenText, FirebreatherNedBeatenText
 
+if DEF(_LOCALE_FR)
+	text "Nous, les Crache-"
+	line "Feu, on connaît"
+
+	para "la vraie puissance"
+	line "du feu mieux que"
+	cont "personne!"
+	done
+else
 	text "We Firebreathers"
 	line "know the true"
 
@@ -139,6 +157,7 @@ GenericTrainerFirebreatherNed:
 	line "better than"
 	cont "anyone!"
 	done
+endc
 
 BurnedTower1FEusineMovement:
 	step_down
@@ -149,6 +168,29 @@ BurnedTower1FEusineMovement:
 	step_end
 
 BurnedTowerRival_BeforeText:
+if DEF(_LOCALE_FR)
+	text "…… …… ……"
+
+	para "...Oh, c'est toi."
+
+	para "Je suis venu pour"
+	line "trouver une sorte"
+
+	para "de #mon légen-"
+	line "daire..."
+
+	para "Mais y'a rien ici!"
+
+	para "Venir dans ce trou"
+	line "paumé pour rien"
+
+	para "trouver, moi ça"
+	line "m'énerve la tête!"
+
+	para "Je vais t'en faire"
+	line "baver!"
+	done
+else
 	text "…… …… ……"
 
 	para "…Oh, it's you."
@@ -171,8 +213,15 @@ BurnedTowerRival_BeforeText:
 	para "It's all your"
 	line "fault!"
 	done
+endc
 
 BurnedTowerRival_WinText:
+if DEF(_LOCALE_FR)
+	text "...Pfff!"
+
+	para "Aucun intérêt."
+	done
+else
 	text "…Humph!"
 
 	para "This is why I hate"
@@ -181,8 +230,19 @@ BurnedTowerRival_WinText:
 	para "There's no"
 	line "challenge in it."
 	done
+endc
 
 BurnedTowerRival_AfterText1:
+if DEF(_LOCALE_FR)
+	text "Pff...minable."
+
+	para "T'auras jamais un"
+	line "#mon légendaire"
+
+	para "de toute façon."
+	line "T'es zéro."
+	done
+else
 	text "…Aw, whatever."
 
 	para "You would never be"
@@ -191,8 +251,20 @@ BurnedTowerRival_AfterText1:
 	para "legendary #mon"
 	line "anyway."
 	done
+endc
 
 BurnedTowerRival_LossText:
+if DEF(_LOCALE_FR)
+	text "...Pff!"
+
+	para "Voilà pourquoi"
+	line "j'aime pas me"
+
+	para "battre contre les"
+	line "nuls: c'est une"
+	cont "perte de temps."
+	done
+else
 	text "…Humph!"
 
 	para "This is why I hate"
@@ -201,8 +273,21 @@ BurnedTowerRival_LossText:
 	para "It's just a waste"
 	line "of my time."
 	done
+endc
 
 BurnedTowerRival_AfterText2:
+if DEF(_LOCALE_FR)
+	text "...Pfff!"
+
+	para "Tu tombes dans les"
+	line "trous?"
+
+	para "T'es pas trop"
+	line "bête, c'est bien."
+
+	para "Minable!"
+	done
+else
 	text "Humph!"
 
 	para "What are you doing"
@@ -213,8 +298,31 @@ BurnedTowerRival_AfterText2:
 
 	para "Serves you right!"
 	done
+endc
 
 BurnedTower1FEusineIntroText:
+if DEF(_LOCALE_FR)
+	text "Eusine: Mon nom"
+	line "est Eusine."
+
+	para "Je poursuis un"
+	line "#mon du nom de"
+	cont "Suicune."
+
+	para "Et toi c'est quoi?"
+
+	para "<PLAYER>? Ravi"
+	line "de te connaître!"
+
+	para "On raconte que"
+	line "Suicune est dans"
+
+	para "cette Tour Cen-"
+	line "drée..."
+
+	para "Mais où???"
+	done
+else
 	text "Eusine: My name's"
 	line "Eusine."
 
@@ -236,8 +344,19 @@ BurnedTower1FEusineIntroText:
 	para "But where exactly"
 	line "could it be?"
 	done
+endc
 
 BurnedTower1FEusineText:
+if DEF(_LOCALE_FR)
+	text "Eusine: On raconte"
+	line "que Suicune est"
+
+	para "dans cette Tour"
+	line "Cendrée..."
+
+	para "Mais où???"
+	done
+else
 	text "Eusine: I heard"
 	line "that Suicune is in"
 
@@ -247,8 +366,26 @@ BurnedTower1FEusineText:
 	para "But where exactly"
 	line "could it be?"
 	done
+endc
 
 BurnedTower1FMortyText:
+if DEF(_LOCALE_FR)
+	text "Morty: Le Cham-"
+	line "pion de Rosalia"
+
+	para "doit étudier les"
+	line "#mon légen-"
+
+	para "daires: Suicune,"
+	line "Entei et Raikou."
+
+	para "Eusine est ici."
+	line "J'ai décidé de"
+
+	para "fouiller la Tour"
+	line "avec lui."
+	done
+else
 	text "Morty: Ecruteak's"
 	line "Gym Leader has to"
 
@@ -265,26 +402,51 @@ BurnedTower1FMortyText:
 	para "investigate the"
 	line "Tower with him."
 	done
+endc
 
 HexManiacTamaraSeenText:
+if DEF(_LOCALE_FR)
+	text "Une étrange force"
+	line "règne ici…"
+	done
+else
 	text "A strange power is"
 	line "present here…"
 	done
+endc
 
 HexManiacTamaraBeatenText:
+if DEF(_LOCALE_FR)
+	text "J'ai perdu…"
+	done
+else
 	text "I have lost…"
 	done
+endc
 
 FirebreatherNedSeenText:
+if DEF(_LOCALE_FR)
+	text "Mon âme brûle!"
+	line "Je vais te montrer"
+
+	para "à quel point c'est"
+	line "chaud!"
+	done
+else
 	text "My soul is on"
 	line "fire. I'll show"
 
 	para "you how hot it"
 	line "burns!"
 	done
+endc
 
 FirebreatherNedBeatenText:
+if DEF(_LOCALE_FR)
+	text "Pas assez chaud…"
+	done
+else
 	text "Still not hot"
 	line "enough…"
 	done
-
+endc

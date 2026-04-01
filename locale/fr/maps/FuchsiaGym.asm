@@ -4,7 +4,7 @@ JanineText_DisappointYou:
 	para "Dommage, mais"
 	line "c'est raté…"
 
-	para "Eh non! C'etait"
+	para "Eh non! C'était"
 	line "encore un"
 	cont "piège!"
 
@@ -81,7 +81,7 @@ LassAmandaBeforeText:
 
 	para "Non, je blague!"
 
-	para "Piege!"
+	para "Piège!"
 	done
 
 LassAmandaBeatenText:
@@ -106,7 +106,7 @@ LassLindaBeatenText:
 
 LassLindaAfterText:
 	text "Mon déguisement"
-	line "etait parfait!"
+	line "était parfait!"
 	done
 
 PicnickerCindyBeforeText:
@@ -123,8 +123,8 @@ PicnickerCindyBeatenText:
 	done
 
 PicnickerCindyAfterText:
-	text "Tu dois etre"
-	line "fatigue."
+	text "Tu dois être"
+	line "fatigué."
 	done
 
 CamperBarryBeforeText:
@@ -136,12 +136,12 @@ CamperBarryBeforeText:
 
 CamperBarryBeatenText:
 	text "Mon déguisement"
-	line "etait nickel!"
+	line "était nickel!"
 	done
 
 CamperBarryAfterText:
 	text "Mon déguisement"
-	line "etait mignon,"
+	line "était mignon,"
 	cont "hein?"
 	done
 
@@ -159,7 +159,7 @@ FuchsiaGymGuyText:
 	line "l'Arène…"
 
 	para "Sauras-tu"
-	line "decouvrir"
+	line "découvrir"
 	cont "qui est"
 
 	para "la vraie?"

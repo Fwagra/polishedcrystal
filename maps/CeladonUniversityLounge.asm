@@ -67,6 +67,23 @@ CeladonUniversityLoungeNeeshaScript:
 	jumpopenedtext .FinalText
 
 .IntroText1:
+if DEF(_LOCALE_FR)
+	text "Salut! Neesha!"
+	line "Je suis du top 4"
+
+	para "de l'universite de"
+	line "Céladopole!"
+
+	para "On est les 4"
+	line "Céladon!"
+
+	para "Je te montre"
+	line "pourquoi on est"
+
+	para "connus?"
+	line "Allez, combat!"
+	done
+else
 	text "Hi! I'm Neesha!"
 	line "I'm one of top four"
 
@@ -82,8 +99,20 @@ CeladonUniversityLoungeNeeshaScript:
 
 	para "Then let's battle!"
 	done
+endc
 
 .IntroText2:
+if DEF(_LOCALE_FR)
+	text "Salut! Neesha!"
+	line "Je suis des 4"
+
+	para "Céladon!"
+	line "Tu as deja entendu"
+
+	para "parler de nous."
+	line "Allez, combat!"
+	done
+else
 	text "Hi! I'm Neesha!"
 	line "I'm one of the"
 	cont "Celadon Four!"
@@ -93,22 +122,56 @@ CeladonUniversityLoungeNeeshaScript:
 
 	para "Then let's battle!"
 	done
+endc
 
 .NoBattleText:
+if DEF(_LOCALE_FR)
+	text "Pas envie de"
+	line "defi?"
+	done
+else
 	text "Not interested in"
 	line "a challenge?"
 	done
+endc
 
 .SeenText:
+if DEF(_LOCALE_FR)
+	text "On va t'envoyer"
+	line "voler!"
+	done
+else
 	text "We'll blow you"
 	line "away!"
 	done
+endc
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "Une defaite"
+	line "qui fait mal…"
+	done
+else
 	text "A painful loss…"
 	done
+endc
 
 .AfterText1:
+if DEF(_LOCALE_FR)
+	text "Tu vaux le coup!"
+
+	para "Mais tu n'as pas"
+	line "vu tout ce que"
+
+	para "les 4 Céladon"
+	line "savent faire."
+
+	para "Va trouver les"
+	line "autres et defie-"
+
+	para "les!"
+	done
+else
 	text "You're a worthy"
 	line "opponent!"
 
@@ -122,8 +185,19 @@ CeladonUniversityLoungeNeeshaScript:
 	line "the rest of us and"
 	cont "challenge them?"
 	done
+endc
 
 .AfterText2:
+if DEF(_LOCALE_FR)
+	text "Tu as vaincu les"
+	line "4 Céladon…"
+
+	para "Trop fort!"
+
+	para "Tiens, un prix"
+	line "pour toi!"
+	done
+else
 	text "So you beat all of"
 	line "the Celadon Four…"
 
@@ -132,8 +206,20 @@ CeladonUniversityLoungeNeeshaScript:
 	para "Take this as a"
 	line "prize!"
 	done
+endc
 
 .FinalText:
+if DEF(_LOCALE_FR)
+	text "Rare qu'on nous"
+	line "pousse au bout,"
+
+	para "nous les 4"
+	line "Céladon."
+
+	para "Je ne t'oublierai"
+	line "pas, Dresseur!"
+	done
+else
 	text "It's not often that"
 	line "someone gives us"
 
@@ -143,8 +229,19 @@ CeladonUniversityLoungeNeeshaScript:
 	para "I won't forget"
 	line "you, trainer!"
 	done
+endc
 
 CeladonUniversityLoungeLassText:
+if DEF(_LOCALE_FR)
+	text "Le mois prochain,"
+	line "excursion a"
+
+	para "Mont Selenite."
+	line "J'espere voir un"
+
+	para "Melofee!"
+	done
+else
 	text "Next month we're"
 	line "going on a trip"
 	cont "to Mt.Moon."
@@ -152,8 +249,20 @@ CeladonUniversityLoungeLassText:
 	para "Maybe I'll see a"
 	line "Clefairy!"
 	done
+endc
 
 CeladonUniversityLoungeRichBoyText:
+if DEF(_LOCALE_FR)
+	text "Tu t'es demande"
+	line "pourquoi la Hyper"
+
+	para "Ball a un H jaune"
+	line "dessus?"
+
+	para "Avant, on disait"
+	line "Hyper Ball!"
+	done
+else
 	text "Have you ever"
 	line "wondered why"
 
@@ -165,8 +274,19 @@ CeladonUniversityLoungeRichBoyText:
 	line "were first called"
 	cont "Hyper Balls!"
 	done
+endc
 
 CeladonUniversityLoungeCooltrainerfText:
+if DEF(_LOCALE_FR)
+	text "Un #mon affaibli"
+	line "physiquement"
+
+	para "tente souvent"
+	line "d'entrer dans une"
+
+	para "# Ball."
+	done
+else
 	text "#mon with"
 	line "reduced physical"
 
@@ -174,8 +294,19 @@ CeladonUniversityLoungeCooltrainerfText:
 	line "ively attempt to"
 	cont "enter a # Ball."
 	done
+endc
 
 CeladonUniversityLoungeSuper_nerd1Text:
+if DEF(_LOCALE_FR)
+	text "Tu croises une"
+	line "blague et une"
+
+	para "question rheto-"
+	line "rique?"
+
+	para "………………………………"
+	done
+else
 	text "What do you get if"
 	line "you cross a joke"
 
@@ -184,20 +315,37 @@ CeladonUniversityLoungeSuper_nerd1Text:
 
 	para "………………………………"
 	done
+endc
 
 CeladonUniversityLoungeSuper_nerd2Text:
+if DEF(_LOCALE_FR)
+	text "J'ecris des scripts"
+	line "pour un jeu."
+
+	para "Ne dis pas qu'il"
+	line "faut tout faire en"
+	cont "asm!"
+	done
+else
 	text "I'm writing scripts"
 	line "for a game."
 
 	para "Do not said use"
 	line "asm!"
 	done
+endc
 
 CeladonUniversityLoungeBookshelf1Text:
+if DEF(_LOCALE_FR)
+	text "Plein de mangas"
+	line "#mon ici!"
+	done
+else
 	text "It's stuffed full"
 	line "of copies of"
 	cont "#mon manga!"
 	done
+endc
 
 CeladonUniversityLoungeBookshelf2:
 	opentext
@@ -215,24 +363,46 @@ CeladonUniversityLoungeBookshelf2:
 	jumpopenedtext .Text2
 
 .Text1:
+if DEF(_LOCALE_FR)
+	text "Ce livre a une"
+	line "cachette vide"
+
+	para "la ou il devrait"
+	line "y avoir des pages!"
+	done
+else
 	text "This book has a"
 	line "secret compartment"
 
 	para "where the pages"
 	line "should be!"
 	done
+endc
 
 .Text2:
+if DEF(_LOCALE_FR)
+	text "Dommage… vide."
+	done
+else
 	text "Too bad--it's"
 	line "empty."
 	done
+endc
 
 CeladonUniversityLoungeComputer:
 	jumpthistext
 
+if DEF(_LOCALE_FR)
+	text "Un perso court"
+	line "dans une Céladopole"
+
+	para "en 2D."
+	done
+else
 	text "There's a player"
 	line "character running"
 
 	para "around a 2D"
 	line "Celadon City."
 	done
+endc

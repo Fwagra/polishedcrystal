@@ -115,8 +115,10 @@ VioletCityCooltrainerM2Text:
 	para "Même la # Mart"
 	line "et le CENTRE"
 
-	para "#mon sont peints"
-	line "sobrement pour"
+	para "Les #mon sont"
+	line "peints sobrement"
+
+	para "pour"
 	cont "s'intégrer."
 	done
 

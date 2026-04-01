@@ -43,13 +43,45 @@ MrHyperScript:
 	jumpthisopenedtext
 
 .TextComeBackAnytime:
+if DEF(_LOCALE_FR)
+	text "Reviens quand tu"
+	line "veux! M. Hyper"
+
+	para "sera toujours"
+	line "chaud pour toi!"
+	done
+else
 	text "Come back anytime!"
 	line "Mr. Hyper will"
 	cont "always be hyped up"
 	cont "to see you!"
 	done
+endc
 
 .TextIntro:
+if DEF(_LOCALE_FR)
+	text "Moi, c'est M."
+	line "Hyper! Pourquoi?"
+
+	para "Parce que j'aide"
+	line "les #mon en"
+
+	para "Hyper-Training!"
+	line "Ca booste un"
+
+	para "#mon qui a deja"
+	line "max EV pour aller"
+
+	para "encore plus loin!"
+	line "Ca monte leurs"
+
+	para "stats. Apporte des"
+	line "Capsules Arg. pour"
+
+	para "que j'entraine ton"
+	line "#mon!"
+	done
+else
 	text "I'm Mr. Hyper!"
 	line "Want to know why?"
 
@@ -71,14 +103,31 @@ MrHyperScript:
 	cont "#mon, bring me"
 	cont "some Bottle Caps."
 	done
+endc
 
 .TextAskTrain:
+if DEF(_LOCALE_FR)
+	text "Alors? Tu veux"
+	line "essayer mon"
+
+	para "Hyper-Training?"
+	done
+else
 	text "What do you say?"
 	line "Want to try my"
 	cont "Hyper Training?"
 	done
+endc
 
 .TextNoBottleCaps:
+if DEF(_LOCALE_FR)
+	text "Pas de Capsule"
+	line "Arg.?"
+
+	para "Les Pecheurs en"
+	line "trouvent parfois…"
+	done
+else
 	text "You don't have any"
 	line "Bottle Caps?"
 
@@ -86,21 +135,44 @@ MrHyperScript:
 	line "snag them some-"
 	cont "times…"
 	done
+endc
 
 .TextTrainWho:
+if DEF(_LOCALE_FR)
+	text "Hyper-Train quel"
+	line "#mon?"
+	done
+else
 	text "Hyper Train which"
 	line "#mon?"
 	done
+endc
 
 .TextGotStronger:
+if DEF(_LOCALE_FR)
+	text "Voila! J'ai"
+	line "booste les stats"
+
+	cont "de "
+	text_ram wStringBuffer1
+	text "!"
+	done
+else
 	text "All done! My Hyper"
 	line "training improved"
 	cont ""
 	text_ram wStringBuffer1
 	text "'s stats!"
 	done
+endc
 
 .TextTrainSomeMore:
+if DEF(_LOCALE_FR)
+	text "Hyper-Train un"
+	line "autre #mon?"
+	done
+else
 	text "Hyper Train more"
 	line "#mon?"
 	done
+endc

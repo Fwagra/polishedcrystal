@@ -43,6 +43,16 @@ CeladonUniversity1F_MapScriptHeader:
 	object_event 23, 13, SPRITE_BATTLE_GIRL, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, PAL_NPC_RED, OBJECTTYPE_COMMAND, jumptextfaceplayer, CeladonUniversity1FCooltrainerfText, -1
 
 CeladonUniversity1FSuperNerdText:
+if DEF(_LOCALE_FR)
+	text "D'autres mondes"
+	line "existent, disent"
+
+	para "certains savants."
+	line "Sans #mon?"
+
+	para "Quel desastre!"
+	done
+else
 	text "Some academics be-"
 	line "lieve there are"
 
@@ -59,8 +69,19 @@ CeladonUniversity1FSuperNerdText:
 	para "That would be"
 	line "tragic!"
 	done
+endc
 
 CeladonUniversity1FLassText:
+if DEF(_LOCALE_FR)
+	text "On peut tout"
+	line "etudier ici:"
+
+	para "de l'art floral"
+	line "a la psycho"
+
+	para "#mon!"
+	done
+else
 	text "This place offers"
 	line "courses of study"
 
@@ -70,8 +91,19 @@ CeladonUniversity1FLassText:
 	para "to #mon"
 	line "psychology!"
 	done
+endc
 
 CeladonUniversity1FCooltrainermText:
+if DEF(_LOCALE_FR)
+	text "Ici, tous sont"
+	line "dresseurs #mon."
+
+	para "L'admission: une"
+	line "serie de combats"
+
+	para "#mon."
+	done
+else
 	text "Everyone at this"
 	line "university is a"
 	cont "#mon trainer."
@@ -83,8 +115,17 @@ CeladonUniversity1FCooltrainermText:
 	line "series of #mon"
 	cont "battling tests."
 	done
+endc
 
 CeladonUniversity1FYoungsterText:
+if DEF(_LOCALE_FR)
+	text "Magicarpe: notre"
+	line "mascotte #mon!"
+
+	para "Symbole: chacun"
+	line "peut viser haut!"
+	done
+else
 	text "Magikarp is the"
 	line "university's mascot"
 	cont "#mon."
@@ -93,22 +134,63 @@ CeladonUniversity1FYoungsterText:
 	line "anybody can aspire"
 	cont "to greatness!"
 	done
+endc
 
 CeladonUniversity1FChildText:
+if DEF(_LOCALE_FR)
+	text "Beurk! Je trouve"
+	line "pas mon cours…"
+
+	para "Je vais etre en"
+	line "retard!"
+	done
+else
 	text "Ugh! I can't find"
 	line "my next class…"
 
 	para "I'm gonna be late!"
 	done
+endc
 
 CeladonUniversity1FPokefanmText:
+if DEF(_LOCALE_FR)
+	text "Je suis l'agent"
+	line "d'entretien!"
+
+	para "Attention, sol"
+	line "glissant!"
+	done
+else
 	text "I'm the janitor!"
 
 	para "Be careful, the"
 	line "floor is wet!"
 	done
+endc
 
 CeladonUniversity1FReceptionistText:
+if DEF(_LOCALE_FR)
+	text "Bienvenue a"
+	line "l'universite de"
+
+	para "Céladopole!"
+	line "Les salles et le"
+
+	para "bureau du direc-"
+	line "teur sont au fond"
+
+	para "du couloir."
+	line "Bibliotheque"
+
+	para "a droite, salon"
+	line "etudiant a gauche."
+
+	para "Cafet', piscine"
+	line "et infirmerie:"
+
+	para "a l'etage."
+	done
+else
 	text "Welcome to Celadon"
 	line "University!"
 
@@ -128,8 +210,19 @@ CeladonUniversity1FReceptionistText:
 	para "office are up-"
 	line "stairs."
 	done
+endc
 
 CeladonUniversity1FCooltrainerfText:
+if DEF(_LOCALE_FR)
+	text "Je veux etre"
+	line "infirmiere pour"
+
+	para "#mon. Tant"
+	line "d'especes: dur"
+
+	para "a tout savoir!"
+	done
+else
 	text "I'm studying to be"
 	line "a #mon nurse."
 
@@ -139,42 +232,93 @@ CeladonUniversity1FCooltrainerfText:
 	para "it's a steep"
 	line "learning curve!"
 	done
+endc
 
 CeladonUniversity1FPrincipalsOfficeSignText:
+if DEF(_LOCALE_FR)
+	text "Bureau du"
+	line "directeur"
+	done
+else
 	text "Principal's Office"
 	done
+endc
 
 CeladonUniversity1FClassroom1SignText:
+if DEF(_LOCALE_FR)
+	text "W2 Arts"
+	done
+else
 	text "W2 Art"
 	done
+endc
 
 CeladonUniversity1FClassroom2SignText:
+if DEF(_LOCALE_FR)
+	text "W1 Histoire"
+	done
+else
 	text "W1 History"
 	done
+endc
 
 CeladonUniversity1FClassroom3SignText:
+if DEF(_LOCALE_FR)
+	text "E1 Sciences"
+	done
+else
 	text "E1 Science"
 	done
+endc
 
 CeladonUniversity1FClassroom4SignText:
+if DEF(_LOCALE_FR)
+	text "E2 Combat"
+	done
+else
 	text "E2 Battling"
 	done
+endc
 
 CeladonUniversity1FStudentLoungeSignText:
+if DEF(_LOCALE_FR)
+	text "Salon etudiant"
+	done
+else
 	text "Student Lounge"
 	done
+endc
 
 CeladonUniversity1FLibrarySignText:
+if DEF(_LOCALE_FR)
+	text "Bibliotheque"
+	done
+else
 	text "Library"
 	done
+endc
 
 CeladonUniversity1FTrophyCaseSignText:
+if DEF(_LOCALE_FR)
+	text "Des coupes et"
+	line "medailles partout."
+	done
+else
 	text "The case is full"
 	line "of trophies and"
 	cont "medals."
 	done
+endc
 
 CeladonUniversity1FBookshelfText:
+if DEF(_LOCALE_FR)
+	text "Des tonnes"
+	line "d'albums promo."
+
+	para "Les eleves ont"
+	line "tout barbouille."
+	done
+else
 	text "There are tons of"
 	line "yearbooks here."
 
@@ -182,3 +326,4 @@ CeladonUniversity1FBookshelfText:
 	line "scribbled all over"
 	cont "them."
 	done
+endc

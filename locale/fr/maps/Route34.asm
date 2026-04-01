@@ -26,7 +26,8 @@ Route34LyraGoodWorkText:
 	done
 
 Route34LyraGreetingText:
-	text "CELESTA: Salut <PLAYER>!"
+	text "CELESTA: Salut,"
+	line "<PLAYER>!"
 	done
 
 Route34LyraIntroductionTable:
@@ -52,7 +53,8 @@ Route34LyraIntroductionTable:
 	jumpthistext
 
 	text "Voici <PLAYER>."
-	line "C'est une dresseuse."
+	line "C'est une"
+	cont "dresseuse."
 
 	para "Elle est plutot"
 	line "bonne pour élever"
@@ -69,7 +71,8 @@ Route34LyraIntroductionTable:
 	line "C'est un dresseur."
 
 	para "Plutot bon pour"
-	line "élever ses #mon."
+	line "élever ses"
+	cont "#mon."
 
 	para "Mais pas aussi bon"
 	line "que toi, bien sur!"
@@ -273,7 +276,8 @@ Route34AdvancedTipsSignText:
 	line "se dépasser au"
 	cont "combat, ou avec"
 	para "des vitamines,"
-	line "pour devenir forts!"
+	line "pour devenir"
+	cont "forts!"
 	done
 
 DayCareSignText:

@@ -73,28 +73,51 @@ OfficermKeithScript:
 GenericTrainerBugManiacLou:
 	generictrainer BUG_MANIAC, LOU, EVENT_BEAT_BUG_MANIAC_LOU, BugManiacLouSeenText, BugManiacLouBeatenText
 
+if DEF(_LOCALE_FR)
+	text "J'étais juste un"
+	line "Attrape-Insecte,"
+
+	para "mais j'ai évolué"
+	line "en Insectophile!"
+	done
+else
 	text "I used to be just"
 	line "a Bug Catcher,"
 
 	para "but I evolved into"
 	line "a Bug Maniac!"
 	done
+endc
 
 GenericTrainerSchoolgirlEliza:
 	generictrainer SCHOOLGIRL, ELIZA, EVENT_BEAT_SCHOOLGIRL_ELIZA, SchoolgirlElizaSeenText, SchoolgirlElizaBeatenText
 
+if DEF(_LOCALE_FR)
+	text "Je m'en fiche!"
+	line "J'adore toujours"
+	cont "Mystherbe."
+	done
+else
 	text "I don't care!"
 	line "I still love"
 	cont "Oddish."
 	done
+endc
 
 GenericTrainerSchoolboyJohnny:
 	generictrainer SCHOOLBOY, JOHNNY, EVENT_BEAT_SCHOOLBOY_JOHNNY, SchoolboyJohnnySeenText, SchoolboyJohnnyBeatenText
 
+if DEF(_LOCALE_FR)
+	text "Ouais, mais moi"
+	line "je préfère"
+	cont "Chétiflor."
+	done
+else
 	text "Yeah, well, I"
 	line "still prefer"
 	cont "Bellsprout."
 	done
+endc
 
 NationalParkGameboyKidScript:
 	showtextfaceplayer NationalParkGameboyKidText
@@ -213,12 +236,22 @@ SchoolboyJack1Script:
 GenericTrainerPokefanmWilliam:
 	generictrainer POKEFANM, WILLIAM, EVENT_BEAT_POKEFANM_WILLIAM, PokefanmWilliamSeenText, PokefanmWilliamBeatenText
 
+if DEF(_LOCALE_FR)
+	text "J'ai perdu, mais"
+	line "mes #mon"
+	cont "gagnent"
+
+	para "le prix des plus"
+	line "adorables."
+	done
+else
 	text "I lost the battle,"
 	line "but my #mon win"
 
 	para "the prize for"
 	line "being most lovely."
 	done
+endc
 
 TrainerPokefanfBeverly1:
 	trainer POKEFANF, BEVERLY1, EVENT_BEAT_POKEFANF_BEVERLY, PokefanfBeverly1SeenText, PokefanfBeverly1BeatenText, 0, PokefanfBeverly1Script
@@ -290,26 +323,65 @@ PokefanfBeverly1Script:
 GenericTrainerLassKrise:
 	generictrainer LASS, KRISE, EVENT_BEAT_LASS_KRISE, LassKriseSeenText, LassKriseBeatenText
 
+if DEF(_LOCALE_FR)
+	text "Tu me regardais"
+	line "car je suis"
+	cont "mignonne!"
+	done
+else
 	text "I thought you were"
 	line "staring at me"
 	cont "because I'm cute!"
 	done
+endc
 
 NationalParkLassText:
+if DEF(_LOCALE_FR)
+	text "Regarde mon sac!"
+
+	para "J'y ai accroché"
+	line "mes Badges."
+	done
+else
 	text "Look! Check out my"
 	line "bag!"
 
 	para "I pinned my Badges"
 	line "onto it."
 	done
+endc
 
 NationalParkPokefanFText:
+if DEF(_LOCALE_FR)
+	text "C'est du Courrier"
+	line "de ma fille."
+	cont "Ca me remonte."
+	done
+else
 	text "This is Mail I got"
 	line "from my daughter."
 	cont "It cheers me up."
 	done
+endc
 
 NationalParkTeacher1Text:
+if DEF(_LOCALE_FR)
+	text "Attention, s'il"
+	line "vous plaît!"
+
+	para "…Oups, je pense"
+	line "encore comme une"
+	cont "instit'."
+
+	para "Tu es dresseur"
+	line "#mon, non?"
+
+	para "Tu te donnes du"
+	line "mal, alors…"
+
+	para "Prends ca."
+	done
+else
 	text "Pay attention,"
 	line "please!"
 
@@ -328,8 +400,19 @@ NationalParkTeacher1Text:
 	para "want you to have"
 	line "this."
 	done
+endc
 
 NationalParkTeacher1Text_GotQuickClaw:
+if DEF(_LOCALE_FR)
+	text "Donne la Vive"
+	line "Griffe"
+	cont "a un #mon."
+
+	para "Parfois, il"
+	line "attaquera en"
+	cont "premier."
+	done
+else
 	text "Let a #mon hold"
 	line "that Quick Claw."
 
@@ -337,30 +420,68 @@ NationalParkTeacher1Text_GotQuickClaw:
 	line "strike first"
 	cont "during battle."
 	done
+endc
 
 SchoolgirlElizaSeenText:
+if DEF(_LOCALE_FR)
+	text "Mystherbe est"
+	line "trop mignon!"
+
+	para "Pas vrai?"
+	done
+else
 	text "Oddish is just"
 	line "the cutest!"
 
 	para "Don't you agree?"
 	done
+endc
 
 SchoolgirlElizaBeatenText:
+if DEF(_LOCALE_FR)
+	text "Mon pauvre"
+	line "Mystherbe…"
+	done
+else
 	text "My poor Oddish…"
 	done
+endc
 
 SchoolboyJohnnySeenText:
+if DEF(_LOCALE_FR)
+	text "Chétiflor est"
+	line "trop cool!"
+
+	para "Hein?"
+	done
+else
 	text "Bellsprout is just"
 	line "the coolest!"
 
 	para "Aren't I right?"
 	done
+endc
 
 SchoolboyJohnnyBeatenText:
+if DEF(_LOCALE_FR)
+	text "Chétiflor, non…"
+	done
+else
 	text "Bellsprout, no…"
 	done
+endc
 
 NationalParkTeacher2Text:
+if DEF(_LOCALE_FR)
+	text "Ces enfants"
+	line "devraient se"
+	cont "battre dans"
+	cont "l'herbe."
+
+	para "Ils gâchent ma"
+	line "balade tranquille…"
+	done
+else
 	text "Those kids should"
 	line "battle inside the"
 	cont "grass."
@@ -368,12 +489,29 @@ NationalParkTeacher2Text:
 	para "They're disturbing"
 	line "my quiet walk…"
 	done
+endc
 
 NationalParkPersianText:
+if DEF(_LOCALE_FR)
 	text "Persian: Fufushaa!"
 	done
+else
+	text "Persian: Fufushaa!"
+	done
+endc
 
 NationalParkGameboyKidText:
+if DEF(_LOCALE_FR)
+	text "J'étudie mon"
+	line "#dex."
+
+	para "Je veux faire un"
+	line "#dex vivant,"
+
+	para "avec un exemplaire"
+	line "de chaque #mon."
+	done
+else
 	text "I'm studying my"
 	line "#dex."
 
@@ -383,8 +521,21 @@ NationalParkGameboyKidText:
 	para "dex with one of"
 	line "each #mon."
 	done
+endc
 
 SchoolboyJack1SeenText:
+if DEF(_LOCALE_FR)
+	text "Le monde"
+	line "des #mon"
+	line "est profond."
+
+	para "Il reste plein de"
+	line "choses inconnues."
+
+	para "Mais j'en sais"
+	line "plus que toi!"
+	done
+else
 	text "The world of"
 	line "#mon is deep."
 
@@ -395,25 +546,56 @@ SchoolboyJack1SeenText:
 	para "But I know more"
 	line "than you do!"
 	done
+endc
 
 SchoolboyJack1BeatenText:
+if DEF(_LOCALE_FR)
+	text "Qu-quoi?!"
+	done
+else
 	text "Wha-wha-what?"
 	done
+endc
 
 SchoolboyJackTradeMonText:
+if DEF(_LOCALE_FR)
+	text "Il y a tant"
+	line "a apprendre."
+
+	para "Par exemple…"
+
+	para "Il existe"
+	line "{d:NUM_TMS} CT."
+
+	para "Les #mon"
+	line "échangés"
+	cont "montent plus vite."
+	done
+else
 	text "There is a lot"
 	line "to learn."
 
 	para "For example…"
 
-	para "There are {d:NUM_TMS} kinds"
+	para "There are"
+	line "{d:NUM_TMS}"
 	line "of TMs."
 
 	para "Traded #mon"
 	line "level up faster."
 	done
+endc
 
 PokefanfBeverly1SeenText:
+if DEF(_LOCALE_FR)
+	text "Mes #mon sont"
+	line "adorables."
+
+	para "Laisse-moi te dire"
+	line "comme j'en suis"
+	cont "fière."
+	done
+else
 	text "My #mon are"
 	line "simply darling."
 
@@ -421,19 +603,42 @@ PokefanfBeverly1SeenText:
 	line "how proud my"
 	cont "darlings make me."
 	done
+endc
 
 PokefanfBeverly1BeatenText:
+if DEF(_LOCALE_FR)
+	text "Je te bats en"
+	line "fierté, mais…"
+	done
+else
 	text "I can beat you in"
 	line "pride, but…"
 	done
+endc
 
 PokefanBeverlyCuteMonText:
+if DEF(_LOCALE_FR)
+	text "Tes #mon sont"
+	line "mignons aussi."
+	done
+else
 	text "I must say, your"
 	line "#mon are quite"
 	cont "cute, too."
 	done
+endc
 
 PokefanmWilliamSeenText:
+if DEF(_LOCALE_FR)
+	text "On adore nos"
+	line "#mon,"
+	line "même s'ils nous"
+	cont "détestent."
+
+	para "Etre fan, c'est"
+	line "ca!"
+	done
+else
 	text "We adore our #-"
 	line "mon, even if they"
 	cont "dislike us."
@@ -441,12 +646,29 @@ PokefanmWilliamSeenText:
 	para "That's what being"
 	line "a fan is about."
 	done
+endc
 
 PokefanmWilliamBeatenText:
+if DEF(_LOCALE_FR)
+	text "M-mes #mon!"
+	done
+else
 	text "M-my #mon!"
 	done
+endc
 
 PokefanFBeverlyMarillFriendText:
+if DEF(_LOCALE_FR)
+	text "Mon amie a un"
+	line "Marill!"
+
+	para "Je les trouve"
+	line "trop craquants."
+
+	para "Oh, j'aimerais en"
+	line "avoir un…"
+	done
+else
 	text "My friend keeps a"
 	line "Marill!"
 
@@ -456,40 +678,89 @@ PokefanFBeverlyMarillFriendText:
 	para "Oh, I wish for a"
 	line "Marill of my own…"
 	done
+endc
 
 LassKriseSeenText:
+if DEF(_LOCALE_FR)
+	text "Allo? Pourquoi tu"
+	line "me regardes?"
+
+	para "Oh, un combat?"
+	done
+else
 	text "Hello? Why are you"
 	line "staring at me?"
 
 	para "Oh, a battle?"
 	done
+endc
 
 LassKriseBeatenText: ; text > text
+if DEF(_LOCALE_FR)
+	text "…Mmmh…"
+	done
+else
 	text "…Hmmm…"
 	done
+endc
 
 BugManiacLouSeenText:
+if DEF(_LOCALE_FR)
+	text "Personne ne bat"
+	line "ma passion pour"
+	cont "les #mon"
+	cont "Insecte!"
+	done
+else
 	text "Nobody can beat"
 	line "my passion for"
 	cont "bug #mon!"
 	done
+endc
 
 BugManiacLouBeatenText:
+if DEF(_LOCALE_FR)
+	text "Comment est-ce"
+	line "possible?!"
+	done
+else
 	text "How can this be?!"
 	done
+endc
 
 OfficermKeithSeenText:
+if DEF(_LOCALE_FR)
+	text "Halte! Que fais-tu"
+	line "dehors si tard?"
+	done
+else
 	text "Halt! What are"
 	line "you doing out"
 	cont "this late?"
 	done
+endc
 
 OfficermKeithWinText:
+if DEF(_LOCALE_FR)
+	text "Tu sais te"
+	line "défendre!"
+	done
+else
 	text "You know how to"
 	line "defend yourself!"
 	done
+endc
 
 OfficermKeithAfterText:
+if DEF(_LOCALE_FR)
+	text "Le parc reste"
+	line "ouvert la nuit,"
+
+	para "car des Agents"
+	line "comme moi le"
+	cont "protègent!"
+	done
+else
 	text "The park stays"
 	line "open at night,"
 
@@ -497,8 +768,20 @@ OfficermKeithAfterText:
 	line "like me keep it"
 	cont "safe!"
 	done
+endc
 
 OfficermKeithDaytimeText:
+if DEF(_LOCALE_FR)
+	text "Tu profites du"
+	line "parc?"
+
+	para "Prends toujours un"
+	line "#mon avec toi"
+
+	para "si tu vas dans"
+	line "les hautes herbes!"
+	done
+else
 	text "Enjoying the"
 	line "park, are you?"
 
@@ -508,13 +791,32 @@ OfficermKeithDaytimeText:
 	para "if you go in the"
 	line "tall grass!"
 	done
+endc
 
 NationalParkRelaxationSquareText:
+if DEF(_LOCALE_FR)
+	text "Place Détente"
+	line "Parc Naturel"
+	done
+else
 	text "Relaxation Square"
 	line "National Park"
 	done
+endc
 
 NationalParkBattleNoticeText:
+if DEF(_LOCALE_FR)
+	text "Qu'est-ce que"
+	line "cette affiche?"
+
+	para "Veuillez combattre"
+	line "seulement dans"
+	cont "l'herbe."
+
+	para "Bureau du Gardien"
+	line "du Parc Naturel"
+	done
+else
 	text "What is this"
 	line "notice?"
 
@@ -524,8 +826,23 @@ NationalParkBattleNoticeText:
 	para "National Park"
 	line "Warden's Office"
 	done
+endc
 
 NationalParkTrainerTipsText:
+if DEF(_LOCALE_FR)
+	text "ASTUCE"
+
+	para "Les #mon"
+	line "sont plus"
+	line "heureux grâce"
+
+	para "aux coupes, aux"
+	line "bénédictions,"
+
+	para "aux photos et aux"
+	line "friandises."
+	done
+else
 	text "Trainer Tips"
 
 	para "#mon become"
@@ -535,3 +852,4 @@ NationalParkTrainerTipsText:
 	line "ings, photographs,"
 	cont "and other treats."
 	done
+endc

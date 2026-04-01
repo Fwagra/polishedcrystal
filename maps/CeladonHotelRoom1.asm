@@ -17,6 +17,17 @@ CeladonHotelRoom1_MapScriptHeader:
 	itemball_event  3,  1, POKE_DOLL, 1, EVENT_CELADON_HOTEL_ROOM_1_POKE_DOLL
 
 CeladonHotelRoom1CooltrainerMText:
+if DEF(_LOCALE_FR)
+	text "Chez moi, pas de"
+	line "# Balls."
+
+	para "On utilise des"
+	line "Stylets Capture"
+
+	para "pour se lier aux"
+	line "#mon."
+	done
+else
 	text "Where I come from,"
 	line "there aren't any"
 	cont "# Balls."
@@ -25,8 +36,20 @@ CeladonHotelRoom1CooltrainerMText:
 	line "Stylers to be-"
 	cont "friend #mon."
 	done
+endc
 
 CeladonHotelRoom1LassText:
+if DEF(_LOCALE_FR)
+	text "Le personnel plie"
+	line "nos serviettes en"
+
+	para "fleurs chaque"
+	line "jour."
+
+	para "Je devrais leur"
+	line "demander l'astuce."
+	done
+else
 	text "The staff here"
 	line "fold our towels"
 	cont "into flower shapes"
@@ -35,3 +58,4 @@ CeladonHotelRoom1LassText:
 	para "I should ask them"
 	line "to teach me how."
 	done
+endc

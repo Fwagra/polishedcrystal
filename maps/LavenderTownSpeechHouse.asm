@@ -15,6 +15,20 @@ LavenderTownSpeechHouse_MapScriptHeader:
 	object_event  2,  3, SPRITE_MATRON, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, PAL_NPC_BLUE, OBJECTTYPE_COMMAND, jumptextfaceplayer, LavenderSpeechHousePokefanFText, -1
 
 LavenderSpeechHousePokefanFText:
+if DEF(_LOCALE_FR)
+	text "Lavanville est"
+	line "une petite ville"
+
+	para "calme au pied des"
+	line "montagnes."
+
+	para "Il y a plus de"
+	line "passage depuis la"
+
+	para "construction de la"
+	line "Tour Radio."
+	done
+else
 	text "Lavender is a"
 	line "tiny, quiet town"
 
@@ -27,3 +41,4 @@ LavenderSpeechHousePokefanFText:
 	para "Radio Tower was"
 	line "built."
 	done
+endc

@@ -51,7 +51,8 @@ FisherJustinSeenText:
 	text "Hééé!"
 
 	para "Tu m'as fait"
-	line "perdre mon poisson!"
+	line "perdre mon"
+	cont "poisson!"
 	done
 
 FisherJustinBeatenText:

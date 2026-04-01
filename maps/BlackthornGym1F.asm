@@ -76,6 +76,26 @@ BlackthornGymClairScript:
 	end
 
 .IntroText:
+if DEF(_LOCALE_FR)
+	text "Je suis SANDRA."
+
+	para "Je suis la reine"
+	line "des dragons."
+
+	para "Je peux même tenir"
+	line "tête au CONSEIL"
+	cont "des 4 de la LIGUE."
+
+	para "Tu veux toujours"
+	line "te battre?"
+
+	para "...Bon."
+	line "C'est parti!"
+
+	para "Je vais pas y"
+	line "aller mollo!"
+	done
+else
 	text "I am Clair."
 
 	para "The world's best"
@@ -99,16 +119,57 @@ BlackthornGymClairScript:
 	para "power against any"
 	line "opponent!"
 	done
+endc
 
 .WinText:
+if DEF(_LOCALE_FR)
+	text "Perdu?"
+
+	para "J'y crois pas!!"
+	line "Il y a sûrement"
+	cont "une erreur..."
+	done
+else
 	text "I lost?"
 
 	para "I don't believe"
 	line "it. There must be"
 	cont "some mistake…"
 	done
+endc
 
 .GoToDragonsDenText:
+if DEF(_LOCALE_FR)
+	text "Ce n'est pas"
+	line "possible."
+
+	para "J'ai peut-être"
+	line "perdu mais tu n'as"
+
+	para "pas les épaules"
+	line "pour la LIGUE"
+	cont "#mon."
+
+	para "Tu devrais relever"
+	line "le défi des utili-"
+	cont "sateurs de"
+	cont "dragons."
+
+	para "Derrière cette"
+	line "ARENE se trouve"
+	cont "l'ANTRE du DRAGON."
+
+	para "Il y a un petit"
+	line "temple au centre."
+	cont "Vas-y."
+
+	para "Si tu arrives à"
+	line "prouver ta valeur,"
+
+	para "tu seras digne de"
+	line "porter le BADGE!"
+	done
+else
 	text "I won't admit"
 	line "this."
 
@@ -141,15 +202,50 @@ BlackthornGymClairScript:
 	line "worthy of a Gym"
 	cont "Badge!"
 	done
+endc
 
 .TooMuchToExpectText:
+if DEF(_LOCALE_FR)
+	text "Et alors?"
+
+	para "On a peur"
+	line "maintenant?"
+	done
+else
 	text "What's the matter?"
 
 	para "Is it too much to"
 	line "expect of you?"
 	done
+endc
 
 ClairPokemonLeagueDirectionsText:
+if DEF(_LOCALE_FR)
+	text "Et ben alors?"
+
+	para "Tu ne vas pas à"
+	line "la LIGUE #MON?"
+
+	para "Tu sais où c'est,"
+	line "n'est-ce pas?"
+
+	para "Va d'abord au"
+	line "BOURG GEON."
+
+	para "SURFE ensuite vers"
+	line "l'est. Le chemin"
+	cont "sera rude."
+
+	para "Ne perds pas à la"
+	line "LIGUE #mon!"
+
+	para "Si tu perds, de"
+	line "quoi j'aurai"
+	cont "l'air, moi?"
+
+	para "Fais de ton mieux."
+	done
+else
 	text "What's the matter?"
 
 	para "Aren't you headed"
@@ -179,12 +275,40 @@ ClairPokemonLeagueDirectionsText:
 	para "Give it everything"
 	line "you've got."
 	done
+endc
 
 BlackthornGymGuyScript:
 	checkevent EVENT_BEAT_CLAIR
 	iftrue_jumptextfaceplayer .WinText
 	jumpthistextfaceplayer
 
+if DEF(_LOCALE_FR)
+	text "Hé! Graine de"
+	line "star!"
+
+	para "C'est une longue"
+	line "journée, mais on"
+
+	para "arrivera bien-"
+	line "tôt au bout!"
+	cont "Compte sur moi!"
+
+	para "SANDRA utilise les"
+	line "#mon mythiques"
+	cont "et sacrés de type"
+	cont "DRAGON."
+
+	para "C'est assez dur"
+	line "de les battre."
+
+	para "Mais tu sais, ils"
+	line "sont censés être"
+
+	para "faibles contre"
+	line "les attaques de"
+	cont "type GLACE."
+	done
+else
 	text "Yo! Champ in"
 	line "making!"
 
@@ -208,8 +332,23 @@ BlackthornGymGuyScript:
 	para "to be weak against"
 	line "Ice-type moves."
 	done
+endc
 
 .WinText:
+if DEF(_LOCALE_FR)
+	text "Bien joué!"
+	line "Beau combat!"
+
+	para "Il ne reste plus"
+	line "que le challenge"
+	cont "de la LIGUE"
+	cont "#mon."
+
+	para "Tu es sur le"
+	line "point de devenir"
+	cont "MAITRE #mon!"
+	done
+else
 	text "You were great to"
 	line "beat Clair!"
 
@@ -221,59 +360,131 @@ BlackthornGymGuyScript:
 	line "to becoming the"
 	cont "#mon Champion!"
 	done
+endc
 
 GenericTrainerDragonTamerPaul:
 	generictrainer DRAGON_TAMER, PAUL, EVENT_BEAT_DRAGON_TAMER_PAUL, .SeenText, .BeatenText
 
+if DEF(_LOCALE_FR)
+	text "PETER voulait te"
+	line "revoir?"
+	cont "Mensonge!"
+	done
+else
 	text "Lance told you"
 	line "that he'd like to"
 
 	para "see you again?"
 	line "Not a chance!"
 	done
+endc
 
 .SeenText:
+if DEF(_LOCALE_FR)
+	text "C'est ton premier"
+	line "combat face à des"
+	cont "dragons?"
+
+	para "Je vais te montrer"
+	line "leur résistance"
+	cont "suprême!"
+	done
+else
 	text "Your first battle"
 	line "against dragons?"
 
 	para "I'll show you how"
 	line "tough they are!"
 	done
+endc
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "Mes #MON"
+	line "dragon ont perdu?"
+	done
+else
 	text "My dragon #mon"
 	line "lost?"
 	done
+endc
 
 GenericTrainerCooltrainermMike:
 	generictrainer COOLTRAINERM, MIKE, EVENT_BEAT_COOLTRAINERM_MIKE, .SeenText, .BeatenText
 
+if DEF(_LOCALE_FR)
+	text "Je connais mes"
+	line "défauts..."
+
+	para "On recommence?"
+	line "Non? Bon et bien"
+	cont "merci pour la"
+	cont "leçon..."
+	done
+else
 	text "I know my short-"
 	line "comings now."
 
 	para "Thanks for showing"
 	line "me!"
 	done
+endc
 
 .SeenText:
+if DEF(_LOCALE_FR)
+	text "Mes chances de"
+	line "perdre? Même pas"
+	cont "une pour mille!"
+	done
+else
 	text "My chance of"
 	line "losing? Not even"
 	cont "one percent!"
 	done
+endc
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "Je ne suis plus"
+	line "très bon en"
+	cont "maths."
+	done
+else
 	text "That's odd."
 	done
+endc
 
 GenericTrainerCooltrainerfLola:
 	generictrainer COOLTRAINERF, LOLA, EVENT_BEAT_COOLTRAINERF_LOLA, .SeenText, .BeatenText
 
+if DEF(_LOCALE_FR)
+	text "Les dragons sont"
+	line "faibles face aux"
+	cont "attaques de type"
+	cont "DRAGON."
+	done
+else
 	text "Dragons are weak"
 	line "against Dragon-"
 	cont "type moves."
 	done
+endc
 
 .SeenText:
+if DEF(_LOCALE_FR)
+	text "Les dragons sont"
+	line "des #mon"
+
+	para "sacrés. Ils sont"
+	line "plein de vie."
+
+	para "Si tu ne fais pas"
+	line "attention, tu ne"
+
+	para "pourras pas en"
+	line "venir à bout."
+	done
+else
 	text "Dragons are sacred"
 	line "#mon."
 
@@ -286,7 +497,13 @@ GenericTrainerCooltrainerfLola:
 	para "be able to beat"
 	line "them."
 	done
+endc
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "Bien joué!"
+	done
+else
 	text "Way to go!"
 	done
+endc

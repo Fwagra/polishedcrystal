@@ -85,6 +85,16 @@ BigOnixDollScript:
 	jumpopenedtext BigOnixDollSentText
 
 BigDollClerkText:
+if DEF(_LOCALE_FR)
+	text "Nos peluches"
+	line "geantes sont top!"
+
+	para "Elles sont si"
+	line "grosses qu'on"
+
+	para "peine a les caser!"
+	done
+else
 	text "Aren't our jumbo"
 	line "dolls impressive?"
 
@@ -92,89 +102,188 @@ BigDollClerkText:
 	line "we can barely fit"
 	cont "them in the room."
 	done
+endc
 
 BigDollClerkNoSaleText:
+if DEF(_LOCALE_FR)
+	text "Vendeur: Bon, si"
+	line "vous voulez."
+	done
+else
 	text "Clerk: Well, if"
 	line "you say so."
 	done
+endc
 
 BigDollClerkNoMoneyText:
+if DEF(_LOCALE_FR)
+	text "Vendeur: Pas assez"
+	line "d'argent!"
+	done
+else
 	text "Clerk: You can't"
 	line "afford it!"
 	done
+endc
 
 BigDollClerkSellLaprasText:
+if DEF(_LOCALE_FR)
+	text "Vendeur: la"
+	line "peluche Lokhlass?"
+
+	para "C'est ¥300000."
+	done
+else
 	text "Clerk: You like"
 	line "the Lapras doll?"
 
 	para "It'll cost you"
 	line "¥300,000."
 	done
+endc
 
 BigDollClerkSellSnorlaxText:
+if DEF(_LOCALE_FR)
+	text "Vendeur: la"
+	line "peluche Ronflex?"
+
+	para "C'est ¥200000."
+	done
+else
 	text "Clerk: You like"
 	line "the Snorlax doll?"
 
 	para "It'll cost you"
 	line "¥200,000."
 	done
+endc
 
 BigDollClerkSellOnixText:
+if DEF(_LOCALE_FR)
+	text "Vendeur: la"
+	line "peluche Onix?"
+
+	para "C'est ¥250000."
+	done
+else
 	text "Clerk: You like"
 	line "the Onix doll?"
 
 	para "It'll cost you"
 	line "¥250,000."
 	done
+endc
 
 BoughtBigLaprasDollText:
+if DEF(_LOCALE_FR)
+	text "<PLAYER> a acheté"
+	line "Peluche Lokhlass."
+	done
+else
 	text "<PLAYER> bought"
 	line "Big Lapras Doll."
 	done
+endc
 
 BigLaprasDollSentText:
+if DEF(_LOCALE_FR)
+	text "Peluche Lokhlass"
+	line "envoyée chez toi."
+	done
+else
 	text "Big Lapras Doll"
 	line "was sent home."
 	done
+endc
 
 BoughtBigSnorlaxDollText:
+if DEF(_LOCALE_FR)
+	text "<PLAYER> a acheté"
+	line "Peluche Ronflex."
+	done
+else
 	text "<PLAYER> bought"
 	line "Big Snorlax Doll."
 	done
+endc
 
 BigSnorlaxDollSentText:
+if DEF(_LOCALE_FR)
+	text "Peluche Ronflex"
+	line "envoyée chez toi."
+	done
+else
 	text "Big Snorlax Doll"
 	line "was sent home."
 	done
+endc
 
 BoughtBigOnixDollText:
+if DEF(_LOCALE_FR)
+	text "<PLAYER> a acheté"
+	line "Peluche Onix."
+	done
+else
 	text "<PLAYER> bought"
 	line "Big Onix Doll."
 	done
+endc
 
 BigOnixDollSentText:
+if DEF(_LOCALE_FR)
+	text "Peluche Onix"
+	line "envoyée chez toi."
+	done
+else
 	text "Big Onix Doll"
 	line "was sent home."
 	done
+endc
 
 BigLaprasDollText:
+if DEF(_LOCALE_FR)
+	text "Une enorme"
+	line "peluche Lokhlass!"
+	done
+else
 	text "It's a jumbo-size"
 	line "Lapras Doll!"
 	done
+endc
 
 BigSnorlaxDollText:
+if DEF(_LOCALE_FR)
+	text "Une enorme"
+	line "peluche Ronflex!"
+	done
+else
 	text "It's a jumbo-size"
 	line "Snorlax Doll!"
 	done
+endc
 
 BigOnixDollText:
+if DEF(_LOCALE_FR)
+	text "Une enorme"
+	line "peluche Onix!"
+	done
+else
 	text "It's a jumbo-size"
 	line "Onix Doll!"
 	done
+endc
 
 CeladonHomeDecorStore4FDirectoryText:
+if DEF(_LOCALE_FR)
+	text "Un compagnon"
+	line "en peluche!"
+
+	para "4F: Peluches"
+	done
+else
 	text "A Stuffed"
 	line "Companion!"
 
 	para "4F: Jumbo Dolls"
 	done
+endc

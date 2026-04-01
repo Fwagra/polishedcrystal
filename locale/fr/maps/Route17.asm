@@ -140,7 +140,7 @@ Route17TrainerTips2Text:
 
 Route17Notice2Text:
 	text "Conseil d'ami."
-	para "Ne lache pas la"
+	para "Ne lâche pas la"
 	line "partie: lance des"
 	cont "#ball!"
 	done
@@ -153,7 +153,7 @@ GenericTrainerBikerAiden:
 
 	para "Voila, mon bruit"
 	line "de moteur a"
-	cont "evolué!"
+	cont "évolué!"
 	done
 
 

@@ -39,9 +39,10 @@ Archer2SeenText:
 	line "ton nez là où il"
 	cont "faut pas."
 
-	para "On vend ces #mon,"
-	para "et tu ne peux rien"
-	line "y faire!"
+	para "On vend ces"
+	line "#mon, et tu ne"
+
+	para "peux rien y faire!"
 	done
 
 Archer2BeatenText:
@@ -72,9 +73,11 @@ Route48NurseText1:
 
 	para "Merci infiniment!"
 
-	para "Tes #mon méritent"
-	line "de se reposer après"
-	cont "tout ça."
+	para "Tes #mon"
+	line "meritent de se"
+
+	para "reposer apres"
+	line "tout ca."
 	done
 
 Route48NurseText2:

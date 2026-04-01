@@ -31,27 +31,56 @@ SafariZoneWest_MapScriptHeader:
 GenericTrainerLassDuplica:
 	generictrainer LASS, DUPLICA, EVENT_BEAT_LASS_DUPLICA, LassDuplicaSeenText, LassDuplicaBeatenText
 
+if DEF(_LOCALE_FR)
+	text "Je suis très forte"
+	line "en imitations!"
+
+	para "Un jour, je serai"
+	line "dresseuse à"
+	cont "Parmanie,"
+
+	para "et j'imiterai"
+	line "Jasmine."
+	done
+else
 	text "I'm really good at"
 	line "impressions!"
 
-	para "Someday I'll become"
+	para "Someday I'll"
+	line "become"
 	line "a Fuchsia Gym"
 
 	para "Trainer and mimic"
 	line "Janine."
 	done
+endc
 
 GenericTrainerCamperAmos:
 	generictrainer CAMPER, AMOS, EVENT_BEAT_CAMPER_AMOS, CamperAmosSeenText, CamperAmosBeatenText
 
+if DEF(_LOCALE_FR)
+	text "Je cherche des"
+	line "nouveaux #mon"
+	cont "partout."
+	done
+else
 	text "I'll search far"
 	line "and wide for new"
 	cont "#mon."
 	done
+endc
 
 GenericTrainerTamerBrett:
 	generictrainer TAMER, BRETT, EVENT_BEAT_TAMER_BRETT, TamerBrettSeenText, TamerBrettBeatenText
 
+if DEF(_LOCALE_FR)
+	text "Il faut diriger"
+	line "ses #mon avec"
+	cont "assurance."
+
+	para "Les Badges aident."
+	done
+else
 	text "You have to com-"
 	line "mand #mon with"
 	cont "confidence."
@@ -59,19 +88,45 @@ GenericTrainerTamerBrett:
 	para "Earning Badges can"
 	line "help with that."
 	done
+endc
 
 LassDuplicaSeenText:
+if DEF(_LOCALE_FR)
+	text "Pour bien utiliser"
+	line "Métamorph,"
+	cont "il faut"
+	cont "connaître tous"
+	cont "les #mon!"
+	done
+else
 	text "To truly use"
 	line "Ditto, you must"
 	cont "know all #mon!"
 	done
+endc
 
 LassDuplicaBeatenText:
+if DEF(_LOCALE_FR)
+	text "J'ai encore"
+	line "beaucoup"
+	cont "a apprendre."
+	done
+else
 	text "I've got a lot"
 	line "to learn."
 	done
+endc
 
 CamperAmosSeenText:
+if DEF(_LOCALE_FR)
+	text "Plein de #mon"
+	line "vivent au Parc"
+	cont "Safari."
+
+	para "Je suis là pour"
+	line "tous les attraper!"
+	done
+else
 	text "Plenty of #mon"
 	line "live in the Safari"
 	cont "Zone."
@@ -79,46 +134,103 @@ CamperAmosSeenText:
 	para "I'm here to catch"
 	line "'em all!"
 	done
+endc
 
 CamperAmosBeatenText:
+if DEF(_LOCALE_FR)
+	text "J'ai perdu, car"
+	line "je dois"
+	cont "les entraîner!"
+	done
+else
 	text "I lost 'cause I"
 	line "have to train"
 	cont "them!"
 	done
+endc
 
 TamerBrettSeenText:
+if DEF(_LOCALE_FR)
+	text "Tu sais gérer des"
+	line "#mon agressifs?"
+	done
+else
 	text "Do you know how to"
 	line "handle aggressive"
 	cont "#mon?"
 	done
+endc
 
 TamerBrettBeatenText:
+if DEF(_LOCALE_FR)
+	text "Oui, toi!"
+	done
+else
 	text "Yeah, you do!"
 	done
+endc
 
 SafariZoneWestAreaSignText:
+if DEF(_LOCALE_FR)
+	text "Parc Safari"
+	line "Zone Ouest"
+	done
+else
 	text "Safari Zone"
 	line "West Area"
 	done
+endc
 
 SafariZoneWestRestHouseSignText:
+if DEF(_LOCALE_FR)
+	text "Maison Repos"
+	done
+else
 	text "Rest House"
 	done
+endc
 
 SafariZoneWestTrainerTips1SignText:
+if DEF(_LOCALE_FR)
+	text "ASTUCE"
+
+	para "Les #mon Feu"
+	line "ne brûlent pas,"
+
+	para "ceux Electrik ne"
+	line "sont pas"
+	cont "paralisés,"
+
+	para "et ceux Glace ne"
+	line "gèlent pas."
+	done
+else
 	text "Trainer Tips"
 
 	para "Fire-type #mon"
 	line "cannot be burnt,"
 
 	para "Electric types"
-	line "can't be paralyzed,"
+	line "can't be"
+	cont "paralyzed,"
 
-	para "and Ice types can't"
+	para "and Ice types"
+	line "can't"
 	line "be frozen solid."
 	done
+endc
 
 SafariZoneWestTrainerTips2SignText:
+if DEF(_LOCALE_FR)
+	text "ASTUCE"
+
+	para "Dans une tempête,"
+	line "les #mon Roche"
+
+	para "boostent leur"
+	line "Déf.Spé."
+	done
+else
 	text "Trainer Tips"
 
 	para "In a sandstorm,"
@@ -127,3 +239,4 @@ SafariZoneWestTrainerTips2SignText:
 	para "get a boost to"
 	line "their Sp.Def."
 	done
+endc

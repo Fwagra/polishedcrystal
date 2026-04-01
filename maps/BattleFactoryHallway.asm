@@ -46,11 +46,19 @@ BattleFactoryHallwayFollowReceptionist:
 .WonBattle:
 	opentext
 	writethistext
+if DEF(_LOCALE_FR)
+		text "<PLAYER> gagne"
+		line ""
+		text_ram wStringBuffer1
+		text " PB!"
+		done
+else
 		text "<PLAYER> earned"
 		line ""
 		text_ram wStringBuffer1
 		text " BP!"
 		done
+endc
 	waitsfx
 	specialsound
 	waitbutton
@@ -59,14 +67,39 @@ BattleFactoryHallwayFollowReceptionist:
 	ifequalfwd BTCHALLENGE_FACILITYBRAIN, .WarnAboutHead
 .AskNextBattle:
 	writethistext
+if DEF(_LOCALE_FR)
+		text "Prochain adversai-"
+		line "re, le no."
+		text_decimal wStringBuffer3, 2, 5
+		text ". OK?"
+		done
+else
 		text "Next up, opponent"
 		line "No. "
 		text_decimal wStringBuffer3, 2, 5
 		text ". Ready?"
 		done
+endc
 	sjumpfwd .ShownText
 .WarnAboutHead:
 	writethistext
+if DEF(_LOCALE_FR)
+		text "Félicitations,"
+		line "Dresseur!"
+
+		para "Inspiré par tes"
+		line "victoires,"
+
+		para "notre Meneur de"
+		line "Zone veut"
+		cont "t'affronter."
+
+		para "Prochain combat:"
+		line "le Chef d'Usine!"
+
+		para "Prêt?"
+		done
+else
 		text "Congratulations"
 		line "on your winning"
 		cont "streak, trainer!"
@@ -81,6 +114,7 @@ BattleFactoryHallwayFollowReceptionist:
 		line "battle the"
 		cont "Factory Head?"
 		done
+endc
 .ShownText
 	yesorno
 	iffalsefwd .DontBattleNextOpponent
@@ -90,9 +124,15 @@ BattleFactoryHallwayFollowReceptionist:
 
 .DontBattleNextOpponent:
 	writethistext
+if DEF(_LOCALE_FR)
+		text "SAUVER et finir"
+		line "la session?"
+		done
+else
 		text "Save and end the"
 		line "session?"
 		done
+endc
 	yesorno
 	iffalsefwd .DontSaveAndEndTheSession
 	special SaveOptions
@@ -104,12 +144,23 @@ BattleFactoryHallwayFollowReceptionist:
 	special SoftReset
 .DontSaveAndEndTheSession:
 	writethistext
+if DEF(_LOCALE_FR)
+		text "Annuler le défi"
+		line "de l'Etage de"
+		cont "Combat?"
+
+		para "Attention: ça"
+		line "compte comme"
+		cont "une défaite."
+		done
+else
 		text "Cancel your Battle"
 		line "Floor challenge?"
 
 		para "Beware, it counts"
 		line "as a loss."
 		done
+endc
 	yesorno
 	iffalse .AskNextBattle
 	special FadeOutPalettes
@@ -129,18 +180,32 @@ BattleFactoryHallwayFollowReceptionist:
 	opentext
 .NextRentalBattle_AfterOpenText:
 	writethistext
-		text "I've researched the"
+if DEF(_LOCALE_FR)
+		text "J'ai étudié le"
+		line "prochain"
+		cont "adversaire."
+		prompt
+else
+		text "I researched the"
 		line "next opponent."
 		prompt
+endc
 
 	special Special_BattleTower_NextRentalBattle
 	iftruefwd .Continue
 
 	writethistext
+if DEF(_LOCALE_FR)
+		text "Annuler la série?"
+		line "Ca compte comme"
+		cont "une défaite."
+		done
+else
 		text "Cancel your run?"
 		line "This counts as a"
 		cont "streak loss."
 		done
+endc
 	yesorno
 	iffalse .NextRentalBattle_AfterOpenText
 	closetext
@@ -173,9 +238,15 @@ BattleFactoryHallwayFollowReceptionist:
 	step_end
 
 .PleaseStepThisWayText:
+if DEF(_LOCALE_FR)
+	text "Par ici, s'il te"
+	line "plaît."
+	prompt
+else
 	text "Please step this"
 	line "way."
 	prompt
+endc
 
 .StepAbovePlayerMovement:
 	step_up

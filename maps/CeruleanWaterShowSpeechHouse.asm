@@ -16,6 +16,15 @@ CeruleanWaterShowSpeechHouse_MapScriptHeader:
 	object_event  6,  3, SPRITE_POKEMANIAC, SPRITEMOVEDATA_WALK_UP_DOWN, 1, 0, -1, PAL_NPC_BROWN, OBJECTTYPE_COMMAND, jumptextfaceplayer, CeruleanWaterShowSpeechHouseSuperNerdText, -1
 
 CeruleanWaterShowSpeechHouseCooltrainerMText:
+if DEF(_LOCALE_FR)
+	text "Ondine fait"
+	line "parfois des shows"
+
+	para "d'eau à son Arène."
+
+	para "C'est magnifique!"
+	done
+else
 	text "Misty sometimes"
 	line "performs in water"
 	cont "shows at her Gym."
@@ -23,8 +32,20 @@ CeruleanWaterShowSpeechHouseCooltrainerMText:
 	para "They're a sight to"
 	line "behold!"
 	done
+endc
 
 CeruleanWaterShowSpeechHouseSuperNerdText:
+if DEF(_LOCALE_FR)
+	text "J'ai tagué le toit"
+	line "des Apparts"
+	cont "de Céladopole."
+
+	para "Tu l'as vu?"
+
+	para "C'est bien caché,"
+	line "héhé…"
+	done
+else
 	text "I drew some graff-"
 	line "iti on the roof of"
 	cont "Celadon Condo."
@@ -33,3 +54,4 @@ CeruleanWaterShowSpeechHouseSuperNerdText:
 	line "It's a bit hidden,"
 	cont "hehe…"
 	done
+endc

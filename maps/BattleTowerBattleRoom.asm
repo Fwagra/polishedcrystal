@@ -49,11 +49,19 @@ Script_BattleRoomLoop:
 	applyonemovement PLAYER, turn_head_down
 	opentext
 	writethistext
+if DEF(_LOCALE_FR)
+		text "<PLAYER> gagne"
+		line ""
+		text_ram wStringBuffer1
+		text " PB!"
+		done
+else
 		text "<PLAYER> earned"
 		line ""
 		text_ram wStringBuffer1
 		text " BP!"
 		done
+endc
 	waitsfx
 	specialsound
 	waitbutton
@@ -61,14 +69,41 @@ Script_BattleRoomLoop:
 	ifequalfwd BTCHALLENGE_FACILITYBRAIN, .WarnAboutTycoon
 .AskNextBattle:
 	writethistext
+if DEF(_LOCALE_FR)
+		text "Prochain adversai-"
+		line "re, le no."
+		text_decimal wStringBuffer3, 2, 5
+		text ". OK?"
+		done
+else
 		text "Next up, opponent"
 		line "No. "
 		text_decimal wStringBuffer3, 2, 5
 		text ". Ready?"
 		done
+endc
 	sjumpfwd .ShownText
 .WarnAboutTycoon
 	writethistext
+if DEF(_LOCALE_FR)
+		text "Félicitations pour"
+		line "cette belle"
+		cont "série, Dresseur!"
+
+		para "L'Aigle Tour est"
+		line "impressionné"
+		cont "par toi."
+
+		para "Il admire tes"
+		line "qualités."
+
+		para "Il veut t'affron-"
+		line "ter en personne!"
+
+		para "Prêt à te mesurer"
+		line "à l'Aigle Tour?"
+		done
+else
 		text "Congratulations"
 		line "on your winning"
 		cont "streak, trainer!"
@@ -83,6 +118,7 @@ Script_BattleRoomLoop:
 		line "battle the Tower"
 		cont "Tycoon?"
 		done
+endc
 .ShownText
 	yesorno
 	iffalsefwd .DontBattleNextOpponent
@@ -93,9 +129,15 @@ Script_BattleRoomLoop:
 
 .DontBattleNextOpponent:
 	writethistext
+if DEF(_LOCALE_FR)
+		text "SAUVER et finir"
+		line "la session?"
+		done
+else
 		text "Save and end the"
 		line "session?"
 		done
+endc
 	yesorno
 	iffalsefwd .DontSaveAndEndTheSession
 	special SaveOptions
@@ -107,12 +149,23 @@ Script_BattleRoomLoop:
 	special SoftReset
 .DontSaveAndEndTheSession:
 	writethistext
+if DEF(_LOCALE_FR)
+		text "Annuler le défi"
+		line "des Salles de"
+		cont "Combat?"
+
+		para "Attention: ça"
+		line "compte comme"
+		cont "une défaite."
+		done
+else
 		text "Cancel your Battle"
 		line "Room challenge?"
 
 		para "Beware, it counts"
 		line "as a loss."
 		done
+endc
 	yesorno
 	iffalse .AskNextBattle
 	special FadeOutPalettes

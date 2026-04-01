@@ -29,8 +29,8 @@ SwimmerfJillBeatenText:
 	done
 
 Bird_keeperBryanSeenText:
-	text "Tu utilises quelles"
-	line "BALLS?"
+	text "Quelles BALLS"
+	line "tu utilises?"
 	done
 
 Bird_keeperBryanBeatenText:
@@ -39,36 +39,47 @@ Bird_keeperBryanBeatenText:
 	done
 
 SrandjrBeaandmay1SeenText:
-	text "Bea: Je préfère les"
-	line "#mon forts."
-	para "Les mignons, moins."
-	para "Mais ensemble, on a"
-	line "des #mon forts et"
-	cont "mignons!"
+	text "Bea: Je prefere"
+	line "les #mon forts."
+
+	para "Mignons: moins."
+	line "Mais ensemble,"
+
+	para "on a des #mon"
+	line "forts et mignons!"
 	done
 
 SrandjrBeaandmay1BeatenText:
-	text "Bea: Fort et mignon"
-	line "ça suffit pas!"
+	text "Bea: Fort et"
+	line "mignon, ca suffit"
+
+	para "pas!"
 	done
 
 SrandjrBeaandmay2SeenText:
-	text "May: Je préfère les"
-	line "#mon mignons."
+	text "May: Je prefere"
+	line "les #mon"
+	cont "mignons."
+
 	para "Les forts, moins."
-	para "Mais ensemble, on a"
-	line "des #mon mignons et"
-	cont "forts!"
+	line "Mais ensemble,"
+
+	para "on a des #mon"
+	line "mignons et forts!"
 	done
 
 SrandjrBeaandmay2BeatenText:
-	text "May: Mignon et fort"
-	line "ça suffit pas!"
+	text "May: Mignon et"
+	line "fort, ca suffit"
+
+	para "pas!"
 	done
 
 SailorHarveySeenText:
-	text "Ha! Tes #mon ont"
-	line "pas l'air costauds!"
+	text "Ha! Tes #mon"
+	line "ont pas l'air"
+
+	para "costauds!"
 	done
 
 SailorHarveyBeatenText:

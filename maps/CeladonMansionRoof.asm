@@ -20,6 +20,16 @@ MapCeladonMansionRoofSignpost0Script:
 	jumptext CeladonMansionRoofGraffitiText
 
 CeladonMansionRoofFisherText:
+if DEF(_LOCALE_FR)
+	text "Les hauts lieux,"
+	line "j'adore ca!"
+
+	para "Seule la fumee"
+	line "aime autant"
+
+	para "monter que moi!"
+	done
+else
 	text "High places--I do"
 	line "love them so!"
 
@@ -29,11 +39,21 @@ CeladonMansionRoofFisherText:
 	para "heights as much as"
 	line "me is smoke!"
 	done
+endc
 
 CeladonMansionRoofGraffitiText:
+if DEF(_LOCALE_FR)
+	text "Du graffiti sur"
+	line "le mur…"
+
+	para "<PLAYER> trace une"
+	line "moustache!"
+	done
+else
 	text "There's graffiti"
 	line "on the wall…"
 
 	para "<PLAYER> added a"
 	line "moustache!"
 	done
+endc

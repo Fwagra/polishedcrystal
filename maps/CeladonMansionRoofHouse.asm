@@ -30,6 +30,19 @@ CeladonMansionRoofHousePharmacistScript:
 	jumpthisopenedtext
 
 .CurseText:
+if DEF(_LOCALE_FR)
+	text "La CT03 est"
+	line "Malédiction."
+
+	para "Une attaque"
+	line "terrifiante qui"
+
+	para "érode lentement"
+	line "les PV de la"
+
+	cont "cible."
+	done
+else
 	text "TM03 is Curse."
 
 	para "It's a terrifying"
@@ -38,13 +51,35 @@ CeladonMansionRoofHousePharmacistScript:
 	para "whittles down the"
 	line "victim's HP."
 	done
+endc
 
 .IntroText:
+if DEF(_LOCALE_FR)
+	text "Laisse-moi te"
+	line "raconter une"
+
+	para "histoire qui fait"
+	line "froid dans le dos…"
+	done
+else
 	text "Let me recount a"
 	line "terrifying tale…"
 	done
+endc
 
 .NotNiteText:
+if DEF(_LOCALE_FR)
+	text "Apres tout, c'est"
+	line "moins flippant"
+
+	para "tant qu'il fait"
+	line "jour dehors."
+
+	para "Reviens apres le"
+	line "coucher du soleil,"
+	cont "OK?"
+	done
+else
 	text "Then again, it's"
 	line "not as scary while"
 
@@ -54,8 +89,66 @@ CeladonMansionRoofHousePharmacistScript:
 	para "Come back after"
 	line "sunset, OK?"
 	done
+endc
 
 .StoryText:
+if DEF(_LOCALE_FR)
+	text "Il etait une fois"
+	line "un petit garcon"
+
+	para "qui avait recu un"
+	line "nouveau Velo…"
+
+	para "Il voulait l'essa-"
+	line "yer tout de suite…"
+
+	para "Il s'amusait tant"
+	line "qu'il n'avait pas"
+
+	para "vu le soleil se"
+	line "coucher…"
+
+	para "En rentrant dans"
+	line "le noir complet,"
+
+	para "le Velo ralentit"
+	line "tout seul!"
+
+	para "Les pedales"
+	line "se sont alourdies!"
+
+	para "Quand il a arrete"
+	line "de pedaler, le"
+
+	para "Velo a glisse en"
+	line "arriere!"
+
+	para "Comme si le Velo"
+	line "etait maudit et"
+
+	para "voulait le tirer"
+	line "vers le neant!"
+
+	para "…"
+
+	para "…"
+
+	para "CRIIIII!"
+
+	para "En fait il etait"
+	line "en montee sur la"
+
+	para "Route Cyclable!"
+
+	para "…"
+	line "Badam, badam!"
+
+	para "Pour toute cette"
+	line "attention, prends"
+
+	para "cette CT03!"
+	done
+else
 	text "Once upon a time,"
 	line "there was a little"
 
@@ -109,3 +202,4 @@ CeladonMansionRoofHousePharmacistScript:
 	line "patiently, you may"
 	cont "take this--TM03!"
 	done
+endc

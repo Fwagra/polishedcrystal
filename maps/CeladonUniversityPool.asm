@@ -63,6 +63,22 @@ CeladonUniversityPoolFergusScript:
 	jumpopenedtext .FinalText
 
 .IntroText1:
+if DEF(_LOCALE_FR)
+	text "Moi, Fergus!"
+	line "Je suis du top 4"
+
+	para "Dresseurs de"
+	line "l'universite de"
+
+	para "Céladopole. On est"
+	line "les 4 Céladon!"
+
+	para "Je te bats pour"
+	line "prouver que je"
+
+	para "merite ma rep!"
+	done
+else
 	text "The name's Fergus!"
 	line "I'm one of top four"
 
@@ -76,8 +92,19 @@ CeladonUniversityPoolFergusScript:
 	line "that I earned my"
 	cont "rep with a battle!"
 	done
+endc
 
 .IntroText2:
+if DEF(_LOCALE_FR)
+	text "Moi, Fergus!"
+	line "Je fais partie des"
+
+	para "les 4 Céladon!"
+	line "Tu nous defies?"
+
+	para "Allez, au combat!"
+	done
+else
 	text "The name's Fergus!"
 	line "I'm one of the"
 	cont "Celadon Four!"
@@ -88,22 +115,51 @@ CeladonUniversityPoolFergusScript:
 	para "Well then, let's"
 	line "battle!"
 	done
+endc
 
 .NoBattleText:
+if DEF(_LOCALE_FR)
+	text "Alors ne me barre"
+	line "pas le chemin."
+	done
+else
 	text "Then don't get in"
 	line "my way."
 	done
+endc
 
 .SeenText:
+if DEF(_LOCALE_FR)
+	text "On te montre!"
+	line "C'est parti!"
+	done
+else
 	text "We'll show you!"
 	line "Let's go!"
 	done
+endc
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "Sans dec!"
+	done
+else
 	text "No way!"
 	done
+endc
 
 .AfterText1:
+if DEF(_LOCALE_FR)
+	text "J'ai tant entraine"
+	line "mon equipe, mais"
+
+	para "tu nous as eu."
+	line "Avec ta force,"
+
+	para "affronte le reste"
+	line "du groupe des 4!"
+	done
+else
 	text "I've spent so much"
 	line "time training my"
 	cont "team, but you beat"
@@ -115,8 +171,17 @@ CeladonUniversityPoolFergusScript:
 	para "the rest of the"
 	line "Celadon Four!"
 	done
+endc
 
 .AfterText2:
+if DEF(_LOCALE_FR)
+	text "Les Quatre ont"
+	line "perdu contre toi?"
+
+	para "Tu decroches!"
+	line "Tiens, pour toi!"
+	done
+else
 	text "All of the Celadon"
 	line "Four lost to you?"
 
@@ -126,8 +191,19 @@ CeladonUniversityPoolFergusScript:
 	para "You've earned this"
 	line "reward!"
 	done
+endc
 
 .FinalText:
+if DEF(_LOCALE_FR)
+	text "Les Quatre font"
+	line "le poids ici, mais"
+
+	para "tu cartonne dans"
+	line "le monde reel."
+
+	para "Continue!"
+	done
+else
 	text "The Celadon Four"
 	line "are a big deal"
 	cont "here, but you're"
@@ -137,15 +213,34 @@ CeladonUniversityPoolFergusScript:
 
 	para "Keep it up!"
 	done
+endc
 
 CeladonUniversityPoolLassText:
+if DEF(_LOCALE_FR)
+	text "Aie!"
+
+	para "J'ai une crampe"
+	line "dans la jambe."
+	done
+else
 	text "Ouch!"
 
 	para "I'm working out a"
 	line "cramp in my leg."
 	done
+endc
 
 CeladonUniversityPoolSwimmer_girlText:
+if DEF(_LOCALE_FR)
+	text "J'ai postule pour"
+	line "aller etudier aux"
+
+	para "Iles Ecume!"
+	line "Il me faut de la"
+
+	para "nage intense."
+	done
+else
 	text "I applied for a"
 	line "special program to"
 
@@ -156,9 +251,16 @@ CeladonUniversityPoolSwimmer_girlText:
 	line "pared for intense"
 	cont "swimming."
 	done
+endc
 
 CeladonUniversityPoolTeacherText:
+if DEF(_LOCALE_FR)
+	text "OK, cinq longueurs"
+	line "encore!"
+	done
+else
 	text "OK, five more"
 	line "laps!"
 	done
+endc
 

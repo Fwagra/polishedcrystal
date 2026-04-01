@@ -66,9 +66,15 @@ BattleTowerHallwayFollowReceptionist:
 	end
 
 .PleaseStepThisWayText:
+if DEF(_LOCALE_FR)
+	text "Par ici,"
+	line "s'il te plaît."
+	done
+else
 	text "Please step this"
 	line "way."
 	done
+endc
 
 MovementData_BattleTowerHallwayWalkTo1020Room:
 	step_right

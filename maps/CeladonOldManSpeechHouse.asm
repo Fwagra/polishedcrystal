@@ -16,15 +16,31 @@ CeladonOldManSpeechHouse_MapScriptHeader:
 	object_event  5,  4, SPRITE_AROMA_LADY, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, 0, OBJECTTYPE_COMMAND, jumptextfaceplayer, CeladonOldManSpeechHouseLadyText, -1
 
 CeladonOldManSpeechHouseGrampsText:
+if DEF(_LOCALE_FR)
+	text "Hein?"
+	line "#-mon?"
+	cont "Connais pas."
+	done
+else
 	text "Whashat?"
 	line "#-mon?"
 	cont "Never heard of it."
 	done
+endc
 
 CeladonOldManSpeechHouseLadyText:
+if DEF(_LOCALE_FR)
+	text "Désolée pour"
+	line "mon grand-père."
+
+	para "L'âge n'a pas été"
+	line "tendre avec lui."
+	done
+else
 	text "I'm sorry about"
 	line "my grandpa."
 
 	para "Age hasn't been"
 	line "kind to him."
 	done
+endc

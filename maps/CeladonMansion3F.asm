@@ -85,6 +85,18 @@ MapCeladonMansion3FSignpost3Script:
 	jumptext CeladonMansion3FReferenceMaterialText
 
 GameFreakGameDesignerText:
+if DEF(_LOCALE_FR)
+	text "Vraiment?"
+
+	para "Je suis le Game"
+	line "Designer!"
+
+	para "Remplir le #dex"
+	line "est dur, mais"
+
+	para "ne lache pas!"
+	done
+else
 	text "Is that right?"
 
 	para "I'm the Game"
@@ -94,16 +106,33 @@ GameFreakGameDesignerText:
 	line "#dex is tough,"
 	cont "but don't give up!"
 	done
+endc
 
 GameFreakGameDesignerCompletedPokedexText:
+if DEF(_LOCALE_FR)
+	text "Ouah! Bravo!"
+	line "Tu as fini le"
+
+	para "#dex!"
+	done
+else
 	text "Wow! Excellent!"
 	line "You completed your"
 	cont "#dex!"
 
 	para "Congratulations!"
 	done
+endc
 
 GameFreakGameDesignerPauseForDiplomaText:
+if DEF(_LOCALE_FR)
+	text "Pour ta reussite…"
+	line "tiens!"
+
+	para "Un Diplome tout"
+	line "neuf!"
+	done
+else
 	text "To recognize your"
 	line "achievement…"
 	cont "here you go!"
@@ -111,18 +140,39 @@ GameFreakGameDesignerPauseForDiplomaText:
 	para "A crisp new"
 	line "Diploma!"
 	done
+endc
 
 GameFreakGameDesignerGiveDiplomaText:
+if DEF(_LOCALE_FR)
+	text "<PLAYER> recoit un"
+	line "Diplome!"
+	done
+else
 	text "<PLAYER> received"
 	line "Diploma!"
 	done
+endc
 
 GameFreakGameDesignerDiplomaSentText:
+if DEF(_LOCALE_FR)
+	text "Diplome"
+	line "envoye chez toi."
+	done
+else
 	text "Diploma"
 	line "was sent home."
 	done
+endc
 
 GameFreakGameDesignerAfterDiplomaText:
+if DEF(_LOCALE_FR)
+	text "Le graphiste peut"
+	line "imprimer ton"
+
+	para "Diplome. Va le"
+	line "montrer!"
+	done
+else
 	text "The Graphic Artist"
 	line "will print out a"
 	cont "Diploma for you."
@@ -130,8 +180,17 @@ GameFreakGameDesignerAfterDiplomaText:
 	para "You should go show"
 	line "that off!"
 	done
+endc
 
 GameFreakDesignerGaveDiplomaText:
+if DEF(_LOCALE_FR)
+	text "Bravo pour le"
+	line "#dex complet!"
+
+	para "Expose ce"
+	line "Diplome!"
+	done
+else
 	text "Congratulations"
 	line "for completing"
 	cont "your #dex!"
@@ -139,15 +198,34 @@ GameFreakDesignerGaveDiplomaText:
 	para "You should show"
 	line "off that Diploma!"
 	done
+endc
 
 GameFreakGraphicArtistText:
+if DEF(_LOCALE_FR)
+	text "Je suis le"
+	line "Graphiste."
+
+	para "Je t'ai dessine!"
+	done
+else
 	text "I'm the Graphic"
 	line "Artist."
 
 	para "I drew you!"
 	done
+endc
 
 GameFreakGraphicArtistPrintDiplomaText:
+if DEF(_LOCALE_FR)
+	text "Je suis le"
+	line "Graphiste."
+
+	para "Oh, #dex fini?"
+	line "J'imprime ton"
+
+	para "Diplome?"
+	done
+else
 	text "I'm the Graphic"
 	line "Arist."
 
@@ -157,22 +235,48 @@ GameFreakGraphicArtistPrintDiplomaText:
 	para "Want me to print"
 	line "out your Diploma?"
 	done
+endc
 
 GameFreakGraphicArtistRefusedText:
+if DEF(_LOCALE_FR)
+	text "Dis-moi si tu veux"
+	line "imprimer le"
+
+	para "Diplome."
+	done
+else
 	text "Give me a shout if"
 	line "you want your"
 	cont "Diploma printed."
 	done
+endc
 
 GameFreakProgrammerText:
+if DEF(_LOCALE_FR)
+	text "Moi? Le"
+	line "Programmeur."
+
+	para "Passe par le Hub"
+	line "Echange Merveille!"
+	done
+else
 	text "Who, me? I'm the"
 	line "Programmer."
 
 	para "Use the Wonder"
 	line "Trade Hub!"
 	done
+endc
 
 GameFreakCharacterDesignerText:
+if DEF(_LOCALE_FR)
+	text "Lyra est pas"
+	line "mignonne?"
+
+	para "Jasmine aussi."
+	line "Je les adore!"
+	done
+else
 	text "Isn't Lyra"
 	line "adorable?"
 
@@ -181,29 +285,59 @@ GameFreakCharacterDesignerText:
 
 	para "Oh, I love them!"
 	done
+endc
 
 CeladonMansion3FDevRoomSignText:
+if DEF(_LOCALE_FR)
+	text "Game Freak"
+	line "Salle de dev"
+	done
+else
 	text "Game Freak"
 	line "Development Room"
 	done
+endc
 
 CeladonMansion3FDrawingText:
+if DEF(_LOCALE_FR)
+	text "Un dessin detaille"
+	line "d'une jolie fille."
+	done
+else
 	text "It's a detailed"
 	line "drawing of a"
 	cont "pretty girl."
 	done
+endc
 
 CeladonMansion3FGameProgramText:
+if DEF(_LOCALE_FR)
+	text "Le programme du"
+	line "jeu. Touche pas,"
+
+	para "tu risques un"
+	line "bug!"
+	done
+else
 	text "It's the game"
 	line "program. Messing"
 
 	para "with it could put"
 	line "a bug in the game!"
 	done
+endc
 
 CeladonMansion3FReferenceMaterialText:
+if DEF(_LOCALE_FR)
+	text "Plein de docs de"
+	line "ref. Il y a meme"
+
+	para "une # Doll."
+	done
+else
 	text "It's crammed with"
 	line "reference materi-"
 	cont "als. There's even"
 	cont "a # Doll."
 	done
+endc

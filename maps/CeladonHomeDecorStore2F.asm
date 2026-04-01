@@ -88,7 +88,11 @@ CeladonHomeDecorStore2FClerkScript:
 .MenuData:
 	db MENU_BACKUP_TILES
 	menu_coords 0, 2, 19, 11
+if DEF(_LOCALE_FR)
+	dw .MenuData2FR
+else
 	dw .MenuData2
+endc
 	db 1 ; default option
 
 .MenuData2:
@@ -99,53 +103,127 @@ CeladonHomeDecorStore2FClerkScript:
 	db "Pikachu  ¥126000@"
 	db "Cancel@"
 
+.MenuData2FR:
+	db $80 ; flags
+	db 4 ; items
+	db "Pink      ¥62000@"
+	db "PolkaDot  ¥94000@"
+	db "Pikachu  ¥126000@"
+	db "Retour@"
+
 CeladonHomeDecorStore2FClerkText:
+if DEF(_LOCALE_FR)
+	text "Bienvenue! Vous"
+	line "cherchez un"
+
+	para "nouveau lit?"
+	done
+else
 	text "Welcome! Are you"
 	line "in the market for"
 	cont "a new bed?"
 	done
+endc
 
 BoughtPinkBedText:
+if DEF(_LOCALE_FR)
+	text "<PLAYER> a acheté"
+	line "Lit rose."
+	done
+else
 	text "<PLAYER> bought"
 	line "Pink Bed."
 	done
+endc
 
 PinkBedSentText:
+if DEF(_LOCALE_FR)
+	text "Lit rose"
+	line "envoyé chez toi."
+	done
+else
 	text "Pink Bed"
 	line "was sent home."
 	done
+endc
 
 BoughtPolkaDotBedText:
+if DEF(_LOCALE_FR)
+	text "<PLAYER> a acheté"
+	line "Lit a pois."
+	done
+else
 	text "<PLAYER> bought"
 	line "PolkaDot Bed."
 	done
+endc
 
 PolkaDotBedSentText:
+if DEF(_LOCALE_FR)
+	text "Lit a pois"
+	line "envoyé chez toi."
+	done
+else
 	text "PolkaDot Bed"
 	line "was sent home."
 	done
+endc
 
 BoughtPikachuBedText:
+if DEF(_LOCALE_FR)
+	text "<PLAYER> a acheté"
+	line "Lit Pikachu."
+	done
+else
 	text "<PLAYER> bought"
 	line "Pikachu Bed."
 	done
+endc
 
 PikachuBedSentText:
+if DEF(_LOCALE_FR)
+	text "Lit Pikachu"
+	line "envoyé chez toi."
+	done
+else
 	text "Pikachu Bed"
 	line "was sent home."
 	done
+endc
 
 CeladonHomeDecorStore2FNoMoneyText:
+if DEF(_LOCALE_FR)
+	text "Tu n'as pas assez"
+	line "d'argent!"
+	done
+else
 	text "You can't afford"
 	line "that!"
 	done
+endc
 
 CeladonHomeDecorStore2FAlreadyBoughtText:
+if DEF(_LOCALE_FR)
+	text "Tu l'as déjà!"
+	done
+else
 	text "You already have"
 	line "that!"
 	done
+endc
 
 CeladonHomeDecorStore2FPokefanfText:
+if DEF(_LOCALE_FR)
+	text "Les marques"
+	line "coutent plus que"
+
+	para "les generiques."
+	line "Mais le lit"
+
+	para "Pikachu est trop"
+	line "mignon…"
+	done
+else
 	text "Brand-name items"
 	line "cost more than"
 	cont "generic ones."
@@ -153,9 +231,17 @@ CeladonHomeDecorStore2FPokefanfText:
 	para "But the Pikachu"
 	line "Bed is so cute…"
 	done
+endc
 
 CeladonHomeDecorStore2FDirectoryText:
+if DEF(_LOCALE_FR)
+	text "Doux et moelleux!"
+
+	para "2F: Lits"
+	done
+else
 	text "Soft and Fluffy!"
 
 	para "2F: Beds"
 	done
+endc

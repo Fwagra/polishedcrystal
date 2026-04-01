@@ -91,7 +91,11 @@ PosterClerkScript:
 .MenuData:
 	db MENU_BACKUP_TILES
 	menu_coords 0, 2, 19, 11
+if DEF(_LOCALE_FR)
+	dw .MenuData2FR
+else
 	dw .MenuData2
+endc
 	db 1 ; default option
 
 .MenuData2:
@@ -102,68 +106,160 @@ PosterClerkScript:
 	db "Pikachu     ¥6400@"
 	db "Cancel@"
 
+.MenuData2FR:
+	db $80 ; flags
+	db 4 ; items
+	db "Marill      ¥3200@"
+	db "Clefairy    ¥4800@"
+	db "Pikachu     ¥6400@"
+	db "Retour@"
+
 PosterClerkText:
+if DEF(_LOCALE_FR)
+	text "Bienvenue! Un"
+	line "poster peut-être?"
+	done
+else
 	text "Welcome! Would you"
 	line "like a poster?"
 	done
+endc
 
 PosterClerkNoMoneyText:
+if DEF(_LOCALE_FR)
+	text "Il te manque de"
+	line "l'argent."
+	done
+else
 	text "You don't have"
 	line "enough money."
 	done
+endc
 
 PosterClerkAlreadyBoughtText:
+if DEF(_LOCALE_FR)
+	text "Tu l'as déjà"
+	line "acheté."
+	done
+else
 	text "You bought that"
 	line "already."
 	done
+endc
 
 BoughtMarillPosterText:
+if DEF(_LOCALE_FR)
+	text "<PLAYER> a acheté"
+	line "Poster Marill."
+	done
+else
 	text "<PLAYER> bought"
 	line "Marill Poster."
 	done
+endc
 
 MarillPosterSentText:
+if DEF(_LOCALE_FR)
+	text "Poster Marill"
+	line "envoyé chez toi."
+	done
+else
 	text "Marill Poster"
 	line "was sent home."
 	done
+endc
 
 BoughtClefairyPosterText:
+if DEF(_LOCALE_FR)
+	text "<PLAYER> a acheté"
+	line "Poster Mélofée."
+	done
+else
 	text "<PLAYER> bought"
 	line "Clefairy Poster."
 	done
+endc
 
 ClefairyPosterSentText:
+if DEF(_LOCALE_FR)
+	text "Poster Mélofée"
+	line "envoyé chez toi."
+	done
+else
 	text "Clefairy Poster"
 	line "was sent home."
 	done
+endc
 
 BoughtPikachuPosterText:
+if DEF(_LOCALE_FR)
+	text "<PLAYER> a acheté"
+	line "Poster Pikachu."
+	done
+else
 	text "<PLAYER> bought"
 	line "Pikachu Poster."
 	done
+endc
 
 PikachuPosterSentText:
+if DEF(_LOCALE_FR)
+	text "Poster Pikachu"
+	line "envoyé chez toi."
+	done
+else
 	text "Pikachu Poster"
 	line "was sent home."
 	done
+endc
 
 CeladonDeptStore4FSuperNerdText:
+if DEF(_LOCALE_FR)
+	text "Je viens acheter"
+	line "du Courrier"
+
+	para "Charmant pour"
+	line "ma copine."
+	done
+else
 	text "I'm here to buy"
 	line "Lovely Mail for"
 	cont "my girlfriend."
 	done
+endc
 
 CeladonDeptStore4FYoungsterText:
+if DEF(_LOCALE_FR)
+	text "C'est le seul"
+	line "endroit où on"
+
+	para "trouve des"
+	line "affiches."
+
+	para "Je rassemble les"
+	line "affiches ici!"
+	done
+else
 	text "This is the only"
 	line "place where you"
 
 	para "can buy posters."
 	line "I collect them!"
 	done
+endc
 
 CeladonDeptStore4FDirectoryText:
+if DEF(_LOCALE_FR)
+	text "Exprime-toi avec"
+	line "des cadeaux!"
+
+	para "4F: Cadeaux"
+	line "    Sages"
+	done
+else
 	text "Express Yourself"
 	line "With Gifts!"
 
 	para "4F: Wiseman Gifts"
 	done
+endc

@@ -90,7 +90,11 @@ CeladonHomeDecorStore3FClerk1Script:
 .MenuData:
 	db MENU_BACKUP_TILES
 	menu_coords 0, 2, 19, 11
+if DEF(_LOCALE_FR)
+	dw .MenuData2FR
+else
 	dw .MenuData2
+endc
 	db 1 ; default option
 
 .MenuData2:
@@ -100,6 +104,14 @@ CeladonHomeDecorStore3FClerk1Script:
 	db "Yellow    ¥45000@"
 	db "Green     ¥45000@"
 	db "Cancel@"
+
+.MenuData2FR:
+	db $80 ; flags
+	db 4 ; items
+	db "Red       ¥45000@"
+	db "Yellow    ¥45000@"
+	db "Green     ¥45000@"
+	db "Retour@"
 
 CeladonHomeDecorStore3FClerk2Script:
 	checkevent EVENT_DECO_CARPET_2
@@ -126,17 +138,39 @@ CeladonHomeDecorStore3FClerk2Script:
 	jumpopenedtext CeladonHomeDecorStore3FNoMoneyText
 
 CeladonHomeDecorStore3FClerk1Text:
+if DEF(_LOCALE_FR)
+	text "Bienvenue! Un"
+	line "tapis peut-être?"
+	done
+else
 	text "Welcome! Would"
 	line "you like a carpet?"
 	done
+endc
 
 CeladonHomeDecorStore3FClerk2Text:
+if DEF(_LOCALE_FR)
+	text "Un tapis, ca"
+	line "fait toute la"
+
+	para "piece, non?"
+	done
+else
 	text "Doesn't a carpet"
 	line "really tie your"
 	cont "room together?"
 	done
+endc
 
 CeladonHomeDecorStore3FClerk2SaleText:
+if DEF(_LOCALE_FR)
+	text "Notre tapis bleu"
+	line "royal est a"
+
+	para "¥35000! Tu"
+	line "en veux un?"
+	done
+else
 	text "Our imported"
 	line "Royal Blue Carpet"
 
@@ -146,79 +180,172 @@ CeladonHomeDecorStore3FClerk2SaleText:
 	para "Would you like to"
 	line "buy one?"
 	done
+endc
 
 CeladonHomeDecorStore3FClerk2YesText:
+if DEF(_LOCALE_FR)
+	text "Merci!"
+	line "Bonne journee!"
+	done
+else
 	text "Thank you!"
 	line "Have a nice day!"
 	done
+endc
 
 CeladonHomeDecorStore3FClerk2NoText:
+if DEF(_LOCALE_FR)
+	text "Bonne journee!"
+	done
+else
 	text "Have a nice day!"
 	done
+endc
 
 BoughtRedCarpetText:
+if DEF(_LOCALE_FR)
+	text "<PLAYER> a acheté"
+	line "Tapis rouge."
+	done
+else
 	text "<PLAYER> bought"
 	line "Red Carpet."
 	done
+endc
 
 RedCarpetSentText:
+if DEF(_LOCALE_FR)
+	text "Tapis rouge"
+	line "envoyé chez toi."
+	done
+else
 	text "Red Carpet"
 	line "was sent home."
 	done
+endc
 
 BoughtBlueCarpetText:
+if DEF(_LOCALE_FR)
+	text "<PLAYER> a acheté"
+	line "Tapis bleu."
+	done
+else
 	text "<PLAYER> bought"
 	line "Blue Carpet."
 	done
+endc
 
 BlueCarpetSentText:
+if DEF(_LOCALE_FR)
+	text "Tapis bleu"
+	line "envoyé chez toi."
+	done
+else
 	text "Blue Carpet"
 	line "was sent home."
 	done
+endc
 
 BoughtYellowCarpetText:
+if DEF(_LOCALE_FR)
+	text "<PLAYER> a acheté"
+	line "Tapis jaune."
+	done
+else
 	text "<PLAYER> bought"
 	line "Yellow Carpet."
 	done
+endc
 
 YellowCarpetSentText:
+if DEF(_LOCALE_FR)
+	text "Tapis jaune"
+	line "envoyé chez toi."
+	done
+else
 	text "Yellow Carpet"
 	line "was sent home."
 	done
+endc
 
 BoughtGreenCarpetText:
+if DEF(_LOCALE_FR)
+	text "<PLAYER> a acheté"
+	line "Tapis vert."
+	done
+else
 	text "<PLAYER> bought"
 	line "Green Carpet."
 	done
+endc
 
 GreenCarpetSentText:
+if DEF(_LOCALE_FR)
+	text "Tapis vert"
+	line "envoyé chez toi."
+	done
+else
 	text "Green Carpet"
 	line "was sent home."
 	done
+endc
 
 CeladonHomeDecorStore3FNoMoneyText:
+if DEF(_LOCALE_FR)
+	text "Tu n'as pas assez"
+	line "d'argent!"
+	done
+else
 	text "You can't afford"
 	line "that!"
 	done
+endc
 
 CeladonHomeDecorStore3FAlreadyBoughtText:
+if DEF(_LOCALE_FR)
+	text "Tu l'as déjà!"
+	done
+else
 	text "You already have"
 	line "that!"
 	done
+endc
 
 CeladonHomeDecorStore3FYoungsterText:
+if DEF(_LOCALE_FR)
+	text "Ce tapis est"
+	line "tout doux!"
+	done
+else
 	text "This carpet feels"
 	line "so plush!"
 	done
+endc
 
 CeladonHomeDecorStore3FBeautyText:
+if DEF(_LOCALE_FR)
+	text "Certains tapis"
+	line "viennent de"
+
+	para "Kalos!"
+	done
+else
 	text "Some of these"
 	line "carpets are im-"
 	cont "ported from Kalos!"
 	done
+endc
 
 CeladonHomeDecorStore3FDirectoryText:
+if DEF(_LOCALE_FR)
+	text "Elegance en"
+	line "couleurs!"
+
+	para "3F: Tapis"
+	done
+else
 	text "Colorful Elegance"
 
 	para "3F: Carpets"
 	done
+endc

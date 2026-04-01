@@ -35,8 +35,8 @@ SchoolgirlImogenSeenText:
 	done
 
 SchoolgirlImogenBeatenText:
-	text "Il y a donc de"
-	line "meilleurs dresseurs…"
+	text "Il y a donc mieux"
+	line "que moi…"
 	done
 
 Route33SignText:

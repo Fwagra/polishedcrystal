@@ -5,7 +5,9 @@ Route42LyraGreetingText:
 	line "dence. J'étudiais"
 	para "les effets de"
 	line "l'avalanche sur"
-	para "les #mon sauvages."
+
+	para "les #mon"
+	line "sauvages."
 	para "Tu vas à ACAJOU"
 	line "pour un BADGE?"
 	para "Alors j'ai un"
@@ -39,8 +41,10 @@ Route42LyraWhirlpoolText:
 	text "CELESTA: C'est"
 	line "SIPHON."
 	para "Apprends-le à un"
-	line "#mon pour passer"
-	cont "les eaux agitées."
+	line "#mon pour"
+
+	para "passer les eaux"
+	line "agitées."
 	para "Je dois y aller."
 	line "Contente de"
 	para "t'avoir vue,"
@@ -51,7 +55,9 @@ Route42LyraWhirlpoolText:
 FisherTully1SeenText:
 	text "Je vais te montrer"
 	line "la puissance des"
-	cont "#mon que j'ai pêchés!"
+
+	para "#mon que j'ai"
+	line "peches!"
 	done
 
 FisherTully1BeatenText:

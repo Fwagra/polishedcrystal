@@ -50,6 +50,15 @@ Route19BeachHouseVictorScript:
 	jumpopenedtext .NoBattleText
 
 .GreetingText:
+if DEF(_LOCALE_FR)
+	text "Salut, mon pote!"
+	line "Moi c'est Victor."
+
+	para "J'adore surfer,"
+	line "et Puka aussi."
+	cont "C'est mon Pikachu!"
+	done
+else
 	text "Hey there, friend!"
 	line "The name's Victor."
 
@@ -57,8 +66,25 @@ Route19BeachHouseVictorScript:
 	line "and so does Puka."
 	cont "That's my Pikachu!"
 	done
+endc
 
 .ChallengeText:
+if DEF(_LOCALE_FR)
+	text "Whoa!"
+
+	para "Ton Pikachu sait"
+	line "surfer! Alors,"
+	cont "j'suis pas seul…"
+
+	para "Génial! Tu as"
+	line "droit à un"
+
+	para "combat de Surf"
+	line "avec moi et Puka!"
+
+	para "On y va?"
+	done
+else
 	text "Whoa!"
 
 	para "Your Pikachu knows"
@@ -73,19 +99,55 @@ Route19BeachHouseVictorScript:
 
 	para "Give it a go?"
 	done
+endc
 
 .SeenText:
+if DEF(_LOCALE_FR)
+	text "La mer unit tous"
+	line "les surfeurs!"
+	cont "En garde!"
+	done
+else
 	text "The sea unites"
 	line "all in surfdom!"
 	cont "Let's go!"
 	done
+endc
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "Je savais que"
+	line "tu pouvais"
+	cont "le faire!"
+	done
+else
 	text "I knew you could"
 	line "do it!"
 	done
+endc
 
 .AfterText:
+if DEF(_LOCALE_FR)
+	text "J'ai entendu dire"
+	line "que certains Pika-"
+
+	para "chu de Johto ont"
+	line "appris à surfer"
+	cont "tout seuls."
+
+	para "C'est peut-être"
+	line "de là que vient"
+	cont "le mien."
+
+	para "J'ai trouvé Puka"
+	line "échoué sur la"
+	cont "plage il y a des"
+
+	para "années, et depuis,"
+	line "on est"
+	cont "partenaires."
+	done
+else
 	text "I hear some Pika-"
 	line "chu in Johto"
 
@@ -97,13 +159,26 @@ Route19BeachHouseVictorScript:
 
 	para "I found Puka wash-"
 	line "ed ashore years"
-	cont "ago, and we've been"
+	cont "ago. We've been"
 
 	para "partners ever"
 	line "since then."
 	done
+endc
 
 .NoPikachuText:
+if DEF(_LOCALE_FR)
+	text "Toi aussi,"
+	line "tu peux le faire!"
+
+	para "Va trouver un"
+	line "Pikachu Surfeur!"
+
+	para "Montre-moi que tu"
+	line "aimes"
+	cont "surfer aussi!"
+	done
+else
 	text "You can do it,"
 	line "too!"
 
@@ -114,11 +189,19 @@ Route19BeachHouseVictorScript:
 	para "Show me that you"
 	line "love Surfing too!"
 	done
+endc
 
 .NoBattleText:
+if DEF(_LOCALE_FR)
+	text "Oh… Viens surfer"
+	line "quand tu veux,"
+	cont "mon pote!"
+	done
+else
 	text "Shucks. Come Surf"
 	line "anytime, friend!"
 	done
+endc
 
 Route19BeachHouseSurfingPikachuScript:
 	faceplayer
@@ -126,5 +209,10 @@ Route19BeachHouseSurfingPikachuScript:
 	end
 
 .Text:
+if DEF(_LOCALE_FR)
 	text "Puka: Pi-kaa!"
 	done
+else
+	text "Puka: Pi-kaa!"
+	done
+endc

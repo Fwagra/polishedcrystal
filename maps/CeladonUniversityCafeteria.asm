@@ -66,6 +66,14 @@ CeladonUniversityCafeteriaCoreyScript:
 	jumpthisopenedtext
 
 .FinalText:
+if DEF(_LOCALE_FR)
+	text "Tu serais une"
+	line "eleve modele ici."
+
+	para "Mais tu as d'autres"
+	line "projets, non?"
+	done
+else
 	text "You'd be a star"
 	line "student if you"
 	cont "enrolled here."
@@ -73,8 +81,25 @@ CeladonUniversityCafeteriaCoreyScript:
 	para "But you have other"
 	line "goals, don't you?"
 	done
+endc
 
 .IntroText1:
+if DEF(_LOCALE_FR)
+	text "Moi, Corey! Je suis"
+	line "du top 4 de"
+
+	para "l'universite de"
+	line "Céladopole!"
+
+	para "On est les 4"
+	line "Céladon!"
+
+	para "Je te montre"
+	line "pourquoi avec un"
+
+	para "petit combat!"
+	done
+else
 	text "I'm Corey! I'm one"
 	line "of top four train-"
 	cont "ers at Celadon"
@@ -89,8 +114,23 @@ CeladonUniversityCafeteriaCoreyScript:
 	para "title with a quick"
 	line "battle!"
 	done
+endc
 
 .IntroText2:
+if DEF(_LOCALE_FR)
+	text "Moi, Corey! Je suis"
+	line "des 4 Céladon!"
+
+	para "Tu veux nous"
+	line "quatre?"
+
+	para "OK, j'ai fini"
+	line "de manger."
+
+	para "Tu es pret?"
+	line "On se bat?"
+	done
+else
 	text "I'm Corey! I'm one"
 	line "of the Celadon"
 	cont "Four!"
@@ -104,23 +144,54 @@ CeladonUniversityCafeteriaCoreyScript:
 	para "Are you ready to"
 	line "battle?"
 	done
+endc
 
 .NoBattleText:
+if DEF(_LOCALE_FR)
+	text "Oui, on peut"
+	line "faire peur."
+	done
+else
 	text "Yeah, we can be"
 	line "intimidating."
 	done
+endc
 
 .SeenText:
+if DEF(_LOCALE_FR)
+	text "Ce sera facile!"
+	done
+else
 	text "Winning this will"
 	line "be a breeze!"
 	done
+endc
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "Je t'ai sous-"
+	line "estime…"
+	done
+else
 	text "I underestimated"
 	line "you…"
 	done
+endc
 
 .AfterText1:
+if DEF(_LOCALE_FR)
+	text "Tu es fort!"
+
+	para "Mais je ne suis"
+	line "qu'un des 4"
+
+	para "Céladon."
+	line "Va defier les"
+
+	para "autres pour tester"
+	line "ta force!"
+	done
+else
 	text "You're a strong"
 	line "trainer!"
 
@@ -133,8 +204,19 @@ CeladonUniversityCafeteriaCoreyScript:
 	para "us to really test"
 	line "your strength!"
 	done
+endc
 
 .AfterText2:
+if DEF(_LOCALE_FR)
+	text "Tu as vaincu les"
+	line "4 Céladon?"
+
+	para "Bravo!"
+
+	para "Tiens, un"
+	line "souvenir!"
+	done
+else
 	text "You beat all of"
 	line "the Celadon Four?"
 
@@ -143,12 +225,29 @@ CeladonUniversityCafeteriaCoreyScript:
 	para "Take this as a"
 	line "memento!"
 	done
+endc
 
 CeladonUni_NoRoomText:
+if DEF(_LOCALE_FR)
+	text "Tu ne peux pas"
+	line "porter ca."
+	done
+else
 	text "You can't carry it."
 	done
+endc
 
 CeladonUniversityCafeteriaCooltrainerfText:
+if DEF(_LOCALE_FR)
+	text "Ici, les meilleurs"
+	line "steaks burger"
+
+	para "style Cramois'I"
+	line "de tout Kanto!"
+
+	para "Comme a la maison."
+	done
+else
 	text "This place makes"
 	line "the best Cinnabar-"
 	cont "style hamburger"
@@ -159,8 +258,17 @@ CeladonUniversityCafeteriaCooltrainerfText:
 	para "It's just like"
 	line "being home."
 	done
+endc
 
 CeladonUniversityCafeteriaBeautyText:
+if DEF(_LOCALE_FR)
+	text "Le chef a refait"
+	line "du Vieux Gateau!"
+
+	para "Je repasserai"
+	line "peut-etre…"
+	done
+else
 	text "The cook finally"
 	line "made another batch"
 	cont "of Old Gateau!"
@@ -168,8 +276,20 @@ CeladonUniversityCafeteriaBeautyText:
 	para "I might go back"
 	line "for seconds."
 	done
+endc
 
 CeladonUniversityCafeteriaYoungster1Text:
+if DEF(_LOCALE_FR)
+	text "J'ai demande des"
+	line "Cornets Castelia a"
+
+	para "la cafet'."
+	line "Ca me rappelle"
+
+	para "la maison, et"
+	line "c'est trop bon!"
+	done
+else
 	text "I asked the cafe-"
 	line "teria to stock"
 	cont "Casteliacones."
@@ -178,13 +298,23 @@ CeladonUniversityCafeteriaYoungster1Text:
 	line "home, and they're"
 	cont "yummy too!"
 	done
+endc
 
 CeladonUniversityCafeteriaLadyText:
+if DEF(_LOCALE_FR)
+	text "Je fais attention."
+	line "Aujourd'hui,"
+
+	para "salade Graine Glu"
+	line "pour moi."
+	done
+else
 	text "I'm on a diet."
 	line "Today it's a"
 	para "nutritious Slip"
 	line "Seed salad for me."
 	done
+endc
 
 CeladonUniversityCafeteriaYoungster2Script:
 	checkevent EVENT_GOT_LEMONADE_IN_UNIVERSITY
@@ -199,6 +329,14 @@ CeladonUniversityCafeteriaYoungster2Script:
 	jumpopenedtext .Text2
 
 .Text1:
+if DEF(_LOCALE_FR)
+	text "Le distrib' m'a"
+	line "file une boisson"
+
+	para "en trop!"
+	line "Tiens, partageons."
+	done
+else
 	text "The vending ma-"
 	line "chine gave me an"
 	cont "extra drink!"
@@ -206,12 +344,22 @@ CeladonUniversityCafeteriaYoungster2Script:
 	para "Let me share it"
 	line "with you."
 	done
+endc
 
 .Text2:
+if DEF(_LOCALE_FR)
+	text "J'adore une Eau"
+	line "Fraiche froide"
+
+	para "apres un dur"
+	line "combat."
+	done
+else
 	text "I love a cold"
 	line "Lemonade after a"
 	cont "tough battle."
 	done
+endc
 
 CeladonUniversityCafeteriaBakerScript:
 	faceplayer
@@ -234,18 +382,43 @@ CeladonUniversityCafeteriaBakerScript:
 	jumpthisopenedtext
 
 .Text2:
+if DEF(_LOCALE_FR)
+	text "Voila, mon ange!"
+	line "Bon appetit!"
+	done
+else
 	text "Here you go, hon!"
 	line "Enjoy it!"
 	done
+endc
 
 .NotEnoughMoney:
 	jumpthisopenedtext
 
+if DEF(_LOCALE_FR)
+	text "Pas assez"
+	line "d'argent…"
+	done
+else
 	text "You don't have"
 	line "enough money…"
 	done
+endc
 
 .Text1:
+if DEF(_LOCALE_FR)
+	text "Quoi donc, mon"
+
+	para "ange? Desole,"
+	line "le service du soir"
+
+	para "est fini. Il reste"
+	line "des Restes, mais"
+
+	para "c'est ¥4000."
+	line "Tu en veux?"
+	done
+else
 	text "What's that, hon?"
 
 	para "Sorry, we're done"
@@ -257,24 +430,48 @@ CeladonUniversityCafeteriaBakerScript:
 	para "it'll cost ¥4000."
 	line "Want some?"
 	done
+endc
 
 .Text3:
+if DEF(_LOCALE_FR)
+	text "Plus de Restes"
+	line "aujourd'hui."
+	done
+else
 	text "There aren't any"
 	line "more Leftovers"
 	cont "today."
 	done
+endc
 
 .Text4:
+if DEF(_LOCALE_FR)
+	text "Bonne journee!"
+	done
+else
 	text "Have a nice day!"
 	done
+endc
 
 .Text6:
+if DEF(_LOCALE_FR)
+	text "Tu ne peux pas"
+	line "porter ca, ange."
+	done
+else
 	text "You can't carry"
 	line "it, hon."
 	done
+endc
 
 CeladonUniversityCafeteriaSignText:
+if DEF(_LOCALE_FR)
+	text "Merci de ranger"
+	line "apres ton repas."
+	done
+else
 	text "Please clean up"
 	line "when you are"
 	cont "finished eating."
 	done
+endc

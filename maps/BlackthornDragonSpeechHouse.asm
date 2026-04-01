@@ -17,6 +17,21 @@ BlackthornDragonSpeechHouse_MapScriptHeader:
 	pokemon_event  5,  5, DRATINI, SPRITEMOVEDATA_POKEMON, -1, PAL_NPC_BLUE, BlackthornDragonSpeechHouseDratiniText, -1
 
 BlackthornDragonSpeechHouseGrannyText:
+if DEF(_LOCALE_FR)
+	text "Un clan de dres-"
+	line "seurs commandant"
+
+	para "les dragons vit"
+	line "ici à Ebènelle."
+
+	para "C'est pour cela"
+	line "qu'il y a beaucoup"
+
+	para "de légendes sur"
+	line "les dragons dans"
+	cont "cette ville."
+	done
+else
 	text "A clan of trainers"
 	line "who can freely"
 
@@ -30,7 +45,13 @@ BlackthornDragonSpeechHouseGrannyText:
 	para "about dragons in"
 	line "this town."
 	done
+endc
 
 BlackthornDragonSpeechHouseDratiniText:
+if DEF(_LOCALE_FR)
+	text "Minidraco: Draa!"
+	done
+else
 	text "Dratini: Draa!"
 	done
+endc

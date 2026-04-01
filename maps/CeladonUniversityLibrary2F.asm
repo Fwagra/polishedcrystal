@@ -48,6 +48,15 @@ CeladonUniversityLibrary2F_MapScriptHeader:
 	itemball_event  0,  1, TIMER_BALL, 1, EVENT_CELADON_UNIVERSITY_LIBRARY_2F_TIMER_BALL
 
 CeladonUniversityLibrary2FCosplayerText:
+if DEF(_LOCALE_FR)
+	text "J'adore la ville!"
+
+	para "Je peux sortir en"
+	line "cosplay sans qu'on"
+
+	para "me regarde bizarre."
+	done
+else
 	text "It's great being"
 	line "in the city!"
 
@@ -57,8 +66,20 @@ CeladonUniversityLibrary2FCosplayerText:
 	para "people don't bat"
 	line "an eye!"
 	done
+endc
 
 CeladonUniversityLibrary2FLassText:
+if DEF(_LOCALE_FR)
+	text "Ne juge pas un"
+	line "livre a sa couver-"
+
+	para "ture."
+	line "Parfois la plus"
+
+	para "terne cache la"
+	line "meilleure histoire."
+	done
+else
 	text "Never judge a book"
 	line "by its cover."
 
@@ -68,6 +89,7 @@ CeladonUniversityLibrary2FLassText:
 	para "can hide the best"
 	line "stories."
 	done
+endc
 
 CeladonUniversityLibrary2FArtistScript:
 	showtext .Text1
@@ -76,20 +98,49 @@ CeladonUniversityLibrary2FArtistScript:
 	end
 
 .Text1:
+if DEF(_LOCALE_FR)
+	text "Jasmine fixait le"
+	line "regard d'Erika…"
+	done
+else
 	text "“Jasmine gazed"
 	line "into Erika's deep"
 	cont "brown eyes…”"
 	done
+endc
 
 .Text2:
+if DEF(_LOCALE_FR)
+	text "Hein? Degage!"
+
+	para "Lire par-dessus"
+	line "l'epaule, c'est"
+
+	para "lourd!"
+	done
+else
 	text "Huh? Go away!"
 
 	para "It's rude to read"
 	line "over someone's"
 	cont "shoulder!"
 	done
+endc
 
 CeladonUniversityLibrary2FSuper_nerdText:
+if DEF(_LOCALE_FR)
+	text "La commande reseau"
+	line "affiche un message"
+
+	para "sur tous les ecrans!"
+	line "Que poster…"
+
+	para "Pizza gratuite au"
+	line "bureau de Westwood!"
+
+	para "Hi hi hi."
+	done
+else
 	text "The “net send”"
 	line "command will show"
 
@@ -105,14 +156,33 @@ CeladonUniversityLibrary2FSuper_nerdText:
 
 	para "Hehehe."
 	done
+endc
 
 CeladonUniversityLibrary2FCooltrainerfText:
+if DEF(_LOCALE_FR)
+	text "C'est MON livre."
+	line "Et je vais le"
+
+	para "LIRE!"
+	done
+else
 	text "This is my book."
 	line "And I'm going to"
 	cont "READ IT!"
 	done
+endc
 
 CeladonUniversityLibrary2FYoungsterText:
+if DEF(_LOCALE_FR)
+	text "Je lis sur un"
+	line "#mon legendaire"
+
+	para "qui deformerait"
+	line "l'espace."
+
+	para "Ca fait peur…"
+	done
+else
 	text "I'm reading about a"
 	line "legendary #mon"
 
@@ -121,8 +191,20 @@ CeladonUniversityLibrary2FYoungsterText:
 
 	para "It's pretty scary…"
 	done
+endc
 
 CeladonUniversityLibrary2FBookshelf1Text:
+if DEF(_LOCALE_FR)
+	text "Alphabet ancien"
+	line "grave sur des"
+
+	para "#mon."
+	line "Un de chaque,"
+
+	para "et un voeu"
+	line "s'exauce."
+	done
+else
 	text "It's a book con-"
 	line "taining #mon"
 
@@ -133,8 +215,19 @@ CeladonUniversityLibrary2FBookshelf1Text:
 	line "kind, they can"
 	cont "grant wishes."
 	done
+endc
 
 CeladonUniversityLibrary2FBookshelf2Text:
+if DEF(_LOCALE_FR)
+	text "Livre en miettes."
+	line "Titre efface,"
+
+	para "mais une photo"
+	line "de #mon en grosse"
+
+	para "armure."
+	done
+else
 	text "This book is"
 	line "falling apart."
 
@@ -147,8 +240,16 @@ CeladonUniversityLibrary2FBookshelf2Text:
 	para "wearing heavy"
 	line "armor."
 	done
+endc
 
 CeladonUniversityLibrary2FBookshelf3Text:
+if DEF(_LOCALE_FR)
+	text "Cadenas geant sur"
+	line "la couverture."
+
+	para "On touche pas."
+	done
+else
 	text "It's a book with a"
 	line "giant padlock on"
 	cont "the cover."
@@ -156,8 +257,16 @@ CeladonUniversityLibrary2FBookshelf3Text:
 	para "Better leave it"
 	line "alone."
 	done
+endc
 
 CeladonUniversityLibrary2FBookshelf4Text:
+if DEF(_LOCALE_FR)
+	text "Livre en langue"
+	line "etrangere!"
+
+	para "On le repose…"
+	done
+else
 	text "This book's written"
 	line "in a foreign"
 	cont "language!"
@@ -165,16 +274,33 @@ CeladonUniversityLibrary2FBookshelf4Text:
 	para "Better put it"
 	line "back…"
 	done
+endc
 
 CeladonUniversityLibrary2FBookshelf5Text:
+if DEF(_LOCALE_FR)
+	text "Derriere les"
+	line "livres…"
+
+	para "Rien du tout."
+	done
+else
 	text "Behind these"
 	line "books…"
 
 	para "Nope. There's"
 	line "nothing here."
 	done
+endc
 
 CeladonUniversityLibrary2FBookshelf6Text:
+if DEF(_LOCALE_FR)
+	text "#mon et formes"
+	line "regionales."
+
+	para "Un Raichu bizarre"
+	line "sur la photo…"
+	done
+else
 	text "It's a book about"
 	line "#mon that have"
 
@@ -186,8 +312,16 @@ CeladonUniversityLibrary2FBookshelf6Text:
 	cont "looks a little"
 	cont "strange…"
 	done
+endc
 
 CeladonUniversityLibrary2FBookshelf7Text:
+if DEF(_LOCALE_FR)
+	text "Concours #mon."
+	line "Un batiment imposant"
+
+	para "en couverture."
+	done
+else
 	text "It's a book about"
 	line "#mon Contests."
 
@@ -197,8 +331,17 @@ CeladonUniversityLibrary2FBookshelf7Text:
 	para "is pictured on"
 	line "the cover."
 	done
+endc
 
 CeladonUniversityLibrary2FBookshelf8Text:
+if DEF(_LOCALE_FR)
+	text "Un gamin sur un"
+	line "#mon en couverture."
+
+	para "Titre: How to Train"
+	line "Your Dragonite."
+	done
+else
 	text "A boy is shown"
 	line "riding a #mon"
 
@@ -209,8 +352,19 @@ CeladonUniversityLibrary2FBookshelf8Text:
 	line "Dragonite” is"
 	cont "written in bold."
 	done
+endc
 
 CeladonUniversityLibrary2FBookshelf9Text:
+if DEF(_LOCALE_FR)
+	text "Monde peuple"
+	line "uniquement de"
+
+	para "#mon!"
+	line "Pikachu in #Park,"
+
+	para "dit la couverture."
+	done
+else
 	text "It's a book de-"
 	line "picting a world"
 
@@ -223,8 +377,17 @@ CeladonUniversityLibrary2FBookshelf9Text:
 	para "is written on the"
 	line "cover."
 	done
+endc
 
 CeladonUniversityLibrary2FBookshelf10Text:
+if DEF(_LOCALE_FR)
+	text "Ile de robots"
+	line "#mon geants."
+
+	para "#mon Robotics,"
+	line "par Anne Droid…"
+	done
+else
 	text "It's a book about"
 	line "an island of giant"
 	cont "#mon robots."
@@ -232,8 +395,17 @@ CeladonUniversityLibrary2FBookshelf10Text:
 	para "“#mon Robotics”"
 	line "by Anne Droid…"
 	done
+endc
 
 CeladonUniversityLibrary2FBookshelf11Text:
+if DEF(_LOCALE_FR)
+	text "Pardon et Oublie,"
+	line "par Saul Goode."
+
+	para "Photo d'un type"
+	line "tout sourire."
+	done
+else
 	text "“Forgive and"
 	line "Forget” by Saul"
 	cont "Goode."
@@ -242,14 +414,30 @@ CeladonUniversityLibrary2FBookshelf11Text:
 	line "of a man with a"
 	cont "big grin."
 	done
+endc
 
 CeladonUniversityLibrary2FBookshelf12Text:
+if DEF(_LOCALE_FR)
+	text "Apesanteur, par"
+	line "Andy Gravity."
+
+	para "Tout leger!"
+	done
+else
 	text "“Weightlessness”"
 	line "by Andy Gravity."
 	cont "Sounds flighty!"
 	done
+endc
 
 CeladonUniversityLibrary2FBookshelf13Text:
+if DEF(_LOCALE_FR)
+	text "Traite de bio"
+	line "#mon."
+
+	para "Un pave!"
+	done
+else
 	text "It's a book"
 	line "explaining the"
 
@@ -258,8 +446,17 @@ CeladonUniversityLibrary2FBookshelf13Text:
 
 	para "It's enormous!"
 	done
+endc
 
 CeladonUniversityLibrary2FBookshelf14Text:
+if DEF(_LOCALE_FR)
+	text "Toiles d'araignee"
+	line "partout."
+
+	para "Personne ne lit ca"
+	line "depuis longtemps."
+	done
+else
 	text "This book is"
 	line "covered in"
 	cont "cobwebs."
@@ -268,8 +465,16 @@ CeladonUniversityLibrary2FBookshelf14Text:
 	line "been read in a"
 	cont "while."
 	done
+endc
 
 CeladonUniversityLibrary2FBookshelf15Text:
+if DEF(_LOCALE_FR)
+	text "Un #mon terrible."
+	line "Titre: Absofusion"
+
+	para "et le Trio du Tao."
+	done
+else
 	text "It's a book de-"
 	line "picting a fearsome"
 	cont "#mon."
@@ -280,8 +485,17 @@ CeladonUniversityLibrary2FBookshelf15Text:
 	para "written in big"
 	line "letters."
 	done
+endc
 
 CeladonUniversityLibrary2FBookshelf16Text:
+if DEF(_LOCALE_FR)
+	text "Ancient #mopolis:"
+	line "histoire des"
+
+	para "#mon disparus."
+	line "Interessant!"
+	done
+else
 	text "“Ancient #-"
 	line "mopolis: A History"
 
@@ -291,16 +505,33 @@ CeladonUniversityLibrary2FBookshelf16Text:
 	para "Sounds"
 	line "interesting!"
 	done
+endc
 
 CeladonUniversityLibrary2FBookshelf17Text:
+if DEF(_LOCALE_FR)
+	text "Typecasting: le"
+	line "mystere de"
+
+	para "Simularbre."
+	done
+else
 	text "It's a book titled"
 	line "“Typecasting: The"
 
 	para "Mystery of"
 	line "Sudowoodo”."
 	done
+endc
 
 CeladonUniversityLibrary2FBookshelf18Text:
+if DEF(_LOCALE_FR)
+	text "Un arbre ancien"
+	line "garde par trois"
+
+	para "titans."
+	line "Presque magique."
+	done
+else
 	text "It's a book about"
 	line "an ancient tree"
 
@@ -310,8 +541,17 @@ CeladonUniversityLibrary2FBookshelf18Text:
 	para "It looks almost"
 	line "magical."
 	done
+endc
 
 CeladonUniversityLibrary2FBookshelf19Text:
+if DEF(_LOCALE_FR)
+	text "Trace originale du"
+	line "Train Magnetique!"
+
+	para "Arret prevu a"
+	line "Ecruteak."
+	done
+else
 	text "It's a copy of the"
 	line "original route for"
 	cont "the Magnet Train!"
@@ -320,8 +560,17 @@ CeladonUniversityLibrary2FBookshelf19Text:
 	line "stop-off station"
 	cont "in Ecruteak City."
 	done
+endc
 
 CeladonUniversityLibrary2FBookshelf20Text:
+if DEF(_LOCALE_FR)
+	text "Livres rouges,"
+	line "bleus, jaunes,"
+
+	para "verts… Toutes les"
+	line "couleurs!"
+	done
+else
 	text "Red books,"
 	line "blue books,"
 	cont "yellow books,"
@@ -330,37 +579,64 @@ CeladonUniversityLibrary2FBookshelf20Text:
 	para "Books of every"
 	line "color!"
 	done
+endc
 
 CeladonUniversityLibrary2FComputer1:
 	jumpthistext
 
+if DEF(_LOCALE_FR)
+	text "Ecran de connexion"
+	line "avec un Magicarpe"
+
+	para "en fond."
+	done
+else
 	text "There's a login"
 	line "screen with a"
 
 	para "background image"
 	line "of a Magikarp."
 	done
+endc
 
 CeladonUniversityLibrary2FComputer2:
 	jumpthistext
 
+if DEF(_LOCALE_FR)
+	text "Session pas"
+	line "fermee!"
+	done
+else
 	text "Someone forgot to"
 	line "log out!"
 	done
+endc
 
 CeladonUniversityLibrary2FComputer3:
 	jumpthistext
 
+if DEF(_LOCALE_FR)
+	text "Un texte plein"
+	line "de fautes d'ortho."
+	done
+else
 	text "There's a story"
 	line "full of grammar"
 	cont "and spelling"
 	cont "errors."
 	done
+endc
 
 CeladonUniversityLibrary2FComputer4:
 	jumpthistext
 
+if DEF(_LOCALE_FR)
+	text "Page web: devenir"
+	line "un l33t h4x0r."
+	done
+else
 	text "There's a web page"
 	line "about how to be a"
 	cont "“l33t h4x0r”."
 	done
+endc

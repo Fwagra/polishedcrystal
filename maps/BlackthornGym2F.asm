@@ -58,13 +58,32 @@ BlackthornGym2FBoulders:
 	earthquake 80
 	jumpthistext
 
+if DEF(_LOCALE_FR)
+	text "Le rocher est"
+	line "passé au travers!"
+	done
+else
 	text "The boulder fell"
 	line "through!"
 	done
+endc
 
 GenericTrainerCooltrainermCody:
 	generictrainer COOLTRAINERM, CODY, EVENT_BEAT_COOLTRAINERM_CODY, .SeenText, .BeatenText
 
+if DEF(_LOCALE_FR)
+	text "Les membres de la"
+	line "confrérie des"
+
+	para "dragons ne peuvent"
+	line "utiliser des"
+	cont "#mon dragon"
+	cont "que si"
+
+	para "le MAITRE le"
+	line "permet."
+	done
+else
 	text "Members of our"
 	line "dragon-user clan"
 
@@ -74,26 +93,55 @@ GenericTrainerCooltrainermCody:
 	para "our Master allows"
 	line "it."
 	done
+endc
 
 .SeenText:
+if DEF(_LOCALE_FR)
+	text "On n'utilise pas"
+	line "tous des #mon"
+	cont "dragon."
+	done
+else
 	text "It's not as if we"
 	line "all use Dragon-"
 	cont "type #mon."
 	done
+endc
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "Zut! Il me faut"
+	line "un dragon!"
+	done
+else
 	text "Rats! If only I"
 	line "had a dragon!"
 	done
+endc
 
 GenericTrainerCooltrainerfFran:
 	generictrainer COOLTRAINERF, FRAN, EVENT_BEAT_COOLTRAINERF_FRAN, .SeenText, .BeatenText
 
+if DEF(_LOCALE_FR)
+	text "Oulà! La SANDRA"
+	line "elle sera furax!"
+	done
+else
 	text "Uh-oh… Clair is"
 	line "going to be mad…"
 	done
+endc
 
 .SeenText:
+if DEF(_LOCALE_FR)
+	text "Un dresseur"
+	line "quelconque ne"
+	cont "passera pas!"
+
+	para "SANDRA ne le"
+	line "permettrait pas!"
+	done
+else
 	text "I can't allow a"
 	line "nameless trainer"
 	cont "past me!"
@@ -101,7 +149,13 @@ GenericTrainerCooltrainerfFran:
 	para "Clair would be"
 	line "livid if I did!"
 	done
+endc
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "Pffff. Perdu..."
+	done
+else
 	text "Awww… I lost…"
 	done
+endc

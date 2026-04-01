@@ -112,10 +112,11 @@ Route39HikerText:
 	line "dans les rochers,"
 	para "puis un sommet"
 	line "glacé…"
-	para "On dit que certains"
-	line "#mon se sont"
-	para "adaptés au climat"
-	line "difficile."
+	para "Certains disent"
+	line "que des #mon se"
+
+	para "sont adaptes au"
+	line "climat difficile."
 	para "…Mais sans des"
 	line "LUNETTES GOGO,"
 	cont "c'est trop risqué."
@@ -130,13 +131,16 @@ Route39SignText:
 
 Route39AdvancedTips1Text:
 	text "ASTUCE+"
-	para "La tempête de sable"
-	line "augmente la DEF"
-	cont "SPEC. des #mon"
-	cont "ROCHE!"
-	para "Et la grêle augmente"
+	para "La tempete de"
+	line "sable augmente la"
+
+	para "DEF SPEC. des"
+	line "#mon ROCHE!"
+
+	para "La grele augmente"
 	line "la DEF des #mon"
-	cont "GLACE!"
+
+	para "GLACE!"
 	done
 
 Route39AdvancedTips2Text:
@@ -147,7 +151,9 @@ Route39AdvancedTips2Text:
 	line "RUNIQUE a plus"
 	para "de chances de"
 	line "trouver un #mon"
-	cont "sauvage avec objet!"
+
+	para "sauvage avec"
+	line "objet!"
 	done
 
 RuggedRoadAheadSignText:

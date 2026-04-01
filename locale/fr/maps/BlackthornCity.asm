@@ -2,7 +2,7 @@ BlackthornCitySignText:
 	text "EBENELLE"
 
 	para "Une montagne calme"
-	line "et retiree du"
+	line "et retirée du"
 	cont "reste du monde"
 	done
 
@@ -10,7 +10,7 @@ BlackthornGymSignText:
 	text "ARENA d'EBENELLE"
 	line "CHAMPION: SANDRA"
 
-	para "La detentrice de"
+	para "La détentrice de"
 	line "#mon dragon"
 	done
 
@@ -32,7 +32,7 @@ BlackthornCityTrainerTipsText:
 
 	para "se soignera de"
 	line "n'importe quel"
-	cont "etat."
+	cont "état."
 	done
 
 SantosOpenText:
@@ -41,9 +41,9 @@ SantosOpenText:
 	para "Etiquette"
 	line "Spectre…"
 
-	para "Les capacites"
+	para "Les capacités"
 	line "Spectre sont"
-	cont "renforcees…"
+	cont "renforcées…"
 
 	para "Cela effraie…"
 	done
@@ -79,12 +79,12 @@ SantosSaturdayText:
 	done
 
 BlackthornDragonTamer1DefaultText:
-	text "Je suis desolé."
+	text "Je suis désolé."
 
 	para "SANDRA, notre"
 	line "Champion d'Arene,"
 
-	para "est entree dans"
+	para "est entrée dans"
 	line "l'ANTRE DU DRAGON"
 	cont "derrière l'Arene."
 
@@ -99,7 +99,7 @@ BlackthornDragonTamer1ClairIsInText:
 	cont "t'attend."
 
 	para "Mais il serait"
-	line "impossible a un"
+	line "impossible à un"
 
 	para "dresseur ordinaire"
 	line "de gagner."
@@ -138,7 +138,7 @@ BlackthornBlackbeltText2:
 BlackthornGramps1Text:
 	text "Non. Seuls des"
 	line "dresseurs choisis"
-	cont "s'entrainent ici."
+	cont "s'entraînent ici."
 
 	para "Pars."
 	done
@@ -156,7 +156,7 @@ BlackthornGramps2Text:
 BlackthornLassText:
 	text "Vas-tu faire"
 	line "oublier des"
-	cont "capacites a tes"
+	cont "capacités à tes"
 	cont "#mon?"
 	done
 
@@ -167,17 +167,17 @@ BlackthornYoungsterText:
 	done
 
 BlackthornCooltrainerF1Text:
-	text "Tu as traverse la"
+	text "Tu as traversé la"
 	line "ROUTE DE GLACE?"
 
-	para "Tu dois etre"
+	para "Tu dois être"
 	line "vraiment fort!"
 	done
 
 BlackthornCooltrainerF2Text:
 	text "Le type Fee n'a"
-	line "été decouvert"
-	cont "que recemment."
+	line "été découvert"
+	cont "que récemment."
 
 	para "Il neutralise"
 	line "les types Dragon."
@@ -187,18 +187,19 @@ BlackthornDragonTamer2Text:
 	text "Quand notre"
 	line "Champion d'Arene"
 
-	para "etait jeune, elle"
-	line "s'entrainait dans"
+	para "était jeune, elle"
+	line "s'entraînait dans"
 
 	para "l'ANTRE DU DRAGON"
-	line "sans arret."
+	line "sans arrêt."
 	done
 
 BlackthornDragonTamer3Text:
 	text "EBENELLE est la"
 	line "patrie de nombreux"
 
-	para "experts en dragons,"
+	para "experts"
+	line "en dragons,"
 	line "dont TRISTAN."
 
 	para "C'est le cousin"

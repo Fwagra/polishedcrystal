@@ -21,9 +21,8 @@ CeruleanTradeSpeechHouseGrannyText:
 if DEF(_LOCALE_FR)
 	text "Mon mari aime les"
 	line "#mon qu'il a"
-	cont "eu en faisant"
-
-	para "des échanges."
+	cont "eu en faisant des"
+	cont "échanges."
 	done
 else
 	text "My husband lives"
@@ -35,7 +34,7 @@ endc
 
 CeruleanTradeSpeechHouseGrampsText:
 if DEF(_LOCALE_FR)
-	text "Ah… Super…"
+	text "Ah... Super..."
 	done
 else
 	text "Ah… I'm so happy…"

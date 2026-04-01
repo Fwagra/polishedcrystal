@@ -25,12 +25,34 @@ CeruleanGymBadgeSpeechHouseGentlemanScript:
 	jumpthisopenedtext
 
 .Text2:
+if DEF(_LOCALE_FR)
+	text "Tu collectionnes"
+	line "les Badges de"
+	cont "Kanto?"
+
+	para "Bonne chance!"
+	done
+else
 	text "You're collecting"
 	line "Kanto Gym Badges?"
 	cont "Good luck!"
 	done
+endc
 
 .Text1:
+if DEF(_LOCALE_FR)
+	text "On a eu une"
+	line "vague de vols"
+
+	para "il y a quelques"
+	line "années, alors"
+
+	para "tout le monde"
+	line "est prudent."
+
+	para "Qui es-tu?"
+	done
+else
 	text "We had a spate of"
 	line "burglaries a few"
 
@@ -40,3 +62,4 @@ CeruleanGymBadgeSpeechHouseGentlemanScript:
 
 	para "Who are you?"
 	done
+endc

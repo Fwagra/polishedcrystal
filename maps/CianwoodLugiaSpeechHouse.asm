@@ -53,6 +53,20 @@ CianwoodHouseBlackBeltText2:
 	done
 
 CianwoodLugiaSpeechHouseTeacherText:
+if DEF(_LOCALE_FR)
+	text "Tu viens"
+	line "d'Oliville?"
+
+	para "Tu te rappelles"
+	line "des quatre îles"
+	cont "sur la route?"
+
+	para "J'ai entendu dire"
+	line "qu'une créature"
+	cont "marine mythique"
+	cont "s'y cache."
+	done
+else
 	text "You came from"
 	line "Olivine?"
 
@@ -65,8 +79,21 @@ CianwoodLugiaSpeechHouseTeacherText:
 	cont "ture is hiding in"
 	cont "them."
 	done
+endc
 
 CianwoodLugiaSpeechHouseLassText:
+if DEF(_LOCALE_FR)
+	text "On dit que pour la"
+	line "voir il faut abso-"
+
+	para "lument avoir"
+	line "l'Aile Argent."
+
+	para "Elle doit avoir la"
+	line "même odeur que la"
+	cont "créature."
+	done
+else
 	text "I heard that you"
 	line "can only see it if"
 
@@ -77,8 +104,22 @@ CianwoodLugiaSpeechHouseLassText:
 	line "same scent as the"
 	cont "creature."
 	done
+endc
 
 CianwoodLugiaSpeechHouseTwinText:
+if DEF(_LOCALE_FR)
+	text "On dit que les"
+	line "siphons autour des"
+
+	para "îles sont créés"
+	line "par la créature"
+	cont "marine."
+
+	para "Il faut une capa-"
+	line "cité spéciale pour"
+	cont "les passer."
+	done
+else
 	text "I've heard that"
 	line "the whirlpools"
 
@@ -90,3 +131,4 @@ CianwoodLugiaSpeechHouseTwinText:
 	line "special move to"
 	cont "get past them."
 	done
+endc

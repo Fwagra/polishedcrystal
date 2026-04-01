@@ -32,7 +32,7 @@ VioletPokeCenter1FAideIntroText:
 	line "Prof.Orme"
 
 	para "a un service"
-	line "a te demander."
+	line "à te demander."
 
 	para "Prends-tu"
 	line "l'Oeuf #mon?"
@@ -45,10 +45,10 @@ VioletPokeCenter1FAideQuestionText:
 	done
 
 VioletPokeCenter1FAideGoodbyeText:
-	text "On a decouvert"
+	text "On a découvert"
 	line "qu'un #mon"
 
-	para "n'eclot pas"
+	para "n'éclot pas"
 	line "tout de suite."
 
 	para "Il faut"
@@ -67,31 +67,35 @@ VioletPokeCenter1FAideGoodbyeText:
 	line "Prof.Orme"
 
 	para "quand l'Oeuf"
-	line "eclot!"
+	line "éclot!"
 	done
 
 VioletPokeCenter1FGameboyKidText:
-	text "Bill a cree"
-	line "le systeme"
-	cont "PC #mon."
+	; Corpus Crystal FR (ID 2428)
+	text "Un type du nom de"
+	line "Léo a créé le"
+	cont "système de stocka-"
+	cont "ge de #mon."
 	done
 
 VioletPokeCenter1FGentlemanText:
-	text "C'etait il y"
-	line "a 3 ans."
+	; Corpus Crystal FR (ID 2429)
+	text "Ca fait plus ou"
+	line "moins trois ans."
 
 	para "La Team Rocket"
-	line "maltraitait"
-	cont "les #mon."
+	line "était la pire en-"
+	cont "nemie des #mon."
 
-	para "Mais un gamin"
-	line "les a"
-	cont "arretes."
+	para "Mais y'a une"
+	line "justice! Un jeune"
+	cont "gamin les a depuis"
+	cont "détrônés."
 	done
 
 VioletPokeCenter1FSageText:
 	text "Certains"
-	line "Chetiflor"
+	line "Chétiflor"
 	cont "ont"
 
 	para "des Feuilles"
@@ -104,7 +108,7 @@ VioletPokeCenter1FSageText:
 	para "des Feuilles"
 	line "d'Argent."
 
-	para "Ca plait a"
+	para "Ca plaît à"
 	line "un certain"
 	cont "genre"
 
@@ -112,20 +116,19 @@ VioletPokeCenter1FSageText:
 	done
 
 VioletPokeCenter1FYoungsterText:
+	; Corpus Crystal FR (ID 2430)
 	text "Les #mon"
-	line "sont malins."
+	line "sont intelligents."
 
-	para "Ils n'obeiront"
-	line "pas a un"
+	para "Ils n'obéissent"
+	line "pas aux dresseurs"
+	cont "qui ne les res-"
+	cont "pectent pas."
 
-	para "Dresseur qu'ils"
-	line "ne respectent"
-	cont "pas."
+	para "Sans les Badges"
+	line "appropriés, ils"
 
-	para "Sans Badges,"
-	line "ils font"
-
-	para "ce qu'ils"
-	line "veulent."
+	para "n'en feront qu'à"
+	line "leur tête."
 	done
 

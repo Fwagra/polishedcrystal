@@ -17,9 +17,16 @@ ViridianForestPewterGate_MapScriptHeader:
 	object_event  0,  4, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, PAL_NPC_BLUE, OBJECTTYPE_COMMAND, jumptextfaceplayer, ViridianForestPewterGateOfficerText, -1
 
 ViridianForestPewterGateOfficerText:
+if DEF(_LOCALE_FR)
+	text "Tu vas à Argenta?"
+
+	para "Va voir le Musée!"
+	done
+else
 	text "Are you headed"
 	line "to Pewter City?"
 
 	para "Be sure to check"
 	line "out the Museum!"
 	done
+endc

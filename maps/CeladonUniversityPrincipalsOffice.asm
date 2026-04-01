@@ -31,6 +31,17 @@ CeladonUniversityPrincipalsOfficeMatsumotoScript:
 	jumpthisopenedtext
 
 .Text2:
+if DEF(_LOCALE_FR)
+	text "Je bosse dur pour"
+	line "que tout roule,"
+
+	para "alors je me fais"
+	line "plaisir avec des"
+
+	para "bonbons de temps"
+	line "en temps."
+	done
+else
 	text "I work hard to"
 	line "keep this place"
 	cont "running smoothly,"
@@ -39,8 +50,28 @@ CeladonUniversityPrincipalsOfficeMatsumotoScript:
 	line "candy every now"
 	cont "and then."
 	done
+endc
 
 .Text1:
+if DEF(_LOCALE_FR)
+	text "Salut,"
+	line "jeune Dresseur!"
+
+	para "Je suis le Prof."
+	line "Matsumoto."
+
+	para "Directeur de"
+	line "l'universite de"
+
+	para "Céladopole."
+	line "Appelle-moi ton"
+
+	para "pote! Tiens, des"
+	line "bonbons de mon"
+
+	para "tiroir."
+	done
+else
 	text "Hello there,"
 	line "young trainer!"
 
@@ -58,35 +89,66 @@ CeladonUniversityPrincipalsOfficeMatsumotoScript:
 	line "candy from my"
 	cont "desk stash."
 	done
+endc
 
 CeladonUniversityPrincipalsOfficeSignpost1Text:
+if DEF(_LOCALE_FR)
+	text "Diplome de Matsu-"
+	line "moto en Sciences"
+
+	para "de l'education."
+	done
+else
 	text "It's Prof.Matsu-"
 	line "moto's degree in"
 	cont "Education."
 	done
+endc
 
 CeladonUniversityPrincipalsOfficeSignpost2Text:
+if DEF(_LOCALE_FR)
+	text "Photo de Matsu-"
+	line "moto devant une"
+
+	para "promotion."
+	done
+else
 	text "It's a picture of"
 	line "Prof.Matsumoto in"
 
 	para "front of a grad-"
 	line "uating class."
 	done
+endc
 
 CeladonUniversityPrincipalsOfficeComputer:
 	jumpthistext
 
+if DEF(_LOCALE_FR)
+	text "Brouillon de mail"
+	line "aux anciens pour"
+
+	para "des dons."
+	done
+else
 	text "There's a draft"
 	line "email asking"
 
 	para "alumni for"
 	line "donations."
 	done
+endc
 
 CeladonUniversityPrincipalsOfficeBookshelfText:
+if DEF(_LOCALE_FR)
+	text "Toute l'encyclo"
+	line "#monica."
+	done
+else
 	text "It's a complete set"
 	line "of books of the"
 
 	para "Encyclopedia"
 	line "#monica."
 	done
+endc

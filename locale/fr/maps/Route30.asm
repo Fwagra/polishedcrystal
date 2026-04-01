@@ -121,7 +121,9 @@ Route30AdvancedTipsText:
 
 	para "En combat, appuie"
 	line "sur Select pour"
-	cont "changer de #mon!"
+
+	para "changer de"
+	line "#mon!"
 
 	para "Appuie sur Start"
 	line "pour réutiliser"

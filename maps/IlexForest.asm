@@ -404,6 +404,18 @@ IlexForestTutorHeadbuttScript:
 GenericTrainerBugCatcherWayne:
 	generictrainer BUG_CATCHER, WAYNE, EVENT_BEAT_BUG_CATCHER_WAYNE, BugCatcherWayneSeenText, BugCatcherWayneBeatenText
 
+if DEF(_LOCALE_FR)
+	text "Un #mon que je"
+	line "n'avais jamais vu"
+
+	para "est tombé de"
+	line "l'arbre quand j'ai"
+	cont "fait Coup d'Boule."
+
+	para "Je devrais essayer"
+	line "ailleurs aussi."
+	done
+else
 	text "A #mon I've"
 	line "never seen before"
 
@@ -415,6 +427,7 @@ GenericTrainerBugCatcherWayne:
 	line "Headbutt in other"
 	cont "places too."
 	done
+endc
 
 IlexForestShrineScript:
 	checkevent EVENT_FOREST_IS_RESTLESS
@@ -816,6 +829,27 @@ MovementData_IlexForestLyraLeaves:
 	step_end
 
 IlexForestApprenticeIntroText:
+if DEF(_LOCALE_FR)
+	text "Oh, mince… Mon"
+	line "chef va être"
+	cont "furax…"
+
+	para "Le Canarticho qui"
+	line "coupe le bois"
+
+	para "pour le charbon"
+	line "s'est enfui."
+
+	para "Je peux pas aller"
+	line "le chercher dans"
+	cont "le Bois"
+	cont "aux Chênes."
+
+	para "C'est trop grand,"
+	line "sombre,"
+	cont "et flippant…"
+	done
+else
 	text "Oh, man… My boss"
 	line "is going to be"
 	cont "steaming…"
@@ -833,8 +867,19 @@ IlexForestApprenticeIntroText:
 	para "It's too big, dark"
 	line "and scary for me…"
 	done
+endc
 
 IlexForestApprenticeAfterText:
+if DEF(_LOCALE_FR)
+	text "Wouah! Merci"
+	line "beaucoup!"
+
+	para "Les #mon de mon"
+	line "chef ne"
+	cont "m'obéissent"
+	cont "pas sans Badge."
+	done
+else
 	text "Wow! Thanks a"
 	line "whole bunch!"
 
@@ -843,17 +888,52 @@ IlexForestApprenticeAfterText:
 	cont "cause I don't have"
 	cont "a Badge."
 	done
+endc
 
 Text_ItsTheMissingPokemon:
+if DEF(_LOCALE_FR)
+	text "C'est le #mon"
+	line "disparu!"
+	done
+else
 	text "It's the missing"
 	line "#mon!"
 	done
+endc
 
 Text_Kwaaaa:
+if DEF(_LOCALE_FR)
+	text "Canarticho: Kwaa!"
+	done
+else
 	text "Farfetch'd: Kwaa!"
 	done
+endc
 
 Text_CharcoalMasterIntro:
+if DEF(_LOCALE_FR)
+	text "Ah! Mon"
+	line "Canarticho!"
+
+	para "Tu l'as trouvé"
+	line "pour nous, petit?"
+
+	para "Sans lui, on ne"
+	line "pourrait pas"
+	cont "couper"
+
+	para "du bois pour le"
+	line "charbon."
+
+	para "Merci, petit!"
+
+	para "Comment te"
+	line "remercier…"
+
+	para "Je sais! Tiens,"
+	line "prends ca."
+	done
+else
 	text "Ah! My Farfetch'd!"
 
 	para "You found it for"
@@ -873,12 +953,37 @@ Text_CharcoalMasterIntro:
 	para "I know! Here, take"
 	line "this."
 	done
+endc
 
 Text_CharcoalMasterOutro:
+if DEF(_LOCALE_FR)
+	text "C'est la CS Coupe."
+	line "Tout #mon"
+
+	para "compatible peut"
+	line "couper des"
+	cont "arbustes."
+
+	para "Tu n'as pas besoin"
+	line "de la lui"
+	cont "apprendre"
+
+	para "sauf si tu veux"
+	line "l'utiliser en"
+	cont "combat."
+
+	para "Mais il faut le"
+	line "Badge d'Ecorcia"
+
+	para "pour l'utiliser"
+	line "hors combat."
+	done
+else
 	text "That's the Cut HM."
 	line "Any #mon you"
 
-	para "have that's compat-"
+	para "have that's"
+	line "compat-"
 	line "ible with it can"
 
 	para "use Cut to clear"
@@ -898,8 +1003,20 @@ Text_CharcoalMasterOutro:
 	line "Azalea to use it"
 	cont "outside of battle."
 	done
+endc
 
 Text_CharcoalMasterTalkAfter:
+if DEF(_LOCALE_FR)
+	text "Tu veux devenir"
+	line "apprenti"
+
+	para "charbonnier"
+	line "avec moi?"
+
+	para "Dans dix ans, tu"
+	line "seras un pro!"
+	done
+else
 	text "Do you want to"
 	line "apprentice as a"
 
@@ -909,8 +1026,37 @@ Text_CharcoalMasterTalkAfter:
 	para "You'll be first-"
 	line "rate in ten years!"
 	done
+endc
 
 Text_HeadbuttIntro:
+if DEF(_LOCALE_FR)
+	text "Ce que je fais?"
+
+	para "Je secoue les"
+	line "arbres avec"
+	cont "Coup d'Boule."
+
+	para "Parfois un #mon"
+	line "tombe,"
+
+	para "parfois juste des"
+	line "plumes."
+
+	para "Mais ca aussi,"
+	line "c'est utile!"
+
+	para "Elles rendent mes"
+	line "#mon un peu"
+	cont "plus forts."
+
+	para "C'est sympa."
+	line "Essaye!"
+
+	para "Il te faut juste"
+	line "une Boite pour"
+	cont "les Ailes."
+	done
+else
 	text "What am I doing?"
 
 	para "I'm shaking trees"
@@ -936,16 +1082,36 @@ Text_HeadbuttIntro:
 	line "Case to hold any"
 	cont "delicate Wings…"
 	done
+endc
 
 Text_HeadbuttIntro2:
+if DEF(_LOCALE_FR)
+	text "Et si aucun de"
+	line "tes #mon"
+	cont "ne connaît Coup"
+	cont "d'Boule?"
+
+	para "Pas de souci!"
+	done
+else
 	text "Oh, and if none"
 	line "of your #mon"
 	cont "know Headbutt?"
 
 	para "No problem!"
 	done
+endc
 
 Text_IlexForestTutorHeadbutt:
+if DEF(_LOCALE_FR)
+	text "Je peux apprendre"
+	line "Coup d'Boule"
+
+	para "a ton #mon"
+	line "contre une"
+	cont "Feuille Argent."
+	done
+else
 	text "I can teach your"
 	line "#mon to use"
 
@@ -953,8 +1119,21 @@ Text_IlexForestTutorHeadbutt:
 	line "change for a"
 	cont "Silver Leaf."
 	done
+endc
 
 Text_IlexForestTutorNoSilverLeaf:
+if DEF(_LOCALE_FR)
+	text "Oh, mais tu n'as"
+	line "pas de Feuille"
+	cont "Argent."
+
+	para "Parfois, on en"
+	line "trouve sur un"
+
+	para "Mystherbe, ou"
+	line "par terre."
+	done
+else
 	text "Oh, but you don't"
 	line "have any Silver"
 	cont "Leaves."
@@ -965,39 +1144,95 @@ Text_IlexForestTutorNoSilverLeaf:
 	para "Oddish, or lying"
 	line "on the ground."
 	done
+endc
 
 Text_IlexForestTutorQuestion:
+if DEF(_LOCALE_FR)
+	text "Tu veux que"
+	line "j'apprenne Coup"
+	cont "d'Boule"
+	cont "a ton #mon?"
+	done
+else
 	text "Should I teach"
 	line "your #mon"
 	cont "Headbutt?"
 	done
+endc
 
 Text_IlexForestTutorRefused:
+if DEF(_LOCALE_FR)
+	text "D'accord."
+	done
+else
 	text "Alright then."
 	done
+endc
 
 Text_IlexForestTutorTaught:
+if DEF(_LOCALE_FR)
+	text "Secoue les arbres"
+	line "avec Coup d'Boule."
+
+	para "Parfois,"
+	line "des #mon"
+	line "endormis tombent."
+	done
+else
 	text "Rattle trees with"
 	line "Headbutt. Some-"
 	cont "times, sleeping"
 	cont "#mon fall out."
 	done
+endc
 
 Text_IlexForestLass:
+if DEF(_LOCALE_FR)
+	text "Il est arrivé"
+	line "quelque chose au"
+	cont "gardien de la"
+	cont "forêt?"
+	done
+else
 	text "Did something"
 	line "happen to the"
 	cont "forest's guardian?"
 	done
+endc
 
 Text_IlexForestMossRock:
+if DEF(_LOCALE_FR)
+	text "Le rocher est"
+	line "couvert de mousse."
+
+	para "Il est"
+	line "agréablement"
+	line "bien frais."
+	done
+else
 	text "The rock is cover-"
 	line "ed in moss."
 
 	para "It feels pleasant-"
 	line "ly cool."
 	done
+endc
 
 IlexForestSignpost:
+if DEF(_LOCALE_FR)
+	text "Conseils"
+
+	para "Le Bois aux Chênes"
+	line "est si dense que"
+
+	para "les feuilles"
+	line "cachent le ciel."
+
+	para "Fais attention aux"
+	line "objets tombés"
+	cont "au sol."
+	done
+else
 	text "Ilex Forest is"
 	line "so overgrown with"
 
@@ -1008,8 +1243,27 @@ IlexForestSignpost:
 	line "for items that may"
 	cont "have been dropped."
 	done
+endc
 
 IlexForestTrainerTips:
+if DEF(_LOCALE_FR)
+	text "ASTUCE"
+
+	para "Si tu as une CS"
+	line "dans ton Sac,"
+
+	para "et un #mon"
+	line "compatible,"
+
+	para "tu peux l'utiliser"
+	line "hors combat."
+
+	para "Et tu n'as"
+	line "même pas"
+	line "besoin de"
+	cont "l'apprendre!"
+	done
+else
 	text "Trainer Tips"
 
 	para "As long as you"
@@ -1028,8 +1282,18 @@ IlexForestTrainerTips:
 	para "You don't even"
 	line "have to teach it!"
 	done
+endc
 
 Text_IlexForestShrine:
+if DEF(_LOCALE_FR)
+	text "Autel du"
+	line "Bois aux Chênes…"
+
+	para "La divinité de la"
+	line "forêt est vénérée"
+	cont "ici."
+	done
+else
 	text "Ilex Forest"
 	line "Shrine…"
 
@@ -1037,8 +1301,30 @@ Text_IlexForestShrine:
 	line "the forest's"
 	cont "protector…"
 	done
+endc
 
 Text_ShrineCelebiEvent:
+if DEF(_LOCALE_FR)
+	text "Autel du"
+	line "Bois aux Chênes…"
+
+	para "La divinité de la"
+	line "forêt est vénérée"
+	cont "ici."
+
+	para "Oh? Qu'est-ce"
+	line "que c'est?"
+
+	para "Un trou."
+	line "La GS Ball"
+
+	para "pourrait s'y"
+	line "loger."
+
+	para "Mettre la GS Ball"
+	line "ici?"
+	done
+else
 	text "Ilex Forest"
 	line "Shrine…"
 
@@ -1057,13 +1343,50 @@ Text_ShrineCelebiEvent:
 	para "Want to put the GS"
 	line "Ball here?"
 	done
+endc
 
 Text_InsertGSBall:
-	text "<PLAYER> put in the"
-	line "GS Ball."
+if DEF(_LOCALE_FR)
+	text "<PLAYER> a placé"
+	line "la GS Ball."
 	done
+else
+	text "<PLAYER> put"
+	line "in the"
+	cont "GS Ball."
+	done
+endc
 
 Text_KurtCaughtCelebi:
+if DEF(_LOCALE_FR)
+	text "Ouf, c'était"
+	line "quelque chose!"
+
+	para "<PLAYER>, tu as"
+	line "été formidable."
+	cont "Merci!"
+
+	para "Les légendes sur"
+	line "cet autel étaient"
+	cont "vraies."
+
+	para "Peut-être que"
+	line "celle qui dit que"
+
+	para "Ceux qui y"
+	line "touchent"
+	line "disparaissent"
+	cont "est vraie aussi…"
+
+	para "Ce que j'ai vu"
+	line "m'inspire."
+
+	para "Je vais faire de"
+	line "meilleures Balls!"
+
+	para "J'y vais!"
+	done
+else
 	text "Whew, wasn't that"
 	line "something!"
 
@@ -1089,14 +1412,37 @@ Text_KurtCaughtCelebi:
 
 	para "I'm going!"
 	done
+endc
 
 Text_CelebiDancedBeautifully:
+if DEF(_LOCALE_FR)
+	text "Celebi a dansé"
+	line "magnifiquement!"
+	done
+else
 	text "Celebi danced"
 	line "beautifully!"
 	done
+endc
 
 Text_IlexForestLyraHello:
-	text "Lyra: Hi, <PLAYER>."
+if DEF(_LOCALE_FR)
+	text "Célesta: Salut,"
+	line "<PLAYER>."
+	cont "Tu connais"
+
+	para "la légende de"
+	line "cet autel?"
+
+	para "On dit que"
+	line "des gens"
+	line "disparaissent"
+
+	para "s'ils y touchent."
+	done
+else
+	text "Lyra: Hi,"
+	line "<PLAYER>."
 	line "Have you heard of"
 
 	para "the legend of the"
@@ -1108,15 +1454,44 @@ Text_IlexForestLyraHello:
 	para "when they tamper"
 	line "with it."
 	done
+endc
 
 Text_IlexForestLyraWhatWasThat:
+if DEF(_LOCALE_FR)
+	text "Célesta: …"
+	line "C'était quoi ca?"
+	done
+else
 	text "Lyra: …"
 	line "What was that?"
 	done
+endc
 
 Text_IlexForestLyraWorried:
+if DEF(_LOCALE_FR)
+	text "Célesta: …"
+	line "<PLAYER>?"
+	line "Tu es revenu(e)?"
+
+	para "Tu m'as tellement"
+	line "manqué! Celebi m'a"
+
+	para "amenée ici et tu"
+	line "avais disparu…"
+
+	para "Je croyais que tu"
+	line "resterais coincé"
+	cont "dans le passé!"
+
+	para "…"
+
+	para "Mais au moins, on"
+	line "est revenus sains"
+	cont "et saufs."
+	done
+else
 	text "Lyra: …<PLAYER>?"
-	line "You're really back?"
+	line "You're back?"
 
 	para "I missed you so"
 	line "much! Celebi sent"
@@ -1134,8 +1509,20 @@ Text_IlexForestLyraWorried:
 	line "both safely back"
 	cont "to our time."
 	done
+endc
 
 Text_IlexForestLyraArmorSuit:
+if DEF(_LOCALE_FR)
+	text "Célesta: Quelle"
+	line "drôle d'aventure"
+	cont "tu as vécue?"
+
+	para "Tu as laissé"
+	line "tomber… ca…"
+	cont "quand Celebi t'a"
+	cont "ramené(e)…"
+	done
+else
 	text "Lyra: What strange"
 	line "adventure did you"
 	cont "have by yourself?"
@@ -1144,8 +1531,22 @@ Text_IlexForestLyraArmorSuit:
 	line "thing when Celebi"
 	cont "brought you back…"
 	done
+endc
 
 Text_IlexForestLyraGoodbye:
+if DEF(_LOCALE_FR)
+	text "Célesta: Quelle"
+	line "journée bizarre."
+
+	para "Je suis crevée, je"
+	line "dois y aller."
+
+	para "Repose-toi aussi,"
+	line "<PLAYER>."
+
+	para "A plus!"
+	done
+else
 	text "Lyra: This sure"
 	line "was a bizarre day."
 
@@ -1158,21 +1559,52 @@ Text_IlexForestLyraGoodbye:
 
 	para "See you!"
 	done
+endc
 
 BugCatcherWayneSeenText:
+if DEF(_LOCALE_FR)
+	text "Ne me surprends"
+	line "pas comme ca!"
+
+	para "Tu as fait fuir"
+	line "un #mon!"
+	done
+else
 	text "Don't sneak up on"
 	line "me like that!"
 
 	para "You frightened a"
 	line "#mon away!"
 	done
+endc
 
 BugCatcherWayneBeatenText:
+if DEF(_LOCALE_FR)
+	text "Je n'avais jamais"
+	line "vu ce #mon…"
+	done
+else
 	text "I hadn't seen that"
 	line "#mon before…"
 	done
+endc
 
 IlexForestHoneyBoyText:
+if DEF(_LOCALE_FR)
+	text "J'étale du Miel"
+	line "sur le sol."
+
+	para "Le #mon de ma"
+	line "sœur le collecte."
+
+	para "Ca attire des"
+	line "#mon du même"
+
+	para "Du niveau"
+	line "que le mien,"
+	cont "donc réglo."
+	done
+else
 	text "I'm slathering"
 if DEF(FAITHFUL)
 	line "Honey on the"
@@ -1192,3 +1624,4 @@ endc
 	line "own, so they're"
 	cont "a fair fight."
 	done
+endc

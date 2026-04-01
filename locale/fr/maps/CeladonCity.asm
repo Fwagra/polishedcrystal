@@ -29,7 +29,7 @@ Text_CeladonCityTutorNoSilverLeaf:
 Text_CeladonCityTutorQuestion:
 	text "Tu veux que"
 	line "j'apprenne"
-	cont "Vantardise a"
+	cont "Vantardise à"
 	cont "ton #mon?"
 	done
 
@@ -38,7 +38,7 @@ Text_CeladonCityTutorRefused:
 	done
 
 Text_CeladonCityTutorTaught:
-	text "Voila! Ton #mon"
+	text "Voilà! Ton #mon"
 	line "a appris"
 	cont "Vantardise!"
 	done
@@ -98,7 +98,7 @@ CeladonCityYoungster1Text:
 	line "un secret?"
 
 	para "Le MANOIR CELADON"
-	line "a une porte cachée"
+	line "à une porte cachée"
 	cont "à l'arrière."
 	done
 
@@ -109,7 +109,7 @@ CeladonCityYoungster2Text:
 
 	para "Rien que de les"
 	line "regarder me donne"
-	cont "mal au coeur…"
+	cont "mal au cœur…"
 	done
 
 CeladonCityTeacher2Text:
@@ -138,7 +138,7 @@ CeladonCityLassText_PCC:
 	para "C'est trop bien!"
 	line "J'aimerais avoir"
 	para "un pareil endroit"
-	line "a Kanto…"
+	line "à Kanto…"
 	done
 
 CeladonCityLassText:
@@ -214,7 +214,8 @@ if DEF(FAITHFUL)
 else
 	para "La GARDE-STAT"
 endc
-	line "protège tes #mon"
+	line "protège tes"
+	cont "#mon"
 	para "contre les baisses"
 	line "de statistiques."
 	para "Achats au CENTRE"
@@ -224,7 +225,8 @@ endc
 
 CeladonCityTrainerTips2Text:
 	text "ASTUCE"
-	para "ÉVOLI est un #mon"
+	para "ÉVOLI est"
+	line "un #mon"
 	line "au fort potentiel."
 	para "Essaie de l'expo-"
 	line "ser à différents"

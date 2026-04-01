@@ -68,7 +68,7 @@ FarawayIslandSignText:
 	line "pose le pied ici"
 	cont "encore… que ce"
 	cont "soit quelqu'un"
-	cont "de bon coeur…"
+	cont "de bon cœur…"
 	para "…vec cet espoir,"
 	line "je par…"
 	para "…ji"

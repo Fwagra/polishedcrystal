@@ -45,46 +45,98 @@ CeladonHotel1FRichBoyGeraldScript:
 	end
 
 CeladonHotel1FGrampsText:
+if DEF(_LOCALE_FR)
+	text "#mon? Ici c'est"
+	line "un hotel pour les"
+
+	para "humains. On est"
+	line "complet."
+	done
+else
 	text "#mon? No, this"
 	line "is a hotel for"
 	cont "people."
 
 	para "We're full up."
 	done
+endc
 
 CeladonHotel1FLadyText:
+if DEF(_LOCALE_FR)
+	text "C'est mon premier"
+	line "voyage a Kanto."
+
+	para "Céladopole a tant"
+	line "a offrir!"
+	done
+else
 	text "This is my first"
 	line "trip to Kanto."
 
 	para "There's so much to"
 	line "see in Celadon!"
 	done
+endc
 
 CeladonHotel1FCooltrainerFText:
+if DEF(_LOCALE_FR)
+	text "Ah, il me fallait"
+	line "ces vacances!"
+	done
+else
 	text "Ahh, I really"
 	line "needed this"
 	cont "vacation!"
 	done
+endc
 
 RichBoyGeraldGreetingText:
+if DEF(_LOCALE_FR)
+	text "Ma soeur adore"
+	line "les vacances,"
+
+	para "moi je m'ennuie."
+	line "Un combat?"
+	done
+else
 	text "My sister's enjoy-"
 	line "ing our vacation,"
 
 	para "but I'm bored."
 	line "Care for a battle?"
 	done
+endc
 
 RichBoyGeraldSeenText:
+if DEF(_LOCALE_FR)
+	text "Tu vas perdre!"
+	done
+else
 	text "Then prepare to"
 	line "lose!"
 	done
+endc
 
 RichBoyGeraldBeatenText:
+if DEF(_LOCALE_FR)
+	text "Au moins tu n'es"
+	line "pas ennuyeux."
+	done
+else
 	text "At least you're"
 	line "not boring."
 	done
+endc
 
 RichBoyGeraldAfterText:
+if DEF(_LOCALE_FR)
+	text "La prochaine fois"
+	line "on ira a Oliville."
+
+	para "J'aimerais tenter"
+	line "la Tour de Combat."
+	done
+else
 	text "Next time we ought"
 	line "to vacation at"
 	cont "Olivine City."
@@ -93,25 +145,52 @@ RichBoyGeraldAfterText:
 	line "challenge the"
 	cont "Battle Tower."
 	done
+endc
 
 RichBoyGeraldNoBattleText:
+if DEF(_LOCALE_FR)
+	text "Pff! Tant pis."
+	done
+else
 	text "Hmph! Fine."
 	done
+endc
 
 CeladonHotel1FSignpost1Text:
+if DEF(_LOCALE_FR)
+	text "Hotel Céladopole"
+
+	para "Bon sejour!"
+	done
+else
 	text "Celadon Hotel"
 
 	para "Enjoy your stay!"
 	done
+endc
 
 CeladonHotel1FSignpost2Text:
+if DEF(_LOCALE_FR)
+	text "Piscine hotel"
+
+	para "Bonnet de bain"
+	line "obligatoire."
+	done
+else
 	text "Hotel Pool"
 
 	para "Please wear a swim"
 	line "cap in the water."
 	done
+endc
 
 CeladonHotel1FSignpost3Text:
+if DEF(_LOCALE_FR)
+	text "Suites"
+	line "A l'etage"
+	done
+else
 	text "Suites"
 	line "Upstairs"
 	done
+endc

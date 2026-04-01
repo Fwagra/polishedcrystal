@@ -6,8 +6,8 @@ Route36VioletGateOfficerText1:
 	done
 
 Route36VioletGateOfficerText2:
-	text "Ces temps-ci, c'est"
-	line "chargé."
+	text "En ce moment,"
+	line "c'est charge."
 	para "Beaucoup de gens"
 	line "viennent de"
 	para "DOUBLONVILLE et"

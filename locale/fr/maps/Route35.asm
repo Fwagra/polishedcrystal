@@ -24,8 +24,9 @@ CoupleGailandeli1BeatenText:
 CoupleGailandeli2SeenText:
 	text "Gail: Mon copain"
 	line "est trop faible."
-	para "Heureusement, mes"
-	line "#mon sont fiables."
+	para "Heureusement,"
+	line "mes #mon sont"
+	cont "fiables."
 	done
 
 CoupleGailandeli2BeatenText:
@@ -45,7 +46,9 @@ PicnickerKimBeatenText:
 
 BreederTheresaSeenText:
 	text "Comment tu prends"
-	line "soin de tes #mon?"
+	line "soin de tes"
+
+	para "#mon?"
 	done
 
 BreederTheresaBeatenText:

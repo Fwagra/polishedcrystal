@@ -5,14 +5,16 @@ Route39RuggedRoadGateOfficerCannotPassText:
 	cont "NEIGEUX est dur!"
 	para "Je peux pas te"
 	line "laisser y aller"
-	cont "sans LUNETTES GOGO."
+
+	para "sans LUNETTES"
+	line "GOGO."
 	done
 
 Route39RuggedRoadGateOfficerText:
 	text "Le trajet vers le"
 	line "MONT NEIGEUX peut"
 	cont "être dangereux!"
-	para "C'est pour ça qu'un"
+	para "Pour ca, un"
 	line "CENTRE #mon y a"
 	cont "été construit."
 	done

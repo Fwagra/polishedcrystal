@@ -35,24 +35,50 @@ SafariZoneNorth_MapScriptHeader:
 GenericTrainerBattleGirlPadma:
 	generictrainer BATTLE_GIRL, PADMA, EVENT_BEAT_BATTLE_GIRL_PADMA, BattleGirlPadmaSeenText, BattleGirlPadmaBeatenText
 
+if DEF(_LOCALE_FR)
+	text "Si tu mets tout"
+	line "ton cœur dans"
+
+	para "l'entraînement,"
+	line "tu seras fort!"
+	done
+else
 	text "If you throw your"
 	line "emotions into"
 
 	para "training, you'll"
 	line "become strong!"
 	done
+endc
 
 GenericTrainerYoungsterTyler:
 	generictrainer YOUNGSTER, TYLER, EVENT_BEAT_YOUNGSTER_TYLER, YoungsterTylerSeenText, YoungsterTylerBeatenText
 
+if DEF(_LOCALE_FR)
+	text "Les #mon"
+	line "sortent sans"
+	cont "prévenir."
+	done
+else
 	text "#mon leap out"
 	line "when you least"
 	cont "expect it."
 	done
+endc
 
 GenericTrainerBeautyRachael:
 	generictrainer BEAUTY, RACHAEL, EVENT_BEAT_BEAUTY_RACHAEL, BeautyRachaelSeenText, BeautyRachaelBeatenText
 
+if DEF(_LOCALE_FR)
+	text "J'étais karatéka"
+	line "il y a un an."
+
+	para "La science"
+	line "médicale est"
+	cont "incroyable,"
+	cont "non?"
+	done
+else
 	text "I was a Black Belt"
 	line "just one year ago."
 
@@ -62,6 +88,7 @@ GenericTrainerBeautyRachael:
 	para "amazing, wouldn't"
 	line "you say?"
 	done
+endc
 
 SafariZoneNorthCooltrainerFScript:
 	faceplayer
@@ -94,17 +121,41 @@ SafariZoneNorthTutorDoubleEdgeScript:
 	jumpopenedtext Text_SafariZoneNorthTutorTaught
 
 BattleGirlPadmaSeenText:
+if DEF(_LOCALE_FR)
+	text "Je m'entraîne avec"
+	line "mes #mon pour"
+	cont "faire équipe!"
+	done
+else
 	text "I spar with my"
 	line "#mon to improve"
 	cont "as a team!"
 	done
+endc
 
 BattleGirlPadmaBeatenText:
+if DEF(_LOCALE_FR)
+	text "Il faut"
+	line "s'entraîner plus!"
+	done
+else
 	text "We'll have to"
 	line "train harder!"
 	done
+endc
 
 YoungsterTylerSeenText:
+if DEF(_LOCALE_FR)
+	text "On trouve des"
+	line "#mon partout!"
+
+	para "Dans l'herbe,"
+	line "l'eau, les"
+	cont "grottes,"
+	cont "ou dans"
+	cont "les arbres!"
+	done
+else
 	text "You can find #-"
 	line "mon anywhere!"
 
@@ -112,25 +163,60 @@ YoungsterTylerSeenText:
 	line "water, in caves,"
 	cont "or up a tree!"
 	done
+endc
 
 YoungsterTylerBeatenText:
+if DEF(_LOCALE_FR)
+	text "Je dois continuer"
+	line "a chercher!"
+	done
+else
 	text "I need to keep"
 	line "looking!"
 	done
+endc
 
 BeautyRachaelSeenText:
+if DEF(_LOCALE_FR)
+	text "Ma robe est"
+	line "parfaite pour"
+	cont "le Parc Safari!"
+	done
+else
 	text "My sundress is"
 	line "perfect for a day"
 	cont "in the Safari"
 	cont "Zone!"
 	done
+endc
 
 BeautyRachaelBeatenText:
+if DEF(_LOCALE_FR)
+	text "Mais pas top"
+	line "pour se battre…"
+	done
+else
 	text "It's not great"
 	line "for battling…"
 	done
+endc
 
 SafariZoneNorthCooltrainerFText:
+if DEF(_LOCALE_FR)
+	text "J'ai attrapé une"
+	line "Leveinard!"
+
+	para "Quelle chance!"
+	line "Je vais lui"
+	cont "apprendre"
+
+	para "une charge super"
+	line "puissante."
+
+	para "Je partage ma"
+	line "chance avec toi!"
+	done
+else
 	text "I caught a"
 	line "Chansey!"
 
@@ -143,48 +229,101 @@ SafariZoneNorthCooltrainerFText:
 	para "Let me share my"
 	line "luck with you!"
 	done
+endc
 
 Text_SafariZoneNorthTutorDoubleEdge:
+if DEF(_LOCALE_FR)
+	text "J'apprends"
+	line "Damoclès a ton"
+	cont "#mon contre une"
+	cont "Feuille Argent."
+	done
+else
 	text "I'll teach your"
 	line "#mon how to"
 
 	para "use Double-Edge"
 	line "for a Silver Leaf."
 	done
+endc
 
 Text_SafariZoneNorthTutorNoSilverLeaf:
+if DEF(_LOCALE_FR)
+	text "Tu n'as pas de"
+	line "Feuille Argent…"
+	done
+else
 	text "You don't have any"
 	line "Silver Leaves…"
 	done
+endc
 
 Text_SafariZoneNorthTutorQuestion:
+if DEF(_LOCALE_FR)
+	text "Je lui apprends"
+	line "Damoclès?"
+	done
+else
 	text "Should I teach"
 	line "your #mon"
 	cont "Double-Edge?"
 	done
+endc
 
 Text_SafariZoneNorthTutorRefused:
+if DEF(_LOCALE_FR)
+	text "Tant pis."
+	done
+else
 	text "Oh well."
 	done
+endc
 
 Text_SafariZoneNorthTutorTaught:
+if DEF(_LOCALE_FR)
+	text "Voilà!"
+	line "Ton #mon sait"
+
+	para "Damoclès!"
+	done
+else
 	text "There!"
 	line "Now your #mon"
 
 	para "knows how to use"
 	cont "Double-Edge!"
 	done
+endc
 
 SafariZoneNorthAreaSignText:
+if DEF(_LOCALE_FR)
+	text "Parc Safari"
+	line "Zone Nord"
+	done
+else
 	text "Safari Zone"
 	line "North Area"
 	done
+endc
 
 SafariZoneNorthRestHouseSignText:
+if DEF(_LOCALE_FR)
+	text "Maison Repos"
+	done
+else
 	text "Rest House"
 	done
+endc
 
 SafariZoneNorthTrainerTips1SignText:
+if DEF(_LOCALE_FR)
+	text "ASTUCE"
+
+	para "Une attaque"
+	line "type peut être"
+	cont "Phys., Spé., Stat."
+	done
+else
 	text "Trainer Tips"
 
 	para "Moves of the same"
@@ -192,8 +331,21 @@ SafariZoneNorthTrainerTips1SignText:
 	cont "physical, special,"
 	cont "or status-based."
 	done
+endc
 
 SafariZoneNorthTrainerTips2SignText:
+if DEF(_LOCALE_FR)
+	text "ASTUCE"
+
+	para "Les #mon"
+	line "se cachent"
+	cont "dans les"
+	cont "hautes herbes!"
+
+	para "Zigzague pour"
+	line "les faire sortir."
+	done
+else
 	text "Trainer Tips"
 
 	para "#mon hide in"
@@ -203,11 +355,21 @@ SafariZoneNorthTrainerTips2SignText:
 	line "grassy areas to"
 	cont "flush them out."
 	done
+endc
 
 SafariZoneNorthTrainerTips3SignText:
+if DEF(_LOCALE_FR)
+	text "ASTUCE"
+
+	para "La suite du"
+	line "panneau a été"
+	cont "arrachée…"
+	done
+else
 	text "Trainer Tips"
 
 	para "The rest of the"
 	line "sign has been"
 	cont "torn away…"
 	done
+endc

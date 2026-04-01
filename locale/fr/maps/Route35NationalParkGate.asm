@@ -200,9 +200,13 @@ BugCatchingContestExplanationText:
 	done
 
 Route35NationalParkGatePokefanFText:
-	text "Beaucoup de #mon"
-	line "viennent au PARC"
-	para "NATUREL avec leurs"
+	text "Beaucoup de"
+	line "#mon"
+
+	para "viennent au"
+	line "PARC NATUREL"
+
+	para "avec leurs"
 	line "dresseurs."
 	para "Ils sont tous si"
 	line "mignons!"
@@ -212,8 +216,10 @@ Route35NationalParkGatePokefanFText:
 
 Text_Route35NationalParkGateTutorCharm:
 	text "Je peux rendre ton"
-	line "#mon plus mignon"
-	cont "avec Charme."
+	line "#mon plus"
+
+	para "mignon avec"
+	line "Charme."
 	para "Même les #mon"
 	line "ennemis auront"
 	para "moins envie de le"

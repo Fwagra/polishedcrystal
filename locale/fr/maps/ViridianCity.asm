@@ -85,8 +85,10 @@ Text_ViridianCityTutorDreamEater:
 	line "à tes #mon à"
 	cont "manger les rêves."
 
-	para "En échange, je veux"
-	line "une Feuille Argent."
+	para "En echange, je"
+	line "veux une Feuille"
+
+	para "Argent."
 	done
 
 Text_ViridianCityTutorNoSilverLeaf:
@@ -119,9 +121,11 @@ ViridianCityYoungster2Text:
 
 	para "CHAMPION d'ARENE"
 	line "ici pendant un"
-	cont "temps, mais un jour,"
 
-	para "il y a trois ans,"
+	para "temps, mais un"
+	line "jour, il y a"
+
+	para "trois ans,"
 	line "il a disparu."
 
 	para "De toute façon, il"
@@ -148,9 +152,11 @@ ViridianGymSignText:
 ViridianCityTrainerTips1Text:
 	text "Conseils Dresseur"
 
-	para "Attrape des #mon"
-	line "et agrandis ta"
-	cont "collection!"
+	para "Attrape des"
+	line "#mon et"
+
+	para "agrandis ta"
+	line "collection!"
 
 	para "Plus tu en as,"
 	line "plus c'est facile"
@@ -160,15 +166,17 @@ ViridianCityTrainerTips1Text:
 ViridianCityTrainerTips2Text:
 	text "Conseils Dresseur"
 
-	para "Le monde est vaste!"
+	para "Le monde est"
+	line "vaste!"
 
 	para "Ne fais pas que"
 	line "courir ou VOLER"
 	cont "partout…"
 
 	para "Regarde autour de"
-	line "toi! Tu découvriras"
-	cont "plein de choses!"
+	line "toi! Tu verras"
+
+	para "plein de choses!"
 	done
 
 TrainerHouseSignText:

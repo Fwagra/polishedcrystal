@@ -1,5 +1,5 @@
 ShamoutiShrineRuinsGrampsText:
-	text "Ce sanctuaire était"
+	text "Ce lieu etait"
 	line "magnifique quand"
 	cont "j'étais enfant."
 
@@ -7,12 +7,14 @@ ShamoutiShrineRuinsGrampsText:
 	line "tempête l'a ravagé"
 	cont "il y a longtemps."
 
-	para "Elle a menacé toute"
-	line "l'île, mais nous"
+	para "Elle menacait"
+	line "toute l'ile,"
 
-	para "avons été protégés"
-	line "par le Gardien des"
-	cont "Mers."
+	para "mais nous avons"
+	line "été protégés par"
+
+	para "le Gardien des"
+	line "Mers."
 
 	para "Chaque année, je"
 	line "le remercie en"
@@ -28,7 +30,9 @@ ShamoutiShrineRuinsLadyText:
 	line "pendant mon tour"
 	cont "du monde."
 
-	para "Apparemment, il y a"
-	line "un #mon qui parle"
-	cont "quelque part ici."
+	para "Apparemment,"
+	line "il y a un #mon"
+
+	para "qui parle quelque"
+	line "part ici."
 	done

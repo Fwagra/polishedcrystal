@@ -1,6 +1,6 @@
 VioletOutskirtsHouseOldShrineText:
-	text "C'est un sanctuaire"
-	line "très ancien."
+	text "C'est un lieu"
+	line "sacre tres ancien."
 	done
 
 VioletOutskirtsHouseAhText:
@@ -16,10 +16,11 @@ VioletOutskirtsHouseCaretakerFoundFriendText:
 	line "ami…"
 
 	para "Il guidait les"
-	line "esprits des défunts"
-	cont "vers l'au-delà…"
+	line "esprits des morts"
 
-	para "Et moi, je veillais"
+	para "vers l'au-dela…"
+
+	para "Moi, je veillais"
 	line "sur leurs tombes…"
 
 	para "…… ……"
@@ -40,8 +41,8 @@ VioletOutskirtsHouseCaretakerFoundFriendText:
 
 	para "Merci…"
 
-	para "Prends soin de mon…"
-	line "ami…"
+	para "Prends soin de"
+	line "mon ami…"
 	done
 
 VioletOutskirtsHouseCaretakerThankYouText:
@@ -51,9 +52,11 @@ VioletOutskirtsHouseCaretakerThankYouText:
 	done
 
 VioletOutskirtsHouseStillAPresenceText:
-	text "L'esprit est parti,"
-	line "mais on sent encore"
-	cont "une présence…"
+	text "L'esprit est"
+	line "parti, mais on"
+
+	para "sent encore une"
+	line "presence…"
 	done
 
 VioletOutskirtsHouseNotSafeHereText:
@@ -69,9 +72,11 @@ VioletOutskirtsHouseRadioText:
 	done
 
 VioletOutskirtsHouseDustText:
-	text "C'est couvert d'une"
-	line "épaisse couche de"
-	cont "poussière."
+	text "Tout est couvert"
+	line "d'une epaisse"
+
+	para "couche de"
+	line "poussiere."
 	done
 
 VioletOutskirtsHouseNotAloneText:

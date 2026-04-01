@@ -17,6 +17,21 @@ GoldenrodPPSpeechHouse_MapScriptHeader:
 	object_event  5,  3, SPRITE_CUTE_GIRL, SPRITEMOVEDATA_STANDING_LEFT, 1, 0, -1, PAL_NPC_RED, OBJECTTYPE_COMMAND, jumptextfaceplayer, GoldenrodPPSpeechHouseLassText, -1
 
 GoldenrodPPSpeechHouseFisherText:
+if DEF(_LOCALE_FR)
+	text "Une fois lorsque"
+	line "je me battais, mes"
+
+	para "#mon ne"
+	line "pouvaient plus"
+	cont "attaquer."
+
+	para "Les Points de"
+	line "Pouvoir, ou PP,"
+
+	para "de mes attaques"
+	line "étaient épuisés."
+	done
+else
 	text "Once while I was"
 	line "battling, my"
 
@@ -29,8 +44,23 @@ GoldenrodPPSpeechHouseFisherText:
 	para "moves were all"
 	line "gone."
 	done
+endc
 
 GoldenrodPPSpeechHouseLassText:
+if DEF(_LOCALE_FR)
+	text "Quelques fois, un"
+	line "#mon en pleine"
+
+	para "forme ne peut pas"
+	line "utiliser ses"
+	cont "attaques."
+
+	para "Si cela se produit"
+	line "soigne-le dans un"
+	cont "Centre #mon ou"
+	cont "utilise un objet."
+	done
+else
 	text "Sometimes, a"
 	line "healthy #mon"
 
@@ -42,3 +72,4 @@ GoldenrodPPSpeechHouseLassText:
 	cont "mon Center or use"
 	cont "an item."
 	done
+endc

@@ -10,7 +10,7 @@ FalknerIntroText:
 	line "gens disent"
 	cont "qu'il suffit"
 
-	para "d'une etincelle"
+	para "d'une étincelle"
 	line "pour griller"
 	cont "un #mon"
 
@@ -22,11 +22,11 @@ FalknerIntroText:
 	line "ferai ravaler"
 	cont "ces paroles!"
 
-	para "Tu vas bientot"
+	para "Tu vas bientôt"
 	line "voir la"
-	cont "veritable force"
+	cont "véritable force"
 
-	para "du vol elegant"
+	para "du vol élégant"
 	line "des #mon"
 	cont "Oiseaux!"
 	done
@@ -35,7 +35,7 @@ FalknerWinLossText:
 	text "Albert: Comment"
 	line "est-ce possible…"
 
-	para "Mon pere avait"
+	para "Mon père avait"
 	line "pourtant tant"
 	cont "pris soin"
 
@@ -50,14 +50,14 @@ FalknerWinLossText:
 	cont "de cette"
 
 	para "Arène, c'est mon"
-	line "role, devant"
+	line "rôle, devant"
 	cont "la Ligue"
 
 	para "#mon, de te"
 	line "donner le"
 	cont "Badge Zephyr"
 
-	para "pour celebrer"
+	para "pour célébrer"
 	line "ta victoire!"
 	done
 
@@ -65,11 +65,11 @@ FalknerZephyrBadgeText:
 	text "Albert: Avec ce"
 	line "Badge, les #mon"
 
-	para "echanges avec"
+	para "échanges avec"
 	line "d'autres"
 	cont "Dresseurs"
 
-	para "t'obeiront"
+	para "t'obéiront"
 	line "jusqu'au"
 	cont "niveau 20."
 
@@ -77,7 +77,7 @@ FalknerZephyrBadgeText:
 	line "tu pourras"
 	cont "utiliser"
 
-	para "Eclate-Roc"
+	para "Éclate-Roc"
 	line "hors d'un"
 	cont "combat."
 
@@ -92,16 +92,16 @@ FalknerTMMudSlapText:
 	cont "Technique"
 
 	para "permet d'apprendre"
-	line "instantanement"
+	line "instantanément"
 
-	para "une capacite"
-	line "a un #mon!"
+	para "une capacité"
+	line "à un #mon!"
 
 	para "Mais elles sont"
-	line "a usage unique,"
+	line "à usage unique,"
 	cont "alors"
 
-	para "reflechis bien"
+	para "réfléchis bien"
 	line "avant de les"
 	cont "utiliser."
 
@@ -111,7 +111,7 @@ FalknerTMMudSlapText:
 
 	para "Cela permet de"
 	line "regagner la"
-	cont "moitie"
+	cont "moitié"
 
 	para "de tes PV"
 	line "maximums!"
@@ -120,18 +120,18 @@ FalknerTMMudSlapText:
 	line "encore"
 	cont "beaucoup"
 
-	para "d'Arènes a"
+	para "d'Arènes à"
 	line "visiter,"
-	cont "je suis sur"
+	cont "je suis sûr"
 
 	para "que ca te sera"
 	line "très utile!"
 
 	para "La prochaine"
-	line "devrait etre…"
+	line "devrait être…"
 
 	para "Ah, ca devrait"
-	line "etre Ecorcia,"
+	line "être Écorcia,"
 	cont "j'imagine?"
 	done
 
@@ -140,25 +140,25 @@ FalknerFightDoneText:
 	line "reste encore"
 	cont "beaucoup"
 
-	para "d'Arènes a"
+	para "d'Arènes à"
 	line "visiter, et"
 	cont "de Champions"
 
-	para "a qui te mesurer…"
+	para "à qui te mesurer…"
 
 	para "La prochaine"
-	line "devrait etre…"
+	line "devrait être…"
 	cont "Ecorcia,"
 
 	para "j'imagine."
 
-	para "Quant a moi,"
+	para "Quant à moi,"
 	line "je vais"
 	cont "continuer"
 
-	para "a m'entraîner"
+	para "à m'entraîner"
 	line "avec mes #mon"
-	cont "pour etre"
+	cont "pour être"
 
 	para "le meilleur"
 	line "Ornithologue"
@@ -166,13 +166,13 @@ FalknerFightDoneText:
 	done
 
 Bird_keeperRodSeenText:
-	text "La cle, c'est"
+	text "La clé, c'est"
 	line "le cran!"
 
-	para "On s'entraine"
+	para "On s'entraîne"
 	line "jour et nuit pour"
 
-	para "etre des maitres"
+	para "être des maîtres"
 	line "des #mon"
 	cont "Oiseaux!"
 
@@ -212,7 +212,7 @@ VioletGymGuyText:
 	text "Salut!"
 	line "Futur Maitre!"
 
-	para "Tu defies Albert?"
+	para "Tu défies Albert?"
 	line "Vas-y! Fonce!!!"
 
 	para "…Mais attends."
@@ -221,7 +221,7 @@ VioletGymGuyText:
 
 	para "Si tu l'as pas"
 	line "finie, tu n'es"
-	cont "pas pret!"
+	cont "pas prêt!"
 
 	para "Ha! Ha! Ha!"
 	done
@@ -236,9 +236,9 @@ VioletGymGuyWinText:
 
 VioletGymGuyFalknerAwayText:
 	text "He! Tu peux pas"
-	line "defier Albert."
+	line "défier Albert."
 
-	para "Il est a l'Antre"
+	para "Il est à l'Antre"
 	line "Noir, il calme un"
 
 	para "Ursaring qui a"

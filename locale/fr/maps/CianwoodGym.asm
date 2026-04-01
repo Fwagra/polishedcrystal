@@ -1,11 +1,11 @@
 ChuckIntroText1:
 	text "Chuck: Wooooooh!!!"
 
-	para "Le flot impetueux"
-	line "qui se deverse"
+	para "Le flot impétueux"
+	line "qui se déverse"
 	cont "sans cesse"
 
-	para "sur mon crane"
+	para "sur mon crâne"
 	line "viril me…"
 
 	para "He! Toi,"
@@ -19,10 +19,10 @@ ChuckIntroText1:
 	cont "j'me chauffe!"
 
 	para "Et tu vas voir,"
-	line "je suis baleze,"
+	line "je suis balèze,"
 	cont "moi!"
 
-	para "Je medite sous"
+	para "Je médite sous"
 	line "cette cascade"
 
 	para "plusieurs heures"
@@ -60,7 +60,7 @@ ChuckLossText:
 	text "Chuck: Ca alors…"
 
 	para "Je m'attendais"
-	line "pas a perdre!"
+	line "pas à perdre!"
 
 	para "Tiens! Tu as"
 	line "bien mérité ce"
@@ -75,8 +75,8 @@ ChuckExplainBadgeText:
 	line "pour revenir"
 	cont "en un instant"
 
-	para "a une ville déjà"
-	line "visitee!"
+	para "à une ville déjà"
+	line "visitée!"
 
 	para "Ah, et tant qu'on"
 	line "y est, prends ca!"
@@ -98,7 +98,7 @@ ChuckAfterText:
 	text "Chuck: Hahaha!"
 
 	para "Je me suis bien"
-	line "amuse avec toi!"
+	line "amusé avec toi!"
 
 	para "Mais une défaite"
 	line "est une défaite!"
@@ -131,7 +131,7 @@ BlackbeltLaoBeatenText:
 
 BlackbeltNobSeenText:
 	text "Les mots servent"
-	line "a rien."
+	line "à rien."
 
 	para "Laisse tes poings"
 	line "parler!"

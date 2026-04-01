@@ -33,6 +33,17 @@ Route5CleanseTagHouseGrannyScript:
 	endtext
 
 Route5CleanseTagHouseGrannyText1:
+if DEF(_LOCALE_FR)
+	text "Yaaaah!"
+
+	para "Je sens une pré-"
+	line "sence maléfique"
+	cont "planer sur toi."
+
+	para "Prends donc ce"
+	line "talisman!"
+	done
+else
 	text "Eeyaaaah!"
 
 	para "I sense a sinister"
@@ -42,14 +53,33 @@ Route5CleanseTagHouseGrannyText1:
 	para "Take this to ward"
 	line "it off!"
 	done
+endc
 
 Route5CleanseTagHouseGrannyText2:
+if DEF(_LOCALE_FR)
+	text "La mort rôdait sur"
+	line "ton âme... Mais ca"
+	cont "va maintenant."
+	done
+else
 	text "You were in mortal"
 	line "danger, but you"
 	cont "are protected now."
 	done
+endc
 
 Route5CleanseTagHouseTeacherText:
+if DEF(_LOCALE_FR)
+	text "Ma mémé est à fond"
+	line "dans les délires"
+
+	para "paranormaux."
+	line "Excuse-la."
+
+	para "Elle a dû te"
+	line "faire peur, hein?"
+	done
+else
 	text "My grandma is into"
 	line "warding off what"
 
@@ -59,3 +89,4 @@ Route5CleanseTagHouseTeacherText:
 	para "I'm sorry that she"
 	line "startled you."
 	done
+endc

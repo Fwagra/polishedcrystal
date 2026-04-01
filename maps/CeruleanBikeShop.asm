@@ -20,6 +20,38 @@ CeruleanBikeShopClerkScript:
 	end
 
 CeruleanBikeShopClerkText:
+if DEF(_LOCALE_FR)
+	text "Il y a quelque"
+	line "temps, un jeune"
+
+	para "garçon s'est"
+	line "promené sur"
+	cont "un de nos vélos,"
+
+	para "et nous a fait"
+	line "de la super"
+	cont "pub!"
+
+	para "On a vendu comme"
+	line "des petits pains,"
+
+	para "alors on a ouvert"
+	line "à Doublonville,"
+
+	para "et là… Gros"
+	line "succès!"
+
+	para "Plus personne"
+	line "ne vient ici!"
+
+	para "Il ne reste que"
+	line "des pompes"
+	cont "à vélo…"
+
+	para "Et si je vendais"
+	line "des bouées?"
+	done
+else
 	text "A long time ago,"
 	line "this cool boy rode"
 	cont "my Bike around,"
@@ -44,3 +76,4 @@ CeruleanBikeShopClerkText:
 	para "Should I sell"
 	line "inflatable tubes?"
 	done
+endc

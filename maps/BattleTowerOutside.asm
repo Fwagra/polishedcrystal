@@ -77,11 +77,19 @@ BattleTowerOutsidePanUpHelperScript:
 	step_end
 
 BattleTowerOutsideSignText:
+if DEF(_LOCALE_FR)
+	text "Tour de Combat"
+
+	para "Enchaîne les"
+	line "victoires!"
+	done
+else
 	text "Battle Tower"
 
 	para "Take the Ultimate"
 	line "Trainer Challenge!"
 	done
+endc
 
 BattleTowerOutsideAnabelScript:
 	faceplayer
@@ -118,6 +126,19 @@ BattleTowerOutsideAnabelScript:
 	end
 
 .ChallengeText:
+if DEF(_LOCALE_FR)
+	text "Salutations… Je"
+	line "suis Anabel."
+
+	para "…Tu es <PLAYER>?"
+	line "J'ai entendu"
+	cont "parler de toi…"
+
+	para "Montre-moi"
+	line "tout ton"
+	cont "talent…"
+	done
+else
 	text "Greetings… My name"
 	line "is Anabel."
 
@@ -130,29 +151,69 @@ BattleTowerOutsideAnabelScript:
 	line "talent in its"
 	cont "entirety…"
 	done
+endc
 
 .YesText:
+if DEF(_LOCALE_FR)
+	text "Commençons,"
+	line "veux-tu?"
+	done
+else
 	text "Let's begin,"
 	line "shall we?"
 	done
+endc
 
 .NoText:
+if DEF(_LOCALE_FR)
+	text "C'est très"
+	line "décevant…"
+	done
+else
 	text "It's very dis-"
 	line "appointing…"
 	done
+endc
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "D'accord, je"
+	line "comprends…"
+	done
+else
 	text "OK, I understand…"
 	done
+endc
 
 .ItemText:
+if DEF(_LOCALE_FR)
+	text "Fufufu, bien"
+	line "joué…"
+
+	para "Prends ca…"
+	done
+else
 	text "Fufufu, nicely"
 	line "done…"
 
 	para "Take this, please…"
 	done
+endc
 
 .GoodbyeText:
+if DEF(_LOCALE_FR)
+	text "Je t'invite à"
+	line "continuer à"
+	cont "combattre."
+
+	para "Je t'attendrai"
+	line "dans cette"
+	cont "Tour de Combat."
+
+	para "Jusqu'à la"
+	line "prochaine…"
+	done
+else
 	text "I urge you to keep"
 	line "battling and keep"
 	cont "on winning."
@@ -164,20 +225,41 @@ BattleTowerOutsideAnabelScript:
 	para "Until the next"
 	line "time we meet…"
 	done
+endc
 
 BattleTowerOutsideYoungsterScript:
 	checkevent EVENT_BATTLE_TOWER_OPEN
 	iftrue_jumptextfaceplayer .OpenText
 	jumpthistextfaceplayer
 
+if DEF(_LOCALE_FR)
+	text "Wouah, la Tour de"
+	line "Combat est énorme!"
+
+	para "J'ai mal"
+	line "à la nuque"
+	cont "a force de lever"
+	cont "la tête."
+	done
+else
 	text "Wow, the Battle"
 	line "Tower is huge! My"
 
 	para "neck is tired from"
 	line "looking up at it."
 	done
+endc
 
 .OpenText:
+if DEF(_LOCALE_FR)
+	text "Wouah, la Tour de"
+	line "Combat est énorme!"
+
+	para "Il doit y avoir"
+	line "plein de #mon"
+	cont "dedans!"
+	done
+else
 	text "Wow, the Battle"
 	line "Tower is huge!"
 
@@ -185,12 +267,24 @@ BattleTowerOutsideYoungsterScript:
 	line "kinds of #mon"
 	cont "in there!"
 	done
+endc
 
 BattleTowerOutsideBeautyScript:
 	checkevent EVENT_BATTLE_TOWER_OPEN
 	iftrue_jumptextfaceplayer .OpenText
 	jumpthistextfaceplayer
 
+if DEF(_LOCALE_FR)
+	text "Mais qu'est-ce"
+	line "qu'on fait ici?"
+
+	para "D'après le nom,"
+	line "c'est pour des"
+
+	para "combats"
+	line "de #mon."
+	done
+else
 	text "What on earth do"
 	line "they do here?"
 
@@ -200,8 +294,18 @@ BattleTowerOutsideBeautyScript:
 	para "it must be for"
 	line "#mon battles."
 	done
+endc
 
 .OpenText:
+if DEF(_LOCALE_FR)
+	text "On n'utilise que"
+	line "3 #mon."
+
+	para "C'est trop dur"
+	line "de choisir les"
+	cont "3…"
+	done
+else
 	text "You can use only"
 	line "three #mon."
 
@@ -211,8 +315,21 @@ BattleTowerOutsideBeautyScript:
 	para "should go into"
 	line "battle…"
 	done
+endc
 
 BattleTowerOutsideSailorText:
+if DEF(_LOCALE_FR)
+	text "Héhé, j'ai filé"
+	line "du boulot."
+
+	para "Je peux pas partir"
+	line "sans gagner!"
+
+	para "Je dois tout"
+	line "gagner. C'est"
+	cont "obligé!"
+	done
+else
 	text "Hehehe, I snuck"
 	line "out from work."
 
@@ -222,8 +339,16 @@ BattleTowerOutsideSailorText:
 	para "I have to win it"
 	line "all. That I must!"
 	done
+endc
 
 BattleTowerOutsideDoorsClosedText:
+if DEF(_LOCALE_FR)
+	text "Les portes de la"
+	line "Tour de Combat"
+	cont "sont fermées…"
+	done
+else
 	text "The Battle Tower's"
 	line "doors are closed…"
 	done
+endc

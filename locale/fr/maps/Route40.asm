@@ -82,9 +82,13 @@ Route40BeachGuyText:
 	text "La TOUR DE COMBAT"
 	line "est presque prête!"
 	para "Des dresseurs"
-	line "viennent à OLIVILLE"
-	para "du monde entier"
-	line "tester leur force."
+	line "viennent a"
+
+	para "OLIVILLE du"
+	line "monde entier"
+
+	para "pour tester leur"
+	line "force."
 	done
 
 Route40BeachGuyText2:

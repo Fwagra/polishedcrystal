@@ -16,6 +16,15 @@ CeladonDevelopmentSpeechHouse_MapScriptHeader:
 	object_event  5,  3, SPRITE_BEAUTY, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, 0, OBJECTTYPE_COMMAND, jumptextfaceplayer, CeladonDevelopmentSpeechHouseBeautyText, -1
 
 CeladonDevelopmentSpeechHouseCooltrainermText:
+if DEF(_LOCALE_FR)
+	text "Céladopole est"
+	line "devenue une vraie"
+	cont "ville touristique."
+
+	para "L'hôtel affiche"
+	line "toujours complet!"
+	done
+else
 	text "Celadon has become"
 	line "quite the tourist"
 	cont "spot."
@@ -23,8 +32,19 @@ CeladonDevelopmentSpeechHouseCooltrainermText:
 	para "The hotel's always"
 	line "fully booked!"
 	done
+endc
 
 CeladonDevelopmentSpeechHouseBeautyText:
+if DEF(_LOCALE_FR)
+	text "Avant, cette ville"
+	line "était un repaire"
+	cont "de la Team Rocket."
+
+	para "J'avais peur de"
+	line "sortir pendant"
+	cont "qu'ils rôdaient!"
+	done
+else
 	text "This city used to"
 	line "be a haven for"
 	cont "Team Rocket."
@@ -34,3 +54,4 @@ CeladonDevelopmentSpeechHouseBeautyText:
 	cont "while they were"
 	cont "lurking about!"
 	done
+endc

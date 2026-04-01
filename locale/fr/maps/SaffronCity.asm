@@ -136,12 +136,15 @@ SaffronCityBlackBelt2Text:
 
 SaffronCitySuperNerdText:
 	text "A une époque, on"
-	line "pensait que les"
+	line "pensait que"
 
-	para "#mon PSY étaient"
-	line "les plus forts, et"
-	para "les INSECTE les"
-	line "plus faibles."
+	para "les #mon PSY"
+	line "etaient les plus"
+
+	para "forts, et les"
+	line "INSECTE les"
+
+	para "plus faibles."
 
 	para "Le plus ironique,"
 	line "c'est que le type"
@@ -155,8 +158,8 @@ SaffronCityScientistText:
 	line "Sylphe avait des"
 	cont "défauts, alors"
 
-	para "on a travaillé sans"
-	line "relâche sur son"
+	para "on a bosse sans"
+	line "relache sur son"
 	cont "successeur…"
 
 	para "le Scope Sylphe2!"

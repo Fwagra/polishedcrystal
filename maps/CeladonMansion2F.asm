@@ -22,6 +22,31 @@ CeladonMansion2FSign:
 	jumptext CeladonMansion2FSignText
 
 CeladonMansion2FComputerText:
+if DEF(_LOCALE_FR)
+	text "<PLAYER> allume"
+	line "le PC."
+
+	para "…"
+
+	para "Un e-mail en"
+	line "cours de redac-"
+	cont "tion…"
+
+	para "…J'espere que tu"
+	line "viendras a Kanto."
+
+	para "Tu verras comme"
+	line "tout a change."
+
+	para "Tu croiseras des"
+	line "#mon que tu ne"
+
+	para "vois pas a Johto."
+	line "Au Producteur"
+
+	para "…"
+	done
+else
 	text "<PLAYER> turned on"
 	line "the PC."
 
@@ -50,8 +75,15 @@ CeladonMansion2FComputerText:
 
 	para "…"
 	done
+endc
 
 CeladonMansion2FSignText:
+if DEF(_LOCALE_FR)
+	text "Game Freak"
+	line "Salle reunion"
+	done
+else
 	text "Game Freak"
 	line "Meeting Room"
 	done
+endc

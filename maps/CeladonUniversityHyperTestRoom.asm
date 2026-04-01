@@ -144,11 +144,28 @@ CeladonUniversityHyperTestRoomWestwoodScript:
 	jumpopenedtext .WrongAnswerText
 
 .GreetingText:
+if DEF(_LOCALE_FR)
+	text "Prof. Westwood?"
+	line "C'est bien moi."
+	done
+else
 	text "Prof.Westwood?"
 	line "That would be me."
 	done
+endc
 
 .IntroText:
+if DEF(_LOCALE_FR)
+	text "Un chercheur"
+	line "hors pair!"
+
+	para "Mes travaux sont"
+	line "sans equivalent."
+
+	para "Une distinction"
+	line "me attend bientot…"
+	done
+else
 	text "A researcher"
 	line "extraordinaire!"
 
@@ -159,8 +176,19 @@ CeladonUniversityHyperTestRoomWestwoodScript:
 	line "a commendation"
 	cont "before long…"
 	done
+endc
 
 .QuestionText:
+if DEF(_LOCALE_FR)
+	text "Hum. Tu dis?"
+	line "Tu viens pour le"
+
+	para "Hyper Test de"
+	line "l'universite de"
+
+	para "Céladopole?"
+	done
+else
 	text "Ahem. What was"
 	line "that?"
 
@@ -168,8 +196,24 @@ CeladonUniversityHyperTestRoomWestwoodScript:
 	line "the Celadon Univ-"
 	cont "ersity Hyper Test?"
 	done
+endc
 
 .BeginText:
+if DEF(_LOCALE_FR)
+	text "Parfait!"
+
+	para "Le Hyper Test:"
+	line "six questions qui"
+
+	para "testent tes sens"
+	line "sous pression!"
+
+	para "Si tu reussis,"
+	line "un prix digne de"
+
+	para "notre universite!"
+	done
+else
 	text "Excellent!"
 
 	para "The Hyper Test is"
@@ -185,70 +229,158 @@ CeladonUniversityHyperTestRoomWestwoodScript:
 	para "worthy of our"
 	line "university!"
 	done
+endc
 
 .CorrectText:
+if DEF(_LOCALE_FR)
+	text "Exact!"
+	done
+else
 	text "Correct!"
 	done
+endc
 
 .Question1IntroText:
+if DEF(_LOCALE_FR)
+	text "Question 1:"
+	line "Regarde bien!"
+	done
+else
 	text "Question 1:"
 	line "Look closely!"
 	done
+endc
 
 .Question1QuestionText:
+if DEF(_LOCALE_FR)
+	text "Quel #mon sur"
+	line "cette silhouette?"
+	done
+else
 	text "What #mon's sil-"
 	line "houette is this?"
 	done
+endc
 
 .Question2IntroText:
+if DEF(_LOCALE_FR)
+	text "Question 2:"
+	line "Ecoute bien!"
+	done
+else
 	text "Question 2:"
 	line "Listen carefully!"
 	done
+endc
 
 .Question2QuestionText:
+if DEF(_LOCALE_FR)
+	text "De quel #mon"
+	line "est ce cri?"
+	done
+else
 	text "What #mon's cry"
 	line "is this?"
 	done
+endc
 
 .Question3IntroText:
+if DEF(_LOCALE_FR)
 	text "Question 3:"
 	done
+else
+	text "Question 3:"
+	done
+endc
 
 .Question3QuestionText:
+if DEF(_LOCALE_FR)
+	text "Quel medicament"
+	line "est amer?"
+	done
+else
 	text "Which medicine"
 	line "tastes bitter?"
 	done
+endc
 
 .Question4IntroText:
+if DEF(_LOCALE_FR)
 	text "Question 4:"
 	done
+else
+	text "Question 4:"
+	done
+endc
 
 .Question4QuestionText:
+if DEF(_LOCALE_FR)
+	text "Quel #mon a"
+	line "Peau Seche?"
+	done
+else
 	text "Which #mon"
 	line "has Dry Skin?"
 	done
+endc
 
 .Question5IntroText:
+if DEF(_LOCALE_FR)
 	text "Question 5:"
 	done
+else
+	text "Question 5:"
+	done
+endc
 
 .Question5QuestionText:
+if DEF(_LOCALE_FR)
+	text "Quelle Baie sent"
+	line "le bleu?"
+	done
+else
 	text "Which Berry"
 	line "smells blue?"
 	done
+endc
 
 .Question6IntroText:
+if DEF(_LOCALE_FR)
+	text "Question 6:"
+	line "Reflechis!"
+	done
+else
 	text "Question 6:"
 	line "Think wisely!"
 	done
+endc
 
 .Question6QuestionText:
+if DEF(_LOCALE_FR)
+	text "Quel prof est le"
+	line "plus illustre?"
+	done
+else
 	text "Who is the most"
 	line "accomplished"
 	cont "professor?"
 	done
+endc
 
 .CongratulationsText:
+if DEF(_LOCALE_FR)
+	text "Bravo!"
+
+	para "Tu as reussi le"
+	line "Hyper Test haut"
+
+	para "la main!"
+	line "Voici un Magicarpe"
+
+	para "d'elevage rare,"
+	line "avec Draco-Rage!"
+	done
+else
 	text "Congratulations!"
 
 	para "You passed the"
@@ -261,8 +393,19 @@ CeladonUniversityHyperTestRoomWestwoodScript:
 	para "Magikarp that"
 	line "knows Dragon Rage!"
 	done
+endc
 
 .TestOverText:
+if DEF(_LOCALE_FR)
+	text "Nos eleves ont la"
+	line "tenacite d'un"
+
+	para "Magicarpe qui se"
+	line "bat pour evoluer."
+
+	para "Toi aussi!"
+	done
+else
 	text "Our students have"
 	line "the tenacity of a"
 
@@ -270,18 +413,37 @@ CeladonUniversityHyperTestRoomWestwoodScript:
 	line "ling to evolve."
 	cont "And so do you!"
 	done
+endc
 
 .PartyAndBoxFullText:
+if DEF(_LOCALE_FR)
+	text "Oh non! Equipe"
+	line "et Boite pleines…"
+	done
+else
 	text "Oh no! Your party"
 	line "and Box are full…"
 	done
+endc
 
 .RefusedText:
+if DEF(_LOCALE_FR)
+	text "Bon, si tu es sur."
+	done
+else
 	text "Well, if you're"
 	line "certain."
 	done
+endc
 
 .AlreadyTookText:
+if DEF(_LOCALE_FR)
+	text "Tu as deja passe"
+	line "le test ce jour!"
+
+	para "Reviens demain."
+	done
+else
 	text "But you already"
 	line "attempted the test"
 	cont "today!"
@@ -289,8 +451,16 @@ CeladonUniversityHyperTestRoomWestwoodScript:
 	para "You may retake"
 	line "it tomorrow."
 	done
+endc
 
 .WrongAnswerText:
+if DEF(_LOCALE_FR)
+	text "Faux, desole!"
+
+	para "Retente le Hyper"
+	line "Test demain."
+	done
+else
 	text "I'm sorry, that's"
 	line "incorrect!"
 
@@ -298,6 +468,7 @@ CeladonUniversityHyperTestRoomWestwoodScript:
 	line "retake the Hyper"
 	cont "Test tomorrow."
 	done
+endc
 
 .Question1MenuData:
 	db MENU_BACKUP_TILES
@@ -384,6 +555,20 @@ CeladonUniversityHyperTestRoomWestwoodScript:
 	db "Prof.Westwood@"
 
 CeladonUniversityHyperTestRoomScientistText:
+if DEF(_LOCALE_FR)
+	text "Le Hyper Test est"
+	line "un passage"
+
+	para "obligatoire pour"
+	line "les diplomes de"
+
+	para "l'universite de"
+	line "Céladopole."
+
+	para "Ca teste toutes"
+	line "tes facultes!"
+	done
+else
 	text "The Hyper Test is"
 	line "a rite of passage"
 
@@ -395,17 +580,32 @@ CeladonUniversityHyperTestRoomScientistText:
 	line "their faculties to"
 	cont "the utmost!"
 	done
+endc
 
 CeladonUniversityHyperTestRoomTwin1Text:
+if DEF(_LOCALE_FR)
+	text "Je reussis le"
+	line "Hyper Test avant"
+	cont "toi!"
+	done
+else
 	text "I'll pass the Hyper"
 	line "Test before you!"
 	done
+endc
 
 CeladonUniversityHyperTestRoomTwin2Text:
+if DEF(_LOCALE_FR)
+	text "Non, c'est moi"
+	line "qui reussis avant"
+	cont "toi!"
+	done
+else
 	text "No, I'll pass the"
 	line "Hyper Test before"
 	cont "you!"
 	done
+endc
 
 CeladonUniversityHyperTestRoomMagikarpSign:
 	reanchormap
@@ -415,19 +615,42 @@ CeladonUniversityHyperTestRoomMagikarpSign:
 	closepokepic
 	jumpthistext
 
+if DEF(_LOCALE_FR)
+	text "Un Magicarpe"
+	line "nage en rond."
+	done
+else
 	text "A Magikarp is"
 	line "swimming around."
 	done
+endc
 
 CeladonUniversityHyperTestRoomBookshelf1Text:
+if DEF(_LOCALE_FR)
+	text "Un marque-page"
+	line "depasse du livre."
+
+	para "Quelqu'un n'a pas"
+	line "fini sa lecture!"
+	done
+else
 	text "This book has a"
 	line "bookmark in it."
 
 	para "Someone's not done"
 	line "with it yet!"
 	done
+endc
 
 CeladonUniversityHyperTestRoomBookshelf2Text:
+if DEF(_LOCALE_FR)
+	text "Un vieux magazine"
+	line "Nintendo Power!"
+
+	para "Un Pikachu en"
+	line "couverture."
+	done
+else
 	text "It's a copy of"
 	line "Nintendo Power!"
 
@@ -435,13 +658,23 @@ CeladonUniversityHyperTestRoomBookshelf2Text:
 	line "fills the front"
 	cont "cover."
 	done
+endc
 
 CeladonUniversityHyperTestRoomComputer:
 	jumpthistext
 
+if DEF(_LOCALE_FR)
+	text "Un fichier"
+	line "questions.txt sur"
+
+	para "le bureau."
+	line "Pas tricher!"
+	done
+else
 	text "There's a file on"
 	line "the desktop named"
 	cont "questions.txt."
 
 	para "Better not cheat!"
 	done
+endc

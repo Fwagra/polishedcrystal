@@ -3,17 +3,19 @@ Route29Route46GateOfficerText:
 	line "escalader les"
 	cont "rebords."
 
-	para "Mais on peut sauter"
-	line "en bas pour prendre"
-	cont "un raccourci."
+	para "Mais on peut"
+	line "sauter en bas"
+
+	para "pour prendre un"
+	line "raccourci."
 	done
 
 Route29Route46GateYoungsterText:
 	text "Après, il y a"
 	line "d'autres #mon."
 
-	para "Si tu veux tous les"
-	line "attraper,"
+	para "Si tu veux les"
+	line "attraper tous,"
 
 	para "tu dois chercher"
 	line "partout."

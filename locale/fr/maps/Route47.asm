@@ -25,13 +25,13 @@ AceDuoThomandkae1SeenText:
 	text "Thom: Un plus un"
 	line "font deux. Mais"
 
-	para "nous deux ensemble,"
-	line "c'est bien plus fort!"
+	para "ensemble, nous"
+	line "deux, c'est fort!"
 	done
 
 AceDuoThomandkae1BeatenText:
-	text "Thom: C'était pas"
-	line "ce que j'attendais…"
+	text "Thom: Pas ce que"
+	line "j'attendais…"
 	done
 
 AceDuoThomandkae2SeenText:
@@ -84,7 +84,8 @@ CowgirlDanielaBeatenText:
 
 GruntF6SeenText:
 	text "Pourquoi on"
-	line "élèverait des #mon"
+	line "eleverait des"
+	cont "#mon"
 	cont "comme des"
 	cont "Dresseurs ordi-"
 	cont "naires?"

@@ -18,6 +18,17 @@ SaffronBookSpeechHouse_MapScriptHeader:
 	object_event  3,  3, SPRITE_BOOK_PAPER_POKEDEX, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, 0, OBJECTTYPE_COMMAND, jumptext, SaffronBookSpeechHouseBookText, -1
 
 SaffronBookSpeechHouseLassText:
+if DEF(_LOCALE_FR)
+	text "J'adore lire!"
+
+	para "J'ai emprunté"
+	line "plein de livres à"
+
+	para "la bibliothèque"
+	line "de l'université"
+	cont "d'Acajou."
+	done
+else
 	text "I absolutely love"
 	line "to read!"
 
@@ -27,8 +38,22 @@ SaffronBookSpeechHouseLassText:
 	para "university library"
 	line "in Celadon."
 	done
+endc
 
 SaffronBookSpeechHouseBookText:
+if DEF(_LOCALE_FR)
+	text "Une pile de"
+	line "livres"
+	cont "d'histoires."
+
+	para "La Princesse et"
+	line "le #mon,"
+
+	para "Edward aux mains"
+	line "Cizayox, Dr.Jekyll"
+	cont "& M.Mime…"
+	done
+else
 	text "It's a stack of"
 	line "story books."
 
@@ -39,3 +64,4 @@ SaffronBookSpeechHouseBookText:
 	line "hands, Dr.Jekyll"
 	cont "& Mr.Mime…"
 	done
+endc

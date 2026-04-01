@@ -3,7 +3,7 @@ BrockIntroText:
 	line "tous les jours"
 	cont "que"
 
-	para "l'on recoit la"
+	para "l'on reçoit la"
 	line "visite de"
 	cont "quelqu'un"
 
@@ -40,7 +40,7 @@ BrockWinLossText:
 	line "défense…"
 
 	para "Je ne m'attendais"
-	line "pas a ca!"
+	line "pas à ca!"
 
 	para "Tu as bien"
 	line "mérité ce"
@@ -59,8 +59,8 @@ BrockBoulderBadgeText:
 	line "j'aimerais"
 	cont "t'offrir"
 
-	para "une capacite:"
-	line "Eboulement!"
+	para "une capacité:"
+	line "Éboulement!"
 
 	para "En plus de faire"
 	line "des dommages,"
@@ -82,7 +82,7 @@ BrockFightDoneText:
 
 	para "Et moi aussi,"
 	line "je continuerai"
-	cont "a progresser!"
+	cont "à progresser!"
 	done
 
 CamperJerrySeenText:
@@ -112,7 +112,7 @@ PewterGymGuyText:
 	text "Salut!"
 	line "Future légende!"
 
-	para "Tu defies les"
+	para "Tu défies les"
 	line "Champions"
 	cont "de Kanto?"
 
@@ -125,7 +125,7 @@ PewterGymGuyWinText:
 	line "future légende!"
 
 	para "Cette Arène ne"
-	line "t'a pose aucun"
-	cont "probleme!"
+	line "t'a posé aucun"
+	cont "problème!"
 	done
 

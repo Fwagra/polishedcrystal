@@ -24,6 +24,25 @@ CeladonUniversityClassroom3_MapScriptHeader:
 	object_event  4,  7, SPRITE_SUPER_NERD, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, 0, OBJECTTYPE_COMMAND, jumptextfaceplayer, CeladonUniversityClassroom3Super_nerdText, -1
 
 CeladonUniversityClassroom3SparkText:
+if DEF(_LOCALE_FR)
+	text "Salut! Je suis"
+	line "Spark. J'enseigne"
+
+	para "les sciences--"
+	line "la #biology."
+
+	para "Ici on etudie la"
+	line "reproduction des"
+
+	para "#mon. Prof. Orme"
+	line "a ouvert la voie."
+
+	para "Tu le connais?"
+	line "Il vit vraiment"
+
+	para "dans son labo?"
+	done
+else
 	text "Hey! I'm Spark."
 	line "I teach Science--"
 
@@ -41,16 +60,38 @@ CeladonUniversityClassroom3SparkText:
 	cont "actually lives in"
 	cont "his lab?"
 	done
+endc
 
 CeladonUniversityClassroom3TeacherText:
+if DEF(_LOCALE_FR)
+	text "Tu cherches Spark?"
+	line "Il revient demain"
+
+	para "matin."
+	done
+else
 	text "Are you looking"
 	line "for Spark?"
 
 	para "He will be back"
 	line "tomorrow morning."
 	done
+endc
 
 CeladonUniversityClassroom3ChildText:
+if DEF(_LOCALE_FR)
+	text "Dans les # Balls,"
+	line "les #mon"
+
+	para "deviennent lumiere,"
+	line "puis matiere"
+
+	para "au lancement."
+	line "Ca ne leur fait"
+
+	para "pas mal!"
+	done
+else
 	text "#mon inside"
 	line "# Balls are"
 
@@ -65,8 +106,22 @@ CeladonUniversityClassroom3ChildText:
 	line "doesn't hurt them"
 	cont "one bit!"
 	done
+endc
 
 CeladonUniversityClassroom3LassText:
+if DEF(_LOCALE_FR)
+	text "Le prof dit que"
+	line "Magneton, c'est"
+
+	para "trois Magneti,"
+	line "mais il pese 10"
+
+	para "fois plus lourd!"
+	line "Comment c'est"
+
+	para "possible?!"
+	done
+else
 	text "My instructor said"
 	line "that Magneton is a"
 
@@ -80,8 +135,22 @@ CeladonUniversityClassroom3LassText:
 	para "How does that"
 	line "work?!"
 	done
+endc
 
 CeladonUniversityClassroom3Super_nerdText:
+if DEF(_LOCALE_FR)
+	text "Tu connais Mareep,"
+	line "l'Electrik? Son"
+
+	para "nom vient de"
+	line "l'ampere, unite"
+
+	para "d'intensite."
+	line "Melange les"
+
+	para "lettres, tu verras!"
+	done
+else
 	text "Have you heard of"
 	line "the Electric-type"
 	cont "#mon Mareep?"
@@ -96,8 +165,26 @@ CeladonUniversityClassroom3Super_nerdText:
 	line "letters, and"
 	cont "you'll see!"
 	done
+endc
 
 CeladonUniversityClassroom3BlackboardText:
+if DEF(_LOCALE_FR)
+	text "Au tableau:"
+	line "Phylogenetique."
+
+	para "Les #mon ont 14"
+	line "groupes Oeuf,"
+
+	para "plus Metamorph."
+	line "Les bebes #mon"
+
+	para "ne se reproduisent"
+	line "pas. Les legen-"
+
+	para "daires: peu"
+	line "etudies."
+	done
+else
 	text "'Phylogenetics'"
 	line "is on the board."
 
@@ -113,8 +200,19 @@ CeladonUniversityClassroom3BlackboardText:
 	line "have not been"
 	cont "studied.”"
 	done
+endc
 
 CeladonUniversityClassroom3Bookshelf1Text:
+if DEF(_LOCALE_FR)
+	text "Cahier de plans"
+	line "de prototypes"
+
+	para "technos."
+	line "Tiens, un vieux"
+
+	para "schema de #gear!"
+	done
+else
 	text "It's a book of"
 	line "prototype designs"
 
@@ -125,8 +223,17 @@ CeladonUniversityClassroom3Bookshelf1Text:
 	line "#gear diagram"
 	cont "is in here!"
 	done
+endc
 
 CeladonUniversityClassroom3Bookshelf2Text:
+if DEF(_LOCALE_FR)
+	text "Article du Prof."
+	line "Silktree sur les"
+
+	para "Ruines d'Alpha:"
+	line "rapport complet…"
+	done
+else
 	text "It's a paper writ-"
 	line "ten by Prof."
 	cont "Silktree."
@@ -135,3 +242,4 @@ CeladonUniversityClassroom3Bookshelf2Text:
 	line "Investigation"
 	cont "Report”…"
 	done
+endc

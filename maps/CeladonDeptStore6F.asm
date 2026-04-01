@@ -29,6 +29,14 @@ CeladonDeptStore3FGameboyKid2Script:
 	end
 
 CeladonDeptStore6FSuperNerdText:
+if DEF(_LOCALE_FR)
+	text "Un distributeur"
+	line "avec loterie…"
+
+	para "On n'en voit plus"
+	line "beaucoup."
+	done
+else
 	text "A vending machine"
 	line "with a prize rou-"
 	cont "lette…"
@@ -36,8 +44,20 @@ CeladonDeptStore6FSuperNerdText:
 	para "You never see"
 	line "those anymore."
 	done
+endc
 
 CeladonDeptStore6FYoungsterText:
+if DEF(_LOCALE_FR)
+	text "Je joue au 3e"
+	line "étage, puis je"
+
+	para "bois ici quand"
+	line "j'ai soif!"
+
+	para "Ce magasin est"
+	line "génial!"
+	done
+else
 	text "I can play games"
 	line "on the third"
 	cont "floor, then come"
@@ -48,16 +68,43 @@ CeladonDeptStore6FYoungsterText:
 	para "This store is"
 	line "great!"
 	done
+endc
 
 CeladonDeptStore3FGameboyKid1Text:
+if DEF(_LOCALE_FR)
+	text "J'ai échangé mon"
+	line "#mon qui"
+
+	para "tenait un"
+	line "Améliorator."
+	done
+else
 	text "I traded my"
 	line "#mon while"
 
 	para "it was holding"
 	line "an Upgrade."
 	done
+endc
 
 CeladonDeptStore3FGameboyKid2Text:
+if DEF(_LOCALE_FR)
+	text "Youpi! J'ai enfin"
+	line "un Porygon!"
+
+	para "Je suis nulle aux"
+	line "machines, alors"
+
+	para "jamais assez de"
+	line "jetons…"
+
+	para "Je l'élève avec"
+	line "un Améliorator"
+
+	para "pour le faire"
+	line "évoluer!"
+	done
+else
 	text "Yay! I'm finally"
 	line "getting a Porygon!"
 
@@ -71,8 +118,17 @@ CeladonDeptStore3FGameboyKid2Text:
 	line "an Upgrade to make"
 	cont "it evolve!"
 	done
+endc
 
 CeladonDeptStore6FDirectoryText:
+if DEF(_LOCALE_FR)
+	text "6F: Atrium"
+	line "    (toit)"
+
+	para "Distributeurs"
+	done
+else
 	text "6F: Rooftop Atrium"
 	line "Vending Machines"
 	done
+endc

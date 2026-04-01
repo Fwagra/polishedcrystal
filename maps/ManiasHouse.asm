@@ -97,6 +97,34 @@ ShuckieOTName:
 	rawchar "Kirk@"
 
 ManiaText_AskLookAfterShuckie:
+if DEF(_LOCALE_FR)
+	text "Je suis choqué!"
+
+	para "Un garnement de"
+	line "ton âge avec"
+
+	para "l'oeil mauvais"
+	line "et des cheveux"
+	cont "longs, s'est in-"
+	cont "filtré chez moi."
+
+	para "Il m'a fait grand-"
+	line "peur et chapardé"
+	cont "mon #mon"
+	cont "adoré!"
+
+	para "Il m'en reste un"
+	line "mais que faire"
+	cont "s'il revient?"
+
+	para "Tu as l'air"
+	line "fort. Peux-tu"
+
+	para "t'occuper de"
+	line "mon #mon"
+	cont "un petit moment?"
+	done
+else
 	text "I, I'm in shock!"
 
 	para "A guy about your"
@@ -119,38 +147,86 @@ ManiaText_AskLookAfterShuckie:
 	para "after my #mon"
 	line "for a while?"
 	done
+endc
 
 ManiaText_TakeCareOfShuckie:
+if DEF(_LOCALE_FR)
+	text "Oh, bien le merci!"
+
+	para "Prends-en bien"
+	line "soin, pitié!"
+	done
+else
 	text "Oh, thank you!"
 
 	para "Take good care of"
 	line "it, please!"
 	done
+endc
 
 ManiaText_GotShuckie:
-	text "<PLAYER> received a"
+if DEF(_LOCALE_FR)
+	text "<PLAYER> reçoit un"
 	line "#mon."
 	done
+else
+	text "<PLAYER> got a"
+	line "#mon."
+	done
+endc
 
 ManiaText_ShuckieSentToPC:
+if DEF(_LOCALE_FR)
+	text "Le #mon a été"
+	line "envoyé dans"
+	text_ram wStringBuffer1
+	text "."
+	done
+else
 	text "The #mon was"
 	line "sent to "
 	text_ram wStringBuffer1
 	text "."
 	done
+endc
 
 ManiaText_PartyAndBoxFull:
+if DEF(_LOCALE_FR)
+	text "Ton équipe et"
+	line "tes Boîtes"
+	cont "sont pleines."
+	done
+else
 	text "Your #mon party"
 	line "and Box are full."
 	done
+endc
 
 ManiaText_IfHeComesBack:
+if DEF(_LOCALE_FR)
+	text "Oh, non... Que"
+	line "vais-je faire"
+	cont "s'il revient?"
+	done
+else
 	text "Oh, no… What'll"
 	line "I do if he comes"
 	cont "back?"
 	done
+endc
 
 ManiaText_CanIHaveMyMonBack:
+if DEF(_LOCALE_FR)
+	text "Salut! Comment va"
+	line "mon #mon?"
+
+	para "Je pense être en"
+	line "sécurité main-"
+	cont "tenant, serait-il"
+	cont "possible de le"
+	cont "récupérer?"
+	done
+else
 	text "Hi! How's my #-"
 	line "mon?"
 
@@ -158,18 +234,44 @@ ManiaText_CanIHaveMyMonBack:
 	line "now, so may I have"
 	cont "it back?"
 	done
+endc
 
 ManiaText_ThankYou:
+if DEF(_LOCALE_FR)
+	text "Merci mon petit!"
+	done
+else
 	text "Thank you!"
 	done
+endc
 
 ManiaText_ShuckieNotThere:
+if DEF(_LOCALE_FR)
+	text "Hé, tu n'as pas"
+	line "mon #mon avec"
+	cont "toi."
+	done
+else
 	text "Hey, you don't"
 	line "have my #mon"
 	cont "with you."
 	done
+endc
 
 ManiaText_ShuckieLikesYou:
+if DEF(_LOCALE_FR)
+	text "Mon #mon a"
+	line "l'air de t'appré-"
+	cont "cier."
+
+	para "Très bien! Tu"
+	line "peux le garder."
+
+	para "Mais promets-moi"
+	line "d'être sympa avec"
+	cont "lui!"
+	done
+else
 	text "My #mon has"
 	line "come to like you."
 
@@ -179,25 +281,52 @@ ManiaText_ShuckieLikesYou:
 	para "But promise to"
 	line "be good to it!"
 	done
+endc
 
 ManiaText_SameAsBeingRobbed:
+if DEF(_LOCALE_FR)
+	text "Oh, non de non..."
+	line "C'est la même"
+	cont "chose que de se"
+	cont "faire voler."
+	done
+else
 	text "Oh, no, no… That's"
 	line "the same as being"
 	cont "robbed."
 	done
+endc
 
 ManiaText_HappinessSpeech:
+if DEF(_LOCALE_FR)
+	text "Pour les #mon,"
+	line "c'est le bonheur"
+
+	para "d'être avec un"
+	line "gentil dresseur."
+	done
+else
 	text "For #mon, hap-"
 	line "piness is being"
 
 	para "with a person who"
 	line "treats them well."
 	done
+endc
 
 ManiaText_ShuckieIsYourLastMon:
+if DEF(_LOCALE_FR)
+	text "Si je reprends mon"
+	line "#mon, avec quoi"
+
+	para "vas-tu pouvoir"
+	line "combattre?"
+	done
+else
 	text "If I take my #-"
 	line "mon back, what are"
 
 	para "you going to use"
 	line "in battle?"
 	done
+endc

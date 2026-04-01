@@ -70,6 +70,25 @@ CeladonUniversityClassroom4RaymondScript:
 	jumpopenedtext .FinalText
 
 .IntroText1:
+if DEF(_LOCALE_FR)
+	text "Salut! Raymond!"
+	line "Appelle-moi Ray."
+
+	para "Je suis du top 4"
+	line "de l'universite de"
+
+	para "Céladopole!"
+	line "On est les 4"
+
+	para "Céladon!"
+	line "Tu veux voir notre"
+
+	para "niveau? Match!"
+	line "Sauf si tu as"
+
+	para "peur de perdre."
+	done
+else
 	text "Hey! I'm Raymond!"
 	line "Just call me Ray."
 
@@ -87,8 +106,23 @@ CeladonUniversityClassroom4RaymondScript:
 	line "Unless you're"
 	cont "afraid to lose."
 	done
+endc
 
 .IntroText2:
+if DEF(_LOCALE_FR)
+	text "Salut! Raymond!"
+	line "Appelle-moi Ray."
+
+	para "Je fais partie"
+	line "des 4 Céladon!"
+
+	para "Tu veux nous"
+	line "affronter tous?"
+
+	para "Match! Sauf si tu"
+	line "as peur de perdre."
+	done
+else
 	text "Hey! I'm Raymond!"
 	line "Just call me Ray."
 
@@ -102,21 +136,49 @@ CeladonUniversityClassroom4RaymondScript:
 	line "Unless you're"
 	cont "afraid to lose."
 	done
+endc
 
 .NoBattleText:
+if DEF(_LOCALE_FR)
+	text "Je savais que tu"
+	line "avais la frousse."
+	done
+else
 	text "I knew you were"
 	line "scared."
 	done
+endc
 
 .SeenText:
+if DEF(_LOCALE_FR)
+	text "C'est parti!"
+	done
+else
 	text "Let's do this!"
 	done
+endc
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "Ohhh nonnn!"
+	done
+else
 	text "Ohhhh nooooo!"
 	done
+endc
 
 .AfterText1:
+if DEF(_LOCALE_FR)
+	text "Comment? Moi,"
+	line "un des 4 Céladon!"
+
+	para "J'ai perdu, mais"
+	line "mes trois potes"
+
+	para "me vengeront."
+	line "Va les trouver!"
+	done
+else
 	text "How could this be?"
 	line "I'm one of the"
 	cont "Celadon Four!"
@@ -128,8 +190,19 @@ CeladonUniversityClassroom4RaymondScript:
 	para "Go find them"
 	line "yourself!"
 	done
+endc
 
 .AfterText2:
+if DEF(_LOCALE_FR)
+	text "Tu as battu les"
+	line "4 Céladon?"
+
+	para "Sans blague!"
+
+	para "…Bon. Tu merites"
+	line "ca."
+	done
+else
 	text "You've beaten all"
 	line "of the Celadon"
 	cont "Four?"
@@ -139,16 +212,39 @@ CeladonUniversityClassroom4RaymondScript:
 	para "…Fine. I guess"
 	line "you've earned this."
 	done
+endc
 
 .FinalText:
+if DEF(_LOCALE_FR)
+	text "Si tu bats les"
+	line "4 Céladon,"
+
+	para "tu peux tout"
+	line "supporter."
+	done
+else
 	text "If you've conquered"
 	line "the Celadon Four,"
 
 	para "you can bear any"
 	line "burden."
 	done
+endc
 
 CeladonUniversityClassroom4CandelaText:
+if DEF(_LOCALE_FR)
+	text "Salut! Candela."
+	line "J'enseigne le"
+
+	para "combat #mon!"
+	line "Je cherche comment"
+
+	para "booster la puissance"
+	line "naturelle des"
+
+	para "#mon."
+	done
+else
 	text "Hi! I'm Candela."
 	line "I teach #mon"
 	cont "Battling!"
@@ -160,14 +256,36 @@ CeladonUniversityClassroom4CandelaText:
 	line "power in the pur-"
 	cont "suit of strength."
 	done
+endc
 
 CeladonUniversityClassroom4TeacherText:
+if DEF(_LOCALE_FR)
+	text "Candela? Elle"
+	line "enseigne le jour"
+
+	para "seulement."
+	done
+else
 	text "Candela? She only"
 	line "teaches during the"
 	cont "day."
 	done
+endc
 
 CeladonUniversityClassroom4Bug_catcherText:
+if DEF(_LOCALE_FR)
+	text "La prof dit que"
+	line "mon #mon peut"
+
+	para "rivaliser avec les"
+	line "meilleurs."
+
+	para "Son potentiel: le"
+	line "plus fort qu'elle"
+
+	para "ait vu!"
+	done
+else
 	text "My lecturer said"
 	line "my #mon could"
 
@@ -178,8 +296,19 @@ CeladonUniversityClassroom4Bug_catcherText:
 	line "the best she'd"
 	cont "ever seen!"
 	done
+endc
 
 CeladonUniversityClassroom4FisherText:
+if DEF(_LOCALE_FR)
+	text "Le prof dit que"
+	line "mon #mon est un"
+
+	para "chef-d'oeuvre!"
+	line "A couper le"
+
+	para "souffle."
+	done
+else
 	text "The prof said my"
 	line "#mon was a"
 	cont "wonder!"
@@ -187,8 +316,19 @@ CeladonUniversityClassroom4FisherText:
 	para "It's a breath-"
 	line "taking #mon."
 	done
+endc
 
 CeladonUniversityClassroom4LadyText:
+if DEF(_LOCALE_FR)
+	text "La prof dit que"
+	line "mon #mon l'a"
+
+	para "epoustouflee."
+	line "Il peut tout"
+
+	para "reussir!"
+	done
+else
 	text "The professor said"
 	line "my #mon simply"
 	cont "amazed her."
@@ -197,6 +337,7 @@ CeladonUniversityClassroom4LadyText:
 	line "can accomplish"
 	cont "anything!"
 	done
+endc
 
 CeladonUniversityClassroom4Rich_boyScript:
 	faceplayer
@@ -213,6 +354,19 @@ CeladonUniversityClassroom4Rich_boyScript:
 	waitendtext
 
 .Text1:
+if DEF(_LOCALE_FR)
+	text "On etudie les"
+	line "talents #mon."
+
+	para "Certaines especes"
+	line "ont plusieurs"
+
+	para "talents possibles."
+	line "Utilise ca pour"
+
+	para "les alterner!"
+	done
+else
 	text "We're learning"
 	line "about #mon"
 	cont "abilities."
@@ -224,8 +378,26 @@ CeladonUniversityClassroom4Rich_boyScript:
 	para "Use this to switch"
 	line "between them!"
 	done
+endc
 
 .Text2:
+if DEF(_LOCALE_FR)
+	text "Il existe des"
+	line "talents cachés"
+
+	para "rares que la"
+	line "Capsule Talent ne"
+
+	para "change pas."
+	line "Mais! Un #mon"
+
+	para "porte-Capsule qui"
+	line "fait un Oeuf peut"
+
+	para "donner un bebe"
+	line "au talent cache!"
+	done
+else
 	text "There are some"
 	line "rare “hidden"
 	cont "abilities” that"
@@ -242,8 +414,26 @@ CeladonUniversityClassroom4Rich_boyScript:
 	para "might have a"
 	line "hidden ability!"
 	done
+endc
 
 CeladonUniversityClassroom4BlackboardText:
+if DEF(_LOCALE_FR)
+	text "Facteurs de combat:"
+	line "- Types"
+
+	para "- Effets des"
+	line "attaques"
+
+	para "- Categories"
+	line "- Etats"
+
+	para "- Objets"
+	line "- Stats"
+
+	para "- EV, natures,"
+	line "talents, meteo…"
+	done
+else
 	text "Be aware of these"
 	line "factors in battle:"
 	cont "- Type chart"
@@ -258,6 +448,7 @@ CeladonUniversityClassroom4BlackboardText:
 	cont "- Weather"
 	cont "- Others?"
 	done
+endc
 
 CeladonUniversityClassroom4Bookshelf1:
 	checkevent EVENT_GOT_X_SP_ATK_IN_UNIVERSITY
@@ -271,6 +462,16 @@ CeladonUniversityClassroom4Bookshelf1:
 	endtext
 
 .Text1:
+if DEF(_LOCALE_FR)
+	text "Bibliotheque en"
+	line "desordre!"
+
+	para "<PLAYER> range"
+	line "les livres."
+
+	para "…Hein?"
+	done
+else
 	text "This bookcase is"
 	line "a mess!"
 
@@ -279,16 +480,31 @@ CeladonUniversityClassroom4Bookshelf1:
 
 	para "…Oh?"
 	done
+endc
 
 .Text2:
+if DEF(_LOCALE_FR)
+	text "Les livres sont"
+	line "tout bien ranges."
+	done
+else
 	text "This bookcase is"
 	line "all neat and tidy."
 	done
+endc
 
 CeladonUniversityClassroom4Bookshelf2Text:
+if DEF(_LOCALE_FR)
+	text "Un coloriage"
+	line "#mon."
+
+	para "Ca fait quoi la?"
+	done
+else
 	text "It's a #mon"
 	line "coloring book."
 
 	para "What's this doing"
 	line "here?"
 	done
+endc

@@ -16,6 +16,15 @@ CeladonChiefHouse_MapScriptHeader:
 	object_event  1,  3, SPRITE_COOL_DUDE, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, PAL_NPC_GREEN, OBJECTTYPE_COMMAND, jumptextfaceplayer, CeladonChiefHouseCooltrainerMText, -1
 
 CeladonChiefHouseCooltrainerMText:
+if DEF(_LOCALE_FR)
+	text "Le Casino nous"
+	line "rapporte"
+	cont "beaucoup!"
+
+	para "Et c'est légal,"
+	line "en plus. Si si!"
+	done
+else
 	text "The Game Corner is"
 	line "making us a lot"
 	cont "of money!"
@@ -23,3 +32,4 @@ CeladonChiefHouseCooltrainerMText:
 	para "It's all legal,"
 	line "too. Honestly!"
 	done
+endc

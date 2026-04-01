@@ -17,6 +17,15 @@ BluesHouse2F_MapScriptHeader:
 	def_object_events
 
 BluesHouse2FPCText:
+if DEF(_LOCALE_FR)
+	text "Un programme"
+	line "simule un"
+	cont "combat entre"
+
+	para "Tortank et"
+	line "Dracolosse."
+	done
+else
 	text "There's a program"
 	line "simulating a bat-"
 	cont "tle between a"
@@ -24,11 +33,23 @@ BluesHouse2FPCText:
 	para "Blastoise and a"
 	line "Dragonite."
 	done
+endc
 
 BluesHouse2FSNESText:
-	text "<PLAYER> played the"
+if DEF(_LOCALE_FR)
+	text "<PLAYER> a joué"
+	line "à la SNES."
+
+	para "Mieux vaut y"
+	line "aller… Pas"
+	cont "de temps!"
+	done
+else
+	text "<PLAYER> played"
+	line "the"
 	line "SNES."
 
 	para "Better get going--"
 	line "no time to lose!"
 	done
+endc

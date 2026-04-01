@@ -28,6 +28,14 @@ CeruleanBerryPowderHouseGrampsScript:
 	jumpthisopenedtext
 
 .Text2:
+if DEF(_LOCALE_FR)
+	text "Faire des médocs"
+	line "était gratifiant,"
+
+	para "mais je mérite"
+	line "une pause."
+	done
+else
 	text "Concocting med-"
 	line "icines was a"
 	cont "rewarding job,"
@@ -35,8 +43,19 @@ CeruleanBerryPowderHouseGrampsScript:
 	para "but I deserve a"
 	line "break."
 	done
+endc
 
 .Text1:
+if DEF(_LOCALE_FR)
+	text "Poudre Baie?"
+	line "Désolé, petit,"
+	cont "je suis à la"
+	cont "retraite."
+
+	para "Mais j'ai ca"
+	line "en rab…"
+	done
+else
 	text "Berry Powder?"
 	line "Sorry, kid, I'm"
 	cont "retired now."
@@ -44,3 +63,4 @@ CeruleanBerryPowderHouseGrampsScript:
 	para "I do have this"
 	line "left over…"
 	done
+endc

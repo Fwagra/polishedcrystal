@@ -55,6 +55,17 @@ CeladonUniversity2FCooltrainerfScript:
 	jumpthisopenedtext
 
 .Text5:
+if DEF(_LOCALE_FR)
+	text "L'Antidote soigne"
+	line "le poison des"
+
+	para "#mon, pas les"
+	line "humains: a boire,"
+
+	para "tu tomberais"
+	line "malade."
+	done
+else
 	text "Antidotes cure"
 	line "poison in #-"
 	cont "mon, but a person"
@@ -62,16 +73,33 @@ CeladonUniversity2FCooltrainerfScript:
 	para "would get sick"
 	line "by drinking one."
 	done
+endc
 
 .NoRoomForAntidote:
 	giveitem FRESH_WATER
 	jumpthisopenedtext
 
+if DEF(_LOCALE_FR)
+	text "Oh… Garde ton"
+	line "Eau Fraiche…"
+	done
+else
 	text "Oh… Keep your"
 	line "Fresh Water then…"
 	done
+endc
 
 .Text1:
+if DEF(_LOCALE_FR)
+	text "J'ai soif!"
+
+	para "Pas de monnaie"
+	line "pour les distrib'…"
+
+	para "Tu as de l'Eau"
+	line "Fraiche?"
+	done
+else
 	text "Wow, I'm thirsty!"
 
 	para "But I don't have"
@@ -81,50 +109,111 @@ CeladonUniversity2FCooltrainerfScript:
 	para "Do you have any"
 	line "Fresh Water?"
 	done
+endc
 
 .Text2:
+if DEF(_LOCALE_FR)
+	text "Donner une Eau"
+	line "Fraiche?"
+	done
+else
 	text "Give away a"
 	line "Fresh Water?"
 	done
+endc
 
 .Text3:
+if DEF(_LOCALE_FR)
+	text "<PLAYER> donne"
+	line "l'Eau Fraiche."
+	done
+else
 	text "<PLAYER> gave away"
 	line "the Fresh Water."
 	done
+endc
 
 .Text4:
+if DEF(_LOCALE_FR)
+	text "Merci beaucoup!"
+	line "Tiens, prends ca!"
+	done
+else
 	text "Thank you so much!"
 	line "Here, take this!"
 	done
+endc
 
 .Text6:
+if DEF(_LOCALE_FR)
+	text "Oh… J'ai encore"
+	line "tres soif…"
+	done
+else
 	text "Oh… But I'm so"
 	line "thirsty…"
 	done
+endc
 
 CeladonUniversity2FCooltrainermText:
+if DEF(_LOCALE_FR)
+	text "La cafet' est"
+	line "bondee,"
+
+	para "je mange dans"
+	line "le couloir."
+	done
+else
 	text "The cafeteria gets"
 	line "pretty crowded,"
 
 	para "so I prefer to eat"
 	line "in the hall."
 	done
+endc
 
 CeladonUniversity2FYoungster1Text:
+if DEF(_LOCALE_FR)
+	text "J'ai encore rate"
+	line "le Hyper Test…"
+
+	para "Mais j'abandonne"
+	line "pas!"
+	done
+else
 	text "I failed the"
 	line "Hyper Test again…"
 
 	para "But I won't"
 	line "give up!"
 	done
+endc
 
 CeladonUniversity2FCowgirlText:
+if DEF(_LOCALE_FR)
+	text "Ma classe part"
+	line "en voyage dans la"
+
+	para "Zone Safari!"
+	done
+else
 	text "My class is going"
 	line "on a field trip to"
 	cont "the Safari Zone!"
 	done
+endc
 
 CeladonUniversity2FBug_catcherText:
+if DEF(_LOCALE_FR)
+	text "Prof. Willow"
+	line "envoie ses aides"
+
+	para "arpenter la ville"
+	line "et etudier les"
+
+	para "#mon du coin."
+	done
+else
 	text "Prof.Willow sends"
 	line "his assistants to"
 
@@ -134,8 +223,21 @@ CeladonUniversity2FBug_catcherText:
 	para "the #mon that"
 	line "live here."
 	done
+endc
 
 CeladonUniversity2FLassText:
+if DEF(_LOCALE_FR)
+	text "Chef d'Arene de"
+	line "Céladopole, Erika"
+
+	para "etait premiere de"
+	line "sa promo ici."
+
+	para "J'aimerais etre"
+	line "aussi cool qu'"
+	cont "elle!"
+	done
+else
 	text "In addition to"
 	line "being the Celadon"
 	cont "Gym Leader,"
@@ -147,8 +249,20 @@ CeladonUniversity2FLassText:
 	para "I wish I was as"
 	line "cool as her."
 	done
+endc
 
 CeladonUniversity2FYoungster2Text:
+if DEF(_LOCALE_FR)
+	text "Prof. Westwood"
+	line "est excentrique."
+
+	para "Parfois, il"
+	line "s'excuse devant"
+
+	para "les portraits"
+	line "de ses ancetres."
+	done
+else
 	text "Prof.Westwood is a"
 	line "little eccentric."
 
@@ -158,33 +272,61 @@ CeladonUniversity2FYoungster2Text:
 	para "ancestors' por-"
 	line "traits."
 	done
+endc
 
 CeladonUniversity2FCafeteriaSignText:
 	text "Cafeteria"
 	done
 
 CeladonUniversity2FHyperTestSignText:
+if DEF(_LOCALE_FR)
+	text "Salle Hyper Test"
+	done
+else
 	text "Hyper Test Room"
 	done
+endc
 
 CeladonUniversity2FPoolSignText:
+if DEF(_LOCALE_FR)
+	text "Piscine"
+	done
+else
 	text "Swimming Pool"
 	done
+endc
 
 CeladonUniversity2FWillowsOfficeSignText:
+if DEF(_LOCALE_FR)
+	text "Bureau Prof."
+	line "Willow"
+	done
+else
 	text "Prof.Willow's"
 	line "Office"
 	done
+endc
 
 CeladonUniversity2FNursesOfficeSignText:
+if DEF(_LOCALE_FR)
+	text "Infirmerie"
+	done
+else
 	text "Nurse's"
 	line "Office"
 	done
+endc
 
 CeladonUniversity2FWestwoodsOfficeSignText:
+if DEF(_LOCALE_FR)
+	text "Bureau Prof."
+	line "Westwood"
+	done
+else
 	text "Prof.Westwood's"
 	line "Office"
 	done
+endc
 
 CeladonUniversity2FMagikarpSign:
 	reanchormap
@@ -194,9 +336,15 @@ CeladonUniversity2FMagikarpSign:
 	closepokepic
 	jumpthistext
 
+if DEF(_LOCALE_FR)
+	text "Un Magicarpe"
+	line "nage en rond."
+	done
+else
 	text "A Magikarp is"
 	line "swimming around."
 	done
+endc
 
 CeladonUniversity2FCuboneSign:
 	reanchormap
@@ -205,7 +353,13 @@ CeladonUniversity2FCuboneSign:
 	closepokepic
 	jumpthistext
 
+if DEF(_LOCALE_FR)
+	text "Masse Os et casque"
+	line "crane de Cubone."
+	done
+else
 	text "It's the Thick Club"
 	line "and skull helmet"
 	cont "of a Cubone."
 	done
+endc

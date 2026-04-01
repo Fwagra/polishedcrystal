@@ -4,8 +4,8 @@ WhitneyBeforeText:
 	cont "Blanche!"
 
 	para "Je te connais,"
-	line "non? Tu etais"
-	cont "a la"
+	line "non? Tu étais"
+	cont "à la"
 
 	para "Tour Radio?"
 	line "T'as vraiment"
@@ -46,10 +46,10 @@ WhitneyWhatDoYouWantText:
 	para "Hein?"
 	line "Le Badge?"
 
-	para "Desolee, j'avais"
-	line "oublie!"
+	para "Désolée, j'avais"
+	line "oublié!"
 
-	para "Voila, le"
+	para "Voilà, le"
 	line "Badge Plaine."
 	done
 
@@ -58,7 +58,7 @@ WhitneyPlainBadgeText:
 	line "Badge, tu peux"
 
 	para "utiliser Force"
-	line "meme en dehors"
+	line "même en dehors"
 	cont "des combats."
 
 	para "Et tiens,"

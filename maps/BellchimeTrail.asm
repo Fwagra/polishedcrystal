@@ -79,12 +79,22 @@ BellchimeTrailPanUpTrigger:
 	step_end
 
 TinTowerSignText:
+if DEF(_LOCALE_FR)
+	text "TOUR FERRAILLE"
+
+	para "Un #mon"
+	line "légendaire y est"
+	cont "soi-disant"
+	cont "perché."
+	done
+else
 	text "Bell Tower"
 
 	para "A legendary #-"
 	line "mon is said to"
 	cont "roost here."
 	done
+endc
 
 BellchimeTrailValerieScript:
 	faceplayer
@@ -161,6 +171,27 @@ BellchimeTrailValerieScript:
 	sjump .Depart
 
 .IntroText:
+if DEF(_LOCALE_FR)
+	text "Si ce n'est pas"
+	line "le dresseur qui a"
+	cont "vu Suicune…"
+
+	para "Je suis Valérie."
+
+	para "Je viens ici pour"
+	line "sa beauté."
+
+	para "Aujourd'hui, j'ai"
+	line "vu ton combat"
+	cont "avec une légende…"
+
+	para "J'aimerais"
+	line "affronter celui"
+	cont "qu'un #mon"
+	cont "légendaire"
+	cont "a remarqué."
+	done
+else
 	text "If it isn't the"
 	line "trainer who faced"
 	cont "Suicune…"
@@ -186,8 +217,22 @@ BellchimeTrailValerieScript:
 	line "of a legendary"
 	cont "#mon."
 	done
+endc
 
 .BattleText:
+if DEF(_LOCALE_FR)
+	text "Valérie: Je dresse"
+	line "le type Fée,"
+	cont "si discret."
+
+	para "Fragiles en"
+	line "apparence,"
+	cont "mais très forts."
+
+	para "Tu te bats"
+	line "avec moi?"
+	done
+else
 	text "Valerie: I train"
 	line "the elusive Fairy"
 	cont "type."
@@ -199,20 +244,41 @@ BellchimeTrailValerieScript:
 	para "Will you battle"
 	line "with me?"
 	done
+endc
 
 .RefusedText:
+if DEF(_LOCALE_FR)
+	text "Valérie: Hélas…"
+	done
+else
 	text "Valerie: Alas…"
 	done
+endc
 
 .AcceptedText:
+if DEF(_LOCALE_FR)
+	text "Valérie: J'espère"
+	line "que ce combat"
+
+	para "te plaira."
+	done
+else
 	text "Valerie: I hope"
 	line "our battle will"
 
 	para "prove entertaining"
 	line "to you."
 	done
+endc
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "J'espère que le"
+	line "soleil brillera…"
+
+	para "De quoi sourire."
+	done
+else
 	text "I hope the sun is"
 	line "shining tomorrow…"
 
@@ -220,8 +286,21 @@ BellchimeTrailValerieScript:
 	line "reason enough to"
 	cont "smile."
 	done
+endc
 
 .RewardText:
+if DEF(_LOCALE_FR)
+	text "Valérie: Oui…"
+	line "Beau combat."
+
+	para "Je te récompense"
+	line "pour cette"
+	cont "victoire."
+
+	para "Prends ceci,"
+	line "c'est un cadeau."
+	done
+else
 	text "Valerie: Yes… that"
 	line "was a fine battle."
 
@@ -233,8 +312,28 @@ BellchimeTrailValerieScript:
 	line "this as a personal"
 	cont "gift from me."
 	done
+endc
 
 .FarewellText:
+if DEF(_LOCALE_FR)
+	text "Valérie: Oh?"
+	line "Quelle sensation…"
+
+	para "Je ne sais plus"
+	line "quelle attaque"
+	cont "est dans cette CT."
+
+	para "Pardonne-moi."
+
+	para "C'était un combat"
+	line "captivant."
+
+	para "Je crois que"
+	line "tu me captives."
+
+	para "A bientôt."
+	done
+else
 	text "Valerie: Oh? My,"
 	line "what a curious"
 	cont "feeling…"
@@ -258,8 +357,29 @@ BellchimeTrailValerieScript:
 	para "Until we meet"
 	line "again, farewell."
 	done
+endc
 
 .RematchText:
+if DEF(_LOCALE_FR)
+	text "Valérie: Oh, toi,"
+	line "jeune dresseur…"
+
+	para "Je suis heureuse"
+	line "de te revoir."
+
+	para "Alors, tu as"
+	line "gagné le droit"
+	cont "à un combat."
+
+	para "Le type Fée peut"
+	line "sembler fragile,"
+
+	para "léger comme"
+	line "le vent…"
+
+	para "mais il est fort."
+	done
+else
 	text "Valerie: Oh, if it"
 	line "isn't my young"
 	cont "trainer…"
@@ -283,16 +403,35 @@ BellchimeTrailValerieScript:
 	para "bloom, but it is"
 	line "strong."
 	done
+endc
 
 .RematchBeatenText:
+if DEF(_LOCALE_FR)
+	text "J'espère que tu"
+	line "trouveras"
+
+	para "de quoi sourire…"
+	done
+else
 	text "I hope that you"
 	line "will find things"
 
 	para "worth smiling"
 	line "about tomorrow…"
 	done
+endc
 
 .RematchFarewellText:
+if DEF(_LOCALE_FR)
+	text "C'était un combat"
+	line "captivant."
+
+	para "Je crois que"
+	line "tu me captives."
+
+	para "A bientôt."
+	done
+else
 	text "That was truly a"
 	line "captivating"
 	cont "battle."
@@ -303,6 +442,7 @@ BellchimeTrailValerieScript:
 	para "Until we meet"
 	line "again, farewell."
 	done
+endc
 
 .ValerieGoesAroundMovement:
 	step_down

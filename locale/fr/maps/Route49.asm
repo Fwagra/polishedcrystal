@@ -10,7 +10,7 @@ Route49YoungsterText:
 	text "Ce paysage me"
 	line "donne l'impression"
 
-	para "d'etre un aventu-"
+	para "d'être un aventu-"
 	line "rier au milieu"
 	cont "de la jungle!"
 	done
@@ -21,7 +21,8 @@ GenericTrainerSightseermHari:
 	text "Je voyage pour"
 	line "rencontrer tous"
 
-	para "les Prof.  #mon."
+	para "les Prof."
+	line "#mon."
 
 	para "Tu veux voir mes"
 	line "photos?"
@@ -46,18 +47,20 @@ GenericTrainerTamerJordan:
 
 	para "Ils sont forts,"
 	line "mais calmes en"
-	cont "meme temps."
+	cont "même temps."
 	done
 
 .SeenText:
 	text "Attention! Les"
-	line "#mon ici peuvent"
-	cont "être sauvages!"
+	line "#mon ici"
+	cont "peuvent être"
+	cont "sauvages!"
 	done
 
 .BeatenText:
 	text "Wow! Les tiens"
-	line "sont plus sauvages."
+	line "sont plus"
+	cont "sauvages."
 	done
 
 GenericTrainerAromaLadyPeony:
@@ -89,7 +92,7 @@ GenericTrainerGuitaristmGeddy:
 	cont "guitare? Non!"
 
 	para "C'est une basse"
-	line "a 6 cordes."
+	line "à 6 cordes."
 	done
 
 .SeenText:

@@ -20,7 +20,9 @@ PokemaniacBrent1SeenText:
 
 PokemaniacBrent1BeatenText:
 	text "Oh, mes pauvres"
-	line "#mon! Mes chéris!"
+	line "#mon!"
+
+	para "Mes cheris!"
 	done
 
 PokemaniacBrentAfterBattleText:
@@ -98,10 +100,12 @@ PicnickerTiffanyClefairyText:
 	done
 
 BreederJodySeenText:
-	text "J'ai élevé mes"
-	line "#mon pour qu'ils"
-	cont "aient des attaques"
-	cont "spéciales!"
+	text "J'ai eleve mes"
+	line "#mon pour"
+	cont "qu'ils aient des"
+
+	para "attaques"
+	line "speciales!"
 	done
 
 BreederJodyBeatenText:
@@ -124,8 +128,9 @@ SrandjrIvyandamy1BeatenText:
 
 SrandjrIvyandamy2SeenText:
 	text "Amy: Un dresseur!"
-	line "Grande soeur, aide-"
-	cont "moi à gagner!"
+	line "Grande soeur,"
+
+	para "aide-moi a gagner!"
 	done
 
 SrandjrIvyandamy2BeatenText:
@@ -172,18 +177,27 @@ Route43TrainerTipsText:
 
 Route43AdvancedTipsText:
 	text "ASTUCE+"
-	para "Un #mon peut trans-"
-	line "mettre sa NATURE"
-	para "s'il tient une"
-	line "PIERRE STASE!"
+
+	para "Un #mon peut"
+	line "transmettre sa"
+
+	para "NATURE s'il tient"
+	line "une PIERRE STASE!"
+
 	para "Le NOEUD DESTIN"
 	line "transmet tout son"
-	cont "potentiel!"
-	para "Les 6 objets"
-	line "POUVOIR trans-"
-	para "mettent le poten-"
-	line "tiel d'une stat!"
-	para "Et la CAPSULE TALENT"
-	line "augmente les chances"
-	para "d'un TALENT caché!"
+
+	para "potentiel!"
+	line "Les 6 objets"
+
+	para "POUVOIR trans-"
+	line "mettent le poten-"
+
+	para "tiel d'une stat!"
+	line "Et la CAPSULE"
+
+	para "TALENT augmente"
+	line "les chances d'un"
+
+	para "TALENT cache!"
 	done

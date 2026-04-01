@@ -26,10 +26,26 @@ CeladonUniversityNursesOfficeNurseScript:
 	special RestartMapMusic
 	jumpthistext
 
+if DEF(_LOCALE_FR)
+	text "Prends soin de"
+	line "toi, mon petit!"
+	done
+else
 	text "Stay safe, dear!"
 	done
+endc
 
 CeladonUniversityNursesOfficeNurseText:
+if DEF(_LOCALE_FR)
+	text "Entre, mon petit."
+	line "Tu vas bien?"
+
+	para "Ou tes #-"
+	line "mon sont a plat?"
+
+	para "Repose-toi un peu!"
+	done
+else
 	text "Come in, dear."
 	line "Are you feeling"
 	cont "well?"
@@ -40,8 +56,20 @@ CeladonUniversityNursesOfficeNurseText:
 	para "Please rest here"
 	line "for a while!"
 	done
+endc
 
 CeladonUniversityNursesOfficeSignText:
+if DEF(_LOCALE_FR)
+	text "Un #mon bien"
+	line "portant est un #-"
+	cont "mon heureux!"
+
+	para "Ne laisse pas tes"
+	line "amis tomber en"
+
+	para "combat!"
+	done
+else
 	text "A healthy #mon"
 	line "is a happy #-"
 	cont "mon!"
@@ -50,3 +78,4 @@ CeladonUniversityNursesOfficeSignText:
 	line "friends faint"
 	cont "during battle!"
 	done
+endc

@@ -4,16 +4,16 @@ ShamoutiIslandPikabluText:
 
 ShamoutiIslandFisherText:
 	text "Aujourd'hui, on"
-	line "danse sans raison. ♪"
+	line "danse sans raison."
 
 	para "Un jour, on"
-	line "disparaîtra sans"
+	line "disparaitra sans"
 	cont "raison."
 
-	para "…Tu pensais qu'on"
-	line "bloquerait la route?"
+	para "Tu croyais qu'on"
+	line "bloquait la route?"
 
-	para "Ce serait grossier!"
+	para "Ce serait malpoli!"
 	done
 
 ShamoutiIslandSignText:

@@ -16,6 +16,22 @@ SaffronOrreSpeechHouse_MapScriptHeader:
 	object_event  5,  4, SPRITE_COOL_DUDE, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, 0, OBJECTTYPE_COMMAND, jumptextfaceplayer, SaffronOrreSpeechHouseCooltrainerMText, -1
 
 SaffronOrreSpeechHouseSilphEmployeeText:
+if DEF(_LOCALE_FR)
+	text "J'ai entendu"
+	line "parler"
+	line "d'une méthode pour"
+	cont "sceller le coeur"
+
+	para "d'un #mon et le"
+	line "forcer à attaquer"
+	cont "les gens."
+
+	para "Comment peut-on"
+	line "faire une chose"
+	cont "pareille"
+	cont "à un #mon?!"
+	done
+else
 	text "I heard about a"
 	line "method to seal off"
 	cont "a #mon's heart"
@@ -27,8 +43,23 @@ SaffronOrreSpeechHouseSilphEmployeeText:
 	line "do such a horrible"
 	cont "thing to #mon?!"
 	done
+endc
 
 SaffronOrreSpeechHouseCooltrainerMText:
+if DEF(_LOCALE_FR)
+	text "On revient de voir"
+	line "un ami dans une"
+	cont "autre région."
+
+	para "Ils ont eu des"
+	line "ennuis avec deux"
+	cont "bandes de voyous,"
+
+	para "mais un dresseur"
+	line "talentueux a su"
+	cont "les sauver."
+	done
+else
 	text "We just got back"
 	line "from seeing a"
 
@@ -43,3 +74,4 @@ SaffronOrreSpeechHouseCooltrainerMText:
 	line "trainer stepped up"
 	cont "to save them."
 	done
+endc

@@ -101,6 +101,12 @@ ClefairyFleeMovement:
 	step_end
 
 DontLitterSignText:
+if DEF(_LOCALE_FR)
+	text "Place Mt.Sélénite"
+	line "Ne jetez rien"
+	done
+else
 	text "Mt.Moon Square"
 	line "Don't Litter"
 	done
+endc

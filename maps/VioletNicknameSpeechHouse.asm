@@ -23,6 +23,16 @@ VioletNicknameSpeechHouseBirdScript:
 	end
 
 VioletNicknameSpeechHouseTeacherText:
+if DEF(_LOCALE_FR)
+	text "Pour donner des"
+	line "noms rigolos à ses"
+	cont "#mon…"
+
+	para "Elle utilise le"
+	line "nom de ses plats"
+	cont "préférés."
+	done
+else
 	text "She uses the names"
 	line "of her favorite"
 	cont "things to eat."
@@ -31,13 +41,32 @@ VioletNicknameSpeechHouseTeacherText:
 	line "she gives to her"
 	cont "#mon, I mean."
 	done
+endc
 
 VioletNicknameSpeechHouseLassText:
+if DEF(_LOCALE_FR)
+	text "J'ai appelé"
+	line "mon Evoli"
+	cont "Fraise!"
+	done
+else
 	text "I call my Eevee"
 	line "Strawberry!"
 	done
+endc
 
 VioletNicknameSpeechHouseGrampsText:
+if DEF(_LOCALE_FR)
+	text "Le Badge Zephyr"
+	line "tient son nom d'un"
+
+	para "ancien dieu du"
+	line "vent d'Ouest."
+
+	para "Parfait pour une"
+	line "Arène Vol."
+	done
+else
 	text "The Zephyr Badge"
 	line "is named after an"
 
@@ -47,7 +76,13 @@ VioletNicknameSpeechHouseGrampsText:
 	para "Very fitting for a"
 	line "Flying-type Gym."
 	done
+endc
 
 VioletNicknameSpeechHouseBirdText:
+if DEF(_LOCALE_FR)
+	text "Fraise: Vui!"
+	done
+else
 	text "Strawberry: Vui!"
 	done
+endc

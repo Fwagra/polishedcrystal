@@ -26,9 +26,15 @@ CeladonMansion1F_MapScriptHeader:
 CeladonMansionManagersSuiteSign:
 	jumpthistext
 
+if DEF(_LOCALE_FR)
+	text "Condo Céladopole"
+	line "Suite directeur"
+	done
+else
 	text "Celadon Condo"
 	line "Manager's Suite"
 	done
+endc
 
 CeladonMansionManagerScript:
 	checkitem MINT_LEAF
@@ -76,6 +82,16 @@ CeladonMansionManagerScript:
 	waitbutton
 	jumpthisopenedtext
 
+if DEF(_LOCALE_FR)
+	text "Rien ne vaut un"
+	line "bon the menthe."
+
+	para "Ca peut changer"
+	line "la nature d'un"
+
+	para "#mon!"
+	done
+else
 	text "There's nothing"
 	line "like hot mint tea."
 
@@ -83,16 +99,44 @@ CeladonMansionManagerScript:
 	line "#mon's very"
 	cont "nature!"
 	done
+endc
 
 .Egg:
 	jumpthisopenedtext
 
+if DEF(_LOCALE_FR)
+	text "Tu veux que je"
+	line "fasse infuser un"
+
+	para "oeuf, serieux?"
+	done
+else
 	text "Do you expect me"
 	line "to make that into"
 	cont "a tea egg?"
 	done
+endc
 
 .NoMintLeafText:
+if DEF(_LOCALE_FR)
+	text "Oh, bonjour,"
+	line "mon petit."
+
+	para "Je prends le the"
+	line "avec mes #mon."
+
+	para "Avec une Feuille"
+	line "Menthe,"
+
+	para "je t'invitais."
+	line "Les #mon"
+
+	para "adorent la menthe."
+	line "Ca marque leur"
+
+	para "nature!"
+	done
+else
 	text "Oh, hello,"
 	line "dearie."
 
@@ -112,8 +156,22 @@ CeladonMansionManagerScript:
 	line "effect on their"
 	cont "very nature!"
 	done
+endc
 
 .QuestionText:
+if DEF(_LOCALE_FR)
+	text "Oh, bonjour,"
+	line "mon petit."
+
+	para "Tu as une Feuille"
+	line "Menthe."
+
+	para "Je l'infuse pour"
+	line "ton #mon?"
+
+	para "Un bon the?"
+	done
+else
 	text "Oh, hello,"
 	line "dearie."
 
@@ -126,31 +184,69 @@ CeladonMansionManagerScript:
 	para "in some tea for"
 	line "your #mon?"
 	done
+endc
 
 .RefusedText:
+if DEF(_LOCALE_FR)
+	text "Pas trop de Limo"
+	line "ni de Soda, hein!"
+	done
+else
 	text "Don't go filling up"
 	line "on Lemonade and"
 	cont "Soda Pop, now!"
 	done
+endc
 
 .AcceptedText:
+if DEF(_LOCALE_FR)
+	text "Quel #mon veut"
+	line "un the?"
+	done
+else
 	text "Which one of your"
 	line "#mon wants tea?"
 	done
+endc
 
 .LikedFlavorText:
+if DEF(_LOCALE_FR)
+	text "Quel gout pour "
+	text_ram wStringBuffer1
+	cont "?"
+	done
+else
 	text "Now, what flavor"
 	line "does "
 	text_ram wStringBuffer1
 	cont "like?"
 	done
+endc
 
 .DislikedFlavorText:
+if DEF(_LOCALE_FR)
+	text "Et quel gout"
+	line "deteste-t-il?"
+	done
+else
 	text "And what flavor"
 	line "does it dislike?"
 	done
+endc
 
 .NeutralTeaText:
+if DEF(_LOCALE_FR)
+	text "Preference rare,"
+	line "mais je infuse!"
+
+	para "Une tasse pour"
+	line "toi, une pour"
+
+	cont ""
+	text_ram wStringBuffer1
+	text "!"
+	done
+else
 	text "That's an unusual"
 	line "preference, but"
 	cont "I can brew it!"
@@ -161,8 +257,20 @@ CeladonMansionManagerScript:
 	text_ram wStringBuffer1
 	text "!"
 	done
+endc
 
 .TeaIsReadyText:
+if DEF(_LOCALE_FR)
+	text "Voila ton the!"
+
+	para "Une tasse pour"
+	line "toi, une pour"
+
+	cont ""
+	text_ram wStringBuffer1
+	text "!"
+	done
+else
 	text "Okay! Here's"
 	line "your tea."
 
@@ -172,17 +280,29 @@ CeladonMansionManagerScript:
 	text_ram wStringBuffer1
 	text "!"
 	done
+endc
 
 .MonLooksDifferentText:
+if DEF(_LOCALE_FR)
+	text_ram wStringBuffer1
+	text " a l'air"
+	line "different!"
+	done
+else
 	text_ram wStringBuffer1
 	text " looks"
 	line "different somehow!"
 	done
+endc
 
 .MenuDataHeader:
 	db MENU_BACKUP_TILES
 	menu_coords 0, 0, 9, 11
+if DEF(_LOCALE_FR)
+	dw .MenuData2FR
+else
 	dw .MenuData2
+endc
 	db 1 ; default option
 
 .MenuData2:
@@ -194,6 +314,16 @@ CeladonMansionManagerScript:
 	db "Sweet@" ; spe
 	db "Dry@" ; sat
 	db "Bitter@" ; sdf
+
+.MenuData2FR:
+	db $80 ; flags
+	db 5 ; items
+	; meme ordre que ci-dessus (nature)
+	db "Epice@" ; atk
+	db "Acide@" ; def
+	db "Sucre@" ; spe
+	db "Sec@" ; sat
+	db "Amer@" ; sdf
 
 CeladonMansion1FMeowthText:
 	text "Meowth: Meow!"

@@ -74,6 +74,17 @@ CeladonUniversityClassroom1ImakuniScript:
 	jumpthisopenedtext
 
 .Text6:
+if DEF(_LOCALE_FR)
+	text "Au combat comme"
+	line "en danse, l'ame"
+
+	para "et le rythme,"
+	line "c'est le secret."
+
+	para "Ouah, j'adore!"
+	line "Je deviens poete!"
+	done
+else
 	text "In both battle and"
 	line "dance, soul and"
 	cont "rhythm are the"
@@ -85,8 +96,32 @@ CeladonUniversityClassroom1ImakuniScript:
 	para "Maybe I'll become"
 	line "a poet!"
 	done
+endc
 
 .Text1:
+if DEF(_LOCALE_FR)
+	text "Hein? Tu es"
+	line "qui, deja?"
+
+	para "Moi? Tu ignores"
+	line "qui je suis?"
+
+	para "Je suis la star"
+	line "musicale, Imakuni!"
+
+	para "Je chante le"
+	line "#Rap--tu danses!"
+
+	para "♪ La di da di da,"
+	line "La di da di da… ♪"
+
+	para "Bouge les pieds!"
+	line "Quoi? Des #mon?"
+
+	para "Tu veux te battre"
+	line "contre moi?"
+	done
+else
 	text "Huh? W…Who are"
 	line "you?"
 
@@ -112,26 +147,57 @@ CeladonUniversityClassroom1ImakuniScript:
 	para "You want to"
 	line "battle me?"
 	done
+endc
 
 .Text2:
+if DEF(_LOCALE_FR)
+	text "Sois pas mechant!"
+
+	para "Tu vas me faire"
+	line "pleurer!"
+	done
+else
 	text "Come on, don't be"
 	line "cruel!"
 
 	para "You're going to"
 	line "make me cry!"
 	done
+endc
 
 .Text3:
+if DEF(_LOCALE_FR)
+	text "OK, mais si je"
+	line "gagne, tu danses!"
+	done
+else
 	text "OK, but if I win,"
 	line "you dance!"
 	done
+endc
 
 .Text4:
+if DEF(_LOCALE_FR)
+	text "Meme en perdant,"
+	line "c'est si grave?"
+	done
+else
 	text "Even if I lost, is"
 	line "it really so bad?"
 	done
+endc
 
 .Text5:
+if DEF(_LOCALE_FR)
+	text "Tu geres bien!"
+
+	para "Prends cette Baie,"
+	line "mais ne dis pas"
+
+	para "que j'ai perdu,"
+	line "OK?"
+	done
+else
 	text "Hey! You're pretty"
 	line "good!"
 
@@ -141,8 +207,27 @@ CeladonUniversityClassroom1ImakuniScript:
 	para "tell anyone I"
 	line "lost, OK?"
 	done
+endc
 
 CeladonUniversityClassroom1AndyText:
+if DEF(_LOCALE_FR)
+	text "Bonjour!"
+	line "Je suis Prof."
+
+	para "Andy, j'enseigne"
+	line "ce que j'aime:"
+
+	para "l'art!"
+	line "Dessine ce que"
+
+	para "tu vois, pas ce"
+	line "que tu crois voir."
+
+	para "Laisse tomber tes"
+	line "a-priori sur les"
+	cont "formes."
+	done
+else
 	text "Hello there!"
 	line "I'm Prof.Andy,"
 
@@ -159,14 +244,34 @@ CeladonUniversityClassroom1AndyText:
 	line "conceptions about"
 	cont "how things look."
 	done
+endc
 
 CeladonUniversityClassroom1Dragon_tamerText:
+if DEF(_LOCALE_FR)
+	text "Je tiens cette"
+	line "pose depuis un"
+
+	para "moment…"
+	done
+else
 	text "I've been holding"
 	line "this pose for a"
 	cont "while now."
 	done
+endc
 
 CeladonUniversityClassroom1LadyText:
+if DEF(_LOCALE_FR)
+	text "En arts plas-"
+	line "tiques, tu croises"
+
+	para "des gens bizarres,"
+	line "mais le type en"
+
+	para "noir, lui, il est"
+	line "vraiment louche!"
+	done
+else
 	text "You meet some"
 	line "unique people in"
 	cont "art class, but"
@@ -175,14 +280,33 @@ CeladonUniversityClassroom1LadyText:
 	line "black costume is"
 	cont "really suspicious!"
 	done
+endc
 
 CeladonUniversityClassroom1Artist1Text:
+if DEF(_LOCALE_FR)
+	text "Dur de plier la"
+	line "cape comme il faut."
+	done
+else
 	text "It's tough getting"
 	line "the folds of this"
 	cont "cape just right."
 	done
+endc
 
 CeladonUniversityClassroom1Artist2Text:
+if DEF(_LOCALE_FR)
+	text "Atchoum!"
+
+	para "Seminaire fleurs,"
+	line "et je n'arrete pas"
+
+	para "d'eternuer…"
+	line "Allergie, sure-"
+
+	para "ment…"
+	done
+else
 	text "Aah-choo!"
 
 	para "Ugh. We just had a"
@@ -195,24 +319,50 @@ CeladonUniversityClassroom1Artist2Text:
 	para "I must be aller-"
 	line "gic…"
 	done
+endc
 
 CeladonUniversityClassroom1Artist3Text:
+if DEF(_LOCALE_FR)
+	text "Je bosse le jour,"
+	line "alors je prends"
+
+	para "des cours le soir."
+	done
+else
 	text "I work a lot dur-"
 	line "ing the day, so I"
 
 	para "take classes in"
 	line "the evenings."
 	done
+endc
 
 CeladonUniversityClassroom1BlackboardText:
+if DEF(_LOCALE_FR)
+	text "Schema de pers-"
+	line "pective a deux et"
+
+	para "trois points de"
+	line "fuite."
+	done
+else
 	text "There's a descrip-"
 	line "tion of two-point"
 
 	para "and three-point"
 	line "perspective."
 	done
+endc
 
 CeladonUniversityClassroom1Bookshelf1Text:
+if DEF(_LOCALE_FR)
+	text "Livre sur"
+	line "Queulorior,"
+
+	para "#mon peintre."
+	line "De beaux dessins."
+	done
+else
 	text "It's a book about"
 	line "Smeargle, a"
 	cont "#mon artist."
@@ -220,8 +370,16 @@ CeladonUniversityClassroom1Bookshelf1Text:
 	para "It's full of beau-"
 	line "tiful drawings."
 	done
+endc
 
 CeladonUniversityClassroom1Bookshelf2Text:
+if DEF(_LOCALE_FR)
+	text "Brochure sur le"
+	line "Musee de Nenu-"
+
+	para "crique."
+	done
+else
 	text "It's a brochure"
 	line "showcasing fine"
 	cont "art from a place"
@@ -229,3 +387,4 @@ CeladonUniversityClassroom1Bookshelf2Text:
 	para "called Lilycove"
 	line "Museum."
 	done
+endc

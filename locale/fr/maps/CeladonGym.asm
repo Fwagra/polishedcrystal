@@ -27,12 +27,12 @@ ErikaBeforeBattleText:
 	line "Enchantée!"
 
 	para "Bien sûr, tu es"
-	line "la pour"
+	line "là pour"
 	cont "te battre…"
 
 	para "Cela me servira"
 	line "d'entraînement"
-	cont "a la fois"
+	cont "à la fois"
 
 	para "en dressage"
 	line "et en"
@@ -57,12 +57,12 @@ ErikaBeatenText:
 	done
 
 ErikaExplainTMText:
-	text "Erika: C'etait"
+	text "Erika: C'était"
 	line "une superbe"
 	cont "rencontre."
 
 	para "J'en ai été"
-	line "fort emue."
+	line "fort émue."
 
 	para "Je tiens à ce que"
 	line "tu acceptes ceci."
@@ -73,10 +73,10 @@ ErikaExplainTMText:
 
 ErikaOutroText:
 	text "Cette capacité"
-	line "draine la moitie"
+	line "draine la moitié"
 
 	para "des dégâts"
-	line "infliges pour"
+	line "infligés pour"
 	cont "soigner"
 
 	para "ton #mon."

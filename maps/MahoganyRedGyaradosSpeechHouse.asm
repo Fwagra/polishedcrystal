@@ -20,12 +20,32 @@ MahoganyRedGyaradosSpeechHouseTeacherScript:
 	iftrue_jumptextfaceplayer MahoganyRedGyaradosSpeechHouseTeacherText_RocketsInRadioTower
 	jumpthistextfaceplayer
 
+if DEF(_LOCALE_FR)
+	text "Mon émission de"
+	line "radio préférée?"
+	cont "La #musique!"
+	done
+else
 	text "My favorite radio"
 	line "program? I'd say"
 	cont "#mon Music."
 	done
+endc
 
 MahoganyRedGyaradosSpeechHouseBlackBeltText:
+if DEF(_LOCALE_FR)
+	text "J'ai entendu dire"
+	line "qu'un Léviator"
+	cont "rouge est apparu"
+	cont "au Lac."
+
+	para "C'est bizarre..."
+	line "Même un Léviator"
+
+	para "ordinaire est très"
+	line "rare dans ce Lac!"
+	done
+else
 	text "I heard that a red"
 	line "Gyarados appeared"
 	cont "at the lake."
@@ -36,11 +56,21 @@ MahoganyRedGyaradosSpeechHouseBlackBeltText:
 	para "Gyarados are rare"
 	line "in that lake…"
 	done
+endc
 
 MahoganyRedGyaradosSpeechHouseTeacherText_RocketsInRadioTower:
+if DEF(_LOCALE_FR)
+	text "J'ai entendu des"
+	line "rires à la radio."
+
+	para "Ca donne la chair"
+	line "de poule!"
+	done
+else
 	text "I've been hearing"
 	line "laughter on the"
 
 	para "radio…"
 	line "It's creepy."
 	done
+endc

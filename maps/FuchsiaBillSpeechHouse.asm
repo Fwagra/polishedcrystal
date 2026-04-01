@@ -16,13 +16,29 @@ FuchsiaBillSpeechHouse_MapScriptHeader:
 	object_event  6,  4, SPRITE_SCHOOLBOY, SPRITEMOVEDATA_WALK_UP_DOWN, 1, 0, -1, 0, OBJECTTYPE_COMMAND, jumptextfaceplayer, BillsBrothersHouseYoungsterText, -1
 
 BillsBrotherText:
+if DEF(_LOCALE_FR)
+	text "Mon pépé est à"
+	line "Doublonville,"
+	cont "chez mon"
+	cont "frère Bill."
+	done
+else
 	text "My grandpa is at"
 	line "my brother Bill's"
 	cont "in Goldenrod City."
 	done
+endc
 
 BillsBrothersHouseYoungsterText:
+if DEF(_LOCALE_FR)
+	text "J'ai vu des drôles"
+	line "de #mon lents"
+	cont "sur la Piste"
+	cont "Cyclable."
+	done
+else
 	text "I saw these weird,"
 	line "slow #mon on"
 	cont "Cycling Road."
 	done
+endc

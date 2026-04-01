@@ -29,19 +29,46 @@ CeladonHotelPoolSwimmerMScript:
 	jumpthisopenedtext
 
 .Text2:
+if DEF(_LOCALE_FR)
+	text "Quelle nage"
+	line "relaxante…"
+	done
+else
 	text "This is quite a"
 	line "relaxing swim…"
 	done
+endc
 
 .Text1:
+if DEF(_LOCALE_FR)
+	text "En nage sur le"
+	line "dos, je n'ai pas"
+
+	para "besoin de"
+	line "lunettes."
+
+	para "Tiens, prends-les."
+	done
+else
 	text "For a slow back-"
 	line "stroke, I don't"
 	cont "need my goggles."
 
 	para "You can have them."
 	done
+endc
 
 CeladonHotelPoolPokefanMText:
+if DEF(_LOCALE_FR)
+	text "Dis donc,"
+	line "impressionnant."
+
+	para "Les services de"
+	line "l'hôtel sont"
+
+	para "sans rival!"
+	done
+else
 	text "Well, color me"
 	line "impressed."
 
@@ -49,7 +76,13 @@ CeladonHotelPoolPokefanMText:
 	line "facilities are"
 	cont "second-to-none!"
 	done
+endc
 
 CeladonHotelPoolChildText:
+if DEF(_LOCALE_FR)
+	text "Youpi!"
+	done
+else
 	text "Whee!"
 	done
+endc

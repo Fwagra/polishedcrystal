@@ -106,7 +106,11 @@ CeladonPrizeRoom_notenoughcoins:
 CeladonPrizeRoom_TMMenuDataHeader:
 	db MENU_BACKUP_TILES
 	menu_coords 0, 2, 15, 11
+if DEF(_LOCALE_FR)
+	dw .MenuData2TMFR
+else
 	dw .MenuData2
+endc
 	db 1 ; default option
 
 .MenuData2:
@@ -116,6 +120,14 @@ CeladonPrizeRoom_TMMenuDataHeader:
 	db "TM06    {d:CELADONGAMECORNERPRIZEROOM_TM06_COINS}@"
 	db "TM68    {d:CELADONGAMECORNERPRIZEROOM_TM68_COINS}@"
 	db "Cancel@"
+
+.MenuData2TMFR:
+	db $80 ; flags
+	db 4 ; items
+	db "CT32    {d:CELADONGAMECORNERPRIZEROOM_TM32_COINS}@"
+	db "CT06    {d:CELADONGAMECORNERPRIZEROOM_TM06_COINS}@"
+	db "CT68    {d:CELADONGAMECORNERPRIZEROOM_TM68_COINS}@"
+	db "Retour@"
 
 CeladonGameCornerPokemonVendor:
 	faceplayer
@@ -189,7 +201,11 @@ CeladonGameCornerPokemonVendor:
 .MenuDataHeader:
 	db MENU_BACKUP_TILES
 	menu_coords 0, 2, 17, 11
+if DEF(_LOCALE_FR)
+	dw .MenuData2PkmnFR
+else
 	dw .MenuData2
+endc
 	db 1 ; default option
 
 .MenuData2:
@@ -200,13 +216,43 @@ CeladonGameCornerPokemonVendor:
 	db "Porygon    {d:CELADONGAMECORNERPRIZEROOM_PORYGON_COINS}@"
 	db "Cancel@"
 
+.MenuData2PkmnFR:
+	db $80 ; flags
+	db 4 ; items
+	db "Mr.Mime    {d:CELADONGAMECORNERPRIZEROOM_MR__MIME_COINS}@"
+	db "Eevee      {d:CELADONGAMECORNERPRIZEROOM_EEVEE_COINS}@"
+	db "Porygon    {d:CELADONGAMECORNERPRIZEROOM_PORYGON_COINS}@"
+	db "Retour@"
+
 CeladonGameCornerPrizeRoomGentlemanText:
+if DEF(_LOCALE_FR)
+	text "Je voulais un"
+	line "Porygon, mais il"
+
+	para "me manquait 100"
+	line "jetons…"
+	done
+else
 	text "I wanted Porygon,"
 	line "but I was short by"
 	cont "100 coins…"
 	done
+endc
 
 CeladonGameCornerPrizeRoomPharmacistText:
+if DEF(_LOCALE_FR)
+	text "Ouf…"
+
+	para "Je dois rester"
+	line "zen et calme…"
+
+	para "Si je perds mon"
+	line "sang-froid, je"
+
+	para "perds tout mon"
+	line "argent…"
+	done
+else
 	text "Whew…"
 
 	para "I've got to stay"
@@ -216,62 +262,133 @@ CeladonGameCornerPrizeRoomPharmacistText:
 	line "cool, or I'll lose"
 	cont "all my money…"
 	done
+endc
 
 CeladonPrizeRoom_PrizeVendorIntroText:
+if DEF(_LOCALE_FR)
+	text "Bienvenue!"
+
+	para "On échange tes"
+	line "jetons contre de"
+
+	para "super prix!"
+	done
+else
 	text "Welcome!"
 
 	para "We exchange your"
 	line "coins for fabulous"
 	cont "prizes!"
 	done
+endc
 
 CeladonPrizeRoom_AskWhichPrizeText:
+if DEF(_LOCALE_FR)
+	text "Quel prix tu"
+	line "veux?"
+	done
+else
 	text "Which prize would"
 	line "you like?"
 	done
+endc
 
 CeladonPrizeRoom_ConfirmPurchaseText:
+if DEF(_LOCALE_FR)
+	text "OK, donc tu veux"
+	line "un "
+	text_ram wStringBuffer3
+	text "?"
+	done
+else
 	text "OK, so you wanted"
 	line "a "
 	text_ram wStringBuffer3
 	text "?"
 	done
+endc
 
 CeladonPrizeRoom_ConfirmTMPurchaseText:
+if DEF(_LOCALE_FR)
+	text "OK, donc tu veux"
+	line ""
+	text_ram wStringBuffer3
+	text "?"
+	done
+else
 	text "OK, so you wanted"
 	line ""
 	text_ram wStringBuffer3
 	text "?"
 	done
+endc
 
 CeladonPrizeRoom_HereYouGoText:
+if DEF(_LOCALE_FR)
+	text "Voila!"
+	done
+else
 	text "Here you go!"
 	done
+endc
 
 CeladonPrizeRoom_AlreadyHaveTMText:
+if DEF(_LOCALE_FR)
+	text "Tu as déjà cette"
+	line "CT."
+	done
+else
 	text "You already have"
 	line "that TM."
 	done
+endc
 
 CeladonPrizeRoom_NotEnoughCoinsText:
+if DEF(_LOCALE_FR)
+	text "Pas assez de"
+	line "jetons."
+	done
+else
 	text "You don't have"
 	line "enough coins."
 	done
+endc
 
 CeladonPrizeRoom_NotEnoughRoomText:
+if DEF(_LOCALE_FR)
+	text "Attends, tu n'as"
+	line "plus de place."
+
+	para "Je te rends tes"
+	line "jetons."
+	done
+else
 	text "Wait, no, you have"
 	line "no room for it."
 
 	para "I'll return your"
 	line "coins back to you."
 	done
+endc
 
 CeladonPrizeRoom_ComeAgainText:
+if DEF(_LOCALE_FR)
+	text "Oh. Reviens avec"
+	line "des jetons!"
+	done
+else
 	text "Oh. Please come"
 	line "back with coins!"
 	done
+endc
 
 CeladonPrizeRoom_NoCoinCaseText:
+if DEF(_LOCALE_FR)
+	text "Oh? Tu n'as pas"
+	line "de Boite Jetons."
+	done
+else
 	text "Oh? You don't have"
 	line "a Coin Case."
 	done
+endc

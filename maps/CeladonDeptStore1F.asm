@@ -20,6 +20,16 @@ CeladonDeptStore1F_MapScriptHeader:
 	object_event  5,  3, SPRITE_POKEFAN_F, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 0, 1, -1, PAL_NPC_GREEN, OBJECTTYPE_COMMAND, jumptextfaceplayer, CeladonDeptStore1FTeacherText, -1
 
 CeladonDeptStore1FReceptionistText:
+if DEF(_LOCALE_FR)
+	text "Bonjour! Bien-"
+	line "venue au Centre"
+	cont "Commercial de"
+	cont "Céladopole!"
+
+	para "L'annuaire est"
+	line "au mur."
+	done
+else
 	text "Hello! Welcome to"
 	line "Celadon Dept."
 	cont "Store!"
@@ -27,8 +37,20 @@ CeladonDeptStore1FReceptionistText:
 	para "The directory is"
 	line "on the wall."
 	done
+endc
 
 CeladonDeptStore1FGentlemanText:
+if DEF(_LOCALE_FR)
+	text "Ce Centre Comm."
+	line "est de la même"
+
+	para "chaîne que celui"
+	line "de Doublonville."
+
+	para "Ils ont été réno-"
+	line "vés ensemble."
+	done
+else
 	text "This Dept.Store is"
 	line "part of the same"
 
@@ -39,8 +61,19 @@ CeladonDeptStore1FGentlemanText:
 	line "renovated at the"
 	cont "same time."
 	done
+endc
 
 CeladonDeptStore1FTeacherText:
+if DEF(_LOCALE_FR)
+	text "C'est ma première"
+	line "fois ici."
+
+	para "Quelle taille…"
+
+	para "J'ai peur de me"
+	line "perdre."
+	done
+else
 	text "This is my first"
 	line "time here."
 
@@ -49,8 +82,27 @@ CeladonDeptStore1FTeacherText:
 	para "I'm afraid I'll"
 	line "get lost."
 	done
+endc
 
 CeladonDeptStore1FDirectoryText:
+if DEF(_LOCALE_FR)
+	text "1F: Accueil"
+
+	para "2F: Marché"
+	line "    Dresseur"
+
+	para "3F: Salon"
+	line "    Tech"
+
+	para "4F: Cadeaux"
+	line "    Sages"
+
+	para "5F: Pharmacie"
+
+	para "6F: Atrium"
+	line "    (toit)"
+	done
+else
 	text "1F: Service"
 	line "    Counter"
 
@@ -66,3 +118,4 @@ CeladonDeptStore1FDirectoryText:
 	para "6F: Rooftop"
 	line "    Atrium"
 	done
+endc

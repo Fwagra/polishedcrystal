@@ -27,6 +27,13 @@ Route2NuggetSpeechHouseFisherScript:
 	jumpthisopenedtext
 
 .Text2:
+if DEF(_LOCALE_FR)
+	text "C'est une Pépite."
+
+	para "Tu verras, ca vaut"
+	line "du pognon!"
+	done
+else
 	text "That's a Nugget."
 
 	para "I can't give you"
@@ -35,8 +42,22 @@ Route2NuggetSpeechHouseFisherScript:
 	para "wisdom, so that'll"
 	line "have to do!"
 	done
+endc
 
 .Text1:
+if DEF(_LOCALE_FR)
+	text "Hé! J'suis content"
+	line "de te voir."
+
+	para "Ca fait longtemps"
+	line "qu'on ne m'a pas"
+	cont "rendu visite."
+
+	para "Et pour la peine,"
+	line "je vais t'offrir"
+	cont "un p'tit cadeau."
+	done
+else
 	text "Hi! Wow, I'm glad"
 	line "to see you."
 
@@ -48,3 +69,4 @@ Route2NuggetSpeechHouseFisherScript:
 	line "Let me give you a"
 	cont "little present."
 	done
+endc

@@ -40,5 +40,10 @@ CeruleanCaveMewtwo:
 	end
 
 MewtwoText:
+if DEF(_LOCALE_FR)
 	text "Myuu!"
 	done
+else
+	text "Myuu!"
+	done
+endc

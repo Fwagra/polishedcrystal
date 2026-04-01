@@ -22,10 +22,10 @@ LawrenceOverheardText:
 	done
 
 LawrenceIntroText:
-	text "LAWRENCE: Excuse-moi"
-	line "de t'avoir bousculé."
+	text "LAWRENCE: Pardon,"
+	line "je t'ai bouscule."
 
-	para "Je suis pressé:"
+	para "Je suis presse:"
 	line "je dois compléter"
 	cont "ma collection."
 
@@ -40,9 +40,10 @@ LawrenceIntroText:
 	line "peuvent être"
 	cont "trompeuses."
 
-	para "Les #mon légendaires"
-	line "ont toujours été"
-	cont "ma passion."
+	para "Les #mon"
+	line "legendaires ont"
+	cont "toujours été ma"
+	cont "passion."
 
 	para "J'ai pris la"
 	line "FLECHE DES MERS"
@@ -52,10 +53,11 @@ LawrenceIntroText:
 	cont "trouvé celui que"
 	cont "je cherchais."
 
-	para "Oh… tu as rencontré"
-	line "des #mon au-delà"
-	cont "des légendes de"
-	cont "JOHTO?"
+	para "Oh… tu as vu des"
+	line "#mon au-dela"
+
+	para "des legendes de"
+	line "JOHTO?"
 
 	para "Alors nos chemins"
 	line "se recroiseront"
@@ -80,11 +82,12 @@ VermilionCityTeacherText:
 	done
 
 VermilionMachokeOwnerText:
-	text "Mon #mon a préparé"
-	line "le terrain pour"
+	text "Mon #mon a"
+	line "prepare le terrain"
 
-	para "construire cet"
-	line "énorme bâtiment!"
+	para "pour construire"
+	line "cet enorme"
+	cont "batiment!"
 
 	para "Il y a trois ans,"
 	line "c'était un MACHOC,"
@@ -109,26 +112,34 @@ VermilionCitySuperNerdText:
 
 VermilionCitySuperNerd2Text:
 	text "L'USINE DE COMBAT"
-	line "est toute nouvelle,"
+	line "est toute neuve,"
+
 	para "mais des Dresseurs"
-	line "arrivent déjà"
-	para "de régions lointaines"
-	line "pour relever le défi!"
+	line "arrivent deja"
+
+	para "de loin pour"
+	line "relever le defi!"
 	done
 
 VermilionCityOfficerFText:
-	text "Le générateur de la"
-	line "CENTRALE est à l'arrêt,"
-	para "donc ce n'est pas"
-	line "sûr d'ouvrir"
-	cont "l'USINE DE COMBAT."
+	text "Le generateur de"
+	line "la CENTRALE est"
+
+	para "a l'arret, donc"
+	line "ce n'est pas sur"
+
+	para "d'ouvrir l'USINE"
+	line "DE COMBAT."
 	done
 
 VermilionCityOfficerText:
-	text "Désolé, l'USINE DE"
-	line "COMBAT est fermée"
-	para "tant que la CENTRALE"
-	line "ne refonctionne pas."
+	text "Desole, l'USINE DE"
+	line "COMBAT est fermee"
+
+	para "tant que la"
+	line "CENTRALE ne"
+
+	para "refonctionne pas."
 	done
 
 VermilionCitySailorText:
