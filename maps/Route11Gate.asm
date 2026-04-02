@@ -18,6 +18,21 @@ Route11Gate_MapScriptHeader:
 	object_event  5,  1, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, PAL_NPC_BLUE, OBJECTTYPE_COMMAND, jumptextfaceplayer, Route11GateOfficerText, -1
 
 Route11GateOfficerText:
+if DEF(_LOCALE_FR)
+	text "C'est dur de"
+	line "donner un surnom"
+	cont "sympa a tes"
+	cont "#mon!"
+
+	para "A Lavanville, un"
+	line "homme juge les"
+
+	para "surnoms de"
+	line "#mon."
+
+	para "Il peut t'aider"
+	line "a les renommer!"
+else
 	text "When you catch"
 	line "lots of #mon,"
 	cont "isn't it hard to"
@@ -30,4 +45,5 @@ Route11GateOfficerText:
 
 	para "He'll help you"
 	line "rename them too!"
+endc
 	done

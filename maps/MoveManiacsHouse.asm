@@ -41,6 +41,19 @@ MoveReminderScript:
 	jumpopenedtext MoveReminderCancelText
 
 MoveReminderIntroText::
+if DEF(_LOCALE_FR)
+	text "Moi? Je suis le"
+	line "maniaque des capa-"
+	cont "cités."
+
+	para "Je peux aider un"
+	line "#mon à retenir"
+	cont "un talent"
+
+	para "si tu m'échanges"
+	line "une FEUILLE D'OR!"
+	done
+else
 	text "Me? I'm the"
 	line "Move Maniac."
 
@@ -51,19 +64,43 @@ MoveReminderIntroText::
 	line "trade me a"
 	cont "Gold Leaf!"
 	done
+endc
 
 MoveReminderPromptText::
+if DEF(_LOCALE_FR)
+	text "Tu veux que je"
+	line "réapprenne une"
+	cont "capacité à l'un"
+	cont "de tes #mon?"
+	done
+else
 	text "Do you want me to"
 	line "teach one of your"
 	cont "#mon a move?"
 	done
+endc
 
 MoveReminderWhichMonText::
+if DEF(_LOCALE_FR)
+	text "OK! Quel #mon"
+	line "doit réapprendre?"
+	done
+else
 	text "Yay! Which #mon"
 	line "needs tutoring?"
 	done
+endc
 
 MoveReminderNoGoldLeafText::
+if DEF(_LOCALE_FR)
+	text "Hein? Tu n'as pas"
+	line "de FEUILLE D'OR."
+
+	para "Parfois, tu peux"
+	line "en trouver sur les"
+	cont "Chétiflor."
+	done
+else
 	text "Huh? You don't"
 	line "have any Gold"
 	cont "Leaves."
@@ -72,19 +109,39 @@ MoveReminderNoGoldLeafText::
 	line "find them on wild"
 	cont "Bellsprout."
 	done
+endc
 
 MoveReminderNoMovesText::
+if DEF(_LOCALE_FR)
+	text "Désolé... Il n'y a"
+	line "aucune capacité"
+
+	para "que je puisse lui"
+	line "réapprendre."
+	prompt
+else
 	text "Sorry… There isn't"
 	line "any move I can"
 
 	para "make that #mon"
 	line "remember."
 	prompt
+endc
 
 MoveReminderCancelText::
+if DEF(_LOCALE_FR)
+	text "Si un #mon doit"
+	line "réapprendre une"
+
+	para "capacité, reviens"
+	line "avec une"
+	cont "FEUILLE D'OR!"
+	done
+else
 	text "If your #mon"
 	line "needs to learn a"
 
 	para "move, come back"
 	line "with a Gold Leaf!"
 	done
+endc

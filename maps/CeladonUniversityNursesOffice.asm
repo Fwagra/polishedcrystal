@@ -41,7 +41,7 @@ if DEF(_LOCALE_FR)
 	line "Tu vas bien?"
 
 	para "Ou tes #-"
-	line "mon sont a plat?"
+	line "mon sont à plat?"
 
 	para "Repose-toi un peu!"
 	done

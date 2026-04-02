@@ -155,14 +155,34 @@ Bird_keeperTheoScript:
 GenericTrainerGentlemanPreston:
 	generictrainer GENTLEMAN, PRESTON, EVENT_BEAT_GENTLEMAN_PRESTON, GentlemanPrestonSeenText, GentlemanPrestonBeatenText
 
+if DEF(_LOCALE_FR)
+	text "JASMINE utilisait"
+	line "des #MON de la"
+	cont "roche comme ONIX."
+	done
+else
 	text "Jasmine used to"
 	line "use Rock #mon"
 	cont "like Onix."
 	done
+endc
 
 GenericTrainerSailorTerrell:
 	generictrainer SAILOR, TERRELL, EVENT_BEAT_SAILOR_TERRELL, SailorTerrellSeenText, SailorTerrellBeatenText
 
+if DEF(_LOCALE_FR)
+	text "Je vais à l'ARENE"
+	line "à chaque fois que"
+	cont "je viens à"
+	cont "OLIVILLE."
+
+	para "Le type des #-"
+	line "MON du CHAMPION"
+
+	para "d'ARENE a changé"
+	line "récemment."
+	done
+else
 	text "Every time I come"
 	line "back to Olivine, I"
 	cont "visit the Gym."
@@ -173,21 +193,48 @@ GenericTrainerSailorTerrell:
 	para "changed without me"
 	line "noticing."
 	done
+endc
 
 Bird_keeperTheoSeenText:
+if DEF(_LOCALE_FR)
+	text "Pourquoi tu es là?"
+	line "Qu'est-ce que tu"
+
+	para "veux? Allez..."
+	line "Va-t'en!"
+	done
+else
 	text "Why are you here?"
 	line "Are you just going"
 
 	para "to gawk? I suggest"
 	line "that you leave!"
 	done
+endc
 
 Bird_keeperTheoBeatenText:
+if DEF(_LOCALE_FR)
+	text "T'es tenace,"
+	line "toi..."
+	done
+else
 	text "You really are"
 	line "concerned…"
 	done
+endc
 
 BirdKeeperTheoAfterBattleText:
+if DEF(_LOCALE_FR)
+	text "Comment tu fais"
+	line "pour monter?"
+
+	para "Je veux voir le"
+	line "#MON malade,"
+
+	para "mais j'arrive pas"
+	line "à monter..."
+	done
+else
 	text "How the heck do"
 	line "you go up?"
 
@@ -197,8 +244,21 @@ BirdKeeperTheoAfterBattleText:
 	para "but I can't get up"
 	line "there…"
 	done
+endc
 
 Bird_keeperTheoFinalText:
+if DEF(_LOCALE_FR)
+	text "Comment tu fais"
+	line "pour monter?"
+
+	para "J'ai entendu dire"
+	line "que le #MON"
+
+	para "malade va mieux,"
+	line "mais j'arrive pas"
+	cont "à monter..."
+	done
+else
 	text "How the heck do"
 	line "you go up?"
 
@@ -207,27 +267,55 @@ Bird_keeperTheoFinalText:
 	cont "now, but I can't"
 	cont "get up there…"
 	done
+endc
 
 SailorTerrellSeenText:
+if DEF(_LOCALE_FR)
+	text "Les marins sont"
+	line "sympa et musclés."
+	cont "Et toi?"
+	done
+else
 	text "Sailors are both"
 	line "kind and strong."
 	cont "How about you?"
 	done
+endc
 
 SailorTerrellBeatenText:
+if DEF(_LOCALE_FR)
+	text "Pas mal."
+	line "C'est bien..."
+	done
+else
 	text "You are both kind"
 	line "and strong…"
 	done
+endc
 
 GentlemanPrestonSeenText:
+if DEF(_LOCALE_FR)
+	text "Je parcours la"
+	line "terre en quête"
+	cont "d'entraînement."
+	cont "En garde!"
+	done
+else
 	text "I travel the world"
 	line "to train my #-"
 	cont "mon. I wish to"
 	cont "battle with you."
 	done
+endc
 
 GentlemanPrestonBeatenText:
+if DEF(_LOCALE_FR)
+	text "Bon. Je vais errer"
+	line "autre part alors."
+	done
+else
 	text "…sigh… I must"
 	line "train some more…"
 	done
+endc
 

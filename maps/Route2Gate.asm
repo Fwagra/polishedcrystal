@@ -17,6 +17,18 @@ Route2Gate_MapScriptHeader:
 	object_event  6,  4, SPRITE_SCIENTIST, SPRITEMOVEDATA_WALK_UP_DOWN, 2, 0, -1, PAL_NPC_RED, OBJECTTYPE_COMMAND, jumptextfaceplayer, Route2GateScientistText, -1
 
 Route2GateScientistText:
+if DEF(_LOCALE_FR)
+	text "Tu es <PLAYER>?"
+
+	para "Je travaille pour"
+	line "le Prof. Chen."
+
+	para "Je ne savais pas"
+	line "que tu etais la."
+
+	para "Son labo est pres,"
+	line "a Bourg Palette."
+else
 	text "Are you <PLAYER>?"
 
 	para "I work as Prof."
@@ -28,4 +40,5 @@ Route2GateScientistText:
 	para "Prof.Oak's Lab is"
 	line "nearby in Pallet"
 	cont "Town."
+endc
 	done

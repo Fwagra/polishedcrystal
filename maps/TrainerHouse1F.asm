@@ -23,6 +23,23 @@ TrainerHouse1F_MapScriptHeader:
 	object_event  2,  4, SPRITE_GENTLEMAN, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, 0, OBJECTTYPE_COMMAND, jumptextfaceplayer, TrainerHouse1FGentlemanText, -1
 
 TrainerHouse1FReceptionistText:
+if DEF(_LOCALE_FR)
+	text "Bienvenue au CLUB"
+	line "des DRESSEURS,"
+
+	para "l'attraction de"
+	line "JADIELLE."
+
+	para "Nous accueillons"
+	line "les dresseurs."
+
+	para "Vous pouvez com-"
+	line "battre les meil-"
+
+	para "leurs à l'étage"
+	line "inférieur."
+	done
+else
 	text "Welcome to Trainer"
 	line "House, the newest"
 
@@ -38,8 +55,24 @@ TrainerHouse1FReceptionistText:
 	para "of the best right"
 	line "downstairs."
 	done
+endc
 
 TrainerHouse1FCooltrainerMText:
+if DEF(_LOCALE_FR)
+	text "JADIELLE est la"
+	line "ville voisine du"
+	cont "PLATEAU INDIGO."
+
+	para "Elle a été cons-"
+	line "truite à cet en-"
+
+	para "droit à cause du"
+	line "passage important"
+
+	para "des dresseurs vers"
+	line "le PLATEAU."
+	done
+else
 	text "Viridian is the"
 	line "town closest to"
 	cont "Indigo Plateau."
@@ -57,8 +90,21 @@ TrainerHouse1FCooltrainerMText:
 	para "way up to the"
 	line "#mon League."
 	done
+endc
 
 TrainerHouse1FCooltrainerFText:
+if DEF(_LOCALE_FR)
+	text "Des combats d'en-"
+	line "traînement se dé-"
+	cont "roulent en bas."
+
+	para "J'aimerais bien"
+	line "voir comment se"
+
+	para "débrouille un"
+	line "dresseur de JOHTO."
+	done
+else
 	text "They hold practice"
 	line "battles downstairs"
 	cont "here."
@@ -69,8 +115,26 @@ TrainerHouse1FCooltrainerFText:
 	para "trainer from Johto"
 	line "battles."
 	done
+endc
 
 TrainerHouse1FYoungsterText:
+if DEF(_LOCALE_FR)
+	text "A mon avis, on ne"
+	line "peut pas devenir"
+
+	para "un MAITRE sans"
+	line "avoir tout vu et"
+
+	para "combattu tout le"
+	line "monde."
+
+	para "Le MAITRE de"
+	line "PALETTE a voyagé"
+
+	para "dans tous les"
+	line "coins de KANTO."
+	done
+else
 	text "I guess you can't"
 	line "become the Champ"
 
@@ -86,14 +150,34 @@ TrainerHouse1FYoungsterText:
 	para "all the cities and"
 	line "towns in Kanto."
 	done
+endc
 
 TrainerHouse1FGentlemanText:
+if DEF(_LOCALE_FR)
+	text "Fouiii...j'ai trop"
+	line "combattu. Je me"
+	cont "repose un peu."
+	done
+else
 	text "Whew… I'm taking a"
 	line "rest from #mon"
 	cont "battles."
 	done
+endc
 
 TrainerHouseSign1Text:
+if DEF(_LOCALE_FR)
+	text "Des combats d'en-"
+	line "traînement se dé-"
+
+	para "roulent en bas,"
+	line "dans le HALL d'EN-"
+	cont "TRAINEMENT."
+
+	para "Les bons dresseurs"
+	line "y sont invités."
+	done
+else
 	text "Practice battles"
 	line "are held in the"
 
@@ -104,8 +188,21 @@ TrainerHouseSign1Text:
 	line "are invited to"
 	cont "participate."
 	done
+endc
 
 TrainerHouseSign2Text:
+if DEF(_LOCALE_FR)
+	text "Comme pour les"
+	line "combats en exté-"
+
+	para "rieur, il n'y a"
+	line "pas de règles spé-"
+
+	para "ciales pour les"
+	line "combats d'entraî-"
+	cont "nement!"
+	done
+else
 	text "There are no rules"
 	line "or regulations for"
 
@@ -115,8 +212,21 @@ TrainerHouseSign2Text:
 	para "battles, anything"
 	line "goes!"
 	done
+endc
 
 TrainerHouseIllegibleText:
+if DEF(_LOCALE_FR)
+	text "...C'est quoi ça?"
+	line "Une note sur la"
+	cont "stratégie?"
+
+	para "On dirait des tra-"
+	line "cés faits par un"
+
+	para "ONIX..."
+	line "C'est illisible..."
+	done
+else
 	text "…What's this?"
 	line "A strategy memo?"
 
@@ -126,3 +236,4 @@ TrainerHouseIllegibleText:
 	para "It's completely"
 	line "illegible…"
 	done
+endc

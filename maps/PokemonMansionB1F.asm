@@ -32,24 +32,78 @@ PokemonMansionB1F_MapScriptHeader:
 GenericTrainerScientistBraydon:
 	generictrainer SCIENTIST, BRAYDON, EVENT_BEAT_SCIENTIST_BRAYDON, ScientistBraydonSeenText, ScientistBraydonBeatenText
 
+if DEF(_LOCALE_FR)
+	text "Ce lieu était"
+	line "jadis le centre"
+
+	para "de sérieuses"
+	line "recherches"
+	cont "#mon."
+	done
+else
 	text "This place was"
 	line "once the site of"
 
 	para "serious #mon"
 	line "research."
 	done
+endc
 
 ScientistBraydonSeenText:
+if DEF(_LOCALE_FR)
+	text "L'ancien LABO de"
+	line "CRAMOIS'ILE me"
+	cont "manque..."
+	done
+else
 	text "I miss the old"
 	line "Cinnabar Lab…"
 	done
+endc
 
 ScientistBraydonBeatenText:
+if DEF(_LOCALE_FR)
+	text "Ouf!"
+	line "Ecrasant!"
+	done
+else
 	text "Whew!"
 	line "Overwhelming!"
 	done
+endc
 
 PokemonMansionDiaryText:
+if DEF(_LOCALE_FR)
+	text "Journal: 5 juillet"
+
+	para "Un #mon a été"
+	line "découvert"
+	cont "dans la jungle."
+
+	para "Journal: 10 juil."
+
+	para "On a nommé le"
+	line "#mon découvert:"
+	cont "MEW."
+
+	para "Journal: 6 fév."
+
+	para "MEW a mis bas."
+	line "Nous avons nommé"
+	cont "le nouveau-né"
+	cont "MEWTWO."
+
+	para "Journal: 1 sept."
+
+	para "MEWTWO est bien"
+	line "trop puissant."
+
+	para "Impossible de"
+	line "freiner ses"
+	cont "tendances"
+	cont "violentes..."
+	done
+else
 	text "Diary: July 5"
 
 	para "A new #mon was"
@@ -77,3 +131,4 @@ PokemonMansionDiaryText:
 	line "curb its vicious"
 	cont "tendencies…"
 	done
+endc

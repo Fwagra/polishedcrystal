@@ -111,23 +111,51 @@ MapRuinsofAlphAerodactylChamberSignpost4Script:
 	endtext
 
 RuinsOfAlphAerodactylChamberWallPatternLeftText:
+if DEF(_LOCALE_FR)
+	text "Des figures sont"
+	line "apparues sur les"
+	cont "murs..."
+	done
+else
 	text "Patterns appeared"
 	line "on the walls…"
 	done
+endc
 
 RuinsOfAlphChambersItsUnownText:
+if DEF(_LOCALE_FR)
+	text "C'est du texte"
+	line "ZARBI!"
+	done
+else
 	text "It's Unown text!"
 	done
+endc
 
 RuinsOfAlphAerodactylChamberWallHoleText:
+if DEF(_LOCALE_FR)
+	text "Il y a un gros"
+	line "trou dans le mur!"
+	done
+else
 	text "There's a big hole"
 	line "in the wall!"
 	done
+endc
 
 RuinsOfAlphAerodactylChamberDescriptionText:
+if DEF(_LOCALE_FR)
+	text "Ce #mon volant"
+	line "attaquait ses"
+
+	para "proies de ses"
+	line "crocs acérés."
+	done
+else
 	text "This flying #-"
 	line "mon attacked its"
 
 	para "prey with saw-like"
 	line "fangs."
 	done
+endc

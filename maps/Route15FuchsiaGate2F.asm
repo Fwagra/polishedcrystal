@@ -22,9 +22,18 @@ Route15FuchsiaGate2FBinoculars2:
 
 Route15FuchsiaGate2FBinoculars1Text:
 Route15FuchsiaGate2FBinoculars2Text:
+if DEF(_LOCALE_FR)
+	text "Vous regardez"
+	line "dans les"
+	cont "jumelles."
+
+	para "Vous voyez une"
+	line "petite ile!"
+else
 	text "Looked into the"
 	line "binoculars."
 
 	para "It looks like a"
 	line "small island!"
+endc
 	done

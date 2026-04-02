@@ -42,6 +42,18 @@ SilphCo2FScientist1NoRoomForUpgradeScript:
 	endtext
 
 SilphCo2FScientist1Text1:
+if DEF(_LOCALE_FR)
+	text "Seuls les employés"
+	line "peuvent aller aux"
+	cont "étages supérieurs."
+
+	para "Mais comme tu"
+	line "viens de loin,"
+
+	para "voilà un petit"
+	line "souvenir."
+	done
+else
 	text "You traveled here"
 	line "from Johto?"
 
@@ -51,22 +63,51 @@ SilphCo2FScientist1Text1:
 	para "have this neat"
 	line "little souvenir."
 	done
+endc
 
 SilphCo2FScientist1Text2:
+if DEF(_LOCALE_FR)
+	text "C'est le dernier"
+	line "cri de la SYLPHE!"
+
+	para "Et c'est même pas"
+	line "encore en vente!"
+	done
+else
 	text "It's Silph Co.'s"
 	line "latest product."
 
 	para "It's not for sale"
 	line "anywhere yet."
 	done
+endc
 
 SilphCo2FScientist2Text:
+if DEF(_LOCALE_FR)
+	text "Je code! Ne casse"
+	line "pas ma concen-"
+	cont "tration!"
+	done
+else
 	text "I'm coding! Don't"
 	line "break my concen-"
 	cont "tration!"
 	done
+endc
 
 SilphCo2FSilphEmployee1Text:
+if DEF(_LOCALE_FR)
+	text "Avant, on utili-"
+	line "sait des télépor-"
+
+	para "teurs pour se"
+	line "déplacer, mais"
+	cont "ils sont coupés."
+
+	para "Heureusement, je"
+	line "suis au 2ème!"
+	done
+else
 	text "We used to use"
 	line "teleporters to get"
 
@@ -76,8 +117,25 @@ SilphCo2FSilphEmployee1Text:
 	para "Good thing I'm on"
 	line "the second floor!"
 	done
+endc
 
 SilphCo2FSilphEmployee2Text:
+if DEF(_LOCALE_FR)
+	text "On bosse toujours"
+	line "sur de nouvelles"
+	cont "CT."
+
+	para "Certaines sont"
+	line "arrêtées, mais"
+
+	para "d'autres sont tel-"
+	line "lement populaires"
+
+	para "qu'elles n'ont pas"
+	line "changé depuis"
+	cont "plus de 20 ans!"
+	done
+else
 	text "We're always work-"
 	line "ing on new TMs."
 
@@ -90,12 +148,24 @@ SilphCo2FSilphEmployee2Text:
 	para "haven't changed in"
 	line "over 20 years!"
 	done
+endc
 
 SilphCo2FDeptSignText:
+if DEF(_LOCALE_FR)
+	text "SYLPHE SARL  2ème"
+	line "Dev. logiciel"
+	done
+else
 	text "Silph Co. 2F"
 	line "Software Dev."
 	done
+endc
 
 SilphCo2FElevatorText:
+if DEF(_LOCALE_FR)
+	text "Hors service"
+	done
+else
 	text "Out Of Order"
 	done
+endc

@@ -66,6 +66,22 @@ Route16GateCannotPassMovement:
 	step_end
 
 Route1617GateOfficerText:
+if DEF(_LOCALE_FR)
+	text "La PISTE CYCLABLE"
+	line "commence ici."
+
+	para "C'est une descente"
+	line "facile et très"
+	cont "reposante."
+
+	para "C'est aussi une"
+	line "sensation unique,"
+
+	para "différente du"
+	line "train ou d'un"
+	cont "bateau."
+	done
+else
 	text "Cycling Road"
 	line "starts here."
 
@@ -79,8 +95,19 @@ Route1617GateOfficerText:
 	para "you can't get from"
 	line "a ship or train."
 	done
+endc
 
 Route16GateCannotPassText:
+if DEF(_LOCALE_FR)
+	text "Hé! Oh! Stop!"
+
+	para "Tu peux pas aller"
+	line "sur la PISTE CY-"
+
+	para "CLABLE sans une"
+	line "BICYCLETTE!"
+	done
+else
 	text "Hey! Whoa! Stop!"
 
 	para "You can't go out"
@@ -89,3 +116,4 @@ Route16GateCannotPassText:
 	para "Road without a"
 	line "Bicycle."
 	done
+endc

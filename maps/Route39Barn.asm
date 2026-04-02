@@ -136,71 +136,152 @@ MooMoo:
 	end
 
 Text_MoomooIsSick:
+if DEF(_LOCALE_FR)
+	text "MEUMEU est malade."
+
+	para "Elle a besoin de"
+	line "beaucoup de BAIES."
+	done
+else
 	text "Moomoo is sick…"
 
 	para "She needs lots of"
 	line "healthy Berries."
 	done
+endc
 
 Text_WereFeedingMoomoo:
+if DEF(_LOCALE_FR)
+	text "On nourrit"
+	line "MEUMEU!"
+	done
+else
 	text "We're feeding"
 	line "Moomoo!"
 	done
+endc
 
 Text_WeakMoo:
+if DEF(_LOCALE_FR)
+	text "ECREMEUH: ...Meu."
+	done
+else
 	text "Miltank: …Moo…"
 	done
+endc
 
 Text_ItsCryIsWeak:
+if DEF(_LOCALE_FR)
+	text "Son cri est"
+	line "très faible."
+	done
+else
 	text "Its cry is weak…"
 	done
+endc
 
 MoomooHappyMooText:
+if DEF(_LOCALE_FR)
+	text "ECREMEUH: MEU!"
+	done
+else
 	text "Miltank: Mooo!"
 	done
+endc
 
 Text_AskGiveBerry:
+if DEF(_LOCALE_FR)
+	text "Donner une BAIE à"
+	line "ECREMEUH?"
+	done
+else
 	text "Give an Oran or"
 	line "Sitrus Berry to"
 	cont "Miltank?"
 	done
+endc
 
 Text_GaveOranBerry:
+if DEF(_LOCALE_FR)
+	text "<PLAYER> donne une"
+	line "BAIE à ECREMEUH."
+	done
+else
 	text "<PLAYER> gave an"
 	line "Oran Berry to"
 	cont "Miltank."
 	done
+endc
 
 Text_GaveSitrusBerry:
+if DEF(_LOCALE_FR)
+	text "<PLAYER> donne une"
+	line "BAIE à ECREMEUH."
+	done
+else
 	text "<PLAYER> gave a"
 	line "Sitrus Berry to"
 	cont "Miltank."
 	done
+endc
 
 Text_LittleHealthier:
+if DEF(_LOCALE_FR)
+	text "ECREMEUH se sent"
+	line "un peu mieux!"
+	done
+else
 	text "Miltank became a"
 	line "little healthier!"
 	done
+endc
 
 Text_QuiteHealthy:
+if DEF(_LOCALE_FR)
+	text "ECREMEUH se sent"
+	line "mieux!"
+	done
+else
 	text "Miltank became"
 	line "quite healthy!"
 	done
+endc
 
 Text_TotallyHealthy:
+if DEF(_LOCALE_FR)
+	text "ECREMEUH est en"
+	line "pleine forme!"
+	done
+else
 	text "Miltank became"
 	line "totally healthy!"
 	done
+endc
 
 Text_NoBerries:
+if DEF(_LOCALE_FR)
+	text "<PLAYER> n'a pas"
+	line "de BAIES..."
+	done
+else
 	text "<PLAYER> has no"
 	line "Oran or Sitrus"
 	cont "Berries…"
 	done
+endc
 
 Text_RefusedToGiveBerry:
+if DEF(_LOCALE_FR)
+	text "<PLAYER> ne donne"
+	line "pas de BAIE."
+
+	para "ECREMEUH est"
+	line "triste."
+	done
+else
 	text "<PLAYER> wouldn't"
 	line "give a Berry."
 
 	para "Miltank looks sad."
 	done
+endc

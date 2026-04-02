@@ -29,11 +29,11 @@ if DEF(_LOCALE_FR)
 	text "Je suis Blanche."
 	line "J'enseigne ici"
 
-	para "l'Histoire."
+	para "l'histoire."
 	line "Sans le passe,"
 
-	para "on est condamne"
-	line "a le revivre."
+	para "on est condamné"
+	line "à le revivre."
 	done
 else
 	text "I am Blanche."
@@ -51,7 +51,7 @@ endc
 CeladonUniversityClassroom2TeacherText:
 if DEF(_LOCALE_FR)
 	text "Blanche n'est pas"
-	line "la, desole."
+	line "là, désolé."
 
 	para "Elle n'enseigne"
 	line "que le jour."
@@ -68,7 +68,7 @@ endc
 CeladonUniversityClassroom2YoungsterText:
 if DEF(_LOCALE_FR)
 	text "Je feuillette mes"
-	line "notes a toute"
+	line "notes à toute"
 
 	para "vitesse--AIE!"
 	line "Coupe-papier…"
@@ -87,7 +87,7 @@ if DEF(_LOCALE_FR)
 	line "Westwood et le"
 
 	para "#dex. On dit"
-	line "qu'a la fin il"
+	line "qu'à la fin il"
 
 	para "laissait tomber"
 	line "et inventait des"
@@ -151,10 +151,10 @@ if DEF(_LOCALE_FR)
 	para "Pardon--tu m'as"
 	line "fait sursauter."
 
-	para "J'ai veille pour"
+	para "J'ai veillé pour"
 	line "un devoir, alors"
 
-	para "je suis a plat."
+	para "je suis à plat."
 	done
 else
 	text "Ahem."
@@ -173,7 +173,7 @@ endc
 CeladonUniversityClassroom2BlackboardText:
 if DEF(_LOCALE_FR)
 	text "Chronologie d'his-"
-	line "toire recente."
+	line "toire récente."
 
 	para "Il y a 400 ans:"
 	line "invention Toxic."
@@ -190,7 +190,7 @@ if DEF(_LOCALE_FR)
 	para "1er #mon"
 	line "virtuel."
 
-	para "Hypothese: tech"
+	para "Hypothèse: tech"
 	line "qui explose."
 	done
 else
@@ -226,7 +226,7 @@ if DEF(_LOCALE_FR)
 		line "l'incendie de la"
 		cont "Tour en Laiton"
 
-		para "a Ecruteak"
+		para "à Ecruteak"
 		line "il y a 150 ans."
 		done
 	else
@@ -234,7 +234,7 @@ if DEF(_LOCALE_FR)
 		line "l'incendie de la"
 		cont "Tour Gong"
 
-		para "a Ecruteak"
+		para "à Ecruteak"
 		line "il y a 150 ans."
 		done
 	endc
@@ -261,7 +261,7 @@ endc
 CeladonUniversityClassroom2Bookshelf2Text:
 if DEF(_LOCALE_FR)
 	text "Un recueil d'argot"
-	line "des annees 80."
+	line "des années 80."
 
 	para "Totalement"
 	line "lourd!"

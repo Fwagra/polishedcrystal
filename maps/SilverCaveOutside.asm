@@ -25,5 +25,9 @@ SilverCaveOutsideFlyPoint:
 	endcallback
 
 MtSilverSignText:
+if DEF(_LOCALE_FR)
+	text "Mont Argenté"
+else
 	text "Mt.Silver"
+endc
 	done

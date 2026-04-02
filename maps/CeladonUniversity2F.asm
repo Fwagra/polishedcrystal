@@ -60,7 +60,7 @@ if DEF(_LOCALE_FR)
 	line "le poison des"
 
 	para "#mon, pas les"
-	line "humains: a boire,"
+	line "humains: à boire,"
 
 	para "tu tomberais"
 	line "malade."
@@ -81,7 +81,7 @@ endc
 
 if DEF(_LOCALE_FR)
 	text "Oh… Garde ton"
-	line "Eau Fraiche…"
+	line "Eau Fraîche…"
 	done
 else
 	text "Oh… Keep your"
@@ -97,7 +97,7 @@ if DEF(_LOCALE_FR)
 	line "pour les distrib'…"
 
 	para "Tu as de l'Eau"
-	line "Fraiche?"
+	line "Fraîche?"
 	done
 else
 	text "Wow, I'm thirsty!"
@@ -114,7 +114,7 @@ endc
 .Text2:
 if DEF(_LOCALE_FR)
 	text "Donner une Eau"
-	line "Fraiche?"
+	line "Fraîche?"
 	done
 else
 	text "Give away a"
@@ -125,7 +125,7 @@ endc
 .Text3:
 if DEF(_LOCALE_FR)
 	text "<PLAYER> donne"
-	line "l'Eau Fraiche."
+	line "l'Eau Fraîche."
 	done
 else
 	text "<PLAYER> gave away"
@@ -136,7 +136,7 @@ endc
 .Text4:
 if DEF(_LOCALE_FR)
 	text "Merci beaucoup!"
-	line "Tiens, prends ca!"
+	line "Tiens, prends ça!"
 	done
 else
 	text "Thank you so much!"
@@ -147,7 +147,7 @@ endc
 .Text6:
 if DEF(_LOCALE_FR)
 	text "Oh… J'ai encore"
-	line "tres soif…"
+	line "très soif…"
 	done
 else
 	text "Oh… But I'm so"
@@ -174,7 +174,7 @@ endc
 
 CeladonUniversity2FYoungster1Text:
 if DEF(_LOCALE_FR)
-	text "J'ai encore rate"
+	text "J'ai encore raté"
 	line "le Hyper Test…"
 
 	para "Mais j'abandonne"
@@ -209,7 +209,7 @@ if DEF(_LOCALE_FR)
 	line "envoie ses aides"
 
 	para "arpenter la ville"
-	line "et etudier les"
+	line "et étudier les"
 
 	para "#mon du coin."
 	done
@@ -227,13 +227,13 @@ endc
 
 CeladonUniversity2FLassText:
 if DEF(_LOCALE_FR)
-	text "Chef d'Arene de"
+	text "Chef d'Arène de"
 	line "Céladopole, Erika"
 
-	para "etait premiere de"
+	para "était première de"
 	line "sa promo ici."
 
-	para "J'aimerais etre"
+	para "J'aimerais être"
 	line "aussi cool qu'"
 	cont "elle!"
 	done
@@ -260,7 +260,7 @@ if DEF(_LOCALE_FR)
 	line "s'excuse devant"
 
 	para "les portraits"
-	line "de ses ancetres."
+	line "de ses ancêtres."
 	done
 else
 	text "Prof.Westwood is a"
@@ -275,8 +275,13 @@ else
 endc
 
 CeladonUniversity2FCafeteriaSignText:
+if DEF(_LOCALE_FR)
+	text "Cafétéria"
+	done
+else
 	text "Cafeteria"
 	done
+endc
 
 CeladonUniversity2FHyperTestSignText:
 if DEF(_LOCALE_FR)

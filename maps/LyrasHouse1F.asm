@@ -35,6 +35,16 @@ LyrasDadScript:
 	jumpopenedtext LyrasDadTrainingText
 
 LyrasDadInsideText:
+if DEF(_LOCALE_FR)
+	text "Salut, <PLAYER>!"
+	line "Célesta est en"
+	cont "haut."
+
+	para "Elle joue avec ses"
+	line "#MON, comme"
+	cont "d'habitude."
+	done
+else
 	text "Hi, <PLAYER>!"
 	line "Lyra is upstairs."
 
@@ -42,8 +52,18 @@ LyrasDadInsideText:
 	line "with her #mon"
 	cont "as usual."
 	done
+endc
 
 LyrasDadHelpingText:
+if DEF(_LOCALE_FR)
+	text "Salut, <PLAYER>!"
+	line "Célesta n'est"
+	cont "pas là."
+
+	para "Elle aide le pro-"
+	line "fesseur."
+	done
+else
 	text "Hi, <PLAYER>!"
 	line "Lyra isn't here."
 
@@ -51,8 +71,19 @@ LyrasDadHelpingText:
 	line "helping the prof-"
 	cont "essor."
 	done
+endc
 
 LyrasDadTrainingText:
+if DEF(_LOCALE_FR)
+	text "Salut, <PLAYER>!"
+	line "Célesta n'est"
+	cont "pas là."
+
+	para "Elle collecte des"
+	line "Badges dans tout"
+	cont "JOHTO!"
+	done
+else
 	text "Hi, <PLAYER>!"
 	line "Lyra isn't here."
 
@@ -60,30 +91,66 @@ LyrasDadTrainingText:
 	line "Badges all over"
 	cont "Johto!"
 	done
+endc
 
 LyrasFridgeScript:
 	jumpthistext
 
+if DEF(_LOCALE_FR)
+	text "Voyons voir ce"
+	line "qui se trame"
+	cont "dans le frigo..."
+
+	para "De l'EAU FRAICHE"
+	line "et de la bonne"
+	cont "LIMONADE!"
+	done
+else
 	text "Let's see what's"
 	line "in the fridge…"
 
 	para "Fresh Water and"
 	line "rice balls!"
 	done
+endc
 
 LyrasSinkText:
+if DEF(_LOCALE_FR)
+	text "L'évier est"
+	line "impeccable."
+	done
+else
 	text "The sink is spot-"
 	line "less."
 	done
+endc
 
 LyrasStoveText:
+if DEF(_LOCALE_FR)
+	text "Du curry mijote"
+	line "sur le feu."
+	done
+else
 	text "Curry is simmering"
 	line "on the stove."
 	done
+endc
 
 LyrasTVScript:
 	jumpthistext
 
+if DEF(_LOCALE_FR)
+	text "Un film passe à"
+	line "la TV: Une fille"
+
+	para "avec des couettes"
+	line "marche sur une"
+	cont "route de briques."
+
+	para "Je ferais mieux"
+	line "d'y aller aussi!"
+	done
+else
 	text "There's a movie on"
 	line "TV: A girl with"
 
@@ -94,3 +161,4 @@ LyrasTVScript:
 	para "I'd better get"
 	line "going too!"
 	done
+endc

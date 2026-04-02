@@ -26,25 +26,53 @@ UragaChannelEast_MapScriptHeader:
 GenericTrainerSwimmerfWoda:
 	generictrainer SWIMMERF, WODA, EVENT_BEAT_SWIMMERF_WODA, .SeenText, .BeatenText
 
+if DEF(_LOCALE_FR)
+	text "Les courants forts"
+	line "en font un bon"
+	cont "coin d'entrai-"
+	cont "nement."
+	done
+else
 	text "The strong curr-"
 	line "ents here make it"
 	cont "a good place to"
 	cont "train."
 	done
+endc
 
 .SeenText:
+if DEF(_LOCALE_FR)
+	text "Tu viens t'entraî-"
+	line "ner aussi?"
+	done
+else
 	text "Did you come here"
 	line "to train too?"
 	done
+endc
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "T'as pas besoin de"
+	line "t'entraîner plus!"
+	done
+else
 	text "You don't need"
 	line "more training!"
 	done
+endc
 
 GenericTrainerCooltrainermKieran:
 	generictrainer COOLTRAINERM, KIERAN, EVENT_BEAT_COOLTRAINERM_KIERAN, .SeenText, .BeatenText
 
+if DEF(_LOCALE_FR)
+	text "J'ai pas réussi"
+	line "mon #mon."
+
+	para "Je dois me"
+	line "remettre dedans."
+	done
+else
 	text "I couldn't get my"
 	line "#m-on."
 
@@ -52,19 +80,40 @@ GenericTrainerCooltrainermKieran:
 	line "head back in the"
 	cont "game."
 	done
+endc
 
 .SeenText:
+if DEF(_LOCALE_FR)
+	text "C'est parti!"
+	done
+else
 	text "It's on like"
 	line "#mon!"
 	done
+endc
 
 .BeatenText:
+if DEF(_LOCALE_FR)
 	text "Game over."
 	done
+else
+	text "Game over."
+	done
+endc
 
 GenericTrainerBikerTyrone:
 	generictrainer BIKER, TYRONE, EVENT_BEAT_BIKER_TYRONE, .SeenText, .BeatenText
 
+if DEF(_LOCALE_FR)
+	text "Je suis tombé à"
+	line "l'eau en frimant"
+	cont "sur la PIST.CYCL."
+
+	para "Les courants forts"
+	line "m'ont traîné"
+	cont "jusqu'ici."
+	done
+else
 	text "I fell in the"
 	line "water while show-"
 	cont "ing off on Cycling"
@@ -74,23 +123,48 @@ GenericTrainerBikerTyrone:
 	line "currents dragged"
 	cont "me here."
 	done
+endc
 
 .SeenText:
+if DEF(_LOCALE_FR)
+	text "Glou! Glou!"
+	done
+else
 	text "Cough! Splutter!"
 	done
+endc
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "...Gasp!"
+	done
+else
 	text "…Gasp!"
 	done
+endc
 
 UragaChannelSignText:
+if DEF(_LOCALE_FR)
+	text "Chenal URAGA"
+	done
+else
 	text "Uraga Channel"
 	done
+endc
 
 ScaryCaveEastSignText:
+if DEF(_LOCALE_FR)
+	text "Un tag sur"
+	line "le panneau..."
+
+	para "Cette grotte"
+	line "fait peur!"
+	done
+else
 	text "There's graffiti"
 	line "on this sign…"
 
 	para "“This cave is"
 	line "scary!”"
 	done
+endc

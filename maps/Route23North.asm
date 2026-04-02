@@ -32,8 +32,13 @@ Route23North_MapScriptHeader:
 	const ROUTE23NORTH_OFFICER8
 
 VictoryRoadSignText:
+if DEF(_LOCALE_FR)
+	text "Route Victoire"
+	done
+else
 	text "Victory Road"
 	done
+endc
 
 Route23NorthHealOfficerScript:
 	showtextfaceplayer .IntroText
@@ -46,14 +51,33 @@ Route23NorthHealOfficerScript:
 	special RestartMapMusic
 	jumpthistext
 
+if DEF(_LOCALE_FR)
+	text "La LIGUE #mon"
+	line "t'attend!"
+
+	para "Abandonne pas, OK?"
+	done
+else
 	text "The #mon League"
 	line "awaits you!"
 
 	para "Just don't give up,"
 	line "OK?"
 	done
+endc
 
 .IntroText:
+if DEF(_LOCALE_FR)
+	text "Il faut être prêt"
+	line "à affronter"
+
+	para "n'importe quoi sur"
+	line "la Route Victoire."
+
+	para "Laisse-moi te"
+	line "donner du courage!"
+	done
+else
 	text "You need to be"
 	line "ready to face"
 
@@ -64,6 +88,7 @@ Route23NorthHealOfficerScript:
 	line "bit of encourage-"
 	cont "ment!"
 	done
+endc
 
 Route23NorthMineralBadgeOfficerScript:
 Route23NorthMineralBadgeTriggerScript:
@@ -120,6 +145,17 @@ Route23NorthRisingBadgeTriggerScript:
 	db "Rising Badge@"
 
 Route23OfficerNoBadgeText:
+if DEF(_LOCALE_FR)
+	text "Tu n'as pas le"
+	line ""
+	text_ram wStringBuffer3
+	text "!"
+
+	para "Il te le faut pour"
+	line "aller à la"
+	cont "LIGUE #mon!"
+	done
+else
 	text "You don't have the"
 	line ""
 	text_ram wStringBuffer3
@@ -129,6 +165,7 @@ Route23OfficerNoBadgeText:
 	line "it to get to the"
 	cont "#mon League!"
 	done
+endc
 
 Route23OfficerHaveBadgeScript:
 	writetext .SeeBadgeText
@@ -136,21 +173,43 @@ Route23OfficerHaveBadgeScript:
 	promptbutton
 	jumpthisopenedtext
 
+if DEF(_LOCALE_FR)
+	text "OK! Alors,"
+	line "vas-y!"
+	done
+else
 	text "OK then! Please,"
 	line "go right ahead!"
 	done
+endc
 
 .SeeBadgeText:
+if DEF(_LOCALE_FR)
+	text "Oh! C'est le"
+	line ""
+	text_ram wStringBuffer3
+	text "!"
+	done
+else
 	text "Oh! That is the"
 	line ""
 	text_ram wStringBuffer3
 	text "!"
 	done
+endc
 
 Route23OfficerNeedBadgeText:
+if DEF(_LOCALE_FR)
+	text "Tu ne peux passer"
+	line "que si tu as le "
+	text_ram wStringBuffer3
+	text "."
+	done
+else
 	text "You can pass here"
 	line "only if you have"
 	cont "the "
 	text_ram wStringBuffer3
 	text "."
 	done
+endc

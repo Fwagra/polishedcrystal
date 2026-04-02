@@ -160,10 +160,10 @@ if DEF(_LOCALE_FR)
 	line "hors pair!"
 
 	para "Mes travaux sont"
-	line "sans equivalent."
+	line "sans équivalent."
 
 	para "Une distinction"
-	line "me attend bientot…"
+	line "m'attend bientôt…"
 	done
 else
 	text "A researcher"
@@ -184,7 +184,7 @@ if DEF(_LOCALE_FR)
 	line "Tu viens pour le"
 
 	para "Hyper Test de"
-	line "l'universite de"
+	line "l'université de"
 
 	para "Céladopole?"
 	done
@@ -208,10 +208,10 @@ if DEF(_LOCALE_FR)
 	para "testent tes sens"
 	line "sous pression!"
 
-	para "Si tu reussis,"
+	para "Si tu réussis,"
 	line "un prix digne de"
 
-	para "notre universite!"
+	para "notre université!"
 	done
 else
 	text "Excellent!"
@@ -265,7 +265,7 @@ endc
 .Question2IntroText:
 if DEF(_LOCALE_FR)
 	text "Question 2:"
-	line "Ecoute bien!"
+	line "Écoute bien!"
 	done
 else
 	text "Question 2:"
@@ -276,7 +276,7 @@ endc
 .Question2QuestionText:
 if DEF(_LOCALE_FR)
 	text "De quel #mon"
-	line "est ce cri?"
+	line "vient ce cri?"
 	done
 else
 	text "What #mon's cry"
@@ -295,7 +295,7 @@ endc
 
 .Question3QuestionText:
 if DEF(_LOCALE_FR)
-	text "Quel medicament"
+	text "Quel médicament"
 	line "est amer?"
 	done
 else
@@ -316,7 +316,7 @@ endc
 .Question4QuestionText:
 if DEF(_LOCALE_FR)
 	text "Quel #mon a"
-	line "Peau Seche?"
+	line "Peau Sèche?"
 	done
 else
 	text "Which #mon"
@@ -347,7 +347,7 @@ endc
 .Question6IntroText:
 if DEF(_LOCALE_FR)
 	text "Question 6:"
-	line "Reflechis!"
+	line "Réfléchis!"
 	done
 else
 	text "Question 6:"
@@ -371,13 +371,13 @@ endc
 if DEF(_LOCALE_FR)
 	text "Bravo!"
 
-	para "Tu as reussi le"
+	para "Tu as réussi le"
 	line "Hyper Test haut"
 
 	para "la main!"
 	line "Voici un Magicarpe"
 
-	para "d'elevage rare,"
+	para "d'élevage rare,"
 	line "avec Draco-Rage!"
 	done
 else
@@ -397,11 +397,11 @@ endc
 
 .TestOverText:
 if DEF(_LOCALE_FR)
-	text "Nos eleves ont la"
-	line "tenacite d'un"
+	text "Nos élèves ont la"
+	line "ténacité d'un"
 
 	para "Magicarpe qui se"
-	line "bat pour evoluer."
+	line "bat pour évoluer."
 
 	para "Toi aussi!"
 	done
@@ -428,7 +428,8 @@ endc
 
 .RefusedText:
 if DEF(_LOCALE_FR)
-	text "Bon, si tu es sur."
+	text "Bon, si tu es"
+	line "sûr."
 	done
 else
 	text "Well, if you're"
@@ -438,7 +439,7 @@ endc
 
 .AlreadyTookText:
 if DEF(_LOCALE_FR)
-	text "Tu as deja passe"
+	text "Tu as déjà passé"
 	line "le test ce jour!"
 
 	para "Reviens demain."
@@ -455,7 +456,7 @@ endc
 
 .WrongAnswerText:
 if DEF(_LOCALE_FR)
-	text "Faux, desole!"
+	text "Faux, désolé!"
 
 	para "Retente le Hyper"
 	line "Test demain."
@@ -560,13 +561,13 @@ if DEF(_LOCALE_FR)
 	line "un passage"
 
 	para "obligatoire pour"
-	line "les diplomes de"
+	line "les diplômes de"
 
-	para "l'universite de"
+	para "l'université de"
 	line "Céladopole."
 
 	para "Ca teste toutes"
-	line "tes facultes!"
+	line "tes facultés!"
 	done
 else
 	text "The Hyper Test is"
@@ -584,7 +585,7 @@ endc
 
 CeladonUniversityHyperTestRoomTwin1Text:
 if DEF(_LOCALE_FR)
-	text "Je reussis le"
+	text "Je réussis le"
 	line "Hyper Test avant"
 	cont "toi!"
 	done
@@ -597,7 +598,7 @@ endc
 CeladonUniversityHyperTestRoomTwin2Text:
 if DEF(_LOCALE_FR)
 	text "Non, c'est moi"
-	line "qui reussis avant"
+	line "qui réussis avant"
 	cont "toi!"
 	done
 else
@@ -628,7 +629,7 @@ endc
 CeladonUniversityHyperTestRoomBookshelf1Text:
 if DEF(_LOCALE_FR)
 	text "Un marque-page"
-	line "depasse du livre."
+	line "dépasse du livre."
 
 	para "Quelqu'un n'a pas"
 	line "fini sa lecture!"

@@ -61,8 +61,16 @@ Bug_maniacDougBeatenText:
 	done
 
 Route2SignText:
+if DEF(_LOCALE_FR)
+	text "ROUTE 2"
+
+	para "JADIELLE -"
+	line "ARGENTA"
+	done
+else
 	text "Route 2"
 
 	para "Viridian City -"
 	line "Pewter City"
 	done
+endc

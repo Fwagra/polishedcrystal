@@ -45,6 +45,25 @@ PlayersNeighborsHouseRadio:
 	endtext
 
 PlayersNeighborsDaughterText:
+if DEF(_LOCALE_FR)
+	text "PIKACHU est un"
+	line "#MON évolué."
+
+	para "Les découvertes du"
+	line "PROF.ORME sont"
+	cont "incroyables."
+
+	para "Ses recherches sur"
+	line "l'évolution des"
+	cont "#MON sont"
+	cont "brillantes."
+
+	para "(soupir)"
+
+	para "J'aimerais être"
+	line "comme lui..."
+	done
+else
 	text "Pikachu is an"
 	line "evolved #mon."
 
@@ -62,6 +81,7 @@ PlayersNeighborsDaughterText:
 	line "a researcher like"
 	cont "him…"
 	done
+endc
 
 PlayersNeighborsHusbandText:
 	text "This town is the"
@@ -72,6 +92,18 @@ PlayersNeighborsHusbandText:
 	done
 
 PlayersNeighborText:
+if DEF(_LOCALE_FR)
+	text "Ma fille veut"
+	line "devenir l'assis-"
+
+	para "tante du PROF."
+	line "ORME."
+
+	para "Elle adoooore les"
+	line "#MON!"
+	cont "Et moi aussi!"
+	done
+else
 	text "My daughter is"
 	line "adamant about"
 
@@ -83,23 +115,49 @@ PlayersNeighborText:
 
 	para "But then, so do I!"
 	done
+endc
 
 PlayerNeighborRadioText1:
+if DEF(_LOCALE_FR)
+	text "La CHRONIQUE PKMN"
+	line "du PROF.CHEN!"
+	cont "Bientôt de retour"
+	cont "sur les ondes!"
+	done
+else
 	text "Prof.Oak's #mon"
 	line "Talk! Please tune"
 	cont "in next time!"
 	done
+endc
 
 PlayerNeighborRadioText2:
+if DEF(_LOCALE_FR)
+	text "ANTENNE #MON!"
+	done
+else
 	text "#mon Channel!"
 	done
+endc
 
 PlayerNeighborRadioText3:
+if DEF(_LOCALE_FR)
+	text "Ici DJ LULA, votre"
+	line "co-présentatrice!"
+	done
+else
 	text "This is DJ Mary,"
 	line "your co-host!"
 	done
+endc
 
 PlayerNeighborRadioText4:
+if DEF(_LOCALE_FR)
+	text "#MON!"
+	line "ANTENNE #MON..."
+	done
+else
 	text "#mon!"
 	line "#mon Channel…"
 	done
+endc

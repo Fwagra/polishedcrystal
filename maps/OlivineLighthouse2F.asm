@@ -153,27 +153,66 @@ SailorHuey1Script:
 	jumpstd rematchgiftm
 
 SailorHuey1SeenText:
+if DEF(_LOCALE_FR)
+	text "Les marins sont"
+	line "toujours partants"
+	cont "pour la baston!"
+	done
+else
 	text "Men of the sea are"
 	line "always spoiling"
 	cont "for a good fight!"
 	done
+endc
 
 SailorHuey1BeatenText:
+if DEF(_LOCALE_FR)
+	text "Humpf!"
+	line "Perdu!"
+	done
+else
 	text "Urf!"
 	line "I lose!"
 	done
+endc
 
 GentlemanAlfredSeenText:
+if DEF(_LOCALE_FR)
+	text "Hé! C'est interdit"
+	line "de jouer ici..."
+	done
+else
 	text "Hm? This is no"
 	line "place for playing."
 	done
+endc
 
 GentlemanAlfredBeatenText:
+if DEF(_LOCALE_FR)
+	text "Ah! Tu rigoles"
+	line "pas, toi."
+	done
+else
 	text "Ah! I can see that"
 	line "you're serious."
 	done
+endc
 
 GentlemanAlfredAfterBattleText:
+if DEF(_LOCALE_FR)
+	text "En haut se trouve"
+	line "un #MON qui"
+	cont "garde le PHARE"
+	cont "allumé."
+
+	para "Mais on dit qu'il"
+	line "est malade et qu'"
+
+	para "un médicament nor-"
+	line "mal ne peut pas le"
+	cont "soigner."
+	done
+else
 	text "Up top is a #-"
 	line "mon that keeps the"
 	cont "Lighthouse lit."
@@ -184,6 +223,7 @@ GentlemanAlfredAfterBattleText:
 	para "can't be cured by"
 	line "ordinary medicine."
 	done
+endc
 
 GentlemanAlfredFinalText:
 	text "Up top is a #-"
@@ -198,6 +238,14 @@ GentlemanAlfredFinalText:
 	done
 
 SailorHueyGiveProteinText:
+if DEF(_LOCALE_FR)
+	text "Tu as de plus en"
+	line "plus de talent!"
+
+	para "Voilà le médica-"
+	line "ment..."
+	done
+else
 	text "Man! You're as"
 	line "tough as ever!"
 
@@ -205,3 +253,4 @@ SailorHueyGiveProteinText:
 	line "that medicine from"
 	cont "before."
 	done
+endc

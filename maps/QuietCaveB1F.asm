@@ -53,11 +53,26 @@ QuietCaveB1FNurseKeikoScript:
 	special RestartMapMusic
 	jumpthistext
 
+if DEF(_LOCALE_FR)
+	text "Vois comme tes"
+	line "#mon ont la"
+	cont "pêche!"
+	done
+else
 	text "See how energetic"
 	line "your #mon are!"
 	done
+endc
 
 .SeenText:
+if DEF(_LOCALE_FR)
+	text "Tu veux l'aide"
+	line "d'une infirmière?"
+
+	para "OK, si tu gagnes,"
+	line "je te soigne!"
+	done
+else
 	text "You need a Nurse's"
 	line "help?"
 
@@ -65,89 +80,181 @@ QuietCaveB1FNurseKeikoScript:
 	line "win against me,"
 	cont "I'll heal you!"
 	done
+endc
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "Tu as vraiment"
+	line "besoin de soins?"
+	done
+else
 	text "Do you really"
 	line "need healing?"
 	done
+endc
 
 .AfterText:
+if DEF(_LOCALE_FR)
+	text "OK alors..."
+	line "On redonne de"
+	cont "l'énergie à tes"
+	cont "#mon!"
+	done
+else
 	text "OK then… Time to"
 	line "give your #mon"
 	cont "some energy!"
 	done
+endc
 
 GenericTrainerBattleGirlKagami:
 	generictrainer BATTLE_GIRL, KAGAMI, EVENT_BEAT_BATTLE_GIRL_KAGAMI, BattleGirlKagamiSeenText, BattleGirlKagamiBeatenText
 
+if DEF(_LOCALE_FR)
+	text "Je viens ici"
+	line "m'entraîner en"
+	cont "paix, seule."
+	done
+else
 	text "I come here to"
 	line "train in peace"
 	cont "and solitude."
 	done
+endc
 
 GenericTrainerPokemaniacAidan:
 	generictrainer POKEMANIAC, AIDAN, EVENT_BEAT_POKEMANIAC_AIDAN, PokemaniacAidanSeenText, PokemaniacAidanBeatenText
 
+if DEF(_LOCALE_FR)
+	text "Certains #mon"
+	line "connaissent une"
+	cont "attaque rare."
+
+	done
+else
 	text "Sometimes a"
 	line "#mon in a"
 
 	para "certain area will"
 	line "know a rare move."
 	done
+endc
 
 GenericTrainerHikerSteve:
 	generictrainer HIKER, STEVE, EVENT_BEAT_HIKER_STEVE, HikerSteveSeenText, HikerSteveBeatenText
 
+if DEF(_LOCALE_FR)
+	text "La spéléologie,"
+	line "c'est explorer"
+	cont "des grottes!"
+	done
+else
 	text "Spelunking is also"
 	line "called caving."
 
 	para "It means exploring"
 	line "caves!"
 	done
+endc
 
 GenericTrainerPsychicVirgil:
 	generictrainer PSYCHIC_T, VIRGIL, EVENT_BEAT_PSYCHIC_VIRGIL, PsychicVirgilSeenText, PsychicVirgilBeatenText
 
+if DEF(_LOCALE_FR)
+	text "Le silence m'aide"
+	line "à concentrer mon"
+	cont "ESP."
+	done
+else
 	text "The silence helps"
 	line "focus my ESP."
 	done
+endc
 
 BattleGirlKagamiSeenText:
+if DEF(_LOCALE_FR)
+	text "Ne gêne pas mon"
+	line "entraînement!"
+	done
+else
 	text "Don't disturb my"
 	line "training!"
 	done
+endc
 
 BattleGirlKagamiBeatenText:
+if DEF(_LOCALE_FR)
+	text "Pas assez bon..."
+	done
+else
 	text "Not good enough…"
 	done
+endc
 
 PokemaniacAidanSeenText:
+if DEF(_LOCALE_FR)
+	text "Mes #mon!"
+
+	para "Je te les montre!"
+	done
+else
 	text "My #mon!"
 
 	para "Let me show"
 	line "you them!"
 	done
+endc
 
 PokemaniacAidanBeatenText: ; text > text
+if DEF(_LOCALE_FR)
+	text "Mes #mon..."
+	done
+else
 	text "My #mon…"
 	done
+endc
 
 HikerSteveSeenText:
+if DEF(_LOCALE_FR)
+	text "On m'appelle"
+	line "randonneur, mais"
+	cont "je suis spéléo!"
+	done
+else
 	text "They call me a"
 	line "Hiker, but now"
 	cont "I'm a spelunker!"
 	done
+endc
 
 HikerSteveBeatenText:
+if DEF(_LOCALE_FR)
+	text "Et maintenant,"
+	line "je suis nul..."
+	done
+else
 	text "And now I'm a"
 	line "loser…"
 	done
+endc
 
 PsychicVirgilSeenText:
+if DEF(_LOCALE_FR)
+	text "Chut! Silence!"
+	done
+else
 	text "Shh! Be quiet!"
 	done
+endc
 
 PsychicVirgilBeatenText:
+if DEF(_LOCALE_FR)
+	text "Pourquoi les"
+	line "combats font"
+	cont "tant de bruit?"
+	done
+else
 	text "Why must battling"
 	line "be so loud?"
 	done
+endc

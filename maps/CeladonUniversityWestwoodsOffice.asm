@@ -34,9 +34,9 @@ CeladonUniversityWestwoodsOfficeChildScript:
 .Text2:
 if DEF(_LOCALE_FR)
 	text "Je vais prendre"
-	line "des ramens a la"
+	line "des ramens à la"
 
-	para "cafeteria."
+	para "cafétéria."
 	done
 else
 	text "I'll just buy some"
@@ -50,12 +50,12 @@ if DEF(_LOCALE_FR)
 	text "On m'avait promis"
 	line "pizza gratuite!"
 
-	para "Elle est ou?!"
+	para "Elle est où?!"
 
 	para "Je suis EN RAGE!"
 
 	para "…Je devrais"
-	line "arreter les"
+	line "arrêter les"
 if DEF(FAITHFUL)
 	cont "RageCandyBars."
 else
@@ -63,7 +63,7 @@ else
 endc
 
 	para "Tiens, prends"
-	line "celle-la."
+	line "celle-là."
 	done
 else
 	text "I was told there"
@@ -92,7 +92,7 @@ if DEF(_LOCALE_FR)
 	text "Cher journal,"
 
 	para "Compiler des"
-	line "entrees #dex"
+	line "entrées #dex"
 
 	para "rapporte toujours."
 	line "Meme sans bouger"
@@ -151,7 +151,7 @@ endc
 
 CeladonUniversityWestwoodsOfficeBookshelfText:
 if DEF(_LOCALE_FR)
-	text "Oeuvres completes"
+	text "Oeuvres complètes"
 	line "du Prof. Westwood."
 
 	para "…On peut passer."

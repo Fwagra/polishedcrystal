@@ -54,6 +54,17 @@ GoldenRodDeptStoreUnblockCallback:
 	endcallback
 
 GoldenrodDeptStoreB1FBlackBelt1Text:
+if DEF(_LOCALE_FR)
+	text "Hé! Tu nous"
+	line "retardes!"
+
+	para "On doit travailler"
+	line "en cachette là où"
+
+	para "personne ne peut"
+	line "nous voir!"
+	done
+else
 	text "Hey, kid! You're"
 	line "holding us up!"
 
@@ -63,8 +74,18 @@ GoldenrodDeptStoreB1FBlackBelt1Text:
 	para "scenes where no"
 	line "one can see us!"
 	done
+endc
 
 GoldenrodDeptStoreB1FBlackBelt2Text:
+if DEF(_LOCALE_FR)
+	text "Moi j'aime plus"
+	line "travailler si on"
+	cont "me regarde."
+
+	para "Allez..."
+	line "Dégage!"
+	done
+else
 	text "I lose my passion"
 	line "for work if some-"
 	cont "one's watching."
@@ -72,8 +93,19 @@ GoldenrodDeptStoreB1FBlackBelt2Text:
 	para "Come on, kid,"
 	line "scoot!"
 	done
+endc
 
 GoldenrodDeptStoreB1FBlackBelt3Text:
+if DEF(_LOCALE_FR)
+	text "Han! Han!"
+
+	para "On va jeter les"
+	line "trucs sur le sol."
+
+	para "Tu peux les avoir"
+	line "si tu veux!"
+	done
+else
 	text "Oohah! Oohah!"
 
 	para "The stuff on the"
@@ -82,7 +114,13 @@ GoldenrodDeptStoreB1FBlackBelt3Text:
 	para "Take it if you"
 	line "want it!"
 	done
+endc
 
 GoldenrodDeptStoreB1FMachokeText:
+if DEF(_LOCALE_FR)
+	text "MACHOPEUR: Maacho!"
+	done
+else
 	text "Machoke: Maaacho!"
 	done
+endc

@@ -22,16 +22,36 @@ SproutTower2F_MapScriptHeader:
 GenericTrainerSageNico:
 	generictrainer SAGE, NICO, EVENT_BEAT_SAGE_NICO, SageNicoSeenText, SageNicoBeatenText
 
+if DEF(_LOCALE_FR)
+	text "Le pilier flexible"
+	line "protège la TOUR de"
+
+	para "tout, même des"
+	line "séismes."
+	done
+else
 	text "The flexible pil-"
 	line "lar protects the"
 
 	para "tower, even from"
 	line "earthquakes."
 	done
+endc
 
 GenericTrainerSageEdmond:
 	generictrainer SAGE, EDMOND, EVENT_BEAT_SAGE_EDMOND, SageEdmondSeenText, SageEdmondBeatenText
 
+if DEF(_LOCALE_FR)
+	text "J'ai essayé de"
+	line "copier les mouve-"
+
+	para "ments de CHETIFLOR"
+	line "en combat..."
+
+	para "Mais je manque"
+	line "d'entraînement."
+	done
+else
 	text "I tried to copy"
 	line "Bellsprout's"
 
@@ -41,30 +61,66 @@ GenericTrainerSageEdmond:
 	para "But I didn't train"
 	line "well enough."
 	done
+endc
 
 SageNicoSeenText:
+if DEF(_LOCALE_FR)
+	text "Toutefois, la TOUR"
+	line "ne cédera pas même"
+	cont "lors d'un grand et"
+	cont "rude combat."
+	done
+else
 	text "However hard we"
 	line "battle, the tower"
 	cont "will stand strong."
 	done
+endc
 
 SageNicoBeatenText:
+if DEF(_LOCALE_FR)
+	text "J'ai perdu..."
+	line "Je suis faible."
+	done
+else
 	text "I fought hard but"
 	line "I'm too weak."
 	done
+endc
 
 SageEdmondSeenText:
+if DEF(_LOCALE_FR)
+	text "Volez comme vents"
+	line "et feuilles!"
+	cont "Combat!"
+	done
+else
 	text "…Sway like leaves"
 	line "in the wind…"
 	done
+endc
 
 SageEdmondBeatenText:
+if DEF(_LOCALE_FR)
+	text "Oh! Perdu!"
+	done
+else
 	text "Oh, I'm weak!"
 	done
+endc
 
 SproutTower2FStatueText:
+if DEF(_LOCALE_FR)
+	text "Une statue de"
+	line "#MON..."
+
+	para "Ca a l'air cher"
+	line "et raffiné."
+	done
+else
 	text "A #mon statue…"
 
 	para "It looks very"
 	line "distinguished."
 	done
+endc

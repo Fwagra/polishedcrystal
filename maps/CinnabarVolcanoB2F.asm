@@ -108,10 +108,59 @@ CinnabarVolcanoMoltres:
 	end
 
 MoltresText:
+if DEF(_LOCALE_FR)
 	text "Gyaoo!"
 	done
+else
+	text "Gyaoo!"
+	done
+endc
 
 CinnabarVolcanoB2FLawrenceSpeechText:
+if DEF(_LOCALE_FR)
+	text "LAWRENCE: Salut,"
+	line "<PLAYER>."
+
+	para "Alors tu cherches"
+	line "SULFURA ici aussi."
+	cont "Je t'ai inspiré?"
+
+	para "...Quoi?! Tu l'as"
+	line "déjà attrapé?"
+	cont "Impossible."
+
+	para "J'ai passé des"
+	line "années à chercher"
+
+	para "la Route Victoire"
+	line "et les îles au sud"
+	cont "de KANTO..."
+
+	para "Pourquoi as-tu"
+	line "réussi là où j'ai"
+	cont "échoué?"
+
+	para "Sais-tu apprécier"
+	line "la majesté de ces"
+	cont "mirages ailés?"
+
+	para "As-tu seulement"
+	line "entendu parler du"
+
+	para "gardien des mers?"
+
+	para "C'est inadmis-"
+	line "sible."
+
+	para "Retrouve-moi au"
+	line "sanctuaire en"
+	cont "ruines, SHAMOUTI."
+
+	para "Je te prouverai"
+	line "que ces #mon"
+	cont "m'appartiennent."
+	done
+else
 	text "Lawrence: Hello"
 	line "again, <PLAYER>."
 
@@ -156,11 +205,18 @@ CinnabarVolcanoB2FLawrenceSpeechText:
 	line "I deserve to own"
 	cont "those #mon."
 	done
+endc
 
 CinnabarVolcanoB2FLawrenceEscapeRopeText:
+if DEF(_LOCALE_FR)
+	text "LAWRENCE utilise"
+	line "une Corde Sortie!"
+	done
+else
 	text "Lawrence used an"
 	line "Escape Rope!"
 	done
+endc
 
 CinnabarVolcanoB2FMovementData_LawrenceApproachUp:
 	step_right

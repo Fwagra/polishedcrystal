@@ -25,6 +25,17 @@ GoldenrodDeptStore4FGameboyKidScript:
 	end
 
 GoldenrodDeptStore4FCooltrainerMText:
+if DEF(_LOCALE_FR)
+	text "Hé. Moi j'aime les"
+	line "#MON qui"
+	cont "sont trop forts."
+
+	para "Je les nourris de"
+	line "PROTEINE pour"
+	cont "booster leur"
+	cont "ATTAQUE."
+	done
+else
 	text "Hey. I love strong"
 	line "#mon."
 
@@ -32,8 +43,28 @@ GoldenrodDeptStore4FCooltrainerMText:
 	line "tein to crank up"
 	cont "their Attack."
 	done
+endc
 
 GoldenrodDeptStore4FBugCatcherText:
+if DEF(_LOCALE_FR)
+	text "Certains #MON"
+	line "évoluent seulement"
+
+	para "s'ils sont échan-"
+	line "gés via le câble"
+	cont "Game Link."
+
+	para "J'en connais 4:"
+	line "MACHOPEUR, KADABRA"
+
+	para "et SPECTRUM et..."
+	line "GRAVALANCH."
+
+	para "J'ai entendu dire"
+	line "qu'il y en avait"
+	cont "d'autres."
+	done
+else
 	text "There are four"
 	line "#mon that"
 
@@ -44,8 +75,27 @@ GoldenrodDeptStore4FBugCatcherText:
 	line "Kadabra, and"
 	cont "Haunter!"
 	done
+endc
 
 GoldenrodDeptStore4FGameboyKidText:
+if DEF(_LOCALE_FR)
+	text "Certains #MON"
+	line "évoluent seulement"
+
+	para "quand ils tiennent"
+	line "un objet précis."
+
+	para "J'en connais 4:"
+	line "TETARTE, ONIX,"
+
+	para "RAMOLOSS et..."
+	line "euh... INSECATEUR."
+
+	para "J'ai entendu dire"
+	line "qu'il y en avait"
+	cont "d'autres aussi."
+	done
+else
 	text "Some #mon"
 	line "evolve only"
 
@@ -61,10 +111,19 @@ GoldenrodDeptStore4FGameboyKidText:
 	para "I heard there are"
 	line "others too."
 	done
+endc
 
 GoldenrodDeptStore4FDirectoryText:
+if DEF(_LOCALE_FR)
+	text "Ca fait du bien"
+	line "par où ça passe!"
+
+	para "3EME PHARMACIE"
+	done
+else
 	text "Let Us Pump Up"
 	line "Your #mon!"
 
 	para "4F Medicine Box"
 	done
+endc

@@ -35,26 +35,57 @@ UnionCaveB1FSouth_MapScriptHeader:
 GenericTrainerPokemaniacAndrew:
 	generictrainer POKEMANIAC, ANDREW, EVENT_BEAT_POKEMANIAC_ANDREW, PokemaniacAndrewSeenText, PokemaniacAndrewBeatenText
 
+if DEF(_LOCALE_FR)
+	text "Seul avec mes"
+	line "#mon. C'est"
+	cont "la fête."
+	done
+else
 	text "Just me and my"
 	line "#mon. I'm de-"
 	cont "lirious with joy."
 	done
+endc
 
 PokemaniacAndrewSeenText:
+if DEF(_LOCALE_FR)
+	text "Qui va là?"
+
+	para "Yaaaah! Laisse-moi"
+	line "tranquille!"
+	done
+else
 	text "Who's there?"
 
 	para "Leave me and my"
 	line "#mon alone!"
 	done
+endc
 
 PokemaniacAndrewBeatenText:
+if DEF(_LOCALE_FR)
+	text "Va-t'en..."
+	line "Ouste!"
+	done
+else
 	text "Go…"
 	line "Go away!"
 	done
+endc
 
 GenericTrainerPokemaniacCalvin:
 	generictrainer POKEMANIAC, CALVIN, EVENT_BEAT_POKEMANIAC_CALVIN, PokemaniacCalvinSeenText, PokemaniacCalvinBeatenText
 
+if DEF(_LOCALE_FR)
+	text "Je vais révéler"
+	line "mes recherches au"
+	cont "monde."
+
+	para "Je serai aussi"
+	line "célèbre que le"
+	cont "PROF.ORME!"
+	done
+else
 	text "I should compile"
 	line "and announce my"
 	cont "study findings."
@@ -63,8 +94,19 @@ GenericTrainerPokemaniacCalvin:
 	line "come famous like"
 	cont "Prof.Elm."
 	done
+endc
 
 PokemaniacCalvinSeenText:
+if DEF(_LOCALE_FR)
+	text "Je suis venu ici"
+	line "pour mes études"
+	cont "sur les #mon."
+
+	para "Je vais te montrer"
+	line "tout ça..."
+	cont "Au combat!"
+	done
+else
 	text "I came all the way"
 	line "here to conduct my"
 	cont "#mon research."
@@ -73,15 +115,31 @@ PokemaniacCalvinSeenText:
 	line "my findings in a"
 	cont "real battle!"
 	done
+endc
 
 PokemaniacCalvinBeatenText:
+if DEF(_LOCALE_FR)
+	text "Plein la tête!"
+	line "Ouille!"
+	done
+else
 	text "You demonstrated"
 	line "on me!"
 	done
+endc
 
 GenericTrainerHikerPhillip:
 	generictrainer HIKER, PHILLIP, EVENT_BEAT_HIKER_PHILLIP, HikerPhillipSeenText, HikerPhillipBeatenText
 
+if DEF(_LOCALE_FR)
+	text "Je suis perdu"
+	line "depuis longtemps!"
+
+	para "C'est pas trop"
+	line "grave mais..."
+	cont "J'ai faim!"
+	done
+else
 	text "I've been lost for"
 	line "a long time…"
 
@@ -89,6 +147,7 @@ GenericTrainerHikerPhillip:
 	line "here, but I am"
 	cont "soooo hungry!"
 	done
+endc
 
 HikerPhillipSeenText:
 	text "It's been a while"
@@ -106,6 +165,16 @@ HikerPhillipBeatenText:
 GenericTrainerHikerLeonard:
 	generictrainer HIKER, LEONARD, EVENT_BEAT_HIKER_LEONARD, HikerLeonardSeenText, HikerLeonardBeatenText
 
+if DEF(_LOCALE_FR)
+	text "Je vis ici."
+
+	para "Toi aussi tu veux"
+	line "vivre ici?"
+
+	para "Y'a de la place..."
+	line "Alors tu veux?"
+	done
+else
 	text "I live down here."
 
 	para "You can, too, if"
@@ -114,6 +183,7 @@ GenericTrainerHikerLeonard:
 	para "There's plenty of"
 	line "room, you see."
 	done
+endc
 
 HikerLeonardSeenText:
 	text "What do you know!"

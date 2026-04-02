@@ -17,12 +17,24 @@ WarmBeachHouse_MapScriptHeader:
 	object_event  3,  3, SPRITE_BOOK_PAPER_POKEDEX, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, 0, OBJECTTYPE_SCRIPT, 0, WarmBeachHouseBookScript, -1
 
 WarmBeachHouseGrampsText:
+if DEF(_LOCALE_FR)
+	text "Ces lignes parlent"
+	line "d'un gardien..."
+	done
+else
 	text "TODO"
 	done
+endc
 
 WarmBeachHouseGrannyText:
+if DEF(_LOCALE_FR)
+	text "Une prophétie des"
+	line "îles…"
+	done
+else
 	text "TODO"
 	done
+endc
 
 WarmBeachHouseBookScript:
 	opentext
@@ -37,6 +49,24 @@ WarmBeachHouseBookScript:
 	iffalse_endtext
 	jumpthisopenedtext
 
+if DEF(_LOCALE_FR)
+	text "Des trois îles,"
+	line "prends les sphères"
+	cont "anciennes."
+
+	para "Entre vie et mort,"
+	line "tu feras la"
+	cont "différence."
+
+	para "Monte au"
+	line "sanctuaire"
+	line "pour réparer,"
+
+	para "et le monde sera"
+	line "guéri par le chant"
+	cont "du gardien…"
+	done
+else
 	text "From the trio of"
 	line "islands, ancient"
 	cont "spheres shall you"
@@ -56,15 +86,46 @@ WarmBeachHouseBookScript:
 	cont "by the guardian's"
 	cont "song…"
 	done
+endc
 
 .Text0:
+if DEF(_LOCALE_FR)
+	text "La Prophétie de"
+	line "Shamouti"
+
+	para "Tu veux la lire?"
+	done
+else
 	text "The Shamouti"
 	line "Prophecy"
 
 	para "Want to read it?"
 	done
+endc
 
 .Text1:
+if DEF(_LOCALE_FR)
+	text "Ne trouble pas"
+	line "l'harmonie du feu,"
+	cont "de la glace,"
+	cont "ou de la foudre,"
+
+	para "sinon ces titans"
+	line "ravageront le"
+	cont "monde."
+
+	para "Le grand gardien"
+	line "des eaux se lèvera"
+	cont "pour les arrêter,"
+
+	para "mais son chant"
+	line "échouera, et la"
+	cont "terre deviendra"
+	cont "cendre."
+
+	para "Continuer?"
+	done
+else
 	text "Disturb not the"
 	line "harmony of fire,"
 	cont "ice, or lightning,"
@@ -86,8 +147,20 @@ WarmBeachHouseBookScript:
 
 	para "Keep reading?"
 	done
+endc
 
 .Text2:
+if DEF(_LOCALE_FR)
+	text "O Elu,"
+	line "rassemble les"
+	cont "trois trésors."
+
+	para "Unis, ils domptent"
+	line "la bête de la mer."
+
+	para "Continuer?"
+	done
+else
 	text "O Chosen One,"
 	line "into thine hands"
 	cont "bring together"
@@ -99,3 +172,4 @@ WarmBeachHouseBookScript:
 
 	para "Keep reading?"
 	done
+endc

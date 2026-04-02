@@ -31,6 +31,24 @@ WardensGranddaughter:
 	jumpopenedtext WardensGranddaughterText2
 
 WardensGranddaughterText1:
+if DEF(_LOCALE_FR)
+	text "Mon pépé est le"
+	line "GARDIEN du PARC"
+	cont "SAFARI."
+
+	para "Enfin..."
+	line "Il l'était."
+
+	para "Il a décidé de"
+	line "prendre des vacan-"
+
+	para "ces et de voyager"
+	line "tout seul."
+
+	para "Il a démissionné"
+	line "juste comme ça."
+	done
+else
 	text "My grandpa is the"
 	line "Safari Zone War-"
 	cont "den."
@@ -47,8 +65,18 @@ WardensGranddaughterText1:
 	line "Safari Zone just"
 	cont "like that."
 	done
+endc
 
 WardensGranddaughterText2:
+if DEF(_LOCALE_FR)
+	text "Les gens étaient"
+	line "déçus d'apprendre"
+
+	para "la fermeture du"
+	line "PARC SAFARI mais"
+	cont "pépé est si têtu."
+	done
+else
 	text "Many people were"
 	line "disappointed that"
 
@@ -56,19 +84,39 @@ WardensGranddaughterText2:
 	line "down, but Grandpa"
 	cont "is so stubborn…"
 	done
+endc
 
 WardenPhotoText:
+if DEF(_LOCALE_FR)
+	text "C'est la photo"
+	line "d'un vieil homme"
+
+	para "entouré de"
+	line "#MON."
+	done
+else
 	text "It's a photo of a"
 	line "grinning old man"
 
 	para "who's surrounded"
 	line "by #mon."
 	done
+endc
 
 SafariZonePhotoText:
+if DEF(_LOCALE_FR)
+	text "C'est la photo"
+	line "d'une grande plai-"
+
+	para "ne verdoyante avec"
+	line "des #MON rares"
+	cont "tout partout."
+	done
+else
 	text "It's a photo of a"
 	line "huge grassy plain"
 
 	para "with rare #mon"
 	line "frolicking in it."
 	done
+endc

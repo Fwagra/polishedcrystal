@@ -16,7 +16,13 @@ RuinsOfAlphEntranceChamber_MapScriptHeader:
 	def_object_events
 
 RuinsofAlphStatueText:
+if DEF(_LOCALE_FR)
+	text "C'est la réplique"
+	line "d'un ancien #-"
+	cont "mon."
+else
 	text "It's a replica of"
 	line "an ancient #-"
 	cont "mon."
+endc
 	done

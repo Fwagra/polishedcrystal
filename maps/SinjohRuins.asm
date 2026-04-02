@@ -17,5 +17,9 @@ SinjohRuins_MapScriptHeader:
 	def_object_events
 
 SinjohRuinsSignpostText:
+if DEF(_LOCALE_FR)
+	text "Ruines Sinjoh"
+else
 	text "The Sinjoh Ruins"
+endc
 	done

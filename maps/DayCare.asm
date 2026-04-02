@@ -165,6 +165,11 @@ DayCareMovementData_LyraLeaves:
 	step_left
 	step_end
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/DayCare.asm"
+
+else
+
 DayCareLyraHelloText:
 	text "Lyra: Grandma!"
 
@@ -403,3 +408,5 @@ DayCareText_PartyAndBoxFull:
 	line "for this, even in"
 	cont "your Box."
 	done
+
+endc

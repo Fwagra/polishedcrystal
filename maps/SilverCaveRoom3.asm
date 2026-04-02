@@ -67,11 +67,23 @@ Red:
 	end
 
 .Text1: ; text > text
+if DEF(_LOCALE_FR)
+	text "…"
+	line "…"
+	cont "…"
+	done
+else
 	text "……"
 	line "……"
 	cont "……"
 	done
+endc
 
 .Text2: ; text > text
+if DEF(_LOCALE_FR)
 	text "…"
 	done
+else
+	text "…"
+	done
+endc

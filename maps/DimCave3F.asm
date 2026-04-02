@@ -57,13 +57,29 @@ DimCave3FSetUpStoneTable:
 	earthquake 80
 	jumpthistext
 
+if DEF(_LOCALE_FR)
+	text "Le rocher a"
+	line "traversé."
+	done
+else
 	text "The boulder fell"
 	line "through."
 	done
+endc
 
 GenericTrainerEngineerHugo:
 	generictrainer ENGINEER, HUGO, EVENT_BEAT_ENGINEER_HUGO, .SeenText, .BeatenText
 
+if DEF(_LOCALE_FR)
+	text "Le bruit de ce"
+	line "wagonnet m'a"
+	cont "fait peur."
+
+	para "Ici, faut toujours"
+	line "se méfier d'un"
+	cont "éboulement."
+	done
+else
 	text "The noise of that"
 	line "mine cart gave me"
 	cont "a scare."
@@ -72,58 +88,115 @@ GenericTrainerEngineerHugo:
 	line "stay alert for a"
 	cont "cave-in here."
 	done
+endc
 
 .SeenText:
+if DEF(_LOCALE_FR)
+	text "Eboulement!"
+	done
+else
 	text "Cave-in!"
 	done
+endc
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "Oh, tu as juste"
+	line "poussé un rocher!"
+	done
+else
 	text "Oh, you just"
 	line "pushed a boulder!"
 	done
+endc
 
 GenericTrainerBlackbeltTakeo:
 	generictrainer BLACKBELT_T, TAKEO, EVENT_BEAT_BLACKBELT_TAKEO, .SeenText, .BeatenText
 
+if DEF(_LOCALE_FR)
+	text "Je veux juste"
+	line "m'entraîner"
+	cont "en paix."
+	done
+else
 	text "All I want is to"
 	line "train in peace."
 	done
+endc
 
 .SeenText:
+if DEF(_LOCALE_FR)
+	text "Je m'entraîne seul"
+	line "avec mes #mon."
+
+	para "Pars!"
+	done
+else
 	text "I'm training here"
 	line "alone with my"
 	cont "#mon."
 
 	para "Leave at once!"
 	done
+endc
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "Je dois m'entraî-"
+	line "ner plus..."
+	done
+else
 	text "Clearly I need"
 	line "more training…"
 	done
+endc
 
 GenericTrainerHikerFloyd:
 	generictrainer HIKER, FLOYD, EVENT_BEAT_HIKER_FLOYD, .SeenText, .BeatenText
 
+if DEF(_LOCALE_FR)
+	text "Je suis TELLEMENT"
+	line "perdu ici!"
+
+	para "Je devrais rester"
+	line "dehors."
+	done
+else
 	text "I am SO lost in"
 	line "here!"
 
 	para "I should stick to"
 	line "hiking outdoors."
 	done
+endc
 
 .SeenText:
+if DEF(_LOCALE_FR)
+	text "Cette grotte me"
+	line "met en RAGE!"
+
+	para "Je combats pour"
+	line "me défouler!"
+	done
+else
 	text "This cave makes me"
 	line "so ANGRY!"
 
 	para "I'll battle to let"
 	line "off some steam!"
 	done
+endc
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "Perdu contre"
+	line "un gosse!"
+	done
+else
 	text "I got beat down by"
 	line "a kid!"
 	done
+endc
 
 DimCave3FPokefanmScript:
 	faceplayer
@@ -133,15 +206,36 @@ DimCave3FPokefanmScript:
 	iftrue_jumpopenedtext .YesText
 	jumpthisopenedtext
 
+if DEF(_LOCALE_FR)
+	text "Quoi?! Tu as"
+	line "une carte?"
+	done
+else
 	text "What?! Do you"
 	line "have a map?"
 	done
+endc
 
 .QuestionText:
+if DEF(_LOCALE_FR)
+	text "T'es perdu?"
+	done
+else
 	text "Are you lost?"
 	done
+endc
 
 .YesText:
+if DEF(_LOCALE_FR)
+	text "Moi aussi!"
+
+	para "La CENTRALE"
+	line "dérègle ma"
+
+	para "boussole, et"
+	line "j'ai pas de carte."
+	done
+else
 	text "Me too!"
 
 	para "The Power Plant"
@@ -150,3 +244,4 @@ DimCave3FPokefanmScript:
 	para "compass, and I"
 	line "don't have a map."
 	done
+endc

@@ -22,6 +22,23 @@ RedsMom:
 	setevent EVENT_MET_REDS_MOM
 	jumpthistextfaceplayer
 
+if DEF(_LOCALE_FR)
+	text "Salut!"
+
+	para "RED est parti il"
+	line "y a longtemps."
+
+	para "Il n'a même pas"
+	line "appelé... Je ne"
+
+	para "sais vraiment pas"
+	line "ce qu'il fait en"
+	cont "ce moment."
+
+	para "A vrai dire, je me"
+	line "fais du souci."
+	done
+else
 	text "Hi!"
 
 	para "Red's been away"
@@ -41,8 +58,19 @@ RedsMom:
 	line "but I do worry"
 	cont "about him."
 	done
+endc
 
 .Text2:
+if DEF(_LOCALE_FR)
+	text "Je me fais du sou-"
+	line "ci pour RED mais"
+
+	para "c'est un garçon..."
+	line "Il est indépendant"
+
+	para "maintenant."
+	done
+else
 	text "I worry about Red"
 	line "getting hurt or"
 
@@ -53,11 +81,19 @@ RedsMom:
 	line "what he wants to"
 	cont "do."
 	done
+endc
 
 RedsHouse1FTVScript:
 	jumpthistext
 
+if DEF(_LOCALE_FR)
+	text "Il y a des émis-"
+	line "sions qui ne pas-"
+	cont "sent pas à Johto."
+	done
+else
 	text "They have programs"
 	line "that aren't shown"
 	cont "in Johto…"
 	done
+endc

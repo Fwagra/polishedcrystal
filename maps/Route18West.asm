@@ -32,23 +32,53 @@ Route18WestBikeCheckScript:
 GenericTrainerBikerCharles:
 	generictrainer BIKER, CHARLES, EVENT_BEAT_BIKER_CHARLES, BikerCharlesSeenText, BikerCharlesBeatenText
 
+if DEF(_LOCALE_FR)
+	text "Conduis doucement,"
+	line "c'est plus"
+	cont "prudent!"
+	done
+else
 	text "Reckless driving"
 	line "causes accidents!"
 	cont "Take it easy!"
 	done
+endc
 
 BikerCharlesSeenText:
+if DEF(_LOCALE_FR)
+	text "Nous on est des"
+	line "durs! Des vrais!"
+	done
+else
 	text "We're fearless"
 	line "highway stars!"
 	done
+endc
 
 BikerCharlesBeatenText:
+if DEF(_LOCALE_FR)
+	text "Arrrgh!"
+	line "Trop dur!"
+	done
+else
 	text "Arrrgh! Crash and"
 	line "burn!"
 	done
+endc
 
 Route18WestBikeWarningText:
+if DEF(_LOCALE_FR)
+	text "Hé! Oh! Stop!"
+
+	para "Tu peux pas aller"
+	line "sur la PISTE CY-"
+
+	para "CLABLE sans une"
+	line "BICYCLETTE!"
+	done
+else
 	text "You have to be on"
 	line "a Bicycle to go"
 	cont "on Cycling Road!"
 	done
+endc

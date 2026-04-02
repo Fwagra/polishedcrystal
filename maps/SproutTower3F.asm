@@ -79,6 +79,25 @@ ElderLiScript:
 	setevent EVENT_BEAT_ELDER_LI
 	jumpthisopenedtext
 
+if DEF(_LOCALE_FR)
+	text "Le FLASH illumine"
+	line "même les endroits"
+	cont "les plus sombres."
+
+	para "Il est inutile"
+	line "de l'apprendre à"
+
+	para "tes #mon, sauf"
+	line "si tu veux t'en"
+	cont "servir en combat."
+
+	para "Appuie sur A dans"
+	line "le noir, et si un"
+
+	para "de tes #mon le"
+	line "peut, il le fera."
+	done
+else
 	text "Flash illuminates"
 	line "even the darkest"
 	cont "of all places."
@@ -97,10 +116,24 @@ ElderLiScript:
 	line "#mon can use"
 	cont "Flash, they will."
 	done
+endc
 
 GenericTrainerSageJin:
 	generictrainer SAGE, JIN, EVENT_BEAT_SAGE_JIN, SageJinSeenText, SageJinBeatenText
 
+if DEF(_LOCALE_FR)
+	text "Quand un #mon"
+	line "gagne en puissance"
+	cont "son dresseur"
+	cont "devient plus fort."
+
+	para "Non, attends..."
+	line "C'est le contraire"
+
+	para "je crois..."
+	line "Je sais plus."
+	done
+else
 	text "As #mon grow"
 	line "stronger, so does"
 	cont "the trainer."
@@ -111,20 +144,33 @@ GenericTrainerSageJin:
 	para "stronger, so do"
 	line "the #mon."
 	done
+endc
 
 GenericTrainerSageTroy:
 	generictrainer SAGE, TROY, EVENT_BEAT_SAGE_TROY, SageTroySeenText, SageTroyBeatenText
 
+if DEF(_LOCALE_FR)
+	text "L'ANCIEN n'est"
+	line "plus très loin."
+	done
+else
 	text "It is not far to"
 	line "the Elder."
 	done
+endc
 
 GenericTrainerSageNeal:
 	generictrainer SAGE, NEAL, EVENT_BEAT_SAGE_NEAL, SageNealSeenText, SageNealBeatenText
 
+if DEF(_LOCALE_FR)
+	text "Que ta voie soit"
+	line "douce et claire."
+	done
+else
 	text "Let there be light"
 	line "on your journey."
 	done
+endc
 
 SproutTower3FPlayerApproachesRivalMovement:
 	step_up
@@ -139,6 +185,28 @@ SproutTower3FRivalLeavesElderMovement:
 	step_end
 
 SproutTowerElderLecturesRivalText:
+if DEF(_LOCALE_FR)
+	text "ANCIEN: Tu es"
+	line "sans conteste un"
+	cont "bon dresseur."
+
+	para "Comme promis,"
+	line "voici ta CS."
+
+	para "Un conseil toute-"
+	line "fois: traite tes"
+
+	para "#mon avec plus"
+	line "de gentillesse."
+
+	para "Tu es bien trop"
+	line "âpre au combat."
+
+	para "Les #mon ne"
+	line "sont pas des"
+	cont "engins de guerre."
+	done
+else
 	text "Elder: You are in-"
 	line "deed skilled as a"
 	cont "trainer."
@@ -158,8 +226,38 @@ SproutTowerElderLecturesRivalText:
 	para "#mon are not"
 	line "tools of war…"
 	done
+endc
 
 SproutTowerRivalOnlyCareAboutStrongText:
+if DEF(_LOCALE_FR)
+	text "..."
+	line "...Pfeuh!"
+
+	para "On l'appelle"
+	line "l'ANCIEN mais il"
+	cont "est super nul!"
+
+	para "Et il raconte"
+	line "n'importe quoi..."
+
+	para "Je ne me ferai"
+	line "jamais battre par"
+
+	para "un crétin qui"
+	line "conseille d'être"
+
+	para "gentil avec les"
+	line "#mon."
+
+	para "Seuls les #mon"
+	line "puissants sont"
+	cont "importants."
+
+	para "Je me contrefiche"
+	line "des #mon mi-"
+	cont "gnons et faibles."
+	done
+else
 	text "…"
 	line "…Humph!"
 
@@ -184,13 +282,45 @@ SproutTowerRivalOnlyCareAboutStrongText:
 	line "care less about"
 	cont "weak #mon."
 	done
+endc
 
 SproutTowerRivalUsedEscapeRopeText:
+if DEF(_LOCALE_FR)
+	text "<RIVAL> utilise"
+	line "une CORDE SORTIE!"
+	done
+else
 	text "<RIVAL> used an"
 	line "Escape Rope!"
 	done
+endc
 
 SageLiSeenText:
+if DEF(_LOCALE_FR)
+	text "Bienvenue à toi,"
+	line "mon poussin!"
+
+	para "La TOUR CHETIFLOR"
+	line "est un lieu"
+	cont "d'entraînement."
+
+	para "Humains et #mon"
+	line "y renforcent leurs"
+
+	para "liens pour des"
+	line "lendemains qui"
+	cont "chantent."
+
+	para "Je serai ton"
+	line "adversaire final."
+
+	para "Permets-moi de"
+	line "mettre à l'épreuve"
+
+	para "ton amitié envers"
+	line "tes #mon!"
+	done
+else
 	text "So good of you to"
 	line "come here!"
 
@@ -212,12 +342,27 @@ SageLiSeenText:
 	para "your #mon and"
 	line "you!"
 	done
+endc
 
 SageLiBeatenText:
+if DEF(_LOCALE_FR)
 	text "Ah, excellent!"
 	done
+else
+	text "Ah, excellent!"
+	done
+endc
 
 SageLiTakeThisFlashText:
+if DEF(_LOCALE_FR)
+	text "Toi et tes #mon"
+	line "méritez bien cette"
+	cont "capacité."
+
+	para "Prends donc cette"
+	line "CS FLASH."
+	done
+else
 	text "You and your #-"
 	line "mon should have"
 
@@ -227,55 +372,121 @@ SageLiTakeThisFlashText:
 	para "Take this Flash"
 	line "TM."
 	done
+endc
 
 SageLiAfterBattleText:
+if DEF(_LOCALE_FR)
+	text "J'espère que tu"
+	line "apprendras et"
+	cont "grandiras en"
+
+	para "chemin."
+	done
+else
 	text "I hope you learn"
 	line "and grow from your"
 	cont "journey."
 	done
+endc
 
 SageJinSeenText:
+if DEF(_LOCALE_FR)
+	text "Je m'entraîne pour"
+	line "trouver la voie du"
+	cont "#mon!"
+	done
+else
 	text "I train to find"
 	line "enlightenment in"
 	cont "#mon!"
 	done
+endc
 
 SageJinBeatenText:
+if DEF(_LOCALE_FR)
+	text "Mon entraînement"
+	line "est insuffisant."
+	done
+else
 	text "My training is"
 	line "incomplete…"
 	done
+endc
 
 SageTroySeenText:
+if DEF(_LOCALE_FR)
+	text "Montre-moi à quel"
+	line "point tu fais"
+	cont "confiance à tes"
+	cont "#mon."
+	done
+else
 	text "Let me see how"
 	line "much you trust"
 	cont "your #mon."
 	done
+endc
 
 SageTroyBeatenText:
+if DEF(_LOCALE_FR)
+	text "Ta confiance est"
+	line "totale! Bien!"
+	done
+else
 	text "Yes, your trust is"
 	line "real!"
 	done
+endc
 
 SageNealSeenText:
+if DEF(_LOCALE_FR)
+	text "La CS de l'ANCIEN"
+	line "éclaire même les"
+	cont "sombres cavernes."
+	done
+else
 	text "The Elder's TM"
 	line "lights even pitch-"
 	cont "black darkness."
 	done
+endc
 
 SageNealBeatenText:
+if DEF(_LOCALE_FR)
+	text "J'en ai pris plein"
+	line "la tête!"
+	done
+else
 	text "It is my head that"
 	line "is bright!"
 	done
+endc
 
 SproutTower3FPaintingText:
+if DEF(_LOCALE_FR)
+	text "Une belle peinture"
+	line "d'un majestueux"
+	cont "CHETIFLOR."
+	done
+else
 	text "It's a powerful"
 	line "painting of a"
 	cont "Bellsprout."
 	done
+endc
 
 SproutTower3FStatueText:
+if DEF(_LOCALE_FR)
+	text "Une statue de"
+	line "#mon..."
+
+	para "Ca a l'air cher"
+	line "et raffiné."
+	done
+else
 	text "A #mon statue…"
 
 	para "It looks very"
 	line "distinguished."
 	done
+endc

@@ -33,6 +33,15 @@ SproutTower1FGrannyScript:
 	iftrue_jumptextfaceplayer .MetricText
 	jumpthistextfaceplayer
 
+if DEF(_LOCALE_FR)
+	text "Un CHETIFLOR haut"
+	line "de 30 mètres..."
+
+	para "On raconte que"
+	line "c'est en fait le"
+	cont "pilier central."
+	done
+else
 	text "A Bellsprout over"
 	line "100 feet tall…"
 
@@ -40,8 +49,18 @@ SproutTower1FGrannyScript:
 	line "became the center"
 	cont "pillar here."
 	done
+endc
 
 .MetricText:
+if DEF(_LOCALE_FR)
+	text "Un CHETIFLOR haut"
+	line "de 30 mètres..."
+
+	para "On raconte que"
+	line "c'est en fait le"
+	cont "pilier central."
+	done
+else
 	text "A Bellsprout over"
 	line "30 meters tall…"
 
@@ -49,10 +68,20 @@ SproutTower1FGrannyScript:
 	line "became the center"
 	cont "pillar here."
 	done
+endc
 
 GenericTrainerSageChow:
 	generictrainer SAGE, CHOW, EVENT_BEAT_SAGE_CHOW, SageChowSeenText, SageChowBeatenText
 
+if DEF(_LOCALE_FR)
+	text "Tous les êtres"
+	line "vivent grâce à une"
+	cont "entente."
+
+	para "Coopération, sym-"
+	line "biose: la vie."
+	done
+else
 	text "All living beings"
 	line "coexist through"
 	cont "cooperation."
@@ -60,8 +89,20 @@ GenericTrainerSageChow:
 	para "We must always be"
 	line "thankful for this."
 	done
+endc
 
 SageChowSeenText:
+if DEF(_LOCALE_FR)
+	text "Nous montons la"
+	line "garde dans cette"
+	cont "tour."
+
+	para "Nous y exprimons"
+	line "notre gratitude"
+	cont "envers tous les"
+	cont "#mon."
+	done
+else
 	text "We stand guard in"
 	line "this tower."
 
@@ -69,39 +110,80 @@ SageChowSeenText:
 	line "our gratitude to"
 	cont "honor all #mon."
 	done
+endc
 
 SageChowBeatenText:
+if DEF(_LOCALE_FR)
+	text "M--Merci!"
+	done
+else
 	text "Th-Thank you!"
 	done
+endc
 
 SproutTower1FSage1Text:
+if DEF(_LOCALE_FR)
+	text "Celui ou celle ar-"
+	line "rivant au sommet"
+	cont "recevra une CS."
+	done
+else
 	text "Only if you reach"
 	line "the top will you"
 	cont "obtain a TM."
 	done
+endc
 
 SproutTower1FSage2Text:
+if DEF(_LOCALE_FR)
+	text "La TOUR CHETIFLOR"
+	line "a été construite"
+
+	para "il y a longtemps"
+	line "pour entraîner les"
+	cont "#mon."
+	done
+else
 	text "Sprout Tower was"
 	line "built long ago"
 
 	para "as a place for"
 	line "#mon training."
 	done
+endc
 
 SproutTower1FTeacherText:
+if DEF(_LOCALE_FR)
+	text "Vois-tu le pilier"
+	line "trembler?"
+
+	para "On s'entraîne sec"
+	line "au-dessus."
+	done
+else
 	text "See the pillar"
 	line "shaking?"
 
 	para "People are train-"
 	line "ing upstairs."
 	done
+endc
 
 SproutTower1FStatueText:
+if DEF(_LOCALE_FR)
+	text "Une statue de"
+	line "#mon..."
+
+	para "Ca a l'air cher"
+	line "et raffiné."
+	done
+else
 	text "A #mon statue…"
 
 	para "It looks very"
 	line "distinguished."
 	done
+endc
 
 KimonoGirlMakoScript:
 	checkevent EVENT_GOT_RARE_CANDY_FROM_KIMONO_GIRL_MAKO

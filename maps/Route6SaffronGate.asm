@@ -21,6 +21,24 @@ Route6SaffronGuardScript:
 	iftrue_jumptextfaceplayer Route6SaffronGuardMagnetTrainText
 	jumpthistextfaceplayer
 
+if DEF(_LOCALE_FR)
+	text "Bienvenue à"
+	line "Safrania, la ville"
+	cont "du Train Magnet!"
+
+	para "...Enfin..."
+	line "Le Train Magnet ne"
+
+	para "fonctionne pas en"
+	line "ce moment."
+
+	para "Il n'y a plus de"
+	line "courant depuis le"
+
+	para "problème de la"
+	line "Centrale."
+	done
+else
 	text "Welcome to Saffron"
 	line "City, home of the"
 	cont "Magnet Train!"
@@ -40,11 +58,19 @@ Route6SaffronGuardScript:
 	para "with the Power"
 	line "Plant."
 	done
+endc
 
 Route6SaffronGuardMagnetTrainText:
+if DEF(_LOCALE_FR)
+	text "Le Train Magnet"
+	line "est la fierté de"
+	cont "Safrania."
+	done
+else
 	text "The Magnet Train"
 	line "is the most famous"
 
 	para "thing about Saf-"
 	line "fron."
 	done
+endc

@@ -67,6 +67,25 @@ RuggedRoadSouth_FinishBridge:
 	jmp GenericFinishBridge
 
 RuggedRoadSouthAdvancedTipsSignText:
+if DEF(_LOCALE_FR)
+	text "Astuces +"
+
+	para "Si ton #mon met"
+	line "K.O. l'ennemi,"
+
+	para "et tient un objet"
+	line "Pouvoir,"
+
+	para "tous les #mon"
+	line "ayant combattu"
+
+	para "ou tenant une"
+	line "EXP.PART"
+
+	para "gagnent aussi"
+	line "des points!"
+	done
+else
 	text "Advanced Tips!"
 
 	para "If your #mon"
@@ -85,3 +104,4 @@ RuggedRoadSouthAdvancedTipsSignText:
 	para "Exp.Share will"
 	line "gain from it!"
 	done
+endc

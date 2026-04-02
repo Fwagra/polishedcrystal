@@ -71,7 +71,7 @@ if DEF(_LOCALE_FR)
 	text "Salut! Neesha!"
 	line "Je suis du top 4"
 
-	para "de l'universite de"
+	para "de l'université de"
 	line "Céladopole!"
 
 	para "On est les 4"
@@ -107,7 +107,7 @@ if DEF(_LOCALE_FR)
 	line "Je suis des 4"
 
 	para "Céladon!"
-	line "Tu as deja entendu"
+	line "Tu as déjà entendu"
 
 	para "parler de nous."
 	line "Allez, combat!"
@@ -127,7 +127,7 @@ endc
 .NoBattleText:
 if DEF(_LOCALE_FR)
 	text "Pas envie de"
-	line "defi?"
+	line "défi?"
 	done
 else
 	text "Not interested in"
@@ -148,7 +148,7 @@ endc
 
 .BeatenText:
 if DEF(_LOCALE_FR)
-	text "Une defaite"
+	text "Une défaite"
 	line "qui fait mal…"
 	done
 else
@@ -167,7 +167,7 @@ if DEF(_LOCALE_FR)
 	line "savent faire."
 
 	para "Va trouver les"
-	line "autres et defie-"
+	line "autres et défie-"
 
 	para "les!"
 	done
@@ -234,12 +234,12 @@ endc
 CeladonUniversityLoungeLassText:
 if DEF(_LOCALE_FR)
 	text "Le mois prochain,"
-	line "excursion a"
+	line "excursion à"
 
-	para "Mont Selenite."
-	line "J'espere voir un"
+	para "Mont Sélénite."
+	line "J'espère voir un"
 
-	para "Melofee!"
+	para "Mélofée!"
 	done
 else
 	text "Next month we're"
@@ -253,7 +253,7 @@ endc
 
 CeladonUniversityLoungeRichBoyText:
 if DEF(_LOCALE_FR)
-	text "Tu t'es demande"
+	text "Tu t'es demandé"
 	line "pourquoi la Hyper"
 
 	para "Ball a un H jaune"
@@ -278,8 +278,8 @@ endc
 
 CeladonUniversityLoungeCooltrainerfText:
 if DEF(_LOCALE_FR)
-	text "Un #mon affaibli"
-	line "physiquement"
+	text "Un #mon bien"
+	line "affaibli"
 
 	para "tente souvent"
 	line "d'entrer dans une"
@@ -301,7 +301,7 @@ if DEF(_LOCALE_FR)
 	text "Tu croises une"
 	line "blague et une"
 
-	para "question rheto-"
+	para "question rhéto-"
 	line "rique?"
 
 	para "………………………………"
@@ -319,12 +319,13 @@ endc
 
 CeladonUniversityLoungeSuper_nerd2Text:
 if DEF(_LOCALE_FR)
-	text "J'ecris des scripts"
-	line "pour un jeu."
+	text "J'ecris des"
+	line "scripts pour un"
 
-	para "Ne dis pas qu'il"
-	line "faut tout faire en"
-	cont "asm!"
+	para "jeu. Ne dis pas"
+	line "qu'il faut tout"
+
+	para "faire en asm!"
 	done
 else
 	text "I'm writing scripts"
@@ -367,7 +368,7 @@ if DEF(_LOCALE_FR)
 	text "Ce livre a une"
 	line "cachette vide"
 
-	para "la ou il devrait"
+	para "là où il devrait"
 	line "y avoir des pages!"
 	done
 else
@@ -394,7 +395,7 @@ CeladonUniversityLoungeComputer:
 
 if DEF(_LOCALE_FR)
 	text "Un perso court"
-	line "dans une Céladopole"
+	line "dans Céladopole"
 
 	para "en 2D."
 	done

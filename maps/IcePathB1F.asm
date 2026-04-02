@@ -71,9 +71,15 @@ IcePathB1FSetUpStoneTable:
 	earthquake 80
 	jumpthistext
 
+if DEF(_LOCALE_FR)
+	text "Le rocher a"
+	line "traversé."
+	done
+else
 	text "The boulder fell"
 	line "through."
 	done
+endc
 
 GenericTrainerBoarderMax:
 	generictrainer BOARDER, MAX, EVENT_BEAT_BOARDER_MAX, BoarderMaxSeenText, BoarderMaxBeatenText

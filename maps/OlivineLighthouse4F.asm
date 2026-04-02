@@ -26,6 +26,19 @@ OlivineLighthouse4F_MapScriptHeader:
 GenericTrainerLassConnie:
 	generictrainer LASS, CONNIE, EVENT_BEAT_LASS_CONNIE, LassConnieSeenText, LassConnieBeatenText
 
+if DEF(_LOCALE_FR)
+	text "Chaque dresseur"
+	line "est responsable de"
+	cont "la santé de ses"
+	cont "#MON."
+
+	para "Je prie pour le"
+	line "#MON, ainsi"
+
+	para "JASMINE reviendra"
+	line "à l'ARENE."
+	done
+else
 	text "Right. Anybody"
 	line "would be worried"
 
@@ -38,6 +51,7 @@ GenericTrainerLassConnie:
 	para "Jasmine can come"
 	line "back to the Gym."
 	done
+endc
 
 TrainerSailorKent:
 	trainer SAILOR, KENT, EVENT_BEAT_SAILOR_KENT, SailorKentSeenText, SailorKentBeatenText, 0, SailorKentScript
@@ -49,6 +63,15 @@ SailorKentScript:
 	jumptextfaceplayer SailorKentAfterBattleText
 
 SailorKentSeenText:
+if DEF(_LOCALE_FR)
+	text "JASMINE doit"
+	line "s'inquiéter à pro-"
+	cont "pos du #MON."
+
+	para "Elle ne sourit"
+	line "même plus."
+	done
+else
 	text "Jasmine must be"
 	line "worried sick about"
 	cont "the #mon here."
@@ -56,19 +79,35 @@ SailorKentSeenText:
 	para "She won't even"
 	line "smile these days."
 	done
+endc
 
 SailorKentBeatenText:
+if DEF(_LOCALE_FR)
+	text "Moi non plus..."
+	line "J'souris plus..."
+	done
+else
 	text "I can't manage a"
 	line "smile either…"
 	done
+endc
 
 SailorKentAfterBattleText:
+if DEF(_LOCALE_FR)
+	text "Au fait, je crois"
+	line "qu'il y a une bon-"
+
+	para "ne PHARMACIE à"
+	line "IRISIA."
+	done
+else
 	text "Speaking of sick,"
 	line "I've heard there's"
 
 	para "a good Pharmacy in"
 	line "Cianwood."
 	done
+endc
 
 SailorKentFinalText:
 	text "The #mon here"
@@ -80,6 +119,18 @@ SailorKentFinalText:
 	done
 
 LassConnieSeenText:
+if DEF(_LOCALE_FR)
+	text "JASMINE est la"
+	line "CHAMPIONNE de"
+	cont "cette ville."
+
+	para "Et moi j'suis plus"
+	line "forte qu'elle."
+
+	para "Et ça... Tu vas"
+	line "le comprendre!"
+	done
+else
 	text "Jasmine is this"
 	line "city's Gym Leader."
 
@@ -89,8 +140,14 @@ LassConnieSeenText:
 	para "Nobody had better"
 	line "get in my way!"
 	done
+endc
 
 LassConnieBeatenText:
+if DEF(_LOCALE_FR)
+	text "Aaah! Mes #MON!"
+	done
+else
 	text "Aaack! My #mon!"
 	done
+endc
 

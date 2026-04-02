@@ -19,6 +19,17 @@ Route40BattleTowerGate_MapScriptHeader:
 	object_event  7,  5, SPRITE_SCHOOLGIRL, SPRITEMOVEDATA_WALK_UP_DOWN, 1, 0, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, Route40BattleTowerGateTwinScript, -1
 
 Route40BattleTowerGateOfficer:
+if DEF(_LOCALE_FR)
+	text "Tu vas à la TOUR"
+	line "DE COMBAT?"
+
+	para "Si tu gagnes plein"
+	line "de fois, tu peux"
+
+	para "remporter des"
+	line "trucs spéciaux."
+	done
+else
 	text "Are you going to"
 	line "the Battle Tower?"
 
@@ -29,12 +40,23 @@ Route40BattleTowerGateOfficer:
 	line "trade them in for"
 	cont "special items."
 	done
+endc
 
 Route40BattleTowerGateRockerScript:
 	checkevent EVENT_BATTLE_TOWER_OPEN
 	iftrue_jumptextfaceplayer .OpenText
 	jumpthistextfaceplayer
 
+if DEF(_LOCALE_FR)
+	text "Tu es aussi ici"
+	line "pour la TOUR DE"
+	cont "COMBAT?"
+
+	para "Mais tu ne peux"
+	line "pas y entrer je"
+	cont "parie..."
+	done
+else
 	text "Did you come to"
 	line "see the Battle"
 	cont "Tower too?"
@@ -42,8 +64,19 @@ Route40BattleTowerGateRockerScript:
 	para "But I guess you"
 	line "can't go in yet."
 	done
+endc
 
 .OpenText:
+if DEF(_LOCALE_FR)
+	text "La TOUR DE COMBAT"
+	line "a ouvert ses"
+	cont "portes."
+
+	para "Je veux y aller"
+	line "mais..."
+	cont "J'ai peur."
+	done
+else
 	text "Battle Tower has"
 	line "opened."
 
@@ -53,20 +86,39 @@ Route40BattleTowerGateRockerScript:
 	para "up a cool line for"
 	line "when I win."
 	done
+endc
 
 Route40BattleTowerGateTwinScript:
 	checkevent EVENT_BATTLE_TOWER_OPEN
 	iftrue_jumptextfaceplayer .OpenText
 	jumpthistextfaceplayer
 
+if DEF(_LOCALE_FR)
+	text "Je vais entraîner"
+	line "mes #MON avant"
+
+	para "de me lancer vers"
+	line "la TOUR DE COMBAT."
+	done
+else
 	text "I'm going to train"
 	line "my #mon so I'll"
 
 	para "be all ready for"
 	line "the Battle Tower."
 	done
+endc
 
 .OpenText:
+if DEF(_LOCALE_FR)
+	text "Mes #MON ont"
+	line "tous des niveaux"
+	cont "différents..."
+
+	para "Je dois les"
+	line "entraîner!"
+	done
+else
 	text "The levels of the"
 	line "#mon I want to"
 
@@ -76,3 +128,4 @@ Route40BattleTowerGateTwinScript:
 	para "I have to go train"
 	line "them now!"
 	done
+endc

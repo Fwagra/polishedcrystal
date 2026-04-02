@@ -40,6 +40,18 @@ DimCave2FBouldersLand:
 GenericTrainerEngineerLang:
 	generictrainer ENGINEER, LANG, EVENT_BEAT_ENGINEER_LANG, .SeenText, .BeatenText
 
+if DEF(_LOCALE_FR)
+	text "Il y a 3 ans, la"
+	line "CENTRALE"
+	cont "était détruite."
+
+	para "On l'a relancée"
+	line "pour alimenter"
+
+	para "le TRAIN MAGNET"
+	line "vers Johto."
+	done
+else
 	text "Three years ago"
 	line "the Power Plant"
 	cont "was a wreck."
@@ -50,42 +62,83 @@ GenericTrainerEngineerLang:
 	para "the Magnet Train"
 	line "to Johto."
 	done
+endc
 
 .SeenText:
+if DEF(_LOCALE_FR)
+	text "On a extrait du"
+	line "minerai d'ici"
+
+	para "pour retaper la"
+	line "CENTRALE!"
+	done
+else
 	text "We mined ore from"
 	line "this mountain to"
 
 	para "refurbish the"
 	line "Power Plant!"
 	done
+endc
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "Panne de courant!"
+	done
+else
 	text "A power failure!"
 	done
+endc
 
 GenericTrainerHikerDerrick:
 	generictrainer HIKER, DERRICK, EVENT_BEAT_HIKER_DERRICK, .SeenText, .BeatenText
 
+if DEF(_LOCALE_FR)
+	text "Ca va sans dire,"
+	line "j'adore randonner"
+
+	para "avec mes #mon."
+	done
+else
 	text "It goes without"
 	line "saying, but I love"
 
 	para "hiking with my"
 	line "#mon."
 	done
+endc
 
 .SeenText:
+if DEF(_LOCALE_FR)
+	text "♪ En rando, on va,"
+	line "en rando on va! ♪"
+	done
+else
 	text "♪ A-hiking we"
 	line "will go, a-hiking"
 	cont "we will go… ♪"
 	done
+endc
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "♪ Hi-ho, hi-ho,"
+	line "en rando, on va! ♪"
+	done
+else
 	text "♪ Eee-iiii-ah-"
 	line "dee-oh, a-hiking"
 	cont "we will go! ♪"
 	done
+endc
 
 DimCaveFallenBoulderText:
+if DEF(_LOCALE_FR)
+	text "C'est coincé sur"
+	line "le bouton."
+	done
+else
 	text "It's stuck on the"
 	line "button."
 	done
+endc

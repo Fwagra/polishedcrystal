@@ -27,6 +27,16 @@ OlivineLighthouse5F_MapScriptHeader:
 GenericTrainerBird_keeperDenis:
 	generictrainer BIRD_KEEPER, DENIS, EVENT_BEAT_BIRD_KEEPER_DENIS, Bird_keeperDenisSeenText, Bird_keeperDenisBeatenText
 
+if DEF(_LOCALE_FR)
+	text "Mon #MON a"
+	line "appris VOL à"
+	cont "IRISIA."
+
+	para "Et puisque j'ai"
+	line "perdu, je vais"
+	cont "VOLER autre part!"
+	done
+else
 	text "My #mon learned"
 	line "how to use Fly in"
 	cont "the Yellow Forest."
@@ -35,10 +45,20 @@ GenericTrainerBird_keeperDenis:
 	line "loser, I'll Fly"
 	cont "across the sea…"
 	done
+endc
 
 GenericTrainerSailorErnest:
 	generictrainer SAILOR, ERNEST, EVENT_BEAT_SAILOR_ERNEST, SailorErnestSeenText, SailorErnestBeatenText
 
+if DEF(_LOCALE_FR)
+	text "Un CHAMPION n'est"
+	line "pas seulement fort"
+
+	para "mais il se doit"
+	line "d'être aussi"
+	cont "compatissant."
+	done
+else
 	text "A Gym Leader isn't"
 	line "just about being"
 
@@ -46,29 +66,61 @@ GenericTrainerSailorErnest:
 	line "also needs to be"
 	cont "compassionate."
 	done
+endc
 
 SailorErnestSeenText:
+if DEF(_LOCALE_FR)
+	text "Je voulais défier"
+	line "JASMINE mais ce"
+
+	para "n'est pas le mo-"
+	line "ment. Et toi, ça"
+	cont "te tente?"
+	done
+else
 	text "I wanted to battle"
 	line "Jasmine, but she's"
 
 	para "not up to it now."
 	line "So, how about you?"
 	done
+endc
 
 SailorErnestBeatenText:
+if DEF(_LOCALE_FR)
+	text "Fouiiii!"
+	line "T'es trop, toi!"
+	done
+else
 	text "Whoa, whoa. You're"
 	line "overwhelming!"
 	done
+endc
 
 Bird_keeperDenisSeenText:
+if DEF(_LOCALE_FR)
+	text "C'est haut ici!"
+	line "Mes #MON"
+
+	para "oiseaux sont en"
+	line "super forme."
+	done
+else
 	text "We're pretty high"
 	line "up here. My bird"
 
 	para "#mon are in"
 	line "prime form."
 	done
+endc
 
 Bird_keeperDenisBeatenText:
+if DEF(_LOCALE_FR)
+	text "Mayday!"
+	line "Mayday!"
+	done
+else
 	text "Oops…They crashed…"
 	done
+endc
 

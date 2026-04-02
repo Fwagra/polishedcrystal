@@ -57,6 +57,15 @@ QuietCaveB3FMarleyScript:
 	end
 
 .ChallengeText:
+if DEF(_LOCALE_FR)
+	text "...Je suis Marley."
+	line "...Et toi?"
+
+	para "Oh... <PLAYER>,"
+	line "tu veux me"
+	cont "combattre?"
+	done
+else
 	text "…I'm Marley."
 	line "…You are?"
 
@@ -64,21 +73,54 @@ QuietCaveB3FMarleyScript:
 	line "will you battle"
 	cont "me, please?"
 	done
+endc
 
 .YesText:
+if DEF(_LOCALE_FR)
+	text "...OK. Je vais"
+	line "faire au mieux."
+	done
+else
 	text "…OK. I'll do my"
 	line "best."
 	done
+endc
 
 .NoText:
+if DEF(_LOCALE_FR)
+	text "...Dommage..."
+	done
+else
 	text "…Too bad…"
 	done
+endc
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "...Aww."
+	done
+else
 	text "…Awww."
 	done
+endc
 
 .ItemText:
+if DEF(_LOCALE_FR)
+	text "Je... j'aime pas"
+	line "parler..."
+
+	para "Je choisis bien"
+	line "mes mots, mais"
+
+	para "ils peuvent"
+	line "blesser sans"
+	cont "le vouloir..."
+
+	para "Alors je te"
+	line "remercie"
+	cont "autrement..."
+	done
+else
 	text "I… I don't like to"
 	line "talk…"
 
@@ -93,8 +135,20 @@ QuietCaveB3FMarleyScript:
 	line "convey thanks an-"
 	cont "other way…"
 	done
+endc
 
 .GoodbyeText:
+if DEF(_LOCALE_FR)
+	text "...Merci d'avoir"
+	line "combattu..."
+	cont "...un peu..."
+
+	para "Je vais à la"
+	line "TOUR COMBAT..."
+
+	para "Salut..."
+	done
+else
 	text "…I appreciate your"
 	line "battling with me…"
 	cont "…Just a little…"
@@ -104,3 +158,4 @@ QuietCaveB3FMarleyScript:
 
 	para "Bye-bye…"
 	done
+endc

@@ -45,6 +45,16 @@ UndergroundWarehouseResetSwitches:
 GenericTrainerGruntM24:
 	generictrainer GRUNTM, 24, EVENT_BEAT_ROCKET_GRUNTM_24, GruntM24SeenText, GruntM24BeatenText
 
+if DEF(_LOCALE_FR)
+	text "La TEAM ROCKET"
+	line "vivra dans l'at-"
+	cont "tente du retour du"
+	cont "grand GIOVANNI."
+
+	para "Nous sommes prêts"
+	line "à tout."
+	done
+else
 	text "Team Rocket will"
 	line "keep going, wait-"
 	cont "ing for the return"
@@ -53,15 +63,24 @@ GenericTrainerGruntM24:
 	para "We'll do whatever"
 	line "it takes."
 	done
+endc
 
 GenericTrainerGruntM14:
 	generictrainer GRUNTM, 14, EVENT_BEAT_ROCKET_GRUNTM_14, GruntM14SeenText, GruntM14BeatenText
 
+if DEF(_LOCALE_FR)
+	text "Perdu..."
+
+	para "Pardon..."
+	line "GIOVANNI!"
+	done
+else
 	text "I lost…"
 
 	para "Please forgive me,"
 	line "Giovanni!"
 	done
+endc
 
 GenericTrainerGruntM15:
 	generictrainer GRUNTM, 15, EVENT_BEAT_ROCKET_GRUNTM_15, GruntM15SeenText, GruntM15BeatenText
@@ -127,6 +146,25 @@ GruntM15BeatenText:
 	done
 
 DirectorIntroText:
+if DEF(_LOCALE_FR)
+	text "DIRECTEUR: Qui?"
+	line "Quoi? Tu es là"
+	cont "pour me sauver?"
+
+	para "Merci!"
+
+	para "La TOUR RADIO!"
+
+	para "Que se passe-t-il"
+	line "là-bas?"
+
+	para "Contrôlée par la"
+	line "TEAM ROCKET?"
+
+	para "Tiens. Prends"
+	line "cette CARTE MAGN."
+	done
+else
 	text "Director: Who?"
 	line "What? You came to"
 	cont "rescue me?"
@@ -144,14 +182,49 @@ DirectorIntroText:
 	para "Here. Take this"
 	line "Card Key."
 	done
+endc
 
 DirectorCardKeyText:
+if DEF(_LOCALE_FR)
+	text "DIRECTEUR: Utilise"
+	line "cette carte pour"
+	cont "ouvrir les volets"
+	cont "du 2ème."
+	done
+else
 	text "Director: Use that"
 	line "to open the shut-"
 	cont "ters on 3F."
 	done
+endc
 
 DirectorAfterText:
+if DEF(_LOCALE_FR)
+	text "Je t'en supplie..."
+	line "Aide-nous."
+
+	para "Dieu seul sait ce"
+	line "qu'ils feront en"
+
+	para "contrôlant le"
+	line "transmetteur."
+
+	para "Ils pourront même"
+	line "manipuler les"
+
+	para "#mon grâce à un"
+	line "signal spécial!"
+
+	para "Tu es mon seul"
+	line "espoir."
+
+	para "Sauve la TOUR"
+	line "RADIO! Pitié!!!"
+
+	para "Sauve tous les"
+	line "gentils #mon!"
+	done
+else
 	text "I'm begging you to"
 	line "help."
 
@@ -176,3 +249,4 @@ DirectorAfterText:
 	para "And all the #-"
 	line "mon nationwide!"
 	done
+endc

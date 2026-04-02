@@ -27,17 +27,37 @@ RockTunnel1F_MapScriptHeader:
 GenericTrainerHikerSeamus:
 	generictrainer HIKER, SEAMUS, EVENT_BEAT_HIKER_SEAMUS, HikerSeamusSeenText, HikerSeamusBeatenText
 
+if DEF(_LOCALE_FR)
+	text "La Grotte est"
+	line "toujours aussi"
+	cont "longue?"
+	done
+else
 	text "Was Rock Tunnel"
 	line "always this much"
 	cont "of a trek?"
 	done
+endc
 
 HikerSeamusSeenText:
+if DEF(_LOCALE_FR)
+	text "Presque..."
+	line "arrivé..."
+	done
+else
 	text "Almost…"
 	line "there…"
 	done
+endc
 
 HikerSeamusBeatenText:
+if DEF(_LOCALE_FR)
+	text "D'où viens-tu"
+	line "toute cette"
+	cont "énergie?"
+	done
+else
 	text "Where do you get"
 	line "your energy?"
 	done
+endc

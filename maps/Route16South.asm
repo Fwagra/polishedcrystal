@@ -40,21 +40,49 @@ OfficerfJamieScript:
 	endtext
 
 OfficerfJamieSeenText:
+if DEF(_LOCALE_FR)
+	text "Hé, toi! Tu cher-"
+	line "ches les ennuis?"
+	done
+else
 	text "Hey you! Are you"
 	line "causing trouble?"
 	done
+endc
 
 OfficerfJamieBeatenText:
+if DEF(_LOCALE_FR)
 	text "Hmph!"
 	done
+else
+	text "Hmph!"
+	done
+endc
 
 OfficerfJamieAfterText:
+if DEF(_LOCALE_FR)
+	text "Rouler tard la"
+	line "nuit, c'est louche"
+	done
+else
 	text "Riding around late"
 	line "at night just"
 	cont "looks suspicious."
 	done
+endc
 
 OfficerfJamieDaytimeText:
+if DEF(_LOCALE_FR)
+	text "Les Bikers et les"
+	line "loubards aiment"
+
+	para "faire des ennuis"
+	line "sur cette route."
+
+	para "Ne t'en mêle pas,"
+	line "OK?"
+	done
+else
 	text "Bikers and"
 	line "Roughnecks like"
 
@@ -64,10 +92,19 @@ OfficerfJamieDaytimeText:
 	para "Don't you get"
 	line "involved, got it?"
 	done
+endc
 
 CyclingRoadSignText:
+if DEF(_LOCALE_FR)
+	text "PISTE CYCLABLE"
+
+	para "Une descente"
+	line "d'enfer!"
+	done
+else
 	text "Cycling Road"
 
 	para "Downhill coasting"
 	line "all the way!"
 	done
+endc

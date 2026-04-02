@@ -46,7 +46,9 @@ ViridianNicknameSpeechHouseLassText:
 if DEF(_LOCALE_FR)
 	text "Voici Hooty, un"
 	line "Hoothoot, et"
-	cont "Rattey, un Rattata."
+
+	para "Rattey, un"
+	line "Rattata."
 	done
 else
 	text "They're Hooty--"

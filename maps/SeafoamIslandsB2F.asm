@@ -28,54 +28,109 @@ SeafoamIslandsB2F_MapScriptHeader:
 GenericTrainerSkierCady:
 	generictrainer SKIER, CADY, EVENT_BEAT_SKIER_CADY, SkierCadySeenText, SkierCadyBeatenText
 
+if DEF(_LOCALE_FR)
+	text "Quel combat"
+	line "brûlant!"
+	done
+else
 	text "That was a hot"
 	line "battle!"
 	done
+endc
 
 GenericTrainerBoarderShaun:
 	generictrainer BOARDER, SHAUN, EVENT_BEAT_BOARDER_SHAUN, BoarderShaunSeenText, BoarderShaunBeatenText
 
+if DEF(_LOCALE_FR)
+	text "Bon, vas-y,"
+	line "passe!"
+	done
+else
 	text "All right, please"
 	line "pass through!"
 	done
+endc
 
 GenericTrainerBoarderBryce:
 	generictrainer BOARDER, BRYCE, EVENT_BEAT_BOARDER_BRYCE, BoarderBryceSeenText, BoarderBryceBeatenText
 
+if DEF(_LOCALE_FR)
+	text "Des dresseurs"
+	line "partout."
+	done
+else
 	text "Trainers are"
 	line "everywhere."
 	done
+endc
 
 SkierCadySeenText:
+if DEF(_LOCALE_FR)
+	text "Pour vaincre le"
+	line "froid, mets des"
+	cont "vêtements chauds"
+	cont "et bois chaud!"
+	done
+else
 	text "To beat the cold,"
 	line "try warm clothes"
 	cont "and a hot drink!"
 	done
+endc
 
 SkierCadyBeatenText:
+if DEF(_LOCALE_FR)
+	text "Argh, jusque-là!"
+	done
+else
 	text "Argh, all the way"
 	line "out here!"
 	done
+endc
 
 BoarderShaunSeenText:
+if DEF(_LOCALE_FR)
+	text "Hé, hé, tu me"
+	line "gênes! Oui!"
+	done
+else
 	text "Hey, hey, you're"
 	line "in my way! Right!"
 	done
+endc
 
 BoarderShaunBeatenText:
+if DEF(_LOCALE_FR)
+	text "Je me suis fait"
+	line "bousculer..."
+	done
+else
 	text "I got kicked"
 	line "around…"
 	done
+endc
 
 BoarderBryceSeenText:
+if DEF(_LOCALE_FR)
+	text "Pourquoi venir"
+	line "jusqu'ici?"
+	done
+else
 	text "What did you"
 	line "come all the way"
 	cont "out here for,"
 	cont "I wonder."
 	done
+endc
 
 BoarderBryceBeatenText:
+if DEF(_LOCALE_FR)
+	text "J'ai perdu jusque-"
+	line "là..."
+	done
+else
 	text "I lost all the"
 	line "way out here…"
 	done
+endc
 

@@ -17,9 +17,17 @@ Route8SaffronGate_MapScriptHeader:
 	object_event  5,  1, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, PAL_NPC_BLUE, OBJECTTYPE_COMMAND, jumptextfaceplayer, Route8SaffronGateOfficerText, -1
 
 Route8SaffronGateOfficerText:
+if DEF(_LOCALE_FR)
+	text "As-tu visite"
+	line "Lavanville?"
+
+	para "Il y a une grande"
+	line "Tour Radio la-bas."
+else
 	text "Have you been to"
 	line "Lavender Town?"
 
 	para "There's a tall"
 	line "Radio Tower there."
+endc
 	done

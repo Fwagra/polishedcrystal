@@ -68,7 +68,7 @@ if DEF(_LOCALE_FR)
 	line "Je suis du top 4"
 
 	para "Dresseurs de"
-	line "l'universite de"
+	line "l'université de"
 
 	para "Céladopole. On est"
 	line "les 4 Céladon!"
@@ -100,7 +100,7 @@ if DEF(_LOCALE_FR)
 	line "Je fais partie des"
 
 	para "les 4 Céladon!"
-	line "Tu nous defies?"
+	line "Tu nous défies?"
 
 	para "Allez, au combat!"
 	done
@@ -141,7 +141,7 @@ endc
 
 .BeatenText:
 if DEF(_LOCALE_FR)
-	text "Sans dec!"
+	text "Sans déc!"
 	done
 else
 	text "No way!"
@@ -150,8 +150,8 @@ endc
 
 .AfterText1:
 if DEF(_LOCALE_FR)
-	text "J'ai tant entraine"
-	line "mon equipe, mais"
+	text "J'ai tant entraîné"
+	line "mon équipe, mais"
 
 	para "tu nous as eu."
 	line "Avec ta force,"
@@ -178,7 +178,7 @@ if DEF(_LOCALE_FR)
 	text "Les Quatre ont"
 	line "perdu contre toi?"
 
-	para "Tu decroches!"
+	para "Tu décroches!"
 	line "Tiens, pour toi!"
 	done
 else
@@ -199,7 +199,7 @@ if DEF(_LOCALE_FR)
 	line "le poids ici, mais"
 
 	para "tu cartonne dans"
-	line "le monde reel."
+	line "le monde réel."
 
 	para "Continue!"
 	done
@@ -232,8 +232,8 @@ endc
 
 CeladonUniversityPoolSwimmer_girlText:
 if DEF(_LOCALE_FR)
-	text "J'ai postule pour"
-	line "aller etudier aux"
+	text "J'ai postulé pour"
+	line "aller étudier aux"
 
 	para "Iles Ecume!"
 	line "Il me faut de la"

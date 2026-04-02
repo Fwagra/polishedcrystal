@@ -52,5 +52,10 @@ TinTowerHoOh:
 	end
 
 HoOhText:
+if DEF(_LOCALE_FR)
 	text "Shaoooh!"
 	done
+else
+	text "Shaoooh!"
+	done
+endc

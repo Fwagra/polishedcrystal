@@ -66,12 +66,30 @@ Route17Route18GateCannotPassMovement:
 	step_end
 
 Route17Route18GateOfficerText:
+if DEF(_LOCALE_FR)
+	text "La montée de la"
+	line "PISTE CYCLABLE"
+	cont "commence ici."
+	done
+else
 	text "Cycling Road"
 	line "starts going"
 	cont "uphill here."
 	done
+endc
 
 Route17Route18GateCannotPassText:
+if DEF(_LOCALE_FR)
+	text "Toi là! T'as pas"
+	line "de BICYCLETTE?"
+
+	para "La PISTE CYCLABLE"
+	line "est à côté."
+
+	para "Il te faut une"
+	line "BICYCLETTE."
+	done
+else
 	text "Hang on! Don't you"
 	line "have a Bicycle?"
 
@@ -81,3 +99,4 @@ Route17Route18GateCannotPassText:
 	para "You have to have a"
 	line "Bicycle to go on."
 	done
+endc

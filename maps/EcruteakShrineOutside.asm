@@ -22,16 +22,37 @@ EcruteakShrineOutside_MapScriptHeader:
 	object_event  2, 14, SPRITE_SAGE, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 0, 1, -1, 0, OBJECTTYPE_COMMAND, jumptextfaceplayer, EcruteakShrineOutsideSageText, -1
 
 EcruteakShrineOutsideTwinText:
+if DEF(_LOCALE_FR)
+	text "Mon Hoothoot et"
+	line "Clairvoyance"
+	cont "chassent les"
+	cont "fantômes."
+	done
+else
 	text "My Hoothoot's"
 	line "Foresight helps"
 	cont "shoo away ghosts."
 	done
+endc
 
 EcruteakShrineOutsideHoothootText:
+if DEF(_LOCALE_FR)
+	text "Hoothoot: Hou!"
+	done
+else
 	text "Hoothoot: Hoot!"
 	done
+endc
 
 EcruteakShrineOutsideSageText:
+if DEF(_LOCALE_FR)
+	text "Au Nouvel An, on"
+	line "vient au"
+
+	para "sanctuaire faire"
+	line "des voeux."
+	done
+else
 	text "On New Year's Eve,"
 	line "people visit this"
 
@@ -39,10 +60,20 @@ EcruteakShrineOutsideSageText:
 	line "wishes for their"
 	cont "future."
 	done
+endc
 
 EcruteakShrineOutsideStatueText:
+if DEF(_LOCALE_FR)
+	text "Une statue de"
+	line "#mon..."
+
+	para "Elle a l'air"
+	line "paisible."
+	done
+else
 	text "A #mon statue…"
 
 	para "It looks very"
 	line "serene."
 	done
+endc

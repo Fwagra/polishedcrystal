@@ -27,22 +27,48 @@ Route2North_MapScriptHeader:
 GenericTrainerBug_maniacEd:
 	generictrainer BUG_MANIAC, ED, EVENT_BEAT_BUG_MANIAC_ED, Bug_maniacEdSeenText, Bug_maniacEdBeatenText
 
+if DEF(_LOCALE_FR)
+	text "Les insectes ça"
+	line "fait chprouit"
+
+	para "quand tu appuies"
+	line "dessus."
+
+	para "Et ça c'est super"
+	line "mignon, non?"
+	done
+else
 	text "They'll really"
 	line "sting when you"
 	cont "take a bath."
 	done
+endc
 
 Bug_maniacEdSeenText:
+if DEF(_LOCALE_FR)
+	text "Ca pique pas de se"
+	line "balader en short"
+
+	para "dans les hautes"
+	line "herbes?"
+	done
+else
 	text "If you walk in"
 	line "tall grass wearing"
 
 	para "shorts, do you get"
 	line "nicks and cuts?"
 	done
+endc
 
 Bug_maniacEdBeatenText:
+if DEF(_LOCALE_FR)
+	text "Aïeuuu!"
+	done
+else
 	text "Ouch, ouch, ouch!"
 	done
+endc
 
 Route2NorthCooltrainermText:
 	text "Diglett's Cave is"
@@ -56,5 +82,10 @@ Route2NorthCooltrainermText:
 	done
 
 Route2DiglettsCaveSignText:
+if DEF(_LOCALE_FR)
+	text "CAVE TAUPIQUEUR"
+	done
+else
 	text "Diglett's Cave"
 	done
+endc

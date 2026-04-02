@@ -70,6 +70,12 @@ CinnabarVolcanoB1FBouldersFall:
 	earthquake 80
 	jumpthistext
 
+if DEF(_LOCALE_FR)
+	text "Le rocher est"
+	line "passé au travers!"
+	done
+else
 	text "The boulder fell"
 	line "through!"
 	done
+endc

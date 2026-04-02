@@ -54,7 +54,8 @@ if DEF(_LOCALE_FR)
 	para "Je peux sortir en"
 	line "cosplay sans qu'on"
 
-	para "me regarde bizarre."
+	para "subisse de"
+	line "regards."
 	done
 else
 	text "It's great being"
@@ -71,13 +72,13 @@ endc
 CeladonUniversityLibrary2FLassText:
 if DEF(_LOCALE_FR)
 	text "Ne juge pas un"
-	line "livre a sa couver-"
+	line "livre à sa couver-"
 
 	para "ture."
 	line "Parfois la plus"
 
-	para "terne cache la"
-	line "meilleure histoire."
+	para "terne cache une"
+	line "belle histoire."
 	done
 else
 	text "Never judge a book"
@@ -111,10 +112,10 @@ endc
 
 .Text2:
 if DEF(_LOCALE_FR)
-	text "Hein? Degage!"
+	text "Hein? Dégage!"
 
 	para "Lire par-dessus"
-	line "l'epaule, c'est"
+	line "l'épaule, c'est"
 
 	para "lourd!"
 	done
@@ -129,14 +130,14 @@ endc
 
 CeladonUniversityLibrary2FSuper_nerdText:
 if DEF(_LOCALE_FR)
-	text "La commande reseau"
+	text "La commande réseau"
 	line "affiche un message"
 
-	para "sur tous les ecrans!"
+	para "sur chaque écran!"
 	line "Que poster…"
 
 	para "Pizza gratuite au"
-	line "bureau de Westwood!"
+	line "bureau Westwood!"
 
 	para "Hi hi hi."
 	done
@@ -175,9 +176,9 @@ endc
 CeladonUniversityLibrary2FYoungsterText:
 if DEF(_LOCALE_FR)
 	text "Je lis sur un"
-	line "#mon legendaire"
+	line "#mon légendaire"
 
-	para "qui deformerait"
+	para "qui déformerait"
 	line "l'espace."
 
 	para "Ca fait peur…"
@@ -223,9 +224,9 @@ if DEF(_LOCALE_FR)
 	line "Titre efface,"
 
 	para "mais une photo"
-	line "de #mon en grosse"
+	line "d'un #mon en"
 
-	para "armure."
+	para "grosse armure."
 	done
 else
 	text "This book is"
@@ -244,7 +245,7 @@ endc
 
 CeladonUniversityLibrary2FBookshelf3Text:
 if DEF(_LOCALE_FR)
-	text "Cadenas geant sur"
+	text "Cadenas géant sur"
 	line "la couverture."
 
 	para "On touche pas."
@@ -262,7 +263,7 @@ endc
 CeladonUniversityLibrary2FBookshelf4Text:
 if DEF(_LOCALE_FR)
 	text "Livre en langue"
-	line "etrangere!"
+	line "étrangère!"
 
 	para "On le repose…"
 	done
@@ -278,7 +279,7 @@ endc
 
 CeladonUniversityLibrary2FBookshelf5Text:
 if DEF(_LOCALE_FR)
-	text "Derriere les"
+	text "Derrière les"
 	line "livres…"
 
 	para "Rien du tout."
@@ -317,7 +318,7 @@ endc
 CeladonUniversityLibrary2FBookshelf7Text:
 if DEF(_LOCALE_FR)
 	text "Concours #mon."
-	line "Un batiment imposant"
+	line "Un grand bâtiment"
 
 	para "en couverture."
 	done
@@ -336,10 +337,13 @@ endc
 CeladonUniversityLibrary2FBookshelf8Text:
 if DEF(_LOCALE_FR)
 	text "Un gamin sur un"
-	line "#mon en couverture."
+	line "#mon sur la"
 
-	para "Titre: How to Train"
-	line "Your Dragonite."
+	para "couverture."
+	line "Titre: How To"
+
+	para "Train Your"
+	line "Dragonite."
 	done
 else
 	text "A boy is shown"
@@ -381,8 +385,8 @@ endc
 
 CeladonUniversityLibrary2FBookshelf10Text:
 if DEF(_LOCALE_FR)
-	text "Ile de robots"
-	line "#mon geants."
+	text "Une île de robots"
+	line "#mon géants."
 
 	para "#mon Robotics,"
 	line "par Anne Droid…"
@@ -399,7 +403,7 @@ endc
 
 CeladonUniversityLibrary2FBookshelf11Text:
 if DEF(_LOCALE_FR)
-	text "Pardon et Oublie,"
+	text "Pardon et Oublié,"
 	line "par Saul Goode."
 
 	para "Photo d'un type"
@@ -421,7 +425,7 @@ if DEF(_LOCALE_FR)
 	text "Apesanteur, par"
 	line "Andy Gravity."
 
-	para "Tout leger!"
+	para "Tout léger!"
 	done
 else
 	text "“Weightlessness”"
@@ -432,10 +436,10 @@ endc
 
 CeladonUniversityLibrary2FBookshelf13Text:
 if DEF(_LOCALE_FR)
-	text "Traite de bio"
+	text "Traité de bio"
 	line "#mon."
 
-	para "Un pave!"
+	para "Un pavé!"
 	done
 else
 	text "It's a book"
@@ -450,7 +454,7 @@ endc
 
 CeladonUniversityLibrary2FBookshelf14Text:
 if DEF(_LOCALE_FR)
-	text "Toiles d'araignee"
+	text "Toiles d'araignée"
 	line "partout."
 
 	para "Personne ne lit ca"
@@ -469,8 +473,10 @@ endc
 
 CeladonUniversityLibrary2FBookshelf15Text:
 if DEF(_LOCALE_FR)
-	text "Un #mon terrible."
-	line "Titre: Absofusion"
+	text "Un #mon de"
+	line "terreur."
+
+	para "Titre: Absofusion"
 
 	para "et le Trio du Tao."
 	done
@@ -493,7 +499,7 @@ if DEF(_LOCALE_FR)
 	line "histoire des"
 
 	para "#mon disparus."
-	line "Interessant!"
+	line "Intéressant!"
 	done
 else
 	text "“Ancient #-"
@@ -526,7 +532,7 @@ endc
 CeladonUniversityLibrary2FBookshelf18Text:
 if DEF(_LOCALE_FR)
 	text "Un arbre ancien"
-	line "garde par trois"
+	line "gardé par trois"
 
 	para "titans."
 	line "Presque magique."
@@ -548,7 +554,7 @@ if DEF(_LOCALE_FR)
 	text "Trace originale du"
 	line "Train Magnetique!"
 
-	para "Arret prevu a"
+	para "Arrêt prévu à"
 	line "Ecruteak."
 	done
 else
@@ -585,7 +591,7 @@ CeladonUniversityLibrary2FComputer1:
 	jumpthistext
 
 if DEF(_LOCALE_FR)
-	text "Ecran de connexion"
+	text "Écran de connexion"
 	line "avec un Magicarpe"
 
 	para "en fond."
@@ -604,7 +610,7 @@ CeladonUniversityLibrary2FComputer2:
 
 if DEF(_LOCALE_FR)
 	text "Session pas"
-	line "fermee!"
+	line "fermée!"
 	done
 else
 	text "Someone forgot to"

@@ -94,46 +94,108 @@ SaffronMagnetTrainStationPlayerLeaveTrainAndEnterStationMovement:
 	step_end
 
 SaffronMagnetTrainStationOfficerTrainIsntOperatingText:
+if DEF(_LOCALE_FR)
+	text "Le TRAIN MAGNET ne"
+	line "fonctionne pas"
+	cont "pour l'instant."
+	done
+else
 	text "I'm sorry, but the"
 	line "Magnet Train isn't"
 	cont "operating now."
 	done
+endc
 
 SaffronMagnetTrainStationOfficerAreYouComingOnBoardText:
+if DEF(_LOCALE_FR)
+	text "Nous partons bien-"
+	line "tôt pour DOUBLON-"
+	cont "VILLE."
+
+	para "Veux-tu monter"
+	line "à bord?"
+	done
+else
 	text "We'll soon depart"
 	line "for Goldenrod."
 
 	para "Are you coming on"
 	line "board?"
 	done
+endc
 
 SaffronMagnetTrainStationOfficerRightThisWayText:
+if DEF(_LOCALE_FR)
+	text "Puis-je voir"
+	line "ton PASSE?"
+
+	para "OK. Ca marche."
+	line "Par ici."
+	done
+else
 	text "May I see your"
 	line "rail pass, please?"
 
 	para "OK. Right this"
 	line "way, please."
 	done
+endc
 
 SaffronMagnetTrainStationOfficerYouDontHaveAPassText:
+if DEF(_LOCALE_FR)
+	text "Désolé."
+	line "Pas de PASSE."
+	done
+else
 	text "Sorry, but you"
 	line "don't have a pass."
 	done
+endc
 
 SaffronMagnetTrainStationOfficerHopeToSeeYouAgainText:
+if DEF(_LOCALE_FR)
+	text "Allez..."
+	line "Au revoir."
+	done
+else
 	text "We hope to see you"
 	line "again."
 	done
+endc
 
 SaffronMagnetTrainStationOfficerArrivedInSaffronText:
+if DEF(_LOCALE_FR)
+	text "Nous sommes arri-"
+	line "vés à SAFRANIA."
+
+	para "A bientôt."
+	done
+else
 	text "We have arrived in"
 	line "Saffron."
 
 	para "We hope to see you"
 	line "again."
 	done
+endc
 
 SaffronMagnetTrainStationGymGuideText:
+if DEF(_LOCALE_FR)
+	text "Le TRAIN MAGNET"
+	line "est un train super"
+
+	para "moderne qui utili-"
+	line "se l'énergie"
+
+	para "magnétique pour"
+	line "aller à toute"
+	cont "vitesse."
+
+	para "Mais sans électri-"
+	line "cité, il ne bouge"
+	cont "pas trop..."
+	done
+else
 	text "The Magnet Train"
 	line "is a super modern"
 
@@ -148,8 +210,20 @@ SaffronMagnetTrainStationGymGuideText:
 	line "isn't any elec-"
 	cont "tricity…"
 	done
+endc
 
 SaffronMagnetTrainStationGymGuideText_ReturnedMachinePart:
+if DEF(_LOCALE_FR)
+	text "Fouiii..."
+
+	para "Combien de fois"
+	line "ai-je fait la na-"
+
+	para "vette entre KANTO"
+	line "et JOHTO? J'en"
+	cont "sais rien, moi!"
+	done
+else
 	text "Whew…"
 
 	para "How many times"
@@ -158,8 +232,21 @@ SaffronMagnetTrainStationGymGuideText_ReturnedMachinePart:
 	para "and forth between"
 	line "Kanto and Johto?"
 	done
+endc
 
 SaffronMagnetTrainStationTeacherText:
+if DEF(_LOCALE_FR)
+	text "Avant la STATION"
+	line "de TRAIN MAGNET,"
+
+	para "il y avait une"
+	line "maison ici."
+
+	para "Une fillette,"
+	line "COPIEUSE, y"
+	cont "vivait."
+	done
+else
 	text "Before the Magnet"
 	line "Train Station was"
 
@@ -170,8 +257,21 @@ SaffronMagnetTrainStationTeacherText:
 	line "named Copycat used"
 	cont "to live there."
 	done
+endc
 
 SaffronMagnetTrainStationLassText:
+if DEF(_LOCALE_FR)
+	text "Salut. Tu as un"
+	line "PASSE?"
+
+	para "Moi j'en ai un!"
+	line "Tous ceux de SA-"
+
+	para "FRANIA qui utili-"
+	line "sent le TRAIN"
+	cont "MAGNET en ont un."
+	done
+else
 	text "Hi. Do you have a"
 	line "rail pass? I have"
 
@@ -181,3 +281,4 @@ SaffronMagnetTrainStationLassText:
 	para "ride the Magnet"
 	line "Train have passes."
 	done
+endc

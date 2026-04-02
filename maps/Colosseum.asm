@@ -57,6 +57,12 @@ MapColosseumSignpost1Script:
 CableClubFriendScript:
 	jumpthistext
 
+if DEF(_LOCALE_FR)
+	text "Votre ami(e) est"
+	line "prêt(e)."
+	done
+else
 	text "Your friend is"
 	line "ready."
 	done
+endc

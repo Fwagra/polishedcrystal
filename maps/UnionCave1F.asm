@@ -31,16 +31,34 @@ UnionCave1F_MapScriptHeader:
 GenericTrainerPokemaniacLarry:
 	generictrainer POKEMANIAC, LARRY, EVENT_BEAT_POKEMANIAC_LARRY, PokemaniacLarrySeenText, PokemaniacLarryBeatenText
 
+if DEF(_LOCALE_FR)
+	text "Chaque vendredi on"
+	line "peut entendre des"
+
+	para "cris de #mon"
+	line "venant de l'antre."
+	done
+else
 	text "Every Friday, you"
 	line "can hear #mon"
 
 	para "roars from deep"
 	line "inside the cave."
 	done
+endc
 
 GenericTrainerHikerRussell:
 	generictrainer HIKER, RUSSELL, EVENT_BEAT_HIKER_RUSSELL, HikerRussellSeenText, HikerRussellBeatenText
 
+if DEF(_LOCALE_FR)
+	text "Parfait! C'est"
+	line "décidé..."
+
+	para "Je vais entraîner"
+	line "ici mes #mon à"
+	cont "fond!"
+	done
+else
 	text "All right, then!"
 	line "I've decided."
 
@@ -48,10 +66,21 @@ GenericTrainerHikerRussell:
 	line "until my #mon"
 	cont "get tougher!"
 	done
+endc
 
 GenericTrainerHikerDaniel:
 	generictrainer HIKER, DANIEL, EVENT_BEAT_HIKER_DANIEL, HikerDanielSeenText, HikerDanielBeatenText
 
+if DEF(_LOCALE_FR)
+	text "On m'a persuadé"
+	line "d'acheter une"
+	cont "QUEUE de RAMOLOSS."
+
+	para "Mais j'ai des"
+	line "remords..."
+	cont "Pauvre #mon."
+	done
+else
 	text "I was conned into"
 	line "buying a Slowpoke-"
 	cont "Tail."
@@ -59,24 +88,41 @@ GenericTrainerHikerDaniel:
 	para "I feel sorry for"
 	line "the poor #mon."
 	done
+endc
 
 GenericTrainerFirebreatherBill:
 	generictrainer FIREBREATHER, BILL, EVENT_BEAT_FIREBREATHER_BILL, FirebreatherBillSeenText, FirebreatherBillBeatenText
 
+if DEF(_LOCALE_FR)
+	text "Le week-end on"
+	line "peut entendre des"
+
+	para "cris de #mon"
+	line "venant de l'antre."
+	done
+else
 	text "On weekends, you"
 	line "can hear strange"
 
 	para "roars from deep in"
 	line "the cave."
 	done
+endc
 
 GenericTrainerFirebreatherRay:
 	generictrainer FIREBREATHER, RAY, EVENT_BEAT_FIREBREATHER_RAY, FirebreatherRaySeenText, FirebreatherRayBeatenText
 
+if DEF(_LOCALE_FR)
+	text "C'est le feu de"
+	line "mon #mon qui"
+	cont "éclaire la grotte."
+	done
+else
 	text "It's my #mon's"
 	line "fire that lights"
 	cont "up this cave."
 	done
+endc
 
 GenericTrainerRuin_maniacJones:
 	generictrainer RUIN_MANIAC, JONES, EVENT_BEAT_RUIN_MANIAC_JONES, Ruin_maniacJonesSeenText, Ruin_maniacJonesBeatenText
@@ -100,6 +146,18 @@ HikerRussellBeatenText:
 	done
 
 PokemaniacLarrySeenText:
+if DEF(_LOCALE_FR)
+	text "Je parcours la"
+	line "terre à la recher-"
+	cont "che de #mon."
+
+	para "Quoi? Toi aussi tu"
+	line "les collectionnes?"
+
+	para "Bah alors..."
+	line "COMBAT!"
+	done
+else
 	text "I roam far and"
 	line "wide in search of"
 	cont "#mon."
@@ -110,26 +168,58 @@ PokemaniacLarrySeenText:
 	para "Then you're my"
 	line "collecting rival!"
 	done
+endc
 
 PokemaniacLarryBeatenText:
+if DEF(_LOCALE_FR)
+	text "Non!!! Mes pauvres"
+	line "#mon..."
+	done
+else
 	text "Ugh. My poor #-"
 	line "mon…"
 	done
+endc
 
 HikerDanielSeenText:
+if DEF(_LOCALE_FR)
+	text "Whoa! Tu m'as"
+	line "fait peur!"
+
+	para "Je me croyais seul"
+	line "dans le coin!"
+	done
+else
 	text "Whoa! What a"
 	line "surprise!"
 
 	para "I didn't expect to"
 	line "see anyone here!"
 	done
+endc
 
 HikerDanielBeatenText:
+if DEF(_LOCALE_FR)
+	text "Whoa! J'me suis"
+	line "fait détruire!"
+	done
+else
 	text "Whoa! I'm beaten"
 	line "big time!"
 	done
+endc
 
 FirebreatherBillSeenText:
+if DEF(_LOCALE_FR)
+	text "L'ULTRASON de"
+	line "NOSFERAPTI rend"
+	cont "mes #mon"
+	cont "complètement fous."
+
+	para "Et ça..."
+	line "C'est super lourd!"
+	done
+else
 	text "Zubat's Supersonic"
 	line "keeps confusing"
 	cont "my #mon."
@@ -137,12 +227,28 @@ FirebreatherBillSeenText:
 	para "I'm seriously"
 	line "upset about that!"
 	done
+endc
 
 FirebreatherBillBeatenText:
+if DEF(_LOCALE_FR)
+	text "Tout perdu!"
+	done
+else
 	text "I flamed out!"
 	done
+endc
 
 FirebreatherRaySeenText:
+if DEF(_LOCALE_FR)
+	text "Une caverne éclai-"
+	line "rée, ça fait pas"
+	cont "peur."
+
+	para "Avec du courage,"
+	line "les méchants, ça"
+	cont "fait pas peur."
+	done
+else
 	text "If it's light, a"
 	line "cave isn't scary."
 
@@ -150,10 +256,16 @@ FirebreatherRaySeenText:
 	line "#mon aren't"
 	cont "scary."
 	done
+endc
 
 FirebreatherRayBeatenText:
+if DEF(_LOCALE_FR)
+	text "FLASH!"
+	done
+else
 	text "Flash!"
 	done
+endc
 
 Ruin_maniacJonesSeenText:
 	text "Have you explored"

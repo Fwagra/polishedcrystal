@@ -31,11 +31,13 @@ if DEF(_LOCALE_FR)
 	para "les sciences--"
 	line "la #biology."
 
-	para "Ici on etudie la"
-	line "reproduction des"
+	para "Ici on étudie la"
+	line "reproduction"
 
-	para "#mon. Prof. Orme"
-	line "a ouvert la voie."
+	para "chez les #mon."
+	line "Prof. Orme a"
+
+	para "ouvert la voie."
 
 	para "Tu le connais?"
 	line "Il vit vraiment"
@@ -83,13 +85,14 @@ if DEF(_LOCALE_FR)
 	text "Dans les # Balls,"
 	line "les #mon"
 
-	para "deviennent lumiere,"
-	line "puis matiere"
+	para "deviennent de la"
+	line "lumière, puis"
 
-	para "au lancement."
-	line "Ca ne leur fait"
+	para "matière au"
+	line "lancement."
 
-	para "pas mal!"
+	para "Ca ne leur fait"
+	line "pas mal!"
 	done
 else
 	text "#mon inside"
@@ -143,12 +146,13 @@ if DEF(_LOCALE_FR)
 	line "l'Electrik? Son"
 
 	para "nom vient de"
-	line "l'ampere, unite"
+	line "l'ampère, unité"
 
-	para "d'intensite."
+	para "d'intensité."
 	line "Melange les"
 
-	para "lettres, tu verras!"
+	para "lettres: tu"
+	line "verras!"
 	done
 else
 	text "Have you heard of"
@@ -170,7 +174,7 @@ endc
 CeladonUniversityClassroom3BlackboardText:
 if DEF(_LOCALE_FR)
 	text "Au tableau:"
-	line "Phylogenetique."
+	line "Phylogénétique."
 
 	para "Les #mon ont 14"
 	line "groupes Oeuf,"
@@ -182,7 +186,7 @@ if DEF(_LOCALE_FR)
 	line "pas. Les legen-"
 
 	para "daires: peu"
-	line "etudies."
+	line "étudiés."
 	done
 else
 	text "'Phylogenetics'"
@@ -210,7 +214,7 @@ if DEF(_LOCALE_FR)
 	para "technos."
 	line "Tiens, un vieux"
 
-	para "schema de #gear!"
+	para "schéma de #gear!"
 	done
 else
 	text "It's a book of"

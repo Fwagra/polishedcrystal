@@ -19,10 +19,18 @@ Route16Gate_MapScriptHeader:
 	end
 
 Route16GateOfficerText:
+if DEF(_LOCALE_FR)
+	text "La Route 16 est"
+	line "un peu sauvage."
+
+	para "Il te faudra des"
+	line "CS pour passer."
+else
 	text "Route 16 is a bit"
 	line "untamed."
 
 	para "You'll need HM"
 	line "moves to get"
 	cont "through."
+endc
 	done

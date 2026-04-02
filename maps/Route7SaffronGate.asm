@@ -22,6 +22,16 @@ Route7SaffronGuardScript:
 	iftrue_jumptextfaceplayer Route7SaffronGuardSeriousText
 	jumpthistextfaceplayer
 
+if DEF(_LOCALE_FR)
+	text "Sais-tu qu'il y a"
+	line "eu un accident à"
+	cont "la CENTRALE?"
+
+	para "C'est à l'Est,"
+	line "près de"
+	cont "LAVANVILLE."
+	done
+else
 	text "Did you hear about"
 	line "the accident at"
 	cont "the Power Plant?"
@@ -30,8 +40,20 @@ Route7SaffronGuardScript:
 	line "the East, close to"
 	cont "Lavender Town."
 	done
+endc
 
 Route7SaffronGuardSeriousText:
+if DEF(_LOCALE_FR)
+	text "J'suis un GARDE."
+	line "J'en suis fier."
+
+	para "Hé! T'as un"
+	line "#DEX!"
+
+	para "OK. Tu peux"
+	line "passer."
+	done
+else
 	text "I take my guard"
 	line "job seriously."
 
@@ -41,8 +63,24 @@ Route7SaffronGuardSeriousText:
 	para "OK. You can go"
 	line "through."
 	done
+endc
 
 Route7SaffronGateSilphEmployeeText:
+if DEF(_LOCALE_FR)
+	text "Le membre du"
+	line "Conseil 4, Aldo,"
+
+	para "a entraîné ses"
+	line "techniques à"
+	cont "SAFRANIA."
+
+	para "Il s'entraînait"
+	line "avec un type,"
+
+	para "Bastien, au"
+	line "commencement."
+	done
+else
 	text "The Elite Four's"
 	line "Bruno used to hone"
 
@@ -55,3 +93,4 @@ Route7SaffronGateSilphEmployeeText:
 	para "back in the early"
 	line "days."
 	done
+endc

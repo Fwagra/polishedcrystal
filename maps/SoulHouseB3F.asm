@@ -41,12 +41,34 @@ SoulHouseB3FMrFujiScript:
 	end
 
 .Text1:
+if DEF(_LOCALE_FR)
+	text "M.FUJI:"
+	line "Bienvenue à toi."
+
+	para "Voici un outil"
+	line "de la SYLPHE SARL."
+
+	para "Il t'aidera à"
+	line "voir ce qu'on ne"
+	cont "voit pas."
+	done
+else
 	text "TODO"
 	done
+endc
 
 .Text2:
+if DEF(_LOCALE_FR)
+	text "Avec ça, tu peux"
+	line "révéler un #MON"
+
+	para "qui se cache."
+	line "Bon courage."
+	done
+else
 	text "TODO"
 	done
+endc
 
 .LeaveMovement:
 	slow_step_left

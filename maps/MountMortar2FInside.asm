@@ -24,6 +24,20 @@ MountMortar2FInside_MapScriptHeader:
 GenericTrainerSupernerdHugh:
 	generictrainer SUPER_NERD, HUGH, EVENT_BEAT_SUPER_NERD_HUGH, SupernerdHughSeenText, SupernerdHughBeatenText
 
+if DEF(_LOCALE_FR)
+	text "Je suis venu ex-"
+	line "plorer le MONT"
+
+	para "CREUSET mais mon"
+	line "pote a disparu..."
+
+	para "As-tu vu un dres-"
+	line "seur avec un"
+
+	para "RAMOLOSS qui lance"
+	line "FORCE?"
+	done
+else
 	text "I'm investigating"
 	line "Mt.Mortar, but my"
 	cont "pal's gone AWOL."
@@ -34,12 +48,23 @@ GenericTrainerSupernerdHugh:
 	para "Slowpoke that can"
 	line "use Strength?"
 	done
+endc
 
 SupernerdHughSeenText:
+if DEF(_LOCALE_FR)
+	text "Yo! MARC!"
+	done
+else
 	text "Yo! Markus!"
 	done
+endc
 
 SupernerdHughBeatenText:
+if DEF(_LOCALE_FR)
+	text "Oups. Pardon."
+	done
+else
 	text "Sorry, my mistake."
 	done
+endc
 

@@ -23,6 +23,16 @@ MountMoonB1F_MapScriptHeader:
 	object_event  5, 20, SPRITE_HIKER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, PAL_NPC_GREEN, OBJECTTYPE_COMMAND, jumptextfaceplayer, MountMoonB1FPokefanmText, -1
 
 MountMoonB1FPokefanmText:
+if DEF(_LOCALE_FR)
+	text "Salut! Je cherche"
+	line "des fossiles ici,"
+	cont "sous le Mont"
+	cont "Selenite."
+
+	para "Pierre de l'Arene"
+	line "d'Argenta vient"
+	cont "souvent m'aider."
+else
 	text "I'm excavating for"
 	line "fossils here under"
 	cont "Mt.Moon."
@@ -30,4 +40,5 @@ MountMoonB1FPokefanmText:
 	para "Sometimes Brock of"
 	line "Pewter Gym lends"
 	cont "me a hand."
+endc
 	done

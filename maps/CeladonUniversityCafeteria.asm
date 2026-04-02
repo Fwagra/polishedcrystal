@@ -68,10 +68,11 @@ CeladonUniversityCafeteriaCoreyScript:
 .FinalText:
 if DEF(_LOCALE_FR)
 	text "Tu serais une"
-	line "eleve modele ici."
+	line "élève modèle ici."
 
-	para "Mais tu as d'autres"
-	line "projets, non?"
+	para "Tu as sans doute"
+	line "d'autres buts,"
+	cont "non?"
 	done
 else
 	text "You'd be a star"
@@ -85,11 +86,11 @@ endc
 
 .IntroText1:
 if DEF(_LOCALE_FR)
-	text "Moi, Corey! Je suis"
-	line "du top 4 de"
+	text "Moi, Corey!"
+	line "Je suis du top 4"
 
-	para "l'universite de"
-	line "Céladopole!"
+	para "de l'université"
+	line "de Céladopole!"
 
 	para "On est les 4"
 	line "Céladon!"
@@ -118,8 +119,9 @@ endc
 
 .IntroText2:
 if DEF(_LOCALE_FR)
-	text "Moi, Corey! Je suis"
-	line "des 4 Céladon!"
+	text "Moi, Corey!"
+	line "Je suis des 4"
+	cont "Celadon!"
 
 	para "Tu veux nous"
 	line "quatre?"
@@ -127,7 +129,7 @@ if DEF(_LOCALE_FR)
 	para "OK, j'ai fini"
 	line "de manger."
 
-	para "Tu es pret?"
+	para "Tu es prêt?"
 	line "On se bat?"
 	done
 else
@@ -186,7 +188,7 @@ if DEF(_LOCALE_FR)
 	line "qu'un des 4"
 
 	para "Céladon."
-	line "Va defier les"
+	line "Va défier les"
 
 	para "autres pour tester"
 	line "ta force!"
@@ -230,7 +232,7 @@ endc
 CeladonUni_NoRoomText:
 if DEF(_LOCALE_FR)
 	text "Tu ne peux pas"
-	line "porter ca."
+	line "porter ça."
 	done
 else
 	text "You can't carry it."
@@ -245,7 +247,7 @@ if DEF(_LOCALE_FR)
 	para "style Cramois'I"
 	line "de tout Kanto!"
 
-	para "Comme a la maison."
+	para "Comme à la maison."
 	done
 else
 	text "This place makes"
@@ -263,10 +265,10 @@ endc
 CeladonUniversityCafeteriaBeautyText:
 if DEF(_LOCALE_FR)
 	text "Le chef a refait"
-	line "du Vieux Gateau!"
+	line "du Vieux Gâteau!"
 
 	para "Je repasserai"
-	line "peut-etre…"
+	line "peut-être…"
 	done
 else
 	text "The cook finally"
@@ -280,8 +282,8 @@ endc
 
 CeladonUniversityCafeteriaYoungster1Text:
 if DEF(_LOCALE_FR)
-	text "J'ai demande des"
-	line "Cornets Castelia a"
+	text "J'ai demandé des"
+	line "Cornets Castelia à"
 
 	para "la cafet'."
 	line "Ca me rappelle"
@@ -349,9 +351,9 @@ endc
 .Text2:
 if DEF(_LOCALE_FR)
 	text "J'adore une Eau"
-	line "Fraiche froide"
+	line "Fraîche froide"
 
-	para "apres un dur"
+	para "après un dur"
 	line "combat."
 	done
 else
@@ -383,8 +385,8 @@ CeladonUniversityCafeteriaBakerScript:
 
 .Text2:
 if DEF(_LOCALE_FR)
-	text "Voila, mon ange!"
-	line "Bon appetit!"
+	text "Voilà, mon ange!"
+	line "Bon appétit!"
 	done
 else
 	text "Here you go, hon!"
@@ -409,7 +411,7 @@ endc
 if DEF(_LOCALE_FR)
 	text "Quoi donc, mon"
 
-	para "ange? Desole,"
+	para "ange? Désolé,"
 	line "le service du soir"
 
 	para "est fini. Il reste"
@@ -446,7 +448,7 @@ endc
 
 .Text4:
 if DEF(_LOCALE_FR)
-	text "Bonne journee!"
+	text "Bonne journée!"
 	done
 else
 	text "Have a nice day!"
@@ -456,7 +458,7 @@ endc
 .Text6:
 if DEF(_LOCALE_FR)
 	text "Tu ne peux pas"
-	line "porter ca, ange."
+	line "porter ça, ange."
 	done
 else
 	text "You can't carry"
@@ -467,7 +469,7 @@ endc
 CeladonUniversityCafeteriaSignText:
 if DEF(_LOCALE_FR)
 	text "Merci de ranger"
-	line "apres ton repas."
+	line "après ton repas."
 	done
 else
 	text "Please clean up"

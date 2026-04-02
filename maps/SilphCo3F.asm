@@ -39,14 +39,48 @@ SilphCo3FSilphEmployeeScript:
 	jumpthisopenedtext
 
 .Text2:
+if DEF(_LOCALE_FR)
+	text "C'est un type"
+	line "très rare de"
+	cont "# BALL."
+
+	para "Ne la gaspille"
+	line "pas!"
+	done
+else
 	text "That's a very"
 	line "rare type of"
 	cont "# Ball."
 
 	para "Don't waste it!"
 	done
+endc
 
 .Text1:
+if DEF(_LOCALE_FR)
+	text "Je viens d'une"
+	line "famille de"
+	cont "fabricants de"
+	cont "# BALL."
+
+	para "Mon père FARGAS"
+	line "apprend à ma"
+	cont "fille à en faire"
+
+	para "avec des NOIGRUMES"
+	line "pendant que je"
+	cont "bosse ici."
+
+	para "Tu les as aidés à"
+	line "ECORCIA? Super!"
+
+	para "Je suis content"
+	line "que Maizie aille"
+	cont "bien."
+
+	para "Tiens, merci!"
+	done
+else
 	text "I'm from a family"
 	line "of # Ball"
 	cont "creators."
@@ -69,8 +103,19 @@ SilphCo3FSilphEmployeeScript:
 	para "Take this as a"
 	line "thank-you!"
 	done
+endc
 
 SilphCo3FScientist1Text:
+if DEF(_LOCALE_FR)
+	text "SYLPHE a conclu"
+	line "un partenariat"
+	cont "avec DEVON."
+
+	para "On a obtenu des"
+	line "licences sur nos"
+	cont "produits."
+	done
+else
 	text "Silph just entered"
 	line "a partnership with"
 	cont "Devon Corp."
@@ -79,8 +124,23 @@ SilphCo3FScientist1Text:
 	line "of each others'"
 	cont "products."
 	done
+endc
 
 SilphCo3FScientist2Text:
+if DEF(_LOCALE_FR)
+	text "Les # BALL"
+	line "fonctionnent"
+
+	para "comme le SYSTEME"
+	line "de STOCKAGE PC."
+
+	para "Les #MON sont"
+	line "convertis en"
+	cont "données, puis"
+
+	para "reformés ailleurs."
+	done
+else
 	text "# Balls work on"
 	line "the same principle"
 
@@ -94,8 +154,20 @@ SilphCo3FScientist2Text:
 	para "reformed in a"
 	line "new location."
 	done
+endc
 
 SilphCo3FOfficerText:
+if DEF(_LOCALE_FR)
+	text "Je peux pas te"
+	line "laisser monter,"
+
+	para "même si je te"
+	line "fais confiance."
+
+	para "Désolé, c'est la"
+	line "règle."
+	done
+else
 	text "I can't let you on"
 	line "the upper floors,"
 
@@ -105,8 +177,19 @@ SilphCo3FOfficerText:
 	para "Sorry, but those"
 	line "are the rules."
 	done
+endc
 
 SilphCo3FGentlemanText:
+if DEF(_LOCALE_FR)
+	text "Je viens de DEVON."
+
+	para "On collabore pour"
+	line "faire avancer la"
+
+	para "technologie des"
+	line "# BALL!"
+	done
+else
 	text "I'm visiting from"
 	line "Devon Corporation."
 
@@ -116,12 +199,24 @@ SilphCo3FGentlemanText:
 	para "# Ball techno-"
 	line "logy even further!"
 	done
+endc
 
 SilphCo3FDeptSignText:
+if DEF(_LOCALE_FR)
+	text "SYLPHE SARL  3ème"
+	line "Tech # BALL"
+	done
+else
 	text "Silph Co. 3F"
 	line "# Ball Tech"
 	done
+endc
 
 SilphCo3FElevatorText:
+if DEF(_LOCALE_FR)
+	text "Hors service"
+	done
+else
 	text "Out Of Order"
 	done
+endc

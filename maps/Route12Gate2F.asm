@@ -21,16 +21,34 @@ Route12Gate2FBinoculars2:
 	jumptext Route12Gate2FBinoculars2Text
 
 Route12Gate2FBinoculars1Text:
+if DEF(_LOCALE_FR)
+	text "Vous regardez"
+	line "dans les"
+	cont "jumelles."
+
+	para "Vous voyez un"
+	line "pecheur!"
+else
 	text "Looked into the"
 	line "binoculars."
 
 	para "A man fishing!"
+endc
 	done
 
 Route12Gate2FBinoculars2Text:
+if DEF(_LOCALE_FR)
+	text "Vous regardez"
+	line "dans les"
+	cont "jumelles."
+
+	para "Vous voyez la"
+	line "Tour Radio!"
+else
 	text "Looked into the"
 	line "binoculars."
 
 	para "It's the Radio"
 	line "Tower!"
+endc
 	done

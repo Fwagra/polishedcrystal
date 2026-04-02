@@ -40,7 +40,14 @@ RocketHideoutElevatorButton:
 	db -1 ; end
 
 .AppearsToNeedKeyText
+if DEF(_LOCALE_FR)
+	text "On dirait qu'il"
+	line "faut une clé pour"
+	cont "l'utiliser."
+	done
+else
 	text "It appears to"
 	line "need a key to"
 	cont "operate."
 	done
+endc

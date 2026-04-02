@@ -359,6 +359,22 @@ PokemonJournalProfElmScript:
 	setflag ENGINE_READ_PROF_ELM_JOURNAL
 	jumpthistext
 
+if DEF(_LOCALE_FR)
+	text "Journal #mon"
+
+	para "Dossier spécial:"
+	line "le PROF.ORME!"
+
+	para "Le PROF.ORME était"
+	line "le meilleur élève"
+
+	para "du PROF.CHEN."
+
+	para "On dit qu'ils se"
+	line "disputent souvent"
+	cont "sur la recherche."
+	done
+else
 	text "#mon Journal"
 
 	para "Special Feature:"
@@ -372,6 +388,7 @@ PokemonJournalProfElmScript:
 	line "often argue about"
 	cont "research."
 	done
+endc
 
 PlayersHousePC:
 	opentext
@@ -383,21 +400,46 @@ PlayersHousePC:
 	end
 
 PlayerRadioText1:
+if DEF(_LOCALE_FR)
+	text " CHRONIQUE PKMN"
+	line "du PROF.CHEN!"
+	cont "Ecoutez-nous la"
+	cont "prochaine fois!"
+	done
+else
 	text "Prof.Oak's #mon"
 	line "Talk! Please tune"
 	cont "in next time!"
 	done
+endc
 
 PlayerRadioText2:
+if DEF(_LOCALE_FR)
+	text "ANTENNE #MON!"
+	done
+else
 	text "#mon Channel!"
 	done
+endc
 
 PlayerRadioText3:
+if DEF(_LOCALE_FR)
+	text "Ici DJ LULA, la"
+	line "co-présentatrice!"
+	done
+else
 	text "This is DJ Mary,"
 	line "your co-host!"
 	done
+endc
 
 PlayerRadioText4:
+if DEF(_LOCALE_FR)
+	text "#MON!"
+	line "ANTENNE #MON..."
+	done
+else
 	text "#mon!"
 	line "#mon Channel…"
 	done
+endc

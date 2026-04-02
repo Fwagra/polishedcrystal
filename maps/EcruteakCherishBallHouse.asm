@@ -28,6 +28,11 @@ EcruteakCherishBallHouseGrampsScript:
 	setevent EVENT_GOT_CHERISH_BALL_FROM_ECRUTEAK
 	jumpthisopenedtext
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/EcruteakCherishBallHouse.asm"
+
+else
+
 .Text2:
 	text "I will always"
 	line "cherish the time"
@@ -57,3 +62,5 @@ EcruteakCherishBallHouseGrannyText:
 	line "mains as trad-"
 	cont "itional as ever."
 	done
+
+endc

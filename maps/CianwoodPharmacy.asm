@@ -43,6 +43,23 @@ CianwoodPharmacist:
 	pokemart MARTTYPE_PHARMACY, MART_CIANWOOD
 
 PharmacistGiveSecretpotionText:
+if DEF(_LOCALE_FR)
+	text "Ton #mon semble"
+	line "en pleine forme."
+
+	para "Quelque chose te"
+	line "preoccupe?"
+
+	para "…"
+
+	para "Le #mon du"
+	line "phare souffre?"
+
+	para "Je vois!"
+
+	para "Tiens, ceci va"
+	line "l'aider."
+else
 	text "Your #mon"
 	line "appear to be fine."
 
@@ -59,12 +76,21 @@ PharmacistGiveSecretpotionText:
 
 	para "This ought to do"
 	line "the trick."
+endc
 	done
 
 PharmacistDescribeSecretpotionText:
+if DEF(_LOCALE_FR)
+	text "Ma Potion secrete"
+	line "est un peu forte."
+
+	para "Je ne la donne"
+	line "qu'en urgence."
+else
 	text "My SecretPotion is"
 	line "a tad too strong."
 
 	para "I only offer it in"
 	line "an emergency."
+endc
 	done

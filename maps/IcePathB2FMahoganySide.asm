@@ -25,6 +25,11 @@ IcePathB2FMahoganySide_MapScriptHeader:
 	itemball_event  0,  2, MAX_POTION, 1, EVENT_ICE_PATH_B2F_MAHOGANY_SIDE_MAX_POTION
 
 IcePathB2FMahoganySideBoulderText:
+if DEF(_LOCALE_FR)
+	text "C'est bloque dans"
+	line "la glace."
+else
 	text "It's immovably"
 	line "imbedded in ice."
+endc
 	done

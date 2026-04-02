@@ -288,6 +288,26 @@ RocketBaseRivalShovesPlayerMovement:
 	step_end
 
 LanceGetPasswordText:
+if DEF(_LOCALE_FR)
+	text "PETER: Il faut 2"
+	line "mots de passe pour"
+
+	para "entrer chez le"
+	line "boss."
+
+	para "Seuls certains"
+	line "ROCKETS les con-"
+	cont "naissent."
+
+	para "Ce ROCKET m'a ap-"
+	line "pris tout ça très"
+	cont "gentiment."
+
+	para "<PLAYER>, allons"
+	line "trouver les mots"
+	cont "de passe."
+	done
+else
 	text "Lance: It takes"
 	line "two passwords to"
 
@@ -305,14 +325,64 @@ LanceGetPasswordText:
 	para "<PLAYER>, let's go"
 	line "get the passwords."
 	done
+endc
 
 TeamRocketBaseB3FRocketText:
+if DEF(_LOCALE_FR)
+	text "Gueuuh... Le type"
+	line "avec la cape est"
+	cont "trop balèze!"
+	done
+else
 	text "Urrggh… The guy"
 	line "in the cape is"
 	cont "incredibly tough…"
 	done
+endc
 
 RocketBaseRivalText:
+if DEF(_LOCALE_FR)
+	text "..."
+
+	para "J'te l'avais dit"
+	line "que j'allais la"
+
+	para "casser la TEAM"
+	line "ROCKET, non?"
+
+	para "Au fait, kissé le"
+	line "type avec la cape"
+
+	para "qui a plein de"
+	line "#mon dragons?"
+
+	para "Mes #mon se"
+	line "sont fait éclater."
+
+	para "Mais c'est pas"
+	line "grave. Je pourrai"
+
+	para "le battre dans pas"
+	line "longtemps."
+
+	para "Ce qu'il a dit"
+	line "me perturbe..."
+
+	para "Il raconte que je"
+	line "n'aime ni ne res-"
+
+	para "pecte mes #mon."
+	line "Tu le crois ça?"
+
+	para "Comment j'ai pu"
+	line "perdre face à un"
+	cont "crétin pareil."
+
+	para "...Pfff..."
+	line "Vous me faites"
+	cont "tous pitié!"
+	done
+else
 	text "…"
 
 	para "Didn't I tell you"
@@ -353,8 +423,37 @@ RocketBaseRivalText:
 	line "have the time for"
 	cont "the likes of you!"
 	done
+endc
 
 ExecutiveM4BeforeText:
+if DEF(_LOCALE_FR)
+	text "Quoi? Qui es-tu?"
+	line "C'est le bureau de"
+
+	para "notre chef vénéré,"
+	line "GIOVANNI."
+
+	para "Depuis la dissolu-"
+	line "tion de la TEAM il"
+
+	para "y a 3 ans, il"
+	line "s'entraîne à fond."
+
+	para "Mais il reviendra"
+	line "prendre le pouvoir"
+
+	para "un jour, c'est"
+	line "sûr!"
+
+	para "C'est pourquoi"
+	line "nous sommes fidè-"
+	cont "les au poste."
+
+	para "Je ne laisserai"
+	line "passer aucun"
+	cont "intrus!"
+	done
+else
 	text "What? Who are you?"
 	line "This is the office"
 
@@ -380,31 +479,68 @@ ExecutiveM4BeforeText:
 	line "one disturb this"
 	cont "place!"
 	done
+endc
 
 ExecutiveM4BeatenText:
+if DEF(_LOCALE_FR)
+	text "Je...comment..."
+	line "Trop balèze."
+
+	para "GIOVANNI, pitié."
+	line "Pardonne-moi!"
+	done
+else
 	text "I… I couldn't do a"
 	line "thing…"
 
 	para "Giovanni, please"
 	line "forgive me…"
 	done
+endc
 
 ExecutiveM4AfterText:
+if DEF(_LOCALE_FR)
+	text "Je dois m'en"
+	line "remettre et..."
+
+	para "Je dois vite pré-"
+	line "venir les autres!"
+	done
+else
 	text "No, I can't let"
 	line "this affect me."
 
 	para "I have to inform"
 	line "the others…"
 	done
+endc
 
 RocketBaseMurkrowText:
+if DEF(_LOCALE_FR)
+	text "CORNEBRE: Le mot"
+	line "de passe est..."
+
+	para "VIVE GIOVANNI."
+	done
+else
 	text "Murkrow: The"
 	line "password is…"
 
 	para "Hail Giovanni."
 	done
+endc
 
 GruntF5SeenText:
+if DEF(_LOCALE_FR)
+	text "Si je connais le"
+	line "mot de passe?"
+
+	para "Peut-être."
+
+	para "Mais j'le donnerai"
+	line "pas!"
+	done
+else
 	text "Do I know the"
 	line "password?"
 
@@ -413,13 +549,32 @@ GruntF5SeenText:
 	para "But no weakling's"
 	line "going to get it!"
 	done
+endc
 
 GruntF5BeatenText:
+if DEF(_LOCALE_FR)
+	text "OK. Arrête."
+	line "Je vais parler."
+	done
+else
 	text "All right. Stop."
 	line "I'll tell you."
 	done
+endc
 
 GruntF5AfterBattleText:
+if DEF(_LOCALE_FR)
+	text "Le mot de passe de"
+	line "la salle du chef"
+	cont "est..."
+
+	para "QUEUERAMOLOS."
+
+	para "Mais ça te sert à"
+	line "rien sans l'autre"
+	cont "mot de passe."
+	done
+else
 	text "The password to"
 	line "the boss's room is"
 
@@ -429,8 +584,27 @@ GruntF5AfterBattleText:
 	line "unless you have"
 	cont "two passwords."
 	done
+endc
 
 GruntM28SeenText:
+if DEF(_LOCALE_FR)
+	text "Gnyark Gnyark!"
+
+	para "Tu me lances un"
+	line "défi? A moi? T'es"
+
+	para "débile ou quoi?"
+	line "J'vais te bouffer!"
+
+	para "Gnyark Gnyark!"
+
+	para "Bats-moi et je te"
+	line "donne un des"
+
+	para "mots de passe pour"
+	line "la salle du chef!"
+	done
+else
 	text "Hyuck-hyuck-hyuck!"
 
 	para "You're challenging"
@@ -447,13 +621,30 @@ GruntM28SeenText:
 	para "a password to the"
 	line "boss's room!"
 	done
+endc
 
 GruntM28BeatenText:
+if DEF(_LOCALE_FR)
+	text "Gnyark!"
+	line "Alors toi!"
+	done
+else
 	text "Hyuck-hyuck-hyuck!"
 	line "You're good!"
 	done
+endc
 
 GruntM28AfterBattleText:
+if DEF(_LOCALE_FR)
+	text "Gnyark Gnyark!"
+
+	para "Le mot de passe"
+	line "est..."
+
+	para "Heu...c'est..."
+	line "QUEUE RATTATAC."
+	done
+else
 	text "Hyuck-hyuck-hyuck!"
 
 	para "The password to"
@@ -462,8 +653,22 @@ GruntM28AfterBattleText:
 	para "Uh…, I think it is"
 	line "Raticate Tail."
 	done
+endc
 
 RocketScientistRossSeenText:
+if DEF(_LOCALE_FR)
+	text "Je travaillais"
+	line "pour la SYLPHE"
+
+	para "mais maintenant je"
+	line "suis pour la"
+	cont "TEAM ROCKET."
+
+	para "Une petite peste"
+	line "comme toi doit"
+	cont "être punie."
+	done
+else
 	text "I used to work for"
 	line "Silph, but now I"
 
@@ -474,32 +679,75 @@ RocketScientistRossSeenText:
 	line "like you needs to"
 	cont "be punished."
 	done
+endc
 
 RocketScientistRossBeatenText:
+if DEF(_LOCALE_FR)
+	text "Petite erreur"
+	line "de calcul..."
+	done
+else
 	text "A mere tactical"
 	line "error cost me…"
 	done
+endc
 
 RocketScientistMitchSeenText:
+if DEF(_LOCALE_FR)
+	text "Blesser des #-"
+	line "mon pendant les"
+	cont "expériences n'est"
+	cont "pas un problème."
+	done
+else
 	text "I don't care that"
 	line "#mon are hurt"
 	cont "by our experiment."
 	done
+endc
 
 RocketScientistMitchBeatenText:
+if DEF(_LOCALE_FR)
+	text "Moi, j'suis un"
+	line "cérébral, pas un"
+	cont "combattant."
+	done
+else
 	text "Thinking is my"
 	line "strong suit, not"
 	cont "battling."
 	done
+endc
 
 TeamRocketBaseB3FLockedDoorNeedsPasswordText:
+if DEF(_LOCALE_FR)
+	text "La porte est"
+	line "fermée..."
+
+	para "Il faut deux mots"
+	line "de passe."
+	done
+else
 	text "The door's closed…"
 
 	para "It needs two"
 	line "passwords to open."
 	done
+endc
 
 TeamRocketBaseB3FLockedDoorOpenSesameText:
+if DEF(_LOCALE_FR)
+	text "La porte est"
+	line "fermée..."
+
+	para "<PLAYER> tape les"
+	line "deux mots de"
+	cont "passe."
+
+	para "La porte est"
+	line "ouverte!"
+	done
+else
 	text "The door's closed…"
 
 	para "<PLAYER> entered"
@@ -507,3 +755,4 @@ TeamRocketBaseB3FLockedDoorOpenSesameText:
 
 	para "The door opened!"
 	done
+endc

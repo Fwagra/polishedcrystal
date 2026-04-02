@@ -35,20 +35,39 @@ SaffronHitmontopKidHouseChildScript:
 	end
 
 .Text1:
+if DEF(_LOCALE_FR)
+	text "Top! Top!"
+	line "Kapoera!"
+	done
+else
 	text "Top! Top!"
 	line "Hit-mon-TOP!"
 	done
+endc
 
 .Text2:
+if DEF(_LOCALE_FR)
+	text "Top... Top? TOP!"
+	line "KAPOERA! ♥"
+	done
+else
 	text "Top… Top? TOP!"
 	line "HITMONTOP! ♥"
 	done
+endc
 
 .Text3:
+if DEF(_LOCALE_FR)
+	text "C'est un"
+	line "KAPOERA!"
+	cont "Oh! Trop cool!"
+	done
+else
 	text "That's a"
 	line "Hitmontop!"
 	cont "Oh boy! So cool!"
 	done
+endc
 
 .SpinMovement:
 	turn_head_down
@@ -82,12 +101,32 @@ SaffronHitmontopKidHouseTeacherScript:
 	jumpthisopenedtext
 
 .Text3:
+if DEF(_LOCALE_FR)
+	text "Mon fils a enfin"
+	line "vu son #mon"
+	cont "préféré."
+	done
+else
 	text "My son finally got"
 	line "to meet his favor-"
 	cont "ite #mon."
 	done
+endc
 
 .Text1:
+if DEF(_LOCALE_FR)
+	text "Mon fils aime"
+	line "faire comme un"
+	cont "#mon."
+
+	para "C'est embarrassant"
+	line "parfois."
+
+	para "S'il voyait un"
+	line "KAPOERA, il se"
+	cont "calmerait..."
+	done
+else
 	text "My son likes to"
 	line "pretend he's a"
 	cont "#mon."
@@ -100,8 +139,20 @@ SaffronHitmontopKidHouseTeacherScript:
 	line "real Hitmontop he"
 	cont "would calm down…"
 	done
+endc
 
 .Text2:
+if DEF(_LOCALE_FR)
+	text "Oh! Tu as rendu"
+	line "mon fils si"
+	cont "heureux!"
+
+	para "C'est pas grand-"
+	line "chose, mais prends"
+
+	para "ça."
+	done
+else
 	text "Oh my! You made my"
 	line "son so happy!"
 
@@ -111,3 +162,4 @@ SaffronHitmontopKidHouseTeacherScript:
 	para "like you to have"
 	line "this."
 	done
+endc

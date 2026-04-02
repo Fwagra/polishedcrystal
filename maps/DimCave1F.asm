@@ -24,24 +24,53 @@ DimCave1F_MapScriptHeader:
 GenericTrainerSuper_nerdGregg:
 	generictrainer SUPER_NERD, GREGG, EVENT_BEAT_SUPER_NERD_GREGG, .SeenText, .BeatenText
 
+if DEF(_LOCALE_FR)
+	text "Le TRAIN MAGNET"
+	line "est rapide, mais"
+	cont "il ne drift pas."
+	done
+else
 	text "The Magnet Train"
 	line "is fast, but it"
 	cont "can't drift."
 	done
+endc
 
 .SeenText:
+if DEF(_LOCALE_FR)
+	text "Ces chariots sont"
+	line "nuls! Impossible"
+	cont "de drifter!"
+	done
+else
 	text "These carts are"
 	line "lame! They can't"
 	cont "drift at all!"
 	done
+endc
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "Je m'en fiche!"
+	done
+else
 	text "I don't care!"
 	done
+endc
 
 GenericTrainerScientistDexter:
 	generictrainer SCIENTIST, DEXTER, EVENT_BEAT_SCIENTIST_DEXTER, .SeenText, .BeatenText
 
+if DEF(_LOCALE_FR)
+	text "Je bosse à la"
+	line "CENTRALE."
+
+	para "On utilise la"
+	line "cascade de cette"
+	cont "grotte pour une"
+	cont "énergie propre!"
+	done
+else
 	text "I work for the"
 	line "Power Plant."
 
@@ -50,32 +79,66 @@ GenericTrainerScientistDexter:
 	cont "cave for clean,"
 	cont "renewable energy!"
 	done
+endc
 
 .SeenText:
+if DEF(_LOCALE_FR)
+	text "Je suis hydrologue"
+	line "d'abord, et"
+	cont "dresseur ensuite."
+	done
+else
 	text "I'm a hydrologist"
 	line "first, and a"
 	cont "trainer second."
 	done
+endc
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "Je devrais rester"
+	line "en hydrologie..."
+	done
+else
 	text "I should stick to"
 	line "hydrology…"
 	done
+endc
 
 GenericTrainerGuitaristmBiff:
 	generictrainer GUITARISTM, BIFF, EVENT_BEAT_GUITARISTM_BIFF, .SeenText, .BeatenText
 
+if DEF(_LOCALE_FR)
+	text "J'aime le heavy"
+	line "metal et les"
+	cont "métaux lourds!"
+	done
+else
 	text "I love heavy metal"
 	line "and heavy metals!"
 	done
+endc
 
 .SeenText:
+if DEF(_LOCALE_FR)
+	text "Je kiffe le rock"
+	line "et je creuse la"
+	cont "roche!"
+	done
+else
 	text "I dig rock and"
 	line "dig rock!"
 	done
+endc
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "Ecrasé..."
+	line "à la masse!"
+	done
+else
 	text "Ground into the"
 	line "ground!"
 	done
+endc
 

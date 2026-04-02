@@ -40,12 +40,37 @@ SilphCoOfficerScript:
 	jumpopenedtext SilphCoOfficerText_GotUpgrade
 
 SilphCoReceptionistText:
+if DEF(_LOCALE_FR)
+	text "Bienvenue. Voici"
+	line "les BUREAUX de la"
+	cont "SYLPHE SARL."
+	done
+else
 	text "Welcome. This is"
 	line "Silph Co.'s Head"
 	cont "Office Building."
 	done
+endc
 
 SilphCoOfficerText:
+if DEF(_LOCALE_FR)
+	text "Seuls les employés"
+	line "peuvent aller aux"
+	cont "étages supérieurs."
+
+	para "Le courant princi-"
+	line "pal ne marche pas,"
+
+	para "et le PDG veut une"
+	line "sécurité maximale"
+
+	para "en cas d'urgence."
+
+	para "On a retenu la"
+	line "leçon d'il y a"
+	cont "trois ans."
+	done
+else
 	text "Only employees are"
 	line "permitted to go"
 	cont "upstairs."
@@ -63,8 +88,21 @@ SilphCoOfficerText:
 	line "lesson about that"
 	cont "three years ago."
 	done
+endc
 
 SilphCoOfficerText_GotUpgrade:
+if DEF(_LOCALE_FR)
+	text "Tu es chargé de"
+	line "rétablir le"
+	cont "courant?"
+
+	para "Merci! La R&D peut"
+	line "reprendre."
+
+	para "Tu peux visiter"
+	line "les étages."
+	done
+else
 	text "You're responsible"
 	line "for restoring the"
 	cont "power supply?"
@@ -75,6 +113,7 @@ SilphCoOfficerText_GotUpgrade:
 	para "Feel free to take"
 	line "a tour upstairs."
 	done
+endc
 
 SilphCo1FGentlemanText:
 	text "I have an appoint-"

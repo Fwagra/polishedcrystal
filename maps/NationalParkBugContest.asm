@@ -72,24 +72,54 @@ BugCatchingContestant10AScript:
 	jumptext BugCatchingContestant10AText
 
 BugCatchingContestant1AText:
+if DEF(_LOCALE_FR)
+	text "JEAN-RAOUL: Je"
+	line "vais gagner! Viens"
+	cont "pas m'embêter."
+	done
+else
 	text "Don: I'm going to"
 	line "win! Don't bother"
 	cont "me."
 	done
+endc
 
 BugCatchingContestant2AText:
+if DEF(_LOCALE_FR)
+	text "ODILON: Mon"
+	line "PARASECT endort"
+	cont "avec SPORE."
+	done
+else
 	text "Lou: My Parasect"
 	line "puts #mon to"
 	cont "sleep with Spore."
 	done
+endc
 
 BugCatchingContestant3AText:
+if DEF(_LOCALE_FR)
+	text "NICK: J'élève des"
+	line "#mon rapides"
+	cont "pour le combat."
+	done
+else
 	text "Nick: I'm raising"
 	line "fast #mon for"
 	cont "battles."
 	done
+endc
 
 BugCatchingContestant4AText:
+if DEF(_LOCALE_FR)
+	text "MARCEL: Gagner ne"
+	line "m'intéresse pas"
+	cont "vraiment."
+
+	para "Je cherche juste"
+	line "les #mon rares."
+	done
+else
 	text "William: I'm not"
 	line "concerned about"
 	cont "winning."
@@ -97,32 +127,74 @@ BugCatchingContestant4AText:
 	para "I'm just looking"
 	line "for rare #mon."
 	done
+endc
 
 BugCatchingContestant5AText:
+if DEF(_LOCALE_FR)
+	text "FOULQUE: Chut! Tu"
+	line "vas faire fuir"
+
+	para "INSECATEUR. Parle-"
+	line "moi plus tard."
+	done
+else
 	text "Benny: Ssh! You'll"
 	line "scare off Scyther."
 
 	para "I'll talk to you"
 	line "later."
 	done
+endc
 
 BugCatchingContestant6AText:
+if DEF(_LOCALE_FR)
+	text "RENE: Il faut"
+	line "d'abord affaiblir"
+
+	para "un #mon insecte"
+	line "puis lancer une"
+	cont "# Ball."
+	done
+else
 	text "Barry: You should"
 	line "weaken Bug #mon"
 
 	para "first, then throw"
 	line "a Ball."
 	done
+endc
 
 BugCatchingContestant7AText:
+if DEF(_LOCALE_FR)
+	text "SANDY: Pardon?"
+
+	para "Tu trouves ça bi-"
+	line "zarre qu'une fille"
+
+	para "attrape des #-"
+	line "mon insecte?"
+	done
+else
 	text "Cindy: I love Bug"
 	line "#mon."
 
 	para "I guess you must"
 	line "like them too."
 	done
+endc
 
 BugCatchingContestant8AText:
+if DEF(_LOCALE_FR)
+	text "ARNAUD: Je collec-"
+	line "tionne les #mon"
+
+	para "insecte depuis ma"
+	line "tendre enfance."
+
+	para "Ma défaite est"
+	line "impossible!"
+	done
+else
 	text "Josh: I've been"
 	line "collecting Bug"
 
@@ -132,16 +204,35 @@ BugCatchingContestant8AText:
 	para "There's no way I'm"
 	line "going to lose!"
 	done
+endc
 
 BugCatchingContestant9AText:
+if DEF(_LOCALE_FR)
+	text "GONTRAND: Si tu as"
+	line "le temps de parler"
+
+	para "va chercher des"
+	line "#mon insecte."
+	done
+else
 	text "Johnny: If you've"
 	line "got the time to"
 
 	para "chat, go find some"
 	line "Bug #mon."
 	done
+endc
 
 BugCatchingContestant10AText:
+if DEF(_LOCALE_FR)
+	text "CYRIL: J'ai étudié"
+	line "les #mon insec-"
+	cont "te à fond."
+
+	para "Je vais gagner..."
+	line "C'est sûr."
+	done
+else
 	text "Kipp: I've studied"
 	line "about Bug #mon"
 	cont "a lot."
@@ -149,3 +240,4 @@ BugCatchingContestant10AText:
 	para "I'm going to win"
 	line "for sure."
 	done
+endc

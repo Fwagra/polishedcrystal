@@ -102,6 +102,15 @@ ProfIvyScript:
 	jumpthisopenedtext
 
 .NoBerryText:
+if DEF(_LOCALE_FR)
+	text "IVY: Je com-"
+	line "prends..."
+
+	para "Tu n'as pas trois"
+	line "BAIES LIECHI en"
+	cont "trop."
+	done
+else
 	text "Ivy: I under-"
 	line "stand…"
 
@@ -109,8 +118,27 @@ ProfIvyScript:
 	line "three Liechi"
 	cont "Berries to spare."
 	done
+endc
 
 .RequestText:
+if DEF(_LOCALE_FR)
+	text "IVY: Rebonjour,"
+	line "<PLAYER>!"
+
+	para "Tu peux me rendre"
+	line "un service?"
+
+	para "Ce NIDORINO est"
+	line "malade, et mes"
+
+	para "BAIES LUM ne l'ai-"
+	line "dent pas."
+
+	para "Tu peux me trouver"
+	line "trois BAIES"
+	cont "LIECHI?"
+	done
+else
 	text "Ivy: Hello again,"
 	line "<PLAYER>!"
 
@@ -127,16 +155,37 @@ ProfIvyScript:
 	line "find three Liechi"
 	cont "Berries for it?"
 	done
+endc
 
 .OkayText:
+if DEF(_LOCALE_FR)
+	text "IVY: Parfait!"
+	line "Merci, <PLAYER>!"
+
+	para "Voyons si ça aide"
+	line "NIDORINO..."
+	done
+else
 	text "Ivy: Perfect!"
 	line "Thanks, <PLAYER>!"
 
 	para "Let's see if this"
 	line "helps Nidorino…"
 	done
+endc
 
 .ThanksText:
+if DEF(_LOCALE_FR)
+	text "IVY: Merci,"
+	line "<PLAYER>!"
+
+	para "NIDORINO a l'air"
+	line "bien mieux!"
+
+	para "Prends ceci pour"
+	line "te remercier."
+	done
+else
 	text "Ivy: Thank you,"
 	line "<PLAYER>!"
 
@@ -146,42 +195,84 @@ ProfIvyScript:
 	para "Please take this"
 	line "for your trouble."
 	done
+endc
 
 .ChallengeText:
+if DEF(_LOCALE_FR)
+	text "IVY: J'ai besoin"
+	line "d'une pause."
+
+	para "Un petit combat?"
+	done
+else
 	text "Ivy: I could use a"
 	line "break from work."
 
 	para "How about a quick"
 	line "battle?"
 	done
+endc
 
 .NoText:
+if DEF(_LOCALE_FR)
+	text "Bon, je retourne à"
+	line "mes recherches."
+	done
+else
 	text "Ah well, I'll just"
 	line "keep on with my"
 	cont "research."
 	done
+endc
 
 .SeenText:
+if DEF(_LOCALE_FR)
+	text "Prof contre"
+	line "CHAMPION!"
+	done
+else
 	text "Professor versus"
 	line "Champion--let's go!"
 	done
+endc
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "Sans surprise!"
+	done
+else
 	text "No surprises"
 	line "here!"
 	done
+endc
 
 .AfterText:
+if DEF(_LOCALE_FR)
+	text "IVY: Quel combat!"
+	done
+else
 	text "Ivy: That was an"
 	line "exhilarating"
 	cont "battle!"
 	done
+endc
 
 IvysLabHopeScript:
 	checkevent EVENT_HEALED_NIDORINO
 	iftrue_jumptextfaceplayer .Text2
 	jumpthistextfaceplayer
 
+if DEF(_LOCALE_FR)
+	text "HOPE: Le PROF.IVY"
+	line "soigne les #mon"
+
+	para "cette île."
+
+	para "Là, elle s'occupe"
+	line "d'un NIDORINO"
+	cont "malade."
+	done
+else
 	text "Hope: Prof.Ivy"
 	line "takes care of the"
 
@@ -192,12 +283,19 @@ IvysLabHopeScript:
 	line "tending to a sick"
 	cont "Nidorino."
 	done
+endc
 
 .Text2:
+if DEF(_LOCALE_FR)
+	text "HOPE: Merci pour"
+	line "le NIDORINO!"
+	done
+else
 	text "Hope: Thanks for"
 	line "helping out with"
 	cont "that Nidorino!"
 	done
+endc
 
 IvysLabNidorinoScript:
 	checkevent EVENT_HEALED_NIDORINO
@@ -209,27 +307,52 @@ IvysLabNidorinoScript:
 	promptbutton
 	jumpthisopenedtext
 
+if DEF(_LOCALE_FR)
+	text "Son cri est"
+	line "très faible."
+	done
+else
 	text "Its cry is weak…"
 	done
+endc
 
 .WeakCry:
+if DEF(_LOCALE_FR)
+	text "NIDORINO: Gyun..."
+	done
+else
 	text "Nidorino: Gyun…"
 	done
+endc
 
 .Healed:
 	showcrytext IvysLabNidorinoText, NIDORINO
 	end
 
 IvysLabNidorinoText:
+if DEF(_LOCALE_FR)
+	text "NIDORINO: Gyun!"
+	done
+else
 	text "Nidorino: Gyun!"
 	done
+endc
 
 IvysLabWindowText:
+if DEF(_LOCALE_FR)
+	text "La fenêtre est"
+	line "ouverte."
+
+	para "Une brise marine"
+	line "souffle."
+	done
+else
 	text "The window's open."
 
 	para "An ocean breeze"
 	line "is blowing in."
 	done
+endc
 
 IvysLabHealingMachine:
 	opentext
@@ -249,14 +372,33 @@ IvysLabHealingMachine:
 	endtext
 
 .Text:
+if DEF(_LOCALE_FR)
+	text "Soigner #mon?"
+	done
+else
 	text "Would you like to"
 	line "heal your #mon?"
 	done
+endc
 
 PokemonJournalProfIvyScript:
 	setflag ENGINE_READ_PROF_IVY_JOURNAL
 	jumpthistext
 
+if DEF(_LOCALE_FR)
+	text "Journal #mon"
+
+	para "Dossier spécial:"
+	line "le PROF.IVY!"
+
+	para "Philena Ivy a"
+	line "étudié avec PIERRE"
+
+	para "un ONIX chroma, et"
+	line "son corps de"
+	cont "cristal."
+	done
+else
 	text "#mon Journal"
 
 	para "Special Feature:"
@@ -269,3 +411,4 @@ PokemonJournalProfIvyScript:
 	para "a shiny Onix's"
 	line "crystalline body."
 	done
+endc

@@ -19,23 +19,79 @@ BeautifulBeachVilla_MapScriptHeader:
 	object_event 11,  4, SPRITE_BOOK_PAPER_POKEDEX, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, (1 << NITE), 0, OBJECTTYPE_COMMAND, jumptext, DarachsBookText, -1
 
 DarachMornDayText:
-	text "TODO"
+if DEF(_LOCALE_FR)
+	text "L'air marin"
+	line "aiguise l'esprit."
+
+	para "Un duelliste sait"
+	line "quand se reposer."
+else
+	text "The salt breeze"
+	line "sharpens the mind."
+
+	para "A duelist must"
+	line "know when to rest."
+endc
 	done
 
 DarachNiteText:
-	text "TODO"
+if DEF(_LOCALE_FR)
+	text "Même un gardien"
+	line "du Château doit"
+	cont "se coucher tôt."
+
+	para "Bonne nuit."
+else
+	text "Even a Battle"
+	line "Castle steward"
+	cont "needs his sleep."
+
+	para "Good night."
+endc
 	done
 
 CaitlinMornDayText:
-	text "TODO"
+if DEF(_LOCALE_FR)
+	text "J'adore compter"
+	line "les vagues…"
+
+	para "Ca clarifie mes"
+	line "pensées."
+else
+	text "I love counting"
+	line "the waves…"
+
+	para "It clears my"
+	line "head."
+endc
 	done
 
 CaitlinNiteScript:
 	jumpthistext
 
-	text "TODO"
+if DEF(_LOCALE_FR)
+	text "Ne dis pas a"
+	line "Darach que je"
+	cont "scrute le ciel…"
+else
+	text "Please don't tell"
+	line "Darach I'm out"
+	cont "stargazing…"
+endc
 	done
 
 DarachsBookText:
-	text "TODO"
+if DEF(_LOCALE_FR)
+	text "Tactiques du"
+	line "Château, vol. III"
+
+	para "Notes en marge"
+	line "signées Darach."
+else
+	text "Battle Castle"
+	line "Tactics Vol. III"
+
+	para "Notes in the"
+	line "margins by Darach."
+endc
 	done

@@ -203,9 +203,15 @@ DragonShrineQuestion1_MenuHeader:
 .MenuData:
 	db $81 ; flags
 	db 3 ; items
+if DEF(_LOCALE_FR)
+	db "Copain@"
+	db "Esclave@"
+	db "Ami@"
+else
 	db "Ally@"
 	db "Underling@"
 	db "Friend@"
+endc
 
 DragonShrineQuestion2_MenuHeader:
 	db MENU_BACKUP_TILES
@@ -216,9 +222,15 @@ DragonShrineQuestion2_MenuHeader:
 .MenuData:
 	db $81 ; flags
 	db 3 ; items
+if DEF(_LOCALE_FR)
+	db "Stratégie@"
+	db "Entraînement@"
+	db "Triche@"
+else
 	db "Strategy@"
 	db "Training@"
 	db "Cheating@"
+endc
 
 DragonShrineQuestion3_MenuHeader:
 	db MENU_BACKUP_TILES
@@ -229,9 +241,15 @@ DragonShrineQuestion3_MenuHeader:
 .MenuData:
 	db $81 ; flags
 	db 3 ; items
+if DEF(_LOCALE_FR)
+	db "Dres. faible@"
+	db "Dres. fort@"
+	db "N'importe qui@"
+else
 	db "Weak person@"
 	db "Tough person@"
 	db "Anybody@"
+endc
 
 DragonShrineQuestion4_MenuHeader:
 	db MENU_BACKUP_TILES
@@ -242,9 +260,15 @@ DragonShrineQuestion4_MenuHeader:
 .MenuData:
 	db $81 ; flags
 	db 3 ; items
+if DEF(_LOCALE_FR)
+	db "Amour@"
+	db "Violence@"
+	db "Savoir@"
+else
 	db "Love@"
 	db "Violence@"
 	db "Knowledge@"
+endc
 
 DragonShrineQuestion5_MenuHeader:
 	db MENU_BACKUP_TILES
@@ -255,9 +279,15 @@ DragonShrineQuestion5_MenuHeader:
 .MenuData:
 	db $81 ; flags
 	db 3 ; items
+if DEF(_LOCALE_FR)
+	db "Puissant@"
+	db "Les deux@"
+	db "Faible@"
+else
 	db "Strong@"
 	db "Weak@"
 	db "Both@"
+endc
 
 DragonShrinePlayerWalkInMovement:
 	slow_step_up
@@ -319,6 +349,28 @@ DragonShrineClairWalkOutMovement:
 	step_end
 
 DragonShrineElderGreetingText:
+if DEF(_LOCALE_FR)
+	text "Hmm..."
+	line "Bienvenue."
+
+	para "Ne parle pas."
+
+	para "SANDRA t'a dit de"
+	line "venir, non?"
+
+	para "Coriace la petite,"
+	line "non?"
+
+	para "Je dois te mettre"
+	line "à l'épreuve."
+
+	para "Tu ne dois répon-"
+	line "dre qu'à quelques"
+	cont "questions."
+
+	para "On commence?"
+	done
+else
 	text "Hm… Good to see"
 	line "you here."
 
@@ -340,38 +392,97 @@ DragonShrineElderGreetingText:
 
 	para "Ready?"
 	done
+endc
 
 DragonShrineQuestion1Text:
+if DEF(_LOCALE_FR)
+	text "Que représente un"
+	line "#mon à tes"
+	cont "yeux?"
+	done
+else
 	text "What are #mon"
 	line "to you?"
 	done
+endc
 
 DragonShrineQuestion2Text:
+if DEF(_LOCALE_FR)
+	text "Qu'est-ce qui aide"
+	line "à gagner les"
+	cont "combats?"
+	done
+else
 	text "What helps you to"
 	line "win battles?"
 	done
+endc
 
 DragonShrineQuestion3Text:
+if DEF(_LOCALE_FR)
+	text "Quel type de"
+	line "dresseur veux-tu"
+	cont "affronter?"
+	done
+else
 	text "What kind of"
 	line "trainer do you"
 	cont "wish to battle?"
 	done
+endc
 
 DragonShrineQuestion4Text:
+if DEF(_LOCALE_FR)
+	text "Quelle est la cho-"
+	line "se la plus impor-"
+	cont "tante en entraî-"
+	cont "nant les #mon?"
+	done
+else
 	text "What is most"
 	line "important for"
 	cont "raising #mon?"
 	done
+endc
 
 DragonShrineQuestion5Text:
+if DEF(_LOCALE_FR)
+	text "#mon puissant."
+	line "#mon faible."
+
+	para "Lequel est le plus"
+	line "important?"
+	done
+else
 	text "Strong #mon."
 	line "Weak #mon."
 
 	para "Which is more"
 	line "important?"
 	done
+endc
 
 DragonShrinePassedTestText:
+if DEF(_LOCALE_FR)
+	text "Hmm... Je vois..."
+
+	para "Tu as de vrais"
+	line "sentiments pour"
+	cont "les #mon."
+
+	para "C'est bien ça."
+
+	para "C'est très impor-"
+	line "tant!"
+
+	para "<PLAYER>, ne"
+	line "change jamais."
+
+	para "Cela t'aidera"
+	line "pour la LIGUE"
+	cont "#mon."
+	done
+else
 	text "Hm… I see…"
 
 	para "You care deeply"
@@ -389,8 +500,23 @@ DragonShrinePassedTestText:
 	line "through at the"
 	cont "#mon League."
 	done
+endc
 
 DragonShrineMustIInformLanceText:
+if DEF(_LOCALE_FR)
+	text "SANDRA!"
+
+	para "C'est un bon"
+	line "élément..."
+
+	para "Admets ta défaite"
+	line "et donne ton"
+	cont "BADGE LEVER!"
+
+	para "...Ou dois-je en"
+	line "informer PETER?"
+	done
+else
 	text "Clair!"
 
 	para "This child is"
@@ -404,8 +530,19 @@ DragonShrineMustIInformLanceText:
 	para "…Or must I inform"
 	line "Lance of this?"
 	done
+endc
 
 DragonShrineElderScoldsClairText:
+if DEF(_LOCALE_FR)
+	text "SANDRA..."
+
+	para "Penche-toi sur"
+	line "tes lacunes..."
+
+	para "Prends exemple sur"
+	line "<PLAYER>."
+	done
+else
 	text "Clair…"
 
 	para "Reflect upon what"
@@ -414,13 +551,36 @@ DragonShrineElderScoldsClairText:
 	para "lack and this"
 	line "child has."
 	done
+endc
 
 DragonShrineComeAgainText:
+if DEF(_LOCALE_FR)
+	text "N'hésite pas à"
+	line "revenir en ce"
+	cont "saint lieu."
+	done
+else
 	text "Come again, if you"
 	line "so desire."
 	done
+endc
 
 DragonShrineTakeThisDratiniText:
+if DEF(_LOCALE_FR)
+	text "Hmm..."
+	line "Bienvenue."
+
+	para "Tu tombes au bon"
+	line "moment."
+
+	para "J'ai quelque chose"
+	line "pour toi."
+
+	para "Ce MINIDRACO est"
+	line "la preuve de ta"
+	cont "valeur..."
+	done
+else
 	text "Hm… Good to see"
 	line "you here."
 
@@ -436,13 +596,29 @@ DragonShrineTakeThisDratiniText:
 	para "have recognized"
 	line "your worth."
 	done
+endc
 
 DragonShrinePartyAndBoxFullText:
+if DEF(_LOCALE_FR)
+	text "Hmm? Ton équipe"
+	line "est pleine."
+	done
+else
 	text "Hm? Your party and"
 	line "Box are both full."
 	done
+endc
 
 DragonShrineSymbolicDragonText:
+if DEF(_LOCALE_FR)
+	text "Les #mon dra-"
+	line "gons représentent"
+	cont "notre clan."
+
+	para "Tu es digne d'en"
+	line "posséder un."
+	done
+else
 	text "Dragon #mon are"
 	line "symbolic of our"
 	cont "clan."
@@ -453,8 +629,19 @@ DragonShrineSymbolicDragonText:
 	para "entrusted with"
 	line "one."
 	done
+endc
 
 DragonShrineClairsGrandfatherText:
+if DEF(_LOCALE_FR)
+	text "SANDRA a appris"
+	line "quelque chose en"
+	cont "te connaissant."
+
+	para "Etant son grand-"
+	line "père, je te"
+	cont "remercie."
+	done
+else
 	text "Clair appears to"
 	line "have learned an"
 
@@ -464,8 +651,21 @@ DragonShrineClairsGrandfatherText:
 	para "I thank you as her"
 	line "grandfather."
 	done
+endc
 
 DragonShrineSilverIsInTrainingText:
+if DEF(_LOCALE_FR)
+	text "Un garçon de ton"
+	line "âge s'entraîne"
+	cont "ici."
+
+	para "Il est comme l'é-"
+	line "tait SANDRA plus"
+
+	para "jeune. Je suis"
+	line "très inquiet..."
+	done
+else
 	text "A boy close to"
 	line "your age is in"
 	cont "training here."
@@ -476,22 +676,51 @@ DragonShrineSilverIsInTrainingText:
 	para "younger. It is a"
 	line "little worrisome…"
 	done
+endc
 
 DragonShrineWrongAnswerText1:
+if DEF(_LOCALE_FR)
+	text "Hein? J'ai pas"
+	line "tout compris..."
+	done
+else
 	text "Hah? I didn't"
 	line "quite catch that…"
 	done
+endc
 
 DragonShrineWrongAnswerText2:
+if DEF(_LOCALE_FR)
+	text "Qu'as-tu dit?"
+	done
+else
 	text "What was it you"
 	line "said?"
 	done
+endc
 
 DragonShrineRightAnswerText:
+if DEF(_LOCALE_FR)
+	text "Oh, je vois..."
+	done
+else
 	text "Oh, I understand…"
 	done
+endc
 
 DragonShrineElder2Text:
+if DEF(_LOCALE_FR)
+	text "Cela fait long-"
+	line "temps que notre"
+
+	para "MAITRE n'a pas"
+	line "cautionné un"
+	cont "dresseur."
+
+	para "Pas une seule fois"
+	line "depuis PETER."
+	done
+else
 	text "It's been quite"
 	line "some time since a"
 
@@ -502,8 +731,21 @@ DragonShrineElder2Text:
 	para "In fact, not since"
 	line "Master Lance."
 	done
+endc
 
 DragonShrineElder3Text:
+if DEF(_LOCALE_FR)
+	text "Tu connais"
+	line "Maître PETER?"
+
+	para "Il ressemble à"
+	line "notre MAITRE étant"
+	cont "jeune."
+
+	para "C'est dans leur"
+	line "sang."
+	done
+else
 	text "You know young"
 	line "Master Lance?"
 
@@ -514,8 +756,24 @@ DragonShrineElder3Text:
 	para "It's in their"
 	line "blood."
 	done
+endc
 
 DragonShrineClairYouPassedText:
+if DEF(_LOCALE_FR)
+	text "Comment c'était?"
+
+	para "Je ne vois pas"
+	line "pourquoi je deman-"
+	cont "de..."
+
+	para "Tu as échoué,"
+	line "n'est-ce pas?"
+
+	para "………………………………"
+
+	para "...Quoi? Réussi?"
+	done
+else
 	text "So how did it go?"
 
 	para "I guess there's no"
@@ -527,30 +785,73 @@ DragonShrineClairYouPassedText:
 
 	para "…What? You passed?"
 	done
+endc
 
 DragonShrineClairThatCantBeText:
+if DEF(_LOCALE_FR)
+	text "Y'a maldonne!"
+	done
+else
 	text "That can't be!"
 	done
+endc
 
 DragonShrineClairYoureLyingText:
+if DEF(_LOCALE_FR)
+	text "Tu mens!"
+
+	para "Même moi j'ai pas"
+	line "réussi!"
+	done
+else
 	text "You're lying!"
 
 	para "Even I haven't"
 	line "been approved!"
 	done
+endc
 
 DragonShrineIUnderstandText:
+if DEF(_LOCALE_FR)
+	text "Je... Je vois."
+	done
+else
 	text "I-I understand…"
 	done
+endc
 
 DragonShrineHereRisingBadgeText:
+if DEF(_LOCALE_FR)
+	text "Tiens, voilà le"
+	line "BADGE LEVER..."
+
+	para "Allez! Prends-le!"
+	done
+else
 	text "Here, this is the"
 	line "Rising Badge…"
 
 	para "Hurry up! Take it!"
 	done
+endc
 
 DragonShrineRisingBadgeExplanationText:
+if DEF(_LOCALE_FR)
+	text "Le BADGE LEVER"
+	line "permet à tes"
+
+	para "#mon de lancer"
+	line "une capacité pour"
+	cont "escalader les"
+	cont "cascades."
+
+	para "De plus, tous les"
+	line "#mon t'obéiront"
+
+	para "au doigt et à"
+	line "l'oeil."
+	done
+else
 	text "The Rising Badge"
 	line "will enable your"
 
@@ -567,6 +868,7 @@ DragonShrineRisingBadgeExplanationText:
 	para "command without"
 	line "question."
 	done
+endc
 
 DragonShrineSpeechlessText: ; text > text
 	text "………………………………"

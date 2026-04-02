@@ -60,12 +60,21 @@ GoldenrodDeptStore5FReceptionistScript:
 .EventIsOver:
 	jumpthisopenedtext
 
+if DEF(_LOCALE_FR)
+	text "Je suis sûre qu'il"
+	line "y a une CT par-"
+
+	para "faitement adaptée"
+	line "à ton #mon."
+	done
+else
 	text "There are sure to"
 	line "be TMs that are"
 
 	para "just perfect for"
 	line "your #mon."
 	done
+endc
 
 GoldenrodDeptStore5FTwinScript:
 	checkflag ENGINE_DAILY_MYSTERY_GIFT
@@ -89,11 +98,27 @@ GoldenrodDeptStore5FTwinScript:
 	done
 
 GoldenrodDeptStore5FReceptionistOhYourMonDotDotDotText:
+if DEF(_LOCALE_FR)
+	text "Bonjour. Oh, ton"
+	line "#mon..."
+	done
+else
 	text "Hello. Oh, your"
 	line "#mon…"
 	done
+endc
 
 GoldenrodDeptStore5FReceptionistThisMoveShouldBePerfectText:
+if DEF(_LOCALE_FR)
+	text "Il est vraiment"
+	line "attaché à toi."
+
+	para "Cette capacité"
+	line "devrait tout à"
+	cont "fait vous convenir"
+	cont "à tous les deux."
+	done
+else
 	text "It's very attached"
 	line "to you."
 
@@ -101,15 +126,31 @@ GoldenrodDeptStore5FReceptionistThisMoveShouldBePerfectText:
 	line "be perfect for a"
 	cont "pair like you."
 	done
+endc
 
 GoldenrodDeptStore5FReceptionistItsAdorableText:
+if DEF(_LOCALE_FR)
+	text "Il est adorable!"
+
+	para "Tu devrais lui"
+	line "enseigner de"
+	cont "bonnes CT."
+	done
+else
 	text "It's adorable!"
 
 	para "You should teach"
 	line "it good TM moves."
 	done
+endc
 
 GoldenrodDeptStore5FCarrieMysteryGiftRequiresGBCText:
+if DEF(_LOCALE_FR)
+	text "L'option CADEAU"
+	line "MYSTERE nécessite"
+	cont "un Game Boy Color."
+	done
+else
 	text "Looking at the"
 	line "ground while I was"
 
@@ -119,6 +160,7 @@ GoldenrodDeptStore5FCarrieMysteryGiftRequiresGBCText:
 	para "But, I did find"
 	line "this Berry!"
 	done
+endc
 
 MysteryGiftGirl_NoRoomText:
 	text "But you can't"
@@ -126,6 +168,15 @@ MysteryGiftGirl_NoRoomText:
 	done
 
 GoldenrodDeptStore5FLassText:
+if DEF(_LOCALE_FR)
+	text "Le dimanche, une"
+	line "dame vient voir"
+	cont "les #mon."
+
+	para "Elle donne même"
+	line "des CT!"
+	done
+else
 	text "On Sundays, a lady"
 	line "comes to check out"
 	cont "#mon."
@@ -133,8 +184,23 @@ GoldenrodDeptStore5FLassText:
 	para "She even gives"
 	line "away TMs!"
 	done
+endc
 
 GoldenrodDeptStore5FPokefanMText:
+if DEF(_LOCALE_FR)
+	text "Tu ne peux pas"
+	line "renommer un #-"
+	cont "mon que tu as eu"
+	cont "dans un échange."
+
+	para "Le nom d'origine"
+	line "est donné après"
+
+	para "des années de"
+	line "recherches par son"
+	cont "dresseur."
+	done
+else
 	text "You can't rename a"
 	line "#mon you get in"
 	cont "a trade."
@@ -145,10 +211,19 @@ GoldenrodDeptStore5FPokefanMText:
 	para "original trainer's"
 	line "feelings for it."
 	done
+endc
 
 GoldenrodDeptStore5FDirectoryText:
+if DEF(_LOCALE_FR)
+	text "Pour personnaliser"
+	line "son #mon..."
+
+	para "5E: Coin CT"
+	done
+else
 	text "Customize Your"
 	line "#mon"
 
 	para "5F TM Corner"
 	done
+endc

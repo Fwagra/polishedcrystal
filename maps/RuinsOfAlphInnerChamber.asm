@@ -67,17 +67,38 @@ RuinsOfAlphInnerChamberStrangePresenceScript:
 	end
 
 RuinsOfAlphStrangePresenceText:
+if DEF(_LOCALE_FR)
+	text "Il y a une étrange"
+	line "présence ici..."
+	done
+else
 	text "There is a strange"
 	line "presence here…"
 	done
+endc
 
 RuinsOfAlphInnerChamberFisherText:
+if DEF(_LOCALE_FR)
+	text "C'est une grande"
+	line "salle, mais elle"
+	cont "est vide."
+	done
+else
 	text "This is a big"
 	line "room, but there's"
 	cont "nothing here."
 	done
+endc
 
 RuinsOfAlphInnerChamberTeacherText:
+if DEF(_LOCALE_FR)
+	text "Cet endroit est"
+	line "mystique..."
+
+	para "Il semble être"
+	line "hors du monde."
+	done
+else
 	text "This place has a"
 	line "mystical quality"
 	cont "to it."
@@ -85,8 +106,19 @@ RuinsOfAlphInnerChamberTeacherText:
 	para "It feels sort of"
 	line "ethereal even."
 	done
+endc
 
 RuinsOfAlphInnerChamberGrampsText:
+if DEF(_LOCALE_FR)
+	text "Les anciens monu-"
+	line "ments sont souvent"
+	cont "des tombes"
+	cont "royales."
+
+	para "Un peu comme les"
+	line "pyramides..."
+	done
+else
 	text "The ruins have not"
 	line "been robbed or"
 	cont "tampered with."
@@ -96,6 +128,7 @@ RuinsOfAlphInnerChamberGrampsText:
 	cont "want to preserve"
 	cont "it."
 	done
+endc
 
 RuinsOfAlphInnerChamberScientistText:
 	text "The patterns on"

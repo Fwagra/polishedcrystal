@@ -86,8 +86,16 @@ HiddenGrottoItemScript:
 	endtext
 
 .ItemText:
+if DEF(_LOCALE_FR)
+	text "<PLAYER> trouve"
+	line ""
+	text_ram wStringBuffer4
+	text "!"
+	done
+else
 	text "<PLAYER> found"
 	line ""
 	text_ram wStringBuffer4
 	text "!"
 	done
+endc

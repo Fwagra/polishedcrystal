@@ -122,6 +122,11 @@ EcruteakTinTowerEntranceSageBlocksRightMovement:
 	turn_head_down
 	step_end
 
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/EcruteakHouse.asm"
+
+else
+
 EcruteakTinTowerEntranceSageText:
 	text "Bell Tower is off"
 	line "limits to anyone"
@@ -247,3 +252,5 @@ EcruteakTinTowerEntranceGrampsText:
 	para "#mon flew away,"
 	line "never to return."
 	done
+
+endc

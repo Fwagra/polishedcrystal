@@ -31,6 +31,33 @@ EcruteakItemfinderGuy:
 	jumpthisopenedtext
 
 ItemfinderExplanationText:
+if DEF(_LOCALE_FR)
+	text "Il y a beaucoup"
+	line "d'objets cachés"
+	cont "par terre."
+
+	para "Utilise CHERCH'"
+	line "OBJET pour voir"
+
+	para "s'il y a un objet"
+	line "par terre près de"
+	cont "toi."
+
+	para "Ca ne te montre"
+	line "pas l'endroit"
+
+	para "exact mais c'est"
+	line "sûrement dans les"
+	cont "environs."
+
+	para "Ah oui, j'ai en-"
+	line "tendu dire qu'il y"
+
+	para "a des objets dans"
+	line "la TOUR CENDREE"
+	cont "de ROSALIA."
+	done
+else
 	text "There are many"
 	line "items lying about"
 
@@ -55,6 +82,7 @@ ItemfinderExplanationText:
 	para "in Ecruteak's"
 	line "Burned Tower."
 	done
+endc
 
 EcruteakHistoryBook:
 	opentext
@@ -66,6 +94,33 @@ EcruteakHistoryBook:
 	iffalse_endtext
 	jumpthisopenedtext
 
+if DEF(_LOCALE_FR)
+	text "ROSALIA était"
+	line "aussi la demeure"
+
+	para "de trois #mon"
+	line "qui couraient"
+	cont "autour de la"
+	cont "ville."
+
+	para "Ils étaient soi-"
+	line "disant nés de"
+
+	para "l'eau, de la"
+	line "foudre et du feu."
+
+	para "Mais ils ne"
+	line "pouvaient pas"
+	cont "contenir toute"
+	cont "leur puissance."
+
+	para "C'est la raison"
+	line "pour laquelle ils"
+
+	para "couraient sans"
+	line "cesse."
+	done
+else
 	text "Ecruteak was also"
 	line "home to three"
 
@@ -88,8 +143,23 @@ EcruteakHistoryBook:
 	para "wind off into the"
 	line "grassland."
 	done
+endc
 
 EcruteakItemfinderAdventureText:
+if DEF(_LOCALE_FR)
+	text "Ah! Tu fais les"
+	line "400 coups avec tes"
+	cont "#mon?"
+
+	para "Mais qu'est-ce"
+	line "qu'une aventure"
+	cont "sans une chasse au"
+	cont "trésor?"
+
+	para "J'ai bon ou j'ai"
+	line "bon?"
+	done
+else
 	text "Ah. You're on an"
 	line "adventure with"
 	cont "your #mon?"
@@ -101,8 +171,21 @@ EcruteakItemfinderAdventureText:
 	para "Am I right, or am"
 	line "I right?"
 	done
+endc
 
 EcruteakItemfinderTrueSpiritText:
+if DEF(_LOCALE_FR)
+	text "C'est cool, tu"
+	line "comprends le vrai"
+
+	para "esprit de l'aven-"
+	line "ture."
+
+	para "Et moi, j'aime ça!"
+	line "Prends ça avec"
+	cont "toi."
+	done
+else
 	text "Good! You under-"
 	line "stand the true"
 
@@ -112,20 +195,55 @@ EcruteakItemfinderTrueSpiritText:
 	para "I like that! Take"
 	line "this with you."
 	done
+endc
 
 EcruteakItemfinderToEachHisOwnText:
+if DEF(_LOCALE_FR)
+	text "Oh... Chacun pour"
+	line "soi je parie."
+	done
+else
 	text "Oh… To each his"
 	line "own, I suppose…"
 	done
+endc
 
 EcruteakHistoryBookText:
+if DEF(_LOCALE_FR)
+	text "HISTOIRE de"
+	line "ROSALIA"
+
+	para "Désirez-vous lire?"
+	done
+else
 	text "History of"
 	line "Ecruteak"
 
 	para "Want to read it?"
 	done
+endc
 
 EcruteakTwoTowersText:
+if DEF(_LOCALE_FR)
+	text "Il existait deux"
+	line "tours à ROSALIA."
+
+	para "Chacune d'elle"
+	line "était le perchoir"
+	cont "d'un puissant"
+	cont "#mon volant."
+
+	para "Mais l'une des"
+	line "tours a complète-"
+	cont "ment brûlé."
+
+	para "Les deux #mon"
+	line "n'ont jamais été"
+	cont "revus depuis..."
+
+	para "Continuer à lire?"
+	done
+else
 	text "In Ecruteak, there"
 	line "were two towers."
 
@@ -143,3 +261,4 @@ EcruteakTwoTowersText:
 
 	para "Keep reading?"
 	done
+endc

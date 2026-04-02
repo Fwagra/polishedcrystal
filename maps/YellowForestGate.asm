@@ -31,6 +31,18 @@ YellowForestGateNurseScript:
 	jumptext YellowForestGateNurseHealedText
 
 YellowForestGateOfficerText:
+if DEF(_LOCALE_FR)
+	text "Il y a des #-"
+	line "MON rares dans"
+	cont "le BOIS JAUNE!"
+
+	para "N'oublie pas tes"
+	line "# BALL!"
+
+	para "Ce type en vend"
+	line "aussi."
+	done
+else
 	text "There are rare"
 	line "#mon in"
 	cont "Yellow Forest!"
@@ -41,22 +53,45 @@ YellowForestGateOfficerText:
 	para "That guy is sell-"
 	line "ing some spares."
 	done
+endc
 
 YellowForestGateNurseText:
+if DEF(_LOCALE_FR)
+	text "Tes #mon ont"
+	line "l'air épuisés."
+
+	para "Laisse-moi les"
+	line "soigner."
+	done
+else
 	text "Your #mon look"
 	line "worn out."
 
 	para "Let me heal them"
 	line "for you."
 	done
+endc
 
 YellowForestGateNurseHealedText:
+if DEF(_LOCALE_FR)
+	text "C'est fait!"
+
+	para "Tes #mon sont"
+	line "en pleine forme."
+	done
+else
 	text "All done!"
 
 	para "Your #mon"
 	line "are fully healed."
 	done
+endc
 
 YellowForestGateChanseyText:
+if DEF(_LOCALE_FR)
+	text "LEUPHORIE: Sii!"
+	done
+else
 	text "Chansey: Sii!"
 	done
+endc

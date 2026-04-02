@@ -16,19 +16,36 @@ CeruleanCoupleHouse_MapScriptHeader:
 	object_event  2,  3, SPRITE_MATRON, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, PAL_NPC_BLUE, OBJECTTYPE_COMMAND, jumptextfaceplayer, CeruleanCoupleHousePokefanFText, -1
 
 CeruleanCoupleHousePokefanMText:
+if DEF(_LOCALE_FR)
+	text "J'ai rencontré ma"
+	line "femme ici dans"
+	cont "cette ville."
+
+	para "Ses yeux étaient"
+	line "bleu azur…"
+else
 	text "I first met my"
 	line "dear wife in this"
 	cont "city."
 
 	para "Her eyes were a"
 	line "deep cerulean…"
+endc
 	done
 
 CeruleanCoupleHousePokefanFText:
+if DEF(_LOCALE_FR)
+	text "L'amour n'a pas"
+	line "besoin de mots."
+
+	para "Tu comprendras"
+	line "un jour."
+else
 	text "The language of"
 	line "love needs no"
 	cont "translation."
 
 	para "You'll under-"
 	line "stand some day."
+endc
 	done

@@ -76,13 +76,13 @@ CeladonUniversityClassroom1ImakuniScript:
 .Text6:
 if DEF(_LOCALE_FR)
 	text "Au combat comme"
-	line "en danse, l'ame"
+	line "en danse, l'âme"
 
 	para "et le rythme,"
 	line "c'est le secret."
 
 	para "Ouah, j'adore!"
-	line "Je deviens poete!"
+	line "Je deviens poète!"
 	done
 else
 	text "In both battle and"
@@ -101,7 +101,7 @@ endc
 .Text1:
 if DEF(_LOCALE_FR)
 	text "Hein? Tu es"
-	line "qui, deja?"
+	line "qui, déjà?"
 
 	para "Moi? Tu ignores"
 	line "qui je suis?"
@@ -151,7 +151,7 @@ endc
 
 .Text2:
 if DEF(_LOCALE_FR)
-	text "Sois pas mechant!"
+	text "Sois pas méchant!"
 
 	para "Tu vas me faire"
 	line "pleurer!"
@@ -178,7 +178,7 @@ endc
 
 .Text4:
 if DEF(_LOCALE_FR)
-	text "Meme en perdant,"
+	text "Même en perdant,"
 	line "c'est si grave?"
 	done
 else
@@ -189,7 +189,7 @@ endc
 
 .Text5:
 if DEF(_LOCALE_FR)
-	text "Tu geres bien!"
+	text "Tu gères bien!"
 
 	para "Prends cette Baie,"
 	line "mais ne dis pas"
@@ -224,7 +224,7 @@ if DEF(_LOCALE_FR)
 	line "que tu crois voir."
 
 	para "Laisse tomber tes"
-	line "a-priori sur les"
+	line "a priori sur les"
 	cont "formes."
 	done
 else
@@ -284,8 +284,9 @@ endc
 
 CeladonUniversityClassroom1Artist1Text:
 if DEF(_LOCALE_FR)
-	text "Dur de plier la"
-	line "cape comme il faut."
+	text "Dur de plier"
+	line "la cape comme il"
+	cont "faut."
 	done
 else
 	text "It's tough getting"
@@ -298,10 +299,10 @@ CeladonUniversityClassroom1Artist2Text:
 if DEF(_LOCALE_FR)
 	text "Atchoum!"
 
-	para "Seminaire fleurs,"
-	line "et je n'arrete pas"
+	para "Séminaire fleurs,"
+	line "et je n'arrête pas"
 
-	para "d'eternuer…"
+	para "d'éternuer…"
 	line "Allergie, sure-"
 
 	para "ment…"
@@ -339,8 +340,8 @@ endc
 
 CeladonUniversityClassroom1BlackboardText:
 if DEF(_LOCALE_FR)
-	text "Schema de pers-"
-	line "pective a deux et"
+	text "Schéma de pers-"
+	line "pective à deux et"
 
 	para "trois points de"
 	line "fuite."
@@ -375,7 +376,7 @@ endc
 CeladonUniversityClassroom1Bookshelf2Text:
 if DEF(_LOCALE_FR)
 	text "Brochure sur le"
-	line "Musee de Nenu-"
+	line "Musée de Nenu-"
 
 	para "crique."
 	done

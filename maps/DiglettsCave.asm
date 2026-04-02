@@ -50,6 +50,18 @@ DiglettsCaveFossilManiacScript:
 	special PlaceMoneyTopRight
 	jumpthisopenedtext
 
+if DEF(_LOCALE_FR)
+	text "Merci!"
+
+	para "Je revendrai ca"
+	line "bien plus cher que"
+
+	para "ce que je t'ai"
+	line "donne. Ha!"
+
+	para "Les affaires!"
+	done
+else
 	text "Hey, thanks!"
 
 	para "I bet I can sell"
@@ -60,8 +72,25 @@ DiglettsCaveFossilManiacScript:
 	para "That's business"
 	line "for ya!"
 	done
+endc
 
 .GreetingText:
+if DEF(_LOCALE_FR)
+	text "Ecoute, j'ai une"
+	line "super affaire!"
+
+	para "Tu sais qu'on"
+	line "trouve des"
+
+	para "fossiles #mon"
+	line "dans les rochers?"
+
+	para "Si tu en trouves"
+	line "un, amene-le moi."
+
+	para "Je te ferai une"
+	line "bonne offre."
+else
 	text "Hey, check it out."
 	line "I've got a sweet"
 	cont "deal for ya!"
@@ -75,9 +104,20 @@ DiglettsCaveFossilManiacScript:
 
 	para "I'll make it worth"
 	line "your while."
+endc
 	done
 
 .OfferText:
+if DEF(_LOCALE_FR)
+	text "Sympa! Laisse-moi"
+	line "voir ça."
+
+	para "Je te donne"
+	line "¥"
+	text_decimal hMoneyTemp, 3, 7
+	text " pour ça."
+	cont "Ca te va?"
+else
 	text "Hey, nice! Let me"
 	line "check that out."
 
@@ -86,114 +126,234 @@ DiglettsCaveFossilManiacScript:
 	text_decimal hMoneyTemp, 3, 7
 	text " for it."
 	cont "Whaddaya say?"
+endc
 	done
 
 .WrongItemText:
+if DEF(_LOCALE_FR)
+	text "Non, ca ne va pas."
+	line "Pas interessant"
+	cont "pour moi."
+else
 	text "Nope, this is no"
 	line "good. Not worth"
 	cont "my while."
+endc
 	done
 
 .NoItemText:
+if DEF(_LOCALE_FR)
+	text "…Rien d'utile"
+	line "dans ton Sac."
+
+	para "Tant pis. Une"
+	line "autre fois!"
+else
 	text "…Nope, nothing"
 	line "cool in your Bag."
 
 	para "Oh well. Maybe"
 	line "next time!"
+endc
 	done
 
 GenericTrainerHikerGerard:
 	generictrainer HIKER, GERARD, EVENT_BEAT_HIKER_GERARD, .SeenText, .BeatenText
 
+if DEF(_LOCALE_FR)
+	text "J'ai la trouille"
+	line "ici."
+
+	para "Si un Taupiqueur"
+	line "me sautait dessus"
+
+	para "sans prevenir?"
+else
 	text "This place makes"
 	line "me so nervous."
 
 	para "What if a Diglett"
 	line "attacks me out of"
 	cont "nowhere?"
+endc
 	done
 
 .SeenText:
+if DEF(_LOCALE_FR)
+	text "Aah! Ce rocher"
+	line "a bougé, non?"
+else
 	text "Aah! I think that"
 	line "rock just moved!"
+endc
 	done
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "C'était mon"
+	line "imagination."
+else
 	text "Must have been"
 	line "my imagination."
+endc
 	done
 
 GenericTrainerHikerDent:
 	generictrainer HIKER, DENT, EVENT_BEAT_HIKER_DENT, .SeenText, .BeatenText
 
+if DEF(_LOCALE_FR)
+	text "Je serai à ma"
+	line "place avec les"
+
+	para "costauds d'Arène"
+	line "d'Argenta. Hohoh!"
+else
 	text "I'll fit right in"
 	line "with Pewter Gym's"
 	cont "buff crew. Hohoh!"
+endc
 	done
 
 .SeenText:
+if DEF(_LOCALE_FR)
+	text "Je vais à Argenta."
+
+	para "Son Arène Roche"
+	line "est parfaite pour"
+
+	para "un baraqué comme"
+	line "moi!"
+else
 	text "I'm headed to"
 	line "Pewter."
 
 	para "Its Rock-type Gym"
 	line "is perfect for a"
 	cont "buff guy like me!"
+endc
 	done
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "Hohoh!"
+	line "Plus baraqué"
+	cont "que moi!"
+else
 	text "Hohoh!"
 	line "Someone more buff"
 	cont "than me!"
+endc
 	done
 
 GenericTrainerBlackbeltInigo:
 	generictrainer BLACKBELT_T, INIGO, EVENT_BEAT_BLACKBELT_INIGO, .SeenText, .BeatenText
 
+if DEF(_LOCALE_FR)
+	text "Crier ne fait pas"
+	line "de toi un meilleur"
+
+	para "combattant, mais"
+	line "ca peut effrayer"
+
+	para "l'adversaire."
+else
 	text "Making noises won't"
 	line "make you a better"
 	cont "fighter, but it"
 
 	para "can intimidate"
 	line "your foes."
+endc
 	done
 
 .SeenText:
+if DEF(_LOCALE_FR)
+	text "Prepare-toi au"
+	line "combat! HOO-HAH!"
+else
 	text "Prepare for"
 	line "battle!"
 	cont "HOO-HAH!"
+endc
 	done
 
 .BeatenText:
+if DEF(_LOCALE_FR)
 	text "HIIYAAAH!"
+else
+	text "HIIYAAAH!"
+endc
 	done
 
 GenericTrainerEngineerSmith:
 	generictrainer ENGINEER, SMITH, EVENT_BEAT_ENGINEER_SMITH, .SeenText, .BeatenText
 
+if DEF(_LOCALE_FR)
+	text "Ces Taupiqueur"
+	line "sont de vrais"
+
+	para "ingenieurs, tout"
+	line "simplement."
+else
 	text "Those Diglett are"
 	line "just natural"
 	cont "engineers."
+endc
 	done
 
 .SeenText:
+if DEF(_LOCALE_FR)
+	text "Comment des"
+	line "Taupiqueur ont-ils"
+
+	para "creuse un aussi"
+	line "long tunnel?"
+else
 	text "How did Diglett"
 	line "create such a long"
 	cont "tunnel?"
+endc
 	done
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "Incroyable!"
+else
 	text "Amazing!"
+endc
 	done
 
 DiglettsCaveCooltrainerfText:
+if DEF(_LOCALE_FR)
+	text "Adorables petits"
+	line "Taupiqueur!"
+
+	para "J'ai jure en voir"
+	line "un au nez bleu!"
+else
 	text "Look at all these"
 	line "cute Diglett!"
 
 	para "I swear I saw one"
 	line "with a blue nose!"
+endc
 	done
 
 DiglettsCavePokefanMText:
+if DEF(_LOCALE_FR)
+	text "Des tas de"
+	line "Taupiqueur ont"
+
+	para "surgi du sol!"
+	line "Choquant!"
+
+	para "J'ai entendu dire"
+	line "que sur"
+
+	para "Cramois'Ile ils"
+	line "ont l'air"
+	cont "differents."
+else
 	text "A bunch of Diglett"
 	line "popped out of the"
 
@@ -203,4 +363,5 @@ DiglettsCavePokefanMText:
 	para "I heard Diglett"
 	line "on Cinnabar Island"
 	cont "look different."
+endc
 	done

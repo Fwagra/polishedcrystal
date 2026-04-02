@@ -19,6 +19,15 @@ PokemonJournalBrunoScript:
 	setflag ENGINE_READ_BRUNO_JOURNAL
 	jumpthistext
 
+if DEF(_LOCALE_FR)
+	text "Journal #mon"
+
+	para "Bruno du Conseil"
+	line "4 s'entraîne pour"
+
+	para "défier les plus"
+	line "grands Dresseurs."
+else
 	text "#mon Journal"
 
 	para "Special Feature:"
@@ -32,4 +41,5 @@ PokemonJournalBrunoScript:
 
 	para "to battle the"
 	line "best trainers."
+endc
 	done

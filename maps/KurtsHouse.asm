@@ -384,6 +384,26 @@ PokemonJournalProfWestwoodScript:
 	setflag ENGINE_READ_PROF_WESTWOOD_JOURNAL
 	jumpthistext
 
+if DEF(_LOCALE_FR)
+	text "Journal #mon"
+
+	para "Dossier spécial:"
+	line "le PROF.WESTWOOD!"
+
+	para "Le PROF.WESTWOOD V"
+	line "enseigne à l'uni-"
+	cont "versité de"
+	cont "CELADOPOLE."
+
+	para "Les recherches de"
+	line "son ancêtre, en"
+	cont "1925,"
+
+	para "ont mené aux"
+	line "#balls"
+	cont "modernes."
+	done
+else
 	text "#mon Journal"
 
 	para "Special Feature:"
@@ -400,6 +420,7 @@ PokemonJournalProfWestwoodScript:
 	line "of modern #"
 	cont "Balls."
 	done
+endc
 
 KurtsHouseKurtGoAroundPlayerThenExitHouseMovement:
 	big_step_right
@@ -437,6 +458,55 @@ KurtsHouseStepAwayFromKurt_MovementData:
 	step_end
 
 KurtsHouseKurtMakingBallsMustWaitText:
+if DEF(_LOCALE_FR)
+	text "Hum? Qui es-tu?"
+
+	para "<PLAYER>? Tu"
+	line "voudrais que je"
+	cont "fabrique quelques"
+	cont "BALLS?"
+
+	para "Désolé mais ça"
+	line "devra attendre."
+
+	para "Connais-tu la TEAM"
+	line "ROCKET? Je vais"
+
+	para "t'en toucher deux"
+	line "mots."
+
+	para "La TEAM ROCKET est"
+	line "plus redoutée que"
+
+	para "la peste! Ils"
+	line "utilisent les"
+	cont "#mon à des"
+	cont "fins crapuleuses."
+
+	para "Ils ont cessé d'o-"
+	line "pérer il y a de ça"
+	cont "trois ans."
+
+	para "Mais ils sont de"
+	line "retour et frappent"
+
+	para "de plus belle en"
+	line "coupant les"
+	cont "QUEUERAMOLOS pour"
+	cont "les revendre!"
+
+	para "Je m'en vais donc"
+	line "leur montrer de"
+	cont "quel bois je me"
+	cont "chauffe, moi!"
+
+	para "Tenez bon les"
+	line "petits RAMOLOSS!"
+	cont "Le bon vieux"
+	cont "FARGAS arrive à"
+	cont "la rescousse!"
+	done
+else
 	text "Hm? Who are you?"
 
 	para "<PLAYER>, eh? You"
@@ -476,8 +546,30 @@ KurtsHouseKurtMakingBallsMustWaitText:
 	line "Old Kurt is on his"
 	cont "way!"
 	done
+endc
 
 KurtsHouseKurtHonoredToMakeBallsText:
+if DEF(_LOCALE_FR)
+	text "FARGAS: Salut,"
+	line "<PLAYER>!"
+
+	para "Tu as bien combat-"
+	line "tu au PUITS!"
+
+	para "J'apprécie ton"
+	line "style!"
+
+	para "Je serais honoré"
+	line "que tu acceptes"
+	cont "mes BALLS."
+
+	para "Mais d'abord, il"
+	line "te faut des"
+	cont "NOIGRUMES."
+
+	para "Tiens, prends ça!"
+	done
+else
 	text "Kurt: Hi, <PLAYER>!"
 
 	para "You handled your-"
@@ -498,8 +590,22 @@ KurtsHouseKurtHonoredToMakeBallsText:
 	para "Here, take this"
 	line "Apricorn Box!"
 	done
+endc
 
 KurtsHouseKurtBallsFromApricornsText:
+if DEF(_LOCALE_FR)
+	text "FARGAS: Je fais"
+	line "des BALLS à partir"
+	cont "des NOIGRUMES."
+
+	para "Décroches-en"
+	line "des arbres et"
+	cont "rapporte-les moi."
+
+	para "Je fabriquerai"
+	line "alors des BALLS."
+	done
+else
 	text "Kurt: I make Balls"
 	line "from Apricorns."
 
@@ -510,61 +616,144 @@ KurtsHouseKurtBallsFromApricornsText:
 	para "I'll make Balls"
 	line "out of them."
 	done
+endc
 
 KurtsHouseKurtAskYouHaveAnApricornText:
+if DEF(_LOCALE_FR)
+	text "FARGAS: As-tu un"
+	line "NOIGRUME pour moi?"
+
+	para "Excellent! Je vais"
+	line "en faire une BALL."
+	done
+else
 	text "Kurt: You have an"
 	line "Apricorn for me?"
 
 	para "Fine! I'll turn it"
 	line "into a Ball."
 	done
+endc
 
 KurtsHouseKurtGetStartedText:
+if DEF(_LOCALE_FR)
+	text "FARGAS: J'm'y mets"
+	line "tout de suite!"
+	done
+else
 	text "Kurt: I'll get"
 	line "started right now!"
 	done
+endc
 
 KurtsHouseKurtItWillTakeADayText:
+if DEF(_LOCALE_FR)
+	text "FARGAS: Ca va"
+	line "prendre la journée"
+
+	para "pour te faire une"
+	line "BALL. Reviens plus"
+	cont "tard."
+	done
+else
 	text "Kurt: It'll take a"
 	line "while to make you"
 
 	para "a Ball. Come back"
 	line "for it later."
 	done
+endc
 
 KurtsHouseKurtThatsALetdownText:
+if DEF(_LOCALE_FR)
+	text "FARGAS: Oh,oh...!"
+	line "Quel dommage."
+	done
+else
 	text "Kurt: Oh…"
 	line "That's a letdown."
 	done
+endc
 
 KurtsHouseKurtDontBotherMeText:
+if DEF(_LOCALE_FR)
+	text "FARGAS: Je bosse!"
+	line "Qu'on me laisse"
+	cont "tranquille!"
+	done
+else
 	text "Kurt: I'm working!"
 	line "Don't bother me!"
 	done
+endc
 
 KurtsHouseKurtJustFinishedYourBallText:
+if DEF(_LOCALE_FR)
+	text "FARGAS: Ah,"
+	line "<PLAYER>! Je viens"
+	cont "de finir ta BALL!"
+	cont "Tiens!"
+	done
+else
 	text "Kurt: Ah, <PLAYER>!"
 	line "I just finished"
 	cont "your Ball. Here!"
 	done
+endc
 
 KurtsHouseKurtTurnedOutGreatText:
+if DEF(_LOCALE_FR)
+	text "FARGAS: Je suis"
+	line "content du résul-"
+	cont "tat."
+
+	para "Va attraper"
+	line "des #mon!"
+	done
+else
 	text "Kurt: That turned"
 	line "out great."
 
 	para "Try catching"
 	line "#mon with it."
 	done
+endc
 
 KurtsHouseKurtGranddaughterHelpingWorkFasterText:
+if DEF(_LOCALE_FR)
+	text "FARGAS: Avec"
+	line "l'aide de ma"
+
+	para "petite-fille, je"
+	line "travaille plus"
+	cont "vite."
+	done
+else
 	text "Kurt: Now that my"
 	line "granddaughter is"
 
 	para "helping me, I can"
 	line "work much faster."
 	done
+endc
 
 KurtsHouseKurtWhatIsThatText:
+if DEF(_LOCALE_FR)
+	text "C'est quoi donc?"
+
+	para "Je n'avais jamais"
+	line "vu ça."
+
+	para "On dirait bien une"
+	line "#ball, mais"
+
+	para "ça doit être autre"
+	line "chose."
+
+	para "Je vais regarder"
+	line "ça."
+	done
+else
 	text "Wh-what is that?"
 
 	para "I've never seen"
@@ -579,18 +768,42 @@ KurtsHouseKurtWhatIsThatText:
 	para "Let me check it"
 	line "for you."
 	done
+endc
 
 KurtsHouseKurtImCheckingItNowText:
+if DEF(_LOCALE_FR)
+	text "Je fais mes"
+	line "recherches."
+	done
+else
 	text "I'm checking it"
 	line "now."
 	done
+endc
 
 KurtsHouseKurtAhHaISeeText:
+if DEF(_LOCALE_FR)
+	text "Ah-ha! Je vois!"
+	line "Donc..."
+	done
+else
 	text "Ah-ha! I see!"
 	line "So…"
 	done
+endc
 
 KurtsHouseKurtThisBallStartedToShakeText:
+if DEF(_LOCALE_FR)
+	text "<PLAYER>!"
+
+	para "La BALL s'est mise"
+	line "à bouger quand je"
+	cont "la regardais."
+
+	para "Y'a du mystère"
+	line "dans l'air!"
+	done
+else
 	text "<PLAYER>!"
 
 	para "This Ball started"
@@ -600,29 +813,67 @@ KurtsHouseKurtThisBallStartedToShakeText:
 	para "There must be"
 	line "something to this!"
 	done
+endc
 
 KurtsGranddaughterSlowpokeGoneText:
+if DEF(_LOCALE_FR)
+	text "Les RAMOLOSS sont"
+	line "partis... Ont-ils"
+
+	para "été enlevés par de"
+	line "vilains gredins?"
+	done
+else
 	text "The Slowpoke are"
 	line "gone… Were they"
 
 	para "taken away by bad"
 	line "people?"
 	done
+endc
 
 KurtsGranddaughterLonelyText:
+if DEF(_LOCALE_FR)
+	text "Pépé a filé..."
+	line "Je suis si seule!"
+	done
+else
 	text "Grandpa's gone…"
 	line "I'm so lonely…"
 	done
+endc
 
 KurtsGranddaughterSlowpokeBackText:
+if DEF(_LOCALE_FR)
+	text "Le RAMOLOSS que"
+	line "mon pôpa m'a"
+
+	para "donné est de"
+	line "retour! Et sa"
+	cont "QUEUE a repoussé!"
+	done
+else
 	text "The Slowpoke my"
 	line "dad gave me came"
 
 	para "back! Its tail is"
 	line "growing back too!"
 	done
+endc
 
 KurtsGranddaughterDadText:
+if DEF(_LOCALE_FR)
+	text "Pôpa travaille à"
+	line "la SYLPHE SARL où"
+	cont "il étudie les"
+	cont "#balls."
+
+	para "Je dois rester à"
+	line "la maison avec mon"
+	cont "pépé et mon"
+	cont "RAMOLOSS."
+	done
+else
 	text "Dad works at Silph"
 	line "where he studies"
 	cont "# Balls."
@@ -631,8 +882,18 @@ KurtsGranddaughterDadText:
 	line "home with Grandpa"
 	cont "and Slowpoke."
 	done
+endc
 
 KurtsGranddaughterHelpText:
+if DEF(_LOCALE_FR)
+	text "J'aide mon joli"
+	line "petit pépé!"
+
+	para "On va en faire des"
+	line "belles BALLS pour"
+	cont "ta fraise!"
+	done
+else
 	text "I get to help"
 	line "Grandpa now!"
 
@@ -640,32 +901,67 @@ KurtsGranddaughterHelpText:
 	line "Balls for you, so"
 	cont "please wait!"
 	done
+endc
 
 KurtsGranddaughterFunText:
+if DEF(_LOCALE_FR)
+	text "C'est rigolo de"
+	line "faire des BALLS!"
+	done
+else
 	text "It's fun to make"
 	line "Balls!"
 	done
+endc
 
 KurtsGranddaughterGSBallText:
+if DEF(_LOCALE_FR)
+	text "Pépé examine une"
+	line "BALL."
+
+	para "Alors moi..."
+	line "J'attends."
+	done
+else
 	text "Grandpa's checking"
 	line "a Ball right now."
 
 	para "So I'm waiting"
 	line "till he's done."
 	done
+endc
 
 KurtsHouseSlowpokeText:
+if DEF(_LOCALE_FR)
+	text "RAMOLOSS: ...."
+	line "...(baille)..."
+	done
+else
 	text "Slowpoke: …"
 	line "Yawn?"
 	done
+endc
 
 KurtsHouseOakPhotoText:
+if DEF(_LOCALE_FR)
+	text "...Un jeune PROF."
+	line "CHEN?"
+	done
+else
 	text "…A young Prof."
 	line "Oak?"
 	done
+endc
 
 KurtsHouseCelebiStatueText:
+if DEF(_LOCALE_FR)
+	text "C'est une statue"
+	line "du protecteur de"
+	cont "la forêt."
+	done
+else
 	text "It's a statue of"
 	line "the forest's pro-"
 	cont "tector."
 	done
+endc

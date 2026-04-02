@@ -18,6 +18,15 @@ Route5SaffronCityGate_MapScriptHeader:
 	object_event  6,  4, SPRITE_BLACK_BELT, SPRITEMOVEDATA_WALK_UP_DOWN, 1, 0, -1, 0, OBJECTTYPE_SCRIPT, 0, Route5SaffronCityGateBlackBeltScript, -1
 
 Route5SaffronCityGateOfficerText:
+if DEF(_LOCALE_FR)
+	text "Tu es de JOHTO,"
+	line "n'est-ce pas?"
+
+	para "Tu aimes KANTO?"
+	line "C'est joli, hein?"
+	cont "Qu'en penses-tu?"
+	done
+else
 	text "You're from Johto,"
 	line "aren't you?"
 
@@ -25,6 +34,7 @@ Route5SaffronCityGateOfficerText:
 	line "Kanto? It's nice,"
 	cont "don't you agree?"
 	done
+endc
 
 Route5SaffronCityGateBlackBeltScript:
 	checkevent EVENT_GOT_PROTEIN_FROM_SAFFRON_GATE
@@ -39,12 +49,35 @@ Route5SaffronCityGateBlackBeltScript:
 	jumpthisopenedtext
 
 .Text2:
+if DEF(_LOCALE_FR)
+	text "Mange plein de"
+	line "PROTEINE et tu"
+	cont "deviendras plus"
+	cont "fort!"
+	done
+else
 	text "Eat lots of Pro-"
 	line "tein and see your"
 	cont "strength grow!"
 	done
+endc
 
 .Text1:
+if DEF(_LOCALE_FR)
+	text "Mate un peu"
+	line "ces muscles!"
+
+	para "Impressionnant,"
+	line "hein?"
+
+	para "T'es un peu faibl-"
+	line "ard, alors si tu"
+	cont "veux être comme"
+	cont "moi,"
+
+	para "il te faut ça."
+	done
+else
 	text "Get a load of"
 	line "these muscles!"
 
@@ -58,3 +91,4 @@ Route5SaffronCityGateBlackBeltScript:
 	para "you'll need some"
 	line "of this."
 	done
+endc

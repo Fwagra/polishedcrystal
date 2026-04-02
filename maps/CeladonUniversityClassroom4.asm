@@ -75,7 +75,7 @@ if DEF(_LOCALE_FR)
 	line "Appelle-moi Ray."
 
 	para "Je suis du top 4"
-	line "de l'universite de"
+	line "de l'université de"
 
 	para "Céladopole!"
 	line "On est les 4"
@@ -199,7 +199,7 @@ if DEF(_LOCALE_FR)
 
 	para "Sans blague!"
 
-	para "…Bon. Tu merites"
+	para "…Bon. Tu mérites"
 	line "ca."
 	done
 else
@@ -237,9 +237,9 @@ if DEF(_LOCALE_FR)
 	line "J'enseigne le"
 
 	para "combat #mon!"
-	line "Je cherche comment"
+	line "Je cherche à"
 
-	para "booster la puissance"
+	para "booster la force"
 	line "naturelle des"
 
 	para "#mon."
@@ -323,10 +323,10 @@ if DEF(_LOCALE_FR)
 	text "La prof dit que"
 	line "mon #mon l'a"
 
-	para "epoustouflee."
+	para "époustouflée."
 	line "Il peut tout"
 
-	para "reussir!"
+	para "réussir!"
 	done
 else
 	text "The professor said"
@@ -355,10 +355,10 @@ CeladonUniversityClassroom4Rich_boyScript:
 
 .Text1:
 if DEF(_LOCALE_FR)
-	text "On etudie les"
+	text "On étudie les"
 	line "talents #mon."
 
-	para "Certaines especes"
+	para "Certaines espèces"
 	line "ont plusieurs"
 
 	para "talents possibles."
@@ -394,7 +394,7 @@ if DEF(_LOCALE_FR)
 	para "porte-Capsule qui"
 	line "fait un Oeuf peut"
 
-	para "donner un bebe"
+	para "donner un bébé"
 	line "au talent cache!"
 	done
 else
@@ -418,20 +418,20 @@ endc
 
 CeladonUniversityClassroom4BlackboardText:
 if DEF(_LOCALE_FR)
-	text "Facteurs de combat:"
+	text "Facteurs combat:"
 	line "- Types"
 
 	para "- Effets des"
 	line "attaques"
 
-	para "- Categories"
+	para "- Catégories"
 	line "- Etats"
 
 	para "- Objets"
 	line "- Stats"
 
 	para "- EV, natures,"
-	line "talents, meteo…"
+	line "talents, météo…"
 	done
 else
 	text "Be aware of these"
@@ -463,8 +463,8 @@ CeladonUniversityClassroom4Bookshelf1:
 
 .Text1:
 if DEF(_LOCALE_FR)
-	text "Bibliotheque en"
-	line "desordre!"
+	text "Bibliothèque en"
+	line "désordre!"
 
 	para "<PLAYER> range"
 	line "les livres."
@@ -485,7 +485,7 @@ endc
 .Text2:
 if DEF(_LOCALE_FR)
 	text "Les livres sont"
-	line "tout bien ranges."
+	line "tout bien rangés."
 	done
 else
 	text "This bookcase is"
@@ -498,7 +498,7 @@ if DEF(_LOCALE_FR)
 	text "Un coloriage"
 	line "#mon."
 
-	para "Ca fait quoi la?"
+	para "Ca fait quoi là?"
 	done
 else
 	text "It's a #mon"

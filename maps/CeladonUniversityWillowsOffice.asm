@@ -34,16 +34,16 @@ if DEF(_LOCALE_FR)
 	para "Tu les croiseras"
 	line "en classe."
 
-	para "J'etudie aussi les"
+	para "J'étudie aussi les"
 	line "habitats #-"
 
 	para "mon et leur"
-	line "repartition."
+	line "répartition."
 
-	para "Je suis charge,"
+	para "Je suis chargé,"
 	line "mais mes aides"
 
-	para "dechirent!"
+	para "déchirent!"
 	done
 else
 	text "Hello there!"
@@ -105,10 +105,10 @@ endc
 
 CeladonUniversityWillowsOfficeBlackboardText:
 if DEF(_LOCALE_FR)
-	text "On a ecrit NE PAS"
+	text "On a écrit NE PAS"
 	line "EFFACER avec une"
 
-	para "fleche vers un"
+	para "flèche vers un"
 	line "griffonnage…"
 	done
 else
@@ -124,7 +124,7 @@ endc
 CeladonUniversityWillowsOfficeBookshelf1Text:
 if DEF(_LOCALE_FR)
 	text "Un livre sur les"
-	line "niches ecologiques"
+	line "niches écologiques"
 
 	para "et comment les"
 	line "#mon y vivent."
@@ -141,7 +141,7 @@ endc
 
 CeladonUniversityWillowsOfficeBookshelf2Text:
 if DEF(_LOCALE_FR)
-	text "Un depliant sur la"
+	text "Un dépliant sur la"
 	line "Zone Safari."
 
 	para "Plein de #mon"
@@ -162,7 +162,7 @@ CeladonUniversityWillowsOfficeComputer:
 	jumpthistext
 
 if DEF(_LOCALE_FR)
-	text "A l'ecran: Systeme"
+	text "A l'écran: Système"
 	line "Transfert #mon."
 	done
 else

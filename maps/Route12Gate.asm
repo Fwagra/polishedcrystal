@@ -18,9 +18,20 @@ Route12Gate_MapScriptHeader:
 	object_event  0,  5, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, PAL_NPC_BLUE, OBJECTTYPE_COMMAND, jumptextfaceplayer, Route12GateOfficerText, -1
 
 Route12GateOfficerText:
+if DEF(_LOCALE_FR)
+	text "Ici, le celebre"
+	line "Pont Silence:"
+
+	para "on marche tout"
+	line "bas pour ne pas"
+
+	para "effrayer les"
+	line "#mon."
+else
 	text "Silence Bridge got"
 	line "its name from all"
 
 	para "the people quietly"
 	line "fishing on it."
+endc
 	done

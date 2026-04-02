@@ -61,7 +61,7 @@ if DEF(_LOCALE_FR)
 	line "Matsumoto."
 
 	para "Directeur de"
-	line "l'universite de"
+	line "l'université de"
 
 	para "Céladopole."
 	line "Appelle-moi ton"
@@ -93,10 +93,10 @@ endc
 
 CeladonUniversityPrincipalsOfficeSignpost1Text:
 if DEF(_LOCALE_FR)
-	text "Diplome de Matsu-"
+	text "Diplôme de Matsu-"
 	line "moto en Sciences"
 
-	para "de l'education."
+	para "de l'éducation."
 	done
 else
 	text "It's Prof.Matsu-"

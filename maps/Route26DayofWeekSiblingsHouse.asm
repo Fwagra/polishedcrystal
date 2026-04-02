@@ -28,13 +28,40 @@ DayOfWeekSiblingsHousePokedexScript:
 	endtext
 
 DayOfWeekSiblingsHousePokedexText1:
+if DEF(_LOCALE_FR)
+	text "Il y a quelque"
+	line "chose d'écrit."
+
+	para "Lire?"
+	done
+else
 	text "There's something"
 	line "written here."
 
 	para "Read it?"
 	done
+endc
 
 DayOfWeekSiblingsHousePokedexText2:
+if DEF(_LOCALE_FR)
+	text "A mes frères et"
+	line "soeurs:"
+
+	para "Nous devons aider"
+	line "les dresseurs de"
+	cont "#MON."
+
+	para "Quand un dresseur"
+	line "vient vous parler,"
+	cont "donnez-lui un"
+	cont "objet."
+
+	para "Bisous,"
+	line "LUCIE"
+
+	para "Continuer à lire?"
+	done
+else
 	text "To my brothers and"
 	line "sisters:"
 
@@ -51,8 +78,32 @@ DayOfWeekSiblingsHousePokedexText2:
 
 	para "Keep reading?"
 	done
+endc
 
 DayOfWeekSiblingsHousePokedexText3:
+if DEF(_LOCALE_FR)
+	text "Lundi, LUCIE"
+	line "ROUTE 40"
+
+	para "Mardi, MARIE"
+	line "ROUTE 29"
+
+	para "Mercredi, HOMER"
+	line "LAC COLERE"
+
+	para "Jeudi, JEROME"
+	line "ROUTE 36"
+
+	para "Vendredi, VANESSA"
+	line "ROUTE 32"
+
+	para "Samedi, SAMUEL"
+	line "EBENELLE"
+
+	para "Dimanche, DIMITRI"
+	line "ROUTE 37"
+	done
+else
 	text "Monday, Monica"
 	line "Route 40"
 
@@ -74,3 +125,4 @@ DayOfWeekSiblingsHousePokedexText3:
 	para "Sunday, Sunny"
 	line "Route 37"
 	done
+endc

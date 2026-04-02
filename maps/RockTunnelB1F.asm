@@ -26,39 +26,84 @@ RockTunnelB1F_MapScriptHeader:
 GenericTrainerFirebreatherDick:
 	generictrainer FIREBREATHER, DICK, EVENT_BEAT_FIREBREATHER_DICK, FirebreatherDickSeenText, FirebreatherDickBeatenText
 
+if DEF(_LOCALE_FR)
+	text "Un #mon qui"
+	line "connaît Flash"
+
+	para "aide dans les"
+	line "grottes sombres"
+	cont "comme ici."
+	done
+else
 	text "A #mon that"
 	line "knows Flash is"
 
 	para "helpful in dark"
 	line "caves like this."
 	done
+endc
 
 GenericTrainerHexManiacVivian:
 	generictrainer HEX_MANIAC, VIVIAN, EVENT_BEAT_HEX_MANIAC_VIVIAN, HexManiacVivianSeenText, HexManiacVivianBeatenText
 
+if DEF(_LOCALE_FR)
+	text "Ce rôle de"
+	line "sorcière sinistre"
+
+	para "demande en vrai"
+	line "des efforts."
+	done
+else
 	text "This spooky hex"
 	line "maniac persona"
 
 	para "actually takes"
 	line "effort."
 	done
+endc
 
 FirebreatherDickSeenText:
+if DEF(_LOCALE_FR)
+	text "J'utilise le feu"
+	line "pour y voir et"
+	cont "sortir!"
+	done
+else
 	text "I'm using fire to"
 	line "to see my way out!"
 	done
+endc
 
 FirebreatherDickBeatenText:
+if DEF(_LOCALE_FR)
+	text "A l'aide! Le feu"
+	line "s'est éteint!"
+	done
+else
 	text "Help! The fire"
 	line "went out!"
 	done
+endc
 
 HexManiacVivianSeenText:
+if DEF(_LOCALE_FR)
+	text "Entends-tu des"
+	line "voix qui t'appelle"
+	cont "?"
+	done
+else
 	text "Do you hear the"
 	line "voices calling?"
 	done
+endc
 
 HexManiacVivianBeatenText:
+if DEF(_LOCALE_FR)
+	text "C'était juste un"
+	line "écho?!"
+	done
+else
 	text "It was only an"
 	line "echo?!"
 	done
+endc

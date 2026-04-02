@@ -23,39 +23,82 @@ IcePath1F_MapScriptHeader:
 GenericTrainerSkierMaria:
 	generictrainer SKIER, MARIA, EVENT_BEAT_SKIER_MARIA, SkierMariaSeenText, SkierMariaBeatenText
 
+if DEF(_LOCALE_FR)
+	text "J'ai mis du temps"
+	line "à être à l'aise"
+	cont "sur des skis."
+	done
+else
 	text "It took me a while"
 	line "to get comfortable"
 	cont "on skis."
 	done
+endc
 
 GenericTrainerBoarderStefan:
 	generictrainer BOARDER, STEFAN, EVENT_BEAT_BOARDER_STEFAN, BoarderStefanSeenText, BoarderStefanBeatenText
 
+if DEF(_LOCALE_FR)
+	text "Je reste au chaud"
+	line "en snowboard!"
+	done
+else
 	text "I'll keep warm by"
 	line "snowboarding!"
 	done
+endc
 
 SkierMariaSeenText:
+if DEF(_LOCALE_FR)
+	text "Tu admirais ma"
+	line "technique de ski?"
+	done
+else
 	text "Were you admiring"
 	line "my ski technique?"
 	done
+endc
 
 SkierMariaBeatenText:
+if DEF(_LOCALE_FR)
+	text "Ta technique de"
+	line "combat est"
+	cont "admirable!"
+	done
+else
 	text "Your battling"
 	line "technique is"
 	cont "admirable!"
 	done
+endc
 
 BoarderStefanSeenText:
+if DEF(_LOCALE_FR)
+	text "Brrr... Il fait"
+	line "froid!"
+
+	para "On se réchauffe"
+	line "avec un combat"
+	cont "#mon!"
+	done
+else
 	text "Brrr… It's so"
 	line "cold!"
 
 	para "Let's warm up with"
 	line "a #mon battle!"
 	done
+endc
 
 BoarderStefanBeatenText:
+if DEF(_LOCALE_FR)
+	text "Ce froid est la"
+	line "honte de la"
+	cont "défaite..."
+	done
+else
 	text "This cold is the"
 	line "shame of defeat…"
 	done
+endc
 

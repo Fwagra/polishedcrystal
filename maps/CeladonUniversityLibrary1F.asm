@@ -38,13 +38,13 @@ CeladonUniversityLibrary1F_MapScriptHeader:
 
 CeladonUniversityLibrary1FLadyText:
 if DEF(_LOCALE_FR)
-	text "Cette bibliotheque"
+	text "Cette bibliothèque"
 	line "est sur le campus,"
 
 	para "mais tout le monde"
 	line "peut y venir."
 
-	para "Genial, non?"
+	para "Génial, non?"
 	done
 else
 	text "This library is on"
@@ -72,7 +72,7 @@ endc
 CeladonUniversityLibrary1FCooltrainerfText:
 if DEF(_LOCALE_FR)
 	text "Le Prof. Chen a"
-	line "enseigne ici: la"
+	line "enseigné ici: la"
 
 	para "biblio garde tous"
 	line "ses articles de"
@@ -105,7 +105,7 @@ if DEF(_LOCALE_FR)
 	text "Mon #dex a une"
 	line "cartouche bonus."
 
-	para "Je joue a Tetris!"
+	para "Je joue à Tetris!"
 	done
 else
 	text "My #dex has a"
@@ -117,11 +117,13 @@ endc
 
 CeladonUniversityLibrary1FPokefan_fText:
 if DEF(_LOCALE_FR)
-	text "On echange des"
+	text "On échange des"
 	line "livres avec la"
 
-	para "bibliotheque de"
-	line "Joliberges a Sinnoh."
+	para "bibliothèque de"
+	line "Canalave, en"
+
+	para "Sinnoh."
 	done
 else
 	text "We have a mutual"
@@ -147,7 +149,7 @@ CeladonUniversityLibrary1FCooltrainermScript:
 .Text1:
 if DEF(_LOCALE_FR)
 	text "Gros examen"
-	line "bientot, alors je"
+	line "bientôt, alors je"
 
 	para "campe ici un"
 	line "moment."
@@ -174,11 +176,11 @@ endc
 
 .Text2:
 if DEF(_LOCALE_FR)
-	text "Pour que tes #mon"
-	line "tiennent le coup,"
+	text "Pour que tes"
+	line "#mon tiennent"
 
-	para "donne-leur ce"
-	line "Bandeau."
+	para "le coup, donne-"
+	line "leur ce Bandeau."
 	done
 else
 	text "If you want your"
@@ -191,12 +193,12 @@ endc
 CeladonUniversityLibrary1FTeacherText:
 if DEF(_LOCALE_FR)
 	text "Je suis la"
-	line "bibliothecaire."
+	line "bibliothécaire."
 
 	para "Besoin d'aide?"
 	line "Crie."
 
-	para "Discretement."
+	para "Discrètement."
 	line "C'est une biblio."
 	done
 else
@@ -216,7 +218,7 @@ if DEF(_LOCALE_FR)
 	text "Un livre sur l'art"
 	line "floral."
 
-	para "Un Heliatronc en"
+	para "Un Héliatronc en"
 	line "couverture."
 	done
 else
@@ -230,8 +232,8 @@ endc
 
 CeladonUniversityLibrary1FSignpost1Text:
 if DEF(_LOCALE_FR)
-	text "Ne derange pas les"
-	line "eleves en lecture."
+	text "Ne dérange pas les"
+	line "élèves en lecture."
 	done
 else
 	text "Please do not"
@@ -247,7 +249,7 @@ if DEF(_LOCALE_FR)
 	text "Interdit de"
 	line "manger ou boire"
 
-	para "dans la bibliotheque."
+	para "dans la biblio."
 	done
 else
 	text "Please do not"
@@ -284,11 +286,13 @@ endc
 
 CeladonUniversityLibrary1FBookshelf2Text:
 if DEF(_LOCALE_FR)
-	text "Album photo #mon."
-	line "Sur la couverture:"
+	text "Album photos"
+	line "#mon."
 
-	para "Scrapbook de Todd"
-	line "Snap."
+	para "Sur la couverture:"
+	line "Scrapbook de Todd"
+
+	para "Snap."
 	done
 else
 	text "It's a photo album"
@@ -305,12 +309,14 @@ endc
 
 CeladonUniversityLibrary1FBookshelf3Text:
 if DEF(_LOCALE_FR)
-	text "Un homme apprend"
-	line "a son #mon a jouer"
+	text "Un homme lui"
+	line "apprend à jouer"
 
-	para "d'un instrument."
-	line "Ils sont complices."
+	para "de la musique."
+	line "Lui et son"
 
+	para "#mon et lui:"
+	line "complices!"
 	done
 else
 	text "It's a book about"
@@ -328,7 +334,9 @@ endc
 CeladonUniversityLibrary1FBookshelf4Text:
 if DEF(_LOCALE_FR)
 	text "Un livre sur les"
-	line "palindromes #mon."
+	line "palindromes et"
+
+	para "#mon."
 
 	para "Couverture: Evoli"
 	line "et Girafarig."
@@ -369,9 +377,9 @@ endc
 CeladonUniversityLibrary1FBookshelf6Text:
 if DEF(_LOCALE_FR)
 	text "Une marionnette"
-	line "#mon qui ne peut"
+	line "#mon qui ne"
 
-	para "pas mentir."
+	para "peut pas mentir."
 	line "Titre: Pinpokeo."
 
 	done
@@ -390,7 +398,9 @@ endc
 CeladonUniversityLibrary1FBookshelf7Text:
 if DEF(_LOCALE_FR)
 	text "Un livre… attends,"
-	line "c'est un jeu video!"
+	line "c'est plutot un"
+
+	para "jeu video!"
 
 	para "Un flipper #mon"
 	line "en couverture."
@@ -412,7 +422,7 @@ endc
 
 CeladonUniversityLibrary1FBookshelf8Text:
 if DEF(_LOCALE_FR)
-	text "Guide de peche"
+	text "Guide de pêche"
 	line "pour debutants."
 
 	para "Titre: Odds and"
@@ -486,9 +496,10 @@ endc
 CeladonUniversityLibrary1FBookshelf12Text:
 if DEF(_LOCALE_FR)
 	text "La vie secrete du"
-	line "rire, par Joe King."
+	line "rire, Joe King."
 
-	para "Tout en calembours!"
+	para "Que des jeux"
+	line "de mots!"
 	done
 else
 	text "“The Secret Life"

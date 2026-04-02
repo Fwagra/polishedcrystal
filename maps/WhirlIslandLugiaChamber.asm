@@ -52,5 +52,10 @@ Lugia:
 	end
 
 LugiaText:
+if DEF(_LOCALE_FR)
 	text "Gyaaas!"
 	done
+else
+	text "Gyaaas!"
+	done
+endc

@@ -36,13 +36,17 @@ endc
 
 VermilionMagnetTrainSpeechHouseYoungsterText:
 if DEF(_LOCALE_FR)
-	text "Safrania! Safrania!"
-	line "Emmène-moi à"
-	cont "Safrania!"
+	text "Safrania!"
+	line "Safrania!"
 
-	para "Le train! Le train!"
-	line "Je veux voir le"
-	cont "Train Magnétique!"
+	para "Emmène-moi à"
+	line "Safrania!"
+
+	para "Le train!"
+	line "Le train!"
+
+	para "Je veux voir le"
+	line "Train Magnétique!"
 	done
 else
 	text "I want to go to"

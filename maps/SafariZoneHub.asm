@@ -28,6 +28,19 @@ SafariZoneHub_MapScriptHeader:
 GenericTrainerBug_maniacKai:
 	generictrainer BUG_MANIAC, KAI, EVENT_BEAT_BUG_MANIAC_KAI, Bug_maniacKaiSeenText, Bug_maniacKaiBeatenText
 
+if DEF(_LOCALE_FR)
+	text "MIMITOSS ressemble"
+	line "tellement à"
+	cont "PAPILUSION!"
+
+	para "Leur poids,"
+	line "leurs yeux,"
+	cont "leurs talents..."
+
+	para "L'évolution, c'est"
+	line "bizarre parfois."
+	done
+else
 	text "Venonat is so"
 	line "similar to"
 	cont "Butterfree!"
@@ -39,23 +52,50 @@ GenericTrainerBug_maniacKai:
 	para "Evolution is"
 	line "weird sometimes."
 	done
+endc
 
 Bug_maniacKaiSeenText:
+if DEF(_LOCALE_FR)
+	text "Mon MIMITOSS a"
+	line "évolué en"
+	cont "AEROMITE?!"
+	done
+else
 	text "My Venonat evolved"
 	line "into a Venomoth?!"
 	done
+endc
 
 Bug_maniacKaiBeatenText:
+if DEF(_LOCALE_FR)
+	text "Je croyais qu'il"
+	line "évoluerait"
+	cont "en PAPILUSION!"
+	done
+else
 	text "I thought it would"
 	line "for sure evolve"
 	cont "into Butterfree!"
 	done
+endc
 
 SafariZoneHubAreaSignText:
+if DEF(_LOCALE_FR)
+	text "PARC SAFARI"
+	line "Zone centrale"
+	done
+else
 	text "Safari Zone"
 	line "Center Area"
 	done
+endc
 
 SafariZoneHubRestHouseSignText:
+if DEF(_LOCALE_FR)
+	text "Pavillon"
+	line "de repos"
+	done
+else
 	text "Rest House"
 	done
+endc

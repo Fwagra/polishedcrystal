@@ -316,39 +316,85 @@ GoldenrodGameCornerCardFlipMachineScript:
 	endtext
 
 GoldenrodGameCornerPrizeVendorIntroText:
+if DEF(_LOCALE_FR)
+	text "Bienvenue!"
+
+	para "On échange tes"
+	line "jetons contre de"
+	cont "super lots!"
+	done
+else
 	text "Welcome!"
 
 	para "We exchange your"
 	line "game coins for"
 	cont "fabulous prizes!"
 	done
+endc
 
 GoldenrodGameCornerPrizeVendorWhichPrizeText:
+if DEF(_LOCALE_FR)
+	text "Quel lot tu veux?"
+	done
+else
 	text "Which prize would"
 	line "you like?"
 	done
+endc
 
 GoldenrodGameCornerPrizeVendorConfirmPrizeText:
 	text_ram wStringBuffer3
 	text "."
+if DEF(_LOCALE_FR)
+	line "C'est ça?"
+else
 	line "Is that right?"
+endc
 	done
 
 GoldenrodGameCornerPrizeVendorHereYouGoText:
+if DEF(_LOCALE_FR)
+	text "Tiens!"
+	done
+else
 	text "Here you go!"
 	done
+endc
 
 GoldenrodGameCornerPrizeVendorAlreadyHaveTMText:
+if DEF(_LOCALE_FR)
+	text "Tu as déjà cette"
+	line "CT!"
+	done
+else
 	text "But you already"
 	line "have that TM!"
 	done
+endc
 
 GoldenrodGameCornerPrizeVendorNeedMoreCoinsText:
+if DEF(_LOCALE_FR)
+	text "Désolé! Il te faut"
+	line "plus de jetons."
+	done
+else
 	text "Sorry! You need"
 	line "more coins."
 	done
+endc
 
 GoldenrodGameCornerPrizeVendorNoMoreRoomText:
+if DEF(_LOCALE_FR)
+	text "Oh non. Tu n'as"
+	line "plus de place."
+
+	para "Ta BOITE est"
+	line "pleine."
+
+	para "Je te rends tes"
+	line "jetons."
+	done
+else
 	text "Oh, no. You can't"
 	line "carry any more and"
 	cont "your Box is full."
@@ -356,19 +402,43 @@ GoldenrodGameCornerPrizeVendorNoMoreRoomText:
 	para "I'll return your"
 	line "coins to you."
 	done
+endc
 
 GoldenrodGameCornerPrizeVendorQuitText:
+if DEF(_LOCALE_FR)
+	text "OK. Economise tes"
+	line "jetons et"
+	cont "reviens plus tard!"
+	done
+else
 	text "OK. Please save"
 	line "your coins and"
 	cont "come again!"
 	done
+endc
 
 GoldenrodGameCornerPrizeVendorNoCoinCaseText:
+if DEF(_LOCALE_FR)
+	text "Oh? Tu n'as pas"
+	line "de BOITE JETON."
+	done
+else
 	text "Oh? You don't have"
 	line "a Coin Case."
 	done
+endc
 
 GoldenrodGameCornerFisherText:
+if DEF(_LOCALE_FR)
+	text "Jackpot!"
+	line "Je fête ça"
+	cont "aux machines!"
+
+	para "...Tu sais, les"
+	line "#mon ont aussi"
+	cont "Jackpot."
+	done
+else
 	text "Today's my pay day!"
 	line "Time to celebrate"
 	cont "with some slots!"
@@ -376,26 +446,59 @@ GoldenrodGameCornerFisherText:
 	para "…You know, #mon"
 	line "get a Pay Day too."
 	done
+endc
 
 Text_GoldenrodGameCornerTutorPayDayQuestion:
+if DEF(_LOCALE_FR)
+	text "Si tu me donnes"
+	line "une FEUIL.ARGENT,"
+
+	para "j'apprends"
+	line "Jackpot à ton"
+	cont "#mon."
+	done
+else
 	text "If you give me a"
 	line "Silver Leaf, I'll"
 
 	para "teach Pay Day to"
 	line "your #mon."
 	done
+endc
 
 Text_GoldenrodGameCornerTutorNoSilverLeaf:
+if DEF(_LOCALE_FR)
+	text "Tu n'as pas de"
+	line "FEUIL.ARGENT?"
+	cont "Tant pis."
+	done
+else
 	text "You don't have a"
 	line "Silver Leaf?"
 	cont "Never mind then."
 	done
+endc
 
 Text_GoldenrodGameCornerTutorRefused:
+if DEF(_LOCALE_FR)
+	text "Tant pis."
+	done
+else
 	text "Never mind then."
 	done
+endc
 
 Text_GoldenrodGameCornerTutorTaught:
+if DEF(_LOCALE_FR)
+	text "Jackpot te"
+	line "donne plus de"
+	cont "fric après"
+	cont "un combat."
+
+	para "Utilise-la et tu"
+	line "seras riche!"
+	done
+else
 	text "Pay Day nets you"
 	line "more money after a"
 	cont "battle."
@@ -403,16 +506,38 @@ Text_GoldenrodGameCornerTutorTaught:
 	para "Keep using it and"
 	line "you'll be rich!"
 	done
+endc
 
 GoldenrodGameCornerPharmacistText:
+if DEF(_LOCALE_FR)
+	text "Je joue tout le"
+	line "temps à cette"
+
+	para "machine. Elle me"
+	line "fait plus gagner"
+	cont "que les autres."
+	cont "Enfin, je crois!"
+	done
+else
 	text "I always play this"
 	line "slot machine. It"
 
 	para "pays out more than"
 	line "others, I think."
 	done
+endc
 
 GoldenrodGameCornerPokefanM1Text:
+if DEF(_LOCALE_FR)
+	text "J'aime trop cette"
+	line "nouvelle machine."
+
+	para "Y'a beaucoup plus"
+	line "de suspense qu'"
+	cont "avec celles de"
+	cont "CELADOPOLE."
+	done
+else
 	text "I just love this"
 	line "new slot machine."
 
@@ -420,14 +545,37 @@ GoldenrodGameCornerPokefanM1Text:
 	line "challenge than the"
 	cont "ones in Celadon."
 	done
+endc
 
 GoldenrodGameCornerCooltrainerMText:
+if DEF(_LOCALE_FR)
+	text "Dans la vie tout"
+	line "est question de"
+	cont "chance!"
+	cont "Moi j'en ai pas."
+	cont "Et alors?"
+	done
+else
 	text "Life is a gamble."
 	line "I'm going to flip"
 	cont "cards till I drop!"
 	done
+endc
 
 GoldenrodGameCornerPokefanFText:
+if DEF(_LOCALE_FR)
+	text "Et hop les cartes!"
+
+	para "Je préfère ça aux"
+	line "machines..."
+
+	para "C'est plus facile"
+	line "de gagner."
+
+	para "Mais les gains"
+	line "sont plus faibles."
+	done
+else
 	text "Card flip…"
 
 	para "I prefer it over"
@@ -439,13 +587,31 @@ GoldenrodGameCornerPokefanFText:
 	para "But the payout is"
 	line "much lower."
 	done
+endc
 
 GoldenrodGameCornerCooltrainerFText:
+if DEF(_LOCALE_FR)
+	text "Tant que je"
+	line "perds..."
+	cont "Je reste!"
+	done
+else
 	text "I won't quit until"
 	line "I win!"
 	done
+endc
 
 GoldenrodGameCornerGentlemanText:
+if DEF(_LOCALE_FR)
+	text "J'ai appris"
+	line "Laser Glace"
+	cont "à mon #mon."
+
+	para "Dur d'avoir assez"
+	line "de jetons, mais"
+	cont "ça valait le coup."
+	done
+else
 	text "I taught Ice Beam"
 	line "to my #mon."
 
@@ -455,8 +621,24 @@ GoldenrodGameCornerGentlemanText:
 	para "it, but it was"
 	line "worth it."
 	done
+endc
 
 GoldenrodGameCornerPokefanM2Text:
+if DEF(_LOCALE_FR)
+	text "Je gagnais jamais"
+	line "aux machines,"
+
+	para "et aux cartes..."
+	line "Pareil..."
+
+	para "Quand t'es nul,"
+	line "t'es nul!!"
+
+	para "J'ai jeté ma BOITE"
+	line "JETON dans le"
+	cont "SOUTERRAIN."
+	done
+else
 	text "I couldn't win at"
 	line "the slots, and I"
 
@@ -469,15 +651,28 @@ GoldenrodGameCornerPokefanM2Text:
 	para "Coin Case in the"
 	line "Underground."
 	done
+endc
 
 GoldenrodGameCornerPokefanM3Text:
+if DEF(_LOCALE_FR)
+	text "Wahahah! Encore"
+	line "des jetons!"
+	done
+else
 	text "Wahahah! The coins"
 	line "keep rolling in!"
 	done
+endc
 
 GoldenrodGameCornerLeftTheirDrinkText:
+if DEF(_LOCALE_FR)
+	text "Quelqu'un a oublié"
+	line "sa boisson."
+	done
+else
 	text "Someone left their"
 	line "drink."
 
 	para "It smells sweet."
 	done
+endc

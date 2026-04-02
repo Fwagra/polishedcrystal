@@ -24,26 +24,56 @@ UnionCaveB1FNorth_MapScriptHeader:
 GenericTrainerRuin_maniacLeland:
 	generictrainer RUIN_MANIAC, LELAND, EVENT_BEAT_RUIN_MANIAC_LELAND, .SeenText, .BeatenText
 
+if DEF(_LOCALE_FR)
+	text "Un jour, je trou-"
+	line "verai une ruine"
+	cont "et je serai connu."
+	done
+else
 	text "Someday I'll dis-"
 	line "cover a new ruin"
 	cont "and become famous."
 	done
+endc
 
 .SeenText:
+if DEF(_LOCALE_FR)
+	text "Je suis sur la"
+	line "piste d'une ruine"
+	cont "ancienne!"
+	done
+else
 	text "I'm on the trail of"
 	line "an ancient ruin"
 	cont "site!"
 	done
+endc
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "J'ai été distrait"
+	line "par les indices"
+	cont "des anciens."
+	done
+else
 	text "I was distracted"
 	line "by clues the"
 	cont "ancients left."
 	done
+endc
 
 GenericTrainerRuin_maniacPetry:
 	generictrainer RUIN_MANIAC, PETRY, EVENT_BEAT_RUIN_MANIAC_PETRY, .SeenText, .BeatenText
 
+if DEF(_LOCALE_FR)
+	text "L'histoire ancien-"
+	line "ne est ma passion,"
+
+	para "mais pour l'étu-"
+	line "dier, on utilise"
+	cont "la technologie."
+	done
+else
 	text "Ancient history"
 	line "is my passion,"
 
@@ -51,16 +81,31 @@ GenericTrainerRuin_maniacPetry:
 	line "it properly we use"
 	cont "modern technology."
 	done
+endc
 
 .SeenText:
+if DEF(_LOCALE_FR)
+	text "Je vais partout"
+	line "pour enquêter sur"
+	cont "les vieux secrets"
+	cont "et légendes."
+	done
+else
 	text "I'll go anywhere"
 	line "to investigate"
 	cont "old secrets and"
 	cont "legends."
 	done
+endc
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "Quel est le secret"
+	line "de ta puissance?"
+	done
+else
 	text "What is the secret"
 	line "of your power?"
 	done
+endc
 

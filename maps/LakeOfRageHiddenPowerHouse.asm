@@ -62,6 +62,23 @@ HiddenPowerGuy:
 	done
 
 .Text1:
+if DEF(_LOCALE_FR)
+	text "...Tu as bien"
+	line "voyagé..."
+
+	para "Moi, j'ai médité."
+	line "Au fond de moi une"
+
+	para "nouvelle force"
+	line "s'est réveillée."
+
+	para "Laisse-moi parta-"
+	line "ger mon pouvoir"
+
+	para "avec tes #MON."
+	line "Prends-ça."
+	done
+else
 	text "…You have strayed"
 	line "far…"
 
@@ -77,8 +94,23 @@ HiddenPowerGuy:
 
 	para "Take this, child."
 	done
+endc
 
 .Text2:
+if DEF(_LOCALE_FR)
+	text "Tu vois? C'est"
+	line "PUIS.CACHEE!"
+
+	para "Elle prolonge la"
+	line "puissance de tes"
+	cont "#MON."
+
+	para "Rappelle-toi: cela"
+	line "dépend du type et"
+	cont "de la puissance du"
+	cont "#MON utilisé."
+	done
+else
 	text "Do you see it? It"
 	line "is Hidden Power!"
 
@@ -91,23 +123,48 @@ HiddenPowerGuy:
 	cont "the #mon"
 	cont "using it."
 	done
+endc
 
 .Text3:
+if DEF(_LOCALE_FR)
+	text "Dois-je deviner"
+	line "la PUIS.CACHEE"
+	cont "de ton #MON?"
+	done
+else
 	text "Shall I divine"
 	line "the Hidden Power"
 	cont "of your #mon?"
 	done
+endc
 
 .Text4:
+if DEF(_LOCALE_FR)
+	text "Je médite..."
+	done
+else
 	text "I am meditating…"
 	done
+endc
 
 .Text5:
+if DEF(_LOCALE_FR)
+	text "La PUIS.CACHEE"
+	line "de quel #MON"
+	cont "veux-tu connaître?"
+	done
+else
 	text "Which #mon's"
 	line "Hidden Power"
 	cont "should I find?"
 	done
+endc
 
 .Text7:
+if DEF(_LOCALE_FR)
+	text "...Très bien..."
+	done
+else
 	text "…Very well…"
 	done
+endc

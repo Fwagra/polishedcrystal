@@ -30,6 +30,19 @@ Route12SuperRodHouseFishingGuruScript:
 	jumpthisopenedtext
 
 .GaveSuperRodText:
+if DEF(_LOCALE_FR)
+	text "Essaie de pêcher"
+	line "un peu partout où"
+	cont "il y a de l'eau."
+
+	para "Souviens-toi: tu"
+	line "peux attraper plu-"
+
+	para "sieurs #MON"
+	line "grâce à différen-"
+	cont "tes CANNES."
+	done
+else
 	text "Try your hand at"
 	line "fishing wherever"
 	cont "there is water."
@@ -40,6 +53,7 @@ Route12SuperRodHouseFishingGuruScript:
 	para "#mon using"
 	line "different Rods."
 	done
+endc
 
 .Refused:
 	writetext DontWantSuperRodText
@@ -48,6 +62,18 @@ Route12SuperRodHouseFishingGuruScript:
 	endtext
 
 OfferSuperRodText:
+if DEF(_LOCALE_FR)
+	text "Je suis le petit"
+	line "frère du MAITRE"
+	cont "PECHEUR."
+
+	para "Tu aimes la pêche,"
+	line "toi! Ca se voit."
+
+	para "J'ai raison, hein?"
+	line "Bien sûr que oui!"
+	done
+else
 	text "I'm the Fishing"
 	line "Guru's younger"
 	cont "brother."
@@ -61,8 +87,18 @@ OfferSuperRodText:
 	para "So? I know I'm"
 	line "right."
 	done
+endc
 
 GiveSuperRodText:
+if DEF(_LOCALE_FR)
+	text "Crénom de là!"
+	line "C'est ben vrai!"
+
+	para "Tiens boudiou!"
+	line "Prends ça: c'est"
+	cont "la MEGA CANNE."
+	done
+else
 	text "Yes, yes. Just as"
 	line "I thought!"
 
@@ -70,8 +106,15 @@ GiveSuperRodText:
 	line "Take this--it's a"
 	cont "Super Rod."
 	done
+endc
 
 DontWantSuperRodText:
+if DEF(_LOCALE_FR)
+	text "Hein? On m'aurait"
+	line "trompé?"
+	done
+else
 	text "Huh? My own eyes"
 	line "deceived me?"
 	done
+endc

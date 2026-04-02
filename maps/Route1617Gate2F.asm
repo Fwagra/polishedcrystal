@@ -67,6 +67,21 @@ Route1617Gate2FBinoculars2:
 	jumptext Route1617Gate2FBinoculars2Text
 
 Route1617Gate2FPsychicText:
+if DEF(_LOCALE_FR)
+	text "Il y a un Psy"
+	line "pas loin d'ici"
+
+	para "qui peut changer"
+	line "le cours d'un"
+
+	para "combat #mon."
+
+	para "Il m'inspire, donc"
+	line "j'ai travaillé"
+
+	para "ma technique."
+	done
+else
 	text "There's a Psychic"
 	line "not far from here"
 
@@ -82,8 +97,23 @@ Route1617Gate2FPsychicText:
 	para "worked on my own"
 	line "technique."
 	done
+endc
 
 Text_Route1617Gate2FTutorTrickRoom:
+if DEF(_LOCALE_FR)
+	text "Je peux apprendre"
+	line "la capacité"
+	cont "Distorsion"
+
+	para "à ton #mon."
+
+	para "Les #mon lents"
+	line "dépasseront les"
+
+	para "plus rapides un"
+	line "moment."
+	done
+else
 	text "I can teach your"
 	line "#mon the move"
 	cont "Trick Room."
@@ -94,24 +124,49 @@ Text_Route1617Gate2FTutorTrickRoom:
 	para "outspeed faster"
 	line "ones for a time."
 	done
+endc
 
 Text_Route1617Gate2FTutorQuestion:
+if DEF(_LOCALE_FR)
+	text "Une FEUILLE ARGENT"
+	line "te paraît juste?"
+	done
+else
 	text "Is a Silver Leaf"
 	line "a fair price?"
 	done
+endc
 
 Route1617Gate2FBinoculars1Text:
+if DEF(_LOCALE_FR)
+	text "Tu regardes dans"
+	line "les jumelles."
+
+	para "C'est le CENTRE CO"
+	line "de CELADOPOLE!"
+	done
+else
 	text "Looked into the"
 	line "binoculars."
 
 	para "It's Celadon Dept."
 	line "Store!"
 	done
+endc
 
 Route1617Gate2FBinoculars2Text:
+if DEF(_LOCALE_FR)
+	text "Tu regardes dans"
+	line "les jumelles."
+
+	para "Un long chemin sur"
+	line "l'eau!"
+	done
+else
 	text "Looked into the"
 	line "binoculars."
 
 	para "There's a long"
 	line "path over water!"
 	done
+endc

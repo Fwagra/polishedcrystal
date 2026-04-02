@@ -546,6 +546,22 @@ NoExplodingTrap:
 GenericTrainerRocketScientistJed:
 	generictrainer ROCKET_SCIENTIST, JED, EVENT_BEAT_ROCKET_SCIENTIST_JED, RocketScientistJedSeenText, RocketScientistJedBeatenText
 
+if DEF(_LOCALE_FR)
+	text "OK. Voici un"
+	line "secret sur notre"
+	cont "cachette."
+
+	para "Le truc au sol"
+	line "tout droit est un"
+	cont "téléporteur."
+
+	para "Marche dessus et"
+	line "tu retournes"
+
+	para "à l'entrée..."
+	line "Pouf! Magie!"
+	done
+else
 	text "All right. I'll"
 	line "divulge a secret"
 	cont "about our hideout."
@@ -560,10 +576,20 @@ GenericTrainerRocketScientistJed:
 	para "back to the en-"
 	line "trance."
 	done
+endc
 
 GenericTrainerGruntM16:
 	generictrainer GRUNTM, 16, EVENT_BEAT_ROCKET_GRUNTM_16, GruntM16SeenText, GruntM16BeatenText
 
+if DEF(_LOCALE_FR)
+	text "Je sais même pas"
+	line "où sont les"
+	cont "pièges!!!"
+
+	para "Alors..."
+	line "Courage camarade!"
+	done
+else
 	text "I don't even know"
 	line "where the traps"
 	cont "are planted."
@@ -572,6 +598,7 @@ GenericTrainerGruntM16:
 	line "to collect your"
 	cont "courage and walk."
 	done
+endc
 
 TeamRocketBaseB1FSecurityCamera:
 	jumptext SecurityCameraText
@@ -684,20 +711,48 @@ SecurityCameraMovement9:
 	step_end
 
 CameraGrunt1SeenText:
+if DEF(_LOCALE_FR)
+	text "Hop hop hop!"
+	line "On bouge plus!"
+	done
+else
 	text "Hey!"
 	line "Intruder alert!"
 	done
+endc
 
 CameraGrunt1BeatenText:
+if DEF(_LOCALE_FR)
+	text "Dans ma face!"
+	done
+else
 	text "Dang… I failed…"
 	done
+endc
 
 CameraGrunt2SeenText:
+if DEF(_LOCALE_FR)
+	text "Mon tour!"
+	line "Yahahhaa!"
+	done
+else
 	text "It's my turn!"
 	line "There's no escape!"
 	done
+endc
 
 CameraGrunt2BeatenText:
+if DEF(_LOCALE_FR)
+	text "Des caméras se"
+	line "trouvent dans les"
+	cont "statues."
+
+	para "On viendra tant"
+	line "que tu n'actionne-"
+	cont "ras pas l'inter-"
+	cont "rupteur secret."
+	done
+else
 	text "Surveillance cams"
 	line "are in the #mon"
 	cont "statues."
@@ -706,8 +761,18 @@ CameraGrunt2BeatenText:
 	line "ing until you trip"
 	cont "a secret switch."
 	done
+endc
 
 RocketScientistJedSeenText:
+if DEF(_LOCALE_FR)
+	text "C'était une ca-"
+	line "chette ninja ici."
+
+	para "Y'a des pièges"
+	line "contre les intrus"
+	cont "comme toi."
+	done
+else
 	text "This was once a"
 	line "ninja hideout."
 
@@ -715,12 +780,29 @@ RocketScientistJedSeenText:
 	line "confound intruders"
 	cont "like you."
 	done
+endc
 
 RocketScientistJedBeatenText:
+if DEF(_LOCALE_FR)
+	text "Je comprends..."
+	done
+else
 	text "I get it…"
 	done
+endc
 
 GruntM16SeenText:
+if DEF(_LOCALE_FR)
+	text "Alors? On se croit"
+	line "chez soi?"
+
+	para "Allez, avance"
+	line "pour voir."
+
+	para "Y'a des pièges"
+	line "partout!"
+	done
+else
 	text "Heheh. Feeling"
 	line "lucky, punk?"
 
@@ -730,25 +812,52 @@ GruntM16SeenText:
 	para "We've got traps"
 	line "set in the floor!"
 	done
+endc
 
 GruntM16BeatenText:
+if DEF(_LOCALE_FR)
+	text "Kaboum!"
+	done
+else
 	text "Kaboom!"
 	done
+endc
 
 SecurityCameraText:
+if DEF(_LOCALE_FR)
+	text "Une statue de"
+	line "PERSIAN..."
+
+	para "Ses yeux brillent"
+	line "d'un feu étrange."
+	done
+else
 	text "It's a Persian"
 	line "statue…"
 
 	para "Its eyes are oddly"
 	line "shiny."
 	done
+endc
 
 TeamRocketBaseB1FSecretSwitchText:
+if DEF(_LOCALE_FR)
+	text "Un interrupteur!"
+	line "Allez, on appuie."
+	done
+else
 	text "A secret switch!"
 	line "Better press it."
 	done
+endc
 
 TeamRocketBaseB1FSwitchOffText:
+if DEF(_LOCALE_FR)
+	text "L'interrupteur est"
+	line "désactivé."
+	done
+else
 	text "The switch is"
 	line "turned off."
 	done
+endc

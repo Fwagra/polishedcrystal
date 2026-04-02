@@ -50,7 +50,7 @@ if DEF(_LOCALE_FR)
 	para "certains savants."
 	line "Sans #mon?"
 
-	para "Quel desastre!"
+	para "Quel désastre!"
 	done
 else
 	text "Some academics be-"
@@ -74,10 +74,10 @@ endc
 CeladonUniversity1FLassText:
 if DEF(_LOCALE_FR)
 	text "On peut tout"
-	line "etudier ici:"
+	line "étudier ici:"
 
 	para "de l'art floral"
-	line "a la psycho"
+	line "à la psycho"
 
 	para "#mon!"
 	done
@@ -99,7 +99,7 @@ if DEF(_LOCALE_FR)
 	line "dresseurs #mon."
 
 	para "L'admission: une"
-	line "serie de combats"
+	line "série de combats"
 
 	para "#mon."
 	done
@@ -141,7 +141,7 @@ if DEF(_LOCALE_FR)
 	text "Beurk! Je trouve"
 	line "pas mon cours…"
 
-	para "Je vais etre en"
+	para "Je vais être en"
 	line "retard!"
 	done
 else
@@ -170,8 +170,8 @@ endc
 
 CeladonUniversity1FReceptionistText:
 if DEF(_LOCALE_FR)
-	text "Bienvenue a"
-	line "l'universite de"
+	text "Bienvenue à"
+	line "l'université de"
 
 	para "Céladopole!"
 	line "Les salles et le"
@@ -180,15 +180,15 @@ if DEF(_LOCALE_FR)
 	line "teur sont au fond"
 
 	para "du couloir."
-	line "Bibliotheque"
+	line "Bibliothèque"
 
-	para "a droite, salon"
-	line "etudiant a gauche."
+	para "à droite, salon"
+	line "étudiant à gauche."
 
 	para "Cafet', piscine"
 	line "et infirmerie:"
 
-	para "a l'etage."
+	para "à l'étage."
 	done
 else
 	text "Welcome to Celadon"
@@ -215,12 +215,12 @@ endc
 CeladonUniversity1FCooltrainerfText:
 if DEF(_LOCALE_FR)
 	text "Je veux etre"
-	line "infirmiere pour"
+	line "infirmière pour"
 
 	para "#mon. Tant"
-	line "d'especes: dur"
+	line "d'espèces: dur"
 
-	para "a tout savoir!"
+	para "à tout savoir!"
 	done
 else
 	text "I'm studying to be"
@@ -282,7 +282,7 @@ endc
 
 CeladonUniversity1FStudentLoungeSignText:
 if DEF(_LOCALE_FR)
-	text "Salon etudiant"
+	text "Salon étudiant"
 	done
 else
 	text "Student Lounge"
@@ -291,7 +291,7 @@ endc
 
 CeladonUniversity1FLibrarySignText:
 if DEF(_LOCALE_FR)
-	text "Bibliotheque"
+	text "Bibliothèque"
 	done
 else
 	text "Library"
@@ -301,7 +301,7 @@ endc
 CeladonUniversity1FTrophyCaseSignText:
 if DEF(_LOCALE_FR)
 	text "Des coupes et"
-	line "medailles partout."
+	line "médailles partout."
 	done
 else
 	text "The case is full"
@@ -315,7 +315,7 @@ if DEF(_LOCALE_FR)
 	text "Des tonnes"
 	line "d'albums promo."
 
-	para "Les eleves ont"
+	para "Les élèves ont"
 	line "tout barbouille."
 	done
 else

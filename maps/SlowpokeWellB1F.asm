@@ -32,6 +32,24 @@ SlowpokeWellB1F_MapScriptHeader:
 GenericTrainerGruntM29:
 	generictrainer GRUNTM, 29, EVENT_BEAT_ROCKET_GRUNTM_29, GruntM29SeenText, GruntM29BeatenText
 
+if DEF(_LOCALE_FR)
+	text "Bah... Bien sûr"
+	line "qu'on vend des"
+
+	para "queues de RAMOLOSS"
+	line "volées."
+
+	para "On ferait n'impor-"
+	line "te quoi pour le"
+	cont "pognon."
+
+	para "Et oui! La TEAM"
+	line "ROCKET c'est pas"
+
+	para "d'la rigolade! On"
+	line "est des méchants!"
+	done
+else
 	text "Sure, we've been"
 	line "hacking the tails"
 
@@ -47,6 +65,7 @@ GenericTrainerGruntM29:
 	para "and we'll do any-"
 	line "thing for money!"
 	done
+endc
 
 TrainerProton2:
 	trainer PROTON, PROTON2, EVENT_BEAT_PROTON_2, Proton2SeenText, Proton2BeatenText, 0, Proton2Script
@@ -87,6 +106,15 @@ Proton2Script:
 GenericTrainerGruntM2:
 	generictrainer GRUNTM, 2, EVENT_BEAT_ROCKET_GRUNTM_2, GruntM2SeenText, GruntM2BeatenText
 
+if DEF(_LOCALE_FR)
+	text "On a besoin de"
+	line "sous à la TEAM"
+	cont "ROCKET..."
+
+	para "C'est pas facile"
+	line "d'être un SBIRE!"
+	done
+else
 	text "We need the money,"
 	line "but selling Slow-"
 	cont "pokeTails?"
@@ -94,16 +122,27 @@ GenericTrainerGruntM2:
 	para "It's tough being a"
 	line "Rocket Grunt!"
 	done
+endc
 
 GenericTrainerGruntF1:
 	generictrainer GRUNTF, 1, EVENT_BEAT_ROCKET_GRUNTF_1, GruntF1SeenText, GruntF1BeatenText
 
+if DEF(_LOCALE_FR)
+	text "Les QUEUES de"
+	line "RAMOLOSS?"
+	cont "Ca repousse vite!"
+
+	para "Alors on peut les"
+	line "vendre, non?"
+	done
+else
 	text "SlowpokeTails"
 	line "grow back fast!"
 
 	para "What's wrong with"
 	line "selling them?"
 	done
+endc
 
 SlowpokeWellB1FSlowpokeWithMailScript:
 	faceplayer
@@ -137,6 +176,18 @@ KurtSlowpokeWellVictoryMovementData:
 	step_end
 
 KurtLeaveSlowpokeWellText:
+if DEF(_LOCALE_FR)
+	text "FARGAS: Bravo,"
+	line "<PLAYER>!"
+
+	para "La TEAM ROCKET a"
+	line "décampé."
+
+	para "Mon dos va mieux."
+	line "Allez..."
+	cont "On se casse."
+	done
+else
 	text "Kurt: Way to go,"
 	line "<PLAYER>!"
 
@@ -147,8 +198,26 @@ KurtLeaveSlowpokeWellText:
 	line "too. Let's get out"
 	cont "of here."
 	done
+endc
 
 GruntM29SeenText:
+if DEF(_LOCALE_FR)
+	text "Grrah! Je montais"
+	line "la garde quand un"
+
+	para "vieux dingue est"
+	line "venu me crier"
+	cont "dessus."
+
+	para "Il m'a fichu une"
+	line "telle trouille que"
+	cont "je suis tombé ici."
+
+	para "... Tu sais quoi?"
+	line "Je vais calmer mes"
+	cont "nerfs sur ta face!"
+	done
+else
 	text "Darn! I was stand-"
 	line "ing guard up top"
 
@@ -163,13 +232,28 @@ GruntM29SeenText:
 	line "my anger by taking"
 	cont "it out on you!"
 	done
+endc
 
 GruntM29BeatenText:
+if DEF(_LOCALE_FR)
+	text "Grrah! C'est pas"
+	line "mon jour!"
+	done
+else
 	text "Arrgh! This is NOT"
 	line "my day!"
 	done
+endc
 
 Proton2SeenText:
+if DEF(_LOCALE_FR)
+	text "Kesstu veux?"
+
+	para "Si tu viens nous"
+	line "embêter, ça va"
+	cont "barder!"
+	done
+else
 	text "What do you want?"
 
 	para "I'm known as the"
@@ -182,14 +266,35 @@ Proton2SeenText:
 	line "our work, don't"
 	cont "expect any mercy!"
 	done
+endc
 
 Proton2BeatenText:
+if DEF(_LOCALE_FR)
+	text "Attends voir la"
+	line "prochaine fois!"
+	done
+else
 	text "You did OK today,"
 	line "but wait till next"
 	cont "time!"
 	done
+endc
 
 TrainerProton2WhenTalkText:
+if DEF(_LOCALE_FR)
+	text "La TEAM ROCKET a"
+	line "été dissoute il y"
+	cont "a trois ans..."
+
+	para "Mais on a continué"
+	line "nos p'tites affai-"
+	cont "res dans l'ombre."
+
+	para "Et à partir d'au-"
+	line "jourd'hui... On va"
+	cont "tout faire sauter!"
+	done
+else
 	text "Yeah, Team Rocket"
 	line "was broken up"
 	cont "three years ago."
@@ -202,8 +307,19 @@ TrainerProton2WhenTalkText:
 	line "fun watching us"
 	cont "stir up trouble!"
 	done
+endc
 
 GruntM2SeenText:
+if DEF(_LOCALE_FR)
+	text "Arrêter de voler"
+	line "les QUEUES de"
+	cont "RAMOLOSS?"
+
+	para "Et notre réputa-"
+	line "tion, tu y as"
+	cont "pensé?"
+	done
+else
 	text "Quit taking Slow-"
 	line "pokeTails?"
 
@@ -211,32 +327,75 @@ GruntM2SeenText:
 	line "Team Rocket's rep"
 	cont "would be ruined!"
 	done
+endc
 
 GruntM2BeatenText:
+if DEF(_LOCALE_FR)
+	text "Heu..."
+	line "Trop fort..."
+	done
+else
 	text "Just…"
 	line "Too strong…"
 	done
+endc
 
 GruntF1SeenText:
+if DEF(_LOCALE_FR)
+	text "Arrêter de voler"
+	line "les QUEUES?"
+
+	para "C'est ça, oui..."
+	line "T'as raison..."
+	done
+else
 	text "Stop taking Tails?"
 
 	para "Yeah, just try to"
 	line "defeat all of us!"
 	done
+endc
 
 GruntF1BeatenText:
+if DEF(_LOCALE_FR)
+	text "Sale môme!"
+	done
+else
 	text "You rotten brat!"
 	done
+endc
 
 SlowpokeWellB1FSlowpokeWithMailText:
+if DEF(_LOCALE_FR)
+	text "Un RAMOLOSS sans"
+	line "QUEUE..."
+
+	para "Hein? Il a une"
+	line "LETTRE. On la lit?"
+	done
+else
 	text "A Slowpoke with"
 	line "its tail cut off…"
 
 	para "Huh? It has Mail."
 	line "Read it?"
 	done
+endc
 
 SlowpokeWellB1FSlowpokeMailText:
+if DEF(_LOCALE_FR)
+	text "<PLAYER> lit la"
+	line "LETTRE."
+
+	para "Sois sage et occu-"
+	line "pe-toi bien de la"
+
+	para "maison avec pépé"
+	line "et RAMOLOSS."
+
+	para "Bisous. Papa."
+	done
+else
 	text "<PLAYER> read the"
 	line "Mail."
 
@@ -248,8 +407,15 @@ SlowpokeWellB1FSlowpokeMailText:
 
 	para "Love, Dad"
 	done
+endc
 
 SlowpokeWellB1FTaillessSlowpokeText:
+if DEF(_LOCALE_FR)
+	text "Un RAMOLOSS à la"
+	line "queue coupée..."
+	done
+else
 	text "A Slowpoke with"
 	line "its tail cut off…"
 	done
+endc

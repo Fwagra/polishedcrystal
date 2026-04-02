@@ -112,9 +112,18 @@ MapRuinsofAlphHoOhChamberSignpost4Script:
 	endtext
 
 RuinsOfAlphHoOhChamberDescriptionText:
+if DEF(_LOCALE_FR)
+	text "Un #mon qui"
+	line "volait avec grâce"
+
+	para "en battant ses"
+	line "ailes irisées."
+	done
+else
 	text "A #mon that"
 	line "flew gracefully on"
 
 	para "rainbow-colored"
 	line "wings."
 	done
+endc

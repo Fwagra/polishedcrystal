@@ -37,14 +37,38 @@ GourmetManiacScript:
 	special PlaceMoneyTopRight
 	jumpthisopenedtext
 
+if DEF(_LOCALE_FR)
+	text "Merci! Thank you!"
+
+	para "Avec ça, je peux"
+	line "créer quelque"
+	cont "chose de superbe."
+	done
+else
 	text "Merci! Thank you!"
 
 	para "With this, I can"
 	line "create something"
 	cont "superb."
 	done
+endc
 
 .GreetingText:
+if DEF(_LOCALE_FR)
+	text "Salut! Je suis"
+	line "un pâtissier"
+	cont "gourmet!"
+
+	para "Je fais des plats"
+	line "merveilleux avec"
+	cont "les meilleurs"
+	cont "ingrédients!"
+
+	para "Tu as des"
+	line "ingrédients"
+	cont "à me vendre?"
+	done
+else
 	text "Hi there! I am"
 	line "a gourmet Baker!"
 
@@ -57,8 +81,18 @@ GourmetManiacScript:
 	line "ingredients to"
 	cont "sell me?"
 	done
+endc
 
 .OfferText:
+if DEF(_LOCALE_FR)
+	text "Oh, ça sent bon!"
+
+	para "Tu acceptes"
+	line "¥"
+	text_decimal hMoneyTemp, 3, 7
+	text "?"
+	done
+else
 	text "Oh, it smells so"
 	line "good!"
 
@@ -67,14 +101,28 @@ GourmetManiacScript:
 	text_decimal hMoneyTemp, 3, 7
 	text " for it?"
 	done
+endc
 
 .WrongItemText:
+if DEF(_LOCALE_FR)
+	text "Hmmm..."
+	line "C'est pas vraiment"
+	cont "ce que je cherche."
+	done
+else
 	text "Hmmm… This is not"
 	line "quite what I'm"
 	cont "looking for."
 	done
+endc
 
 .NoItemText:
+if DEF(_LOCALE_FR)
+	text "Oh..."
+	line "C'est pas grave."
+	done
+else
 	text "Aww… Well,"
 	line "that's OK."
 	done
+endc

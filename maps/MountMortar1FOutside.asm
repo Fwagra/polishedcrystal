@@ -28,31 +28,65 @@ MountMortar1FOutside_MapScriptHeader:
 GenericTrainerBattleGirlSubaru:
 	generictrainer BATTLE_GIRL, SUBARU, EVENT_BEAT_BATTLE_GIRL_SUBARU, BattleGirlSubaruSeenText, BattleGirlSubaruBeatenText
 
+if DEF(_LOCALE_FR)
+	text "Je grimpe encore,"
+	line "et je ne suis"
+	cont "toujours pas"
+	cont "la plus forte..."
+	done
+else
 	text "All this climbing"
 	line "and I'm still not"
 	cont "the toughest…"
 	done
+endc
 
 GenericTrainerBattleGirlDiane:
 	generictrainer BATTLE_GIRL, DIANE, EVENT_BEAT_BATTLE_GIRL_DIANE, BattleGirlDianeSeenText, BattleGirlDianeBeatenText
 
+if DEF(_LOCALE_FR)
+	text "Je m'incline."
+	done
+else
 	text "I bow to you."
 	done
+endc
 
 BattleGirlSubaruSeenText:
+if DEF(_LOCALE_FR)
 	text "Kiyaah!"
 	done
+else
+	text "Kiyaah!"
+	done
+endc
 
 BattleGirlSubaruBeatenText:
+if DEF(_LOCALE_FR)
 	text "Ooof!"
 	done
+else
+	text "Ooof!"
+	done
+endc
 
 BattleGirlDianeSeenText:
+if DEF(_LOCALE_FR)
 	text "Hii-yaah!"
 	done
+else
+	text "Hii-yaah!"
+	done
+endc
 
 BattleGirlDianeBeatenText:
+if DEF(_LOCALE_FR)
+	text "Cette manche est"
+	line "pour toi."
+	done
+else
 	text "This round goes"
 	line "to you."
 	done
+endc
 

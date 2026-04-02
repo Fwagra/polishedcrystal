@@ -41,14 +41,38 @@ GoldenrodBikeShopClerkScript:
 	jumpthisopenedtext
 
 GoldenrodBikeShopClerkFirstRateBikesText:
+if DEF(_LOCALE_FR)
+	text "Mes BICYCLETTES"
+	line "sont trop bien!"
+
+	para "Tu peux en faire"
+	line "partout."
+	done
+else
 	text "My Bicycles are"
 	line "first-rate! You"
 
 	para "can ride them"
 	line "anywhere."
 	done
+endc
 
 GoldenrodBikeShopClerkIntroText:
+if DEF(_LOCALE_FR)
+	text "...(soupir)..."
+	line "J'ai déménagé ici"
+
+	para "mais je n'arrive"
+	line "pas à vendre mes"
+	cont "BICYCLETTES."
+	cont "Pourquoi?"
+
+	para "Pourrais-tu faire"
+	line "de la BICYCLETTE"
+	cont "et me faire de la"
+	cont "pub?"
+	done
+else
 	text "…sigh… I opened"
 	line "a branch here,"
 
@@ -60,8 +84,20 @@ GoldenrodBikeShopClerkIntroText:
 	line "Bicycle and adver-"
 	cont "tise for me?"
 	done
+endc
 
 GoldenrodBikeShopClerkAgreedText:
+if DEF(_LOCALE_FR)
+	text "Vraiment? Génial!"
+
+	para "Donne-moi ton nom"
+	line "et ton numéro de"
+
+	para "téléphone et je te"
+	line "prêterai une"
+	cont "BICYCLETTE."
+	done
+else
 	text "Really? Great!"
 
 	para "Give me your name"
@@ -70,21 +106,44 @@ GoldenrodBikeShopClerkAgreedText:
 	para "and I'll loan you"
 	line "a Bicycle."
 	done
+endc
 
 GoldenrodBikeShopClerkRefusedText:
+if DEF(_LOCALE_FR)
+	text "...(soupir)..."
+	line "Ah, que dire de"
+	cont "plus..."
+	done
+else
 	text "…sigh… Oh, for"
 	line "the kindness of"
 	cont "people…"
 	done
+endc
 
 GoldenrodBikeShopBicycleText:
+if DEF(_LOCALE_FR)
+	text "C'est une sacrée"
+	line "jolie BICYCLETTE!"
+	done
+else
 	text "It's a shiny new"
 	line "Bicycle!"
 	done
+endc
 
 GoldenrodBikeShopJustReleasedCompactBikeText:
+if DEF(_LOCALE_FR)
+	text "Tout chô tout bô!"
+
+	para "BICYCLETTES de"
+	line "poche de premier"
+	cont "choix!"
+	done
+else
 	text "Just released!"
 
 	para "First-rate compact"
 	line "Bicycles!"
 	done
+endc

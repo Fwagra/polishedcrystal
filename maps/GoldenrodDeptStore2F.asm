@@ -29,6 +29,17 @@ GoldenrodDeptStore2FClerk2Script:
 	pokemart MARTTYPE_STANDARD, MART_GOLDENROD_2F_2_EEVEE
 
 GoldenrodDeptStore2FYoungsterText:
+if DEF(_LOCALE_FR)
+	text "Le #MATOS"
+	line "peut enregistrer"
+	cont "jusqu'à dix"
+	cont "numéros."
+
+	para "C'est difficile de"
+	line "décider quel"
+	cont "numéro garder."
+	done
+else
 	text "#gear has no"
 	line "storage limit."
 
@@ -36,16 +47,38 @@ GoldenrodDeptStore2FYoungsterText:
 	line "many phone calls"
 	cont "can be annoying."
 	done
+endc
 
 GoldenrodDeptStore2FCooltrainerFText:
+if DEF(_LOCALE_FR)
+	text "J'ai eu mon ABRA"
+	line "au CASINO."
+
+	para "Maintenant, c'est"
+	line "mon meilleur ami."
+	done
+else
 	text "I got my Abra at"
 	line "the Game Corner."
 
 	para "Now it's my best"
 	line "partner."
 	done
+endc
 
 GoldenrodDeptStore2FGentlemanText:
+if DEF(_LOCALE_FR)
+	text "Ce CENTRE COMMER-"
+	line "CIAL montre que"
+
+	para "DOUBLONVILLE est"
+	line "une grande ville."
+
+	para "La marchandise est"
+	line "la meilleure de"
+	cont "la région."
+	done
+else
 	text "This Dept.Store"
 	line "makes me realize"
 
@@ -56,11 +89,21 @@ GoldenrodDeptStore2FGentlemanText:
 	line "is unmatched any-"
 	cont "where else."
 	done
+endc
 
 GoldenrodDeptStore2FDirectoryText:
+if DEF(_LOCALE_FR)
+	text "Votre compagnon de"
+	line "voyage"
+
+	para "1ER  BOUTIQUE"
+	line "     DRESSEUR"
+	done
+else
 	text "Your Travel"
 	line "Companion"
 
 	para "2F Trainer's"
 	line "   Market"
 	done
+endc

@@ -21,17 +21,35 @@ Route18Gate2FBinoculars2:
 	jumptext Route18Gate2FBinoculars2Text
 
 Route18Gate2FBinoculars1Text:
+if DEF(_LOCALE_FR)
+	text "Vous regardez"
+	line "dans les"
+	cont "jumelles."
+
+	para "Bourg Palette"
+	line "est a l'ouest!"
+else
 	text "Looked into the"
 	line "binoculars."
 
 	para "Pallet Town is in"
 	line "the west!"
+endc
 	done
 
 Route18Gate2FBinoculars2Text:
+if DEF(_LOCALE_FR)
+	text "Vous regardez"
+	line "dans les"
+	cont "jumelles."
+
+	para "C'est plein de"
+	line "nageurs!"
+else
 	text "Looked into the"
 	line "binoculars."
 
 	para "There are people"
 	line "swimming!"
+endc
 	done

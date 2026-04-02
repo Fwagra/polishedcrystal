@@ -31,6 +31,19 @@ Route27RestHouseGranny:
 	ifgreater FRIEND_BALL_HAPPINESS - 1, .Loyal
 	jumpthisopenedtext
 
+if DEF(_LOCALE_FR)
+	text "Si ton #mon"
+	line "ne te fait pas"
+	cont "plus"
+
+	para "confiance, ça"
+	line "risque d'être dur."
+
+	para "La confiance"
+	line "unit #mon"
+	cont "et dresseurs."
+	done
+else
 	text "If it doesn't come"
 	line "to trust you some"
 
@@ -41,6 +54,7 @@ Route27RestHouseGranny:
 	line "that binds #mon"
 	cont "and trainers."
 	done
+endc
 
 .Loyal:
 	writetext .QuestionText
@@ -59,14 +73,37 @@ Route27RestHouseGranny:
 	waitbutton
 	jumpthisopenedtext
 
+if DEF(_LOCALE_FR)
+	text "Tu n'as trouvé"
+	line "aucune FEUIL.ARG…"
+	done
+else
 	text "You've not found"
 	line "any Silver Leaves…"
 	done
+endc
 
 .TeachMove
 	takeitem SILVER_LEAF
 	jumpthisopenedtext
 
+if DEF(_LOCALE_FR)
+	text "DON D'ORGANE est"
+	line "une attaque qui"
+
+	para "échange ton talent"
+	line "avec celui"
+	cont "de l'ennemi."
+
+	para "C'est pour les"
+	line "dresseurs"
+	cont "confirmés."
+
+	para "Utilise-la si"
+	line "tu l'oses."
+	cont "Bonne chance!"
+	done
+else
 	text "Skill Swap is a"
 	line "move that swaps"
 
@@ -80,8 +117,23 @@ Route27RestHouseGranny:
 	para "Use it if you"
 	line "dare. Good luck!"
 	done
+endc
 
 .IntroText:
+if DEF(_LOCALE_FR)
+	text "Tu vas où avec"
+	line "tes #mon?"
+
+	para "A la LIGUE"
+	line "#mon?"
+
+	para "Tes #mon sont"
+	line "assez fidèles"
+	cont "pour gagner?"
+
+	para "Voyons voir..."
+	done
+else
 	text "Where are you off"
 	line "to with #mon?"
 
@@ -94,13 +146,37 @@ Route27RestHouseGranny:
 
 	para "Let me see…"
 	done
+endc
 
 .HeardIntroText:
+if DEF(_LOCALE_FR)
+	text "Montre-moi ton"
+	line "#mon..."
+	done
+else
 	text "Let me see your"
 	line "#mon…"
 	done
+endc
 
 .QuestionText:
+if DEF(_LOCALE_FR)
+	text "Ah! Ton #mon"
+	line "te fait vraiment"
+	cont "confiance."
+
+	para "Ca fait plaisir de"
+	line "voir un bon"
+	cont "dresseur."
+
+	para "Je peux lui"
+	line "apprendre ma"
+	cont "technique secrète,"
+
+	para "DON D'ORGANE,"
+	line "si tu veux."
+	done
+else
 	text "Ah! Your #mon"
 	line "trusts you very"
 	cont "much."
@@ -114,8 +190,15 @@ Route27RestHouseGranny:
 	para "Skill Swap, if"
 	line "you'd like."
 	done
+endc
 
 .RefusedText:
+if DEF(_LOCALE_FR)
+	text "Bonne chance pour"
+	line "la suite."
+	done
+else
 	text "Good luck on your"
 	line "journey."
 	done
+endc

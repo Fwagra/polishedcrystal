@@ -23,6 +23,22 @@ PokemonJournalKogaScript:
 
 	text "#mon Journal"
 
+if DEF(_LOCALE_FR)
+	para "Article spécial:"
+	line "Koga du Conseil 4!"
+
+	para "Koga aurait une"
+	line "bonne connaissance"
+
+	para "des médicaments."
+
+	para "Il concocte même"
+	line "des remèdes pour"
+
+	para "soigner ses"
+	line "#mon."
+	done
+else
 	para "Special Feature:"
 	line "Elite Four Koga!"
 
@@ -38,3 +54,4 @@ PokemonJournalKogaScript:
 	para "his #mon to"
 	line "health."
 	done
+endc

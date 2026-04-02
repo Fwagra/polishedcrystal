@@ -103,29 +103,68 @@ MomEventScript:
 	end
 
 PlayersHouse1FFridgeText:
+if DEF(_LOCALE_FR)
+	text "Voyons voir ce"
+	line "qui se trame"
+	cont "dans le frigo..."
+
+	para "De l'EAU FRAICHE"
+	line "et de la bonne"
+	cont "LIMONADE!"
+	done
+else
 	text "Let's see what's"
 	line "in the fridge…"
 
 	para "Fresh Water and"
 	line "tasty Lemonade!"
 	done
+endc
 
 PlayersHouse1FSinkText:
+if DEF(_LOCALE_FR)
+	text "L'évier est nickel"
+	line "de chez nickel."
+	cont "Maman est assez"
+	cont "maniaque."
+	done
+else
 	text "The sink is spot-"
 	line "less. Mom likes it"
 	cont "clean."
 	done
+endc
 
 PlayersHouse1FStoveText:
+if DEF(_LOCALE_FR)
+	text "La spécialité de"
+	line "Maman!"
+
+	para "Un bon BURGER"
+	line "style CRAMOIS'ILE!"
+	done
+else
 	text "Mom's specialty!"
 
 	para "Cinnabar Volcano"
 	line "Burger!"
 	done
+endc
 
 PlayersHouse1FTVScript:
 	jumpthistext
 
+if DEF(_LOCALE_FR)
+	text "Un film à la TV:"
+	line "On Se Calme Et On"
+
+	para "Boit Frais à"
+	line "Saint-Tropez..."
+
+	para "Ca a l'air trop"
+	line "fort!"
+	done
+else
 	text "There's a movie on"
 	line "TV: Stars dot the"
 
@@ -135,6 +174,7 @@ PlayersHouse1FTVScript:
 	para "I'd better get"
 	line "rolling too!"
 	done
+endc
 
 MomScript:
 	faceplayer
@@ -151,11 +191,20 @@ MomScript:
 	iftrue_jumpopenedtext MomErrandText
 	jumpthisopenedtext
 
+if DEF(_LOCALE_FR)
+	text "Le PROF.ORME"
+	line "t'attend."
+
+	para "Dépêche-toi, mon"
+	line "poussin!"
+	done
+else
 	text "Prof.Elm is wait-"
 	line "ing for you."
 
 	para "Hurry up, baby!"
 	done
+endc
 
 .FirstTimeBanking:
 	setevent EVENT_FIRST_TIME_BANKING_WITH_MOM
@@ -172,6 +221,27 @@ MomIntroText:
 if DEF(DEBUG)
 	text "Don't forget to use"
 	line "your debug radio!"
+	done
+else
+if DEF(_LOCALE_FR)
+	text "Ah, <PLAYER>...!"
+	line "Notre voisin, le"
+
+	para "PROF.ORME, te"
+	line "cherchait."
+
+	para "Il voulait que"
+	line "tu fasses quelque"
+	cont "chose pour lui."
+
+	para "Oh! J'allais"
+	line "oublier! Ton"
+
+	para "MATOS #mon est"
+	line "revenu de chez le"
+	cont "réparateur."
+
+	para "Tiens!"
 	done
 else
 	text "Oh, <PLAYER>!"
@@ -195,8 +265,25 @@ else
 	para "Here you go!"
 	done
 endc
+endc
 
 MomPokegearText:
+if DEF(_LOCALE_FR)
+	text "Le MATOS #mon,"
+	line "ou simplement"
+	cont "#matos..."
+
+	para "...est primordial"
+	line "si tu veux devenir"
+	cont "dresseur."
+
+	para "Oh! Le jour de la"
+	line "semaine n'est pas"
+	cont "paramétré."
+
+	para "N'oublie pas ça!"
+	done
+else
 	text "#mon Gear, or"
 	line "just #gear."
 
@@ -210,13 +297,34 @@ MomPokegearText:
 	para "You mustn't forget"
 	line "that!"
 	done
+endc
 
 MomDSTText:
+if DEF(_LOCALE_FR)
+	text "Changement d'heure"
+	line "à activer?"
+	done
+else
 	text "Is it Daylight"
 	line "Saving Time now?"
 	done
+endc
 
 MomRunningShoesText:
+if DEF(_LOCALE_FR)
+	text "Reviens à la"
+	line "maison pour le"
+
+	para "changement"
+	line "d'heure."
+
+	para "Par ailleurs,"
+	line "sais-tu comment"
+	cont "utiliser les"
+	cont "CHAUSSURES DE"
+	cont "SPORT?"
+	done
+else
 	text "Come home to"
 	line "adjust your clock"
 
@@ -229,8 +337,23 @@ MomRunningShoesText:
 	para "use your new"
 	line "Running Shoes?"
 	done
+endc
 
 MomInstructionsText:
+if DEF(_LOCALE_FR)
+	text "Je vais lire le"
+	line "manuel."
+
+	para "Maintiens B pour"
+	line "courir, dedans ou"
+	cont "dehors."
+
+	para "Ou active COURIR"
+	line "dans OPTIONS, et"
+	cont "maint. B pour"
+	cont "marcher."
+	done
+else
 	text "I'll read the"
 	line "instructions."
 
@@ -242,13 +365,34 @@ MomInstructionsText:
 	line "to always run, and"
 	cont "hold B to walk."
 	done
+endc
 
 MomOutroText:
+if DEF(_LOCALE_FR)
+	text "Pratique, hein?"
+	done
+else
 	text "Gee, aren't they"
 	line "convenient?"
 	done
+endc
 
 MomErrandText:
+if DEF(_LOCALE_FR)
+	text "Alors, quelle"
+	line "était la commis-"
+	cont "sion du PROF.ORME?"
+
+	para "..."
+
+	para "Ca a l'air"
+	line "difficile."
+
+	para "Mais c'est impor-"
+	line "tant que l'on te"
+	cont "fasse confiance."
+	done
+else
 	text "So, what was Prof."
 	line "Elm's errand?"
 
@@ -261,13 +405,21 @@ MomErrandText:
 	line "proud that people"
 	cont "rely on you."
 	done
+endc
 
 MomDoItText:
+if DEF(_LOCALE_FR)
+	text "<PLAYER>, courage!"
+
+	para "Je suis avec toi!"
+	done
+else
 	text "<PLAYER>, do it!"
 
 	para "I'm behind you all"
 	line "the way!"
 	done
+endc
 
 NeighborScript:
 	faceplayer
@@ -302,25 +454,66 @@ NeighborScript:
 	end
 
 .MornIntroText:
+if DEF(_LOCALE_FR)
+	text "Bonjour,"
+	line "<PLAYER>!"
+
+	para "Je suis de"
+	line "passage!"
+	done
+else
 	text "Good morning,"
 	line "<PLAYER>!"
 
 	para "I'm visiting!"
 	done
+endc
 
 .DayIntroText:
+if DEF(_LOCALE_FR)
+	text "Bonjour,"
+	line "<PLAYER>!"
+
+	para "Je suis de"
+	line "passage!"
+	done
+else
 	text "Hello, <PLAYER>!"
 	line "I'm visiting!"
 	done
+endc
 
 .NiteIntroText:
+if DEF(_LOCALE_FR)
+	text "Bonjour,"
+	line "<PLAYER>!"
+
+	para "Je suis de"
+	line "passage!"
+	done
+else
 	text "Good evening,"
 	line "<PLAYER>!"
 
 	para "I'm visiting!"
 	done
+endc
 
 .NeighborText:
+if DEF(_LOCALE_FR)
+	text "<PLAYER>, es-tu"
+	line "au courant?"
+
+	para "Ma fille veut"
+	line "devenir l'assis-"
+
+	para "tante du PROF."
+	line "ORME."
+
+	para "Elle adoooore les"
+	line "#mon!"
+	done
+else
 	text "<PLAYER>, have you"
 	line "heard?"
 
@@ -333,3 +526,4 @@ NeighborScript:
 	para "She really loves"
 	line "#mon!"
 	done
+endc

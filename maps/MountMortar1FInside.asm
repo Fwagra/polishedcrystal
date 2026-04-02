@@ -31,6 +31,24 @@ MountMortar1FInside_MapScriptHeader:
 GenericTrainerPokemaniacMiller:
 	generictrainer POKEMANIAC, MILLER, EVENT_BEAT_POKEMANIAC_MILLER, PokemaniacMillerSeenText, PokemaniacMillerBeatenText
 
+if DEF(_LOCALE_FR)
+	text "L'autre jour,"
+	line "un type du genre"
+
+	para "karaté kid voulait"
+	line "se battre..."
+	cont "Il était fort."
+
+	para "Y nous a tout"
+	line "cassé la tête."
+
+	para "Il a continué son"
+	line "chemin en disant"
+
+	para "qu'il s'entraî-"
+	line "nait."
+	done
+else
 	text "A while back, this"
 	line "karate dude wanted"
 
@@ -46,10 +64,26 @@ GenericTrainerPokemaniacMiller:
 	para "his training. I"
 	line "wonder how he is?"
 	done
+endc
 
 GenericTrainerSupernerdMarkus:
 	generictrainer SUPER_NERD, MARKUS, EVENT_BEAT_SUPER_NERD_MARKUS, SupernerdMarkusSeenText, SupernerdMarkusBeatenText
 
+if DEF(_LOCALE_FR)
+	text "Je suis venu ex-"
+	line "plorer le MONT"
+
+	para "CREUSET mais mon"
+	line "partenaire a dis-"
+	cont "paru..."
+
+	para "As-tu vu un dres-"
+	line "seur avec un"
+
+	para "HYPOCEAN qui lance"
+	line "CASCADE?"
+	done
+else
 	text "I came to explore"
 	line "Mt.Mortar, but I"
 
@@ -62,23 +96,47 @@ GenericTrainerSupernerdMarkus:
 	para "Seadra that knows"
 	line "Waterfall?"
 	done
+endc
 
 PokemaniacMillerSeenText:
+if DEF(_LOCALE_FR)
+	text "Pas question de"
+	line "perdre cette fois!"
+	done
+else
 	text "I'm not losing"
 	line "this time!"
 	done
+endc
 
 PokemaniacMillerBeatenText:
+if DEF(_LOCALE_FR)
+	text "Perdu...?"
+	done
+else
 	text "I lost to some"
 	line "kid…?"
 	done
+endc
 
 SupernerdMarkusSeenText:
+if DEF(_LOCALE_FR)
+	text "Hé! HUGH!"
+	done
+else
 	text "Hey! Hugh!"
 	done
+endc
 
 SupernerdMarkusBeatenText:
+if DEF(_LOCALE_FR)
+	text "Je pensais que"
+	line "c'était quelqu'un"
+	cont "d'autre..."
+	done
+else
 	text "I mistook you for"
 	line "someone else…"
 	done
+endc
 

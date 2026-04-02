@@ -341,6 +341,17 @@ TeamRocketBaseB2FTransmitterScript:
 	iftrue_jumptext .DeactivateTransmitterText
 	jumpthistext
 
+if DEF(_LOCALE_FR)
+	text "C'est l'émetteur"
+	line "qui envoie"
+
+	para "l'horrible signal"
+	line "radio."
+
+	para "Il est réglé au"
+	line "maximum."
+	done
+else
 	text "It's the radio"
 	line "transmitter that's"
 
@@ -350,14 +361,24 @@ TeamRocketBaseB2FTransmitterScript:
 	para "It's working at"
 	line "full capacity."
 	done
+endc
 
 .DeactivateTransmitterText:
+if DEF(_LOCALE_FR)
+	text "L'émetteur radio"
+	line "a enfin interrompu"
+
+	para "son signal maléfi-"
+	line "que."
+	done
+else
 	text "The radio trans-"
 	line "mitter has finally"
 
 	para "stopped its evil"
 	line "broadcast."
 	done
+endc
 
 RocketBaseLanceLeavesAfterHealMovement:
 	step_right
@@ -542,11 +563,39 @@ RocketBasePlayerLeavesElectrodesMovement3:
 	step_end
 
 RocketBaseExecutiveFHoldItText:
+if DEF(_LOCALE_FR)
+	text "Hop hop hop!"
+	line "On bouge plus!"
+	done
+else
 	text "Hold it right"
 	line "there!"
 	done
+endc
 
 RocketBaseBossFThrashText:
+if DEF(_LOCALE_FR)
+	text "On peut pas te"
+	line "laisser fouiner"
+	cont "par ici."
+
+	para "C'est contre la"
+	line "politique de la"
+	cont "TEAM ROCKET."
+
+	para "Même si t'es super"
+	line "méga balèze, tu ne"
+
+	para "pourras jamais"
+	line "gagner contre nous"
+	cont "deux en même"
+	cont "temps."
+
+	para "Désolé ma puce."
+	line "C'est l'heure de"
+	cont "prendre ta baffe."
+	done
+else
 	text "We can't have a"
 	line "brat like you on"
 	cont "the loose."
@@ -565,14 +614,39 @@ RocketBaseBossFThrashText:
 	line "get ready to be"
 	cont "thrashed."
 	done
+endc
 
 RocketBaseLanceShareFunText:
+if DEF(_LOCALE_FR)
+	text "Hé! Moi aussi"
+	line "je veux m'amuser!"
+	cont "T'es perso."
+	done
+else
 	text "Hey! Don't be so"
 	line "selfish. Spread"
 	cont "the fun around."
 	done
+endc
 
 RocketBaseBossDontMeddleText:
+if DEF(_LOCALE_FR)
+	text "Quoi? Tu avais un"
+	line "complice? Et ton"
+
+	para "sens de l'honneur?"
+	line "Il est où? Hein?"
+
+	para "Avec le remplaçant"
+	line "du boss GIOVANNI,"
+
+	para "je vais te montrer"
+	line "qu'il faut pas"
+
+	para "venir se frotter"
+	line "à la TEAM ROCKET!"
+	done
+else
 	text "What? You had an"
 	line "accomplice?"
 
@@ -588,8 +662,22 @@ RocketBaseBossDontMeddleText:
 	para "it is to meddle"
 	line "with Team Rocket!"
 	done
+endc
 
 RocketBaseBossWinText:
+if DEF(_LOCALE_FR)
+	text "Pfff. C'est vrai"
+	line "que t'es balèze."
+
+	para "Ca craint."
+
+	para "Si tu venais à la"
+	line "TEAM ROCKET, tu"
+
+	para "deviendrais vite"
+	line "CAID."
+	done
+else
 	text "Tch, you really"
 	line "are strong."
 
@@ -601,8 +689,37 @@ RocketBaseBossWinText:
 	para "you could become"
 	line "an Executive."
 	done
+endc
 
 RocketBaseBossRetreatText:
+if DEF(_LOCALE_FR)
+	text "...Cette cachette"
+	line "est fichue..."
+
+	para "Mais c'est pas"
+	line "grave. L'opération"
+	cont "radio est une"
+	cont "réussite totale."
+
+	para "On se fiche de"
+	line "cette cachette"
+	cont "maintenant."
+
+	para "On a d'autres"
+	line "plans."
+
+	para "Tu vas vite com-"
+	line "prendre la puis-"
+
+	para "sance de la TEAM"
+	line "ROCKET."
+
+	para "Amuse-toi tant"
+	line "qu'il est temps."
+
+	para "Hi hihihihi hi!"
+	done
+else
 	text "…This hideout is"
 	line "done for…"
 
@@ -629,8 +746,23 @@ RocketBaseBossRetreatText:
 
 	para "Fufufufu…"
 	done
+endc
 
 RocketBaseLancePostBattleText:
+if DEF(_LOCALE_FR)
+	text "PETER: Terminé!"
+	line "On a battu tous"
+
+	para "les gars de la"
+	line "ROCKET du coin."
+
+	para "Mais je m'inquiète"
+	line "à propos du jeune"
+
+	para "garçon que j'ai"
+	line "combattu..."
+	done
+else
 	text "Lance: That did"
 	line "it. We defeated"
 
@@ -643,8 +775,23 @@ RocketBaseLancePostBattleText:
 	para "guy I battled in"
 	line "the process…"
 	done
+endc
 
 RocketBaseLancePowerOffText:
+if DEF(_LOCALE_FR)
+	text "Pardon, <PLAYER>."
+	line "J'étais en train"
+
+	para "de t'admirer en"
+	line "silence."
+
+	para "Tout ce qu'il nous"
+	line "reste à faire,"
+
+	para "c'est d'arrêter le"
+	line "signal radio."
+	done
+else
 	text "Sorry, <PLAYER>."
 	line "I saw how well you"
 
@@ -657,8 +804,40 @@ RocketBaseLancePowerOffText:
 	para "turn off that odd"
 	line "radio signal."
 	done
+endc
 
 RockerBaseLanceElectrodeFaintText:
+if DEF(_LOCALE_FR)
+	text "Cette machine"
+	line "est la cause du"
+	cont "problème."
+
+	para "Je ne vois pas"
+	line "d'interrupteur..."
+
+	para "Il n'y a pas de"
+	line "choix: il faut"
+
+	para "mettre K.O. tous"
+	line "les ELECTRODE."
+
+	para "Cela devrait arrê-"
+	line "ter cette machine"
+
+	para "et du même coup"
+	line "le signal."
+
+	para "Ce n'est pas la"
+	line "faute des #mon,"
+
+	para "ça me met donc un"
+	line "peu mal à l'aise."
+
+	para "<PLAYER>, on"
+	line "fait chacun un"
+	cont "côté."
+	done
+else
 	text "It's this machine"
 	line "that's causing all"
 	cont "the problems."
@@ -687,13 +866,42 @@ RockerBaseLanceElectrodeFaintText:
 	para "<PLAYER>, let's"
 	line "split the job."
 	done
+endc
 
 RocketBaseLancesSideText:
+if DEF(_LOCALE_FR)
+	text "PETER: Je m'occupe"
+	line "de ce côté."
+	done
+else
 	text "Lance: Leave this"
 	line "side to me."
 	done
+endc
 
 RocketBaseLanceElectrodeDoneText:
+if DEF(_LOCALE_FR)
+	text "PETER: Cet étrange"
+	line "signal s'est enfin"
+	cont "arrêté."
+
+	para "Le LAC doit être"
+	line "normal à nouveau."
+
+	para "Tu es formidable!"
+	line "Je te remercie au"
+
+	para "nom de tous les"
+	line "#mon."
+
+	para "Au fait. Voilà"
+	line "pour toi."
+
+	para "Je l'ai trouvée"
+	line "ici mais moi j'en"
+	cont "ai pas besoin."
+	done
+else
 	text "Lance: That odd"
 	line "signal has finally"
 	cont "stopped."
@@ -714,16 +922,64 @@ RocketBaseLanceElectrodeDoneText:
 	line "but I don't have"
 	cont "any need for it."
 	done
+endc
 
 RocketBaseLanceWhirlpoolText:
+if DEF(_LOCALE_FR)
+	text "C'est SIPHON. Don-"
+	line "ne-le à un #-"
+
+	para "mon pour traverser"
+	line "les rapides."
+
+	para "Mais souviens-toi"
+	line "de ceci..."
+
+	para "Tu ne peux l'uti-"
+	line "liser sur la carte"
+
+	para "qu'en ayant le"
+	line "BADGE de l'ARENE"
+	cont "d'ACAJOU."
+	done
+else
 	text "That's Thief."
 	line "I trust you won't"
 
 	para "abuse it the way"
 	line "Team Rocket does."
 	done
+endc
 
 RocketBaseLanceMonMasterText:
+if DEF(_LOCALE_FR)
+	text "<PLAYER>..."
+
+	para "Devenir le meil-"
+	line "leur dresseur"
+
+	para "#mon prend du"
+	line "temps et est"
+	cont "très difficile..."
+
+	para "Vas-tu tenir le"
+	line "coup?"
+
+	para "..."
+
+	para "Je vois."
+	line "Tu as raison."
+
+	para "Abandonner mainte-"
+	line "nant serait stupi-"
+
+	para "de. Tu ne dois pas"
+	line "oublier ton rêve."
+
+	para "Je suis impatient"
+	line "de te revoir!"
+	done
+else
 	text "<PLAYER>…"
 
 	para "The journey to be-"
@@ -752,8 +1008,21 @@ RocketBaseLanceMonMasterText:
 	para "I look forward to"
 	line "seeing you again!"
 	done
+endc
 
 LanceHealsText1:
+if DEF(_LOCALE_FR)
+	text "PETER: Tu vas"
+	line "bien?"
+
+	para "Tes #mon sont"
+	line "très fatigués."
+
+	para "Tiens, soigne-les"
+	line "avec mon médica-"
+	cont "ment."
+	done
+else
 	text "Lance: Are you all"
 	line "right?"
 
@@ -764,14 +1033,34 @@ LanceHealsText1:
 	line "some of my medi-"
 	cont "cine."
 	done
+endc
 
 LanceHealsText2:
+if DEF(_LOCALE_FR)
+	text "PETER: <PLAYER>,"
+	line "ensemble pour"
+	cont "les #mon!"
+	done
+else
 	text "Lance: <PLAYER>,"
 	line "let's give it our"
 	cont "best for #mon."
 	done
+endc
 
 GruntM17SeenText:
+if DEF(_LOCALE_FR)
+	text "La porte ne"
+	line "s'ouvre pas?"
+
+	para "Normal, débiloss!"
+	line "Il faut un mot de"
+
+	para "passe connu seule-"
+	line "ment de la TEAM"
+	cont "ROCKET."
+	done
+else
 	text "The door won't"
 	line "open?"
 
@@ -781,40 +1070,90 @@ GruntM17SeenText:
 	para "password that only"
 	line "Team Rocket knows."
 	done
+endc
 
 GruntM17BeatenText:
+if DEF(_LOCALE_FR)
+	text "Quoi? Perdu?"
+	done
+else
 	text "What? I lost?"
 	done
+endc
 
 GruntM18SeenText:
+if DEF(_LOCALE_FR)
+	text "Désolé je suis."
+	line "Mais te briser"
+
+	para "je dois."
+	done
+else
 	text "Oh, a kid? I don't"
 	line "really like this,"
 
 	para "but eliminate you"
 	line "I must."
 	done
+endc
 
 GruntM18BeatenText:
+if DEF(_LOCALE_FR)
+	text "Perdu j'ai?"
+	done
+else
 	text "I knew I'd lose…"
 	done
+endc
 
 GruntM19SeenText:
+if DEF(_LOCALE_FR)
+	text "Espèce de sale"
+	line "peste!"
+	done
+else
 	text "You rotten little"
 	line "pest!"
 	done
+endc
 
 GruntM19BeatenText:
+if DEF(_LOCALE_FR)
+	text "Grrrr..."
+	done
+else
 	text "Grrrr…"
 	done
+endc
 
 RocketBaseDoorNoPasswordText:
+if DEF(_LOCALE_FR)
+	text "La porte est"
+	line "fermée..."
+
+	para "Il faut un mot"
+	line "de passe."
+	done
+else
 	text "The door's closed…"
 
 	para "It needs a pass-"
 	line "word to open."
 	done
+endc
 
 RocketBaseDoorKnowPasswordText:
+if DEF(_LOCALE_FR)
+	text "La porte est"
+	line "fermée..."
+
+	para "<PLAYER> tape"
+	line "le mot de passe."
+
+	para "La porte est"
+	line "ouverte!"
+	done
+else
 	text "The door's closed…"
 
 	para "<PLAYER> entered"
@@ -822,3 +1161,4 @@ RocketBaseDoorKnowPasswordText:
 
 	para "The door opened!"
 	done
+endc

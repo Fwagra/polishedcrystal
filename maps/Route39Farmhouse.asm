@@ -111,6 +111,26 @@ PokefanF_AcrobaticsFarmer:
 	jumpopenedtext FarmerFText_AcrobaticsSpeech
 
 FarmerMText_SickCow:
+if DEF(_LOCALE_FR)
+	text "Ma chtite ECREMEUH"
+	line "m'donne plus eud'"
+	cont "lait."
+
+	para "Et pourtant qu'il"
+	line "était bien bon"
+	cont "not'lait d'ici."
+
+	para "Et tout eul'monde"
+	line "y veut à boire."
+
+	para "Si j'en avais des"
+	line "BAIES à lui donner"
+
+	para "elle m'donnerait"
+	line "aussi du lait, par"
+	cont "le fait."
+	done
+else
 	text "My Miltank ain't"
 	line "givin' me milk"
 	cont "n'more."
@@ -127,8 +147,25 @@ FarmerMText_SickCow:
 	para "feed it lots o'"
 	line "Berries, I reckon."
 	done
+endc
 
 FarmerMText_BuyMilk:
+if DEF(_LOCALE_FR)
+	text "Ca te dit du bon"
+	line "LAIT MEUMEU?"
+
+	para "C'est ma fierté et"
+	line "ma joie, poussin."
+
+	para "Donnes-en à tes"
+	line "#mon pour en"
+	cont "gagner des PV!"
+
+	para "Pour juste 500¥"
+	line "je te l'offre."
+	cont "Pour sûr!"
+	done
+else
 	text "How'd you like my"
 	line "Moomoo Milk?"
 
@@ -141,33 +178,75 @@ FarmerMText_BuyMilk:
 	para "I'll give it to ya"
 	line "fer just ¥500."
 	done
+endc
 
 FarmerMText_GotMilk:
+if DEF(_LOCALE_FR)
+	text "Tiens, poussin!"
+	line "Bien à toi!"
+	done
+else
 	text "Here ya go!"
 	line "Drink up'n enjoy!"
 	done
+endc
 
 FarmerMText_NoMoney:
+if DEF(_LOCALE_FR)
+	text "Dommage, t'as pas"
+	line "de mitraille!"
+	done
+else
 	text "Sorry, there."
 	line "No cash, no sale!"
 	done
+endc
 
 FarmerMText_NoRoom:
+if DEF(_LOCALE_FR)
+	text "T'as pas de place,"
+	line "mon poussin."
+	done
+else
 	text "I reckon yer"
 	line "Bag's full."
 	done
+endc
 
 FarmerMText_NoSale:
+if DEF(_LOCALE_FR)
+	text "Il en veut pas?"
+	line "A plus tard."
+	done
+else
 	text "You don't want it?"
 	line "Come again, hear?"
 	done
+endc
 
 FarmerMText_Milking:
+if DEF(_LOCALE_FR)
+	text "Bon. J'ai à"
+	line "traire."
+	done
+else
 	text "I best go do my"
 	line "milkin'."
 	done
+endc
 
 FarmerFText_InTrouble:
+if DEF(_LOCALE_FR)
+	text "Notre lait est mê-"
+	line "me vendu à KANTO."
+
+	para "Si notre fidèle"
+	line "ECREMEUH ne donne"
+
+	para "plus de lait,"
+	line "c'est la faillite."
+	done
+else
 	text "Our milk even goes"
 	line "out to Kanto."
 
@@ -177,6 +256,7 @@ FarmerFText_InTrouble:
 	para "us any milk, we're"
 	line "in trouble."
 	done
+endc
 
 FarmerFText_HealedMiltank:
 	text "You fixed our"

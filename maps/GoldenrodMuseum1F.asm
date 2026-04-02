@@ -48,6 +48,20 @@ GoldenrodMuseum1FRocketScoutScript:
 	end
 
 GoldenrodMuseumReceptionistText:
+if DEF(_LOCALE_FR)
+	text "Bienvenue au"
+	line "Musée de"
+	cont "DOUBLONVILLE."
+
+	para "Pour l'ouverture,"
+	line "l'entrée est"
+	cont "gratuite."
+
+	para "Fais comme chez"
+	line "toi, et bon"
+	cont "visite!"
+	done
+else
 	text "Welcome to the"
 	line "Goldenrod City"
 	cont "Museum."
@@ -64,8 +78,19 @@ GoldenrodMuseumReceptionistText:
 	para "and we hope you"
 	line "enjoy your visit."
 	done
+endc
 
 GoldenrodMuseumOfficerText:
+if DEF(_LOCALE_FR)
+	text "Je te surveille,"
+	line "gamin!"
+
+	para "Haha! Je rigole!"
+
+	para "Je surveille tout"
+	line "le monde..."
+	done
+else
 	text "I'm keeping my eye"
 	line "on you kid!"
 
@@ -75,22 +100,50 @@ GoldenrodMuseumOfficerText:
 	para "I'm keeping an eye"
 	line "on everyone…"
 	done
+endc
 
 GoldenrodMuseum1FLodestoneSignpostText:
+if DEF(_LOCALE_FR)
+	text "Pierre aimantée de"
+	line "la construction"
+	cont "du TUNNEL MAGNET."
+	done
+else
 	text "Lodestone from the"
 	line "construction of"
 	cont "Magnet Tunnel."
 	done
+endc
 
 GoldenrodMuseum1FDrillText:
+if DEF(_LOCALE_FR)
+	text "Une grosse foreuse"
+	line "pour percer"
+
+	para "une roche super"
+	line "dense."
+	done
+else
 	text "It's a large drill"
 	line "used to tunnel"
 
 	para "through super"
 	line "dense rock."
 	done
+endc
 
 GoldenrodMuseum1FHikerText:
+if DEF(_LOCALE_FR)
+	text "On m'a dit qu'ils"
+	line "ont dû utiliser"
+
+	para "une foreuse comme"
+	line "celle-ci"
+
+	para "le tunnel du"
+	line "TRAIN MAGNET."
+	done
+else
 	text "I heard they had"
 	line "to use equipment"
 
@@ -100,27 +153,62 @@ GoldenrodMuseum1FHikerText:
 	para "tunnel for the"
 	line "Magnet Train."
 	done
+endc
 
 GoldenrodMuseum1FRadioDishText:
+if DEF(_LOCALE_FR)
+	text "Une parabole"
+	line "métallique"
+
+	para "pour transmettre"
+	line "des ondes radio."
+	done
+else
 	text "A metallic dish"
 	line "used for trans-"
 
 	para "mitting radio"
 	line "waves."
 	done
+endc
 
 GoldenrodMuseum1FHarborText:
+if DEF(_LOCALE_FR)
+	text "Un aquarium rempli"
+	line "de MAGICARPE!"
+	done
+else
 	text "An aquarium filled"
 	line "with Magikarp!"
 	done
+endc
 
 GoldenrodMuseum1FBigPearlText:
+if DEF(_LOCALE_FR)
+	text "Une énorme perle"
+	line "pêchée au Port de"
+	cont "DOUBLONVILLE."
+	done
+else
 	text "It's a huge pearl"
 	line "fished up from"
 	cont "Goldenrod Harbor."
 	done
+endc
 
 GoldenrodMuseum1FRocketScoutText1:
+if DEF(_LOCALE_FR)
+	text "Hmm..."
+	line "Ca se vendrait"
+	cont "très cher."
+
+	para "Mais comment je"
+	line "le sors d'ici"
+
+	para "sans me faire"
+	line "choper?"
+	done
+else
 	text "Hmm… This would"
 	line "fetch quite a"
 	cont "heavy price."
@@ -131,9 +219,17 @@ GoldenrodMuseum1FRocketScoutText1:
 	para "without getting"
 	line "caught?"
 	done
+endc
 
 GoldenrodMuseum1FRocketScoutText2:
+if DEF(_LOCALE_FR)
+	text "Fixer, c'est mal"
+	line "poli! Dégage!"
+	cont "Gamin!"
+	done
+else
 	text "Don't you know it's"
 	line "rude to stare?"
 	cont "Beat it kid!"
 	done
+endc

@@ -24,23 +24,46 @@ CliffCave_MapScriptHeader:
 GenericTrainerGruntM22:
 	generictrainer GRUNTM, 22, EVENT_BEAT_ROCKET_GRUNTM_22, GruntM22SeenText, GruntM22BeatenText
 
+if DEF(_LOCALE_FR)
+	text "Pas etonnant que"
+	line "tu sois arrive"
+	cont "jusqu'ici."
+else
 	text "No wonder you"
 	line "were able to"
 	cont "reach here."
+endc
 	done
 
 GruntM22SeenText:
+if DEF(_LOCALE_FR)
+	text "Hein! Tu as passe"
+	line "les gardes!"
+else
 	text "Hey! You got past"
 	line "the guards!"
+endc
 	done
 
 GruntM22BeatenText:
+if DEF(_LOCALE_FR)
+	text "Aie!"
+else
 	text "Aieee!"
+endc
 	done
 
 CliffCaveRocketText:
+if DEF(_LOCALE_FR)
+	text "Ne te promene pas"
+	line "pendant une op' de"
+
+	para "la Team Rocket!"
+	done
+else
 	text "Don't just wander"
 	line "around during a"
 	cont "Team Rocket"
 	cont "operation!"
+endc
 	done

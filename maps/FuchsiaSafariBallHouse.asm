@@ -26,9 +26,15 @@ FuchsiaSafariBallHouseOfficerScript:
 	ifequalfwd $2, .Buy10
 	jumpthisopenedtext ; cancel
 
+if DEF(_LOCALE_FR)
+	text "Qu'est-ce que"
+	line "j'en ferai?"
+	done
+else
 	text "What will I do"
 	line "with them all?"
 	done
+endc
 
 .Buy1:
 	checkmoney YOUR_MONEY, 2000
@@ -57,11 +63,35 @@ FuchsiaSafariBallHouseOfficerScript:
 .NotEnoughMoney:
 	jumpthisopenedtext
 
+if DEF(_LOCALE_FR)
+	text "Tu n'as pas assez"
+	line "d'argent."
+	done
+else
 	text "You don't have"
 	line "enough money."
 	done
+endc
 
 .IntroText:
+if DEF(_LOCALE_FR)
+	text "Je gérais le Parc"
+	line "Safari."
+
+	para "Maintenant qu'il"
+	line "est fermé, je dois"
+
+	para "gagner de l'argent"
+	line "autrement."
+
+	para "Tu veux acheter"
+	line "des # BALL Safari"
+	cont "qui restent?"
+
+	para "C'est un objet de"
+	line "collection!"
+	done
+else
 	text "I used to manage"
 	line "the Safari Game."
 
@@ -78,15 +108,27 @@ FuchsiaSafariBallHouseOfficerScript:
 	para "They're a collec-"
 	line "tor's item!"
 	done
+endc
 
 .GoodbyeText:
+if DEF(_LOCALE_FR)
+	text "Merci, l'ami!"
+	done
+else
 	text "Thanks, pal!"
 	done
+endc
 
 .BagFullText:
+if DEF(_LOCALE_FR)
+	text "Tu peux pas les"
+	line "porter!"
+	done
+else
 	text "You can't carry"
 	line "them!"
 	done
+endc
 
 .MenuDataHeader:
 	db MENU_BACKUP_TILES

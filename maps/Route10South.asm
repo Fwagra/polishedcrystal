@@ -39,47 +39,101 @@ GenericTrainerPokefanmRobert:
 GenericTrainerHexManiacAmy:
 	generictrainer HEX_MANIAC, AMY, EVENT_BEAT_HEX_MANIAC_AMY, HexManiacAmySeenText, HexManiacAmyBeatenText
 
+if DEF(_LOCALE_FR)
+	text "LAVANVILLE..."
+
+	para "Là où dorment les"
+	line "esprits des"
+	cont "#MON..."
+	done
+else
 	text "A Hex Maniac is"
 	line "at peace among"
 	cont "the spirits…"
 	done
+endc
 
 HikerJimSeenText:
+if DEF(_LOCALE_FR)
 	text "Hahahah!"
 	done
+else
+	text "Hahahah!"
+	done
+endc
 
 HikerJimBeatenText:
+if DEF(_LOCALE_FR)
+	text "Hahaha-atchaa!"
+	done
+else
 	text "Hahaha-hachoo!"
 	done
+endc
 
 PokefanmRobertSeenText:
+if DEF(_LOCALE_FR)
+	text "T'aimes les #-"
+	line "MON? Et ben..."
+
+	para "Moi aussi!"
+	done
+else
 	text "You like #mon,"
 	line "don't you?"
 
 	para "Me too!"
 	done
+endc
 
 PokefanmRobertBeatenText:
+if DEF(_LOCALE_FR)
+	text "J'aime pas perdre."
+	line "Mais pas du tout."
+	done
+else
 	text "I'd have to say"
 	line "that's my loss."
 	done
+endc
 
 HexManiacAmySeenText:
+if DEF(_LOCALE_FR)
+	text "Ta technique de"
+	line "combat est"
+	cont "admirable!"
+	done
+else
 	text "Lavender Town…"
 
 	para "Where the spirits"
 	line "of #mon sleep…"
 	done
+endc
 
 HexManiacAmyBeatenText:
+if DEF(_LOCALE_FR)
+	text "Tes #MON débordent"
+	line "de vitalité..."
+	done
+else
 	text "Your #mon are"
 	line "overflowing with"
 	cont "vitality…"
 	done
+endc
 
 Route10SignText:
+if DEF(_LOCALE_FR)
+	text "ROUTE 10"
+
+	para "AZURIA -"
+	line "LAVANVILLE"
+	done
+else
 	text "Route 10"
 
 	para "Cerulean City -"
 	line "Lavender Town"
 	done
+endc

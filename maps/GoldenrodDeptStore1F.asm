@@ -21,11 +21,31 @@ GoldenrodDeptStore1F_MapScriptHeader:
 	object_event 11,  5, SPRITE_GENTLEMAN, SPRITEMOVEDATA_WANDER, 1, 1, -1, 0, OBJECTTYPE_COMMAND, jumptextfaceplayer, GoldenrodDeptStore1FGentlemanText, -1
 
 GoldenrodDeptStore1FReceptionistText:
+if DEF(_LOCALE_FR)
+	text "Bienvenue au"
+	line "CENTRE COMMERCIAL"
+	cont "de DOUBLONVILLE."
+	done
+else
 	text "Welcome to Golden-"
 	line "rod Dept.Store."
 	done
+endc
 
 GoldenrodDeptStore1FGentlemanText:
+if DEF(_LOCALE_FR)
+	text "Le CENTRE COMMER-"
+	line "CIAL a un tas de"
+	cont "bons produits."
+
+	para "Mais certains"
+	line "objets ne sont"
+
+	para "disponibles qu'en"
+	line "prix à gagner au"
+	cont "CASINO."
+	done
+else
 	text "The Dept.Store"
 	line "has a decent se-"
 	cont "lection."
@@ -36,13 +56,31 @@ GoldenrodDeptStore1FGentlemanText:
 	para "as Game Corner"
 	line "prizes."
 	done
+endc
 
 GoldenrodDeptStore1FPokefanFText:
+if DEF(_LOCALE_FR)
+	text "Je suis très"
+	line "impatiente de"
+	cont "faire les courses!"
+	done
+else
 	text "I'm raring to shop"
 	line "again today!"
 	done
+endc
 
 GoldenrodDeptStore1FBugCatcherText:
+if DEF(_LOCALE_FR)
+	text "Maman est trop"
+	line "forte quand il"
+	cont "s'agit de bizness."
+
+	para "Elle achète tou-"
+	line "jours des trucs"
+	cont "pas chers."
+	done
+else
 	text "Mom's good at"
 	line "bargain hunting."
 
@@ -50,8 +88,29 @@ GoldenrodDeptStore1FBugCatcherText:
 	line "stuff at lower"
 	cont "prices."
 	done
+endc
 
 GoldenrodDeptStore1FDirectoryText:
+if DEF(_LOCALE_FR)
+	text "RDC  ACCUEIL"
+
+	para "1ER  BOUTIQUE"
+	line "     DRESSEUR"
+
+	para "2EME COLLECTION"
+	line "     DE COMBAT"
+
+	para "3EME PHARMACIE"
+
+	para "4EME Y'A BON LES"
+	line "     CT"
+
+	para "5EME COIN"
+	line "     TRANQUILLE"
+
+	para "TOIT PANORAMA"
+	done
+else
 	text "1F Service Counter"
 
 	para "2F Trainer's"
@@ -68,3 +127,4 @@ GoldenrodDeptStore1FDirectoryText:
 
 	para "Rooftop Lookout"
 	done
+endc

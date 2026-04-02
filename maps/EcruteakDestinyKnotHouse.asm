@@ -36,6 +36,17 @@ EcruteakDestinyKnotHouseCooltrainerFScript:
 	jumpthisopenedtext
 
 .Text4:
+if DEF(_LOCALE_FR)
+	text "Le fil rouge du"
+	line "destin te lie aux"
+
+	para "#mon"
+	line "légendaires…"
+
+	para "Tu serais pas"
+	line "l'Elu?"
+	done
+else
 	text "The red string of"
 	line "fate ties you to"
 
@@ -45,8 +56,21 @@ EcruteakDestinyKnotHouseCooltrainerFScript:
 	para "Are you some kind"
 	line "of Chosen One?"
 	done
+endc
 
 .Text1:
+if DEF(_LOCALE_FR)
+	text "Deux oiseaux puis-"
+	line "sants de Johto,"
+
+	para "chacun gardant un"
+	line "trio de #mon"
+	cont "légendaires."
+
+	para "Des légendes dans"
+	line "la légende…"
+	done
+else
 	text "Two mighty bird"
 	line "#mon of Johto,"
 
@@ -57,8 +81,18 @@ EcruteakDestinyKnotHouseCooltrainerFScript:
 	para "Legends within"
 	line "legends…"
 	done
+endc
 
 .Text2:
+if DEF(_LOCALE_FR)
+	text "Et si un dresseur"
+	line "les capturait"
+	cont "tous?"
+
+	para "Quel destin impro-"
+	line "bable!"
+	done
+else
 	text "What if a trainer"
 	line "were to catch all"
 	cont "of them?"
@@ -66,8 +100,24 @@ EcruteakDestinyKnotHouseCooltrainerFScript:
 	para "What an unlikely"
 	line "destiny!"
 	done
+endc
 
 .Text3:
+if DEF(_LOCALE_FR)
+	text "Quoi? Tu les as"
+	line "vus et"
+	cont "capturés?!"
+
+	para "Montre ton"
+	line "#dex…"
+	line "Waouh!"
+
+	para "C'était ton"
+	line "destin."
+
+	para "Tiens, prends ça."
+	done
+else
 	text "What? You've seen"
 	line "them? And you even"
 	cont "caught them?!"
@@ -81,3 +131,4 @@ EcruteakDestinyKnotHouseCooltrainerFScript:
 	para "Here, you should"
 	line "have this."
 	done
+endc

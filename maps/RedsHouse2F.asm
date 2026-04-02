@@ -40,15 +40,31 @@ PokemonJournalProfOakScript:
 	done
 
 RedsHouse2FPCText:
+if DEF(_LOCALE_FR)
+	text "On voit qu'il n'a"
+	line "pas été utilisé"
+	cont "depuis un bail..."
+	done
+else
 	text "It looks like it"
 	line "hasn't been used"
 	cont "in a long time…"
 	done
+endc
 
 RedsHouse2FSNESText:
+if DEF(_LOCALE_FR)
+	text "<PLAYER> joue"
+	line "à la N64."
+
+	para "Bon. On y va"
+	line "maintenant?"
+	done
+else
 	text "<PLAYER> played the"
 	line "SNES."
 
 	para "Better get going--"
 	line "no time to lose!"
 	done
+endc

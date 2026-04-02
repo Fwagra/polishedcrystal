@@ -350,18 +350,41 @@ CinnabarLabCelebiFloatsMovementData:
 	step_end
 
 CinnabarLabRoom1SignText:
+if DEF(_LOCALE_FR)
+	text "Salle de clonage"
+	done
+else
 	text "Cloning Room"
 	done
+endc
 
 CinnabarLabRoom2SignText:
+if DEF(_LOCALE_FR)
+	text "Salle cybernétique"
+	done
+else
 	text "Cybernetics Room"
 	done
+endc
 
 CinnabarLabRoom3SignText:
+if DEF(_LOCALE_FR)
+	text "Salle de stockage"
+	done
+else
 	text "Storage Room"
 	done
+endc
 
 CinnabarLabRoom4SignText:
+if DEF(_LOCALE_FR)
+	text "Projet Ambre"
+	line "Salle de test"
+
+	para "ACCES INTERDIT"
+	line "SANS NIVEAU 5"
+	done
+else
 	text "Project Amber"
 	line "Testing Room"
 
@@ -369,12 +392,26 @@ CinnabarLabRoom4SignText:
 	line "ENTRY WITHOUT"
 	cont "LEVEL 5 CLEARANCE"
 	done
+endc
 
 CinnabarLabLockedDoorText:
+if DEF(_LOCALE_FR)
+	text "C'est fermé..."
+	done
+else
 	text "It's locked…"
 	done
+endc
 
 CinnabarLabContinueTestingText:
+if DEF(_LOCALE_FR)
+	text "Continue les"
+	line "tests. Ta"
+
+	para "création marche"
+	line "bien, Dr.Fu--"
+	done
+else
 	text "Continue the"
 	line "tests. Your"
 
@@ -382,8 +419,28 @@ CinnabarLabContinueTestingText:
 	line "formed very well"
 	cont "so far, Dr.Fu--"
 	done
+endc
 
 CinnabarLabGiovanniWhoAreYouText:
+if DEF(_LOCALE_FR)
+	text "Qui es-tu?!"
+	line "Tu n'es pas de la"
+	cont "TEAM ROCKET."
+
+	para "Un espion de la"
+	line "police?"
+
+	para "...Bien. Tu veux"
+	line "savoir ce qu'on"
+	cont "fait ici?"
+
+	para "Je vais te le"
+	line "montrer."
+
+	para "Le #mon le plus"
+	line "puissant..."
+	done
+else
 	text "Who are you?!"
 	line "You aren't part"
 	cont "of Team Rocket."
@@ -399,17 +456,43 @@ CinnabarLabGiovanniWhoAreYouText:
 	para "The world's most"
 	line "powerful #mon…"
 	done
+endc
 
 CinnabarLabGiovanniAttackText:
+if DEF(_LOCALE_FR)
+	text "GIOVANNI: Attaque!"
+	done
+else
 	text "Giovanni: Attack!"
 	done
+endc
 
 CinnabarLabGiovanniBeatenText:
+if DEF(_LOCALE_FR)
+	text "GIOVANNI: Quoi?!"
+	line "Impossible!"
+	done
+else
 	text "Giovanni: What?!"
 	line "Impossible!"
 	done
+endc
 
 CinnabarLabGiovanniAfterText:
+if DEF(_LOCALE_FR)
+	text "GIOVANNI: Comment"
+	line "un gamin comme toi"
+
+	para "a pu battre le"
+	line "#mon parfait?"
+
+	para "Je l'ai créé pour"
+	line "me servir!"
+
+	para "Il ne devrait pas"
+	line "être si nul!"
+	done
+else
 	text "Giovanni: How was"
 	line "a kid like you"
 
@@ -422,16 +505,32 @@ CinnabarLabGiovanniAfterText:
 	para "It shouldn't be"
 	line "this useless!"
 	done
+endc
 
 CinnabarLabMewtwoText:
+if DEF(_LOCALE_FR)
 	text "???: Myuu!"
 	done
+else
+	text "???: Myuu!"
+	done
+endc
 
 CinnabarLabGiovanniStopText:
+if DEF(_LOCALE_FR)
+	text "GIOVANNI: Stop!"
+	done
+else
 	text "Giovanni: Stop"
 	line "this now!"
 	done
+endc
 
 CinnabarLabCelebiText:
+if DEF(_LOCALE_FR)
+	text "CELEBI: Biii!"
+	done
+else
 	text "Celebi: Biii!"
 	done
+endc

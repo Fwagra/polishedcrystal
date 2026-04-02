@@ -31,14 +31,30 @@ OlivineLighthouse1FSailorScript:
 	jumpthisopenedtext
 
 .Text2:
+if DEF(_LOCALE_FR)
+	text "Les marins sont"
+	line "toujours partants"
+	cont "pour la baston!"
+	done
+else
 	text "The trainers here"
 	line "are all keen to"
 	cont "battle."
 
 	para "Be prepared!"
 	done
+endc
 
 .Text1:
+if DEF(_LOCALE_FR)
+	text "Les gens s'entraî-"
+	line "nent au PHARE."
+
+	para "Y monter est dur à"
+	line "cause de tous les"
+	cont "dresseurs."
+	done
+else
 	text "People are train-"
 	line "ing hard at this"
 	cont "Lighthouse."
@@ -46,8 +62,22 @@ OlivineLighthouse1FSailorScript:
 	para "You should take"
 	line "this."
 	done
+endc
 
 OlivineLighthouse1FPokefanFText:
+if DEF(_LOCALE_FR)
+	text "Il y a longtemps,"
+	line "des #MON illu-"
+
+	para "minaient les mers"
+	line "autour d'OLIVILLE."
+
+	para "Le PHARE a été"
+	line "construit en"
+	cont "hommage à ces"
+	cont "#MON."
+	done
+else
 	text "In the past, #-"
 	line "mon used to light"
 
@@ -58,3 +88,4 @@ OlivineLighthouse1FPokefanFText:
 	line "made in honor of"
 	cont "those #mon."
 	done
+endc

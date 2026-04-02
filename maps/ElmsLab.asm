@@ -895,6 +895,45 @@ AfterChikoritaMovement:
 	step_end
 
 ElmText_Intro:
+if DEF(_LOCALE_FR)
+	text "ORME: <PLAYER>!"
+	line "Te voilà!"
+
+if !DEF(DEBUG)
+	para "Salut, Lyra."
+endc
+
+	para "J'ai un service à"
+	line "te demander."
+
+	para "Je fais de nouvel-"
+	line "les recherches sur"
+
+	para "les #mon et il"
+	line "y a certains élé-"
+
+	para "ments qui me"
+	line "manquent."
+
+	para "Vois-tu..."
+
+	para "J'écris un article"
+	line "pour une grande"
+	cont "conférence."
+
+	para "Mais certains"
+	line "points restent"
+	cont "mystérieux."
+
+	para "Donc!"
+
+	para "J'aimerais que tu"
+	line "entraînes un de"
+
+	para "mes nouveaux"
+	line "#mon."
+	done
+else
 	text "Elm: <PLAYER>!"
 	line "There you are!"
 
@@ -928,20 +967,46 @@ if !DEF(DEBUG)
 	line "caught."
 endc
 	done
+endc
 
 ElmText_Accepted:
+if DEF(_LOCALE_FR)
+	text "Merci, <PLAYER>!"
+
+	para "Tu es chic!"
+	done
+else
 	text "Thanks, <PLAYER>!"
 
 	para "You're a great"
 	line "help!"
 	done
+endc
 
 ElmText_Refused:
+if DEF(_LOCALE_FR)
+	text "Mais..."
+	line "J'en ai besoin!"
+	done
+else
 	text "But… Please, I"
 	line "need your help!"
 	done
+endc
 
 ElmText_ResearchAmbitions:
+if DEF(_LOCALE_FR)
+	text "Mes recherches"
+	line "terminées, nous"
+
+	para "en saurons un peu"
+	line "plus sur le mystè-"
+	cont "re des #mon."
+
+	para "Et ça c'est pas"
+	line "rien!"
+	done
+else
 	text "When I announce my"
 	line "findings, I'm sure"
 
@@ -954,8 +1019,19 @@ ElmText_ResearchAmbitions:
 	para "You can count on"
 	line "it!"
 	done
+endc
 
 ElmText_GotAnEmail:
+if DEF(_LOCALE_FR)
+	text "Oh! J'ai reçu un"
+	line "e-mail!"
+
+	para "………………"
+	line "Hmm… Oui…"
+
+	para "OK…"
+	done
+else
 	text "Oh, hey! I got an"
 	line "e-mail!"
 
@@ -964,8 +1040,38 @@ ElmText_GotAnEmail:
 
 	para "OK…"
 	done
+endc
 
 ElmText_MissionFromMrPokemon:
+if DEF(_LOCALE_FR)
+	text "Ecoute voir."
+
+	para "J'ai un ami du nom"
+	line "de M.#mon."
+
+	para "Il découvre sans"
+	line "cesse de drôles"
+	cont "de trucs."
+
+	para "Il vient de m'en-"
+	line "voyer un e-mail"
+
+	para "disant qu'il a"
+	line "quelque chose à me"
+	cont "montrer."
+
+	para "C'est tentant mais"
+	line "j'ai vraiment trop"
+	cont "de travail..."
+
+	para "Attends!"
+
+	para "Je sais!"
+
+	para "<PLAYER>, peux-tu"
+	line "y aller pour moi?"
+	done
+else
 	text "Hey, listen."
 
 	para "I have an acquain-"
@@ -997,8 +1103,23 @@ ElmText_MissionFromMrPokemon:
 	para "<PLAYER>, can you"
 	line "go in our place?"
 	done
+endc
 
 ElmText_ChooseAPokemon:
+if DEF(_LOCALE_FR)
+	text "Je veux que tu"
+	line "entraînes l'un"
+
+	para "des #mon dans"
+	line "ces BALLS."
+
+	para "Il sera ton"
+	line "nouvel ami,"
+	cont "<PLAYER>!"
+
+	para "Allez! Choisis!"
+	done
+else
 	text "I want you to"
 	line "raise one of the"
 
@@ -1011,51 +1132,122 @@ ElmText_ChooseAPokemon:
 
 	para "Go on. Pick one!"
 	done
+endc
 
 ElmText_LetYourMonBattleIt:
+if DEF(_LOCALE_FR)
+	text "Si un #mon"
+	line "sauvage apparaît,"
+	cont "défie-le avec ton"
+	cont "#mon adoré!"
+	done
+else
 	text "If a wild #mon"
 	line "appears, let your"
 	cont "#mon battle it!"
 	done
+endc
 
 LabWhereGoingText:
+if DEF(_LOCALE_FR)
+	text "PROF.ORME: Hep!"
+	line "Où vas-tu?"
+	done
+else
 	text "Elm: Wait! Where"
 	line "are you going?"
 	done
+endc
 
 TakeCyndaquilText:
+if DEF(_LOCALE_FR)
+	text "PROF.ORME: Veux-tu"
+	line "HERICENDRE, le"
+	cont "#mon de feu?"
+	done
+else
 	text "Elm: You'll take"
 	line "Cyndaquil, the"
 	cont "fire #mon?"
 	done
+endc
 
 TakeTotodileText:
+if DEF(_LOCALE_FR)
+	text "PROF.ORME: Veux-tu"
+	line "KAIMINUS, le"
+	cont "#mon d'eau?"
+	done
+else
 	text "Elm: Do you want"
 	line "Totodile, the"
 	cont "water #mon?"
 	done
+endc
 
 TakeChikoritaText:
+if DEF(_LOCALE_FR)
+	text "PROF.ORME: Veux-tu"
+	line "GERMIGNON, le"
+	cont "#mon plante?"
+	done
+else
 	text "Elm: So, you like"
 	line "Chikorita, the"
 	cont "grass #mon?"
 	done
+endc
 
 DidntChooseStarterText:
+if DEF(_LOCALE_FR)
+	text "PROF.ORME: Fais le"
+	line "bon choix!"
+
+	para "Ton partenaire est"
+	line "très important."
+	done
+else
 	text "Elm: Think it over"
 	line "carefully."
 
 	para "Your partner is"
 	line "important."
 	done
+endc
 
 ChoseStarterText:
+if DEF(_LOCALE_FR)
+	text "PROF.ORME: C'est"
+	line "un très bon"
+	cont "#mon!"
+	done
+else
 	text "Elm: I think"
 	line "that's a great"
 	cont "#mon too!"
 	done
+endc
 
 ElmDirectionsText1:
+if DEF(_LOCALE_FR)
+	text "M.#mon vit"
+	line "après VILLE"
+
+	para "GRIOTTE, la"
+	line "ville voisine."
+
+	para "C'est tout droit."
+	line "Tu ne peux pas te"
+	cont "perdre."
+
+	para "Mais on ne sait"
+	line "jamais: prends mon"
+
+	para "No. de téléphone."
+	line "Appelle-moi s'il"
+	cont "arrive un truc!"
+	done
+else
 	text "Mr.#mon lives a"
 	line "little bit beyond"
 
@@ -1074,8 +1266,20 @@ ElmDirectionsText1:
 	para "number. Call me if"
 	line "anything comes up!"
 	done
+endc
 
 ElmDirectionsText2:
+if DEF(_LOCALE_FR)
+	text "Si ton #mon est"
+	line "blessé, soigne-le"
+
+	para "avec cette jolie"
+	line "machine."
+
+	para "Utilise-la quand"
+	line "tu veux."
+	done
+else
 	text "If your #mon is"
 	line "hurt, you should"
 
@@ -1085,18 +1289,43 @@ ElmDirectionsText2:
 	para "Feel free to use"
 	line "it anytime."
 	done
+endc
 
 ElmDirectionsText3:
+if DEF(_LOCALE_FR)
+	text "<PLAYER>, je"
+	line "compte sur toi!"
+	done
+else
 	text "<PLAYER>, I'm"
 	line "counting on you!"
 	done
+endc
 
 GotElmsNumberText:
+if DEF(_LOCALE_FR)
+	text "<PLAYER> reçoit le"
+	line "numéro de tél. du"
+	cont "PROF.ORME."
+	done
+else
 	text "<PLAYER> got Elm's"
 	line "phone number."
 	done
+endc
 
 ElmDescribesMrPokemonText:
+if DEF(_LOCALE_FR)
+	text "M.#mon fouille"
+	line "un peu partout et"
+	cont "trouve des bizar-"
+	cont "reries."
+
+	para "Mais la plupart du"
+	line "temps ça ne sert à"
+	cont "rien..."
+	done
+else
 	text "Mr.#mon goes"
 	line "everywhere and"
 	cont "finds rarities."
@@ -1105,24 +1334,54 @@ ElmDescribesMrPokemonText:
 	line "just rare and"
 	cont "not very useful…"
 	done
+endc
 
 ElmPokeBallText:
+if DEF(_LOCALE_FR)
+	text "Cela contient un"
+	line "#mon attrapé"
+	cont "par le PROF.ORME."
+	done
+else
 	text "It contains a"
 	line "#mon caught by"
 	cont "Prof.Elm."
 	done
+endc
 
 ElmsLabHealingMachineText1:
+if DEF(_LOCALE_FR)
+	text "Je me demande à"
+	line "quoi ça sert..."
+	done
+else
 	text "I wonder what this"
 	line "does?"
 	done
+endc
 
 ElmsLabHealingMachineText2:
+if DEF(_LOCALE_FR)
+	text "Voulez-vous soi-"
+	line "gner vos #mon?"
+	done
+else
 	text "Would you like to"
 	line "heal your #mon?"
 	done
+endc
 
 ElmAfterTheftText1:
+if DEF(_LOCALE_FR)
+	text "ORME: <PLAYER>,"
+	line "c'est affreux..."
+
+	para "Au fait, quelle"
+	line "est la grande"
+	cont "découverte de"
+	cont "M.#mon?"
+	done
+else
 	text "Elm: <PLAYER>, this"
 	line "is terrible…"
 
@@ -1130,29 +1389,86 @@ ElmAfterTheftText1:
 	line "Mr.#mon's big"
 	cont "discovery?"
 	done
+endc
 
 ElmAfterTheftText2:
+if DEF(_LOCALE_FR)
+	text "<PLAYER> confie"
+	line "l'OEUF MYSTERE au"
+	cont "PROF.ORME."
+	done
+else
 	text "<PLAYER> handed"
 	line "the Mystery Egg to"
 	cont "Prof.Elm."
 	done
+endc
 
 ElmAfterTheftText3:
+if DEF(_LOCALE_FR)
+	text "PROF.ORME: Ca?"
+	done
+else
 	text "Elm: This?"
 	done
+endc
 
 ElmAfterTheftText4:
+if DEF(_LOCALE_FR)
+	text "Mais... C'est un"
+	line "OEUF de #mon?"
+
+	para "Si c'est un vrai,"
+	line "c'est une grande"
+	cont "découverte!"
+	done
+else
 	text "But… Is it a"
 	line "#mon Egg?"
 
 	para "If it is, it is a"
 	line "great discovery!"
 	done
+endc
 
 ElmAfterTheftText5:
+if DEF(_LOCALE_FR)
+	text "ORME: Quoi?!?"
+else
 	text "Elm: What?!"
+endc
 
 if !DEF(DEBUG)
+if DEF(_LOCALE_FR)
+	para "Le PROF.CHEN t'a"
+	line "donné un #dex?"
+
+	para "<PLAYER>, c'est"
+	line "vrai? C-c'est"
+	cont "incroyable!"
+
+	para "Il a l'oeil pour"
+	line "trouver les bons"
+	cont "dresseurs pleins"
+	cont "d'avenir."
+
+	para "<PLAYER>..."
+	line "Tu dois avoir les"
+
+	para "épaules pour être"
+	line "MAITRE."
+
+	para "Tu as aussi l'air"
+	line "de bien t'entendre"
+	cont "avec les #mon."
+
+	para "Tu devrais te lan-"
+	line "cer à la conquête"
+	cont "des ARENES."
+
+	para "La plus proche est"
+	line "celle de MAUVILLE."
+else
 	para "Prof.Oak gave you"
 	line "a #dex?"
 
@@ -1183,9 +1499,22 @@ if !DEF(DEBUG)
 	line "would be the one"
 	cont "in Violet City."
 endc
+endc
 	done
 
 ElmAfterTheftText6:
+if DEF(_LOCALE_FR)
+	text "...<PLAYER>."
+	line "La route vers la"
+
+	para "victoire est"
+	line "longue."
+
+	para "Va parler à ta"
+	line "maman avant de"
+	cont "partir."
+	done
+else
 	text "…<PLAYER>. The"
 	line "road to the"
 
@@ -1196,6 +1525,7 @@ ElmAfterTheftText6:
 	line "make sure that you"
 	cont "talk to your mom."
 	done
+endc
 
 ElmAfterTheftText7:
 	text "And give me a call"
@@ -1212,12 +1542,22 @@ ElmAfterTheftText7:
 	done
 
 ElmStudyingEggText:
+if DEF(_LOCALE_FR)
+	text "PROF.ORME: N'aban-"
+	line "donne pas!"
+
+	para "Je t'appelle si"
+	line "j'ai du nouveau"
+	cont "sur cet OEUF."
+	done
+else
 	text "Elm: Don't give"
 	line "up! I'll call if"
 
 	para "I learn anything"
 	line "about that Egg!"
 	done
+endc
 
 ElmAideHasEggText:
 	text "Elm: <PLAYER>?"

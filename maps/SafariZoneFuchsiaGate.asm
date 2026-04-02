@@ -17,6 +17,21 @@ SafariZoneFuchsiaGate_MapScriptHeader:
 	object_event  0,  4, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, PAL_NPC_GREEN, OBJECTTYPE_COMMAND, jumptextfaceplayer, SafariZoneFuchsiaGateOfficerText, -1
 
 SafariZoneFuchsiaGateOfficerText:
+if DEF(_LOCALE_FR)
+	text "Salut!"
+
+	para "Le Garde est"
+	line "absent, donc pas"
+
+	para "de Safari pour"
+	line "l'instant."
+
+	para "Apporte tes"
+	line "propres Balls si"
+
+	para "tu veux attraper"
+	line "des #mon."
+else
 	text "Hi there!"
 
 	para "The Warden is"
@@ -31,4 +46,5 @@ SafariZoneFuchsiaGateOfficerText:
 	para "Balls if you want"
 	line "to catch any"
 	cont "#mon."
+endc
 	done

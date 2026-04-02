@@ -51,6 +51,15 @@ UnionCaveLapras:
 GenericTrainerCooltrainermNick:
 	generictrainer COOLTRAINERM, NICK, EVENT_BEAT_COOLTRAINERM_NICK, CooltrainermNickSeenText, CooltrainermNickBeatenText
 
+if DEF(_LOCALE_FR)
+	text "Tes #mon ont"
+	line "la super classe!"
+	cont "Et c'est bien."
+
+	para "Et tu vas encore"
+	line "t'améliorer!"
+	done
+else
 	text "Your #mon style"
 	line "is stunning and"
 	cont "colorful, I admit."
@@ -58,18 +67,36 @@ GenericTrainerCooltrainermNick:
 	para "You'll just keep"
 	line "getting better!"
 	done
+endc
 
 GenericTrainerCooltrainerfGwen:
 	generictrainer COOLTRAINERF, GWEN, EVENT_BEAT_COOLTRAINERF_GWEN, CooltrainerfGwenSeenText, CooltrainerfGwenBeatenText
 
+if DEF(_LOCALE_FR)
+	text "Je vais continuer"
+	line "à m'entraîner en-"
+	cont "core un peu."
+	done
+else
 	text "I'm going to train"
 	line "by myself until I"
 	cont "improve."
 	done
+endc
 
 GenericTrainerCooltrainerfEmma:
 	generictrainer COOLTRAINERF, EMMA, EVENT_BEAT_COOLTRAINERF_EMMA, CooltrainerfEmmaSeenText, CooltrainerfEmmaBeatenText
 
+if DEF(_LOCALE_FR)
+	text "Une fois par se-"
+	line "maine, un #mon"
+	cont "vient au bord de"
+	cont "l'eau."
+
+	para "Je veux le voir"
+	line "ce #mon!!!"
+	done
+else
 	text "Just once a week,"
 	line "a #mon comes to"
 	cont "the water's edge."
@@ -77,8 +104,21 @@ GenericTrainerCooltrainerfEmma:
 	para "I wanted to see"
 	line "that #mon…"
 	done
+endc
 
 CooltrainermNickSeenText:
+if DEF(_LOCALE_FR)
+	text "Il existe 2 types"
+	line "de personnes."
+
+	para "Ceux qui ont la"
+	line "classe, et ceux"
+	cont "qui l'ont pas."
+
+	para "Toi... T'as la"
+	line "classe?"
+	done
+else
 	text "There are two"
 	line "kinds of people."
 
@@ -89,23 +129,51 @@ CooltrainermNickSeenText:
 	para "What kind of"
 	line "person are you?"
 	done
+endc
 
 CooltrainermNickBeatenText:
+if DEF(_LOCALE_FR)
+	text "Purée..."
+	line "Quelle classe!"
+	done
+else
 	text "You've got"
 	line "dazzling style!"
 	done
+endc
 
 CooltrainerfGwenSeenText:
+if DEF(_LOCALE_FR)
+	text "Je m'entraîne."
+	line "Ca te tente?"
+	done
+else
 	text "I'm in training."
 	line "Care for a round?"
 	done
+endc
 
 CooltrainerfGwenBeatenText:
+if DEF(_LOCALE_FR)
+	text "Hmmm! T'es trop"
+	line "balèze pour moi."
+	done
+else
 	text "Aww, no! You're"
 	line "too good for me."
 	done
+endc
 
 CooltrainerfEmmaSeenText:
+if DEF(_LOCALE_FR)
+	text "J'irais n'importe"
+	line "où avec le #mon"
+	cont "de mes rêves."
+
+	para "C'est ça la beauté"
+	line "d'être dresseur."
+	done
+else
 	text "If the #mon I"
 	line "liked were there,"
 	cont "I'd go anywhere."
@@ -113,9 +181,16 @@ CooltrainerfEmmaSeenText:
 	para "That's what a real"
 	line "trainer does."
 	done
+endc
 
 CooltrainerfEmmaBeatenText:
+if DEF(_LOCALE_FR)
+	text "Vive l'amour!"
+	line "Vive les fleurs!"
+	done
+else
 	text "I'd rather pet my"
 	line "babies than this!"
 	done
+endc
 

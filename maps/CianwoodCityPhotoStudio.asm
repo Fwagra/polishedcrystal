@@ -50,14 +50,25 @@ CianwoodPhotoStudioFishingGuruScript:
 	waitbutton
 	jumpthisopenedtext
 
+if DEF(_LOCALE_FR)
+	text "Fini! Terminé!"
+	line "A bientôt!"
+	done
+else
 	text "Come again, OK?"
 	done
+endc
 
 .NoPicture:
 	jumpopenedtext PhotoStudioNoPictureText
 
 .EggPicture:
 	jumpopenedtext PhotoStudioEggPictureText
+
+if DEF(_LOCALE_FR)
+INCLUDE "locale/fr/maps/CianwoodCityPhotoStudio.asm"
+
+else
 
 PhotoStudioGreetingText:
 	text "I am Cameron"
@@ -118,3 +129,5 @@ PhotoStudioEggPictureText:
 	text "An Egg? My talent"
 	line "is worth more…"
 	done
+
+endc

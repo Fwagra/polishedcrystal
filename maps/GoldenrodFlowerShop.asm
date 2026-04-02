@@ -110,12 +110,33 @@ FlowerShopFloriaScript:
 	iftrue_jumptextfaceplayer DescribeMulchText
 	jumpthistextfaceplayer
 
+if DEF(_LOCALE_FR)
+	text "Alors c'était"
+	line "vraiment un"
+	cont "#mon!"
+	done
+else
 	text "So that jiggly"
 	line "tree really was a"
 	cont "#mon!"
 	done
+endc
 
 GoldenrodFlowerShopTeacherMySisterWentToSeeWigglyTreeRoute36Text:
+if DEF(_LOCALE_FR)
+	text "As-tu vu l'arbre"
+	line "qui gigote sur la"
+	cont "ROUTE 36?"
+
+	para "Ma petite soeur"
+	line "a absolument tenu"
+	cont "à aller le voir..."
+
+	para "Ca m'inquiète..."
+	line "N'est-ce pas"
+	cont "dangereux?"
+	done
+else
 	text "Have you seen that"
 	line "wiggly tree that's"
 
@@ -131,8 +152,22 @@ GoldenrodFlowerShopTeacherMySisterWentToSeeWigglyTreeRoute36Text:
 	para "I'm worried… Isn't"
 	line "it dangerous?"
 	done
+endc
 
 GoldenrodFlowerShopTeacherStopMySisterText:
+if DEF(_LOCALE_FR)
+	text "Ma petite soeur"
+	line "a absolument tenu"
+
+	para "à aller voir"
+	line "l'arbre qui"
+	cont "gigote..."
+
+	para "Ca m'inquiète..."
+	line "Tu peux l'empêcher"
+	cont "de se blesser?"
+	done
+else
 	text "My little sister"
 	line "got all excited"
 
@@ -145,8 +180,21 @@ GoldenrodFlowerShopTeacherStopMySisterText:
 	para "her from getting"
 	line "hurt by it?"
 	done
+endc
 
 GoldenrodFlowerShopTeacherAskWantToBorrowWaterBottleText:
+if DEF(_LOCALE_FR)
+	text "Tu veux aussi"
+	line "emprunter la"
+
+	para "bouteille?"
+	line "Je ne veux pas que"
+
+	para "tu fasses quelque"
+	line "chose de dangereux"
+	cont "avec ça."
+	done
+else
 	text "Do you want to"
 	line "borrow the water"
 
@@ -156,8 +204,23 @@ GoldenrodFlowerShopTeacherAskWantToBorrowWaterBottleText:
 	para "doing anything"
 	line "dangerous with it."
 	done
+endc
 
 GoldenrodFlowerShopTeacherBetterThanWhitneyText:
+if DEF(_LOCALE_FR)
+	text "Oh, tu es plus"
+	line "fort que BLANCHE."
+
+	para "Tu connais l'arbre"
+	line "qui gigote?"
+
+	para "Si tu l'arroses,"
+	line "il t'attaque."
+
+	para "Mais avec des"
+	line "BADGES, ça ira."
+	done
+else
 	text "Oh, you're better"
 	line "than Whitney."
 
@@ -172,8 +235,18 @@ GoldenrodFlowerShopTeacherBetterThanWhitneyText:
 	line "have some Badges,"
 	cont "you should be OK."
 	done
+endc
 
 GoldenrodFlowerShopTeacherHeresTheSquirtbottleText:
+if DEF(_LOCALE_FR)
+	text "Oh? Tu as battu"
+	line "BLANCHE..."
+
+	para "Pas de problème"
+	line "alors. Voilà la"
+	cont "CARAPUCE A O!"
+	done
+else
 	text "Oh, you're better"
 	line "than Whitney…"
 
@@ -181,13 +254,36 @@ GoldenrodFlowerShopTeacherHeresTheSquirtbottleText:
 	line "then. Here's my"
 	cont "water bottle!"
 	done
+endc
 
 GoldenrodFlowerShopTeacherDontDoAnythingDangerousText:
+if DEF(_LOCALE_FR)
+	text "Ne fais rien de"
+	line "dangereux!"
+	done
+else
 	text "Don't do anything"
 	line "too dangerous!"
 	done
+endc
 
 GoldenrodFlowerShopFloriaWonderIfSisWillLendWaterBottleText:
+if DEF(_LOCALE_FR)
+	text "Quand j'ai parlé"
+	line "de l'arbre qui"
+
+	para "gigote à ma"
+	line "soeur, elle a dit"
+	cont "que c'était dange-"
+	cont "reux."
+
+	para "Si je bats BLANCHE"
+	line "elle me prêtera"
+
+	para "sa bouteille!"
+	line "C'est sûr!"
+	done
+else
 	text "When I told my sis"
 	line "about the jiggly"
 
@@ -200,8 +296,22 @@ GoldenrodFlowerShopFloriaWonderIfSisWillLendWaterBottleText:
 	para "lend me her water"
 	line "bottle…"
 	done
+endc
 
 GoldenrodFlowerShopFloriaYouBeatWhitneyText:
+if DEF(_LOCALE_FR)
+	text "Tu as battu"
+	line "BLANCHE? Cool!"
+
+	para "Tu peux sûrement"
+	line "t'occuper de"
+	cont "l'arbre qui bouge."
+
+	para "Il te faut juste"
+	line "une bouteille"
+	cont "comme ma soeur."
+	done
+else
 	text "Wow, you beat"
 	line "Whitney? Cool!"
 
@@ -213,36 +323,82 @@ GoldenrodFlowerShopFloriaYouBeatWhitneyText:
 	line "water bottle like"
 	cont "my sis has."
 	done
+endc
 
 WoukdYouLikeMulchText:
+if DEF(_LOCALE_FR)
+	text "Tu veux du"
+	line "FERTILISANT?"
+
+	para "Ca fait pousser"
+	line "les BAIES plus"
+	cont "vite!"
+	done
+else
 	text "Care to buy some"
 	line "Mulch?"
 
 	para "It makes Berries"
 	line "grow faster!"
 	done
+endc
 
 BoughtMulchText:
+if DEF(_LOCALE_FR)
+	text "Merci!"
+	line "A bientôt!"
+	done
+else
 	text "Thank you!"
 	line "Please come again!"
 	done
+endc
 
 DontBuyMulchText:
+if DEF(_LOCALE_FR)
+	text "A bientôt!"
+	done
+else
 	text "Please come again!"
 	done
+endc
 
 NotEnoughMulchMoneyText:
+if DEF(_LOCALE_FR)
+	text "Euh... Désolée,"
+	line "mais tu n'as pas"
+	cont "assez d'argent."
+	done
+else
 	text "Well… Excuse me,"
 	line "but you're short"
 	cont "of money."
 	done
+endc
 
 NoRoomForMulchText:
+if DEF(_LOCALE_FR)
+	text "Oh non, ton SAC"
+	line "est plein!"
+	done
+else
 	text "Oh no, your Bag"
 	line "is full!"
 	done
+endc
 
 DescribeMulchText:
+if DEF(_LOCALE_FR)
+	text "Notre fertilisant"
+	line "mélange de la"
+
+	para "bonne terre et..."
+	line "Enfin tu vois."
+
+	para "C'est plein de"
+	line "nutriments!"
+	done
+else
 	text "Our Mulch is a"
 	line "mix of high-qual-"
 
@@ -252,8 +408,18 @@ DescribeMulchText:
 	para "know. It's full"
 	line "of nutrients!"
 	done
+endc
 
 FlowerShopGentlemanText:
+if DEF(_LOCALE_FR)
+	text "Je bosse tard en"
+	line "ce moment, alors"
+
+	para "j'achète des"
+	line "fleurs à ma"
+	cont "femme."
+	done
+else
 	text "I've been working"
 	line "late a lot recent-"
 	cont "ly, so I'm buying"
@@ -261,3 +427,4 @@ FlowerShopGentlemanText:
 	para "some flowers for"
 	line "my wife."
 	done
+endc

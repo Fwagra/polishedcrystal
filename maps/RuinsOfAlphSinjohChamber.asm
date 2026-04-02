@@ -109,11 +109,23 @@ MovementData_WarpToSinjohRuins:
 	step_end
 
 RuinsofAlphSinjohChamberMystriText:
+if DEF(_LOCALE_FR)
+	text "Le chemin mène"
+	line "enfin à la Scène"
+	cont "Mystri."
+	done
+else
 	text "The lead enters"
 	line "the Mystri Stage"
 	cont "at last."
 	done
+endc
 
 RuinsofAlphSinjohChamberSurpriseText: ; text > text
+if DEF(_LOCALE_FR)
 	text "…!"
 	done
+else
+	text "…!"
+	done
+endc

@@ -28,6 +28,15 @@ GoldenrodNetBallHouseYoungsterScript:
 	jumpthisopenedtext
 
 .Text2:
+if DEF(_LOCALE_FR)
+	text "Parfois, t'as de"
+	line "la chance et tu"
+	cont "sors un #mon"
+
+	para "à fond de PV. J'a-"
+	line "dore ce moment."
+	done
+else
 	text "Sometimes you get"
 	line "really lucky and"
 	cont "catch a #mon at"
@@ -35,8 +44,21 @@ GoldenrodNetBallHouseYoungsterScript:
 	para "full HP. I love"
 	line "that feeling."
 	done
+endc
 
 .Text1:
+if DEF(_LOCALE_FR)
+	text "J'ai acheté des"
+	line "FILET BALL pour"
+	cont "attraper POMDEPIK,"
+
+	para "Et du premier"
+	line "coup!"
+
+	para "J'en aurai plus"
+	line "besoin."
+	done
+else
 	text "I stocked up on"
 	line "Net Balls to catch"
 	cont "a Pineco, but got"
@@ -47,8 +69,20 @@ GoldenrodNetBallHouseYoungsterScript:
 	para "I won't be needing"
 	line "this anymore."
 	done
+endc
 
 GoldenrodNetBallHouseBugCatcherText:
+if DEF(_LOCALE_FR)
+	text "Il y a un Concours"
+	line "de Capture"
+
+	para "au Parc Naturel,"
+	line "sur la Route 35."
+
+	para "Parfois, même"
+	line "Hector participe."
+	done
+else
 	text "They hold Bug-"
 	line "Catching Contests"
 
@@ -58,3 +92,4 @@ GoldenrodNetBallHouseBugCatcherText:
 	para "Sometimes even"
 	line "Bugsy competes."
 	done
+endc

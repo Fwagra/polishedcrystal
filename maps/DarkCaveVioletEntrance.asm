@@ -119,27 +119,82 @@ DarkCaveVioletEntranceMovementData_FalknerLeave:
 	step_end
 
 DarkCaveVioletEntranceFalknerAttackText:
+if DEF(_LOCALE_FR)
+	text "Albert: Cru-Aile,"
+	line "Roucoups!"
+else
 	text "Falkner: Use Wing"
 	line "Attack, Pidgeotto!"
+endc
 	done
 
 DarkCaveVioletEntranceFalknerReturnText:
+if DEF(_LOCALE_FR)
+	text "Bien joue,"
+	line "Roucoups."
+else
 	text "Good job,"
 	line "Pidgeotto."
+endc
 	done
 
 DarkCaveVioletEntranceFalknerIntroText:
+if DEF(_LOCALE_FR)
+	text "Oh! Tu dois être"
+	line "un Dresseur."
+	prompt
+else
 	text "Oh! You must be"
 	line "a trainer."
 	prompt
+endc
 
 DarkCaveVioletEntranceFalknerDarkIntroText:
+if DEF(_LOCALE_FR)
+	text "Tu es courageux"
+	line "de venir ici dans"
+
+	para "le noir total."
+	prompt
+else
 	text "You must be brave"
 	line "to come here in"
 	cont "pitch darkness."
 	prompt
+endc
 
 DarkCaveVioletEntranceFalknerExplanationText:
+if DEF(_LOCALE_FR)
+	text "Je suis Albert,"
+	line "Champion d'Arène"
+
+	para "de Mauville."
+
+	para "Je n'explore pas"
+	line "les grottes pour"
+
+	para "le plaisir, mais"
+	line "ce Ursaring"
+
+	para "attaquait des"
+	line "Dresseurs trop"
+
+	para "faibles pour se"
+	line "défendre."
+
+	para "En tant que"
+	line "Champion, c'est"
+
+	para "mon rôle de"
+	line "gérer ça."
+
+	para "Tu viens pour un"
+	line "Badge?"
+
+	para "Alors retrouve-moi"
+	line "à l'Arène de"
+	cont "Mauville."
+else
 	text "I'm Falkner, the"
 	line "Violet #mon"
 	cont "Gym Leader."
@@ -165,9 +220,22 @@ DarkCaveVioletEntranceFalknerExplanationText:
 
 	para "Then meet me at"
 	line "the Violet Gym."
+endc
 	done
 
 DarkCaveVioletEntranceFalknerDarknessText:
+if DEF(_LOCALE_FR)
+	text "Albert: Il y a"
+	line "quelqu'un?"
+
+	para "Ne t'approche"
+	line "pas!"
+
+	para "C'est trop sombre,"
+	line "tu peux te faire"
+
+	para "mal."
+else
 	text "Falkner: Is"
 	line "someone there?"
 
@@ -176,9 +244,25 @@ DarkCaveVioletEntranceFalknerDarknessText:
 
 	para "It's too dark, you"
 	line "could get hurt."
+endc
 	done
 
 DarkCaveVioletEntranceFalknerProgressAnywayText:
+if DEF(_LOCALE_FR)
+	text "Albert: Il y a"
+	line "quelqu'un?"
+
+	para "C'est imprudent"
+	line "d'explorer la"
+
+	para "Grotte sans"
+	line "lumière!"
+
+	para "Je suis au milieu"
+	line "d'un combat,"
+
+	para "recule!"
+else
 	text "Falkner: Is"
 	line "someone there?"
 
@@ -189,4 +273,5 @@ DarkCaveVioletEntranceFalknerProgressAnywayText:
 	para "I'm in the middle"
 	line "of a battle, so"
 	cont "stay back!"
+endc
 	done

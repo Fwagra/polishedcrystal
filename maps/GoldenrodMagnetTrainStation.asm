@@ -99,6 +99,19 @@ GoldenrodMagnetTrainStationPlayerLeaveTrainAndEnterStationMovement:
 	step_end
 
 GoldenrodMagnetTrainStationOfficerTheTrainHasntComeInText:
+if DEF(_LOCALE_FR)
+	text "Le train n'est pas"
+	line "passé..."
+
+	para "Je sais! Je vais"
+	line "transporter les"
+	cont "passagers sur mon"
+	cont "dos!"
+
+	para "Ca ne marchera"
+	line "pas!"
+	done
+else
 	text "The train hasn't"
 	line "come in…"
 
@@ -108,42 +121,102 @@ GoldenrodMagnetTrainStationOfficerTheTrainHasntComeInText:
 
 	para "That won't work."
 	done
+endc
 
 GoldenrodMagnetTrainStationOfficerAreYouComingAboardText:
+if DEF(_LOCALE_FR)
+	text "Nous allons bien-"
+	line "tôt partir pour"
+	cont "SAFRANIA."
+
+	para "Vous montez"
+	line "à bord?"
+	done
+else
 	text "We'll soon depart"
 	line "for Saffron."
 
 	para "Are you coming"
 	line "aboard?"
 	done
+endc
 
 GoldenrodMagnetTrainStationOfficerRightThisWayText:
+if DEF(_LOCALE_FR)
+	text "Puis-je voir votre"
+	line "PASSE train, s'il"
+	cont "vous plaît?"
+
+	para "Merci, c'est par"
+	line "là..."
+	done
+else
 	text "May I see your"
 	line "rail pass, please?"
 
 	para "OK. Right this"
 	line "way, please."
 	done
+endc
 
 GoldenrodMagnetTrainStationOfficerYouDontHaveARailPassText:
+if DEF(_LOCALE_FR)
+	text "Désolé, vous"
+	line "n'avez pas de"
+	cont "PASSE train."
+	cont "Pas de PASSE train"
+	cont "pas de copains!!"
+	done
+else
 	text "Sorry. You don't"
 	line "have a rail pass."
 	done
+endc
 
 GoldenrodMagnetTrainStationOfficerHopeToSeeYouAgainText:
+if DEF(_LOCALE_FR)
+	text "En espérant vous"
+	line "revoir bientôt!"
+	done
+else
 	text "We hope to see you"
 	line "again!"
 	done
+endc
 
 GoldenrodMagnetTrainStationOfficerArrivedInGoldenrodText:
+if DEF(_LOCALE_FR)
+	text "On est arrivé"
+	line "à DOUBLONVILLE."
+
+	para "Nous espérons vous"
+	line "revoir bientôt."
+	done
+else
 	text "We have arrived in"
 	line "Goldenrod."
 
 	para "We hope to see you"
 	line "again."
 	done
+endc
 
 GoldenrodMagnetTrainStationGentlemanText:
+if DEF(_LOCALE_FR)
+	text "Je suis le"
+	line "PRESIDENT."
+
+	para "Mon rêve était de"
+	line "construire un"
+
+	para "train plus rapide"
+	line "que n'importe quel"
+	cont "#mon."
+
+	para "Cela rapproche"
+	line "JOHTO de KANTO."
+	done
+else
 	text "I'm the President."
 
 	para "My dream was to"
@@ -156,8 +229,18 @@ GoldenrodMagnetTrainStationGentlemanText:
 	line "Johto much closer"
 	cont "to Kanto."
 	done
+endc
 
 GoldenrodMagnetTrainStationCooltrainerfText1:
+if DEF(_LOCALE_FR)
+	text "Le TRAIN MAGNET,"
+	line "c'est genre"
+	cont "zouuum, byun!"
+
+	para "Au moins quand il"
+	line "marche..."
+	done
+else
 	text "The Magnet Train"
 	line "is like, zoooom,"
 	cont "byun! Shuuu!"
@@ -165,11 +248,21 @@ GoldenrodMagnetTrainStationCooltrainerfText1:
 	para "At least when"
 	line "it's running…"
 	done
+endc
 
 GoldenrodMagnetTrainStationCooltrainerfText2:
+if DEF(_LOCALE_FR)
+	text "Le TRAIN MAGNET,"
+	line "c'est genre"
+	cont "zouuum, byun!"
+
+	para "C'est trop cool!"
+	done
+else
 	text "The Magnet Train"
 	line "is like, zoooom,"
 	cont "byun! Shuuu!"
 
 	para "It's so cool!"
 	done
+endc

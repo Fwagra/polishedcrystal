@@ -17,6 +17,16 @@ GoldenrodBandHouse_MapScriptHeader:
 	object_event  2,  4, SPRITE_BATTLE_GIRL, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, 0, OBJECTTYPE_COMMAND, jumptextfaceplayer, GoldenrodBandHouseCooltrainerFText, -1
 
 GoldenrodBandHouseRocker1Text:
+if DEF(_LOCALE_FR)
+	text "Je joue de la"
+	line "guitare dans notre"
+
+	para "groupe de covers."
+	line "Ecoute-nous sur la"
+
+	para "Chaine Varietes!"
+	done
+else
 	text "I play guitar in"
 	line "our cover band."
 
@@ -24,16 +34,37 @@ GoldenrodBandHouseRocker1Text:
 	line "on the Variety"
 	cont "Channel!"
 	done
+endc
 
 GoldenrodBandHouseRocker2Text:
+if DEF(_LOCALE_FR)
+	text "La musique et la"
+	line "passion, c'est"
+
+	para "toujours la mode."
+	line "Ne l'oublie pas!"
+	done
+else
 	text "Music and passion"
 	line "are always in"
 
 	para "fashion. Don't"
 	line "you forget it!"
 	done
+endc
 
 GoldenrodBandHouseCooltrainerFText:
+if DEF(_LOCALE_FR)
+	text "Chacun ses gouts"
+	line "musicaux, mais"
+
+	para "chacun a le droit"
+	line "a son avis."
+
+	para "Pas la peine de"
+	line "critiquer!"
+	done
+else
 	text "People like diff-"
 	line "erent types of"
 	cont "music, but every-"
@@ -43,3 +74,4 @@ GoldenrodBandHouseCooltrainerFText:
 
 	para "Don't be a hater!"
 	done
+endc

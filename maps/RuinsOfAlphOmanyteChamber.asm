@@ -112,9 +112,18 @@ MapRuinsofAlphOmanyteChamberSignpost4Script:
 	endtext
 
 RuinsOfAlphOmanyteChamberDescriptionText:
+if DEF(_LOCALE_FR)
+	text "Ce #mon glis-"
+	line "sait dans l'eau en"
+
+	para "tordant ses dix"
+	line "tentacules."
+	done
+else
 	text "This #mon"
 	line "drifted in the"
 
 	para "sea by twisting"
 	line "its ten tentacles."
 	done
+endc

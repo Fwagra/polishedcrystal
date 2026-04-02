@@ -18,18 +18,34 @@ Route1ViridianGate_MapScriptHeader:
 	object_event  6,  4, SPRITE_ROCKER, SPRITEMOVEDATA_WALK_UP_DOWN, 2, 0, -1, 0, OBJECTTYPE_COMMAND, jumptextfaceplayer, Route1ViridianGateRockerText, -1
 
 Route1ViridianGateOfficerText:
+if DEF(_LOCALE_FR)
+	text "Au sud: Bourg"
+	line "Palette."
+
+	para "Le Prof. Chen"
+	line "y vit."
+else
 	text "To the south is"
 	line "Pallet Town."
 
 	para "That's where"
 	line "Prof.Oak lives."
+endc
 	done
 
 Route1ViridianGateRockerText:
+if DEF(_LOCALE_FR)
+	text "Si tu y reflechis"
+	line "bien, on est tous"
+
+	para "sur la route de"
+	line "Jadielle, non?"
+else
 	text "If you really"
 	line "think about it,"
 
 	para "aren't we ALL on"
 	line "the road to Vir-"
 	cont "idian City?"
+endc
 	done

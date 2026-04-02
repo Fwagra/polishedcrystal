@@ -29,12 +29,43 @@ DarkCaveBlackthornEntrancePharmacistScript:
 	jumpthisopenedtext
 
 .PharmacistText2:
+if DEF(_LOCALE_FR)
+	text "Les LUNET.NOIRES"
+	line "augmentent la"
+	cont "puissance des"
+	cont "attaques du type"
+	cont "TENEBRES."
+	done
+else
 	text "BlackGlasses ups"
 	line "the power of Dark-"
 	cont "type moves."
 	done
+endc
 
 .PharmacistText1:
+if DEF(_LOCALE_FR)
+	text "Whoa! Tu m'as"
+	line "fait peur!"
+
+	para "J'avais mes"
+	line "LUNETTES NOIRES..."
+
+	para "J'ai rien vu"
+	line "venir."
+
+	para "Ce que je fais"
+	line "ici?"
+
+	para "C'est pas trop tes"
+	line "oignons, non?"
+
+	para "Voilà une paire de"
+	line "LUNETTES NOIRES."
+	cont "Oublie que tu m'as"
+	cont "vu, OK?"
+	done
+else
 	text "Whoa! You startled"
 	line "me there!"
 
@@ -55,3 +86,4 @@ DarkCaveBlackthornEntrancePharmacistScript:
 	cont "Glasses, so forget"
 	cont "you saw me, OK?"
 	done
+endc
