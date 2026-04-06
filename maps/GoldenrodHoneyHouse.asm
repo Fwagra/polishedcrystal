@@ -28,9 +28,19 @@ GoldenrodHoneyHousePokefanFScript:
 	iffalse_endtext
 	setevent EVENT_GOT_HONEY_FROM_GOLDENROD
 	setevent EVENT_TEMPORARY_UNTIL_MAP_RELOAD_1
-	jumpthisopenedtext
+	jumpopenedtext .AfterText
 
 .AfterText:
+if DEF(_LOCALE_FR)
+	text "Mon petit frère"
+	line "prend du MIEL et"
+
+	para "va se promener."
+	line "Je me demande ce"
+
+	para "qu'il fabrique…"
+	done
+else
 	text "My little brother"
 if DEF(FAITHFUL)
 	line "takes Honey and"
@@ -52,8 +62,17 @@ endc
 	para "same level as"
 	line "your own!"
 	done
+endc
 
 .IntroText:
+if DEF(_LOCALE_FR)
+	text "Mon #mon adore"
+	line "le MIEL."
+
+	para "Je vais t'en"
+	line "donner."
+	done
+else
 	text "My #mon is an"
 	line "expert at collect-"
 if DEF(FAITHFUL)
@@ -65,6 +84,7 @@ endc
 	para "I'll share some"
 	line "with you."
 	done
+endc
 
 .SellHoney:
 	faceplayer
@@ -76,11 +96,18 @@ endc
 	closewindow
 	ifequalfwd $1, .Buy1
 	ifequalfwd $2, .Buy10
-	jumpthisopenedtext ; cancel
+	jumpopenedtext .SellHoneyCancelText
 
+.SellHoneyCancelText:
+if DEF(_LOCALE_FR)
+	text "Reviens vite,"
+	line "la belle!"
+	done
+else
 	text "Well, come again,"
 	line "honey!"
 	done
+endc
 
 .Buy1:
 	checkmoney YOUR_MONEY, 1000
@@ -107,14 +134,31 @@ endc
 	endtext
 
 .NotEnoughMoney:
-	jumpthisopenedtext
+	jumpopenedtext .NotEnoughMoneyText
 
+.NotEnoughMoneyText:
+if DEF(_LOCALE_FR)
+	text "Tu n'as pas assez"
+	line "d'argent."
+	done
+else
 	text "You don't have"
 	line "enough money,"
 	cont "honey!"
 	done
+endc
 
 .SellText:
+if DEF(_LOCALE_FR)
+	text "Tu veux du miel"
+	line "pour attirer des"
+
+	para "#mon?"
+	line "C'est ¥1000"
+
+	para "l'unité!"
+	done
+else
 	text "Would you like to"
 if DEF(FAITHFUL)
 	line "buy some Honey"
@@ -129,31 +173,60 @@ else
 endc
 	cont "Just ¥1000 each!"
 	done
+endc
 
 .GoodbyeText:
+if DEF(_LOCALE_FR)
+	text "Voilà pour toi,"
+	line "ma belle!"
+	done
+else
 	text "Here you go,"
 	line "honey!"
 	done
+endc
 
 .BagFullText:
+if DEF(_LOCALE_FR)
+	text "Et non, y'a plus"
+	line "de place!"
+	done
+else
 	text "Oopsy! You have"
 	line "no room for it."
 	done
+endc
 
 .MenuDataHeader:
 	db $40 ; flags
 	db 04, 00 ; start coords
 	db 11, 14 ; end coords
-	dw .MenuData2
+if DEF(_LOCALE_FR)
+	dw .MenuData2_FR
+else
+	dw .MenuData2_EN
+endc
 	db 1 ; default option
 
-.MenuData2:
+.MenuData2_EN:
 	db $80 ; flags
 	db 3 ; items
 	db "× 1   ¥1000@"
 	db "×10  ¥10000@"
 	db "Cancel@"
 
+.MenuData2_FR:
+	db $80 ; flags
+	db 3 ; items
+	db "× 1   ¥1000@"
+	db "×10  ¥10000@"
+	db "Annuler@"
+
 GoldenrodHoneyHouseButterfreeText:
+if DEF(_LOCALE_FR)
+	text "PAPILUSION: Piii!"
+	done
+else
 	text "Butterfree: Freeh!"
 	done
+endc

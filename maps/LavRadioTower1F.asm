@@ -46,6 +46,14 @@ LavRadioTower1FGentlemanScript:
 	jumpthisopenedtext
 
 .GotExpnCardText:
+if DEF(_LOCALE_FR)
+	text "Avec ceci, tu peux"
+	line "écouter la radio"
+
+	para "depuis KANTO."
+	line "Gahahahaha!"
+	done
+else
 	text "With that thing,"
 	line "you can tune into"
 
@@ -54,8 +62,25 @@ LavRadioTower1FGentlemanScript:
 
 	para "Gahahahaha!"
 	done
+endc
 
 .OffTheAirText:
+if DEF(_LOCALE_FR)
+	text "Oh, non, non, non!"
+
+	para "Nous ne sommes"
+	line "plus à l'antenne"
+
+	para "depuis la fermetu-"
+	line "re de la CENTRALE."
+
+	para "Je cours à la ca-"
+	line "tastrophe si je ne"
+
+	para "peux plus émettre!"
+	line "J'suis ruiné!"
+	done
+else
 	text "Oh, no, no, no!"
 
 	para "We've been off the"
@@ -72,8 +97,23 @@ LavRadioTower1FGentlemanScript:
 
 	para "I'll be ruined!"
 	done
+endc
 
 .ReturnedMachinePartText:
+if DEF(_LOCALE_FR)
+	text "Ah! C'est toi"
+	line "<PLAYER> qui a"
+
+	para "réparé la"
+	line "CENTRALE?"
+
+	para "Grâce à toi, j'ai"
+	line "pu garder mon job."
+
+	para "Tu es trop cool!"
+	line "Prends ça!"
+	done
+else
 	text "Ah! So you're the"
 	line "<PLAYER> who solved"
 
@@ -89,12 +129,35 @@ LavRadioTower1FGentlemanScript:
 	para "Please take this"
 	line "as my thanks."
 	done
+endc
 
 LavRadioTower1FSuperNerd2Script:
 	checkflag ENGINE_EXPN_CARD
 	iftrue_jumptextfaceplayer LavRadioTower1FSuperNerd2Text_GotExpnCard
 	jumpthistextfaceplayer
 
+if DEF(_LOCALE_FR)
+	text "Hé toi!"
+
+	para "Je suis le"
+	line "DIRECTEUR"
+
+	para "MUSICAL!"
+	line "Hein? Ton #gear"
+
+	para "ne peut pas capter"
+	line "les émissions de"
+
+	para "radio…"
+	line "Quel dommage!"
+
+	para "Avec une Carte Ext."
+	line "tu peux améliorer"
+
+	para "ton matériel!"
+	line "Va en trouver un!"
+	done
+else
 	text "Hey there!"
 
 	para "I am the super"
@@ -112,16 +175,42 @@ LavRadioTower1FSuperNerd2Script:
 	para "can tune in. You'd"
 	line "better get one!"
 	done
+endc
 
 LavRadioTower1FReceptionistText:
+if DEF(_LOCALE_FR)
+	text "Bienvenue!"
+	line "Tu peux visiter"
+
+	para "cet étage tant que"
+	line "tu le veux."
+	done
+else
 	text "Welcome!"
 	line "Feel free to look"
 
 	para "around anywhere on"
 	line "this floor."
 	done
+endc
 
 LavRadioTower1FOfficerText:
+if DEF(_LOCALE_FR)
+	text "Seul le rez-de-"
+	line "chaussée est à"
+
+	para "visiter."
+	line "Depuis l'attaque"
+
+	para "de la TOUR RADIO"
+	line "de JOHTO par un"
+
+	para "gang criminel, on"
+	line "a renforcé les me-"
+
+	para "sures de sécurité."
+	done
+else
 	text "Sorry, but you can"
 	line "only tour the"
 	cont "ground floor."
@@ -135,8 +224,22 @@ LavRadioTower1FOfficerText:
 	para "have had to step"
 	line "up our security."
 	done
+endc
 
 LavRadioTower1FSuperNerd1Text:
+if DEF(_LOCALE_FR)
+	text "Les gens travail-"
+	line "lent dur ici, à"
+
+	para "la TOUR RADIO."
+	line "Ils se donnent à"
+
+	para "fond pour faire de"
+	line "bonnes émis-"
+
+	para "sions."
+	done
+else
 	text "Many people are"
 	line "hard at work here"
 
@@ -147,8 +250,26 @@ LavRadioTower1FSuperNerd1Text:
 	line "their best to put"
 	cont "on good shows."
 	done
+endc
 
 LavRadioTower1FSuperNerd2Text_GotExpnCard:
+if DEF(_LOCALE_FR)
+	text "Salut!"
+
+	para "Je suis le super"
+	line "directeur musical!"
+
+	para "Je choisis les"
+	line "mélodies qui"
+
+	para "partent sur les"
+	line "ondes."
+
+	para "Ne fais pas le"
+	line "coin-coin: capte"
+	cont "ta musique!"
+	done
+else
 	text "Hey there!"
 
 	para "I am the super"
@@ -164,8 +285,20 @@ LavRadioTower1FSuperNerd2Text_GotExpnCard:
 	line "Grab your music"
 	cont "off the air!"
 	done
+endc
 
 LavRadioTower1FDirectoryText:
+if DEF(_LOCALE_FR)
+	text "RDC RECEPTION"
+	line "1ER VENTES"
+
+	para "2EME PERSONNEL"
+	line "3EME PRODUCTION"
+
+	para "4EME BUREAU"
+	line "     DIRECTION"
+	done
+else
 	text "1F Reception"
 	line "2F Sales"
 
@@ -175,17 +308,40 @@ LavRadioTower1FDirectoryText:
 	para "5F Director's"
 	line "   Office"
 	done
+endc
 
 LavRadioTower1FPokeFluteSignText:
+if DEF(_LOCALE_FR)
+	text "Remonte le moral"
+	line "des #mon avec"
+
+	para "les doux sons de"
+	line "la # Flute,"
+
+	para "chaîne 20."
+	done
+else
 	text "Perk Up #mon"
 	line "with Mellow Sounds"
 
 	para "of the # Flute"
 	line "on Channel 20"
 	done
+endc
 
 ; TODO: use this text
 LavRadioTower1FReferenceLibraryText:
+if DEF(_LOCALE_FR)
+	text "Whoa! Plein de"
+	line "cassettes et de"
+
+	para "CD #mon!"
+	line "Ca doit être une"
+
+	para "librairie offi-"
+	line "cielle."
+	done
+else
 	text "Wow! A full rack"
 	line "of #mon CDs and"
 	cont "videos."
@@ -193,3 +349,4 @@ LavRadioTower1FReferenceLibraryText:
 	para "This must be the"
 	line "reference library."
 	done
+endc

@@ -75,6 +75,20 @@ MountMortarB1FKiyoScript:
 	jumpthisopenedtext
 
 MountMortarB1FKiyoGotTyrogueText:
+if DEF(_LOCALE_FR)
+	text "DEBUGANT est du"
+	line "type COMBAT."
+
+	para "Il évolue en un"
+	line "puissant #mon."
+
+	para "Alors fais comme"
+	line "moi…"
+	cont "Entraîne-toi!"
+
+	para "Adieu!"
+	done
+else
 	text "Tyrogue is a"
 	line "Fighting-type."
 
@@ -87,8 +101,26 @@ MountMortarB1FKiyoGotTyrogueText:
 
 	para "Farewell!"
 	done
+endc
 
 MountMortarB1FHikerText:
+if DEF(_LOCALE_FR)
+	text "Mon #mon a usé"
+if DEF(FAITHFUL)
+	line "Éclate-Roc sur un"
+	line "rocher, sans rien"
+	cont "casser."
+else
+	line "Casse-Brique sur"
+	line "un rocher, sans"
+	cont "rien à casser."
+endc
+
+	para "C'était un"
+	line "Racaillou qui"
+	cont "usait Boul'Armure!"
+	done
+else
 	text "My #mon used"
 if DEF(FAITHFUL)
 	line "Rock Smash on a"
@@ -103,39 +135,89 @@ endc
 	line "be a Geodude that"
 	cont "used Defense Curl!"
 	done
+endc
 
 Text_MountMortarB1FTutorDefenseCurl:
+if DEF(_LOCALE_FR)
+	text "Je peux apprendre"
+	line "Boul'Armure à ton"
+
+	para "#mon contre une"
+	line "Feuille Arg."
+	done
+else
 	text "I can teach your"
 	line "#mon to use"
 
 	para "Defense Curl for"
 	line "one Silver Leaf."
 	done
+endc
 
 Text_MountMortarB1FTutorNoSilverLeaf:
+if DEF(_LOCALE_FR)
+	text "Zut, tu n'as pas"
+	line "de Feuille Arg."
+	done
+else
 	text "Shucks, you don't"
 	line "have a Silver"
 	cont "Leaf."
 	done
+endc
 
 Text_MountMortarB1FTutorQuestion:
+if DEF(_LOCALE_FR)
+	text "Je lui apprends"
+	line "Boul'Armure?"
+	done
+else
 	text "Should I teach"
 	line "your #mon"
 	cont "Defense Curl?"
 	done
+endc
 
 Text_MountMortarB1FTutorRefused:
+if DEF(_LOCALE_FR)
+	text "Je reste là si"
+	line "tu changes d'avis."
+	done
+else
 	text "I'll be right here"
 	line "waiting."
 	done
+endc
 
 Text_MountMortarB1FTutorTaught:
+if DEF(_LOCALE_FR)
+	text "Voilà! Ton #mon"
+	line "connaît"
+	cont "Boul'Armure!"
+	done
+else
 	text "There! Now your"
 	line "#mon can use"
 	cont "Defense Curl!"
 	done
+endc
 
 MountMortarB1FKiyoIntroText:
+if DEF(_LOCALE_FR)
+	text "Hé!"
+
+	para "Je suis le ROI du"
+	line "KARATE!"
+
+	para "Je m'entraîne seul"
+	line "dans le noir!"
+
+	para "Toi! Moi!"
+	line "Combat!"
+
+	para "Yaaaaaah!"
+	done
+else
 	text "Hey!"
 
 	para "I am the Karate"
@@ -149,13 +231,38 @@ MountMortarB1FKiyoIntroText:
 
 	para "Hwaaarggh!"
 	done
+endc
 
 MountMortarB1FKiyoWinText:
+if DEF(_LOCALE_FR)
+	text "Waaaarggh!"
+	line "Perdu!"
+	done
+else
 	text "Waaaarggh!"
 	line "I'm beaten!"
 	done
+endc
 
 MountMortarB1FTyrogueRewardText:
+if DEF(_LOCALE_FR)
+	text "J'suis…mauvais."
+
+	para "Mon entraînement"
+	line "n'est pas encore"
+
+	para "suffisant."
+	line "Mais j'admets ma"
+
+	para "défaite."
+	line "En gage de récom-"
+
+	para "pense, je vais te"
+	line "donner un #mon"
+
+	para "de combat rare."
+	done
+else
 	text "I… I'm crushed…"
 
 	para "My training is"
@@ -170,9 +277,16 @@ MountMortarB1FTyrogueRewardText:
 	para "give you a rare"
 	line "fighting #mon."
 	done
+endc
 
 MountMortarB1FKiyoFullPartyAndBoxText:
+if DEF(_LOCALE_FR)
+	text "Pas de place dans"
+	line "ton équipe!"
+	done
+else
 	text "You have no room"
 	line "in your party"
 	line "or Box!"
 	done
+endc

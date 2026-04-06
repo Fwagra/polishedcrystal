@@ -129,55 +129,100 @@ SeagallopFerryVermilionGateSailorScript:
 OrangeMysticMenuDataHeader:
 	db MENU_BACKUP_TILES
 	menu_coords 0, 4, 15, 11
-	dw .MenuData2
+if DEF(_LOCALE_FR)
+	dw .MenuData2_FR
+else
+	dw .MenuData2_EN
+endc
 	db 1 ; default option
 
-.MenuData2:
+.MenuData2_EN:
 	db $80 ; flags
 	db 3 ; items
 	db "OrangeTicket@"
 	db "MysticTicket@"
 	db "Cancel@"
+
+.MenuData2_FR:
+	db $80 ; flags
+	db 3 ; items
+	db "OrangeTicket@"
+	db "MysticTicket@"
+	db "Annuler@"
 
 MysticOldSeaMapMenuDataHeader:
 	db MENU_BACKUP_TILES
 	menu_coords 0, 4, 15, 11
-	dw .MenuData2
+if DEF(_LOCALE_FR)
+	dw .MenuData2_FR
+else
+	dw .MenuData2_EN
+endc
 	db 1 ; default option
 
-.MenuData2:
+.MenuData2_EN:
 	db $80 ; flags
 	db 3 ; items
 	db "MysticTicket@"
 	db "Old Sea Map@"
 	db "Cancel@"
 
+.MenuData2_FR:
+	db $80 ; flags
+	db 3 ; items
+	db "MysticTicket@"
+	db "Vieille Carte@"
+	db "Annuler@"
+
 OrangeOldSeaMapMenuDataHeader:
 	db MENU_BACKUP_TILES
 	menu_coords 0, 4, 15, 11
-	dw .MenuData2
+if DEF(_LOCALE_FR)
+	dw .MenuData2_FR
+else
+	dw .MenuData2_EN
+endc
 	db 1 ; default option
 
-.MenuData2:
+.MenuData2_EN:
 	db $80 ; flags
 	db 3 ; items
 	db "OrangeTicket@"
 	db "Old Sea Map@"
 	db "Cancel@"
 
+.MenuData2_FR:
+	db $80 ; flags
+	db 3 ; items
+	db "OrangeTicket@"
+	db "Vieille Carte@"
+	db "Annuler@"
+
 ThreeTicketsMenuDataHeader:
 	db MENU_BACKUP_TILES
 	menu_coords 0, 2, 15, 11
-	dw .MenuData2
+if DEF(_LOCALE_FR)
+	dw .MenuData2_FR
+else
+	dw .MenuData2_EN
+endc
 	db 1 ; default option
 
-.MenuData2:
+.MenuData2_EN:
 	db $80 ; flags
 	db 4 ; items
 	db "OrangeTicket@"
 	db "MysticTicket@"
 	db "Old Sea Map@"
 	db "Cancel@"
+
+.MenuData2_FR:
+	db $80 ; flags
+	db 4 ; items
+	db "OrangeTicket@"
+	db "MysticTicket@"
+	db "Vieille Carte@"
+	db "Annuler@"
 
 SeagallopFerryDepartureScript:
 	writetext SeagallopFerryDepartureText
@@ -221,24 +266,55 @@ SeagallopFerryVermilionGateSailorArrive2MovementData:
 	step_end
 
 SeagallopFerryWelcomeText:
+if DEF(_LOCALE_FR)
+	text "Bienvenue sur le"
+	line "ferry Seagallop!"
+	done
+else
 	text "Welcome aboard the"
 	line "Seagallop Ferry!"
 	done
+endc
 
 SeagallopFerryGiveOrangeTicketText:
+if DEF(_LOCALE_FR)
+	text "Le monsieur qui"
+	line "est parti n'en"
+
+	para "voulait pas."
+	line "C'est pour toi."
+	done
+else
 	text "The man who just"
 	line "left said he didn't"
 
 	para "need this ticket."
 	line "You can have it."
 	done
+endc
 
 SeagallopFerryClosedText:
+if DEF(_LOCALE_FR)
+	text "Désolé, tu n'as"
+	line "pas de ticket."
+	done
+else
 	text "I'm sorry, you don't"
 	line "have a ticket."
 	done
+endc
 
 SeagallopFerryOrangeTicketQuestionText:
+if DEF(_LOCALE_FR)
+	text "Ce OrangeTicket"
+	line "mène vers l'ile"
+
+	para "Shamouti."
+	line "On t'y emmène"
+
+	para "quand tu veux."
+	done
+else
 	text "That OrangeTicket"
 	line "is for a ride to"
 	cont "Shamouti Island."
@@ -247,8 +323,20 @@ SeagallopFerryOrangeTicketQuestionText:
 	line "take you there"
 	cont "any time."
 	done
+endc
 
 SeagallopFerryMysticTicketQuestionText:
+if DEF(_LOCALE_FR)
+	text "Oh! Un"
+	line "MysticTicket!"
+
+	para "C'est rare!"
+	line "On t'emmène au"
+
+	para "Rocher Navel"
+	line "quand tu veux."
+	done
+else
 	text "Oh! That's a"
 	line "MysticTicket!"
 	cont "Now that is rare."
@@ -257,8 +345,20 @@ SeagallopFerryMysticTicketQuestionText:
 	line "take you to Navel"
 	cont "Rock any time."
 	done
+endc
 
 SeagallopFerryOldSeaMapQuestionText:
+if DEF(_LOCALE_FR)
+	text "Oh! Ta Vieille"
+	line "Carte Mer…"
+
+	para "On dirait une"
+	line "île lointaine."
+
+	para "On t'y emmène"
+	line "quand tu veux."
+	done
+else
 	text "Oh! That Old Sea"
 	line "Map you have…"
 
@@ -269,19 +369,39 @@ SeagallopFerryOldSeaMapQuestionText:
 	line "take you there"
 	cont "any time."
 	done
+endc
 
 SeagallopFerryWhichTicketText:
+if DEF(_LOCALE_FR)
+	text "Tu prends quel"
+	line "ticket?"
+	done
+else
 	text "Do you have a"
 	line "ticket?"
 	done
+endc
 
 SeagallopFerryDepartureText:
+if DEF(_LOCALE_FR)
+	text "Parfait!"
+
+	para "Tout le monde"
+	line "sur le Seagallop!"
+	done
+else
 	text "All right!"
 
 	para "All aboard the"
 	line "Seagallop Ferry!"
 	done
+endc
 
 SeagallopFerryVermilionCityRefusedText:
+if DEF(_LOCALE_FR)
+	text "A bientôt!"
+	done
+else
 	text "Come again!"
 	done
+endc

@@ -200,44 +200,105 @@ VermilionPortApproachFastShipRightMovement:
 	step_down
 	step_end
 
+; FR: corpus Crystal (fr_msg.txt) aligné sur en_msg.txt (Olivine / Carmin,
+; BATEAU EXPRESS L'AQUARIA, PASSE BATEAU) — vouvoiement comme l'original.
 VermilionPortDepartingText:
+if DEF(_LOCALE_FR)
+	text "Le départ est"
+	line "proche. Montez à"
+	cont "bord s.v.p."
+	done
+else
 	text "We're departing"
 	line "soon. Please get"
 	cont "on board."
 	done
+endc
 
 VermilionPortCantBoardText:
+if DEF(_LOCALE_FR)
+	text "On ne monte plus"
+	line "à bord."
+	done
+else
 	text "Sorry. You can't"
 	line "board now."
 	done
+endc
 
 VermilionPortAskBoardingText:
+if DEF(_LOCALE_FR)
+	text "Bienvenue sur le"
+	line "BATEAU EXPRESS:"
+	cont "L'AQUARIA."
+
+	para "Allez-vous monter"
+	line "à bord?"
+	done
+else
 	text "Welcome to Fast"
 	line "Ship S.S.Aqua."
 
 	para "Will you be board-"
 	line "ing today?"
 	done
+endc
 
 VermilionPortAskTicketText:
+if DEF(_LOCALE_FR)
+	text "Puis-je voir"
+	line "votre PASSE"
+	cont "BATEAU?"
+	done
+else
 	text "May I see your"
 	line "S.S.Ticket?"
 	done
+endc
 
 VermilionPortComeAgainText:
+if DEF(_LOCALE_FR)
+	text "A bientôt!"
+	done
+else
 	text "We hope to see you"
 	line "again!"
 	done
+endc
 
 VermilionPortSSTicketText:
+if DEF(_LOCALE_FR)
+	text "<PLAYER> montre"
+	line "son PASSE BATEAU."
+
+	para "Parfait."
+	line "Merci bien!"
+	done
+else
 	text "<PLAYER> flashed"
 	line "the S.S.Ticket."
 
 	para "That's it."
 	line "Thank you!"
 	done
+endc
 
 VermilionPortNoTicketText:
+if DEF(_LOCALE_FR)
+	text "<PLAYER> voudrait"
+	line "bien montrer son"
+	cont "PASSE BATEAU…"
+
+	para "Mais…"
+	line "Pas de TICKET!"
+
+	para "Désolé!"
+	line "On ne monte à bord"
+
+	para "que sur présenta-"
+	line "tion d'un PASSE."
+	done
+else
 	text "<PLAYER> tried to"
 	line "show the S.S."
 	cont "Ticket…"
@@ -250,18 +311,45 @@ VermilionPortNoTicketText:
 	para "if you have an"
 	line "S.S.Ticket."
 	done
+endc
 
 VermilionPortSailMondayText:
+if DEF(_LOCALE_FR)
+	text "Le BATEAU EXPRESS"
+	line "partira mercredi"
+
+	para "prochain."
+	done
+else
 	text "The Fast Ship will"
 	line "sail on Wednesday."
 	done
+endc
 
 VermilionPortSailSundayText:
+if DEF(_LOCALE_FR)
+	text "Le BATEAU EXPRESS"
+	line "partira dimanche"
+
+	para "prochain."
+	done
+else
 	text "The Fast Ship will"
 	line "sail next Sunday."
 	done
+endc
 
 VermilionPortSuperNerdText:
+if DEF(_LOCALE_FR)
+	text "Tu viens de"
+	line "JOHTO?"
+
+	para "On dit qu'il y a"
+	line "plein de #mon"
+
+	para "rares là-bas."
+	done
+else
 	text "You came from"
 	line "Johto?"
 
@@ -269,3 +357,4 @@ VermilionPortSuperNerdText:
 	line "#mon live over"
 	cont "there."
 	done
+endc

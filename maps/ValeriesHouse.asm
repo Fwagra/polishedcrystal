@@ -88,6 +88,35 @@ SetupFairyBookScript:
 	endcallback
 
 ValeriesHouseValerieText:
+if DEF(_LOCALE_FR)
+	text "Valerie: Mes"
+	line "créations mode"
+
+	para "paraissent"
+	line "mystiques, tu"
+
+	para "trouves?"
+
+	para "J'ai toujours"
+	line "voulu être un"
+
+	para "#mon, tu sais."
+	line "C'est ma source"
+
+	para "pour créer."
+
+	para "Pourtant… je ne"
+	line "me sens vraiment"
+
+	para "unie aux #mon"
+	line "qu'en combat"
+
+	para "désespéré."
+	line "Pourquoi, je"
+
+	para "me le demande…"
+	done
+else
 	text "Valerie: My"
 	line "fashion designs"
 
@@ -119,8 +148,20 @@ ValeriesHouseValerieText:
 	para "I wonder why that"
 	line "is…"
 	done
+endc
 
 ValeriesHouseRedFairyBookText:
+if DEF(_LOCALE_FR)
+	text "Un recueil de"
+	line "contes de fées."
+
+	para "Une fille aux"
+	line "cheveux très longs"
+
+	para "est enfermée dans"
+	line "une tour…"
+	done
+else
 	text "It's a book of"
 	line "fairy tales."
 
@@ -128,8 +169,19 @@ ValeriesHouseRedFairyBookText:
 	line "long hair is lock-"
 	cont "ed in a tower…"
 	done
+endc
 
 ValeriesHouseBlueFairyBookText:
+if DEF(_LOCALE_FR)
+	text "Un recueil de"
+	line "contes de fées."
+
+	para "Une belle fille"
+	line "parle à une tête"
+
+	para "de cheval…"
+	done
+else
 	text "It's a book of"
 	line "fairy tales."
 
@@ -137,8 +189,20 @@ ValeriesHouseBlueFairyBookText:
 	line "is talking to a"
 	cont "horse's head…"
 	done
+endc
 
 ValeriesHouseGreenFairyBookText:
+if DEF(_LOCALE_FR)
+	text "Un recueil de"
+	line "contes de fées."
+
+	para "Un poisson"
+	line "parlant promet"
+
+	para "d'exaucer des"
+	line "vœux…"
+	done
+else
 	text "It's a book of"
 	line "fairy tales."
 
@@ -146,8 +210,20 @@ ValeriesHouseGreenFairyBookText:
 	line "claims that it can"
 	cont "grant wishes…"
 	done
+endc
 
 ValeriesHouseBrownFairyBookText:
+if DEF(_LOCALE_FR)
+	text "Un recueil de"
+	line "contes de fées."
+
+	para "La chaumière d'un"
+	line "paysan devient un"
+
+	para "palais du jour au"
+	line "lendemain…"
+	done
+else
 	text "It's a book of"
 	line "fairy tales."
 
@@ -155,8 +231,20 @@ ValeriesHouseBrownFairyBookText:
 	line "has become a fine"
 	cont "palace overnight…"
 	done
+endc
 
 ValeriesHouseVioletFairyBookText:
+if DEF(_LOCALE_FR)
+	text "Un recueil de"
+	line "contes de fées."
+
+	para "Un chien creuse"
+	line "au jardin et"
+
+	para "trouve un trésor"
+	line "d'or…"
+	done
+else
 	text "It's a book of"
 	line "fairy tales."
 
@@ -164,8 +252,19 @@ ValeriesHouseVioletFairyBookText:
 	line "garden and finds"
 	cont "golden treasure…"
 	done
+endc
 
 ValeriesHousePinkFairyBookText:
+if DEF(_LOCALE_FR)
+	text "Un recueil de"
+	line "contes de fées."
+
+	para "Une tortue mène"
+	line "un homme sous la"
+
+	para "mer…"
+	done
+else
 	text "It's a book of"
 	line "fairy tales."
 
@@ -173,8 +272,20 @@ ValeriesHousePinkFairyBookText:
 	line "led by a turtle"
 	cont "under the sea…"
 	done
+endc
 
 ValeriesHouseYellowFairyBookText:
+if DEF(_LOCALE_FR)
+	text "Un recueil de"
+	line "contes de fées."
+
+	para "Un pommier d'or"
+	line "pousse au sommet"
+
+	para "d'une montagne de"
+	line "verre…"
+	done
+else
 	text "It's a book of"
 	line "fairy tales."
 
@@ -182,3 +293,4 @@ ValeriesHouseYellowFairyBookText:
 	line "tree stands atop"
 	cont "a glass mountain…"
 	done
+endc

@@ -162,6 +162,16 @@ Movement_TrainerHouseTurnBack:
 	step_end
 
 TrainerHouseB1FIntroText:
+if DEF(_LOCALE_FR)
+	text "Bienvenue au HALL"
+	line "d'ENTRAINEMENT."
+
+	para "On peut y affron-"
+	line "ter un adversaire"
+
+	para "par jour."
+	done
+else
 	text "Hi. Welcome to our"
 	line "Training Hall."
 
@@ -169,35 +179,79 @@ TrainerHouseB1FIntroText:
 	line "trainer once per"
 	cont "day."
 	done
+endc
 
 TrainerHouseB1FYourOpponentIsText:
+if DEF(_LOCALE_FR)
+	text_ram wStringBuffer3
+	text " est"
+	line "l'adversaire du"
+
+	para "jour."
+	done
+else
 	text_ram wStringBuffer3
 	text " is your"
 	line "opponent today."
 	done
+endc
 
 TrainerHouseB1FAskWantToBattleText:
+if DEF(_LOCALE_FR)
+	text "Voulez-vous com-"
+	line "battre?"
+	done
+else
 	text "Would you like to"
 	line "battle?"
 	done
+endc
 
 TrainerHouseB1FGoRightInText:
+if DEF(_LOCALE_FR)
+	text "Passez s'il vous"
+	line "plaît."
+
+	para "Vous pouvez com-"
+	line "mencer tout de"
+
+	para "suite."
+	done
+else
 	text "Please go right"
 	line "through."
 
 	para "You may begin"
 	line "right away."
 	done
+endc
 
 TrainerHouseB1FPleaseComeAgainText:
+if DEF(_LOCALE_FR)
+	text "Seuls les dres-"
+	line "seurs allant com-"
+
+	para "battre sont auto-"
+	line "risés à entrer."
+	done
+else
 	text "Sorry. Only those"
 	line "trainers who will"
 
 	para "be battling are"
 	line "allowed to go in."
 	done
+endc
 
 TrainerHouseB1FSecondChallengeDeniedText:
+if DEF(_LOCALE_FR)
+	text "Excusez-moi!"
+	line "Vous ne pouvez"
+
+	para "entrer qu'une fois"
+	line "par jour!"
+	done
+else
 	text "I'm sorry."
 	line "This would be your"
 
@@ -207,22 +261,43 @@ TrainerHouseB1FSecondChallengeDeniedText:
 	para "to enter just once"
 	line "a day."
 	done
+endc
 
 TrainerHouseB1FOpponentBeatenText:
+if DEF(_LOCALE_FR)
+	text "Perdu…"
+	line "Et zut…"
+	done
+else
 	text "I lost…"
 	line "Darn…"
 	done
+endc
 
 TrainerHouseB1FOpponentBeforeText:
+if DEF(_LOCALE_FR)
+	text "J'ai voyagé jus-"
+	line "qu'ici pour t'af-"
+
+	para "fronter."
+	done
+else
 	text "I traveled out"
 	line "here just so I"
 	cont "could battle you."
 	done
+endc
 
 TrainerHouseB1FEarnedBattlePointText:
+if DEF(_LOCALE_FR)
+	text "<PLAYER> gagne"
+	line "1 BP!"
+	done
+else
 	text "<PLAYER> earned"
 	line "1 BP!"
 	done
+endc
 
 GetDailyTrainerHouseOpponent:
 	ld a, [wDailyTrainerHouseOpponent]

@@ -127,6 +127,55 @@ ArticunoText:
 	done
 
 SeafoamIslandsB4FLawrenceSpeechText:
+if DEF(_LOCALE_FR)
+	text "Lawrence: Salut,"
+	line "encore <PLAYER>."
+
+	para "Toi aussi tu"
+	line "chasses des"
+	cont "légendes?"
+	para "Je t'ai inspiré?"
+
+	para "…Quoi?! Tu as les"
+	line "trois oiseaux"
+	cont "légendaires?"
+
+	para "Impossible."
+
+	para "Moi, avec mes"
+	line "moyens et mes"
+	cont "connaissances…"
+
+	para "je n'ai pas trouvé"
+	line "Sulfura…"
+
+	para "Pourquoi as-tu"
+	line "réussi là où"
+	cont "j'ai échoué?"
+
+	para "Sais-tu sentir la"
+	line "grandeur des"
+	cont "mirages ailés?"
+
+	para "Tu as déjà"
+	line "entendu parler du"
+
+	para "gardien des mers,"
+	line "dis-moi?"
+
+	para "Inacceptable."
+
+	para "Rends-toi au"
+	line "sanctuaire en"
+	cont "ruines sur"
+
+	para "l'île Shamouti."
+
+	para "Je te montrerai"
+	line "qui mérite ces"
+	cont "#mon."
+	done
+else
 	text "Lawrence: Hello"
 	line "again, <PLAYER>."
 
@@ -169,11 +218,18 @@ SeafoamIslandsB4FLawrenceSpeechText:
 	line "I deserve to own"
 	cont "those #mon."
 	done
+endc
 
 SeafoamIslandsB4FLawrenceEscapeRopeText:
+if DEF(_LOCALE_FR)
+	text "Lawrence utilise"
+	line "une Corde Sortie!"
+	done
+else
 	text "Lawrence used an"
 	line "Escape Rope!"
 	done
+endc
 
 SeafoamIslandsB4FMovementData_LawrenceSurfApproach1:
 	step_right

@@ -182,24 +182,54 @@ Rocket2Script_LetsYouPassNorth:
 	step_end
 
 RocketText_TollFee:
+if DEF(_LOCALE_FR)
+	text "Stop, gamin!"
+
+	para "Paye mille ¥"
+	line "pour passer."
+	done
+else
 	text "Hold it there,"
 	line "kiddo!"
 
 	para "The toll is ¥{d:ROUTE43GATE_TOLL}"
 	line "to go through."
 	done
+endc
 
 RocketText_ThankYou:
+if DEF(_LOCALE_FR)
+	text "Merci bien!"
+	done
+else
 	text "Thank you very"
 	line "much!"
 	done
+endc
 
 RocketText_AllYouGot:
+if DEF(_LOCALE_FR)
+	text "Alors donne ce"
+	line "que t'as."
+	done
+else
 	text "Then pay what you"
 	line "have, please."
 	done
+endc
 
 RocketText_MakingABundle:
+if DEF(_LOCALE_FR)
+	text "Hé-hé-hé. On se"
+	line "fait des thunes."
+
+	para "Tout le monde veut"
+	line "voir ce qu'il se"
+
+	para "passe au LAC"
+	line "COLERE."
+	done
+else
 	text "He-he-he. We're"
 	line "making a bundle."
 
@@ -209,8 +239,22 @@ RocketText_MakingABundle:
 	para "on up at Lake of"
 	line "Rage."
 	done
+endc
 
 OfficerText_FoundTM:
+if DEF(_LOCALE_FR)
+	text "Des voyous en noir"
+	line "m'ont fait quitter"
+
+	para "mon poste. Ils ont"
+	line "oublié ce truc en"
+
+	para "plus. J'veux pas"
+	line "le garder, moi…"
+
+	para "Tu le veux?"
+	done
+else
 	text "I got chased from"
 	line "my post by these"
 	cont "thugs in black."
@@ -222,9 +266,18 @@ OfficerText_FoundTM:
 	line "fortable. Could"
 	cont "you take it away?"
 	done
+endc
 
 OfficerText_AvoidGrass:
+if DEF(_LOCALE_FR)
+	text "Emprunte cette"
+	line "porte pour éviter"
+
+	para "les hautes herbes."
+	done
+else
 	text "Use this gate to"
 	line "avoid walking in"
 	cont "the grass."
 	done
+endc

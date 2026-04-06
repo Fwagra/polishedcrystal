@@ -230,6 +230,19 @@ ZapdosText:
 	done
 
 Route10NorthLawrenceGreetingText:
+if DEF(_LOCALE_FR)
+	text "Lawrence: On se"
+	line "recroise, <PLAYER>."
+
+	para "Je cherchais"
+	line "l'oiseau de feu"
+
+	para "légendaire, mais"
+	line "pas le bon."
+
+	para "Tu vois là-haut?"
+	done
+else
 	text "Lawrence: We meet"
 	line "again, <PLAYER>."
 
@@ -243,8 +256,27 @@ Route10NorthLawrenceGreetingText:
 	para "Can you see up"
 	line "there?"
 	done
+endc
 
 Route10NorthLawrenceZapdosText:
+if DEF(_LOCALE_FR)
+	text "Lawrence: Un"
+	line "Electhor."
+
+	para "Attiré par la"
+	line "centrale,"
+
+	para "sans doute. …C'est"
+	line "ton œuvre?"
+
+	para "Je te laisse ce"
+	line "#mon rare à"
+	cont "attraper."
+
+	para "Les doubles ne"
+	line "m'intéressent pas."
+	done
+else
 	text "Lawrence: That's"
 	line "a Zapdos."
 
@@ -265,13 +297,72 @@ Route10NorthLawrenceZapdosText:
 	line "no interest in"
 	cont "duplicates."
 	done
+endc
 
 Route10NorthLawrenceFlyText:
+if DEF(_LOCALE_FR)
+	text "Lawrence:"
+	line "Electhor, Vol!"
+	done
+else
 	text "Lawrence: Zapdos,"
 	line "Fly!"
 	done
+endc
 
 Route10NorthLawrenceSpeechText:
+if DEF(_LOCALE_FR)
+	text "Lawrence: Salut,"
+	line "encore <PLAYER>."
+
+	para "Tu voulais bien"
+	line "cet Electhor."
+
+	para "Je croyais que tu"
+	line "te fichais des"
+
+	para "légendes."
+
+	para "…Quoi?! Tu as les"
+	line "trois oiseaux"
+	cont "légendaires?"
+
+	para "Impossible."
+
+	para "Moi, avec mes"
+	line "moyens et mes"
+	cont "connaissances…"
+
+	para "je n'ai pas trouvé"
+	line "Sulfura…"
+
+	para "Pourquoi as-tu"
+	line "réussi là où"
+	cont "j'ai échoué?"
+
+	para "Sais-tu sentir la"
+	line "grandeur des"
+	cont "mirages ailés?"
+
+	para "Tu as déjà"
+	line "entendu parler du"
+
+	para "gardien des mers,"
+	line "dis-moi?"
+
+	para "Inacceptable."
+
+	para "Rends-toi au"
+	line "sanctuaire en"
+	cont "ruines sur"
+
+	para "l'île Shamouti."
+
+	para "Je te montrerai"
+	line "qui mérite ces"
+	cont "#mon."
+	done
+else
 	text "Lawrence: Hello"
 	line "again, <PLAYER>."
 
@@ -319,14 +410,25 @@ Route10NorthLawrenceSpeechText:
 	line "I deserve to own"
 	cont "those #mon."
 	done
+endc
 
 RockTunnelSignText:
+if DEF(_LOCALE_FR)
+	text "TUNNEL ROCHE"
+	done
+else
 	text "Rock Tunnel"
 	done
+endc
 
 PowerPlantSignText:
+if DEF(_LOCALE_FR)
+	text "CENTRALE de KANTO"
+	done
+else
 	text "Kanto Power Plant"
 	done
+endc
 
 Route10NorthMovementData_LawrenceApproach1:
 	step_left

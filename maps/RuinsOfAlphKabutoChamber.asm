@@ -135,6 +135,34 @@ MapRuinsofAlphKabutoChamberSignpost4Script:
 	endtext
 
 RuinsOfAlphKabutoChamberReceptionistText:
+if DEF(_LOCALE_FR)
+	text "Bienvenue dans"
+	line "cette salle."
+
+	para "Des panneaux cou-"
+	line "lissants représen-"
+
+	para "tent un #mon"
+	line "dessiné par les"
+
+	para "anciens."
+	line "Bouge les panneaux"
+
+	para "pour reconstituer"
+	line "le dessin."
+
+	para "A droite se trouve"
+	line "la description du"
+
+	para "#mon."
+	line "Au fond des scien-"
+
+	para "tifiques analysent"
+	line "de nouvelles"
+
+	para "figures…"
+	done
+else
 	text "Welcome to this"
 	line "chamber."
 
@@ -158,8 +186,23 @@ RuinsOfAlphKabutoChamberReceptionistText:
 	para "some newly found"
 	line "patterns."
 	done
+endc
 
 RuinsOfAlphKabutoChamberScientistCrypticText:
+if DEF(_LOCALE_FR)
+	text "Récemment,"
+	line "d'étranges signes"
+
+	para "sont apparus."
+	line "Bizarre…"
+
+	para "Ils n'y étaient"
+	line "pas auparavant…"
+
+	para "Va donc jeter un"
+	line "oeil sur les murs."
+	done
+else
 	text "Recently, strange,"
 	line "cryptic patterns"
 	cont "have appeared."
@@ -171,16 +214,33 @@ RuinsOfAlphKabutoChamberScientistCrypticText:
 	para "You should take a"
 	line "look at the walls."
 	done
+endc
 
 RuinsOfAlphKabutoChamberScientistHoleText:
+if DEF(_LOCALE_FR)
+	text "Ah! Un autre trou!"
+	line "On peut facilement"
+
+	para "s'y faufiler!"
+	done
+else
 	text "Ah! Here's another"
 	line "huge hole!"
 
 	para "It's big enough to"
 	line "go through!"
 	done
+endc
 
 RuinsOfAlphKabutoChamberScientistTremorText:
+if DEF(_LOCALE_FR)
+	text "Le tremblement m'a"
+	line "fait peur!"
+
+	para "Mais ce mur est"
+	line "trop intéressant."
+	done
+else
 	text "That tremor was"
 	line "pretty scary!"
 
@@ -188,11 +248,24 @@ RuinsOfAlphKabutoChamberScientistTremorText:
 	line "concerned about"
 	cont "this wall here…"
 	done
+endc
 
 RuinsOfAlphKabutoChamberDescriptionText:
+if DEF(_LOCALE_FR)
+	text "Un #mon qui se"
+	line "cachait au fond"
+
+	para "des mers. Les yeux"
+	line "sur son dos scru-"
+
+	para "taient les envi-"
+	line "rons."
+	done
+else
 	text "A #mon that hid"
 	line "on the sea floor."
 
 	para "Eyes on its back"
 	line "scanned the area."
 	done
+endc

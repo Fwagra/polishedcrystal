@@ -59,6 +59,31 @@ SafariZoneWestRestHouse2FlanneryScript:
 	jumpopenedtext .RefusedText
 
 .IntroText:
+if DEF(_LOCALE_FR)
+	text "Salut!"
+
+	para "Cool de croiser"
+	line "un autre explora-"
+	cont "teur ici!"
+
+	para "Je suis Flannery."
+
+	para "Je viens de Hoenn,"
+	line "j'aime l'humidité"
+
+	para "et les sources"
+	line "chaudes."
+
+	para "La Zone Safari,"
+	line "c'est comme chez"
+
+	para "moi! On échange"
+	line "des attaques"
+
+	para "brûlantes en"
+	line "combat!"
+	done
+else
 	text "Hi there!"
 
 	para "Good to see some-"
@@ -80,8 +105,25 @@ SafariZoneWestRestHouse2FlanneryScript:
 	line "superhot moves in"
 	cont "a battle!"
 	done
+endc
 
 .RematchText:
+if DEF(_LOCALE_FR)
+	text "Salut,"
+	line "<PLAYER>!"
+
+	para "Contente de te"
+	line "revoir!"
+
+	para "Perdre ne va pas"
+	line "m'empêcher de"
+
+	para "sourire."
+
+	para "On refait un duel"
+	line "de moves brûlants!"
+	done
+else
 	text "Hi there,"
 	line "<PLAYER>!"
 
@@ -96,8 +138,17 @@ SafariZoneWestRestHouse2FlanneryScript:
 	line "superhot moves in"
 	cont "another battle!"
 	done
+endc
 
 .SeenText:
+if DEF(_LOCALE_FR)
+	text "Je vais te montrer"
+	line "les moves torrides"
+
+	para "que j'ai rodés"
+	line "près d'un volcan!"
+	done
+else
 	text "I'm going to demo-"
 	line "nstrate the hot"
 
@@ -105,13 +156,31 @@ SafariZoneWestRestHouse2FlanneryScript:
 	line "close to a vol-"
 	cont "cano!"
 	done
+endc
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "Pfiou! J'étais"
+	line "près d'exploser!"
+	done
+else
 	text "Whew! On the verge"
 	line "of eruption!"
 	done
+endc
 
 .AfterText:
+if DEF(_LOCALE_FR)
+	text "J'ai perdu, mais"
+	line "je suis comblée."
+
+	para "Rarement un combat"
+	line "aussi torride!"
+
+	para "On remet ça une"
+	line "autre fois!"
+	done
+else
 	text "I lost the match,"
 	line "but I'm completely"
 	cont "satisfied."
@@ -126,9 +195,17 @@ SafariZoneWestRestHouse2FlanneryScript:
 	line "one like this"
 	cont "sometime!"
 	done
+endc
 
 .RefusedText:
+if DEF(_LOCALE_FR)
+	text "OK… Euh…"
+	line "Reviens si tu veux"
+	cont "te battre!"
+	done
+else
 	text "OK then… Uh…"
 	line "Don't be shy about"
 	cont "it if you return!"
 	done
+endc

@@ -189,13 +189,27 @@ SnowtopMountainOutsideStopPanningMovement:
 	step_end
 
 SnowtopMountainOutsideOutlookText:
+if DEF(_LOCALE_FR)
+	text "Je vois Oliville"
+	line "d'ici!"
+
+	para "Tu veux jeter un"
+	line "coup d'oeil?"
+	done
+else
 	text "I can see Olivine"
 	line "City from here!"
 
 	para "Want to look"
 	line "around?"
 	done
+endc
 
 SnowtopMountainOutsideWhatAViewText:
+if DEF(_LOCALE_FR)
+	text "Quel panorama!"
+	done
+else
 	text "What a view!"
 	done
+endc

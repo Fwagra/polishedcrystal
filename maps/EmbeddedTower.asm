@@ -79,6 +79,23 @@ EmbeddedTowerSteven2Script:
 	jumpopenedtext EmbeddedTowerSteven2AfterText
 
 EmbeddedTowerSteven1IntroText:
+if DEF(_LOCALE_FR)
+	text "Bonjour! Je suis"
+	line "Pierre. J'adore"
+
+	para "les pierres rares."
+	line "Je viens de Hoenn,"
+
+	para "une belle région"
+	line "au bord d'un océan"
+
+	para "d'une clarté"
+	line "incroyable."
+
+	para "Tu devrais y faire"
+	line "un tour."
+	done
+else
 	text "Hello! I'm Steven."
 	line "Rare stones are"
 	cont "my passion."
@@ -95,8 +112,25 @@ EmbeddedTowerSteven1IntroText:
 	para "You should visit"
 	line "sometime."
 	done
+endc
 
 EmbeddedTowerSteven1TowerText:
+if DEF(_LOCALE_FR)
+	text "Pierre: Je cherche"
+	line "des pierres pour"
+
+	para "ma collection."
+	line "Voici la Tour"
+
+	para "Enfouie. Des gens"
+	line "de Hoenn l'ont"
+
+	para "bâtie pour lier"
+	line "la mer, la terre"
+
+	para "et le ciel."
+	done
+else
 	text "Steven: I'm here in"
 	line "search of stones"
 	cont "for my collection."
@@ -111,8 +145,22 @@ EmbeddedTowerSteven1TowerText:
 	line "the sea, the land,"
 	cont "and the sky."
 	done
+endc
 
 EmbeddedTowerSteven1NotNowText:
+if DEF(_LOCALE_FR)
+	text "Pierre:"
+	line "Tes #mon sont"
+
+	para "en pleine forme."
+	line "Quand tu auras"
+
+	para "vaincu le Conseil"
+	line "4, reviens te"
+
+	para "battre contre moi."
+	done
+else
 	text "Steven: Your"
 	line "#mon are look-"
 	cont "ing pretty good."
@@ -123,8 +171,19 @@ EmbeddedTowerSteven1NotNowText:
 	para "come back here to"
 	line "battle with me."
 	done
+endc
 
 EmbeddedTowerSteven1ChallengeText:
+if DEF(_LOCALE_FR)
+	text "Pierre:"
+	line "Tes #mon sont"
+
+	para "en pleine forme."
+	line "On est tous les"
+
+	para "deux là: un duel?"
+	done
+else
 	text "Steven: Your"
 	line "#mon are look-"
 	cont "ing pretty good."
@@ -133,33 +192,83 @@ EmbeddedTowerSteven1ChallengeText:
 	line "here, why don't we"
 	cont "have a battle?"
 	done
+endc
 
 EmbeddedTowerSteven1NoText:
 EmbeddedTowerSteven2NoText:
+if DEF(_LOCALE_FR)
+	text "Pierre: Hum."
+	line "Si tu changes"
+
+	para "d'avis, je serai"
+	line "toujours là."
+	done
+else
 	text "Steven: Hmm."
 	line "If you change"
 
 	para "your mind, I'll"
 	line "be right here."
 	done
+endc
 
 EmbeddedTowerSteven1YesText:
 EmbeddedTowerSteven2YesText:
+if DEF(_LOCALE_FR)
+	text "Pierre: Montre-moi"
+	line "tout ce que tu"
+
+	para "as! En garde!"
+	done
+else
 	text "Steven: I want"
 	line "you to hit me"
 
 	para "with it all!"
 	line "Now, bring it!"
 	done
+endc
 
 EmbeddedTowerSteven1WinText:
 EmbeddedTowerSteven2WinText:
+if DEF(_LOCALE_FR)
+	text "Tu es vraiment un"
+	line "noble Dresseur de"
+	cont "#mon!"
+	done
+else
 	text "You are a truly"
 	line "noble #mon"
 	cont "trainer!"
 	done
+endc
 
 EmbeddedTowerSteven1ItemText:
+if DEF(_LOCALE_FR)
+	text "Pierre: Bravo!"
+
+	para "L'amour que tu"
+	line "portes à tes"
+
+	para "#mon… Et ceux"
+	line "qui y répondent"
+
+	para "de toutes leurs"
+	line "forces…"
+
+	para "Vous êtes un tout"
+	line "et créez une"
+
+	para "puissance encore"
+	line "plus grande."
+
+	para "Ainsi tu as gagné."
+	line "Prends ce Band."
+
+	para "Muscle, il te"
+	line "sera utile."
+	done
+else
 	text "Steven: Congratu-"
 	line "lations!"
 
@@ -188,13 +297,40 @@ EmbeddedTowerSteven1ItemText:
 	line "benefit from this"
 	cont "item."
 	done
+endc
 
 EmbeddedTowerSteven1AfterText:
+if DEF(_LOCALE_FR)
+	text "Pierre: A une"
+	line "prochaine fois!"
+	done
+else
 	text "Steven: May our"
 	line "paths cross again."
 	done
+endc
 
 EmbeddedTowerSteven2ChallengeText:
+if DEF(_LOCALE_FR)
+	text "Pierre:"
+	line "Te revoilà,"
+	cont "<PLAYER>!"
+
+	para "J'ai trouvé de"
+	line "belles pierres"
+
+	para "pour compléter"
+	line "ma collection."
+
+	para "Quoi de neuf?"
+
+	para "Tu as encore battu"
+	line "le Conseil 4?"
+
+	para "Bravo! On refait"
+	line "un duel?"
+	done
+else
 	text "Steven: We meet"
 	line "again, <PLAYER>!"
 
@@ -212,8 +348,23 @@ EmbeddedTowerSteven2ChallengeText:
 	para "Why don't we have"
 	line "another battle?"
 	done
+endc
 
 EmbeddedTowerSteven2AfterText:
+if DEF(_LOCALE_FR)
+	text "Pierre: Au final,"
+	line "tu restes le plus"
+
+	para "fort. Mais je ne"
+	line "regrette pas ce"
+
+	para "combat. Chaque"
+	line "fois qu'on se bat,"
+
+	para "j'apprends sur les"
+	line "#mon!"
+	done
+else
 	text "Steven: In the"
 	line "end, you are still"
 	cont "the strongest."
@@ -227,3 +378,4 @@ EmbeddedTowerSteven2AfterText:
 	para "I learn more about"
 	line "#mon!"
 	done
+endc

@@ -88,18 +88,38 @@ SeagallopFerryNavelGateSailorArrive2MovementData:
 	step_end
 
 SeagallopFerryNavelToVermilionQuestionText:
+if DEF(_LOCALE_FR)
+	text "Tu repars pour"
+	line "CARMIN SUR MER?"
+	done
+else
 	text "Ready to head back"
 	line "to Vermilion City?"
 	done
+endc
 
 SeagallopFerryNavelToVermilionText:
+if DEF(_LOCALE_FR)
+	text "Parfait!"
+
+	para "Tout le monde"
+	line "sur le Seagallop!"
+	done
+else
 	text "All right!"
 
 	para "All aboard the"
 	line "Seagallop Ferry!"
 	done
+endc
 
 SeagallopFerryNavelRockRefusedText:
+if DEF(_LOCALE_FR)
+	text "Je t'attends"
+	line "ici."
+	done
+else
 	text "I'll be waiting"
 	line "right here."
 	done
+endc

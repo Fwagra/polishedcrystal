@@ -84,15 +84,26 @@ SeagallopFerryShamoutiDepartureScript:
 VermilionValenciaMenuDataHeader:
 	db MENU_BACKUP_TILES
 	menu_coords 0, 4, 18, 11
-	dw .MenuData2
+if DEF(_LOCALE_FR)
+	dw .MenuData2_FR
+else
+	dw .MenuData2_EN
+endc
 	db 1 ; default option
 
-.MenuData2:
+.MenuData2_EN:
 	db $80 ; flags
 	db 3 ; items
 	db "Vermilion City@"
 	db "Valencia Island@"
 	db "Cancel@"
+
+.MenuData2_FR:
+	db $80 ; flags
+	db 3 ; items
+	db "CARMIN SUR MER@"
+	db "ILE VALENCIA@"
+	db "Annuler@"
 
 SeagallopFerryShamoutiGatePlayerDepartMovementData:
 	step_down
@@ -119,30 +130,65 @@ SeagallopFerryShamoutiGateSailorArrive2MovementData:
 	step_end
 
 SeagallopFerryShamoutiWhichIslandText:
+if DEF(_LOCALE_FR)
+	text "Content de te"
+	line "revoir! Ou vas-tu?"
+	done
+else
 	text "Welcome back!"
 	line "Where to now?"
 	done
+endc
 
 SeagallopFerryShamoutiToVermilionQuestionText:
+if DEF(_LOCALE_FR)
+	text "Tu repars pour"
+	line "CARMIN SUR MER?"
+	done
+else
 	text "Ready to head back"
 	line "to Vermilion City?"
 	done
+endc
 
 SeagallopFerryShamoutiDepartureText:
+if DEF(_LOCALE_FR)
+	text "Parfait!"
+
+	para "Tout le monde"
+	line "sur le Seagallop!"
+	done
+else
 	text "All right!"
 
 	para "All aboard the"
 	line "Seagallop Ferry!"
 	done
+endc
 
 SeagallopFerryShamoutiIslandRefusedText:
+if DEF(_LOCALE_FR)
+	text "Je t'attends"
+	line "ici."
+	done
+else
 	text "I'll be waiting"
 	line "right here."
 	done
+endc
 
 SeagallopFerryShamoutiGateTwinText:
+if DEF(_LOCALE_FR)
+	text "J'accueille les"
+	line "touristes ici."
+
+	para "Passe un bon"
+	line "séjour!"
+	done
+else
 	text "I'm here to greet"
 	line "the tourists."
 
 	para "Have a nice stay!"
 	done
+endc

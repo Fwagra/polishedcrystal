@@ -80,6 +80,14 @@ KimonoGirlAmiScript:
 	jumpthisopenedtext
 
 .OutroText:
+if DEF(_LOCALE_FR)
+	text "Mes cousines et"
+	line "moi dansons à"
+
+	para "Doublonville, mais"
+	line "on voyage aussi."
+	done
+else
 	text "My cousins and I"
 	line "dance in Ecruteak"
 	cont "City, but we are"
@@ -87,8 +95,23 @@ KimonoGirlAmiScript:
 	para "known to travel"
 	line "as well."
 	done
+endc
 
 .IntroText:
+if DEF(_LOCALE_FR)
+	text "Je suis une fille"
+	line "en kimono."
+
+	para "Tu as rencontré"
+	line "mes cinq cousines"
+
+	para "danseuses à"
+	line "Doublonville?"
+
+	para "Dis-moi si c'est"
+	line "le cas."
+	done
+else
 	text "I am a Kimono"
 	line "Girl."
 
@@ -99,8 +122,20 @@ KimonoGirlAmiScript:
 	para "Let me know if"
 	line "you do."
 	done
+endc
 
 .SeenText:
+if DEF(_LOCALE_FR)
+	text "Si je dansais ici,"
+	line "mes sandales"
+
+	para "glisseraient ou"
+	line "colleraient à la"
+
+	para "glace. Battons-"
+	line "nous plutôt!"
+	done
+else
 	text "If I were to dance"
 	line "here, my sandals"
 
@@ -110,19 +145,34 @@ KimonoGirlAmiScript:
 	para "Therefore let us"
 	line "battle instead!"
 	done
+endc
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "Tu es redoutable…"
+	done
+else
 	text "Oh, you are"
 	line "fearsome…"
 	done
+endc
 
 .AfterText:
+if DEF(_LOCALE_FR)
+	text "Tu es un Dresseur"
+	line "très équilibré."
+
+	para "Sers-toi de cet"
+	line "objet!"
+	done
+else
 	text "You are a well-"
 	line "balanced Trainer."
 
 	para "Please, make use"
 	line "of this item!"
 	done
+endc
 
 SnowtopMountainInsideSkierScript:
 	faceplayer
@@ -155,6 +205,18 @@ SnowtopMountainInsideTutorIcyWindScript:
 	jumpopenedtext Text_SnowtopMountainInsideTutorTaught
 
 SnowtopMountainInsideSkierText:
+if DEF(_LOCALE_FR)
+	text "Le vent et la"
+	line "grêle dans ce"
+
+	para "canyon font mal si"
+	line "tu n'es pas équipé"
+
+	para "pour le froid."
+	line "Utile aussi pour"
+	cont "un #mon!"
+	done
+else
 	text "The wind and hail"
 	line "in this canyon"
 
@@ -166,8 +228,17 @@ SnowtopMountainInsideSkierText:
 	line "good technique"
 	cont "for a #mon!"
 	done
+endc
 
 Text_SnowtopMountainInsideTutorIcyWind:
+if DEF(_LOCALE_FR)
+	text "J'apprends Vent"
+	line "Glace à un de tes"
+
+	para "#mon contre une"
+	line "Feuille Arg."
+	done
+else
 	text "I'll teach a #-"
 	line "mon of yours to"
 
@@ -175,25 +246,50 @@ Text_SnowtopMountainInsideTutorIcyWind:
 	line "you trade me a"
 	cont "Silver Leaf."
 	done
+endc
 
 Text_SnowtopMountainInsideTutorNoSilverLeaf:
+if DEF(_LOCALE_FR)
+	text "Tu n'as pas de"
+	line "Feuille Arg."
+	done
+else
 	text "Oh, but you don't"
 	line "have a Silver"
 	cont "Leaf."
 	done
+endc
 
 Text_SnowtopMountainInsideTutorQuestion:
+if DEF(_LOCALE_FR)
+	text "Je lui apprends"
+	line "Vent Glace?"
+	done
+else
 	text "Should I teach"
 	line "your #mon"
 	cont "Icy Wind?"
 	done
+endc
 
 Text_SnowtopMountainInsideTutorRefused: ; text > text
+if DEF(_LOCALE_FR)
 	text "Brr…"
 	done
+else
+	text "Brr…"
+	done
+endc
 
 Text_SnowtopMountainInsideTutorTaught:
+if DEF(_LOCALE_FR)
+	text "OK! Ton #mon"
+	line "connaît"
+	cont "Vent Glace!"
+	done
+else
 	text "OK! Now your"
 	line "#mon knows"
 	cont "Icy Wind!"
 	done
+endc

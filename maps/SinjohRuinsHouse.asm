@@ -57,6 +57,17 @@ SinjohRuinsHouseCynthiaScript:
 	jumpthistext
 
 SinjohRuinsHouseCynthiaAfterText:
+if DEF(_LOCALE_FR)
+	text "Cynthia: Quel"
+	line "combat incroyable!"
+
+	para "Tu es un super"
+	line "dresseur. Reviens"
+
+	para "me voir un de"
+	line "ces jours!"
+	done
+else
 	text "Cynthia: What an"
 	line "incredible battle!"
 
@@ -67,8 +78,34 @@ SinjohRuinsHouseCynthiaAfterText:
 	line "happy to see you"
 	cont "again sometime."
 	done
+endc
 
 SinjohRuinsHousePokefanmText:
+if DEF(_LOCALE_FR)
+	text "Autrefois, les"
+	line "gens vivaient"
+
+	para "plus proches des"
+	line "#mon."
+
+	para "Mythes et légendes"
+	line "naissaient autour"
+
+	para "des #mon"
+	line "puissants, puis"
+
+	para "voyageaient entre"
+	line "les régions."
+
+	para "Ces ruines mêlent"
+	line "les peuples des"
+
+	para "Ruines d'Alpha et"
+	line "la Colonne Lance"
+
+	para "de Sinnoh."
+	done
+else
 	text "A long time ago,"
 	line "people used to"
 
@@ -93,8 +130,21 @@ SinjohRuinsHousePokefanmText:
 	para "Spear Pillar in"
 	line "Sinnoh."
 	done
+endc
 
 SinjohRuinsHouseGrampsText:
+if DEF(_LOCALE_FR)
+	text "Tu sembles perdu,"
+	line "sans savoir"
+
+	para "pourquoi tu es là."
+
+	para "Tu veux que mon"
+	line "Abra te Teleporte"
+
+	para "chez toi?"
+	done
+else
 	text "You seem so out"
 	line "of place, not even"
 
@@ -105,23 +155,54 @@ SinjohRuinsHouseGrampsText:
 	line "Abra to Teleport"
 	cont "you back home?"
 	done
+endc
 
 SinjohRuinsHouseGrampsYesText:
+if DEF(_LOCALE_FR)
+	text "Très bien. Pense"
+	line "fort à ta maison."
+	done
+else
 	text "OK, OK. Picture"
 	line "your house in your"
 	cont "mind…"
 	done
+endc
 
 SinjohRuinsHouseGrampsNoText:
+if DEF(_LOCALE_FR)
+	text "OK. Alors bon"
+	line "courage!"
+	done
+else
 	text "OK, OK. The best"
 	line "of luck to you!"
 	done
+endc
 
 SinjohRuinsHouseAbraText:
 	text "Abra: Aabra…"
 	done
 
 SinjohRuinsHouseCynthiaChallengeText:
+if DEF(_LOCALE_FR)
+	text "Cynthia: Salut,"
+	line "<PLAYER>."
+
+	para "Tu vas bien?"
+
+	para "Tu as refait le"
+	line "Conseil 4! Bravo!"
+
+	para "Je me demande ce"
+	line "que tu as appris"
+
+	para "depuis notre duel."
+
+	para "On recommence,"
+	line "<PLAYER>?"
+	done
+else
 	text "Cynthia: Hello,"
 	line "<PLAYER>."
 
@@ -139,14 +220,30 @@ SinjohRuinsHouseCynthiaChallengeText:
 	para "Shall we battle"
 	line "again, <PLAYER>?"
 	done
+endc
 
 SinjohRuinsHouseCynthiaNoText:
+if DEF(_LOCALE_FR)
+	text "Cynthia: Reviens"
+	line "si tu changes"
+	cont "d'avis."
+	done
+else
 	text "Cynthia: Come back"
 	line "any time if you"
 	cont "change your mind."
 	done
+endc
 
 SinjohRuinsHouseCynthiaYesText:
+if DEF(_LOCALE_FR)
+	text "Cynthia: Avant"
+	line "d'envoyer mes"
+
+	para "#mon, mon cœur"
+	line "s'emballe…"
+	done
+else
 	text "Cynthia: Before"
 	line "I send out my"
 	cont "#mon,"
@@ -154,11 +251,21 @@ SinjohRuinsHouseCynthiaYesText:
 	para "my heart always"
 	line "begins to race…"
 	done
+endc
 
 SinjohRuinsHouseCynthiaWinText:
+if DEF(_LOCALE_FR)
+	text "Je ne me souviens"
+	line "pas d'avoir été"
+
+	para "à ce point"
+	line "dominée!"
+	done
+else
 	text "I can't remember"
 	line "the last time I"
 
 	para "was outclassed"
 	line "like this!"
 	done
+endc

@@ -65,16 +65,7 @@ FastShip1FSailor1Script:
 	iftruefwd .Arrived
 	checkevent EVENT_FAST_SHIP_DESTINATION_OLIVINE
 	iftrue_jumpopenedtext FastShip1FSailor1Text_ToOlivine
-	jumpthisopenedtext
-
-	text "Fast Ship S.S.Aqua"
-	line "is en route to"
-	cont "Vermilion City."
-
-	para "We will make an"
-	line "announcement when"
-	cont "we arrive."
-	done
+	jumpopenedtext FastShip1FSailor1Text_ToVermilion
 
 .Arrived:
 	checkevent EVENT_FAST_SHIP_DESTINATION_OLIVINE
@@ -194,6 +185,17 @@ FastShip1F_PlayerLeavesShipRightMovement:
 	step_end
 
 FastShip1FSailor1Text_ToOlivine:
+if DEF(_LOCALE_FR)
+	text "Le BATEAU EXPRESS"
+	line "AQUARIA va à"
+
+	para "OLIVILLE."
+	line "Nous ferons un"
+
+	para "appel à notre"
+	line "arrivée."
+	done
+else
 	text "Fast Ship S.S.Aqua"
 	line "is en route to"
 	cont "Olivine City."
@@ -202,8 +204,44 @@ FastShip1FSailor1Text_ToOlivine:
 	line "announcement when"
 	cont "we arrive."
 	done
+endc
+
+FastShip1FSailor1Text_ToVermilion:
+if DEF(_LOCALE_FR)
+	text "Le BATEAU EXPRESS"
+	line "AQUARIA va à"
+
+	para "CARMIN SUR MER."
+	line "Nous ferons un"
+
+	para "appel à notre"
+	line "arrivée."
+	done
+else
+	text "Fast Ship S.S.Aqua"
+	line "is en route to"
+	cont "Vermilion City."
+
+	para "We will make an"
+	line "announcement when"
+	cont "we arrive."
+	done
+endc
 
 FastShip1FSailor2Text_FirstTime:
+if DEF(_LOCALE_FR)
+	text "Voici votre"
+	line "cabine."
+
+	para "Si vos #mon"
+	line "sont blessés,"
+
+	para "dormez et…"
+	line "Ils seront tous"
+
+	para "soignés."
+	done
+else
 	text "Here's your cabin."
 
 	para "If your #mon"
@@ -213,8 +251,23 @@ FastShip1FSailor2Text_FirstTime:
 	para "That will heal"
 	line "them."
 	done
+endc
 
 FastShip1FSailor2Text:
+if DEF(_LOCALE_FR)
+	text "Voici ta cabine."
+
+	para "Tu peux soigner"
+	line "tes #mon en"
+
+	para "faisant la sieste"
+	line "au lit."
+
+	para "Le bateau arrive"
+	line "pendant que tu"
+	cont "dors."
+	done
+else
 	text "Here's your cabin."
 
 	para "You can heal your"
@@ -225,8 +278,20 @@ FastShip1FSailor2Text:
 	line "arrive while"
 	cont "you're sleeping."
 	done
+endc
 
 FastShip1FSailor3Text:
+if DEF(_LOCALE_FR)
+	text "Tous les"
+	line "passagers sont"
+
+	para "dresseurs."
+	line "Ils veulent tous"
+
+	para "se battre dans"
+	line "leur cabine."
+	done
+else
 	text "The passengers are"
 	line "all trainers."
 
@@ -234,8 +299,23 @@ FastShip1FSailor3Text:
 	line "ing to battle in"
 	cont "their cabins."
 	done
+endc
 
 FastShip1FGrandpaText:
+if DEF(_LOCALE_FR)
+	text "Whoa! Pardon."
+	line "Je suis un peu"
+
+	para "pressé!"
+	line "Ma petite-fille a"
+
+	para "disparu!"
+	line "Elle est toute"
+
+	para "jeune… Préviens-"
+	line "moi si tu la vois!"
+	done
+else
 	text "Whoa! Excuse me."
 	line "I was in a hurry!"
 
@@ -248,15 +328,34 @@ FastShip1FGrandpaText:
 	para "her, please let me"
 	line "know!"
 	done
+endc
 
 FastShip1FSailor1Text_InOlivine:
+if DEF(_LOCALE_FR)
+	text "Le BATEAU EXPRESS"
+	line "AQUARIA est"
+
+	para "arrivé à"
+	line "OLIVILLE."
+	done
+else
 	text "Fast Ship S.S.Aqua"
 	line "has arrived in"
 	cont "Olivine City."
 	done
+endc
 
 FastShip1FSailor1Text_InVermilion:
+if DEF(_LOCALE_FR)
+	text "Le BATEAU EXPRESS"
+	line "AQUARIA est"
+
+	para "arrivé à"
+	line "CARMIN SUR MER."
+	done
+else
 	text "Fast Ship S.S.Aqua"
 	line "has arrived in"
 	cont "Vermilion City."
 	done
+endc
