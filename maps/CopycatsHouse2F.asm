@@ -79,6 +79,15 @@ Copycat1Script:
 	sjump CopycatFinalScript
 
 CopycatGreeting1Text:
+if DEF(_LOCALE_FR)
+	text "<PLAYER>: Salut!"
+	line "Tu aimes les #MON?"
+	line "<PLAYER>: Non."
+	line "Toi. Tu les aimes?"
+	line "<PLAYER>: Hein? Tu"
+	line "m'cherches?"
+	done
+else
 	text "<PLAYER>: Hi! Do"
 	line "you like #mon?"
 
@@ -88,8 +97,24 @@ CopycatGreeting1Text:
 	para "<PLAYER>: Huh?"
 	line "You're strange!"
 	done
+endc
 
 CopycatLostDoll1Text:
+if DEF(_LOCALE_FR)
+	text "<PLAYER>: Salut!"
+	line "On dit que tu as"
+	line "perdu ta # POUPEE"
+	line "préférée."
+	line "<PLAYER>: Si je la"
+	line "trouve, tu me don-"
+	line "nes un PASSE?"
+	line "<PLAYER>: J'vais"
+	line "aller la chercher."
+	line "Tu l'as perdue en"
+	line "allant à CARMIN"
+	line "SUR MER?"
+	done
+else
 	text "<PLAYER>: Hi!"
 	line "I heard that you"
 
@@ -107,8 +132,19 @@ CopycatLostDoll1Text:
 	line "it when you went"
 	cont "to Vermilion City?"
 	done
+endc
 
 CopycatThanks1Text:
+if DEF(_LOCALE_FR)
+	text "<PLAYER>: Salut!"
+	line "Merci pour le"
+	line "PASSE! <PLAYER>:"
+	line "Pardon? <PLAYER>:"
+	line "Tu vas t'arrêter"
+	line "de répé- ter c'que"
+	line "je dis!"
+	done
+else
 	text "<PLAYER>: Hi!"
 	line "Thanks a lot for"
 	cont "the rail pass!"
@@ -119,6 +155,7 @@ CopycatThanks1Text:
 	line "that fun to mimic"
 	cont "my every move?"
 	done
+endc
 
 Copycat2Script:
 	faceplayer
@@ -155,6 +192,15 @@ Copycat2Script:
 	sjump CopycatFinalScript
 
 CopycatGreeting2Text:
+if DEF(_LOCALE_FR)
+	text "<PLAYER>: Salut!"
+	line "Tu aimes les #MON,"
+	line "non? <PLAYER>:"
+	line "Non, pas moi. Toi."
+	line "<PLAYER>: Quoi?"
+	line "T'es bizarre!"
+	done
+else
 	text "<PLAYER>: Hi. You"
 	line "must like #mon."
 
@@ -164,8 +210,24 @@ CopycatGreeting2Text:
 	para "<PLAYER>: Pardon?"
 	line "You're weird!"
 	done
+endc
 
 CopycatLostDoll2Text:
+if DEF(_LOCALE_FR)
+	text "<PLAYER>: Salut!"
+	line "On dit que tu as"
+	line "perdu ta # POUPEE"
+	line "préférée."
+	line "<PLAYER>: Si je la"
+	line "trouve, tu me"
+	line "donnes un PASSE?"
+	line "<PLAYER>: Je vais"
+	line "la chercher. Tu"
+	line "l'as perdue en"
+	line "allant à CARMIN"
+	line "SUR MER?"
+	done
+else
 	text "<PLAYER>: Hi. Did"
 	line "you really lose"
 	cont "your # Doll?"
@@ -183,8 +245,19 @@ CopycatLostDoll2Text:
 	line "it when you were"
 	cont "in Vermilion?"
 	done
+endc
 
 CopycatThanks2Text:
+if DEF(_LOCALE_FR)
+	text "<PLAYER>: Merci"
+	line "pour le PASSE!"
+	line "<PLAYER>: …Quoi?"
+	line "<PLAYER>: T'en as"
+	line "jamais marre de"
+	line "répéter tout ce"
+	line "que je dis?"
+	done
+else
 	text "<PLAYER>: Thank you"
 	line "for the rail pass!"
 
@@ -196,6 +269,7 @@ CopycatThanks2Text:
 	para "copy what I say"
 	line "and do?"
 	done
+endc
 
 Copycat3Script:
 	faceplayer
@@ -238,12 +312,20 @@ CopycatRetortScript:
 	special RefreshSprites
 	jumpthistext
 
+if DEF(_LOCALE_FR)
+	text "COPIEUSE: Hmm?"
+	line "Arrêter de copier?"
+	line "Mais… C'est toute"
+	line "ma vie!"
+	done
+else
 	text "Copycat: Hmm?"
 	line "Quit mimicking?"
 
 	para "But that's my"
 	line "favorite hobby!"
 	done
+endc
 
 CopycatWorriedScript:
 	faceplayer
@@ -253,6 +335,16 @@ CopycatWorriedScript:
 	setevent EVENT_MET_COPYCAT_FOUND_OUT_ABOUT_LOST_ITEM
 	jumpthistext
 
+if DEF(_LOCALE_FR)
+	text "COPIEUSE: Pardon?"
+	line "Tu ne veux pas que"
+	line "je te dise comment"
+	line "faire? Mais j'ai"
+	line "si peur! Et si"
+	line "quelqu'un la"
+	line "trouve?"
+	done
+else
 	text "Copycat: Pardon?"
 
 	para "I shouldn't decide"
@@ -263,6 +355,7 @@ CopycatWorriedScript:
 	line "worried… What if"
 	cont "someone finds it?"
 	done
+endc
 
 CopycatFoundLostItemScript:
 	opentext
@@ -274,6 +367,15 @@ CopycatFoundLostItemScript:
 	sjumpfwd CopycatGivePassScript
 
 .FoundDollText:
+if DEF(_LOCALE_FR)
+	text "COPIEUSE: Hé!"
+	line "C'est ma # POUPEE"
+	line "MELOFEE! Elle est"
+	line "un peu déchirée"
+	line "près de jambe!"
+	line "C'est la mienne!"
+	done
+else
 	text "Copycat: Yay!"
 	line "That's my Clefairy"
 	cont "# Doll!"
@@ -284,6 +386,7 @@ CopycatFoundLostItemScript:
 	para "sewn on? That's"
 	line "proof!"
 	done
+endc
 
 CopycatReturnedLostItemScript:
 	opentext
@@ -295,6 +398,17 @@ CopycatGivePassScript:
 	setevent EVENT_GOT_PASS_FROM_COPYCAT
 	jumpthisopenedtext
 
+if DEF(_LOCALE_FR)
+	text "COPIEUSE: C'est le"
+	line "PASSE pour le"
+	line "TRAIN MAGNET. On"
+	line "me l'a donné quand"
+	line "ils ont tout cassé"
+	line "ma maison pour"
+	line "construire la"
+	line "STATION."
+	done
+else
 	text "Copycat: That's"
 	line "the pass for the"
 	cont "Magnet Train."
@@ -306,12 +420,20 @@ CopycatGivePassScript:
 	line "down our old house"
 	cont "for the station."
 	done
+endc
 
 .GivePassText:
+if DEF(_LOCALE_FR)
+	text "OK. Voilà le PASSE"
+	line "du TRAIN comme"
+	line "promis!"
+	done
+else
 	text "OK. Here's the"
 	line "Magnet Train Pass"
 	cont "like I promised!"
 	done
+endc
 
 CopycatFinalScript:
 	faceplayer
@@ -320,9 +442,15 @@ CopycatFinalScript:
 	special RefreshSprites
 	jumpthistext
 
+if DEF(_LOCALE_FR)
+	text "COPIEUSE: Copier"
+	line "c'est mortel!"
+	done
+else
 	text "Copycat: You bet!"
 	line "It's a scream!"
 	done
+endc
 
 CopycatSpinMovement:
 rept 2
@@ -341,25 +469,45 @@ CopycatsDodrioScript:
 	promptbutton
 	jumpthisopenedtext
 
+if DEF(_LOCALE_FR)
+	text "MON BEAU MIROIR,"
+	line "QUI EST LA PLUS"
+	line "BELLE DE TOUTES?"
+	line "HEIN? C'EST QUI?"
+	done
+else
 	text "Mirror, mirror on"
 	line "the wall, who's"
 
 	para "the fairest one of"
 	line "all?"
 	done
+endc
 
 .Text1:
+if DEF(_LOCALE_FR)
+	text "DODRIO: Driii!"
+	done
+else
 	text "Dodrio: Gii giii!"
 	done
+endc
 
 CopycatsHouse2FDollScript:
 	jumpthistext
 
+if DEF(_LOCALE_FR)
+	text "C'est un #MON"
+	line "super rare! Hein?"
+	line "Une poupée…"
+	done
+else
 	text "This is a rare"
 	line "#mon! Huh?"
 
 	para "It's only a doll…"
 	done
+endc
 
 CopycatsHouse2FDittoText:
 	text "Ditto: Dii…"

@@ -49,6 +49,16 @@ RadioTower3FCooltrainerFScript:
 	iftrue_jumptextfaceplayer RadioTower3FCooltrainerFIsDirectorSafeText
 	jumpthistextfaceplayer
 
+if DEF(_LOCALE_FR)
+	text "Le chef de la TEAM"
+	line "ROCKET s'est en-"
+	line "fermé. Mais le"
+	line "DIRECTEUR peut"
+	line "ouvrir. Il est au"
+	line "quatrième."
+	line "Sauve-le! Pitié!"
+	done
+else
 	text "The Team Rocket"
 	line "boss has locked"
 	cont "himself in."
@@ -61,6 +71,7 @@ RadioTower3FCooltrainerFScript:
 
 	para "Please save him!"
 	done
+endc
 
 .NoRockets:
 	faceplayer
@@ -78,42 +89,74 @@ RadioTower3FCooltrainerFScript:
 GenericTrainerGruntM7:
 	generictrainer GRUNTM, 7, EVENT_BEAT_ROCKET_GRUNTM_7, GruntM7SeenText, GruntM7BeatenText
 
+if DEF(_LOCALE_FR)
+	text "J'ai échoué… Quel"
+	line "déshonneur. Je"
+	line "vais me faire"
+	line "virer, c'est sûr."
+	done
+else
 	text "I failed in my"
 	line "duties…"
 
 	para "I'll be docked pay"
 	line "for this…"
 	done
+endc
 
 GenericTrainerGruntM8:
 	generictrainer GRUNTM, 8, EVENT_BEAT_ROCKET_GRUNTM_8, GruntM8SeenText, GruntM8BeatenText
 
+if DEF(_LOCALE_FR)
+	text "Pfff… Je me sens"
+	line "super inutile! Mes"
+	line "#MON sont nuls et"
+	line "moches!"
+	done
+else
 	text "I feel lousy over"
 	line "losing!"
 
 	para "Darn it! I hate"
 	line "useless #mon!"
 	done
+endc
 
 GenericTrainerGruntM9:
 	generictrainer GRUNTM, 9, EVENT_BEAT_ROCKET_GRUNTM_9, GruntM9SeenText, GruntM9BeatenText
 
+if DEF(_LOCALE_FR)
+	text "Quoi?! Tu as"
+	line "échappé à nos hom-"
+	line "mes du SOUTERRAIN?"
+	line "Comment t'as fait?"
+	done
+else
 	text "What?! You made it"
 	line "past our men in"
 	cont "the Underground?"
 
 	para "How could you?"
 	done
+endc
 
 GenericTrainerRocketScientistMarc:
 	generictrainer ROCKET_SCIENTIST, MARC, EVENT_BEAT_ROCKET_SCIENTIST_MARC, RocketScientistMarcSeenText, RocketScientistMarcBeatenText
 
+if DEF(_LOCALE_FR)
+	text "Bwahahaha… Je peux"
+	line "donner l'alarme"
+	line "d'ici… T'es bien"
+	line "feinté!"
+	done
+else
 	text "Bwahahaha…"
 
 	para "I can transmit as"
 	line "strong a signal as"
 	cont "I need from here."
 	done
+endc
 
 CardKeySlotScript::
 	opentext
@@ -139,6 +182,15 @@ CardKeySlotScript::
 	end
 
 RadioTower3FSuperNerdText:
+if DEF(_LOCALE_FR)
+	text "Nous avons un"
+	line "enregistrement de"
+	line "tous les cris de"
+	line "#MON connus. Nous"
+	line "en avons près de"
+	line "200 différents."
+	done
+else
 	text "We have recordings"
 	line "of the cries of"
 
@@ -148,8 +200,18 @@ RadioTower3FSuperNerdText:
 	para "We must have about"
 	line "200 kinds."
 	done
+endc
 
 RadioTower3FGymGuideText_Rockets:
+if DEF(_LOCALE_FR)
+	text "Les #MON sont les"
+	line "amis adorés des"
+	line "dresseurs. La TEAM"
+	line "ROCKET tente de"
+	line "les con- trôler…"
+	line "C'est affreux, ça!"
+	done
+else
 	text "To trainers, #-"
 	line "mon are their"
 	cont "beloved partners."
@@ -160,8 +222,19 @@ RadioTower3FGymGuideText_Rockets:
 	para "trying to control"
 	line "#mon."
 	done
+endc
 
 RadioTower3FGymGuideText:
+if DEF(_LOCALE_FR)
+	text "Nous diffusons des"
+	line "émissions distra-"
+	line "yantes sans jamais"
+	line "nous arrêter. Je"
+	line "vais essayer de"
+	line "garder le micro 24"
+	line "heures sur 24!"
+	done
+else
 	text "We run 24 hours a"
 	line "day to broadcast"
 
@@ -172,19 +245,33 @@ RadioTower3FGymGuideText:
 	line "run around the"
 	cont "clock too!"
 	done
+endc
 
 RadioTower3FCooltrainerFIsDirectorSafeText:
+if DEF(_LOCALE_FR)
+	text "Le DIRECTEUR est-"
+	line "il en sécurité?"
+	done
+else
 	text "Is the Director"
 	line "safe?"
 	done
+endc
 
 RadioTower3FCooltrainerFYoureMyHeroText:
+if DEF(_LOCALE_FR)
+	text "Merci! Tu es mon"
+	line "héros! Prends ceci"
+	line "en récompense."
+	done
+else
 	text "Thank you!"
 	line "You're my hero!"
 
 	para "This is a token of"
 	line "my appreciation."
 	done
+endc
 
 RadioTower3FCooltrainerFItsAGBCSoundsText:
 	text "That's GBC Sounds."
@@ -208,11 +295,25 @@ RadioTower3FCooltrainerFItsAGBCSoundsText:
 	done
 
 RadioTower3FCooltrainerFYouWereMarvelousText:
+if DEF(_LOCALE_FR)
+	text "Tu es génial!"
+	line "GE-NIAL!"
+	done
+else
 	text "You were simply"
 	line "marvelous!"
 	done
+endc
 
 GruntM7SeenText:
+if DEF(_LOCALE_FR)
+	text "On m'a donné des"
+	line "ordres précis. Je"
+	line "dois casser tous"
+	line "ceux qui sont"
+	line "contre la ROCKET!"
+	done
+else
 	text "I've been given"
 	line "strict orders."
 
@@ -220,60 +321,127 @@ GruntM7SeenText:
 	line "one who challenges"
 	cont "Team Rocket!"
 	done
+endc
 
 GruntM7BeatenText:
+if DEF(_LOCALE_FR)
+	text "De quoi?!"
+	done
+else
 	text "What?!"
 	done
+endc
 
 GruntM8SeenText:
+if DEF(_LOCALE_FR)
+	text "Commander les #MON"
+	line "pour le crime,"
+	line "c'est cool."
+	done
+else
 	text "It feels great"
 	line "ordering #mon"
 	cont "to commit crimes."
 	done
+endc
 
 GruntM8BeatenText:
+if DEF(_LOCALE_FR)
+	text "Arrête ça!"
+	done
+else
 	text "You're kidding!"
 	done
+endc
 
 GruntM9SeenText:
+if DEF(_LOCALE_FR)
+	text "Pourquoi le truc"
+	line "s'est ouvert?"
+	line "C'est toi le"
+	line "responsable?"
+	done
+else
 	text "Why did the shut-"
 	line "ter open? Did you"
 
 	para "have something to"
 	line "do with this?"
 	done
+endc
 
 GruntM9BeatenText:
+if DEF(_LOCALE_FR)
+	text "J'suis fichu!"
+	done
+else
 	text "I'm done for!"
 	done
+endc
 
 RocketScientistMarcSeenText:
+if DEF(_LOCALE_FR)
+	text "Un gamin qui se"
+	line "balade? T'es qui"
+	line "toi?"
+	done
+else
 	text "An unknown child"
 	line "wandering here?"
 
 	para "Who are you?"
 	done
+endc
 
 RocketScientistMarcBeatenText:
+if DEF(_LOCALE_FR)
+	text "Psss! J'faisais"
+	line "pas attention!"
+	done
+else
 	text "Tch! I took you"
 	line "too lightly!"
 	done
+endc
 
 RadioTower3FCardKeySlotText:
+if DEF(_LOCALE_FR)
+	text "Un lecteur de"
+	line "CARTE MAGN."
+	done
+else
 	text "It's the Card Key"
 	line "slot."
 	done
+endc
 
 InsertedTheCardKeyText:
+if DEF(_LOCALE_FR)
+	text "<PLAYER> insère la"
+	line "CARTE MAGN."
+	done
+else
 	text "<PLAYER> inserted"
 	line "the Card Key."
 	done
+endc
 
 RadioTower3FPersonnelSignText:
+if DEF(_LOCALE_FR)
+	text "2ème PERSONNEL"
+	done
+else
 	text "3F Personnel"
 	done
+endc
 
 RadioTower3FPokemonMusicSignText:
+if DEF(_LOCALE_FR)
+	text "MUSIQUE #MON avec"
+	line "DJ BEN"
+	done
+else
 	text "#mon Music with"
 	line "Host DJ Ben"
 	done
+endc

@@ -262,15 +262,28 @@ SchoolgirlSarahBeatenText:
 	done
 
 SchoolgirlIsabelSeenText:
+if DEF(_LOCALE_FR)
+	text "Tu as des #-"
+	line "MON mignons"
+	cont "comme ici?"
+	done
+else
 	text "Do you have cute"
 	line "#mon like the"
 	cont "ones here?"
 	done
+endc
 
 SchoolgirlIsabelBeatenText:
+if DEF(_LOCALE_FR)
+	text "Tes #MON sont"
+	line "vraiment forts!"
+	done
+else
 	text "You have really"
 	line "strong #mon!"
 	done
+endc
 
 TeacherKathrynSeenText:
 	text "You there!"
@@ -287,10 +300,17 @@ TeacherKathrynBeatenText:
 	done
 
 BreederSophieSeenText:
+if DEF(_LOCALE_FR)
+	text "Tu savais que"
+	line "PIKACHU est un"
+	cont "#MON évolué?"
+	done
+else
 	text "Did you know that"
 	line "Pikachu is an"
 	cont "evolved #mon?"
 	done
+endc
 
 BreederSophieBeatenText:
 	text "I thought so!"
@@ -331,11 +351,31 @@ YellowForestWalkerSeenText:
 	done
 
 YellowForestWalkerBeatenText:
+if DEF(_LOCALE_FR)
+	text "Mes #MON Oiseau…"
+	line "A terre!"
+	done
+else
 	text "My bird #mon…"
 	line "Taken down!"
 	done
+endc
 
 YellowForestWalkerAfterText:
+if DEF(_LOCALE_FR)
+	text "WALKER: Je vois"
+	line "pourquoi tu as"
+
+	para "battu Falkner."
+
+	para "Tu connais tes"
+	line "#MON sur le bout"
+	cont "des doigts!"
+
+	para "Tu as mérité cette"
+	line "CS."
+	done
+else
 	text "Walker: Well, I"
 	line "can see why you"
 
@@ -349,8 +389,29 @@ YellowForestWalkerAfterText:
 	para "You've earned"
 	line "this HM."
 	done
+endc
 
 YellowForestWalkerFinalText:
+if DEF(_LOCALE_FR)
+	text "WALKER: Les #-"
+	line "MON Oiseau"
+
+	para "volent parce que"
+	line "c'est leur"
+	cont "désir."
+
+	para "Si tu veux quel-"
+	line "que chose si fort,"
+
+	para "je sais que tu"
+	line "peux y arriver."
+
+	para "Moi, je veux con-"
+	line "tinuer à errer."
+
+	para "Adieu!"
+	done
+else
 	text "Walker: Bird"
 	line "#mon soar"
 
@@ -372,6 +433,7 @@ YellowForestWalkerFinalText:
 
 	para "Goodbye!"
 	done
+endc
 
 YellowForestWalkerFlyText:
 	text "Skarmory,"
@@ -379,6 +441,38 @@ YellowForestWalkerFlyText:
 	done
 
 YellowForestYellowGreetingText:
+if DEF(_LOCALE_FR)
+	text "YELLOW: Salut!"
+	line "Moi c'est Yellow!"
+
+	para "Cette forêt pleine"
+	line "de PIKACHU…"
+
+	para "Ca me rappelle"
+	line "Kanto, chez moi."
+
+	para "Là où j'ai attrapé"
+	line "mon premier #MON."
+
+	para "Le dresseur qui"
+	line "m'a aidée m'a dit"
+	cont "un truc."
+
+	para "Si tu prends soin"
+	line "des #MON de tout"
+	cont "ton coeur,"
+
+	para "ils seront"
+	line "toujours tes amis!"
+
+	para "Je sens que tu"
+	line "aimes tes #MON."
+
+	para "Alors montre-moi"
+	line "ce que tes amis"
+	cont "savent faire!"
+	done
+else
 	text "Yellow: Hi!"
 	line "I'm Yellow!"
 
@@ -411,6 +505,7 @@ YellowForestYellowGreetingText:
 	para "what your friends"
 	line "can do!"
 	done
+endc
 
 YellowForestYellowWinLossText:
 	text "Haha! What a"
@@ -437,6 +532,21 @@ YellowForestYellowGoodbyeText:
 	done
 
 YellowForestCooltrainerMText:
+if DEF(_LOCALE_FR)
+	text "Les graines sont"
+	line "très puissantes."
+
+	para "Avec le temps, une"
+	line "petite graine"
+
+	para "devient un arbre"
+	line "immense."
+
+	para "Et une grosse"
+	line "graine peut te"
+	cont "tomber dessus!"
+	done
+else
 	text "Seeds are surpris-"
 	line "ingly powerful."
 
@@ -450,36 +560,70 @@ YellowForestCooltrainerMText:
 	line "just fall down and"
 	cont "hit you!"
 	done
+endc
 
 Text_YellowForestTutorSeedBomb:
+if DEF(_LOCALE_FR)
+	text "Je peux enseigner"
+	line "BOMBE GRAINE"
+
+	para "à ton #MON contre"
+	line "une Feuille Arg."
+	done
+else
 	text "I can teach your"
 	line "#mon how to"
 
 	para "use Seed Bomb"
 	line "for a Silver Leaf."
 	done
+endc
 
 Text_YellowForestTutorNoSilverLeaf:
+if DEF(_LOCALE_FR)
+	text "Oh… Tu n'as pas"
+	line "de Feuille Arg."
+	done
+else
 	text "Aw, you don't have"
 	line "a Silver Leaf."
 	done
+endc
 
 Text_YellowForestTutorQuestion:
+if DEF(_LOCALE_FR)
+	text "Je lui enseigne"
+	line "BOMBE GRAINE?"
+	done
+else
 	text "Should I teach"
 	line "your #mon"
 	cont "Seed Bomb?"
 	done
+endc
 
 Text_YellowForestTutorRefused:
+if DEF(_LOCALE_FR)
+	text "Reviens si tu"
+	line "changes d'avis."
+	done
+else
 	text "Talk to me if you"
 	line "change your mind!"
 	done
+endc
 
 Text_YellowForestTutorTaught:
+if DEF(_LOCALE_FR)
+	text "Ton #MON connaît"
+	line "BOMBE GRAINE!"
+	done
+else
 	text "Now your #mon"
 	line "knows how to use"
 	cont "Seed Bomb!"
 	done
+endc
 
 YellowForestSuperNerdText:
 	text "There's a protein"

@@ -60,6 +60,23 @@ MrFujiScript:
 	endtext
 
 MrFujiText:
+if DEF(_LOCALE_FR)
+	text "MR FUJI: Bienvenue"
+	line "à toi. Hmm… Tu as"
+	line "l'air d'être un"
+	line "dresseur de #MON"
+	line "doux et"
+	line "attentionné. Ceux"
+	line "qui aiment les"
+	line "#MON vien- nent"
+	line "ici saluer leur"
+	line "âme. Tu peux"
+	line "présenter ici tes"
+	line "condoléan- ces."
+	line "Cela leur fera"
+	line "plaisir."
+	done
+else
 	text "Mr.Fuji: Welcome."
 
 	para "Hmm… You appear to"
@@ -83,6 +100,7 @@ MrFujiText:
 	para "I'm sure that will"
 	line "make them happy."
 	done
+endc
 
 MrFujiGiveSilphScopeText:
 	text "Here, I have"
@@ -100,6 +118,15 @@ MrFujiUseThisText:
 	done
 
 SoulHouseTeacherText:
+if DEF(_LOCALE_FR)
+	text "Il y a d'autres"
+	line "tombes de #MON"
+	line "ici, je crois."
+	line "Beaucoup de pièces"
+	line "ne sont réservées"
+	line "qu'à MR FUJI."
+	done
+else
 	text "There are other"
 	line "graves of #mon"
 	cont "here, I think."
@@ -108,20 +135,37 @@ SoulHouseTeacherText:
 	line "chambers that only"
 	cont "Mr.Fuji may enter."
 	done
+endc
 
 SoulHouseLassText:
+if DEF(_LOCALE_FR)
+	text "J'suis venue avec"
+	line "ma môman pour voir"
+	line "les tombes de"
+	line "#MON…"
+	done
+else
 	text "I came with my mom"
 	line "to visit #mon"
 	cont "graves…"
 	done
+endc
 
 SoulHouseGrannyText:
+if DEF(_LOCALE_FR)
+	text "Les #MON que j'ai"
+	line "perdus… Je les"
+	line "aimais com- me mes"
+	line "petits enfants…"
+	done
+else
 	text "The #mon that"
 	line "lived with me…"
 
 	para "I loved them like"
 	line "my grandchildren…"
 	done
+endc
 
 AgathaSeenText:
 	text "Agatha: Hello,"

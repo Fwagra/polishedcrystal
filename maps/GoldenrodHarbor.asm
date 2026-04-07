@@ -64,14 +64,33 @@ GoldenrodHarborTutorHyperVoiceScript:
 GenericTrainerFisherPaton:
 	generictrainer FISHER, PATON, EVENT_BEAT_FISHER_PATON, FisherPatonSeenText, FisherPatonBeatenText
 
+if DEF(_LOCALE_FR)
+	text "Tu fais le #-"
+	line "DEX? C'est"
+	cont "sympa!"
+	done
+else
 	text "You're working"
 	line "on a #dex?"
 	cont "That's neat!"
 	done
+endc
 
 GenericTrainerSwimmerfKatie:
 	generictrainer SWIMMERF, KATIE, EVENT_BEAT_SWIMMERF_KATIE, SwimmerfKatieSeenText, SwimmerfKatieBeatenText
 
+if DEF(_LOCALE_FR)
+	text "Pourquoi la mer"
+	line "est bleue?"
+
+	para "On dit qu'elle"
+	line "reflète le ciel…"
+
+	para "Mais alors,"
+	line "pourquoi le ciel"
+	cont "est bleu?"
+	done
+else
 	text "Why is the sea"
 	line "blue?"
 
@@ -81,24 +100,41 @@ GenericTrainerSwimmerfKatie:
 	para "But then why is"
 	line "the sky blue?"
 	done
+endc
 
 GenericTrainerSwimmermJames:
 	generictrainer SWIMMERM, JAMES, EVENT_BEAT_SWIMMERM_JAMES, SwimmermJamesSeenText, SwimmermJamesBeatenText
 
+if DEF(_LOCALE_FR)
+	text "Un NAGEUR n'a pas"
+	line "le droit d'user"
+	cont "d'une barque?"
+	done
+else
 	text "Can't a Swimmer"
 	line "use a rowboat"
 	cont "sometimes?"
 	done
+endc
 
 
 GoldenrodHarborMagikarpScript:
 	jumpthistext
 
+if DEF(_LOCALE_FR)
+	text "Un #MON poisson!"
+	line "Hein?"
+
+	para "C'est juste une"
+	line "poupée…"
+	done
+else
 	text "This is a Fish"
 	line "#mon! Huh?"
 
 	para "It's only a doll…"
 	done
+endc
 
 GoldenrodHarborPokefanmScript:
 	faceplayer
@@ -276,6 +312,21 @@ GoldenrodHarborSailboatScript:
 	jumptext GoldenrodHarborSailboatText
 
 GoldenrodHarborFisherText:
+if DEF(_LOCALE_FR)
+	text "Si tu pêches, tu"
+	line "dois être discret"
+
+	para "pour ne pas faire"
+	line "fuir les #MON."
+
+	para "Mais pour qu'on"
+	line "t'entende"
+	cont "au milieu des"
+	cont "vagues,"
+
+	para "faut parler FORT!"
+	done
+else
 	text "If you're fishing,"
 	line "you have to be"
 
@@ -288,153 +339,332 @@ GoldenrodHarborFisherText:
 	para "you have to say"
 	line "things LOUD!"
 	done
+endc
 
 Text_GoldenrodHarborTutorHyperVoice:
+if DEF(_LOCALE_FR)
+	text "Je peux enseigner"
+	line "MEGAPHONE à ton"
+	cont "#MON"
+
+	para "contre une"
+	line "Feuille Arg."
+	done
+else
 	text "I can teach your"
 	line "#mon how to"
 
 	para "use Hyper Voice"
 	line "for a Silver Leaf."
 	done
+endc
 
 Text_GoldenrodHarborTutorNoSilverLeaf:
+if DEF(_LOCALE_FR)
+	text "Tu n'as pas de"
+	line "Feuille Arg…"
+	done
+else
 	text "You don't have a"
 	line "Silver Leaf!"
 	done
+endc
 
 Text_GoldenrodHarborTutorQuestion:
+if DEF(_LOCALE_FR)
+	text "Je lui enseigne"
+	line "MEGAPHONE?"
+	done
+else
 	text "Should I teach"
 	line "your #mon"
 	cont "Hyper Voice?"
 	done
+endc
 
 Text_GoldenrodHarborTutorRefused:
+if DEF(_LOCALE_FR)
+	text "OK, tant pis."
+	done
+else
 	text "OK then."
 	done
+endc
 
 Text_GoldenrodHarborTutorTaught:
+if DEF(_LOCALE_FR)
+	text "Ton #MON connaît"
+	line "MEGAPHONE!"
+	done
+else
 	text "Now your #mon"
 	line "knows how to use"
 	cont "Hyper Voice!"
 	done
+endc
 
 FisherPatonSeenText:
+if DEF(_LOCALE_FR)
+	text "Le poisson pêché"
+	line "était accroché"
+	cont "ché à un #MON!"
+	done
+else
 	text "The fish I caught"
 	line "was attached to"
 	cont "another #mon!"
 	done
+endc
 
 FisherPatonBeatenText:
+if DEF(_LOCALE_FR)
+	text "Les #MON sont"
+	line "passionnants,"
+	cont "hein?"
+	done
+else
 	text "Aren't #mon"
 	line "interesting?"
 	done
+endc
 
 SwimmerfKatieSeenText:
+if DEF(_LOCALE_FR)
+	text "Nager dans la mer"
+	line "bleue, c'est"
+	cont "génial!"
+	done
+else
 	text "Swimming in the"
 	line "deep blue sea"
 	cont "feels wonderful!"
 	done
+endc
 
 SwimmerfKatieBeatenText:
+if DEF(_LOCALE_FR)
+	text "Perdu…"
+	done
+else
 	text "I lost…"
 	line "Now I feel blue…"
 	done
+endc
 
 SwimmermJamesSeenText:
+if DEF(_LOCALE_FR)
+	text "Je sais nager,"
+	line "et ramer aussi!"
+	done
+else
 	text "I can swim, but"
 	line "I can also row!"
 	done
+endc
 
 SwimmermJamesBeatenText:
+if DEF(_LOCALE_FR)
+	text "Peut-être que je"
+	line "sais pas lutter…"
+	done
+else
 	text "Maybe I can't"
 	line "battle…"
 	done
+endc
 
 GoldenrodHarborDollVendorText:
+if DEF(_LOCALE_FR)
+	text "Bienvenue!"
+	line "Des poupées"
+	cont "aquatiques."
+	done
+else
 	text "Welcome! I have"
 	line "adorable aquatic"
 	cont "dolls for sale."
 	done
+endc
 
 GoldenrodHarborMagikarpDollText:
+if DEF(_LOCALE_FR)
+	text "<PLAYER> achète"
+	line "POUPEE MAGIKARP."
+	done
+else
 	text "<PLAYER> bought"
 	line "Magikarp Doll."
 	done
+endc
 
 GoldenrodHarborMagikarpDollSentText:
+if DEF(_LOCALE_FR)
+	text "POUPEE MAGIKARP"
+	line "envoyée chez toi."
+	done
+else
 	text "Magikarp Doll"
 	line "was sent home."
 	done
+endc
 
 GoldenrodHarborMarillDollText:
+if DEF(_LOCALE_FR)
+	text "<PLAYER> achète"
+	line "POUPEE MARILL."
+	done
+else
 	text "<PLAYER> bought"
 	line "Marill Doll."
 	done
+endc
 
 GoldenrodHarborMarillDollSentText:
+if DEF(_LOCALE_FR)
+	text "POUPEE MARILL"
+	line "envoyée chez toi."
+	done
+else
 	text "Marill Doll"
 	line "was sent home."
 	done
+endc
 
 GoldenrodHarborOctilleryDollText:
+if DEF(_LOCALE_FR)
+	text "<PLAYER> achète"
+	line "POUPEE OCTILLERY."
+	done
+else
 	text "<PLAYER> bought"
 	line "Octillery Doll."
 	done
+endc
 
 GoldenrodHarborOctilleryDollSentText:
+if DEF(_LOCALE_FR)
+	text "POUPEE OCTILLERY"
+	line "envoyée chez toi."
+	done
+else
 	text "Octillery Doll"
 	line "was sent home."
 	done
+endc
 
 GoldenrodHarborNoMoneyText:
+if DEF(_LOCALE_FR)
+	text "Tu n'as pas assez"
+	line "d'argent!"
+	done
+else
 	text "You can't afford"
 	line "that!"
 	done
+endc
 
 GoldenrodHarborAlreadyBoughtText:
+if DEF(_LOCALE_FR)
+	text "Tu l'as déjà!"
+	done
+else
 	text "You already have"
 	line "that!"
 	done
+endc
 
 GoldenrodHarborPlantVendorText:
+if DEF(_LOCALE_FR)
+	text "Bienvenue! Des"
+	line "plantes exotiques"
+	cont "pour ta maison."
+	done
+else
 	text "Welcome! I have"
 	line "a selection of"
 
 	para "exotic plants to"
 	line "adorn your home."
 	done
+endc
 
 GoldenrodHarborMagnaPlantText:
+if DEF(_LOCALE_FR)
+	text "<PLAYER> achète"
+	line "PLANTE MAGNA."
+	done
+else
 	text "<PLAYER> bought"
 	line "Magna Plant."
 	done
+endc
 
 GoldenrodHarborMagnaPlantSentText:
+if DEF(_LOCALE_FR)
+	text "PLANTE MAGNA"
+	line "envoyée chez toi."
+	done
+else
 	text "Magna Plant"
 	line "was sent home."
 	done
+endc
 
 GoldenrodHarborTropicPlantText:
+if DEF(_LOCALE_FR)
+	text "<PLAYER> achète"
+	line "PLANTE TROPIC."
+	done
+else
 	text "<PLAYER> bought"
 	line "Tropic Plant."
 	done
+endc
 
 GoldenrodHarborTropicPlantSentText:
+if DEF(_LOCALE_FR)
+	text "PLANTE TROPIC"
+	line "envoyée chez toi."
+	done
+else
 	text "Tropic Plant"
 	line "was sent home."
 	done
+endc
 
 GoldenrodHarborJumboPlantText:
+if DEF(_LOCALE_FR)
+	text "<PLAYER> achète"
+	line "PLANTE JUMBO."
+	done
+else
 	text "<PLAYER> bought"
 	line "Jumbo Plant."
 	done
+endc
 
 GoldenrodHarborJumboPlantSentText:
+if DEF(_LOCALE_FR)
+	text "PLANTE JUMBO"
+	line "envoyée chez toi."
+	done
+else
 	text "Jumbo Plant"
 	line "was sent home."
 	done
+endc
 
 GoldenrodHarborLass2Text:
+if DEF(_LOCALE_FR)
+	text "Toute cette eau,"
+	line "c'est trop…"
+
+	para "bloup-bloup,"
+	line "splitch-splitch."
+
+	para "Tu es d'accord?"
+	done
+else
 	text "All this water,"
 	line "it's totally…"
 
@@ -443,12 +673,30 @@ GoldenrodHarborLass2Text:
 
 	para "Don't you agree?"
 	done
+endc
 
 GoldenrodHarborSignText:
+if DEF(_LOCALE_FR)
+	text "Une énorme perle"
+	line "pêchée au Port de"
+	line "DOUBLONVILLE."
+	done
+else
 	text "Goldenrod Harbor"
 	done
+endc
 
 GoldenrodHarborAdvancedTipsSignText:
+if DEF(_LOCALE_FR)
+	text "Astuces avancées!"
+
+	para "Parfois, un"
+	line "distrib te donne"
+
+	para "deux boissons pour"
+	line "le prix d'une!"
+	done
+else
 	text "Advanced Tips!"
 
 	para "Sometimes you'll"
@@ -460,13 +708,26 @@ GoldenrodHarborAdvancedTipsSignText:
 	para "for the price of"
 	line "one!"
 	done
+endc
 
 GoldenrodHarborCrateSignText:
+if DEF(_LOCALE_FR)
+	text "Une caisse pleine"
+	line "d'objets rares!"
+	done
+else
 	text "A crate full of"
 	line "rare items!"
 	done
+endc
 
 GoldenrodHarborSailboatText:
+if DEF(_LOCALE_FR)
+	text "Un voilier nommé"
+	line "SeaKing."
+	done
+else
 	text "It's a sailboat"
 	line "named SeaKing."
 	done
+endc

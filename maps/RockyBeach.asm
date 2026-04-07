@@ -32,12 +32,17 @@ RockyBeachSign1Text:
 	done
 
 RockyBeachSign2Text:
+if DEF(_LOCALE_FR)
+	text "Forêt Bruyante"
+	done
+else
 	text "Noisy Forest"
 	line "Ahead"
 
 	para "Thru to"
 	line "Shrine Ruins"
 	done
+endc
 
 GenericTrainerSightseermBlaise:
 	generictrainer SIGHTSEERM, BLAISE, EVENT_BEAT_SIGHTSEERM_BLAISE, .SeenText, .BeatenText
@@ -58,6 +63,15 @@ GenericTrainerSightseermBlaise:
 GenericTrainerBeautyIoana:
 	generictrainer BEAUTY, IOANA, EVENT_BEAT_BEAUTY_IOANA, .SeenText, .BeatenText
 
+if DEF(_LOCALE_FR)
+	text "J'ai la peau très"
+	line "claire, donc"
+
+	para "je dois faire"
+	line "attention au"
+	cont "soleil."
+	done
+else
 	text "I have a naturally"
 	line "pale complexion,"
 
@@ -65,21 +79,42 @@ GenericTrainerBeautyIoana:
 	line "careful in the"
 	cont "sun."
 	done
+endc
 
 .SeenText:
+if DEF(_LOCALE_FR)
+	text "Je viens chaque"
+	line "année bronzer."
+	done
+else
 	text "I come here every"
 	line "year to work on"
 	cont "my tan."
 	done
+endc
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "Je suis brûlée!"
+	done
+else
 	text "I just got"
 	line "burned!"
 	done
+endc
 
 GenericTrainerSightseerfKamila:
 	generictrainer SIGHTSEERF, KAMILA, EVENT_BEAT_SIGHTSEERF_KAMILA, .SeenText, .BeatenText
 
+if DEF(_LOCALE_FR)
+	text "Alola est un"
+	line "archipel très"
+	cont "loin d'ici."
+
+	para "Tu devrais le"
+	line "visiter un jour!"
+	done
+else
 	text "Alola is an archi-"
 	line "pelago located far"
 	cont "away from here."
@@ -87,23 +122,50 @@ GenericTrainerSightseerfKamila:
 	para "You should visit"
 	line "it someday!"
 	done
+endc
 
 .SeenText:
+if DEF(_LOCALE_FR)
+	text "Alola!"
+
+	para "C'est comme ça"
+	line "qu'on se salue"
+	cont "chez moi."
+	done
+else
 	text "Alola!"
 
 	para "That's how we greet"
 	line "each other in my"
 	cont "region."
 	done
+endc
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "Cheehoo! T'es"
+	line "plutôt fort!"
+	done
+else
 	text "Cheehoo! You're"
 	line "pretty good!"
 	done
+endc
 
 GenericTrainerAromaLadyHeather:
 	generictrainer AROMA_LADY, HEATHER, EVENT_BEAT_AROMA_LADY_HEATHER, .SeenText, .BeatenText
 
+if DEF(_LOCALE_FR)
+	text "J'ai étudié l'art"
+	line "floral avec"
+
+	para "Erika, de"
+	line "Céladopole."
+
+	para "Elle a adoré"
+	line "la faune locale."
+	done
+else
 	text "I studied flower"
 	line "arranging with"
 
@@ -114,24 +176,51 @@ GenericTrainerAromaLadyHeather:
 	line "island for its"
 	cont "local fauna."
 	done
+endc
 
 .SeenText:
+if DEF(_LOCALE_FR)
+	text "Une fleur rouge"
+	line "pousse partout"
+	cont "ici."
+
+	para "Tu as vu?"
+	done
+else
 	text "A deep red flower"
 	line "grows all over"
 	cont "this island."
 
 	para "Have you noticed?"
 	done
+endc
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "Beau combat,"
+	line "mais les fleurs?"
+	done
+else
 	text "A lovely battle,"
 	line "but what about"
 	cont "the flowers?"
 	done
+endc
 
 GenericTrainerBreederBrenda:
 	generictrainer BREEDER, BRENDA, EVENT_BEAT_BREEDER_BRENDA, .SeenText, .BeatenText
 
+if DEF(_LOCALE_FR)
+	text "Pour faire éclore"
+	line "un OEUF,"
+	cont "il faut"
+
+	para "beaucoup marcher."
+
+	para "Quoi de mieux que"
+	line "Shamouti?"
+	done
+else
 	text "To hatch an Egg,"
 	line "you have to walk"
 	cont "a lot."
@@ -139,8 +228,19 @@ GenericTrainerBreederBrenda:
 	para "Where better than"
 	line "sunny Shamouti?"
 	done
+endc
 
 .SeenText:
+if DEF(_LOCALE_FR)
+	text "Pour bien élever"
+	line "des #MON,"
+
+	para "il faut un bon"
+	line "environnement."
+
+	para "Ici, c'est idéal!"
+	done
+else
 	text "The key to good"
 	line "#mon breeding"
 
@@ -150,15 +250,31 @@ GenericTrainerBreederBrenda:
 	para "There's no place"
 	line "better than here!"
 	done
+endc
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "Tes #MON sont"
+	line "bien élevés."
+	done
+else
 	text "Your #mon are"
 	line "well-bred."
 	done
+endc
 
 GenericTrainerSwimmermEzra:
 	generictrainer SWIMMERM, EZRA, EVENT_BEAT_SWIMMERM_EZRA, .SeenText, .BeatenText
 
+if DEF(_LOCALE_FR)
+	text "J'aime faire de la"
+	line "plongée ici."
+
+	para "C'est fou de"
+	line "respirer sous"
+	cont "l'eau!"
+	done
+else
 	text "I like to go scuba"
 	line "diving here."
 
@@ -166,23 +282,55 @@ GenericTrainerSwimmermEzra:
 	line "breathe while"
 	cont "underwater!"
 	done
+endc
 
 .SeenText:
+if DEF(_LOCALE_FR)
+	text "Tu t'es déjà"
+	line "demandé ce que ça"
+
+	para "fait de respirer"
+	line "sous l'eau?"
+	done
+else
 	text "Have you ever won-"
 	line "dered what it's"
 
 	para "like to breathe"
 	line "underwater?"
 	done
+endc
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "Plus d'air!"
+	done
+else
 	text "Ran out of air!"
 	done
+endc
 
 RockyBeachWilhomenaScript:
 	generictrainer 0, 0, EVENT_TOLD_ABOUT_PIKABLU, .Text1, 0
 
 .Text1
+if DEF(_LOCALE_FR)
+	text "Oh, non… Oh, non…"
+
+	para "Mon pauvre"
+	line "PIKABLU a disparu."
+
+	para "Non… Il n'est pas"
+	line "allé dans la"
+	cont "FORET BRUYANTE."
+
+	para "Je le trouverai"
+	line "jamais dans les"
+	cont "arbres…"
+
+	para "Oh… Je fais quoi…?"
+	done
+else
 	text "Oh, no. Oh, no…"
 
 	para "My poor Pikablu"
@@ -198,3 +346,4 @@ RockyBeachWilhomenaScript:
 	para "Oh, what should I"
 	line "do…?"
 	done
+endc

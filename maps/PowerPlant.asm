@@ -141,14 +141,30 @@ PowerPlantOfficer1ReturnToPostMovement:
 	step_end
 
 PowerPlantOfficer1AThiefBrokeInText:
+if DEF(_LOCALE_FR)
+	text "Un voleur s'est"
+	line "introduit dans la"
+	line "CENTRALE… Mais où"
+	line "va le monde? Hein?"
+	done
+else
 	text "A thief broke into"
 	line "the Power Plant…"
 
 	para "What is the world"
 	line "coming to?"
 	done
+endc
 
 PowerPlantOfficer1CeruleanShadyCharacterText:
+if DEF(_LOCALE_FR)
+	text "On raconte des"
+	line "trucs à AZURIA. Un"
+	line "drôle de type rôde"
+	line "dans les environs…"
+	line "C'est flippant."
+	done
+else
 	text "I just got word"
 	line "from Cerulean."
 
@@ -158,19 +174,40 @@ PowerPlantOfficer1CeruleanShadyCharacterText:
 	para "has been loitering"
 	line "around."
 	done
+endc
 
 PowerPlantOfficer1CouldIAskForYourCooperationText:
+if DEF(_LOCALE_FR)
+	text "Tu veux bien"
+	line "m'aider?"
+	done
+else
 	text "Could I ask for"
 	line "your cooperation?"
 	done
+endc
 
 PowerPlantOfficer1HaveToBeefUpSecurityText:
+if DEF(_LOCALE_FR)
+	text "Il faut renforcer"
+	line "la sécurité."
+	done
+else
 	text "We'll have to beef"
 	line "up our security"
 	cont "presence."
 	done
+endc
 
 PowerPlantGymGuide1SomeoneStoleAPartText:
+if DEF(_LOCALE_FR)
+	text "Quelqu'un a volé"
+	line "une partie essen-"
+	line "tielle au généra-"
+	line "teur. Sans elle,"
+	line "rien ne marche!"
+	done
+else
 	text "Someone made off"
 	line "with a part that's"
 
@@ -181,16 +218,35 @@ PowerPlantGymGuide1SomeoneStoleAPartText:
 	line "new generator's"
 	cont "useless!"
 	done
+endc
 
 PowerPlantGymGuide1GeneratorUpAndRunningText:
+if DEF(_LOCALE_FR)
+	text "Le générateur est"
+	line "en marche. Il crée"
+	line "de l'électricité à"
+	line "gogo."
+	done
+else
 	text "The generator's up"
 	line "and running. It's"
 
 	para "making electricity"
 	line "to spare."
 	done
+endc
 
 PowerPlantGymGuide2PowerPlantUpAndRunningText:
+if DEF(_LOCALE_FR)
+	text "Cette CENTRALE a"
+	line "été abandonnée il"
+	line "y a longtemps. On"
+	line "l'a relancée pour"
+	line "donner de"
+	line "l'énergie au TRAIN"
+	line "MAGNET."
+	done
+else
 	text "This Power Plant"
 	line "had been abandoned"
 	cont "in the past."
@@ -201,13 +257,31 @@ PowerPlantGymGuide2PowerPlantUpAndRunningText:
 	para "provide power to"
 	line "the Magnet Train."
 	done
+endc
 
 PowerPlantGymGuide2GeneratorIsRunningAgainText:
+if DEF(_LOCALE_FR)
+	text "Le générateur est"
+	line "en marche!"
+	done
+else
 	text "The generator's"
 	line "running again!"
 	done
+endc
 
 PowerPlantOfficer2ManagerHasBeenSadAndFuriousText:
+if DEF(_LOCALE_FR)
+	text "Le PATRON de la"
+	line "CENTRALE est tout"
+	line "droit. Attention,"
+	line "il est furax"
+	line "depuis que"
+	line "quelqu'un a tout"
+	line "bousillé son joli"
+	line "générateur…"
+	done
+else
 	text "The Power Plant's"
 	line "Manager is up"
 	cont "ahead."
@@ -218,16 +292,35 @@ PowerPlantOfficer2ManagerHasBeenSadAndFuriousText:
 	cont "both sad and"
 	cont "furious…"
 	done
+endc
 
 PowerPlantOfficer2ManagerHasBeenCheerfulText:
+if DEF(_LOCALE_FR)
+	text "Depuis la répara-"
+	line "tion du générateur"
+	line "le PATRON est très"
+	line "heureux."
+	done
+else
 	text "Since the gener-"
 	line "ator's been fixed,"
 
 	para "the Manager has"
 	line "been cheerful."
 	done
+endc
 
 PowerPlantGymGuide4MagnetTrainConsumesElectricityText:
+if DEF(_LOCALE_FR)
+	text "Le TRAIN MAGNET"
+	line "consomme beaucoup"
+	line "d'électricité. Il"
+	line "ne bougera pas si"
+	line "le nouveau gé-"
+	line "nérateur ne marche"
+	line "pas…"
+	done
+else
 	text "The Magnet Train"
 	line "consumes a lot of"
 	cont "electricity."
@@ -236,16 +329,38 @@ PowerPlantGymGuide4MagnetTrainConsumesElectricityText:
 	line "the new generator"
 	cont "isn't operating."
 	done
+endc
 
 PowerPlantGymGuide4WeCanGetMagnetTrainRunningText:
+if DEF(_LOCALE_FR)
+	text "OK! On peut à nou-"
+	line "veau faire marcher"
+	line "le TRAIN MAGNET."
+	done
+else
 	text "All right! We can"
 	line "finally get the"
 
 	para "Magnet Train"
 	line "running again."
 	done
+endc
 
 PowerPlantManagerWhoWouldRuinMyGeneratorText:
+if DEF(_LOCALE_FR)
+	text "PATRON: J'vais"
+	line "exploser! Faut que"
+	line "j'me défoule! Qui"
+	line "a cassé mon"
+	line "générateur? Qui?"
+	line "Je l'aimais tant!"
+	line "Comme mon bébé! Si"
+	line "j'attrape cette"
+	line "crapule, il aura"
+	line "droit à un coup"
+	line "d'ELECANON!"
+	done
+else
 	text "Manager: I, I, I'm"
 	line "ready to blast"
 	cont "someone!"
@@ -262,8 +377,19 @@ PowerPlantManagerWhoWouldRuinMyGeneratorText:
 	para "a taste of my Zap"
 	line "Cannon!"
 	done
+endc
 
 PowerPlantManagerIWontForgiveCulpritText:
+if DEF(_LOCALE_FR)
+	text "PATRON: Je vais"
+	line "m'le faire! Même"
+	line "s'il pleure, même"
+	line "s'il prie, je vais"
+	line "quand même me"
+	line "l'faire!"
+	line "Gahahahah!"
+	done
+else
 	text "Manager: I won't"
 	line "forgive him!"
 
@@ -275,8 +401,17 @@ PowerPlantManagerIWontForgiveCulpritText:
 
 	para "Gahahahah!"
 	done
+endc
 
 PowerPlantManagerThatsThePartText:
+if DEF(_LOCALE_FR)
+	text "PATRON: Ah! Oui!"
+	line "C'est la PARTIE"
+	line "manquante de mon"
+	line "joli générateur!"
+	line "Tu l'as trouvée?"
+	done
+else
 	text "Manager: Ah! Yeah!"
 
 	para "That's the missing"
@@ -284,6 +419,7 @@ PowerPlantManagerThatsThePartText:
 	cont "loved generator!"
 	cont "You found it?"
 	done
+endc
 
 PowerPlantManagerTakeThisTMText:
 	text "Wahah! Thanks!"
@@ -332,6 +468,10 @@ Text_PowerPlantTutorTaught:
 	done
 
 PowerPlantForestText:
+if DEF(_LOCALE_FR)
+	text "TUNNEL ROCHE"
+	done
+else
 	text "Magneton behaves"
 	line "strangely in Rock"
 	cont "Tunnel."
@@ -342,3 +482,4 @@ PowerPlantForestText:
 	para "have something to"
 	line "do with it?"
 	done
+endc

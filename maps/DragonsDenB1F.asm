@@ -91,12 +91,20 @@ DragonsDenB1FClairTrigger:
 	done
 
 .GiveTMText:
+if DEF(_LOCALE_FR)
+	text "SANDRA: Excuse-moi"
+	line "pour tout. Tiens."
+	line "Pour me faire"
+	line "pardonner."
+	done
+else
 	text "Clair: I'm sorry"
 	line "about this."
 
 	para "Here, take this as"
 	line "my apology."
 	done
+endc
 
 .DescribeDragonPulseText:
 	text "That contains"
@@ -122,6 +130,14 @@ DragonsDenB1FClairTrigger:
 	step_end
 
 DragonsDenShrineSignText:
+if DEF(_LOCALE_FR)
+	text "AUTEL DRAGON En"
+	line "l'honneur des #MON"
+	line "dragons ayant vécu"
+	line "dans l'ANTRE du"
+	line "DRAGON."
+	done
+else
 	text "Dragon Shrine"
 
 	para "A shrine honoring"
@@ -130,6 +146,7 @@ DragonsDenShrineSignText:
 	para "said to have lived"
 	line "in Dragon's Den."
 	done
+endc
 
 DragonsDenB1FRivalScript:
 	playmusic MUSIC_RIVAL_ENCOUNTER
@@ -190,6 +207,18 @@ DragonsDenB1FRivalScript:
 	end
 
 .GiveEggText:
+if DEF(_LOCALE_FR)
+	text "…"
+	line "Ecoute."
+
+	para "Le #MON que j'ai…"
+	line "pris au LABO…"
+
+	para "Il avait un OEUF."
+	line "J'en veux pas."
+	cont "Tiens."
+	done
+else
 	text "…"
 	line "Listen."
 
@@ -200,6 +229,7 @@ DragonsDenB1FRivalScript:
 	line "I don't need it."
 	cont "Here. Take it."
 	done
+endc
 
 .DescribeEggText:
 	text "Humph. Are you"
@@ -216,6 +246,21 @@ DragonsDenB1FRivalScript:
 	done
 
 .Training1Text:
+if DEF(_LOCALE_FR)
+	text "…… Quoi? <PLAYER>?"
+	line "…Non, je ne me"
+	line "battrai pas avec"
+	line "toi maintenant…"
+	line "Mes #MON ne sont"
+	line "pas prêts. Et je"
+	line "ne veux pas les"
+	line "pousser. Je dois"
+	line "être sage pour"
+	line "devenir un jour le"
+	line "plus grand des"
+	line "dresseurs…"
+	done
+else
 	text "…"
 	line "What? <PLAYER>?"
 
@@ -234,8 +279,15 @@ DragonsDenB1FRivalScript:
 	para "the greatest #-"
 	line "mon trainer…"
 	done
+endc
 
 .Training2Text:
+if DEF(_LOCALE_FR)
+	text "……. Pffouiii… Ne"
+	line "croise plus jamais"
+	line "ma route…"
+	done
+else
 	text "…"
 
 	para "Whew…"
@@ -243,10 +295,20 @@ DragonsDenB1FRivalScript:
 	para "Learn to stay out"
 	line "of my way…"
 	done
+endc
 
 GenericTrainerDragonTamerDarin:
 	generictrainer DRAGON_TAMER, DARIN, EVENT_BEAT_DRAGON_TAMER_DARIN, .SeenText, .BeatenText
 
+if DEF(_LOCALE_FR)
+	text "Le TEMPLE est la"
+	line "demeure de notre"
+	line "MAITRE, chef du"
+	line "clan des dragons."
+	line "Tu n'as pas le"
+	line "droit d'entrer!"
+	done
+else
 	text "The Shrine ahead"
 	line "is home to the"
 
@@ -256,15 +318,27 @@ GenericTrainerDragonTamerDarin:
 	para "You're not allowed"
 	line "to just go in!"
 	done
+endc
 
 .SeenText:
+if DEF(_LOCALE_FR)
+	text "Toi! On ne veut"
+	line "pas de toi ici!"
+	done
+else
 	text "You! How dare you"
 	line "enter uninvited!"
 	done
+endc
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "Quelle puissance!"
+	done
+else
 	text "S-strong!"
 	done
+endc
 
 GenericTrainerDragonTamerAdam:
 	generictrainer DRAGON_TAMER, ADAM, EVENT_BEAT_DRAGON_TAMER_ADAM, .SeenText, .BeatenText
@@ -281,9 +355,15 @@ GenericTrainerDragonTamerAdam:
 	done
 
 .SeenText:
+if DEF(_LOCALE_FR)
+	text "Tu ne dois pas"
+	line "être ici!"
+	done
+else
 	text "You shouldn't be"
 	line "in here!"
 	done
+endc
 
 .BeatenText:
 	text "No! I was"
@@ -293,6 +373,18 @@ GenericTrainerDragonTamerAdam:
 GenericTrainerAceDuoDanandcara1:
 	generictrainer ACE_DUO, DANANDCARA1, EVENT_BEAT_ACE_DUO_DAN_AND_CARA, .SeenText, .BeatenText
 
+if DEF(_LOCALE_FR)
+	text "Je vais bientôt"
+	line "avoir l'accord du"
+	line "MAITRE pour utili-"
+	line "ser des dragons."
+	line "Et alors, je pour-"
+	line "rai rendre mon"
+	line "MAITRE fier en"
+	line "devenant un grand"
+	line "dresseur."
+	done
+else
 	text "Dan: Soon I'll"
 	line "get permission"
 
@@ -308,6 +400,7 @@ GenericTrainerAceDuoDanandcara1:
 	para "our Master's"
 	line "approval."
 	done
+endc
 
 .SeenText:
 	text "Dan: I may not"
@@ -340,42 +433,94 @@ GenericTrainerAceDuoDanandcara2:
 	done
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "Oups!"
+	done
+else
 	text "Cara: Oh yikes,"
 	line "I lost!"
 	done
+endc
 
 GenericTrainerTwinsLeaandpia1:
 	generictrainer TWINS, LEAANDPIA1, EVENT_BEAT_TWINS_LEA_AND_PIA, .SeenText, .BeatenText
 
+if DEF(_LOCALE_FR)
+	text "C'est comme com-"
+	line "battre PETER."
+	done
+else
 	text "It was like having"
 	line "to battle Lance."
 	done
+endc
 
 .SeenText:
+if DEF(_LOCALE_FR)
+	text "C'est un étranger"
+	line "que l'on ne"
+	line "connaît pas."
+	done
+else
 	text "It's a stranger we"
 	line "don't know."
 	done
+endc
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "Ouille."
+	done
+else
 	text "Ouchies."
 	done
+endc
 
 GenericTrainerTwinsLeaandpia2:
 	generictrainer TWINS, LEAANDPIA1, EVENT_BEAT_TWINS_LEA_AND_PIA, .SeenText, .BeatenText
 
+if DEF(_LOCALE_FR)
+	text "On va le dire. Le"
+	line "MAITRE ne sera pas"
+	line "content."
+	done
+else
 	text "We'll tell on you."
 
 	para "Master will be"
 	line "angry with you."
 	done
+endc
 
 .SeenText:
+if DEF(_LOCALE_FR)
+	text "Hein? Tu es qui,"
+	line "déjà? Moi? Tu"
+	line "ignores qui je"
+	line "suis? Je suis la"
+	line "star musicale,"
+	line "Imakuni! Je chante"
+	line "le #Rap--tu"
+	line "danses! ♪ La di da"
+	line "di da, La di da di"
+	line "da… ♪ Bouge les"
+	line "pieds! Quoi? Des"
+	line "#MON? Tu veux te"
+	line "battre contre moi?"
+	done
+else
 	text "Who are you?"
 	done
+endc
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "Pas sympa."
+	done
+else
 	text "Meanie."
 	done
+endc
 
 KimonoGirlMinaScript:
 	checkevent EVENT_GOT_ABILITYPATCH_FROM_KIMONO_GIRL_MINA
@@ -428,6 +573,16 @@ KimonoGirlMinaScript:
 	done
 
 .IntroText:
+if DEF(_LOCALE_FR)
+	text "Je suis une fille"
+	line "en kimono. Tu as"
+	line "rencontré mes cinq"
+	line "cousines danseuses"
+	line "à Doublonville?"
+	line "Dis-moi si c'est"
+	line "le cas."
+	done
+else
 	text "I am a Kimono"
 	line "Girl."
 
@@ -438,8 +593,19 @@ KimonoGirlMinaScript:
 	para "Let me know if"
 	line "you do."
 	done
+endc
 
 .SeenText:
+if DEF(_LOCALE_FR)
+	text "Celle qui sait le"
+	line "plus parle le"
+	cont "moins!"
+
+	para "Laisse-moi te"
+	line "défier, toi et tes"
+	cont "#MON!"
+	done
+else
 	text "She who knows the"
 	line "most speaks the"
 	cont "least!"
@@ -448,6 +614,7 @@ KimonoGirlMinaScript:
 	line "llenge you and"
 	cont "your #mon!"
 	done
+endc
 
 .BeatenText:
 	text "Oh, you are"

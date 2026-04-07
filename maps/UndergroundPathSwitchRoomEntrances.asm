@@ -218,16 +218,34 @@ UndergroundRivalBattleScript:
 GenericTrainerGruntM11:
 	generictrainer GRUNTM, 11, EVENT_BEAT_ROCKET_GRUNTM_11, GruntM11SeenText, GruntM11BeatenText
 
+if DEF(_LOCALE_FR)
+	text "Moi aussi je m'y"
+	line "perds: le premier"
+	line "interrupteur à"
+	line "activer est au"
+	line "bout et après…"
+	done
+else
 	text "I'm confused too…"
 	line "The switch on the"
 
 	para "end is the one to"
 	line "press first, but…"
 	done
+endc
 
 GenericTrainerGruntM25:
 	generictrainer GRUNTM, 25, EVENT_BEAT_ROCKET_GRUNTM_25, GruntM25SeenText, GruntM25BeatenText
 
+if DEF(_LOCALE_FR)
+	text "OK. Un conseil!"
+	line "Change l'ordre"
+	line "d'activation. Et"
+	line "l'ordre de fer-"
+	line "meture des volets"
+	line "changera."
+	done
+else
 	text "All right. A hint!"
 
 	para "Change the order"
@@ -237,18 +255,33 @@ GenericTrainerGruntM25:
 	line "ways the shutters"
 	cont "open and close."
 	done
+endc
 
 GenericTrainerBurglarDuncan:
 	generictrainer BURGLAR, DUNCAN, EVENT_BEAT_BURGLAR_DUNCAN, BurglarDuncanSeenText, BurglarDuncanBeatenText
 
+if DEF(_LOCALE_FR)
+	text "Voler c'est cool!"
+	line "Piller c'est top!"
+	done
+else
 	text "Steal and sell!"
 	line "That's basic in"
 	cont "crime, kid!"
 	done
+endc
 
 GenericTrainerBurglarOrson:
 	generictrainer BURGLAR, ORSON, EVENT_BEAT_BURGLAR_ORSON, BurglarOrsonSeenText, BurglarOrsonBeatenText
 
+if DEF(_LOCALE_FR)
+	text "Le DEPOT"
+	line "SOUTERRAIN?"
+	line "Pourquoi tu veux y"
+	line "aller? Y'a rien du"
+	line "tout dans le coin."
+	done
+else
 	text "Underground Ware-"
 	line "house?"
 
@@ -258,22 +291,37 @@ GenericTrainerBurglarOrson:
 	para "There's nothing"
 	line "down there."
 	done
+endc
 
 GenericTrainerGruntM13:
 	generictrainer GRUNTM, 13, EVENT_BEAT_ROCKET_GRUNTM_13, GruntM13SeenText, GruntM13BeatenText
 
+if DEF(_LOCALE_FR)
+	text "T'as un sacré cou-"
+	line "rage pour t'atta-"
+	line "quer à la ROCKET."
+	done
+else
 	text "You must have ice"
 	line "in your veins to"
 	cont "dis Team Rocket."
 	done
+endc
 
 GenericTrainerGruntF3:
 	generictrainer GRUNTF, 3, EVENT_BEAT_ROCKET_GRUNTF_3, GruntF3SeenText, GruntF3BeatenText
 
+if DEF(_LOCALE_FR)
+	text "Va où tu veux!"
+	line "Va-t'en! Je m'en"
+	line "fiche!"
+	done
+else
 	text "Go wherever you'd"
 	line "like! Get lost!"
 	cont "See if I care!"
 	done
+endc
 
 Switch1Script:
 	opentext
@@ -679,6 +727,21 @@ UndergroundPathSwitchRoomEntrancesVeteranMScript:
 	done
 
 UndergroundRivalBeforeText:
+if DEF(_LOCALE_FR)
+	text "Minute! Hé hé! Je"
+	line "t'ai suivi… J'ai"
+	line "pas besoin de toi"
+	line "pour casser la"
+	line "tête à la TEAM"
+	line "ROCKET. …Attends"
+	line "voir… Tu m'as"
+	line "battu avant, non?"
+	line "C'était de la"
+	line "chance. Mais cette"
+	line "fois… Ca va"
+	line "saigner!"
+	done
+else
 	text "Hold it!"
 
 	para "I saw you, so I"
@@ -700,8 +763,19 @@ UndergroundRivalBeforeText:
 	para "But I repay my"
 	line "debts!"
 	done
+endc
 
 UndergroundRivalWinText:
+if DEF(_LOCALE_FR)
+	text "…Pourquoi… Moi"
+	line "perdre? Mes #MON"
+	line "sont super"
+	line "balèzes! Je les ai"
+	line "entraî- nés à"
+	line "fond! Alors"
+	line "pourquoi???"
+	done
+else
 	text "…Why…"
 	line "Why do I lose?"
 
@@ -713,8 +787,30 @@ UndergroundRivalWinText:
 
 	para "So why do I lose?"
 	done
+endc
 
 UndergroundRivalAfterText:
+if DEF(_LOCALE_FR)
+	text "C'est… Incroyable…"
+	line "Ce qu'a dit PETER"
+	line "est donc vrai? Je"
+	line "m'occupe mal de"
+	line "mes #MON? Amour…"
+	line "Confiance… Est-ce"
+	line "aussi im- portant?"
+	line "Est-ce la raison"
+	line "de ma défaite? Je"
+	line "ne comprends plus"
+	line "rien… Mais ce"
+	line "n'est pas la fin."
+	line "Pas maintenant…"
+	line "Pas comme ça. Je"
+	line "serai le plus"
+	line "grand dresseur de"
+	line "#MON de tous les"
+	line "temps!"
+	done
+else
 	text "…I don't under-"
 	line "stand…"
 
@@ -749,8 +845,18 @@ UndergroundRivalAfterText:
 	para "the world's best"
 	line "#mon trainer!"
 	done
+endc
 
 UndergroundRivalLossText:
+if DEF(_LOCALE_FR)
+	text "Tsss! Voilà ce que"
+	line "c'est la force."
+	line "J'vais la bouffer"
+	line "la TEAM ROCKET. Et"
+	line "PETER… J'vais lui"
+	line "casser ses rêves."
+	done
+else
 	text "Humph. This is my"
 	line "real power, wimp."
 
@@ -761,8 +867,18 @@ UndergroundRivalLossText:
 	line "grind that Lance"
 	cont "under my heels."
 	done
+endc
 
 UndergroundPathSwitchRoomEntrances_TeacherText:
+if DEF(_LOCALE_FR)
+	text "Il y a des bouti-"
+	line "ques en bas… Mais"
+	line "il y a aussi des"
+	line "dresseurs… Alors"
+	line "j'ai peur d'y"
+	line "aller."
+	done
+else
 	text "There are some"
 	line "shops downstairs…"
 
@@ -772,6 +888,7 @@ UndergroundPathSwitchRoomEntrances_TeacherText:
 	para "I'm scared to go"
 	line "down there."
 	done
+endc
 
 UndergroundPathSwitchRoomEntrances_SuperNerd1Text:
 	text "This tunnel was"
@@ -787,6 +904,14 @@ UndergroundPathSwitchRoomEntrances_SuperNerd1Text:
 	done
 
 UndergroundPathSwitchRoomEntrances_SuperNerd2Text:
+if DEF(_LOCALE_FR)
+	text "J'ai fait un"
+	line "combat en bas."
+	line "C'était super"
+	line "chaud. Un conseil:"
+	line "fais super gaffe!"
+	done
+else
 	text "I was challenged"
 	line "to a battle down-"
 	cont "stairs."
@@ -795,6 +920,7 @@ UndergroundPathSwitchRoomEntrances_SuperNerd2Text:
 	line "there. You'd"
 	cont "better be careful."
 	done
+endc
 
 UndergroundPathSwitchRoomEntrances_BeautyText:
 	text "I went on a tour"
@@ -808,19 +934,42 @@ UndergroundPathSwitchRoomEntrances_BeautyText:
 	done
 
 GruntM11SeenText:
+if DEF(_LOCALE_FR)
+	text "Ouvre un truc et"
+	line "un autre se ferme."
+	line "C'est dur d'avan-"
+	line "cer, hein?"
+	done
+else
 	text "Open one shutter,"
 	line "another closes."
 
 	para "Bet you can't get"
 	line "where you want!"
 	done
+endc
 
 GruntM11BeatenText:
+if DEF(_LOCALE_FR)
+	text "Zut de flûte!"
+	line "J'suis perdu!"
+	done
+else
 	text "Drat! I was sunk"
 	line "by indecision!"
 	done
+endc
 
 GruntM25SeenText:
+if DEF(_LOCALE_FR)
+	text "Kwahaha! Les"
+	line "volets te po- sent"
+	line "un problème?"
+	line "Bats-moi et je te"
+	line "confie un p'tit"
+	line "secret!"
+	done
+else
 	text "Kwahaha!"
 
 	para "Confounded by the"
@@ -830,22 +979,46 @@ GruntM25SeenText:
 	line "a secret if you"
 	cont "can beat me!"
 	done
+endc
 
 GruntM25BeatenText:
+if DEF(_LOCALE_FR)
+	text "Hmmm… Dommage."
+	done
+else
 	text "Uwww…"
 	line "I blew it."
 	done
+endc
 
 BurglarDuncanSeenText:
+if DEF(_LOCALE_FR)
+	text "Envoie ton blé!"
+	done
+else
 	text "Fork over your"
 	line "goodies!"
 	done
+endc
 
 BurglarDuncanBeatenText:
+if DEF(_LOCALE_FR)
+	text "Pitié!"
+	done
+else
 	text "Mercy!"
 	done
+endc
 
 BurglarOrsonSeenText:
+if DEF(_LOCALE_FR)
+	text "Ils ont abandonné"
+	line "ce projet avant la"
+	line "fin. Je cherche"
+	line "des restes à"
+	line "voler."
+	done
+else
 	text "They ditched this"
 	line "project before"
 	cont "they finished."
@@ -853,12 +1026,26 @@ BurglarOrsonSeenText:
 	para "I'm searching for"
 	line "leftover loot."
 	done
+endc
 
 BurglarOrsonBeatenText:
+if DEF(_LOCALE_FR)
+	text "Yarglah!"
+	done
+else
 	text "Over the top!"
 	done
+endc
 
 GruntM13SeenText:
+if DEF(_LOCALE_FR)
+	text "Je m'en fiche si"
+	line "t'es perdu. Si tu"
+	line "viens ici, tu dois"
+	line "être prêt aux"
+	line "conséquences!"
+	done
+else
 	text "I don't care if"
 	line "you're lost."
 
@@ -866,18 +1053,41 @@ GruntM13SeenText:
 	line "you're nothing but"
 	cont "a victim!"
 	done
+endc
 
 GruntM13BeatenText:
+if DEF(_LOCALE_FR)
+	text "Gueuh! Tu te crois"
+	line "fort ou quoi?"
+	done
+else
 	text "Urk! Yeah, think"
 	line "you're cool, huh?"
 	done
+endc
 
 SwitchRoomText_Switch1:
+if DEF(_LOCALE_FR)
+	text "C'est écrit:"
+	line "INTERRUPTEUR 1."
+	done
+else
 	text "It's labeled"
 	line "Switch 1."
 	done
+endc
 
 GruntF3SeenText:
+if DEF(_LOCALE_FR)
+	text "T'es perdu? Non,"
+	line "je le crois pas."
+	line "T'as pas l'air"
+	line "d'avoir peur."
+	line "Attends… Moi je"
+	line "vais te faire"
+	line "peur!"
+	done
+else
 	text "Are you lost? No,"
 	line "you can't be."
 
@@ -888,32 +1098,68 @@ GruntF3SeenText:
 	line "something to be"
 	cont "scared about!"
 	done
+endc
 
 GruntF3BeatenText:
+if DEF(_LOCALE_FR)
+	text "Comment oses-tu?"
+	done
+else
 	text "How could you?"
 	done
+endc
 
 SwitchRoomText_OffTurnOn:
+if DEF(_LOCALE_FR)
+	text "C'est éteint. On"
+	line "l'active?"
+	done
+else
 	text "It's off."
 	line "Turn it on?"
 	done
+endc
 
 SwitchRoomText_OnTurnOff:
+if DEF(_LOCALE_FR)
+	text "C'est activé. On"
+	line "l'éteint?"
+	done
+else
 	text "It's on."
 	line "Turn it off?"
 	done
+endc
 
 SwitchRoomText_Switch2:
+if DEF(_LOCALE_FR)
+	text "C'est écrit:"
+	line "INTERRUPTEUR 2."
+	done
+else
 	text "It's labeled"
 	line "Switch 2."
 	done
+endc
 
 SwitchRoomText_Switch3:
+if DEF(_LOCALE_FR)
+	text "C'est écrit:"
+	line "INTERRUPTEUR 3."
+	done
+else
 	text "It's labeled"
 	line "Switch 3."
 	done
+endc
 
 SwitchRoomText_Emergency:
+if DEF(_LOCALE_FR)
+	text "C'est écrit:"
+	line "URGENCE."
+	done
+else
 	text "It's labeled"
 	line "Emergency."
 	done
+endc

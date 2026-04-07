@@ -141,34 +141,70 @@ WarehouseEntranceCheckDayOfWeek:
 GenericTrainerSupernerdEric:
 	generictrainer SUPER_NERD, ERIC, EVENT_BEAT_SUPER_NERD_ERIC, SupernerdEricSeenText, SupernerdEricBeatenText
 
+if DEF(_LOCALE_FR)
+	text "Vaudrait mieux que"
+	line "j'arrête de tri-"
+	line "cher…"
+	done
+else
 	text "I guess I have to"
 	line "do things fair and"
 	cont "square…"
 	done
+endc
 
 GenericTrainerSupernerdTeru:
 	generictrainer SUPER_NERD, TERU, EVENT_BEAT_SUPER_NERD_TERU, SupernerdTeruSeenText, SupernerdTeruBeatenText
 
+if DEF(_LOCALE_FR)
+	text "Je connais tous"
+	line "les types de #-"
+	line "MON. Mais je n'en"
+	line "uti- lise qu'un"
+	line "seul."
+	done
+else
 	text "I know my #mon"
 	line "type alignments."
 
 	para "But I only use one"
 	line "type of #mon."
 	done
+endc
 
 GenericTrainerPokemaniacIssac:
 	generictrainer POKEMANIAC, ISSAC, EVENT_BEAT_POKEMANIAC_ISSAC, PokemaniacIssacSeenText, PokemaniacIssacBeatenText
 
+if DEF(_LOCALE_FR)
+	text "Tes #MON t'ai-"
+	line "meront plus si tu"
+	line "les fais toilet-"
+	line "ter."
+	done
+else
 	text "Your #mon will"
 	line "like you more if"
 
 	para "you give them"
 	line "haircuts."
 	done
+endc
 
 GenericTrainerPokemaniacDonald:
 	generictrainer POKEMANIAC, DONALD, EVENT_BEAT_POKEMANIAC_DONALD, PokemaniacDonaldSeenText, PokemaniacDonaldBeatenText
 
+if DEF(_LOCALE_FR)
+	text "Tu remplis un"
+	line "#DEX? Voilà un"
+	line "conseil. ANTHONY,"
+	line "le MONTA- GNARD de"
+	line "la ROUTE 33, est"
+	line "sympa. Il"
+	line "t'appellera s'il"
+	line "voit des #MON"
+	line "rares."
+	done
+else
 	text "Are you making a"
 	line "#dex? Here's a"
 	cont "hot tip."
@@ -181,13 +217,20 @@ GenericTrainerPokemaniacDonald:
 	line "he sees any rare"
 	cont "#mon."
 	done
+endc
 
 GenericTrainerCosplayerClara:
 	generictrainer COSPLAYER, CLARA, EVENT_BEAT_COSPLAYER_CLARA, CosplayerClaraSeenText, CosplayerClaraBeatenText
 
+if DEF(_LOCALE_FR)
+	text "J'ai cousu ce"
+	line "cosplay moi-même!"
+	done
+else
 	text "I made this cos-"
 	line "tume myself!"
 	done
+endc
 
 BitterMerchantScript:
 	readvar VAR_WEEKDAY
@@ -406,6 +449,18 @@ GoldenrodUndergroundCandyManScript:
 	pokemart MARTTYPE_EXP_CANDY, 0
 
 .GiveCandyJarText1:
+if DEF(_LOCALE_FR)
+	text "Psst! Par ici…"
+	line "T'as l'air d'avoir"
+	line "besoin d'un coup"
+	line "de main."
+
+	para "Pose pas trop de"
+	line "questions."
+
+	para "Tiens, prends ça."
+	done
+else
 	text "Psst! Over here…"
 	line "You look like you"
 	cont "could use a boost."
@@ -415,8 +470,25 @@ GoldenrodUndergroundCandyManScript:
 
 	para "Here, take this."
 	done
+endc
 
 .GiveCandyJarText2:
+if DEF(_LOCALE_FR)
+	text "C'est un BON-"
+	line "BONNIER."
+
+	para "Tu en auras be-"
+	line "soin pour ranger"
+	line "mes, euh, bonbons"
+	line "spéciaux."
+
+	para "Le premier est"
+	line "offert! Essaie."
+
+	para "…Pour ton #MON,"
+	line "bien sûr."
+	done
+else
 	text "It's a Candy Jar."
 
 	para "You'll need it to"
@@ -430,6 +502,7 @@ GoldenrodUndergroundCandyManScript:
 	line "#mon,"
 	cont "of course."
 	done
+endc
 
 PiersScript:
 	faceplayer
@@ -464,6 +537,16 @@ PiersScript:
 	jumpthisopenedtext
 
 PiersAfterText:
+if DEF(_LOCALE_FR)
+	text "Si tu veux être"
+	line "le Maître, dé-"
+	line "pêche-toi!"
+
+	para "Je t'envoie du"
+	line "renfort avec un"
+	line "grand cri!"
+	done
+else
 	text "If you want to be-"
 	line "come the Champion,"
 
@@ -474,6 +557,7 @@ PiersAfterText:
 	line "port your way with"
 	cont "a yell!"
 	done
+endc
 
 PiersRematchScript:
 	checkevent EVENT_BEAT_PIERS_AGAIN
@@ -506,6 +590,34 @@ PiersRematchScript:
 	jumpthisopenedtext
 
 PiersRematchAfterText:
+if DEF(_LOCALE_FR)
+	text "J'ai une petite"
+	line "soeur. Elle"
+	line "s'appelle Marnie."
+
+	para "Elle est aussi"
+	line "mignonne qu'on"
+	line "peut l'être."
+
+	para "Plus tard, je ne"
+	line "sais pas si elle"
+
+	para "voudra chanter,"
+	line "jouer, ou"
+
+	para "combattre avec des"
+	line "#MON, ou autre"
+
+	para "chose de neuf."
+
+	para "Quoi qu'il en"
+	line "soit, j'espère"
+
+	para "qu'elle aura plus"
+	line "de passion que"
+	line "toi, <PLAYER>!"
+	done
+else
 	text "I have a little"
 	line "sister."
 	cont "Her name's Marnie."
@@ -530,8 +642,28 @@ PiersRematchAfterText:
 	line "passion as you"
 	cont "do, <PLAYER>!"
 	done
+endc
 
 PiersIntroText:
+if DEF(_LOCALE_FR)
+	text "PIERS: Un chan-"
+	line "teur modeste ne"
+	line "peut que chanter"
+	line "des chansons mo-"
+	line "destes… ♪"
+
+	para "Je m'appelle"
+	line "Piers. Je ne viens"
+	line "pas de Johto,"
+
+	para "mais je suis venu"
+	line "chanter à la"
+
+	para "radio et faire"
+	line "sourir tout le"
+	line "monde chez moi."
+	done
+else
 	text "Piers: The only"
 	line "thing a humble"
 	cont "singer can do"
@@ -548,8 +680,21 @@ PiersIntroText:
 	line "everyone smile"
 	cont "in my hometown."
 	done
+endc
 
 PiersAfterIntroText:
+if DEF(_LOCALE_FR)
+	text "Mes meilleurs"
+	line "riffs viennent"
+	line "quand je"
+
+	para "gagne un bon"
+	line "combat."
+
+	para "On se bat ici et"
+	line "maintenant?"
+	done
+else
 	text "Some of my best"
 	line "riffs have come"
 
@@ -559,26 +704,63 @@ PiersAfterIntroText:
 	para "How 'bout we have"
 	line "one here and now?"
 	done
+endc
 
 PiersNoBattleText:
+if DEF(_LOCALE_FR)
+	text "Soupir… Mon âme"
+	line "pleure."
+	done
+else
 	text "Sigh… I feel like"
 	line "my soul's weeping."
 	done
+endc
 
 PiersSeenText:
+if DEF(_LOCALE_FR)
+	text "Je fais du rock"
+	line "sombre avec des #-"
+	line "MON Ténèbres!"
+
+	para "Place au rock!"
+	done
+else
 	text "I make dark music"
 	line "and use Dark-type"
 	cont "#mon!"
 
 	para "It's time to rock!"
 	done
+endc
 
 PiersBeatenText:
+if DEF(_LOCALE_FR)
+	text "Mon équipe et moi"
+	line "on a tout donné."
+	done
+else
 	text "Me an' my team"
 	line "gave it our best."
 	done
+endc
 
 PiersRewardText:
+if DEF(_LOCALE_FR)
+	text "Content qu'on ait"
+	line "pu se battre."
+
+	para "Mes #MON ont"
+	line "l'air d'être"
+
+	para "pareils."
+
+	para "Tiens, pour rocker"
+	line "encore plus fort"
+
+	para "la prochaine fois!"
+	done
+else
 	text "I'm glad we were"
 	line "able to battle."
 
@@ -592,13 +774,38 @@ PiersRewardText:
 	para "even harder next"
 	line "time!"
 	done
+endc
 
 PiersRematchIntroAgainText:
+if DEF(_LOCALE_FR)
+	text "Piers: Salut,"
+	line "<PLAYER>."
+	done
+else
 	text "Piers: Hey there,"
 	line "<PLAYER>."
 	done
+endc
 
 PiersRematchSeenText:
+if DEF(_LOCALE_FR)
+	text "Hah! Tu es le"
+	line "nouveau Maître!"
+
+	para "Tu cartonne"
+	line "maintenant!"
+
+	para "Et moi je chante"
+	line "encore mes petites"
+	line "chansons…"
+
+	para "Tu veux un rappel?"
+
+	para "Je fais une excep-"
+	line "tion pour toi,"
+	line "juste cette fois!"
+	done
+else
 	text "Hah! So you're the"
 	line "new Champion."
 
@@ -616,13 +823,28 @@ PiersRematchSeenText:
 	line "ception for you,"
 	cont "just this once!"
 	done
+endc
 
 PiersRematchBeatenText:
+if DEF(_LOCALE_FR)
+	text "C'est tout?!"
+	line "Pas possible!"
+	done
+else
 	text "That's it?!"
 	line "No way!"
 	done
+endc
 
 SupernerdEricSeenText:
+if DEF(_LOCALE_FR)
+	text "Je me suis fait"
+	line "virer du CASINO."
+	line "J'étais juste en"
+	line "train de tricher"
+	line "avec mon #MON!"
+	done
+else
 	text "I got booted out"
 	line "of the Game Cor-"
 	cont "ner."
@@ -631,12 +853,29 @@ SupernerdEricSeenText:
 	line "cheat using my"
 	cont "#mon…"
 	done
+endc
 
 SupernerdEricBeatenText:
+if DEF(_LOCALE_FR)
+	text "…Grrr…"
+	done
+else
 	text "…Grumble…"
 	done
+endc
 
 SupernerdTeruSeenText:
+if DEF(_LOCALE_FR)
+	text "Fais-tu attention"
+	line "aux types de #-"
+	line "MON pendant les"
+	line "combats? Apprends"
+	line "les fai- blesses"
+	line "et les a- vantages"
+	line "des types pour"
+	line "devenir plus fort!"
+	done
+else
 	text "Do you consider"
 	line "type alignments in"
 	cont "battle?"
@@ -647,62 +886,136 @@ SupernerdTeruSeenText:
 	para "you'll do better"
 	line "in battle."
 	done
+endc
 
 SupernerdTeruBeatenText:
+if DEF(_LOCALE_FR)
+	text "Aïe, aïe, aïe!"
+	done
+else
 	text "Ow, ow, ow!"
 	done
+endc
 
 PokemaniacIssacSeenText:
+if DEF(_LOCALE_FR)
+	text "Mes #MON se sont"
+	line "fait toiletter!"
+	line "Regarde comme ils"
+	line "sont beaux et"
+	line "forts!"
+	done
+else
 	text "My #mon just"
 	line "got a haircut!"
 
 	para "I'll show you how"
 	line "strong it is!"
 	done
+endc
 
 PokemaniacIssacBeatenText:
+if DEF(_LOCALE_FR)
+	text "Yaaaaaaaah!"
+	done
+else
 	text "Aiyeeee!"
 	done
+endc
 
 PokemaniacDonaldSeenText:
+if DEF(_LOCALE_FR)
+	text "Tu as des #MON"
+	line "rares avec toi, je"
+	line "me trompe? J'veux"
+	line "les voir!"
+	done
+else
 	text "I think you have"
 	line "some rare #mon"
 	cont "with you."
 
 	para "Let me see them!"
 	done
+endc
 
 PokemaniacDonaldBeatenText:
+if DEF(_LOCALE_FR)
+	text "Graah! Perdu! Ca"
+	line "craint!"
+	done
+else
 	text "Gaah! I lost!"
 	line "That makes me mad!"
 	done
+endc
 
 CosplayerClaraSeenText:
 	text "Pix! Vul, pix! ♥"
 	done
 
 CosplayerClaraBeatenText:
+if DEF(_LOCALE_FR)
+	text "Tu croyais que"
+	line "j'étais un #MON?"
+
+	para "Nan! C'est du"
+	line "cosplay de"
+	line "qualité."
+	done
+else
 	text "You thought I was"
 	line "a #mon?"
 
 	para "Nope! It's just"
 	line "quality cosplay."
 	done
+endc
 
 GoldenrodUndergroundTheDoorsLockedText:
+if DEF(_LOCALE_FR)
+	text "C'est fermé…"
+	done
+else
 	text "The door's locked…"
 	done
+endc
 
 GoldenrodUndergroundTheDoorIsOpenText:
+if DEF(_LOCALE_FR)
+	text "C'est ouvert."
+	done
+else
 	text "The door is open."
 	done
+endc
 
 GoldenrodUndergroundBasementKeyOpenedDoorText:
+if DEF(_LOCALE_FR)
+	text "La CLE SOUS-SOL a"
+	line "ouvert la porte."
+	done
+else
 	text "The Basement Key"
 	line "opened the door."
 	done
+endc
 
 GoldenrodUndergroundOlderHaircutBrotherOfferHaircutText:
+if DEF(_LOCALE_FR)
+	text "Bienvenue! Je"
+	line "m'occupe du SALON"
+	line "#MON! Je suis"
+	line "l'aîné et le"
+	line "meilleur des"
+	line "FRERES COIFFEURS."
+	line "Je peux toiletter"
+	line "tes #MON pour"
+	line "juste 500¥."
+	line "Veux-tu que je"
+	line "m'en occupe?"
+	done
+else
 	text "Welcome!"
 
 	para "I run the #mon"
@@ -719,38 +1032,87 @@ GoldenrodUndergroundOlderHaircutBrotherOfferHaircutText:
 	para "Would you like me"
 	line "to do that?"
 	done
+endc
 
 GoldenrodUndergroundOlderHaircutBrotherAskWhichMonText:
+if DEF(_LOCALE_FR)
+	text "Quel #MON veux- tu"
+	line "me confier?"
+	done
+else
 	text "Which #mon"
 	line "should I work on?"
 	done
+endc
 
 GoldenrodUndergroundOlderHaircutBrotherWatchItBecomeBeautifulText:
+if DEF(_LOCALE_FR)
+	text "Je vais lui refai-"
+	line "re une beauté!"
+	done
+else
 	text "OK! Watch it"
 	line "become beautiful!"
 	done
+endc
 
 GoldenrodUndergroundOlderHaircutBrotherAllDoneText:
+if DEF(_LOCALE_FR)
+	text "Ca y est! Fini!"
+	done
+else
 	text "There! All done!"
 	done
+endc
 
 GoldenrodUndergroundOlderHaircutBrotherThatsAShameText:
+if DEF(_LOCALE_FR)
+	text "Vraiment? Quel"
+	line "dommage!"
+	done
+else
 	text "Is that right?"
 	line "That's a shame!"
 	done
+endc
 
 GoldenrodUndergroundOlderHaircutBrotherYoullNeedMoreMoneyText:
+if DEF(_LOCALE_FR)
+	text "Il te faut plus de"
+	line "sous, chéri."
+	done
+else
 	text "You'll need more"
 	line "money than that."
 	done
+endc
 
 GoldenrodUndergroundOlderHaircutBrotherOneHaircutADayText:
+if DEF(_LOCALE_FR)
+	text "Je ne fais qu'un"
+	line "toilettage par"
+	line "jour. Au revoir."
+	done
+else
 	text "I do only one"
 	line "haircut a day. I'm"
 	cont "done for today."
 	done
+endc
 
 GoldenrodUndergroundYoungerHaircutBrotherOfferHaircutText:
+if DEF(_LOCALE_FR)
+	text "Bienvenue au SALON"
+	line "#MON! Je suis le"
+	line "cadet et le moins"
+	line "cher des FRERES"
+	line "COIFFEURS. J'peux"
+	line "m'occuper de tes"
+	line "#MON pour 300¥."
+	line "Alors? Ca te dit"
+	line "oui ou non?"
+	done
+else
 	text "Welcome to the"
 	line "#mon Salon!"
 
@@ -765,68 +1127,138 @@ GoldenrodUndergroundYoungerHaircutBrotherOfferHaircutText:
 
 	para "So? How about it?"
 	done
+endc
 
 GoldenrodUndergroundYoungerHaircutBrotherAskWhichMonText:
+if DEF(_LOCALE_FR)
+	text "OK. Quel #MON j'me"
+	line "fais?"
+	done
+else
 	text "OK, which #mon"
 	line "should I do?"
 	done
+endc
 
 GoldenrodUndergroundYoungerHaircutBrotherIllMakeItLookCoolText:
+if DEF(_LOCALE_FR)
+	text "OK! Y va être trop"
+	line "cool!"
+	done
+else
 	text "OK! I'll make it"
 	line "look cool!"
 	done
+endc
 
 GoldenrodUndergroundYoungerHaircutBrotherAllDoneText:
+if DEF(_LOCALE_FR)
+	text "Allez hop!"
+	line "Terminé!"
+	done
+else
 	text "There we go!"
 	line "All done!"
 	done
+endc
 
 GoldenrodUndergroundYoungerHaircutBrotherHowDisappointingText:
+if DEF(_LOCALE_FR)
+	text "Non? Tant pis."
+	done
+else
 	text "No?"
 	line "How disappointing!"
 	done
+endc
 
 GoldenrodUndergroundYoungerHaircutBrotherShortOnFundsText:
+if DEF(_LOCALE_FR)
+	text "T'es à court de"
+	line "fric."
+	done
+else
 	text "You're a little"
 	line "short on funds."
 	done
+endc
 
 GoldenrodUndergroundYoungerHaircutBrotherOneHaircutADayText:
+if DEF(_LOCALE_FR)
+	text "Je ne fais qu'un"
+	line "toilettage par"
+	line "jour. Au revoir."
+	done
+else
 	text "I can do only one"
 	line "haircut a day."
 
 	para "Sorry, but I'm all"
 	line "done for today."
 	done
+endc
 
 HaircutBrosText_SlightlyHappier:
 	text_ram wStringBuffer3
+if DEF(_LOCALE_FR)
+	text " a l'air un peu"
+	line "plus heureux."
+	done
+else
 	text " looks a"
 	line "little happier."
 	done
+endc
 
 HaircutBrosText_Happier:
 	text_ram wStringBuffer3
+if DEF(_LOCALE_FR)
+	text " a l'air"
+	line "heureux."
+	done
+else
 	text " looks"
 	line "happy."
 	done
+endc
 
 HaircutBrosText_MuchHappier:
 	text_ram wStringBuffer3
+if DEF(_LOCALE_FR)
+	text " a l'air ravi!"
+	done
+else
 	text " looks"
 	line "delighted!"
 	done
+endc
 
 GoldenrodUndergroundWeAreNotOpenTodayText:
+if DEF(_LOCALE_FR)
+	text "C'est fermé"
+	line "aujourd'hui."
+	done
+else
 	text "We're not open"
 	line "today."
 	done
+endc
 
 GoldenrodUndergroundNoEntryText: ; text > text
+if DEF(_LOCALE_FR)
+	text "ENTREE INTERDITE"
+	done
+else
 	text "NO ENTRY BEYOND"
 	line "THIS POINT"
 	done
+endc
 
 PiersMicrophoneText:
+if DEF(_LOCALE_FR)
+	text "C'est un micro."
+	done
+else
 	text "It's a microphone."
 	done
+endc

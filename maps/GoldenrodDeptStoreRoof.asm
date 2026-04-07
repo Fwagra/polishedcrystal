@@ -170,6 +170,14 @@ PokeDollVendingMachine:
 	db "Cancel@"
 
 GoldenrodDeptStoreRoofPokefanFText:
+if DEF(_LOCALE_FR)
+	text "Fouiiii! Je vais"
+	line "souvent sur le"
+	line "toit pour me"
+	line "reposer après les"
+	line "courses."
+	done
+else
 	text "Whew, I'm tired."
 
 	para "I sometimes come"
@@ -178,8 +186,17 @@ GoldenrodDeptStoreRoofPokefanFText:
 	para "to take a break"
 	line "from shopping."
 	done
+endc
 
 GoldenrodDeptStoreRoofFisherText:
+if DEF(_LOCALE_FR)
+	text "Pardon? Comment ça"
+	line "un adulte n'a pas"
+	line "le droit de faire"
+	line "ça? Je veux toutes"
+	line "les poupées!"
+	done
+else
 	text "Pardon? Who says"
 	line "an adult can't get"
 	cont "into this?"
@@ -190,6 +207,7 @@ GoldenrodDeptStoreRoofFisherText:
 	para "collect all the"
 	line "dolls!"
 	done
+endc
 
 GoldenrodDeptStoreRoofFisherDuplicateText:
 	text "This one is a"
@@ -213,21 +231,54 @@ GoldenrodDeptStoreRoofFisherCatchEmAllText:
 	done
 
 GoldenrodDeptStoreRoofTwinText:
+if DEF(_LOCALE_FR)
+	text "Ils font des prix"
+	line "spéciaux ici de"
+	line "temps en temps."
+	done
+else
 	text "They have bargain"
 	line "sales here every"
 	cont "so often."
 	done
+endc
 
 GoldenrodDeptStoreRoofSuperNerdOhWowText:
+if DEF(_LOCALE_FR)
+	text "BUENA: Oh! Merci!"
+	line "Quel est ton nom,"
+	line "déjà? …<PLAYER>,"
+	line "OK! Viens,"
+	line "<PLAYER>. Tu es en"
+	line "direct."
+	done
+else
 	text "Oh, wow!"
 	done
+endc
 
 GoldenrodDeptStoreRoofSuperNerdQuitBotheringMeText:
+if DEF(_LOCALE_FR)
+	text "Tu me lâches,"
+	line "ouais?"
+	done
+else
 	text "Will you quit"
 	line "bothering me?"
 	done
+endc
 
 GoldenrodDeptStoreRoofPokefanMText:
+if DEF(_LOCALE_FR)
+	text "Je veux acheter un"
+	line "truc mais je n'ai"
+	line "pas assez d'argent"
+	line "sur moi… Je vais"
+	line "peut-être vendre"
+	line "les BAIES que j'ai"
+	line "trouvées."
+	done
+else
 	text "There's something"
 	line "I really want, but"
 
@@ -238,16 +289,36 @@ GoldenrodDeptStoreRoofPokefanMText:
 	line "off the Berries"
 	cont "I've collected…"
 	done
+endc
 
 GoldenrodDeptStoreRoofTeacherText:
+if DEF(_LOCALE_FR)
+	text "Oh! Tout est si"
+	line "bon marché! Mon"
+	line "SAC est plein à"
+	line "craquer!"
+	done
+else
 	text "Oh, everything is"
 	line "so cheap!"
 
 	para "I bought so much,"
 	line "my Bag's crammed!"
 	done
+endc
 
 GoldenrodDeptStoreRoofBugCatcherText:
+if DEF(_LOCALE_FR)
+	text "Mes #MON sont"
+	line "toujours empoison-"
+	line "nés ou paralysés"
+	line "au mauvais moment."
+	line "Je vais donc ache-"
+	line "ter TOTAL SOIN. Il"
+	line "en reste, tu"
+	line "crois?"
+	done
+else
 	text "My #mon always"
 	line "get paralyzed or"
 
@@ -260,8 +331,18 @@ GoldenrodDeptStoreRoofBugCatcherText:
 	para "I wonder if"
 	line "there's any left?"
 	done
+endc
 
 Binoculars1Text:
+if DEF(_LOCALE_FR)
+	text "Je vois loin avec"
+	line "ces jumelles. Je"
+	line "vois presque ma"
+	line "maison. C'est"
+	line "celle avec le toit"
+	line "vert?"
+	done
+else
 	text "These binoculars"
 	line "let me see far"
 
@@ -271,8 +352,19 @@ Binoculars1Text:
 	para "Is it the one with"
 	line "the green roof?"
 	done
+endc
 
 Binoculars2Text:
+if DEF(_LOCALE_FR)
+	text "Hé! Des dresseurs"
+	line "se battent sur la"
+	line "route! Un #MON"
+	line "crache des"
+	line "feuilles! Ca me"
+	line "donne envie de"
+	line "combattre!"
+	done
+else
 	text "Hey! Some trainers"
 	line "are battling on"
 	cont "the road!"
@@ -284,8 +376,18 @@ Binoculars2Text:
 	line "like battling"
 	cont "right now!"
 	done
+endc
 
 Binoculars3Text:
+if DEF(_LOCALE_FR)
+	text "Un PECHEUR a"
+	line "attrapé des"
+	line "MAGICARPE… Ils"
+	line "font tous"
+	line "TREMPETTE! Y'a de"
+	line "l'eau partout!"
+	done
+else
 	text "A Fisher caught a"
 	line "lot of Magikarp…"
 
@@ -295,11 +397,18 @@ Binoculars3Text:
 	para "Look at the water"
 	line "going everywhere!"
 	done
+endc
 
 PokeDollVendingMachineText:
+if DEF(_LOCALE_FR)
+	text "Une machine de"
+	line "poupées #MON!"
+	done
+else
 	text "A vending machine"
 	line "for #mon dolls!"
 	done
+endc
 
 PokeDollVendingMachineNoMoneyText:
 	text "It costs too much!"

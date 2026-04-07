@@ -163,6 +163,19 @@ AcademyEarlSpinMovement:
 	step_end
 
 AcademyEarlIntroText:
+if DEF(_LOCALE_FR)
+	text "THEOPHILE est mon"
+	line "nom! Sensationnels"
+	line "sont les #MON! Te"
+	line "transmettre"
+	line "quelques petits"
+	line "conseils au niveau"
+	line "me maintiendra!"
+	line "Que veux-tu"
+	line "savoir? Comment"
+	line "devenir fort?"
+	done
+else
 	text "Earl, I am!"
 
 	para "Wonderful are"
@@ -176,8 +189,23 @@ AcademyEarlIntroText:
 	line "know? Want to be"
 	cont "a winner is you?"
 	done
+endc
 
 AcademyEarlTeachHowToWinText:
+if DEF(_LOCALE_FR)
+	text "Très bien! Ton"
+	line "éducation je"
+	line "ferai! En combat,"
+	line "le premier #MON de"
+	line "ta liste sort le"
+	line "premier! Changer"
+	line "l'ordre de la"
+	line "liste peut t'aider"
+	line "à gagner ou"
+	line "perdre! Tu veux en"
+	line "savoir plus?"
+	done
+else
 	text "Good! Teach you,"
 	line "I will!"
 
@@ -192,14 +220,42 @@ AcademyEarlTeachHowToWinText:
 	para "More from me you"
 	line "want to hear?"
 	done
+endc
 
 AcademyEarlTeachMoreText:
+if DEF(_LOCALE_FR)
+	text "Alors, on veut"
+	line "savoir comment"
+	line "bien élever ses"
+	line "p'tits #MON?"
+	done
+else
 	text "So, want to know"
 	line "how to raise"
 	cont "#mon well?"
 	done
+endc
 
 AcademyEarlTeachHowToRaiseWellText:
+if DEF(_LOCALE_FR)
+	text "Qu'il en soit"
+	line "ainsi. Ton"
+	line "éducation je"
+	line "ferai! Tout #MON"
+	line "qui participe au"
+	line "combat, même"
+	line "brièvement, ga-"
+	line "gne des points"
+	line "d'EXP. Mets en"
+	line "première ligne un"
+	line "#MON faible et"
+	line "change- le"
+	line "rapidement! De"
+	line "cette façon, les"
+	line "#MON fai- bles"
+	line "seront bons!"
+	done
+else
 	text "Fine! Teach you,"
 	line "I will!"
 
@@ -219,8 +275,17 @@ AcademyEarlTeachHowToRaiseWellText:
 	line "#mon strong"
 	cont "become!"
 	done
+endc
 
 AcademyEarlNoMoreToTeachText:
+if DEF(_LOCALE_FR)
+	text "Bon élève que tu"
+	line "es! Je n'ai plus"
+	line "rien à t'appren-"
+	line "dre! Sois gentil"
+	line "avec tes #MON!"
+	done
+else
 	text "Oh! Smart student"
 	line "you are! Nothing"
 	cont "more do I teach!"
@@ -228,8 +293,18 @@ AcademyEarlNoMoreToTeachText:
 	para "Good to #mon"
 	line "you must be!"
 	done
+endc
 
 EarlsPokemonAcademyYoungster1Text:
+if DEF(_LOCALE_FR)
+	text "Je prends note de"
+	line "ce cours bien"
+	line "utile. C'est"
+	line "sûrement utile de"
+	line "copier ce qu'il y"
+	line "a au tableau."
+	done
+else
 	text "I'm taking notes"
 	line "of the teacher's"
 	cont "lecture."
@@ -238,20 +313,48 @@ EarlsPokemonAcademyYoungster1Text:
 	line "the stuff on the"
 	cont "blackboard too."
 	done
+endc
 
 EarlsPokemonAcademyGameboyKid1Text:
+if DEF(_LOCALE_FR)
+	text "J'ai échangé mon"
+	line "meilleur #MON avec"
+	line "celui du gars à"
+	line "côté de moi."
+	done
+else
 	text "I traded my best"
 	line "#mon to the"
 	cont "guy beside me."
 	done
+endc
 
 EarlsPokemonAcademyGameboyKid2Text:
+if DEF(_LOCALE_FR)
+	text "Hein? Le #MON que"
+	line "je viens d'avoir"
+	line "tient quelque"
+	line "chose!"
+	done
+else
 	text "Huh? The #mon I"
 	line "just got is hold-"
 	cont "ing something!"
 	done
+endc
 
 EarlsPokemonAcademyYoungster2Text:
+if DEF(_LOCALE_FR)
+	text "Un #MON tenant une"
+	line "BAIE se soi- gnera"
+	line "tout seul en"
+	line "combat. Beaucoup"
+	line "d'autres objets"
+	line "peuvent être tenus"
+	line "par les #MON…"
+	line "Ecrire… C'est dur…"
+	done
+else
 	text "A #mon holding"
 	line "a Berry will heal"
 	cont "itself in battle."
@@ -263,16 +366,39 @@ EarlsPokemonAcademyYoungster2Text:
 	para "It sure is tough"
 	line "taking notes…"
 	done
+endc
 
 AcademyBlackboardText:
+if DEF(_LOCALE_FR)
+	text "Le tableau indique"
+	line "les changements de"
+	line "statut des #MON"
+	line "pendant les"
+	line "combats."
+	done
+else
 	text "The blackboard"
 	line "describes #mon"
 
 	para "status changes in"
 	line "battle."
 	done
+endc
 
 AcademyPoisonText:
+if DEF(_LOCALE_FR)
+	text "Empoisonné, votre"
+	line "#MON perd"
+	line "régulièrement des"
+	line "PV. Le poison agit"
+	line "même après le"
+	line "combat et vous"
+	line "perdrez des PV en"
+	line "marchant. Seul"
+	line "remède connu à ce"
+	line "jour: l'ANTIDOTE."
+	done
+else
 	text "If poisoned, a"
 	line "#mon steadily"
 	cont "loses HP."
@@ -286,8 +412,21 @@ AcademyPoisonText:
 	para "To cure it, use an"
 	line "Antidote."
 	done
+endc
 
 AcademyParalysisText:
+if DEF(_LOCALE_FR)
+	text "La paralysie"
+	line "réduit la vitesse"
+	line "et peut empêcher"
+	line "de lancer une"
+	line "attaque. Elle dure"
+	line "même après le"
+	line "combat."
+	line "L'ANTI-PARA peut"
+	line "l'annuler."
+	done
+else
 	text "Paralysis reduces"
 	line "speed and may"
 	cont "prevent movement."
@@ -296,8 +435,20 @@ AcademyParalysisText:
 	line "battle, so use"
 	cont "a ParalyzeHeal."
 	done
+endc
 
 AcademySleepText:
+if DEF(_LOCALE_FR)
+	text "Endormi, votre"
+	line "#MON ne peut pas"
+	line "réagir. Un #MON"
+	line "endormi ne se"
+	line "réveille pas après"
+	line "le combat."
+	line "Réveillez-le avec"
+	line "un REVEIL."
+	done
+else
 	text "If asleep, your"
 	line "#mon can't make"
 	cont "a move."
@@ -309,8 +460,21 @@ AcademySleepText:
 	para "Wake it up with"
 	line "an Awakening."
 	done
+endc
 
 AcademyBurnText:
+if DEF(_LOCALE_FR)
+	text "Une brûlure con-"
+	line "somme des PV. Elle"
+	line "réduit aussi la"
+	line "force d'attaque."
+	line "La brûlure conti-"
+	line "nue même après le"
+	line "combat. Utilisez"
+	line "de l'ANTI-BRULE"
+	line "pour la soigner."
+	done
+else
 	text "A burn steadily"
 	line "consumes HP."
 
@@ -323,8 +487,20 @@ AcademyBurnText:
 	para "Use a Burn Heal as"
 	line "the cure."
 	done
+endc
 
 AcademyFreezeText:
+if DEF(_LOCALE_FR)
+	text "Si votre #MON est"
+	line "gelé, il ne pourra"
+	line "rien faire. Le gel"
+	line "continue après le"
+	line "combat. Mieux"
+	line "qu'un radia- teur,"
+	line "l'ANTIGEL le"
+	line "réchauffera!"
+	done
+else
 	text "If your #mon is"
 	line "frozen, it can't"
 	cont "do a thing."
@@ -335,8 +511,20 @@ AcademyFreezeText:
 	para "Thaw it out with"
 	line "an Ice Heal."
 	done
+endc
 
 AcademyNotebookText:
+if DEF(_LOCALE_FR)
+	text "C'est le cahier de"
+	line "ce gamin… Attrapez"
+	line "les #MON en"
+	line "lançant les #"
+	line "BALLS. Vous pouvez"
+	line "trans- porter six"
+	line "#MON avec vous."
+	line "Continuer à lire?"
+	done
+else
 	text "It's this kid's"
 	line "notebook…"
 
@@ -348,8 +536,21 @@ AcademyNotebookText:
 
 	para "Keep reading?"
 	done
+endc
 
 AcademyNotebookText1:
+if DEF(_LOCALE_FR)
+	text "Avant de lancer"
+	line "une # BALL,"
+	line "affaiblissez le"
+	line "#MON. Un #MON"
+	line "brûlé ou"
+	line "empoisonné est"
+	line "plus facile à"
+	line "attraper."
+	line "Continuer à lire?"
+	done
+else
 	text "Before throwing a"
 	line "# Ball, weaken"
 	cont "the target first."
@@ -360,8 +561,24 @@ AcademyNotebookText1:
 
 	para "Keep reading?"
 	done
+endc
 
 AcademyNotebookText2:
+if DEF(_LOCALE_FR)
+	text "Certaines capaci-"
+	line "tés peuvent em-"
+	line "brouiller l'esprit"
+	line "du #MON adverse."
+	line "Une fois confus,"
+	line "le #MON peut"
+	line "s'attaquer lui-"
+	line "même. Fuir le"
+	line "combat annule tout"
+	line "effet de"
+	line "confusion."
+	line "Continuer à lire?"
+	done
+else
 	text "Some moves may"
 	line "cause confusion."
 
@@ -375,8 +592,28 @@ AcademyNotebookText2:
 
 	para "Keep reading?"
 	done
+endc
 
 AcademyNotebookText3:
+if DEF(_LOCALE_FR)
+	text "Les personnes qui"
+	line "attrapent et uti-"
+	line "lisent les #MON"
+	line "pour les combats"
+	line "sont des dresseurs"
+	line "de #MON. Leur but"
+	line "est de défier et"
+	line "vaincre tous les"
+	line "dresseurs et"
+	line "CHAMPIONS d'ARENES"
+	line "#MON. La page"
+	line "suivante"
+	line "est…blanche!"
+	line "Gamin: Maiiheuu…"
+	line "J'ai rien écrit"
+	line "d'autre…"
+	done
+else
 	text "People who catch"
 	line "and use #mon"
 
@@ -397,3 +634,4 @@ AcademyNotebookText3:
 	para "I haven't written"
 	line "any more…"
 	done
+endc

@@ -167,6 +167,21 @@ MountMoon1FRivalMovementAfter:
 	step_end
 
 MountMoonRivalTextBefore:
+if DEF(_LOCALE_FR)
+	text "…… …… ……"
+	line "Cela faisait"
+	line "longtemps,"
+	line "<PLAYER>. …Depuis"
+	line "ma défaite j'ai"
+	line "cherché l'élément"
+	line "manquant à mon"
+	line "entraînement… Et"
+	line "tu sais quoi? Je"
+	line "l'ai trouvé!"
+	line "<PLAYER>, ça va"
+	line "être ta fête!"
+	done
+else
 	text "…… …… ……"
 
 	para "It's been a while,"
@@ -185,8 +200,19 @@ MountMoonRivalTextBefore:
 	para "<PLAYER>, now we'll"
 	line "show you!"
 	done
+endc
 
 MountMoonRivalTextWin:
+if DEF(_LOCALE_FR)
+	text "…… …… …… Je"
+	line "pensais avoir"
+	line "élevé mes #MON au"
+	line "max de leurs"
+	line "capacités… …Mais"
+	line "ce n'était pas"
+	line "suffisant…"
+	done
+else
 	text "…… …… ……"
 
 	para "I thought I raised"
@@ -198,8 +224,13 @@ MountMoonRivalTextWin:
 	para "…But it still"
 	line "wasn't enough…"
 	done
+endc
 
 MountMoonRivalTextAfter:
+if DEF(_LOCALE_FR)
+	text "… … …"
+	done
+else
 	text "…… …… ……"
 
 	para "…You won, fair"
@@ -228,8 +259,20 @@ MountMoonRivalTextAfter:
 	para "how good I am by"
 	line "beating you."
 	done
+endc
 
 MountMoonRivalTextLoss:
+if DEF(_LOCALE_FR)
+	text "…… …… ……"
+	line "Yahahaha!"
+	line "Vengeance! Avec"
+	line "mes #MON, je vais"
+	line "battre le CHAMPION"
+	line "et être le plus"
+	line "grand des"
+	line "dresseurs."
+	done
+else
 	text "…… …… ……"
 
 	para "I've repaid my"
@@ -242,6 +285,7 @@ MountMoonRivalTextLoss:
 	line "become the world's"
 	cont "greatest trainer."
 	done
+endc
 
 BugManiacKentaSeenText:
 	text "I saw a red-haired"
@@ -273,9 +317,15 @@ SuperNerdJovanSeenText:
 	done
 
 SuperNerdJovanBeatenText:
+if DEF(_LOCALE_FR)
+	text "Mes #MON"
+	line "n'y arrivent pas!"
+	done
+else
 	text "My #mon"
 	line "won't do!"
 	done
+endc
 
 BugManiacRobbySeenText:
 	text "You need to go"
@@ -286,30 +336,62 @@ BugManiacRobbySeenText:
 	done
 
 BugManiacRobbyBeatenText:
+if DEF(_LOCALE_FR)
+	text "Perdu…"
+	done
+else
 	text "I lost…"
 	done
+endc
 
 LassIrisSeenText:
+if DEF(_LOCALE_FR)
+	text "Tu as vu un"
+	line "MELOFEE?"
+
+	para "Il est si mignon!"
+	done
+else
 	text "Have you seen a"
 	line "Clefairy?"
 
 	para "They're so cute!"
 	done
+endc
 
 LassIrisBeatenText:
+if DEF(_LOCALE_FR)
+	text "C'était rapide…"
+	done
+else
 	text "That was so fast…"
 	done
+endc
 
 HikerMarcosSeenText:
+if DEF(_LOCALE_FR)
+	text "Un gosse comme toi"
+	line "ne devrait pas"
+
+	para "traîner ici, dans"
+	line "le noir."
+	done
+else
 	text "Kids like you"
 	line "shouldn't be"
 
 	para "wandering around"
 	line "here in the dark."
 	done
+endc
 
 HikerMarcosBeatenText:
+if DEF(_LOCALE_FR)
+	text "Qu'il est fort!"
+	done
+else
 	text "Woah!"
 	line "You're strong!"
 	done
+endc
 

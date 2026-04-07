@@ -33,45 +33,97 @@ Route12South_MapScriptHeader:
 GenericTrainerFisherMartin:
 	generictrainer FISHER, MARTIN, EVENT_BEAT_FISHER_MARTIN, FisherMartinSeenText, FisherMartinBeatenText
 
+if DEF(_LOCALE_FR)
+	text "Bon… La pêche"
+	line "c'est lourd…"
+	done
+else
 	text "I'm too impatient"
 	line "for fishing…"
 	done
+endc
 
 FisherMartinSeenText:
+if DEF(_LOCALE_FR)
+	text "La patience est la"
+	line "meilleure arme"
+	line "pour pêcher…"
+	done
+else
 	text "Patience is the"
 	line "key to both fish-"
 	cont "ing and #mon."
 	done
+endc
 
 FisherMartinBeatenText:
+if DEF(_LOCALE_FR)
 	text "Gwaaah!"
 	done
+else
+	text "Gwaaah!"
+	done
+endc
 
 GenericTrainerFisherStephen:
 	generictrainer FISHER, STEPHEN, EVENT_BEAT_FISHER_STEPHEN, FisherStephenSeenText, FisherStephenBeatenText
 
+if DEF(_LOCALE_FR)
+	text "Tu connais les"
+	line "radios de KANTO?"
+	line "Elles sont pas"
+	line "mal, tu sais…"
+	done
+else
 	text "Have you checked"
 	line "out Kanto's radio"
 
 	para "programs? We get a"
 	line "good variety here."
 	done
+endc
 
 FisherStephenSeenText:
+if DEF(_LOCALE_FR)
+	text "Ca c'est le pied!"
+	line "Pêcher en écoutant"
+	line "la radio, c'est"
+	line "super pépère."
+	done
+else
 	text "I feel so content,"
 	line "fishing while lis-"
 	cont "tening to some"
 	cont "tunes on my radio."
 	done
+endc
 
 FisherStephenBeatenText:
+if DEF(_LOCALE_FR)
+	text "Ma radio m'a fait"
+	line "perdre!"
+	done
+else
 	text "My stupid radio"
 	line "distracted me!"
 	done
+endc
 
 GenericTrainerFisherBarney:
 	generictrainer FISHER, BARNEY, EVENT_BEAT_FISHER_BARNEY, FisherBarneySeenText, FisherBarneyBeatenText
 
+if DEF(_LOCALE_FR)
+	text "Je crois que"
+	line "l'électricité est"
+	line "la chose la plus"
+	line "importante. Et"
+	line "c'est pour ça"
+	line "qu'on a fait tant"
+	line "d'histoires à pro-"
+	line "pos de la panne de"
+	line "la CENTRALE."
+	done
+else
 	text "I think electric-"
 	line "ity is the most"
 
@@ -87,17 +139,32 @@ GenericTrainerFisherBarney:
 	para "Power Plant went"
 	line "out of commission."
 	done
+endc
 
 FisherBarneySeenText:
+if DEF(_LOCALE_FR)
+	text "Quelle est la"
+	line "chose la plus im-"
+	line "portante dans nos"
+	line "vies quotidiennes?"
+	done
+else
 	text "What's most impor-"
 	line "tant in our every-"
 	cont "day lives?"
 	done
+endc
 
 FisherBarneyBeatenText:
+if DEF(_LOCALE_FR)
+	text "La réponse va"
+	line "suivre!"
+	done
+else
 	text "The answer is"
 	line "coming up next!"
 	done
+endc
 
 GenericTrainerFisherKyler:
 	generictrainer FISHER, KYLER, EVENT_BEAT_FISHER_KYLER, .SeenText, .BeatenText
@@ -193,8 +260,14 @@ GenericTrainerCoupleVicandtara2:
 	done
 
 Route12SignText:
+if DEF(_LOCALE_FR)
+	text "ROUTE 12 NORD de"
+	line "LAVANVILLE"
+	done
+else
 	text "Route 12"
 
 	para "North to Lavender"
 	line "Town"
 	done
+endc

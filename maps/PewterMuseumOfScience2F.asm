@@ -67,6 +67,17 @@ Museum2FMoonStoneSignpostScript:
 	jumptext Museum2FMoonStoneSignpostText
 
 Museum2FScientistText:
+if DEF(_LOCALE_FR)
+	text "Des météorites ont"
+	line "frappé le MONT"
+	cont "SELENITE."
+
+	para "On en expose une."
+
+	para "Elle émet une"
+	line "étrange énergie…"
+	done
+else
 	text "Meteorites struck"
 	line "Mt.Moon near"
 	cont "Pewter City."
@@ -77,9 +88,24 @@ Museum2FScientistText:
 	para "It seems to emit"
 	line "strange energy…"
 	done
+endc
 
 
 Museum2FLassText:
+if DEF(_LOCALE_FR)
+	text "Les #MON issus"
+	line "de fossiles sont"
+
+	para "tous de type"
+	line "Roche."
+
+	para "C'était déjà le"
+	line "cas, ou c'est"
+
+	para "à cause de la"
+	line "fossilisation?"
+	done
+else
 	text "#mon revived"
 	line "from fossils are"
 
@@ -93,8 +119,26 @@ Museum2FLassText:
 	line "fossilization"
 	cont "process?"
 	done
+endc
 
 Museum2FPokefanMImperialText:
+if DEF(_LOCALE_FR)
+	text "Cette navette"
+	line "volait à 160"
+
+	para "miles au-dessus"
+	line "de la terre!"
+
+	para "Et tu sais quoi"
+	line "d'autre peut"
+
+	para "défier la"
+	line "gravité?"
+
+	para "FRAPPE ATLAS,"
+	line "évidemment!"
+	done
+else
 	text "This space shuttle"
 	line "used to fly 160"
 
@@ -108,16 +152,36 @@ Museum2FPokefanMImperialText:
 	para "Seismic Toss,"
 	line "of course!"
 	done
+endc
 
 Museum2FChildText:
+if DEF(_LOCALE_FR)
+	text "Des trucs et"
+	line "des cailloux et"
+
+	para "des cailloux."
+	line "On y va?"
+	done
+else
 	text "Stuff and rocks"
 	line "and rocks and"
 
 	para "stuff. Can we go"
 	line "already?"
 	done
+endc
 
 Museum2FTeacherText:
+if DEF(_LOCALE_FR)
+	text "Pff… Mon fils"
+	line "n'aime pas tant"
+
+	para "le musée que je"
+	line "l'espérais."
+
+	para "Les enfants, hein?"
+	done
+else
 	text "Sigh… My son isn't"
 	line "enjoying the mu-"
 
@@ -126,8 +190,27 @@ Museum2FTeacherText:
 
 	para "Kids, huh?"
 	done
+endc
 
 Museum2FPokefanMMetricText:
+if DEF(_LOCALE_FR)
+	text "Cette navette"
+	line "volait à 250"
+
+	para "kilomètres"
+	line "au-dessus de"
+	cont "la terre!"
+
+	para "Et tu sais quoi"
+	line "d'autre peut"
+
+	para "défier la"
+	line "gravité?"
+
+	para "FRAPPE ATLAS,"
+	line "évidemment!"
+	done
+else
 	text "This space shuttle"
 	line "used to fly 250"
 
@@ -141,35 +224,69 @@ Museum2FPokefanMMetricText:
 	para "Seismic Toss,"
 	line "of course!"
 	done
+endc
 
 Text_Museum2FTutorSeismicToss:
+if DEF(_LOCALE_FR)
+	text "Je peux enseigner"
+	line "FRAPPE ATLAS"
+
+	para "à ton #MON contre"
+	line "une Feuille Arg."
+	done
+else
 	text "I can teach your"
 	line "#mon to use"
 
 	para "Seismic Toss for"
 	line "one Silver Leaf."
 	done
+endc
 
 Text_Museum2FTutorNoSilverLeaf:
+if DEF(_LOCALE_FR)
+	text "Tu n'as pas de"
+	line "Feuille Arg…"
+	done
+else
 	text "You don't have a"
 	line "Silver Leaf!"
 	done
+endc
 
 Text_Museum2FTutorQuestion:
+if DEF(_LOCALE_FR)
+	text "Je lui enseigne"
+	line "FRAPPE ATLAS?"
+	done
+else
 	text "Should I teach"
 	line "your #mon"
 	cont "Seismic Toss?"
 	done
+endc
 
 Text_Museum2FTutorRefused:
+if DEF(_LOCALE_FR)
+	text "Vendeur: Bon, si"
+	line "vous voulez."
+	done
+else
 	text "If you say so."
 	done
+endc
 
 Text_Museum2FTutorTaught:
+if DEF(_LOCALE_FR)
+	text "Ton #MON connaît"
+	line "FRAPPE ATLAS!"
+	done
+else
 	text "Now your #mon"
 	line "knows how to use"
 	cont "Seismic Toss!"
 	done
+endc
 
 Museum2FMoonStoneSignpostText:
 	text "Meteorite that"
@@ -185,6 +302,27 @@ PokemonJournalStevenScript:
 	setflag ENGINE_READ_STEVEN_JOURNAL
 	jumpthistext
 
+if DEF(_LOCALE_FR)
+	text "Journal #MON"
+
+	para "Article spécial:"
+	line "Steven le"
+	cont "collectionneur!"
+
+	para "Steven Stone"
+	line "aiderait Devon"
+	cont "S.A."
+
+	para "dirigée par son"
+	line "père Joseph,"
+
+	para "en cherchant des"
+	line "minéraux rares"
+
+	para "et même des"
+	line "fossiles."
+	done
+else
 	text "#mon Journal"
 
 	para "Special Feature:"
@@ -201,11 +339,28 @@ PokemonJournalStevenScript:
 	line "rare minerals and"
 	cont "even fossils."
 	done
+endc
 
 PokemonJournalCynthiaScript: ; TODO: move to Goldenrod Museum
 	setflag ENGINE_READ_CYNTHIA_JOURNAL
 	jumpthistext
 
+if DEF(_LOCALE_FR)
+	text "Journal #MON"
+
+	para "Article spécial:"
+	line "Cynthia la"
+	cont "chercheuse!"
+
+	para "Cynthia aurait"
+	line "appris bien des"
+
+	para "légendes grâce à"
+	line "sa grand-mère à"
+
+	para "Sinnoh."
+	done
+else
 	text "#mon Journal"
 
 	para "Special Feature:"
@@ -219,3 +374,4 @@ PokemonJournalCynthiaScript: ; TODO: move to Goldenrod Museum
 	line "from her grand-"
 	cont "mother in Sinnoh."
 	done
+endc

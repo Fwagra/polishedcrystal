@@ -70,6 +70,20 @@ ScaryCave1FMiraScript:
 	end
 
 .ChallengeText:
+if DEF(_LOCALE_FR)
+	text "Je suis MIRA…"
+	line "Je cherchais des"
+
+	para "#MON, mais cette"
+	line "grotte fait peur…"
+
+	para "Je veux devenir"
+	line "plus courageuse."
+
+	para "S'il te plaît!"
+	line "Bats-toi avec moi!"
+	done
+else
 	text "I'm Mira…"
 	line "I was catching"
 
@@ -84,24 +98,61 @@ ScaryCave1FMiraScript:
 	para "Please! Please"
 	line "battle with me!"
 	done
+endc
 
 .YesText:
+if DEF(_LOCALE_FR)
+	text "Oui! MIRA va"
+	line "te montrer ses"
+	cont "#MON!"
+	done
+else
 	text "Yes! Mira will"
 	line "show you her #-"
 	cont "mon!"
 	done
+endc
 
 .NoText:
+if DEF(_LOCALE_FR)
+	text "MIRA est triste…"
+	done
+else
 	text "Mira is sad…"
 	done
+endc
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "MIRA veut devenir"
+	line "très forte,"
+	cont "comme <PLAYER>!"
+	done
+else
 	text "Mira wants to get"
 	line "a lot, lot strong-"
 	cont "er, like <PLAYER>!"
 	done
+endc
 
 .ItemText:
+if DEF(_LOCALE_FR)
+	text "<PLAYER>, tu es"
+	line "si fort parce que"
+
+	para "tu es toujours"
+	line "avec tes #MON?"
+
+	para "Oui! Ca doit être"
+	line "ça!"
+
+	para "MIRA comprend!"
+
+	para "Merci, <PLAYER>!"
+
+	para "Tiens, prends ça!"
+	done
+else
 	text "<PLAYER>, did you"
 	line "get to be so good"
 
@@ -121,8 +172,13 @@ ScaryCave1FMiraScript:
 	para "Mira wants you to"
 	line "have this!"
 	done
+endc
 
 .GoodbyeText:
+if DEF(_LOCALE_FR)
+	text "TOUR DE COMBAT"
+	done
+else
 	text "Mira will try like"
 	line "you, <PLAYER>!"
 
@@ -133,6 +189,7 @@ ScaryCave1FMiraScript:
 	para "<PLAYER>,"
 	line "bye-bye!"
 	done
+endc
 
 ScaryCave1FPharmacistScript:
 	faceplayer
@@ -155,10 +212,25 @@ ScaryCave1FPharmacistScript:
 .TutorRefused
 	jumpthisopenedtext
 
+if DEF(_LOCALE_FR)
+	text "C'est ton enter-"
+	line "rement."
+	done
+else
 	text "It's your funeral."
 	done
+endc
 
 .IntroText:
+if DEF(_LOCALE_FR)
+	text "Les fantômes sont"
+	line "fourbes."
+
+	para "Frappe d'abord!"
+
+	para "COUP BAS!"
+	done
+else
 	text "Ghosts are masters"
 	line "of the cheap shot."
 
@@ -170,27 +242,49 @@ ScaryCave1FPharmacistScript:
 	line "surprise Sucker"
 	cont "Punch!"
 	done
+endc
 
 .QuestionText:
+if DEF(_LOCALE_FR)
+	text "Je t'enseigne"
+	line "COUP BAS"
+
+	para "pour 1 Feuille Arg."
+	done
+else
 	text "I'll teach you to"
 	line "Sucker Punch, but"
 
 	para "I want a Silver"
 	line "Leaf."
 	done
+endc
 
 .NoSilverLeaf
 	waitbutton
 	jumpthisopenedtext
 
+if DEF(_LOCALE_FR)
+	text "Pas de Feuille"
+	line "Arg? Tant pis."
+	done
+else
 	text "No Silver Leaf?"
 	line "Forget it then."
 	done
+endc
 
 .TeachMove
 	takeitem SILVER_LEAF
 	jumpthisopenedtext
 
+if DEF(_LOCALE_FR)
+	text "Tu peux utiliser"
+	line "COUP BAS!"
+
+	para "Frappe avant lui!"
+	done
+else
 	text "Now you can use"
 	line "Sucker Punch!"
 
@@ -198,10 +292,20 @@ ScaryCave1FPharmacistScript:
 	line "to hit you, you"
 	cont "hit them first!"
 	done
+endc
 
 GenericTrainerRuin_maniacSmilte:
 	generictrainer RUIN_MANIAC, SMILTE, EVENT_BEAT_RUIN_MANIAC_SMILTE, .SeenText, .BeatenText
 
+if DEF(_LOCALE_FR)
+	text "J'entends un écho."
+	line "Une grotte plus"
+	cont "profonde…"
+
+	para "Ma découverte?"
+	line "Peut-être!"
+	done
+else
 	text "I hear an echo."
 	line "There's a deeper"
 	cont "cave nearby!"
@@ -210,44 +314,79 @@ GenericTrainerRuin_maniacSmilte:
 	line "is where I'll find"
 	cont "my big discovery…"
 	done
+endc
 
 .SeenText:
+if DEF(_LOCALE_FR)
+	text "Je sens une"
+	line "découverte!"
+	done
+else
 	text "I'm on the edge of"
 	line "a big discovery!"
 
 	para "I can just feel"
 	line "it!"
 	done
+endc
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "Tu veux ma"
+	line "découverte?!"
+	done
+else
 	text "Are you after my"
 	line "discovery?!"
 	done
+endc
 
 GenericTrainerSuper_nerdKouta:
 	generictrainer SUPER_NERD, KOUTA, EVENT_BEAT_SUPER_NERD_KOUTA, .SeenText, .BeatenText
 
+if DEF(_LOCALE_FR)
+	text "Même un bon plan"
+	line "peut échouer."
+	done
+else
 	text "I guess even the"
 	line "best-laid plans"
 	cont "can be ruined."
 	done
+endc
 
 .SeenText:
+if DEF(_LOCALE_FR)
+	text "Plan parfait!"
+	done
+else
 	text "You can't beat me!"
 	line "I've got the per-"
 	cont "fect plan!"
 	done
+endc
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "Mon plan a"
+	line "échoué?!"
+	done
+else
 	text "My plan failed?!"
 
 	para "Back to the draw-"
 	line "ing board…"
 	done
+endc
 
 GenericTrainerCoupleJoeandjo1:
 	generictrainer COUPLE, JOEANDJO1, EVENT_BEAT_COUPLE_JOE_AND_JO, .SeenText, .BeatenText
 
+if DEF(_LOCALE_FR)
+	text "Joe: Tant que Jo"
+	line "est là, ça va!"
+	done
+else
 	text "Joe: We're on a"
 	line "ghost hunt, but"
 
@@ -255,21 +394,40 @@ GenericTrainerCoupleJoeandjo1:
 	line "long as I have my"
 	cont "Jo beside me!"
 	done
+endc
 
 .SeenText:
+if DEF(_LOCALE_FR)
+	text "Joe: Un fantôme!"
+	line "Jo, viens!"
+	done
+else
 	text "Joe: A ghost!"
 	line "Stay close, my"
 	cont "dear Jo!"
 	done
+endc
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "Joe: Juste un"
+	line "dresseur…"
+	done
+else
 	text "Joe: Oh. It was"
 	line "just a trainer."
 	done
+endc
 
 GenericTrainerCoupleJoeandjo2:
 	generictrainer COUPLE, JOEANDJO2, EVENT_BEAT_COUPLE_JOE_AND_JO, .SeenText, .BeatenText
 
+if DEF(_LOCALE_FR)
+	text "Jo: Joe me"
+	line "protège des"
+	cont "fantômes."
+	done
+else
 	text "Jo: I'm so lucky"
 	line "to have my wonder-"
 	cont "ful Joe to ward"
@@ -277,37 +435,79 @@ GenericTrainerCoupleJoeandjo2:
 	para "off any creepy"
 	line "ghosts."
 	done
+endc
 
 .SeenText:
+if DEF(_LOCALE_FR)
+	text "Jo: Aah! Aide-moi!"
+	line "Joe!"
+	done
+else
 	text "Jo: Eek! Hold me"
 	line "tight, Joe!"
 	done
+endc
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "Jo: Tu n'as pas"
+	line "peur?"
+	done
+else
 	text "Jo: Aren't you"
 	line "scared?"
 	done
+endc
 
 GenericTrainerHex_maniacBethany:
 	generictrainer HEX_MANIAC, BETHANY, EVENT_BEAT_HEX_MANIAC_BETHANY, .SeenText, .BeatenText
 
+if DEF(_LOCALE_FR)
+	text "Gnihihihihi!"
+	line "Forces occultes!"
+	line "Ténèbres… Pâté de"
+	line "foie!"
+	done
+else
 	text "The aura of fear"
 	line "in this cave is"
 	cont "delightful…"
 	cont "Fufufufu…"
 	done
+endc
 
 .SeenText: ; text > text
+if DEF(_LOCALE_FR)
+	text "BOUH!"
+	done
+else
 	text "BOO!"
 	done
+endc
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "Je t'ai fait peur?"
+	done
+else
 	text "Did I scare you?"
 	done
+endc
 
 GenericTrainerScientistPiotr:
 	generictrainer SCIENTIST, PIOTR, EVENT_BEAT_SCIENTIST_PIOTR, .SeenText, .BeatenText
 
+if DEF(_LOCALE_FR)
+	text "Des algues"
+	line "poussent, et"
+	cont "teintent"
+
+	para "l'eau en rouge."
+
+	para "C'est pas du sang!"
+	line "…Hein?"
+	done
+else
 	text "Algae grow here"
 	line "and release a red"
 
@@ -317,15 +517,28 @@ GenericTrainerScientistPiotr:
 	para "It's not blood!"
 	line "…Right?"
 	done
+endc
 
 .SeenText:
+if DEF(_LOCALE_FR)
+	text "Tu sais pourquoi"
+	line "l'eau est rouge"
+	cont "sang?"
+	done
+else
 	text "Do you know why"
 	line "the water here is"
 	cont "blood-red?"
 	done
+endc
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "Ok, j'dis!"
+	done
+else
 	text "Fine, I'll tell"
 	line "you!"
 	done
+endc
 

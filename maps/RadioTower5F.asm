@@ -65,6 +65,18 @@ Petrel1Script:
 GenericTrainerAriana1:
 	generictrainer ARIANA, ARIANA1, EVENT_BEAT_ARIANA_1, Ariana1SeenText, Ariana1BeatenText
 
+if DEF(_LOCALE_FR)
+	text "<PLAYER>, c'est"
+	line "ça? Une peste"
+	line "comme toi ne peut"
+	line "pas apprécier la"
+	line "beauté de la TEAM"
+	line "ROCKET. C'est"
+	line "dommage. Tu es"
+	line "pourtant assez"
+	line "fort."
+	done
+else
 	text "<PLAYER>, isn't it?"
 
 	para "A brat like you"
@@ -77,6 +89,7 @@ GenericTrainerAriana1:
 	line "I really admire"
 	cont "your power."
 	done
+endc
 
 RadioTower5FRocketBossTrigger:
 	applymovement PLAYER, RadioTower5FPlayerTwoStepsLeftMovement
@@ -188,19 +201,58 @@ RadioTower5FPlayerTwoStepsLeftMovement:
 	step_end
 
 FakeDirectorTextBefore1:
+if DEF(_LOCALE_FR)
+	text "T-toi! T-tu es là"
+	line "pour me s-sauver?"
+	done
+else
 	text "Y-you! You came to"
 	line "rescue me?"
 	done
+endc
 
 FakeDirectorTextBefore2:
+if DEF(_LOCALE_FR)
+	text "Alors… Surpris? Et"
+	line "oui! Je suis un"
+	line "imposteur! Cette"
+	line "mascarade était"
+	line "nécessaire à notre"
+	line "invasion! Ha ha ha"
+	line "ha ha! Veux-tu"
+	line "savoir où est"
+	line "caché le vrai"
+	line "DIRECTEUR? J'vais"
+	line "te le dire. Mais"
+	line "d'abord…"
+	line "COMBAT!!!!"
+	done
+else
 	text "Is that what you"
 	line "were expecting?"
 
 	para "Wrong!"
 	line "I'm an imposter!"
 	done
+endc
 
 FakeDirectorTextBefore3:
+if DEF(_LOCALE_FR)
+	text "Alors… Surpris? Et"
+	line "oui! Je suis un"
+	line "imposteur! Cette"
+	line "mascarade était"
+	line "nécessaire à notre"
+	line "invasion! Ha ha ha"
+	line "ha ha! Veux-tu"
+	line "savoir où est"
+	line "caché le vrai"
+	line "DIRECTEUR? J'vais"
+	line "te le dire. Mais"
+	line "d'abord…"
+	line "COMBAT!!!!"
+	done
+else
 	text "I pretended to be"
 	line "the real thing to"
 
@@ -215,13 +267,31 @@ FakeDirectorTextBefore3:
 	line "you. But only if"
 	cont "you can beat me!"
 	done
+endc
 
 FakeDirectorWinText:
+if DEF(_LOCALE_FR)
+	text "OK, OK. Je vais"
+	line "parler."
+	done
+else
 	text "OK, OK. I'll tell"
 	line "you where he is."
 	done
+endc
 
 FakeDirectorTextAfter:
+if DEF(_LOCALE_FR)
+	text "On a planqué le"
+	line "DIRECTEUR dans"
+	line "l'ENTREPOT"
+	line "SOUTERRAIN. C'est"
+	line "tout au bout du"
+	line "SOUTERRAIN. Mais"
+	line "t'y arriveras"
+	line "jamais… Ha!"
+	done
+else
 	text "We stashed the"
 	line "real Director in"
 
@@ -235,8 +305,19 @@ FakeDirectorTextAfter:
 	para "But I doubt you'll"
 	line "get that far."
 	done
+endc
 
 Ariana1SeenText:
+if DEF(_LOCALE_FR)
+	text "Hé petit… Tu te"
+	line "souviens de moi et"
+	line "de la PLAN- QUE"
+	line "d'ACAJOU? Tu m'as"
+	line "battue mais je me"
+	line "suis entraînée"
+	line "depuis."
+	done
+else
 	text "Remember me from"
 	line "the hideout in"
 	cont "Mahogany Town?"
@@ -244,16 +325,47 @@ Ariana1SeenText:
 	para "I lost then, but I"
 	line "won't this time."
 	done
+endc
 
 Ariana1BeatenText:
+if DEF(_LOCALE_FR)
+	text "Mais c'est pas"
+	line "possible! J'me"
+	line "bats à fond et je"
+	line "perds…"
+	done
+else
 	text "This can't be"
 	line "happening!"
 
 	para "I fought hard, but"
 	line "I still lost…"
 	done
+endc
 
 RadioTower5FRocketBossBeforeText:
+if DEF(_LOCALE_FR)
+	text "Oh? Tu es arrivé"
+	line "jusqu'ici? Tu dois"
+	line "être un sacré"
+	line "dresseur. Nous"
+	line "allons con- trôler"
+	line "cette STA- TION de"
+	line "RADIO pour"
+	line "annoncer au monde"
+	line "notre retour. Cela"
+	line "devrait faire"
+	line "revenir notre chef"
+	line "GIOVANNI de son"
+	line "entraînement solo."
+	line "La gloire passée"
+	line "de la TEAM sera"
+	line "restituée. Et toi"
+	line "moucheron, tu vas"
+	line "pas nous agacer"
+	line "longtemps."
+	done
+else
 	text "Oh? You managed to"
 	line "get this far?"
 
@@ -281,13 +393,31 @@ RadioTower5FRocketBossBeforeText:
 	line "to interfere with"
 	cont "our plans."
 	done
+endc
 
 RadioTower5FRocketBossWinText:
+if DEF(_LOCALE_FR)
+	text "Non! Pardon,"
+	line "GIOVANNI!"
+	done
+else
 	text "No! Forgive me,"
 	line "Giovanni!"
 	done
+endc
 
 RadioTower5FRocketBossAfterText:
+if DEF(_LOCALE_FR)
+	text "Impossible! Nos"
+	line "rêves se brisent."
+	line "Je suis pas digne."
+	line "Comme GIOVANNI l'a"
+	line "fait jadis, je"
+	line "vais dissoudre la"
+	line "TEAM ROCKET."
+	line "Adieu."
+	done
+else
 	text "How could this be?"
 
 	para "Our dreams have"
@@ -304,8 +434,20 @@ RadioTower5FRocketBossAfterText:
 
 	para "Farewell."
 	done
+endc
 
 RadioTower5FDirectorThankYouText:
+if DEF(_LOCALE_FR)
+	text "DIRECTEUR: Merci"
+	line "<PLAYER>! Ton acte"
+	line "courageux a sauvé"
+	line "les #- MON du"
+	line "monde entier. Ce"
+	line "n'est pas grand"
+	line "chose, mais prends"
+	line "ceci."
+	done
+else
 	text "Director: <PLAYER>,"
 	line "thank you!"
 
@@ -319,8 +461,42 @@ RadioTower5FDirectorThankYouText:
 	line "much, but please"
 	cont "take this."
 	done
+endc
 
 RadioTower5FDirectorDescribeClearBellText:
+if DEF(_LOCALE_FR)
+	text "Il y avait une"
+	line "tour ici à DOU-"
+	line "BLONVILLE. Mais"
+	line "elle était en"
+	line "mauvais état. On"
+	line "l'a alors rem-"
+	line "placée par notre"
+	line "TOUR RADIO."
+	line "Pendant les tra-"
+	line "vaux, nous avons"
+	line "trouvé ce glas. On"
+	line "dit qu'une"
+	line "multitude de #-"
+	line "MON différents vi-"
+	line "vaient ici. Alors…"
+	line "Ce glas a"
+	line "peut-être un lien"
+	line "avec la TOUR FER-"
+	line "RAILLE de ROSALIA."
+	line "Ah! Au fait… J'ai"
+	line "entendu un des"
+	line "types de la TEAM"
+	line "ROCKET."
+	line "Apparemment, il se"
+	line "passe des trucs à"
+	line "la TOUR FERRAILLE."
+	line "A mon avis, tu"
+	line "devrais y aller."
+	line "OK, je retourne au"
+	line "BUREAU."
+	done
+else
 	text "There used to be a"
 	line "tower right here"
 	cont "in Goldenrod City."
@@ -370,8 +546,22 @@ RadioTower5FDirectorDescribeClearBellText:
 	para "OK, I better go to"
 	line "my office."
 	done
+endc
 
 RadioTower5FDirectorText:
+if DEF(_LOCALE_FR)
+	text "DIRECTEUR: Bonjour"
+	line "<PLAYER>! Tu sais,"
+	line "j'adore les #MON."
+	line "J'ai construit la"
+	line "TOUR RADIO pour"
+	line "crier mon amour"
+	line "comme un dingue."
+	line "J'espère que les"
+	line "gens aiment nos"
+	line "émissions."
+	done
+else
 	text "Director: Hello,"
 	line "<PLAYER>!"
 
@@ -388,17 +578,35 @@ RadioTower5FDirectorText:
 	line "if people enjoyed"
 	cont "our programs."
 	done
+endc
 
 BenText:
+if DEF(_LOCALE_FR)
+	text "BEN: Tu écoutes"
+	line "notre musique?"
+	done
+else
 	text "Ben: Do you listen"
 	line "to our music?"
 	done
+endc
 
 SignpostRadioTower5FOffice:
+if DEF(_LOCALE_FR)
+	text "4ème BUREAU"
+	line "DIRECTION"
+	done
+else
 	text "5F Director's"
 	line "   Office"
 	done
+endc
 
 SignpostRadioTower5FStudio:
+if DEF(_LOCALE_FR)
+	text "4ème STUDIO 1"
+	done
+else
 	text "5F Studio 1"
 	done
+endc

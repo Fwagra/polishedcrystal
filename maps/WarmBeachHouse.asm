@@ -19,10 +19,13 @@ WarmBeachHouse_MapScriptHeader:
 WarmBeachHouseGrampsText:
 if DEF(_LOCALE_FR)
 	text "Ces lignes parlent"
-	line "d'un gardien..."
+	line "d'un gardien…"
 	done
 else
-	text "TODO"
+	text "The old man looks"
+	line "at the book…"
+
+	para "A guardian…?"
 	done
 endc
 
@@ -32,7 +35,10 @@ if DEF(_LOCALE_FR)
 	line "îles…"
 	done
 else
-	text "TODO"
+	text "The old woman"
+	line "smiles…"
+
+	para "A prophecy…"
 	done
 endc
 

@@ -80,14 +80,32 @@ OlivineCafeMovementData_LyraLeaves:
 	step_end
 
 OlivineCafeFishingGuruText:
+if DEF(_LOCALE_FR)
+	text "Le CAFE d'OLIVILLE"
+	line "fait des plats"
+	line "pour les joyeux"
+	line "marins!"
+	done
+else
 	text "Olivine Café's"
 	line "menu is chock full"
 
 	para "of hearty fare for"
 	line "beefy sailors!"
 	done
+endc
 
 OlivineCafeSailorText:
+if DEF(_LOCALE_FR)
+	text "A chaque passage"
+	line "dans cette ville,"
+	line "je vais au CAFE"
+	line "d'OLIVILLE. La"
+	line "bouffe y est"
+	line "trooooooooooooop"
+	line "bonne!"
+	done
+else
 	text "Whenever I roll"
 	line "into this town, I"
 
@@ -100,6 +118,7 @@ OlivineCafeSailorText:
 	para "stronger. I can't"
 	line "stop eating!"
 	done
+endc
 
 BakerChelsieGreetingText:
 	text "My #mon are on"

@@ -87,6 +87,14 @@ PokemonJournalGreenScript:
 ClefairyDollScript:
 	jumpthistext
 
+if DEF(_LOCALE_FR)
+	text "C'est un MELOFEE!"
+	line "Hein? Ah,"
+	line "d'accord. C'est"
+	line "une # POUPEE d'un"
+	line "MELOFEE."
+	done
+else
 	text "It's a Clefairy!"
 	line "Huh?"
 
@@ -94,8 +102,22 @@ ClefairyDollScript:
 	line "Clefairy #"
 	cont "Doll."
 	done
+endc
 
 PokemonFanClubChairmanDidYouVisitToHearAboutMyMonText:
+if DEF(_LOCALE_FR)
+	text "Je suis le PRESI-"
+	line "DENT du FAN CLUB"
+	line "#MON. J'ai élevé"
+	line "plus de 150 #MON."
+	line "Je suis très dif-"
+	line "ficile quand il"
+	line "s'agit de #MON. Tu"
+	line "es venu pour en"
+	line "apprendre plus sur"
+	line "mes #MON?"
+	done
+else
 	text "I'm the Chairman"
 	line "of the #mon Fan"
 	cont "Club."
@@ -111,8 +133,31 @@ PokemonFanClubChairmanDidYouVisitToHearAboutMyMonText:
 	line "to hear about my"
 	cont "#mon?"
 	done
+endc
 
 PokemonFanClubChairmanRapidashText:
+if DEF(_LOCALE_FR)
+	text "Bien! Alors,"
+	line "écoute! Mon"
+	line "préféré… GALOPA…"
+	line "Il est mignon…"
+	line "beau…rapide…"
+	line "élégant…en feu. Il"
+	line "fait pataclop,"
+	line "pataclop…quand il"
+	line "court…c'est super"
+	line "non? Je l'aime…!"
+	line "Je lui fais…des"
+	line "câlins…des…"
+	line "poutoux…des…"
+	line "gnangnans…des"
+	line "zigouzigoux…"
+	line "…Oups! Regarde"
+	line "l'heure! Je crois"
+	line "qu'il est temps"
+	line "d'y aller!"
+	done
+else
 	text "Good!"
 	line "Then listen up!"
 
@@ -137,14 +182,33 @@ PokemonFanClubChairmanRapidashText:
 	cont "time! I've kept"
 	cont "you too long!"
 	done
+endc
 
 PokemonFanClubChairmanIWantYouToHaveThisText:
+if DEF(_LOCALE_FR)
+	text "Merci de m'avoir"
+	line "écouté… Voilà pour"
+	line "toi!"
+	done
+else
 	text "Thanks for hearing"
 	line "me out. I want you"
 	cont "to have this!"
 	done
+endc
 
 PokemonFanClubChairmanItsARareCandyText:
+if DEF(_LOCALE_FR)
+	text "C'est un SUPER"
+	line "BONBON qui rend"
+	line "les #MON plus"
+	line "forts. Moi je"
+	line "préfère les"
+	line "renforcer en fai-"
+	line "sant des combats."
+	line "Il est pour toi."
+	done
+else
 	text "It's a Rare Candy"
 	line "that makes #mon"
 	cont "stronger."
@@ -155,8 +219,18 @@ PokemonFanClubChairmanItsARareCandyText:
 	para "by battling, so"
 	line "you can have it."
 	done
+endc
 
 PokemonFanClubChairmanMoreTalesToTellText:
+if DEF(_LOCALE_FR)
+	text "Salut, <PLAYER>!"
+	line "Veux-tu que je te"
+	line "parle encore de"
+	line "mes #MON? Non? Oh…"
+	line "J'avais tant de"
+	line "belles histoires!"
+	done
+else
 	text "Hello, <PLAYER>!"
 
 	para "Did you come see"
@@ -166,21 +240,44 @@ PokemonFanClubChairmanMoreTalesToTellText:
 	para "No? Oh… I had more"
 	line "tales to tell…"
 	done
+endc
 
 PokemonFanClubChairmanHowDisappointingText:
+if DEF(_LOCALE_FR)
+	text "Dommage… Reviens"
+	line "me voir vite."
+	done
+else
 	text "How disappointing…"
 
 	para "Come back if you"
 	line "want to listen."
 	done
+endc
 
 PokemonFanClubReceptionistText:
+if DEF(_LOCALE_FR)
+	text "Notre PRESIDENT"
+	line "parle un peu trop"
+	line "de ses #MON…"
+	done
+else
 	text "Our Chairman is"
 	line "very vocal when it"
 	cont "comes to #mon…"
 	done
+endc
 
 PokemonFanClubClefairyGuyClefairyIsSoAdorableText:
+if DEF(_LOCALE_FR)
+	text "J'aime quand"
+	line "MELOFEE gigote son"
+	line "doigt quand il"
+	line "utilise son"
+	line "METRONOME. C'est"
+	line "adorable!"
+	done
+else
 	text "I love the way"
 	line "Clefairy waggles"
 
@@ -190,8 +287,18 @@ PokemonFanClubClefairyGuyClefairyIsSoAdorableText:
 	para "Metronome."
 	line "It's so adorable!"
 	done
+endc
 
 PokemonFanClubClefairyGuyMakingDoWithADollIFoundText:
+if DEF(_LOCALE_FR)
+	text "J'aime MELOFEE,"
+	line "mais je ne pourrai"
+	line "jamais en attraper"
+	line "un… Alors je"
+	line "m'amuse avec cette"
+	line "# POUPEE."
+	done
+else
 	text "I love Clefairy,"
 	line "but I could never"
 
@@ -201,8 +308,22 @@ PokemonFanClubClefairyGuyMakingDoWithADollIFoundText:
 	para "# Doll that I"
 	line "found."
 	done
+endc
 
 PokemonFanClubClefairyGuyTakeThisDollBackToGirlText:
+if DEF(_LOCALE_FR)
+	text "Oh, je vois. La"
+	line "fille qui a perdu"
+	line "sa # POUPEE est"
+	line "triste… OK."
+	line "Peux-tu porter"
+	line "cette # POUPEE à"
+	line "la pauvre petite"
+	line "fille triste? Je"
+	line "trouverai un vrai"
+	line "MELOFEE…"
+	done
+else
 	text "Oh, I see now. The"
 	line "girl who lost this"
 
@@ -220,14 +341,23 @@ PokemonFanClubClefairyGuyTakeThisDollBackToGirlText:
 	para "my own one day."
 	line "No worries!"
 	done
+endc
 
 PokemonFanClubClefairyGuyGoingToGetARealClefairyText:
+if DEF(_LOCALE_FR)
+	text "J'attraperai un"
+	line "MELOFEE et il sera"
+	line "mon ami pour la"
+	line "vie."
+	done
+else
 	text "You watch. I'm"
 	line "going to get a"
 
 	para "real Clefairy as"
 	line "my friend."
 	done
+endc
 
 PokemonFanClubTeacherText:
 	text "Look at my darling"
@@ -242,12 +372,25 @@ FanClubOddishText:
 	done
 
 PokemonFanClubListenSignText:
+if DEF(_LOCALE_FR)
+	text "Ecoutons tous les"
+	line "autres dresseurs."
+	done
+else
 	text "Let's all listen"
 	line "politely to other"
 	cont "trainers."
 	done
+endc
 
 PokemonFanClubBraggingSignText:
+if DEF(_LOCALE_FR)
+	text "Si quelqu'un se"
+	line "vante, vante-toi à"
+	line "ton tour!"
+	done
+else
 	text "If someone brags,"
 	line "brag right back!"
 	done
+endc

@@ -262,28 +262,72 @@ MagnetTunnelAlarmSounds:
 	end
 
 MagnetTunnelInsideMachineText1:
+if DEF(_LOCALE_FR)
+	text "La machine est"
+	line "hors tension."
+
+	para "L'allumer?"
+	done
+else
 	text "The machine is"
 	line "powered off."
 
 	para "Turn it on?"
 	done
+endc
 
 MagnetTunnelInsideMachineText2:
+if DEF(_LOCALE_FR)
+	text "Ping! La machine"
+	line "s'allume."
+	done
+else
 	text "Ping! The machine"
 	line "powered on."
 	done
+endc
 
 MagnetTunnelInsideMachineText3:
+if DEF(_LOCALE_FR)
+	text "La machine tourne"
+	line "sans problème."
+	done
+else
 	text "The machine is"
 	line "running smoothly."
 	done
+endc
 
 MagnetTunnelInsideMachineText4:
+if DEF(_LOCALE_FR)
+	text "Hein?! Ca ne va"
+	line "pas!"
+	done
+else
 	text "Huh?! Something's"
 	line "wrong!"
 	done
+endc
 
 MagnetTunnelInsideMachineText5:
+if DEF(_LOCALE_FR)
+	text "Cette machine ne"
+	line "tourne pas bien!"
+
+	para "Des messages"
+	line "d'alerte cligno-"
+	cont "tent sans arrêt"
+
+	para "sur le petit"
+	line "écran, et une"
+
+	para "odeur de brûlé"
+	line "remplit l'air."
+
+	para "Appuyer sur l'ar-"
+	line "rêt d'urgence?"
+	done
+else
 	text "This machine isn't"
 	line "running properly!"
 
@@ -299,13 +343,31 @@ MagnetTunnelInsideMachineText5:
 	para "Hit the emergency"
 	line "shutdown button?"
 	done
+endc
 
 MagnetTunnelInsideMachineText6:
+if DEF(_LOCALE_FR)
+	text "Ding! La machine"
+	line "s'éteint."
+	done
+else
 	text "Ding! The machine"
 	line "powered off."
 	done
+endc
 
 MagnetTunnelInsideMachineText7:
+if DEF(_LOCALE_FR)
+	text "La machine est"
+	line "entourée d'une"
+
+	para "faible odeur de"
+	line "plastique fondu…"
+
+	para "Elle a l'air"
+	line "grillée."
+	done
+else
 	text "The machine is"
 	line "surrounded by the"
 
@@ -315,16 +377,43 @@ MagnetTunnelInsideMachineText7:
 	para "It appears to be"
 	line "totally fried."
 	done
+endc
 
 MagnetTunnelInsideLodestoneText:
+if DEF(_LOCALE_FR)
+	text "La pierre d'aimant"
+	line "est lisse, tiède."
+
+	para "Elle dégage une"
+	line "faible aura"
+	cont "statique."
+	done
+else
 	text "The lodestone is"
 	line "smooth and warm."
 
 	para "It has a faint"
 	line "aura of static."
 	done
+endc
 
 MagnetTunnelInsideEngineerText1:
+if DEF(_LOCALE_FR)
+	text "La pierre d'aimant"
+	line "émet un champ"
+	cont "magnétique fort."
+
+	para "On a dû amener du"
+	line "matériel spécia-"
+	cont "lisé pour finir"
+
+	para "ce tunnel avant la"
+	line "date du chef."
+
+	para "L'équipe était"
+	line "sous pression."
+	done
+else
 	text "The lodestone here"
 	line "gives off a strong"
 	cont "magnetic field."
@@ -340,8 +429,20 @@ MagnetTunnelInsideEngineerText1:
 	line "heavy pressure to"
 	cont "deliver on time."
 	done
+endc
 
 MagnetTunnelInsideEngineerText2:
+if DEF(_LOCALE_FR)
+	text "Depuis le début"
+	line "des travaux,"
+
+	para "le nombre de #-"
+	line "MON Electrik"
+	cont "sauvages ici a"
+
+	para "plus que doublé."
+	done
+else
 	text "Since the day we"
 	line "began construction"
 
@@ -352,8 +453,26 @@ MagnetTunnelInsideEngineerText2:
 	line "#mon here has"
 	cont "more than doubled."
 	done
+endc
 
 MagnetTunnelInsideScientistText:
+if DEF(_LOCALE_FR)
+	text "Chaque jour, des"
+	line "MAGNETI arrivent"
+	cont "et posent souci."
+
+	para "Le chef pense"
+	line "qu'ils sont"
+
+	para "attirés par les"
+	line "propriétés magné-"
+	cont "tiques uniques"
+
+	para "de la pierre."
+
+	para "Pourquoi?"
+	done
+else
 	text "Every day, more"
 	line "Magnemite arrive"
 	cont "and cause issues."
@@ -367,10 +486,31 @@ MagnetTunnelInsideScientistText:
 
 	para "I wonder why?"
 	done
+endc
 
 GenericTrainerEngineerGraden:
 	generictrainer ENGINEER, GRADEN, EVENT_BEAT_ENGINEER_GRADEN, .SeenText, .BeatenText
 
+if DEF(_LOCALE_FR)
+	text "Je suis le chef"
+	line "de chantier."
+
+	para "On a creusé ce"
+	line "tunnel pour faire"
+
+	para "passer la nou-"
+	line "velle ligne du"
+	cont "MAGNET TRAIN,"
+	cont "mais…"
+
+	para "je ne pensais pas"
+	line "que ces pierres"
+
+	para "d'aimant me donne-"
+	line "raient tant de"
+	cont "soucis!"
+	done
+else
 	text "I'm the foreman"
 	line "on this jobsite."
 
@@ -387,23 +527,55 @@ GenericTrainerEngineerGraden:
 	para "stone would cause"
 	line "so much headache!"
 	done
+endc
 
 .SeenText:
+if DEF(_LOCALE_FR)
+	text "Tu admires notre"
+	line "travail?"
+
+	para "Haha!"
+	line "Admire ça!"
+	done
+else
 	text "Admiring all of"
 	line "our handiwork?"
 
 	para "Haha!"
 	line "Admire this!"
 	done
+endc
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "Haha! T'as du"
+	line "cran, j'aime ça!"
+	done
+else
 	text "Haha! You've got"
 	line "guts. I like that!"
 	done
+endc
 
 GenericTrainerEngineerGustav:
 	generictrainer ENGINEER, GUSTAV, EVENT_BEAT_ENGINEER_GUSTAV, .SeenText, .BeatenText
 
+if DEF(_LOCALE_FR)
+	text "J'ai essayé de la"
+	line "réparer, mais"
+	cont "rien à faire…"
+
+	para "Je n'arrive pas"
+	line "à comprendre!"
+
+	para "J'ai peur que si"
+	line "je la rallume,"
+
+	para "elle fasse un"
+	line "court-circuit et"
+	cont "meure…"
+	done
+else
 	text "I've tried to fix"
 	line "it, but its been"
 	cont "no use…"
@@ -419,22 +591,53 @@ GenericTrainerEngineerGustav:
 	line "short-circuit and"
 	cont "be kaput…"
 	done
+endc
 
 .SeenText:
+if DEF(_LOCALE_FR)
+	text "Recule!"
+
+	para "Cette machine"
+	line "déconne!"
+	done
+else
 	text "Stand back!"
 
 	para "This machine has"
 	line "been on the fritz!"
 	done
+endc
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "Grillé! Comme"
+	line "un fusible…"
+	done
+else
 	text "Blown out! Just"
 	line "like a fuse…"
 	done
+endc
 
 GenericTrainerEngineerNicolas:
 	generictrainer ENGINEER, NICOLAS, EVENT_BEAT_ENGINEER_NICOLAS, .SeenText, .BeatenText
 
+if DEF(_LOCALE_FR)
+	text "Ces trucs peuvent"
+	line "sortir une tension"
+	cont "de malade!"
+
+	para "Quand ils sont"
+	line "allumés, ils"
+
+	para "créent un champ"
+	line "magnétique super"
+	cont "fort."
+
+	para "Alors fais gaffe,"
+	line "ok, gamin?"
+	done
+else
 	text "These things can"
 	line "generate some"
 	cont "serious voltage!"
@@ -448,13 +651,26 @@ GenericTrainerEngineerNicolas:
 	para "So be careful in"
 	line "here, alright kid?"
 	done
+endc
 
 .SeenText:
+if DEF(_LOCALE_FR)
+	text "Hé! Fais gaffe"
+	line "au matériel,"
+	cont "gamin!"
+	done
+else
 	text "Hey! Be careful"
 	line "around the equip-"
 	cont "ment kid!"
 	done
+endc
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "Extinction!"
+	done
+else
 	text "Shutdown!"
 	done
+endc

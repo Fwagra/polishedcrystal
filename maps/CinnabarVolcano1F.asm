@@ -77,9 +77,15 @@ CinnabarVolcano1FBouldersFall:
 	earthquake 80
 	jumpthistext
 
+if DEF(_LOCALE_FR)
+	text "Le rocher est"
+	line "passé au travers!"
+	done
+else
 	text "The boulder fell"
 	line "through!"
 	done
+endc
 
 CinnabarVolcano1FBuckScript:
 	faceplayer
@@ -152,9 +158,15 @@ CinnabarVolcano1FBuckScript:
 	done
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "Hé hé hé! T'es"
+	line "brûlant!"
+	done
+else
 	text "Heeheehee!"
 	line "So hot, you!"
 	done
+endc
 
 .ItemText:
 	text "Fweh! Too much!"
@@ -172,6 +184,10 @@ CinnabarVolcano1FBuckScript:
 	done
 
 .GoodbyeText:
+if DEF(_LOCALE_FR)
+	text "TOUR DE COMBAT"
+	done
+else
 	text "I guess I'll better"
 	line "my team at the"
 	cont "Battle Tower."
@@ -180,6 +196,7 @@ CinnabarVolcano1FBuckScript:
 	line "<PLAYER>!"
 	cont "Bye-bye!"
 	done
+endc
 
 GenericTrainerScientistOskar:
 	generictrainer SCIENTIST, OSKAR, EVENT_BEAT_SCIENTIST_OSKAR, ScientistOskarSeenText, ScientistOskarBeatenText

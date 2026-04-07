@@ -47,139 +47,131 @@ Script_ChangeLuckyIslandMap:
 GenericTrainerFisherHall:
 	generictrainer FISHER, HALL, EVENT_BEAT_FISHER_HALL, .SeenText, .BeatenText
 
-	text "You just don't"
-	line "appreciate my"
-	cont "sense of humor."
+	text "T'as aucun humour."
 	done
 
 .SeenText:
-	text "Dopefish lives!"
+	text "DOPEFISH vit!"
 	done
 
 .BeatenText:
-	text "Swim swim hungry,"
-	line "swim swim hungry!"
+	text "Nage, nage, faim!"
+	line "Nage, nage, faim!"
 	done
 
 GenericTrainerBakerMargaret:
 	generictrainer BAKER, MARGARET, EVENT_BEAT_BAKER_MARGARET, .SeenText, .BeatenText
 
-	text "I'm eggs-hausted."
+	text "Je suis crevée."
 	done
 
 .SeenText:
-	text "If an egg tumbles"
-	line "downhill, does"
-
-	para "that make it an"
-	line "eggroll?"
+	text "Un OEUF qui roule,"
+	line "c'est un roulé?"
 	done
 
 .BeatenText:
-	text "Guess I'm the"
-	line "eggroll now."
+	text "C'est moi le"
+	line "roulé…"
 	done
 
 GenericTrainerBakerOlga:
 	generictrainer BAKER, OLGA, EVENT_BEAT_BAKER_OLGA, .SeenText, .BeatenText
 
-	text "The first step to"
-	line "healthy living is"
+	text "Pour être en"
+	line "forme:"
 
-	para "to eat a good"
-	line "breakfast."
+	para "un bon p'tit dej."
 	done
 
 .SeenText:
-	text "Hey, you!"
-	line "Do you eat a good"
-	cont "breakfast every"
-	cont "day?"
+	text "Hé, toi!"
+	line "Tu prends un bon"
+	cont "p'tit dej?"
 	done
 
 .BeatenText:
-	text "Wow! Looks like"
-	line "you do."
+	text "Wow! On dirait"
+	line "que oui."
 	done
 
 GenericTrainerArtistReina:
 	generictrainer ARTIST, REINA, EVENT_BEAT_ARTIST_REINA, .SeenText, .BeatenText
 
-	text "I'll add a happy"
-	line "little tree to"
-	cont "cover that up."
+	text "Je cache ça avec"
+	line "un p'tit arbre."
 	done
 
 .SeenText:
-	text "This sunny meadow"
-	line "will make a lovely"
-	cont "painting!"
+	text "Ce pré sera un"
+	line "super tableau!"
 	done
 
 .BeatenText:
-	text "My brush slipped!"
+	text "Mon pinceau a"
+	line "glissé!"
 	done
 
 GenericTrainerArtistAlina:
 	generictrainer ARTIST, ALINA, EVENT_BEAT_ARTIST_ALINA, .SeenText, .BeatenText
 
-	text "I wonder what"
-	line "caused this island"
-	cont "to appear?"
+	text "Pourquoi cette île"
+	line "apparaît?"
 	done
 
 .SeenText:
-	text "This island hardly"
-	line "ever appears."
+	text "Cette île est rare."
 
-	para "I was so lucky to"
-	line "find it!"
+	para "J'ai eu de la"
+	line "chance!"
 	done
 
 .BeatenText:
-	text "My luck ran out…"
+	text "Plus de chance…"
 	done
 
 GenericTrainerSightseersLiandsu1:
 	generictrainer SIGHTSEERS, LIANDSU1, EVENT_BEAT_SIGHTSEERS_LI_AND_SU, .SeenText, .BeatenText
 
-	text "Li: Su and I keep"
-	line "arguing about"
-	cont "this."
+	text "Li: On se dispute"
+	line "sans arrêt."
 	done
 
 .SeenText:
-	text "Li: What came"
-	line "first?"
+	text "Li: Qui est né"
+	line "en premier?"
 
-	para "The #mon or"
-	line "the Egg?"
+	para "#MON ou OEUF?"
 	done
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "Li: Je dis que"
+	line "c'est le #MON!"
+	done
+else
 	text "Li: I say it's the"
 	line "#mon!"
 	done
+endc
 
 GenericTrainerSightseersLiandsu2:
 	generictrainer SIGHTSEERS, LIANDSU2, EVENT_BEAT_SIGHTSEERS_LI_AND_SU, .SeenText, .BeatenText
 
-	text "Su: Are there any"
-	line "#mon that don't"
-	cont "come from Eggs?"
+	text "Su: Des #MON"
+	line "sans OEUF?"
 	done
 
 .SeenText:
-	text "Su: What came"
-	line "first?"
+	text "Su: Qui est né"
+	line "en premier?"
 
-	para "The #mon or"
-	line "the Egg?"
+	para "#MON ou OEUF?"
 	done
 
 .BeatenText:
-	text "Su: I think the"
-	line "Egg came first!"
+	text "Su: L'OEUF,"
+	line "d'abord!"
 	done
 
 LuckyIslandLuckyEgg:
@@ -203,6 +195,6 @@ LuckyIslandLuckyEgg:
 	endtext
 
 .Text:
-	text "<PLAYER> found"
-	line "Lucky Egg!"
+	text "<PLAYER> trouve"
+	line "OEUF CHANCE!"
 	done

@@ -78,10 +78,17 @@ LakeOfRageFloodScript:
 	endcallback
 
 LakeOfRageSignText:
+if DEF(_LOCALE_FR)
+	text "LAC COLERE, aussi"
+	line "connu sous le nom"
+	line "de LAC LEVIATOR."
+	done
+else
 	text "Lake of Rage,"
 	line "also known as"
 	cont "Gyarados Lake."
 	done
+endc
 
 LakeOfRageAdvancedTipsSignText:
 	text "Advanced Tips!"
@@ -111,9 +118,15 @@ LakeOfRageFishingGuruSign:
 	endtext
 
 .Text:
+if DEF(_LOCALE_FR)
+	text "MAISON DU MAITRE"
+	line "PECHEUR"
+	done
+else
 	text "Fishing Guru's"
 	line "House"
 	done
+endc
 
 LakeOfRageLanceScript:
 	checkevent EVENT_REFUSED_TO_HELP_LANCE_AT_LAKE_OF_RAGE
@@ -150,6 +163,14 @@ LakeOfRageLanceScript:
 	sjump .Agreed
 
 .OverheardText:
+if DEF(_LOCALE_FR)
+	text "Ce LAC est rempli"
+	line "de LEVIATOR et"
+	line "rien d'autre… Les"
+	line "MAGICARPE ont été"
+	line "forcés d'évoluer…"
+	done
+else
 	text "This lake is full"
 	line "of Gyarados but"
 	cont "nothing else…"
@@ -158,8 +179,30 @@ LakeOfRageLanceScript:
 	line "are being forced"
 	cont "to evolve…"
 	done
+endc
 
 .IntroText:
+if DEF(_LOCALE_FR)
+	text "Es-tu venu ici à"
+	line "cause des rumeurs?"
+	line "Tu es <PLAYER>? Je"
+	line "suis PETER, un"
+	line "dresseur comme"
+	line "toi. J'ai entendu"
+	line "des rumeurs alors"
+	line "je viens fouiner…"
+	line "Je t'ai vu com-"
+	line "battre tantôt,"
+	line "<PLAYER>. On peut"
+	line "dire que tu es un"
+	line "dresseur"
+	line "talentueux et"
+	line "habile. Si cela ne"
+	line "te fait rien, tu"
+	line "peux fouiner avec"
+	line "moi?"
+	done
+else
 	text "Did you come here"
 	line "because of the"
 	cont "rumors?"
@@ -186,8 +229,23 @@ LakeOfRageLanceScript:
 	line "could you help me"
 	cont "investigate?"
 	done
+endc
 
 .YesText:
+if DEF(_LOCALE_FR)
+	text "PETER: Excellent!"
+	line "Il semble que les"
+	line "MAGICARPE de ce"
+	line "LAC ont évolué de"
+	line "force. Une"
+	line "mystérieuse"
+	line "émission de radio"
+	line "d'ACAJOU en est la"
+	line "cause. Je"
+	line "t'attendrai,"
+	line "<PLAYER>."
+	done
+else
 	text "Lance: Excellent!"
 
 	para "It seems that the"
@@ -205,19 +263,37 @@ LakeOfRageLanceScript:
 	para "I'll be waiting"
 	line "for you, <PLAYER>."
 	done
+endc
 
 .Notext:
+if DEF(_LOCALE_FR)
+	text "Oh… Bon, si tu"
+	line "changes d'avis, tu"
+	line "pourras m'aider."
+	done
+else
 	text "Oh… Well, if you"
 	line "change your mind,"
 	cont "please help me."
 	done
+endc
 
 .QuestionText:
+if DEF(_LOCALE_FR)
+	text "PETER: Hum? Vas-tu"
+	line "m'aider?"
+	done
+else
 	text "Lance: Hm? Are you"
 	line "going to help me?"
 	done
+endc
 
 LakeOfRageEngineerText:
+if DEF(_LOCALE_FR)
+	text "Attends!"
+	done
+else
 	text "I'm an urban"
 	line "planner."
 
@@ -229,6 +305,7 @@ LakeOfRageEngineerText:
 	line "spot for my next"
 	cont "project."
 	done
+endc
 
 LakeOfRageRedGyaradosScript:
 	opentext
@@ -256,8 +333,13 @@ LakeOfRageRedGyaradosScript:
 	end
 
 .GyaradosText:
+if DEF(_LOCALE_FR)
+	text "LEVIATOR: Tttooor!"
+	done
+else
 	text "Gyarados: Gyashaa!"
 	done
+endc
 
 .RedScaleText:
 	text "<PLAYER> found"
@@ -284,20 +366,44 @@ WesleyScript:
 	setevent EVENT_GOT_BLACK_BELT_FROM_WESLEY
 	jumpthisopenedtext
 
+if DEF(_LOCALE_FR)
+	text "HOMER: La CEINT."
+	line "NOIRE renforce le"
+	line "pouvoir des capa-"
+	line "cités de combat."
+	done
+else
 	text "Wesley: Black Belt"
 	line "beefs up the power"
 	cont "of Fighting moves."
 	done
+endc
 
 .NotWednesday:
 	jumpthisopenedtext
 
+if DEF(_LOCALE_FR)
+	text "HOMER: On n'est"
+	line "pas mercredi!!!"
+	line "Dommage!"
+	done
+else
 	text "Wesley: Today's"
 	line "not Wednesday."
 	cont "That's too bad."
 	done
+endc
 
 .MeetText:
+if DEF(_LOCALE_FR)
+	text "HOMER: Alors,"
+	line "comment va? Moi"
+	line "c'est HOMER du"
+	line "mercredi. Et"
+	line "aujourd'hui… C'est"
+	line "mercredi!"
+	done
+else
 	text "Wesley: Well, how"
 	line "do you do?"
 
@@ -307,14 +413,32 @@ WesleyScript:
 	para "I'm Wesley of"
 	line "Wednesday."
 	done
+endc
 
 .GivesGiftText:
+if DEF(_LOCALE_FR)
+	text "Enchanté de faire"
+	line "ta connaissance."
+	line "V'là un souvenir."
+	done
+else
 	text "Pleased to meet"
 	line "you. Please take a"
 	cont "souvenir."
 	done
+endc
 
 .WednesdayText:
+if DEF(_LOCALE_FR)
+	text "HOMER: Avant de"
+	line "m'avoir trouvé,"
+	line "t'as dû rencontrer"
+	line "mes frères et"
+	line "soeurs. Ou alors"
+	line "t'es un petit"
+	line "chanceux?"
+	done
+else
 	text "Wesley: Since you"
 	line "found me, you must"
 
@@ -324,18 +448,36 @@ WesleyScript:
 	para "Or did you just"
 	line "get lucky?"
 	done
+endc
 
 GenericTrainerCooltrainermAaron:
 	generictrainer COOLTRAINERM, AARON, EVENT_BEAT_COOLTRAINERM_AARON, .SeenText, .BeatenText
 
+if DEF(_LOCALE_FR)
+	text "Les #MON et leur"
+	line "dresseur"
+	line "deviennent forts"
+	line "en combattant"
+	line "régulièrement."
+	done
+else
 	text "#mon and their"
 	line "trainer become"
 
 	para "powerful through"
 	line "constant battling."
 	done
+endc
 
 .SeenText:
+if DEF(_LOCALE_FR)
+	text "Si un dresseur"
+	line "éclabousse un"
+	line "autre dresseur, ça"
+	line "fini en duel."
+	line "C'est la loi."
+	done
+else
 	text "If a trainer spots"
 	line "another trainer,"
 
@@ -345,21 +487,43 @@ GenericTrainerCooltrainermAaron:
 	para "That is our"
 	line "destiny."
 	done
+endc
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "Whaa… Bon combat!"
+	done
+else
 	text "Whew…"
 	line "Good battle."
 	done
+endc
 
 GenericTrainerCooltrainerfLois:
 	generictrainer COOLTRAINERF, LOIS, EVENT_BEAT_COOLTRAINERF_LOIS, .SeenText, .BeatenText
 
+if DEF(_LOCALE_FR)
+	text "Au fait… J'ai vu"
+	line "un PAPILUSION"
+	line "rose."
+	done
+else
 	text "Come to think of"
 	line "it, I've seen a"
 	cont "pink Butterfree."
 	done
+endc
 
 .SeenText:
+if DEF(_LOCALE_FR)
+	text "Qu'est-il arrivé"
+	line "au LEVIATOR rouge?"
+	line "Il est parti? Oh,"
+	line "zut! Je suis venue"
+	line "pour rien? Bon…"
+	line "COMBAT!"
+	done
+else
 	text "What happened to"
 	line "the red Gyarados?"
 
@@ -371,70 +535,145 @@ GenericTrainerCooltrainerfLois:
 	para "I know--let's"
 	line "battle!"
 	done
+endc
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "Pas mal!"
+	done
+else
 	text "Good going!"
 	done
+endc
 
 GenericTrainerFisherAndre:
 	generictrainer FISHER, ANDRE, EVENT_BEAT_FISHER_ANDRE, FisherAndreSeenText, FisherAndreBeatenText
 
+if DEF(_LOCALE_FR)
+	text "J'suis un bon"
+	line "pêcheur, moi. Et"
+	line "j'attrape des"
+	line "#MON! Oui,"
+	line "m'sieur."
+	done
+else
 	text "I won't lose as an"
 	line "angler! I catch"
 	cont "#mon all day."
 	done
+endc
 
 FisherAndreSeenText:
+if DEF(_LOCALE_FR)
+	text "Laisse-moi donc"
+	line "combattre avec le"
+	line "#MON que je viens"
+	line "d'attraper!"
+	done
+else
 	text "Let me battle with"
 	line "the #mon I just"
 	cont "caught!"
 	done
+endc
 
 FisherAndreBeatenText:
+if DEF(_LOCALE_FR)
+	text "J'suis peut-être"
+	line "un bon pêcheur"
+	line "mais j'suis un"
+	line "mauvais dresseur."
+	done
+else
 	text "I might be an ex-"
 	line "pert angler, but"
 
 	para "I stink as a #-"
 	line "mon trainer…"
 	done
+endc
 
 GenericTrainerFisherRaymond:
 	generictrainer FISHER, RAYMOND, EVENT_BEAT_FISHER_RAYMOND, FisherRaymondSeenText, FisherRaymondBeatenText
 
+if DEF(_LOCALE_FR)
+	text "Pourquoi je ne"
+	line "peux pas attraper"
+	line "de bons #MON?"
+	done
+else
 	text "Why can't I catch"
 	line "any good #mon?"
 	done
+endc
 
 FisherRaymondSeenText:
+if DEF(_LOCALE_FR)
+	text "Qu'importe ce que"
+	line "je fais, j'attrape"
+	line "toujours le même"
+	line "#MON…"
+	done
+else
 	text "No matter what I"
 	line "do, all I catch"
 
 	para "are the same #-"
 	line "mon…"
 	done
+endc
 
 FisherRaymondBeatenText:
+if DEF(_LOCALE_FR)
+	text "Ma ligne est toute"
+	line "emmêlée…"
+	done
+else
 	text "My line's all"
 	line "tangled up…"
 	done
+endc
 
 LakeOfRageGrampsScript:
 	checkevent EVENT_CLEARED_ROCKET_HIDEOUT
 	iftrue_jumptextfaceplayer .Text2
 	jumpthistextfaceplayer
 
+if DEF(_LOCALE_FR)
+	text "Les LEVIATOR sont"
+	line "en colère! Mauvais"
+	line "présage!"
+	done
+else
 	text "The Gyarados are"
 	line "angry!"
 
 	para "It's a bad omen!"
 	done
+endc
 
 .Text2:
+if DEF(_LOCALE_FR)
+	text "Hahah! Les"
+	line "MAGICARPE mordent!"
+	done
+else
 	text "Hahah! The Magi-"
 	line "karp are biting!"
 	done
+endc
 
 LakeOfRageSuperNerdText:
+if DEF(_LOCALE_FR)
+	text "On dit que ce LAC"
+	line "a été fait par le"
+	line "déchaînement de"
+	line "LEVIATOR. Je me"
+	line "demande s'il y a"
+	line "un lien avec leur"
+	line "colère?"
+	done
+else
 	text "I heard this lake"
 	line "was made by ram-"
 	cont "paging Gyarados."
@@ -445,8 +684,19 @@ LakeOfRageSuperNerdText:
 	para "to their mass out-"
 	line "break now?"
 	done
+endc
 
 LakeOfRageCooltrainerFText:
+if DEF(_LOCALE_FR)
+	text "J'ai la berlue ou"
+	line "quoi? J'ai vu un"
+	line "LEVIATOR rouge"
+	line "dans le LAC… Je"
+	line "croyais qu'il n'y"
+	line "avait que des"
+	line "LEVIATOR bleus?"
+	done
+else
 	text "Did my eyes de-"
 	line "ceive me? I saw a"
 
@@ -457,3 +707,4 @@ LakeOfRageCooltrainerFText:
 	line "Gyarados were"
 	cont "usually blue?"
 	done
+endc

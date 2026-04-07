@@ -67,6 +67,16 @@ GoldenrodPokecenter1FNurseScript:
 	jumpstd pokecenternurse
 
 GoldenrodPokecenter1FGameboyKidText:
+if DEF(_LOCALE_FR)
+	text "Le COLISEE sert à"
+	line "faire des com-"
+	line "bats en Link. Les"
+	line "records sont"
+	line "affichés sur le"
+	line "mur. Perdre, c'est"
+	line "la honte!"
+	done
+else
 	text "The Colosseum"
 	line "upstairs is for"
 	cont "link battles."
@@ -77,8 +87,23 @@ GoldenrodPokecenter1FGameboyKidText:
 	para "wall, so I can't"
 	line "afford to lose."
 	done
+endc
 
 GoldenrodPokecenter1FLassText:
+if DEF(_LOCALE_FR)
+	text "Un #MON de niveau"
+	line "élevé ne gagnera"
+	line "pas à tous les"
+	line "coups. Après tout,"
+	line "il y a peut-être"
+	line "un type"
+	line "désavantagé. Je ne"
+	line "crois pas qu'il y"
+	line "ait un type de"
+	line "#MON qui soit le"
+	line "plus résistant."
+	done
+else
 	text "A higher level"
 	line "#mon doesn't"
 	cont "always win."
@@ -93,6 +118,7 @@ GoldenrodPokecenter1FLassText:
 	para "#mon that is"
 	line "the toughest."
 	done
+endc
 
 GoldenrodPokecenter1FPokefanF:
 	checkevent EVENT_GOT_EVIOLITE_IN_GOLDENROD
@@ -116,19 +142,41 @@ GoldenrodPokecenter1FPokefanF:
 	setevent EVENT_GOT_EVIOLITE_IN_GOLDENROD
 	jumpthisopenedtext
 
+if DEF(_LOCALE_FR)
+	text "Ma fille sera"
+	line "ravie!"
+	done
+else
 	text "My daughter will"
 	line "be delighted!"
 	done
+endc
 
 .NoRoomForEviolite:
 	giveitem EON_MAIL
 	jumpthisopenedtext
 
+if DEF(_LOCALE_FR)
+	text "Oh… Une autre"
+	line "fois, alors."
+	done
+else
 	text "Oh… Well, another"
 	line "time, then."
 	done
+endc
 
 GoldenrodPokecenter1FPokefanFDoYouHaveEonMailText:
+if DEF(_LOCALE_FR)
+	text "Ton SAC a l'air"
+	line "siiiii lourd! Oh!"
+	line "As-tu un truc du"
+	line "nom de LETR EVOLI?"
+	line "Ma fille en veut"
+	line "une. Tu peux m'en"
+	line "donner une?"
+	done
+else
 	text "Oh my, your bag"
 	line "looks so heavy!"
 
@@ -142,37 +190,68 @@ GoldenrodPokecenter1FPokefanFDoYouHaveEonMailText:
 	para "You can part with"
 	line "one, can't you?"
 	done
+endc
 
 GoldenrodPokecenter1FAskGiveAwayAnEonMailText:
+if DEF(_LOCALE_FR)
+	text "Donner LETR EVOLI?"
+	done
+else
 	text "Give away an Eon"
 	line "Mail?"
 	done
+endc
 
 GoldenrodPokecenter1FPokefanFThisIsForYouText:
+if DEF(_LOCALE_FR)
+	text "Oh, formidable!"
+	line "Merci merci! Voilà"
+	line "pour toi!"
+	done
+else
 	text "Oh, that's great!"
 	line "Thank you, honey!"
 
 	para "Here, this is for"
 	line "you in return!"
 	done
+endc
 
 GoldenrodPokecenter1FPokefanFTooBadText:
+if DEF(_LOCALE_FR)
+	text "Oh? Tu n'en as"
+	line "pas? Dommage."
+	done
+else
 	text "Oh? You don't have"
 	line "one? Too bad."
 	done
+endc
 
 GoldenrodPokecenter1FPlayerGaveAwayTheEonMailText:
+if DEF(_LOCALE_FR)
+	text "<PLAYER> donne la"
+	line "LETR EVOLI."
+	done
+else
 	text "<PLAYER> gave away"
 	line "the Eon Mail."
 	done
+endc
 
 GoldenrodPokecenter1FPokefanFGotEvioliteText:
+if DEF(_LOCALE_FR)
+	text "Ma fille sera"
+	line "ravie!"
+	done
+else
 	text "Thank you for"
 	line "the Eon Mail!"
 
 	para "My daughter will"
 	line "be delighted!"
 	done
+endc
 
 WonderTradeReceptionistScript:
 	opentext
@@ -205,36 +284,108 @@ WonderTradeReceptionistScript:
 	jumpopenedtext WonderTradeGoodbyeText
 
 WonderTradeIntroText:
+if DEF(_LOCALE_FR)
+	text "Salut! Bienvenue"
+	line "au Hub d'Echanges"
+	cont "Mystere du"
+	cont "#Com Center."
+	done
+else
 	text "Hello! Welcome to"
 	line "#Com Center"
 	cont "Wonder Trade Hub."
 	done
+endc
 
 IntroduceTealaText:
+if DEF(_LOCALE_FR)
+	text "Je suis Teala,"
+	line "préposée aux"
+	cont "échanges."
+	done
+else
 	text "I'm Teala, your"
 	line "trade attendant."
 	done
+endc
 
 WonderTradeExplanationText:
+if DEF(_LOCALE_FR)
+	text "Tu peux échanger"
+	line "des #mon avec"
+	cont "des gens loin."
+	done
+else
 	text "You can trade"
 	line "#mon with other"
 	cont "people far away."
 	done
+endc
 
 WonderTradeCompleteText:
+if DEF(_LOCALE_FR)
+	text "Voici ton nouveau"
+	line "partenaire."
+
+	para "Prends-en soin"
+	line "avec amour."
+	done
+else
 	text "It's your new"
 	line "partner."
 
 	para "Please take care"
 	line "of it with love."
 	done
+endc
 
 WonderTradeGoodbyeText:
+if DEF(_LOCALE_FR)
+	text "Allez… Au revoir."
+	done
+else
 	text "We hope to see you"
 	line "again."
 	done
+endc
 
 WonderTradeForGSBallPichuText:
+if DEF(_LOCALE_FR)
+	text "…Mais qu'est-ce"
+	line "que c'est?"
+
+	para "La machine d'Echa-"
+	line "nge Mystere a un"
+	cont "problème?"
+
+	para "On dirait que tu"
+	line "as échangé un"
+
+	para "#mon avec"
+	line "toi-même."
+
+	para "Mais c'est impos-"
+	line "sible… Tu ne peux"
+
+	para "pas être à deux"
+	line "endroits à la"
+	cont "fois."
+
+	para "Et puis, la ma-"
+	line "chine"
+	line "communique dans"
+	cont "l'espace,"
+
+	para "pas dans le"
+	line "temps…"
+
+	para "Et cette Balle"
+	line "étrange? Une Balle"
+
+	para "de Noigrume?"
+	line "Regarde…"
+	done
+else
 	text "…But what's this?"
 	line "Is something wrong"
 
@@ -267,8 +418,18 @@ WonderTradeForGSBallPichuText:
 
 	para "Here, take a look…"
 	done
+endc
 
 WonderTradeForGSBallPichuText2:
+if DEF(_LOCALE_FR)
+	text "C'est peut-être"
+	line "bizarre, mais un"
+	cont "#mon reste un"
+	cont "#mon."
+
+	para "Prends-en soin."
+	done
+else
 	text "It may be unusual,"
 	line "but a #mon"
 	cont "is a #mon."
@@ -276,10 +437,25 @@ WonderTradeForGSBallPichuText2:
 	para "Please look after"
 	line "it carefully."
 	done
+endc
 
 InfoSignScript:
 	jumpthistext
 
+if DEF(_LOCALE_FR)
+	text "#Com Center"
+	line "Infos RDC"
+
+	para "Gauche:"
+	line "Administration"
+
+	para "Centre:"
+	line "Hub Echange"
+
+	para "Droite:"
+	line "Juge <PK><MN>"
+	done
+else
 	text "#Com Center"
 	line "1F Information"
 
@@ -292,11 +468,23 @@ InfoSignScript:
 	para "Right:"
 	line "<PK><MN> Judge Machine"
 	done
+endc
 
 PokemonJournalWhitneyScript:
 	setflag ENGINE_READ_WHITNEY_JOURNAL
 	jumpthistext
 
+if DEF(_LOCALE_FR)
+	text "Journal #mon"
+
+	para "En vedette:"
+	line "Whitney!"
+
+	para "On dit que Whitney"
+	line "admire Bruno,"
+	cont "du Conseil 4."
+	done
+else
 	text "#mon Journal"
 
 	para "Special Feature:"
@@ -306,6 +494,7 @@ PokemonJournalWhitneyScript:
 	line "admire Bruno of"
 	cont "the Elite Four."
 	done
+endc
 
 JudgeMachineScript:
 	opentext
@@ -313,6 +502,18 @@ JudgeMachineScript:
 	waitendtext
 
 GoldenrodPokecenter1FSuperNerdText:
+if DEF(_LOCALE_FR)
+	text "Wouah, ce CENTRE"
+	line "#MON est énorme."
+
+	para "Ils viennent de"
+	line "le construire."
+
+	para "Et ils ont même"
+	line "installé plein de"
+	cont "machines."
+	done
+else
 	text "Whoa, this #mon"
 	line "Center is huge."
 
@@ -322,8 +523,36 @@ GoldenrodPokecenter1FSuperNerdText:
 	para "installed lots of"
 	line "new machines too."
 	done
+endc
 
 GoldenrodPokecenter1FLassText_PidgeyMail:
+if DEF(_LOCALE_FR)
+	text "J'ai eu une idée"
+	line "pour le Hub"
+	cont "d'Echanges!"
+
+	para "Je fais porter une"
+	line "LETTRE à un"
+	cont "Roucool…"
+
+	para "puis je l'échange"
+	line "contre un autre!"
+
+	para "Si tout le monde"
+	line "faisait ça,"
+
+	para "on échangerait des"
+	line "LETTRES avec plein"
+	cont "de gens!"
+
+	para "Je l'appelle"
+	line "LETTRE ROUCOOL!"
+
+	para "Si ça marche, je"
+	line "me ferai plein"
+	cont "d'amis!"
+	done
+else
 	text "I thought up a fun"
 	line "new thing for the"
 	cont "Wonder Trade Hub!"
@@ -350,6 +579,7 @@ GoldenrodPokecenter1FLassText_PidgeyMail:
 	para "make lots of new"
 	line "friends!"
 	done
+endc
 
 JudgeMachineEngineerScript:
 	checkevent EVENT_BRED_AN_EGG
@@ -377,6 +607,28 @@ JudgeMachineEngineerScript:
 	end
 
 JudgeMachineEngineerWorkingText:
+if DEF(_LOCALE_FR)
+	text "Le Juge #mon…"
+
+	para "C'est mon rêve"
+	line "depuis longtemps."
+
+	para "Avec les fonds du"
+	line "#Com Center,"
+	cont "c'est possible,"
+
+	para "même si ça prend"
+	line "un ordinateur"
+	cont "géant!"
+
+	para "Ce sera super pour"
+	line "les éleveurs qui"
+	cont "font beaucoup"
+	cont "d'Oeufs!"
+
+	para "J'ai presque fini…"
+	done
+else
 	text "The #mon"
 	line "Judge Machine…"
 
@@ -399,8 +651,45 @@ JudgeMachineEngineerWorkingText:
 
 	para "I'm almost done…"
 	done
+endc
 
 JudgeMachineEngineerFinishedText:
+if DEF(_LOCALE_FR)
+	text "Le Juge #mon…"
+
+	para "Il est enfin fini!"
+	line "Mon rêve devient"
+	cont "réalité!"
+
+	para "C'est quoi?"
+	line "Une machine qui"
+
+	para "juge les stats de"
+	line "n'importe quel"
+	cont "#mon!"
+
+	para "Elle utilise une"
+	line "IA ultra moderne"
+
+	para "pour évaluer le"
+	line "potentiel inné,"
+	cont "ainsi que"
+
+	para "les efforts four-"
+	line "nis pour être plus"
+	cont "fort."
+
+	para "C'est parfait pour"
+	line "mesurer la"
+	cont "puissance!"
+
+	para "Vas-y, essaie-la."
+	line "C'est sans danger."
+
+	para "Moi, je pars en"
+	line "vacances!"
+	done
+else
 	text "The #mon"
 	line "Judge Machine…"
 
@@ -436,6 +725,7 @@ JudgeMachineEngineerFinishedText:
 	para "As for me, I'm ta-"
 	line "king a vacation!"
 	done
+endc
 
 JudgeMachineEngineerLeavesMovement:
 	step_left
@@ -446,6 +736,16 @@ JudgeMachineEngineerLeavesMovement:
 	step_end
 
 GoldenrodPokecenter1FPokefanFText_Sunflora:
+if DEF(_LOCALE_FR)
+	text "Une fille que je"
+	line "ne connais pas m'a"
+	cont "envoyé son Heli-"
+	cont "atronc."
+
+	para "Echange pour un"
+	line "#mon voulu."
+	done
+else
 	text "Some girl I don't"
 	line "know sent me her"
 	cont "Sunflora."
@@ -454,8 +754,20 @@ GoldenrodPokecenter1FPokefanFText_Sunflora:
 	line "for a #mon that"
 	cont "you want."
 	done
+endc
 
 GoldenrodPokecenter1FRockerText:
+if DEF(_LOCALE_FR)
+	text "On ne peut pas"
+	line "encore utiliser"
+	cont "toutes les"
+	cont "machines."
+
+	para "Mais c'est cool de"
+	line "venir ici avant"
+	cont "tout le monde."
+	done
+else
 	text "The machines here"
 	line "can't all be used"
 	cont "yet."
@@ -466,11 +778,21 @@ GoldenrodPokecenter1FRockerText:
 	para "place before other"
 	line "people."
 	done
+endc
 
 GoldenrodPokecenter1FGrampsText:
+if DEF(_LOCALE_FR)
+	text "Rien que de voir"
+	line "toutes ces nou-"
+	cont "veautés ici…"
+
+	para "Ca me rajeunit!"
+	done
+else
 	text "Just seeing all"
 	line "these new things"
 
 	para "here makes me feel"
 	line "younger!"
 	done
+endc

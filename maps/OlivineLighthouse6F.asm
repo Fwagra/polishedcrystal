@@ -142,6 +142,22 @@ OlivineLighthouseJasmineLeavesRightMovement:
 	step_end
 
 JasmineCianwoodPharmacyText:
+if DEF(_LOCALE_FR)
+	text "JASMINE: … Ce #MON"
+	line "gardait la mer"
+	line "éclairée toute la"
+	line "nuit. …Mais il est"
+	line "tombé malade… Il"
+	line "manque d'air… On"
+	line "dit qu'il y a une"
+	line "bonne PHARMA- CIE"
+	line "à IRISIA… Mais"
+	line "c'est à l'au- tre"
+	line "bout des mers! Et"
+	line "je dois m'occu-"
+	line "per de PHARY…"
+	done
+else
 	text "Jasmine: …This"
 	line "#mon always"
 
@@ -164,26 +180,56 @@ JasmineCianwoodPharmacyText:
 	para "And I can't leave"
 	line "Amphy unattended…"
 	done
+endc
 
 JasmineGetSomeMedicineText:
+if DEF(_LOCALE_FR)
+	text "…Peux-tu aller"
+	line "chercher des médi-"
+	line "caments? Pitié?"
+	done
+else
 	text "…May I ask you to"
 	line "get some medicine"
 	cont "for me? Please?"
 	done
+endc
 
 JasmineCureAmphyText:
+if DEF(_LOCALE_FR)
+	text "JASMINE: …Ce mé-"
+	line "dicament va-t-il"
+	line "soigner PHARY?"
+	done
+else
 	text "Jasmine: …Will"
 	line "that medicine cure"
 	cont "Amphy?"
 	done
+endc
 
 PlayerHandedSecretpotionText:
+if DEF(_LOCALE_FR)
+	text "<PLAYER> donne la"
+	line "POTIONSECRET à"
+	line "JASMINE."
+	done
+else
 	text "<PLAYER> handed the"
 	line "SecretPotion to"
 	cont "Jasmine."
 	done
+endc
 
 JasmineDontBeOffendedText:
+if DEF(_LOCALE_FR)
+	text "JASMINE: Heu… Le"
+	line "prends pas mal"
+	line "mais… PHARY"
+	line "n'acceptera que ce"
+	line "que JE lui donne…"
+	done
+else
 	text "Jasmine: …Um,"
 	line "please don't be"
 	cont "offended…"
@@ -192,15 +238,33 @@ JasmineDontBeOffendedText:
 	line "take anything from"
 	cont "anyone but me…"
 	done
+endc
 
 JasmineAmphyHowAreYouFeelingText:
+if DEF(_LOCALE_FR)
+	text "JASMINE: … PHARY,"
+	line "comment te"
+	line "sens-tu?"
+	done
+else
 	text "Jasmine: …"
 
 	para "Amphy, how are you"
 	line "feeling?"
 	done
+endc
 
 JasmineThankYouText:
+if DEF(_LOCALE_FR)
+	text "JASMINE: Oh, je"
+	line "suis si soulagée!"
+	line "C'est… C'est"
+	line "fantastique… Merci"
+	line "beaucoup, mon ami."
+	line "Je vais retourner"
+	line "à l'ARENE…"
+	done
+else
 	text "Jasmine: …Oh, I'm"
 	line "so relieved…"
 
@@ -213,26 +277,55 @@ JasmineThankYouText:
 	para "…I will return to"
 	line "the Gym…"
 	done
+endc
 
 JasmineISeeText:
+if DEF(_LOCALE_FR)
+	text "JASMINE: Je vois."
+	done
+else
 	text "Jasmine: …I see…"
 	done
+endc
 
 JasmineAmphyHangOnText:
+if DEF(_LOCALE_FR)
+	text "Courage, PHARY!"
+	done
+else
 	text "…Amphy, hang on!"
 	done
+endc
 
 AmphyPalPalooText:
+if DEF(_LOCALE_FR)
+	text "PHARY: … …Pha!"
+	line "Phaaa…"
+	done
+else
 	text "Amphy: …"
 	line "…Pa… paloo…"
 	done
+endc
 
 AmphyBreathingLaboredText:
+if DEF(_LOCALE_FR)
+	text "Il respire avec"
+	line "difficulté…"
+	done
+else
 	text "Its breathing is"
 	line "terribly labored…"
 	done
+endc
 
 AmphyPaluPaluluText:
+if DEF(_LOCALE_FR)
+	text "PHARY: Phapha!"
+	line "Phaaaaaa!"
+	done
+else
 	text "Amphy: Palu!"
 	line "Palulu!"
 	done
+endc

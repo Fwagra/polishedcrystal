@@ -139,6 +139,18 @@ MystriStageEggScript:
 	waitendtext
 
 MystriStageCynthiaIntroText:
+if DEF(_LOCALE_FR)
+	text "Je m'appelle"
+	line "Cynthia. Je suis"
+	cont "dresseuse #MON."
+
+	para "Et toi?"
+
+	para "…Je vois. Le pou-"
+	line "voir des ZARBI"
+	cont "t'a amené ici."
+	done
+else
 	text "My name is"
 	line "Cynthia. I am a"
 	cont "#mon trainer."
@@ -149,8 +161,51 @@ MystriStageCynthiaIntroText:
 	line "of the Unown"
 	cont "brought you here."
 	done
+endc
 
 MystriStageCynthiaSpeechText:
+if DEF(_LOCALE_FR)
+	text "CYNTHIA: Voici"
+	line "les Ruines"
+	cont "Sinjoh."
+
+	para "Il y a très long-"
+	line "temps… des gens"
+	cont "de Sinnoh sont"
+	cont "venus vivre ici."
+
+	para "Leur foyer leur"
+	line "manquait, alors"
+
+	para "ils ont bâti ce"
+	line "temple pour hono-"
+	cont "rer leurs rites."
+
+	para "Nous sommes sur la"
+	line "Scène Mystri."
+
+	para "On y célébrait"
+	line "avec musique et"
+	cont "danse."
+
+	para "J'étudie les"
+	line "mythes"
+	line "des lieux anciens"
+	cont "comme Sinjoh."
+
+	para "Une légende dit"
+	line "que cette scène"
+
+	para "porte le pouvoir"
+	line "de création."
+
+	para "Elle raconte quand"
+	line "le plomb entre"
+
+	para "sur la Scène"
+	line "Mystri, enfin…"
+	done
+else
 	text "Cynthia: These are"
 	line "the Sinjoh Ruins."
 
@@ -193,8 +248,23 @@ MystriStageCynthiaSpeechText:
 	para "the Mystri Stage"
 	line "at last…”"
 	done
+endc
 
 MystriStageCynthiaLeadText2:
+if DEF(_LOCALE_FR)
+	text "CYNTHIA: Quoi?"
+	line "Tu as lu cette"
+
+	para "phrase aux Ruines"
+	line "d'Alph?"
+
+	para "C'est intriguant."
+
+	para "Le plomb pour-"
+	line "rait être un #MON."
+	cont "Ou une personne?"
+	done
+else
 	text "Cynthia: What?"
 	line "You read that"
 
@@ -208,6 +278,7 @@ MystriStageCynthiaLeadText2:
 	line "be a #mon?"
 	cont "Or a person?"
 	done
+endc
 
 MystriStageCynthiaIdeaText:
 	text "Cynthia: …I have"
@@ -247,6 +318,15 @@ MystriStageCynthiaNoText:
 	done
 
 MystriStageCynthiaYesText:
+if DEF(_LOCALE_FR)
+	text "CYNTHIA: Avant"
+	line "d'envoyer mes"
+	cont "#MON,"
+
+	para "mon coeur s'em-"
+	line "balle toujours…"
+	done
+else
 	text "Cynthia: Before"
 	line "I send out my"
 	cont "#mon,"
@@ -254,14 +334,22 @@ MystriStageCynthiaYesText:
 	para "my heart always"
 	line "begins to race…"
 	done
+endc
 
 MystriStageCynthiaWinText:
+if DEF(_LOCALE_FR)
+	text "Je ne me souviens"
+	line "pas d'avoir été à"
+	line "ce point dominée!"
+	done
+else
 	text "I can't remember"
 	line "the last time I"
 
 	para "was outclassed"
 	line "like this!"
 	done
+endc
 
 MystriStageCynthiaItemText:
 	text "Cynthia: That was"
@@ -322,10 +410,17 @@ MystriStageEggText:
 	done
 
 MystriStageNoRoomText:
+if DEF(_LOCALE_FR)
+	text "Tu n'as plus de"
+	line "place pour ça,"
+	line "même au PC!"
+	done
+else
 	text "You don't have"
 	line "room for this,"
 	cont "even in your Box!"
 	done
+endc
 
 MystriStageMovementData_CynthiaStepsUp:
 	step_up

@@ -99,18 +99,34 @@ GiovannisCaveRadioScript:
 	jumptext GiovannisCaveRadioAfterTimeTravelText
 
 GiovannisCaveRadioText:
+if DEF(_LOCALE_FR)
+	text "Il y a une radio"
+	line "qui ne marche"
+	cont "plus…"
+	done
+else
 	text "There is a radio"
 	line "that no longer"
 	cont "works…"
 	done
+endc
 
 GiovannisCaveRadioAfterTimeTravelText:
+if DEF(_LOCALE_FR)
+	text "Tu ne peux pas"
+	line "allumer la radio."
+
+	para "Giovanni l'a"
+	line "laissée là…"
+	done
+else
 	text "You cannot turn on"
 	line "the radio."
 
 	para "Giovanni must have"
 	line "left it here…"
 	done
+endc
 
 GiovannisCave_GiovanniStepsBackMovementData:
 	turn_head_down
@@ -154,6 +170,26 @@ GiovannisCave_CelebiFloatsMovementData:
 	step_end
 
 GiovannisCaveGiovanniIntroText:
+if DEF(_LOCALE_FR)
+	text "…"
+
+	para "Je ne sais pas"
+	line "pourquoi tu es"
+	cont "venu ici,"
+
+	para "mais je te pré-"
+	line "viens: ce n'est"
+	cont "pas un endroit"
+	cont "pour des gosses"
+	cont "comme toi."
+
+	para "Lyra: Hein? C'est"
+	line "le type qu'on a"
+
+	para "vu se disputer"
+	line "avec ce garçon!"
+	done
+else
 	text "…"
 
 	para "I don't know why"
@@ -170,8 +206,39 @@ GiovannisCaveGiovanniIntroText:
 	para "saw arguing with"
 	line "that boy!"
 	done
+endc
 
 GiovannisCaveGiovanniMemoriesText:
+if DEF(_LOCALE_FR)
+	text "Tu as un certain"
+	line "air…"
+
+	para "Je me souviens"
+	line "de toi!"
+
+	para "Ce gosse, il y a"
+	line "trois ans,"
+	cont "sabottait nos"
+	cont "plans, mais…"
+
+	para "c'est toi qui as"
+	line "tout gâché depuis"
+	cont "le début!"
+
+	para "…"
+
+	para "Je vais à"
+	line "Doublonville pour"
+
+	para "répondre à l'appel"
+	line "et rejoindre mon"
+	cont "équipe."
+
+	para "Tu vas encore"
+	line "me barrer la"
+	cont "route?"
+	done
+else
 	text "You have a certain"
 	line "look…"
 
@@ -197,14 +264,35 @@ GiovannisCaveGiovanniMemoriesText:
 	line "get in my way"
 	cont "again?"
 	done
+endc
 
 GiovannisCaveLyraQuestionsText:
+if DEF(_LOCALE_FR)
+	text "Lyra: Il y a"
+	line "trois ans…?"
+	cont "Doublonville…?"
+	done
+else
 	text "Lyra: Three years"
 	line "ago…? Goldenrod"
 	cont "City…?"
 	done
+endc
 
 GiovannisCaveLyraRecognizesGiovanniText:
+if DEF(_LOCALE_FR)
+	text "C'est lui que la"
+	line "Team Rocket"
+	cont "voulait joindre!"
+
+	para "Leur chef,"
+	line "Giovanni!"
+
+	para "<PLAYER>, quand"
+	line "l'as-tu rencontré"
+	cont "avant…?"
+	done
+else
 	text "This is who Team"
 	line "Rocket was trying"
 	cont "to reach!"
@@ -216,8 +304,32 @@ GiovannisCaveLyraRecognizesGiovanniText:
 	line "you meet Giovanni"
 	cont "before…?"
 	done
+endc
 
 GiovannisCaveBroadcastText:
+if DEF(_LOCALE_FR)
+	text "“… Hem, nous"
+	line "sommes"
+	line "la Team Rocket!"
+	cont "Après trois ans"
+	cont "de préparatifs,"
+	cont "nous renaissons"
+	cont "de nos cendres!"
+	cont "Giovanni! Tu"
+	cont "entends? On l'a"
+	cont "fait! Où est"
+	cont "notre chef?"
+	cont "Tu écoutes?”"
+
+	para "Lyra: La Team"
+	line "Rocket a pris la"
+	cont "Tour Radio…"
+
+	para "Tu es là-bas, et"
+	line "pourtant tu es"
+	cont "ici…"
+	done
+else
 	text "“… …Ahem, we are"
 	line "Team Rocket!"
 	cont "After three years"
@@ -238,8 +350,37 @@ GiovannisCaveBroadcastText:
 	para "You're there, but"
 	line "you're also here…"
 	done
+endc
 
 GiovannisCaveGiovanniIMustGoText:
+if DEF(_LOCALE_FR)
+	text "Giovanni: Mes"
+	line "anciens associés"
+	cont "ont besoin de moi…"
+
+	para "Nous ne répéterons"
+	line "pas l'échec"
+	cont "d'il y a"
+	cont "trois ans!"
+
+	para "La Team Rocket va"
+	line "renaître!"
+
+	para "Lyra: Hah!"
+	line "<PLAYER> t'a déjà"
+	cont "arrêté!"
+	cont "…T'arrêtera."
+
+	para "T'aura arrêté…?"
+
+	para "…Le voyage dans le"
+	line "temps, c'est"
+	cont "confusant!"
+
+	para "Giovanni: Assez"
+	line "bavardé! Dégage!"
+	done
+else
 	text "Giovanni: My old"
 	line "associates need"
 	cont "me…"
@@ -266,13 +407,34 @@ GiovannisCaveGiovanniIMustGoText:
 	line "chatter! Get out"
 	cont "of my way!"
 	done
+endc
 
 GiovannisCaveGiovanniBeatenText:
+if DEF(_LOCALE_FR)
+	text "Mais… qu'es-tu…?"
+	done
+else
 	text "What in the world"
 	line "are you?"
 	done
+endc
 
 GiovannisCaveGiovanniAfterText:
+if DEF(_LOCALE_FR)
+	text "Giovanni: Comment"
+	line "est-ce possible…?"
+
+	para "Ces trois années"
+	line "n'auraient servi"
+	cont "à rien…?"
+
+	para "Comment un gosse"
+	line "comme toi peut"
+
+	para "détruire mon rêve"
+	line "encore une fois?"
+	done
+else
 	text "Giovanni: How is"
 	line "this possible…?"
 
@@ -286,16 +448,41 @@ GiovannisCaveGiovanniAfterText:
 	para "destroy my dream"
 	line "once again?"
 	done
+endc
 
 GiovannisCaveBroadcastAfterText:
+if DEF(_LOCALE_FR)
+	text "“… Hé! Où est"
+	line "passé Giovanni?"
+	cont "Est-ce qu'il"
+	cont "écoute notre"
+	cont "message…?”"
+	done
+else
 	text "“… …Hey! Where has"
 	line "Giovanni gone?"
 	cont "I wonder if he is"
 	cont "listening to our"
 	cont "broadcast… …”"
 	done
+endc
 
 GiovannisCaveLyraFeelsSorryText:
+if DEF(_LOCALE_FR)
+	text "Lyra: Ils"
+	line "appellent"
+	line "leur chef."
+
+	para "Ca me fait de la"
+	line "peine qu'ils ne"
+	cont "sachent pas qu'il"
+	cont "ne viendra pas."
+
+	para "Mais là, <PLAYER>,"
+	line "tu dois les"
+	cont "battre!"
+	done
+else
 	text "Lyra: They keep"
 	line "calling for their"
 	cont "boss."
@@ -308,11 +495,22 @@ GiovannisCaveLyraFeelsSorryText:
 	line "<PLAYER>, you must"
 	cont "be defeating them!"
 	done
+endc
 
 GiovannisCaveLyraWantsToLeaveText:
+if DEF(_LOCALE_FR)
+	text "Lyra: Pas encore…!"
+	line "J'en ai marre!"
+
+	para "Laisse-nous"
+	line "retourner à notre"
+	cont "époque!"
+	done
+else
 	text "Lyra: Not again…!"
 	line "I've had enough!"
 
 	para "Please let us go"
 	line "back to our time!"
 	done
+endc

@@ -53,7 +53,14 @@ if DEF(_LOCALE_FR)
 	cont "voit pas."
 	done
 else
-	text "TODO"
+	text "Mr.Fuji:"
+	line "Welcome."
+
+	para "Here is a tool"
+	line "from Silph Co."
+
+	para "It will help you"
+	line "see the unseen."
 	done
 endc
 
@@ -66,7 +73,11 @@ if DEF(_LOCALE_FR)
 	line "Bon courage."
 	done
 else
-	text "TODO"
+	text "With this, you can"
+	line "reveal a hidden"
+	cont "#mon."
+
+	para "Good luck."
 	done
 endc
 

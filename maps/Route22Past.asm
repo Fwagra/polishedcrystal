@@ -212,11 +212,27 @@ Route22Past_CelebiFloatsMovementData:
 	step_end
 
 Route22PastLyraWhereAreWeText:
+if DEF(_LOCALE_FR)
+	text "Lyra: Où est-ce"
+	line "qu'on est…?"
+	done
+else
 	text "Lyra: Where are"
 	line "we…?"
 	done
+endc
 
 Route22PastLyraIlexForestDisappearedText:
+if DEF(_LOCALE_FR)
+	text "Lyra: La Forêt"
+	line "d'Acajou a"
+	cont "disparu!"
+
+	para "…Non, attends."
+	line "On a été trans-"
+	cont "portés ailleurs…?"
+	done
+else
 	text "Lyra: Ilex Forest"
 	line "has disappeared!"
 
@@ -225,8 +241,18 @@ Route22PastLyraIlexForestDisappearedText:
 	cont "ported somewhere"
 	cont "else…?"
 	done
+endc
 
 Route22PastLyraPokeGearText:
+if DEF(_LOCALE_FR)
+	text "Lyra: <PLAYER>, la"
+	line "radio du #GEAR"
+
+	para "dit que la date"
+	line "est celle d'il y a"
+	cont "trois ans!"
+	done
+else
 	text "Lyra: <PLAYER>, my"
 	line "#gear radio"
 
@@ -234,8 +260,22 @@ Route22PastLyraPokeGearText:
 	line "from three years"
 	cont "ago!"
 	done
+endc
 
 Route22PastLyraExplainsTimeTravelText:
+if DEF(_LOCALE_FR)
+	text "C'est… Je vois…"
+	line "CELEBI?"
+
+	para "Tout s'explique!"
+	line "CELEBI a dû"
+	cont "utiliser son"
+	cont "pouvoir pour"
+
+	para "nous renvoyer"
+	line "dans le passé!"
+	done
+else
 	text "Is that… am I"
 	line "looking at…"
 	cont "Celebi?"
@@ -247,16 +287,38 @@ Route22PastLyraExplainsTimeTravelText:
 	para "take us back in"
 	line "time!"
 	done
+endc
 
 Route22PastLyraHearsSomeoneText:
+if DEF(_LOCALE_FR)
+	text "<PLAYER>, j'entends"
+	line "quelqu'un."
+
+	para "Allons voir qui"
+	line "c'est!"
+	done
+else
 	text "<PLAYER>, I hear"
 	line "someone else."
 
 	para "Let's find out"
 	line "who it is!"
 	done
+endc
 
 Route22PastRivalQuestionsGiovanniText:
+if DEF(_LOCALE_FR)
+	text "<RIVAL>: Tu m'as"
+	line "dit… que tu étais"
+
+	para "le numéro 1!"
+
+	para "Tu vas abandonner?"
+
+	para "Tu vas faire quoi"
+	line "maintenant?"
+	done
+else
 	text "<RIVAL>: You told"
 	line "me… you were the"
 
@@ -269,8 +331,24 @@ Route22PastRivalQuestionsGiovanniText:
 	para "What are you"
 	line "going to do now?"
 	done
+endc
 
 Route22PastGiovanniRivalArgumentText:
+if DEF(_LOCALE_FR)
+	text "…… …… …… …Oh,"
+	line "c'est toi. Je suis"
+	line "venu pour trouver"
+	line "un #MON"
+	line "légen- daire… Mais"
+	line "y'a rien ici!"
+	line "Venir dans ce trou"
+	line "paumé pour rien"
+	line "trouver, moi ça"
+	line "m'énerve la tête!"
+	line "Je vais t'en faire"
+	line "baver!"
+	done
+else
 	text "…… …… ……"
 
 	para "One must acknow-"
@@ -322,23 +400,72 @@ Route22PastGiovanniRivalArgumentText:
 	para "revival of me and"
 	line "my Team Rocket!"
 	done
+endc
 
 Route22PastRivalProtestsText:
+if DEF(_LOCALE_FR)
+	text "<RIVAL>: Je te"
+	line "comprends pas!"
+
+	para "Tu racontes n'im-"
+	line "porte quoi!"
+	done
+else
 	text "<RIVAL>: I don't"
 	line "understand you!"
 
 	para "You don't make"
 	line "any sense!"
 	done
+endc
 
 Route22PastGiovanniGoodbyeText:
+if DEF(_LOCALE_FR)
+	text "…… …… …… …Oh,"
+	line "c'est toi. Je suis"
+	line "venu pour trouver"
+	line "un #MON"
+	line "légen- daire… Mais"
+	line "y'a rien ici!"
+	line "Venir dans ce trou"
+	line "paumé pour rien"
+	line "trouver, moi ça"
+	line "m'énerve la tête!"
+	line "Je vais t'en faire"
+	line "baver!"
+	done
+else
 	text "…… …… ……"
 
 	para "One day, you will"
 	line "understand."
 	done
+endc
 
 Route22PastRivalRantText:
+if DEF(_LOCALE_FR)
+	text "<RIVAL>: Je veux"
+	line "pas te comprendre!"
+
+	para "Je serai jamais"
+	line "comme toi."
+
+	para "Lâche quand tu es"
+	line "seul, et"
+
+	para "tyran quand tu es"
+	line "devant d'autres"
+	cont "lâches!"
+
+	para "Je vais devenir"
+	line "fort!"
+
+	para "Je vais devenir"
+	line "plus fort, seul!"
+
+	para "Tout seul!"
+	done
+else
 	text "<RIVAL>: I don't"
 	line "want to understand"
 	cont "you!"
@@ -365,13 +492,41 @@ Route22PastRivalRantText:
 
 	para "All by myself!"
 	done
+endc
 
 Route22PastRivalInsultText:
+if DEF(_LOCALE_FR)
+	text "…Mais kess-tu"
+	line "mates?"
+	done
+else
 	text "<RIVAL>: …What are"
 	line "you staring at?"
 	done
+endc
 
 Route22PastLyraConclusionText:
+if DEF(_LOCALE_FR)
+	text "Lyra: Pour qui il"
+	line "se prend?"
+
+	para "C'était inutile!"
+
+	para "Mais ils parlaient"
+	line "du retour de la"
+	cont "Team Rocket…"
+
+	para "La Team Rocket a"
+	line "été chassée de"
+	cont "Kanto"
+
+	para "par un enfant, il"
+	line "y a trois ans."
+
+	para "Donc… c'est bien"
+	line "le passé!"
+	done
+else
 	text "Lyra: Who does he"
 	line "think he is?"
 
@@ -393,8 +548,18 @@ Route22PastLyraConclusionText:
 	para "So this really"
 	line "is the past!"
 	done
+endc
 
 Route22PastLyraOhNoText:
+if DEF(_LOCALE_FR)
+	text "Lyra: Oh non!"
+	line "Ca recommence…!"
+
+	para "C'est le voyage"
+	line "temporel de"
+	cont "CELEBI!"
+	done
+else
 	text "Lyra: Oh no!"
 	line "It's happening"
 	cont "again…!"
@@ -402,3 +567,4 @@ Route22PastLyraOhNoText:
 	para "It's Celebi's"
 	line "Time Travel!"
 	done
+endc

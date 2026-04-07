@@ -325,6 +325,34 @@ TinTower1FSage3EntersMovement:
 	step_end
 
 TinTowerEusineSuicuneText:
+if DEF(_LOCALE_FR)
+	text "EUSINE: Bravo!"
+	line "Trop fort! Je n'ai"
+	line "jamais vu un tel"
+	line "combat. Alors ça…"
+	line "J'suis soufflé."
+	line "SUICUNE est fort,"
+	line "mais tu l'es"
+	line "encore plus,"
+	line "<PLAYER>. On dit"
+	line "que SUICUNE a le"
+	line "pouvoir d'in-"
+	line "voquer un #MON aux"
+	line "couleurs de"
+	line "l'arc-en-ciel."
+	line "Peut-être, on ne"
+	line "sait jamais, ce"
+	line "qu'il vient de se"
+	line "passer le fera"
+	line "apparaître… Je"
+	line "vais encore"
+	line "étudier les"
+	line "légendes… Merci de"
+	line "m'avoir montré tes"
+	line "talents… A très"
+	line "bientôt, <PLAYER>!"
+	done
+else
 	text "Eusine: Awesome!"
 	line "Too awesome, even!"
 
@@ -361,8 +389,25 @@ TinTowerEusineSuicuneText:
 
 	para "Later, <PLAYER>!"
 	done
+endc
 
 TinTower1FSage1Text:
+if DEF(_LOCALE_FR)
+	text "Selon la légende…"
+	line "Lorsque les âmes"
+	line "des #MON et des"
+	line "humains se réunis-"
+	line "sent, un #MON aux"
+	line "couleurs de"
+	line "l'arc-en-ciel des-"
+	line "cend des cieux…"
+	line "Est-il possible"
+	line "que les #MON"
+	line "légendaires met-"
+	line "tent les humains à"
+	line "l'épreuve?"
+	done
+else
 	text "According to"
 	line "legend…"
 
@@ -381,8 +426,30 @@ TinTower1FSage1Text:
 	para "are testing us"
 	line "humans?"
 	done
+endc
 
 TinTower1FSage2Text:
+if DEF(_LOCALE_FR)
+	text "Lorsque la TOUR de"
+	line "CUIVRE brûla,"
+	line "trois #MON sans"
+	line "nom ont, paraît-"
+	line "il, péri dans les"
+	line "flammes…"
+	line "Toutefois… Un #MON"
+	line "couleur"
+	line "arc-en-ciel… Ou"
+	line "plus précisé-"
+	line "ment… HO-OH,"
+	line "descendit du ciel"
+	line "et redonna la vie"
+	line "aux trois #MON."
+	line "Ils se nomment…"
+	line "SUICUNE, ENTEI et"
+	line "RAIKOU. Et voilà"
+	line "ce qu'on raconte."
+	done
+else
 if DEF(FAITHFUL)
 	text "When the Brass"
 else
@@ -417,8 +484,22 @@ endc
 	para "That is what they"
 	line "say."
 	done
+endc
 
 TinTower1FSage3Text:
+if DEF(_LOCALE_FR)
+	text "On dit que les"
+	line "deux TOURS furent"
+	line "construites pour"
+	line "sceller l'amitié"
+	line "entre #MON et"
+	line "humains. C'était"
+	line "il y a 700 ans,"
+	line "mais l'idée reste"
+	line "la même"
+	line "aujourd'hui."
+	done
+else
 	text "The two towers are"
 	line "said to have been"
 
@@ -434,25 +515,45 @@ TinTower1FSage3Text:
 	para "still remains"
 	line "important today."
 	done
+endc
 
 TinTower1FSage4Text1:
+if DEF(_LOCALE_FR)
+	text "HO-OH a dû arriver"
+	line "ici, à la TOUR"
+	line "FERRAILLE!"
+	done
+else
 	text "Ho-Oh appears to"
 	line "have descended"
 
 	para "upon this, the"
 	line "Bell Tower!"
 	done
+endc
 
 TinTower1FSage5Text1:
+if DEF(_LOCALE_FR)
+	text "Ceci te protégera."
+	done
+else
 	text "This will protect"
 	line "you. Take it."
 	done
+endc
 
 TinTower1FSage5Text2:
 	text "Now, go."
 	done
 
 TinTower1FSage6Text1:
+if DEF(_LOCALE_FR)
+	text "Je crois que l'on"
+	line "te met à l'épreu-"
+	line "ve. Avance"
+	line "l'esprit clair."
+	done
+else
 	text "I believe you are"
 	line "being tested."
 
@@ -460,8 +561,24 @@ TinTower1FSage6Text1:
 	line "from uncertainty,"
 	cont "and advance."
 	done
+endc
 
 TinTowerEusineHoOhText:
+if DEF(_LOCALE_FR)
+	text "Je le savais. Je"
+	line "savais que tu"
+	line "verrais le #MON"
+	line "arc-en-ciel,"
+	line "<PLAYER>. Je"
+	line "l'avais prédit. Je"
+	line "suis pas trop"
+	line "mauvais, moi. Je"
+	line "vais continuer à"
+	line "étudier pour être"
+	line "un célèbre"
+	line "#MANIAC!"
+	done
+else
 	text "I knew it."
 
 	para "I knew you'd get"
@@ -494,8 +611,22 @@ TinTowerEusineHoOhText:
 
 	para "Later, <PLAYER>!"
 	done
+endc
 
 TinTower1FSage4Text2:
+if DEF(_LOCALE_FR)
+	text "Les #MON légen-"
+	line "daires sont censés"
+	line "posséder trois"
+	line "pouvoirs… La"
+	line "foudre qui a"
+	line "frappé la TOUR. Le"
+	line "feu qui a brûlé la"
+	line "TOUR. Et la pluie"
+	line "qui a éteint le"
+	line "feu…"
+	done
+else
 	text "The legendary"
 	line "#mon are said"
 
@@ -511,8 +642,26 @@ TinTower1FSage4Text2:
 	para "And the rain that"
 	line "put out the fire…"
 	done
+endc
 
 TinTower1FSage5Text3:
+if DEF(_LOCALE_FR)
+	text "Lorsque les #- MON"
+	line "légendaires sont"
+	line "apparus… Ils"
+	line "pétrifièrent de"
+	line "terreur les"
+	line "témoins de leur"
+	line "réveil… Et…"
+	line "Certains ont même"
+	line "cru bon de les"
+	line "attaquer… Les #MON"
+	line "légen- daires,"
+	line "conscients de leur"
+	line "puissance, ont"
+	line "préféré fuir."
+	done
+else
 	text "When the legendary"
 	line "#mon appeared…"
 
@@ -532,8 +681,24 @@ TinTower1FSage5Text3:
 	line "fled, ignoring the"
 	cont "frightened people."
 	done
+endc
 
 TinTower1FSage6Text2:
+if DEF(_LOCALE_FR)
+	text "On dit que le #MON"
+	line "légendai- re"
+	line "SUICUNE est le"
+	line "plus proche de"
+	line "HO-OH. Il y aurait"
+	line "aussi un lien avec"
+	line "les #MON connus"
+	line "sous le nom de…"
+	line "ZARBI. Les ZARBI"
+	line "et SUICUNE doivent"
+	line "être liés en un"
+	line "sens…"
+	done
+else
 	text "Of the legendary"
 	line "#mon, Suicune"
 
@@ -552,3 +717,4 @@ TinTower1FSage6Text2:
 	para "cooperative bond"
 	line "with Suicune."
 	done
+endc

@@ -133,49 +133,104 @@ CeruleanCapeDateInterruptedTrigger3:
 GenericTrainerSwimmermRomeo:
 	generictrainer SWIMMERM, ROMEO, EVENT_BEAT_SWIMMERM_ROMEO, .SeenText, .BeatenText
 
+if DEF(_LOCALE_FR)
+	text "Etre un bon"
+	line "NAGEUR ne fait"
+
+	para "pas de moi un bon"
+	line "dresseur…"
+	done
+else
 	text "Being a good"
 	line "Swimmer doesn't"
 
 	para "make me a good"
 	line "trainer…"
 	done
+endc
 
 .SeenText:
+if DEF(_LOCALE_FR)
+	text "Admire ma forme!"
+	line "La victoire est"
+	cont "assurée!"
+	done
+else
 	text "Admire my fitness!"
 	line "My victory is"
 	cont "assured!"
 	done
+endc
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "C'est fini?"
+	done
+else
 	text "Oh! That's it?"
 	done
+endc
 
 GenericTrainerSwimmermMalcolm:
 	generictrainer SWIMMERM, MALCOLM, EVENT_BEAT_SWIMMERM_MALCOLM, .SeenText, .BeatenText
 
+if DEF(_LOCALE_FR)
+	text "Ne me dis pas"
+	line "que tu visites"
+
+	para "plein d'ARENES"
+	line "#MON, hein?"
+	done
+else
 	text "Don't tell me,"
 	line "you visit lots of"
 
 	para "#mon Gyms,"
 	line "right?"
 	done
+endc
 
 .SeenText:
+if DEF(_LOCALE_FR)
+	text "Mes #MON et moi"
+	line "on nage,"
+
+	para "mais on se bat"
+	line "aussi!"
+	done
+else
 	text "My #mon and I"
 	line "swim together,"
 
 	para "but we also"
 	line "battle!"
 	done
+endc
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "J'aimerais être"
+	line "comme toi."
+	done
+else
 	text "I wish I were as"
 	line "strong as you."
 	done
+endc
 
 GenericTrainerSwimmermArmand:
 	generictrainer SWIMMERM, ARMAND, EVENT_BEAT_SWIMMERM_ARMAND, .SeenText, .BeatenText
 
+if DEF(_LOCALE_FR)
+	text "La fille sur la"
+	line "plage…"
+	cont "Sa musique est"
+	cont "bien, mais…"
+
+	para "elle distrait"
+	line "les #MON!"
+	done
+else
 	text "That gal on the"
 	line "shore… Her music"
 	cont "is good, but she's"
@@ -183,41 +238,86 @@ GenericTrainerSwimmermArmand:
 	para "distracting the"
 	line "#mon!"
 	done
+endc
 
 .SeenText:
+if DEF(_LOCALE_FR)
+	text "Pff. La guitariste"
+	line "sur la plage,"
+
+	para "elle peut baisser"
+	line "un peu?"
+	done
+else
 	text "Ugh. Would that"
 	line "Guitarist on the"
 
 	para "shore keep it"
 	line "down?"
 	done
+endc
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "La guitare m'a"
+	line "déconcentré!"
+	done
+else
 	text "The guitar put me"
 	line "off my stride!"
 	done
+endc
 
 GenericTrainerBeautyBridget:
 	generictrainer BEAUTY, BRIDGET, EVENT_BEAT_BEAUTY_BRIDGET, .SeenText, .BeatenText
 
+if DEF(_LOCALE_FR)
+	text "Je trouve la vue"
+	line "magnifique."
+	cont "Tu es d'accord?"
+	done
+else
 	text "I think the view"
 	line "here is beautiful."
 	cont "Don't you agree?"
 	done
+endc
 
 .SeenText:
+if DEF(_LOCALE_FR)
+	text "Hé! Tu me caches"
+	line "la vue!"
+	done
+else
 	text "Hey! You're block-"
 	line "ing my view!"
 	done
+endc
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "Je voulais juste"
+	line "profiter de la"
+	cont "vue…"
+	done
+else
 	text "I was just trying"
 	line "to enjoy the view…"
 	done
+endc
 
 GenericTrainerBeautyVeronica:
 	generictrainer BEAUTY, VERONICA, EVENT_BEAT_BEAUTY_VERONICA, .SeenText, .BeatenText
 
+if DEF(_LOCALE_FR)
+	text "Traite-moi mal et"
+	line "va te faire voir!"
+
+	para "Voilà pourquoi je"
+	line "je suis célib'."
+	line "…Haha!"
+	done
+else
 	text "Treat me mean and"
 	line "I'll tell you where"
 	cont "to go!"
@@ -225,24 +325,51 @@ GenericTrainerBeautyVeronica:
 	para "Must be why I'm"
 	line "single. …Haha!"
 	done
+endc
 
 .SeenText:
+if DEF(_LOCALE_FR)
+	text "Je sors peu,"
+	line "mais quand je sors"
+
+	para "c'est l'endroit"
+	line "parfait."
+	done
+else
 	text "I don't date much,"
 	line "but when I do,"
 
 	para "Cerulean Cape is"
 	line "the perfect spot."
 	done
+endc
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "Les traiter mal,"
+	line "ça marche, non?"
+	done
+else
 	text "Treat 'em mean,"
 	line "keep 'em keen,"
 	cont "right?"
 	done
+endc
 
 GenericTrainerGentlemanCamus:
 	generictrainer GENTLEMAN, CAMUS, EVENT_BEAT_GENTLEMAN_CAMUS, .SeenText, .BeatenText
 
+if DEF(_LOCALE_FR)
+	text "J'étais un dres-"
+	line "seur talentueux,"
+
+	para "mais je ne suis"
+	line "plus qu'un vieux."
+
+	para "Profite tant que"
+	line "tu es jeune."
+	done
+else
 	text "I was once a ta-"
 	line "lented trainer,"
 
@@ -252,21 +379,43 @@ GenericTrainerGentlemanCamus:
 	para "Enjoy it while"
 	line "you're still young."
 	done
+endc
 
 .SeenText:
+if DEF(_LOCALE_FR)
+	text "Te voir rappelle"
+	line "ma jeunesse"
+	cont "folle."
+	done
+else
 	text "Seeing you reminds"
 	line "me of my own wild"
 	cont "youth."
 	done
+endc
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "Quel combat"
+	line "sauvage!"
+	done
+else
 	text "What a wild"
 	line "battle!"
 	done
+endc
 
 GenericTrainerGentlemanGeoffrey:
 	generictrainer GENTLEMAN, GEOFFREY, EVENT_BEAT_GENTLEMAN_GEOFFREY, .SeenText, .BeatenText
 
+if DEF(_LOCALE_FR)
+	text "Un changement vaut"
+	line "un repos."
+
+	para "Je me sens si"
+	line "rafraîchi!"
+	done
+else
 	text "Sometimes a change"
 	line "is as good as a"
 	cont "rest."
@@ -274,36 +423,69 @@ GenericTrainerGentlemanGeoffrey:
 	para "I feel so refresh-"
 	line "ed!"
 	done
+endc
 
 .SeenText:
+if DEF(_LOCALE_FR)
+	text "Je voulais"
+	line "changer,"
+	line "alors je me suis"
+	cont "mis aux #MON!"
+	done
+else
 	text "I wanted a change,"
 	line "so I got into"
 	cont "#mon!"
 	done
+endc
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "Malgré mon âge,"
+	line "je débute encore."
+	done
+else
 	text "Despite my age, I'm"
 	line "still a beginner."
 	done
+endc
 
 GenericTrainerGuitaristfMorgan:
 	generictrainer GUITARISTF, MORGAN, EVENT_BEAT_GUITARISTF_MORGAN, .SeenText, .BeatenText
 
+if DEF(_LOCALE_FR)
+	text "Les falaises font"
+	line "un son parfait!"
+	done
+else
 	text "The echoing cliffs"
 	line "make the Cape a"
 	cont "perfect sound-"
 	cont "board!"
 	done
+endc
 
 .SeenText:
+if DEF(_LOCALE_FR)
+	text "Ecoute cette"
+	line "réverb'!"
+	done
+else
 	text "Listen to that"
 	line "reverb!"
 	done
+endc
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "Quel combat"
+	line "rock'n roll!"
+	done
+else
 	text "What a rockin'"
 	line "battle!"
 	done
+endc
 
 TrainerLadyJessica:
 	trainer LADY, JESSICA, EVENT_BEAT_LADY_JESSICA, .SeenText, .BeatenText, 0, .Script
@@ -323,24 +505,56 @@ TrainerLadyJessica:
 	waitendtext
 
 .SeenText:
+if DEF(_LOCALE_FR)
+	text "Ah! Toi!"
+	line "Un combat,"
+	cont "ça te dit?"
+	done
+else
 	text "Ah! You there!"
 	line "Care to battle"
 	cont "with me?"
 	done
+endc
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "Oh non! Ma robe"
+	line "est trempée!"
+	done
+else
 	text "Oh no! I got my"
 	line "dress all wet!"
 	done
+endc
 
 .AfterText1:
+if DEF(_LOCALE_FR)
+	text "Je vais acheter"
+	line "un meilleur #MON…"
+	cont "………………"
+	cont "Et une nouvelle"
+	cont "robe…"
+	done
+else
 	text "I'll have to buy a"
 	line "better #mon…"
 	cont "………………"
 	cont "And a new dress…"
 	done
+endc
 
 .AfterText2:
+if DEF(_LOCALE_FR)
+	text "Pourquoi tu es"
+	line "encore là?"
+
+	para "Arrête de me"
+	line "regarder!"
+	cont "………………"
+	cont "Cinglé!"
+	done
+else
 	text "Why are you still"
 	line "here?"
 
@@ -349,6 +563,7 @@ TrainerLadyJessica:
 	cont "………………"
 	cont "Creep!"
 	done
+endc
 
 GenericTrainerFisherLeroy:
 	generictrainer FISHER, LEROY, EVENT_BEAT_FISHER_LEROY, .SeenText, .BeatenText
@@ -361,6 +576,14 @@ GenericTrainerFisherLeroy:
 	done
 
 .SeenText:
+if DEF(_LOCALE_FR)
+	text "J'attrape toujours"
+	line "le même #MON. Bon"
+	line "allez… Un petit"
+	line "combat pour me"
+	line "changer les idées."
+	done
+else
 	text "I keep catching"
 	line "the same #mon…"
 
@@ -368,11 +591,18 @@ GenericTrainerFisherLeroy:
 	line "will turn things"
 	cont "around for me."
 	done
+endc
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "Tout cloche pour"
+	line "moi…"
+	done
+else
 	text "Nothing ever goes"
 	line "right for me now…"
 	done
+endc
 
 Route25MistysDateLeavesMovement2:
 	run_step_down
@@ -408,6 +638,30 @@ Route25MistyLeavesMovement:
 	step_end
 
 Route25MistyDateText:
+if DEF(_LOCALE_FR)
+	text "ONDINE: Raaaah!"
+	line "Pourquoi tu viens"
+	line "nous embêter, toi?"
+	line "Tu sais comment ça"
+	line "s'appelle un type"
+	line "comme toi? Un"
+	line "lourd! T'entends?"
+	line "Un gros lourd! …"
+	line "…Oh? C'est des"
+	line "BADGES que tu as?"
+	line "C'est les BADGES"
+	line "de JOHTO? Si t'en"
+	line "as huit, c'est que"
+	line "t'es plutôt fort."
+	line "Très bien. Viens à"
+	line "l'ARENE d'AZURIA."
+	line "Je suis ravie de"
+	line "te combattre. Moi"
+	line "c'est ONDINE, la"
+	line "CHAMPIONNE de"
+	line "l'ARENE d'AZURIA."
+	done
+else
 	text "Misty: Aww! Why"
 	line "did you have to"
 
@@ -440,11 +694,18 @@ Route25MistyDateText:
 	line "Gym Leader in"
 	cont "Cerulean."
 	done
+endc
 
 BillsHouseSignText:
+if DEF(_LOCALE_FR)
+	text "VILLA MAISON DE"
+	line "LEO"
+	done
+else
 	text "Sea Cottage"
 	line "Bill's House"
 	done
+endc
 
 CeruleanCapeSailboatText:
 	text "It's a sailboat"

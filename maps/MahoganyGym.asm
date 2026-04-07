@@ -76,42 +76,87 @@ MahoganyGymPryceScript:
 GenericTrainerSkierRoxanne:
 	generictrainer SKIER, ROXANNE, EVENT_BEAT_SKIER_ROXANNE, SkierRoxanneSeenText, SkierRoxanneBeatenText
 
+if DEF(_LOCALE_FR)
+	text "Si tu ne patines"
+	line "pas avec précision"
+	line "tu n'iras pas bien"
+	line "loin dans cette"
+	line "ARENE."
+	done
+else
 	text "If you don't skate"
 	line "with precision,"
 
 	para "you won't get far"
 	line "in this Gym."
 	done
+endc
 
 GenericTrainerSkierClarissa:
 	generictrainer SKIER, CLARISSA, EVENT_BEAT_SKIER_CLARISSA, SkierClarissaSeenText, SkierClarissaBeatenText
 
+if DEF(_LOCALE_FR)
+	text "Je n'aurais pas dû"
+	line "me vanter…"
+	done
+else
 	text "I shouldn't have"
 	line "been bragging"
 	cont "about my skiing…"
 	done
+endc
 
 GenericTrainerBoarderRonald:
 	generictrainer BOARDER, RONALD, EVENT_BEAT_BOARDER_RONALD, BoarderRonaldSeenText, BoarderRonaldBeatenText
 
+if DEF(_LOCALE_FR)
+	text "Je crois qu'il"
+	line "existe une capa-"
+	line "cité que les #-"
+	line "MON peuvent utili-"
+	line "ser même en étant"
+	line "gelés."
+	done
+else
 	text "I think there's a"
 	line "move a #mon"
 
 	para "can use while it's"
 	line "frozen."
 	done
+endc
 
 GenericTrainerBoarderBrad:
 	generictrainer BOARDER, BRAD, EVENT_BEAT_BOARDER_BRAD, BoarderBradSeenText, BoarderBradBeatenText
 
+if DEF(_LOCALE_FR)
+	text "Cette ARENE est"
+	line "superbe. J'adore"
+	line "surfer avec mes"
+	line "#MON!"
+	done
+else
 	text "This Gym is great."
 	line "I love boarding"
 	cont "with my #mon!"
 	done
+endc
 
 GenericTrainerBoarderDouglas:
 	generictrainer BOARDER, DOUGLAS, EVENT_BEAT_BOARDER_DOUGLAS, BoarderDouglasSeenText, BoarderDouglasBeatenText
 
+if DEF(_LOCALE_FR)
+	text "Le secret de la"
+	line "force de FREDO… Il"
+	line "médite derrière"
+	line "une cascade tous"
+	line "les jours pour"
+	line "accroî- tre sa"
+	line "force et"
+	line "développer son"
+	line "esprit."
+	done
+else
 	text "The secret behind"
 	line "Pryce's power…"
 
@@ -121,6 +166,7 @@ GenericTrainerBoarderDouglas:
 	para "to strengthen his"
 	line "mind and body."
 	done
+endc
 
 MahoganyGymGuyScript:
 	checkevent EVENT_BEAT_PRYCE
@@ -140,6 +186,29 @@ MahoganyGymStatue:
 	jumpstd gymstatue3
 
 PryceText_Intro:
+if DEF(_LOCALE_FR)
+	text "Les #MON ont"
+	line "beaucoup d'aven-"
+	line "tures au cours de"
+	line "leur vie, comme"
+	line "nous. Moi aussi,"
+	line "j'ai beaucoup"
+	line "souffert dans ma"
+	line "vie. Comme je suis"
+	line "plus vieux que"
+	line "toi, laisse-moi"
+	line "t'expliquer… Je"
+	line "suis avec les #MON"
+	line "depuis bien avant"
+	line "ta naissance. Je"
+	line "ne perds pas"
+	line "facilement. Moi,"
+	line "FREDO, le dresseur"
+	line "du froid, je vais"
+	line "te montrer ma"
+	line "puissance!"
+	done
+else
 	text "#mon have many"
 	line "experiences in"
 
@@ -169,8 +238,21 @@ PryceText_Intro:
 	para "shall demonstrate"
 	line "my power!"
 	done
+endc
 
 PryceText_Impressed:
+if DEF(_LOCALE_FR)
+	text "Ah, je suis très"
+	line "impressionné par"
+	line "ta prouesse. Avec"
+	line "un tempé- rament"
+	line "comme le tien, tu"
+	line "surmon- teras tous"
+	line "les obstacles de"
+	line "la vie. Tu mérites"
+	line "ce BADGE!"
+	done
+else
 	text "Ah, I am impressed"
 	line "by your prowess."
 
@@ -183,6 +265,7 @@ PryceText_Impressed:
 	para "You are worthy of"
 	line "this Badge!"
 	done
+endc
 
 PryceText_GlacierBadgeSpeech:
 	text "That Badge will"
@@ -196,6 +279,19 @@ PryceText_GlacierBadgeSpeech:
 	done
 
 PryceText_CherishYourPokemon:
+if DEF(_LOCALE_FR)
+	text "Lorsque la glace"
+	line "et la neige"
+	line "fondent, le"
+	line "printemps arrive."
+	line "Toi et tes #- MON"
+	line "serez ensemble"
+	line "pendant des"
+	line "années. Profitez"
+	line "bien de ces"
+	line "instants!"
+	done
+else
 	text "When the ice and"
 	line "snow melt, spring"
 	cont "arrives."
@@ -209,19 +305,43 @@ PryceText_CherishYourPokemon:
 	para "Cherish your time"
 	line "together!"
 	done
+endc
 
 BoarderRonaldSeenText:
+if DEF(_LOCALE_FR)
+	text "Je vais geler tes"
+	line "#MON et tu ne"
+	line "pourras plus rien"
+	line "faire!"
+	done
+else
 	text "I'll freeze your"
 	line "#mon, so you"
 	cont "can't do a thing!"
 	done
+endc
 
 BoarderRonaldBeatenText:
+if DEF(_LOCALE_FR)
+	text "Saperlipopette! Je"
+	line "n'ai rien pu"
+	line "faire."
+	done
+else
 	text "Darn. I couldn't"
 	line "do a thing."
 	done
+endc
 
 BoarderBradSeenText:
+if DEF(_LOCALE_FR)
+	text "Cette ARENE a le"
+	line "sol glissant."
+	line "C'est délire, pas"
+	line "vrai? Mais… Fini"
+	line "de jouer!"
+	done
+else
 	text "This Gym has a"
 	line "slippery floor."
 
@@ -232,46 +352,108 @@ BoarderBradSeenText:
 	line "not playing games"
 	cont "here!"
 	done
+endc
 
 BoarderBradBeatenText:
+if DEF(_LOCALE_FR)
+	text "Tu vois à quel"
+	line "point on est"
+	line "sérieux ici?"
+	done
+else
 	text "Do you see how"
 	line "serious we are?"
 	done
+endc
 
 BoarderDouglasSeenText:
+if DEF(_LOCALE_FR)
+	text "Je connais le"
+	line "secret de FREDO."
+	done
+else
 	text "I know Pryce's"
 	line "secret."
 	done
+endc
 
 BoarderDouglasBeatenText:
+if DEF(_LOCALE_FR)
+	text "OK. Je vais te le"
+	line "dire."
+	done
+else
 	text "OK. I'll tell you"
 	line "Pryce's secret."
 	done
+endc
 
 SkierRoxanneSeenText:
+if DEF(_LOCALE_FR)
+	text "Pour vaincre"
+	line "FREDO, notre"
+	line "CHAMPION d'ARENE,"
+	line "tu dois penser"
+	line "avant de patiner."
+	done
+else
 	text "To get to Pryce,"
 	line "our Gym Leader,"
 
 	para "you need to think"
 	line "before you skate."
 	done
+endc
 
 SkierRoxanneBeatenText:
+if DEF(_LOCALE_FR)
+	text "Enfin, moi j'te"
+	line "bats en ski!"
+	done
+else
 	text "I wouldn't lose to"
 	line "you in skiing!"
 	done
+endc
 
 SkierClarissaSeenText:
+if DEF(_LOCALE_FR)
+	text "Sors de mon"
+	line "slalom!"
+	done
+else
 	text "Check out my"
 	line "parallel turn!"
 	done
+endc
 
 SkierClarissaBeatenText:
+if DEF(_LOCALE_FR)
+	text "Non! Tu m'as fait"
+	line "déraper!"
+	done
+else
 	text "No! You made me"
 	line "wipe out!"
 	done
+endc
 
 MahoganyGymGuyText:
+if DEF(_LOCALE_FR)
+	text "FREDO est un vété-"
+	line "ran qui entraîne"
+	line "des #MON depuis 50"
+	line "ans. Il prétend"
+	line "être bon pour"
+	line "geler ses"
+	line "adversaires avec"
+	line "des attaques de"
+	line "glace. Tu devrais"
+	line "le faire fondre"
+	line "avec ton ambition"
+	line "brûlante!"
+	done
+else
 	text "Pryce is a veteran"
 	line "who has trained"
 
@@ -290,8 +472,20 @@ MahoganyGymGuyText:
 	para "with your burning"
 	line "ambition!"
 	done
+endc
 
 MahoganyGymGuyWinText:
+if DEF(_LOCALE_FR)
+	text "FREDO, c'est quel-"
+	line "qu'un, mais toi"
+	line "t'es pas mauvais"
+	line "non plus! C'était"
+	line "un combat chaud"
+	line "qui a soudé"
+	line "l'écart entre deux"
+	line "générations!"
+	done
+else
 	text "Pryce is some-"
 	line "thing, but you're"
 	cont "something else!"
@@ -302,3 +496,4 @@ MahoganyGymGuyWinText:
 	para "bridged the gen-"
 	line "eration gap!"
 	done
+endc

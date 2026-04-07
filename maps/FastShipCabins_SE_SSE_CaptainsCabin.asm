@@ -121,60 +121,111 @@ SSAquaFoundGranddaughter:
 GenericTrainerPokefanmColin:
 	generictrainer POKEFANM, COLIN, EVENT_BEAT_POKEFANM_COLIN, PokefanmColinSeenText, PokefanmColinBeatenText
 
+if DEF(_LOCALE_FR)
+	text "Tu voyages seul?"
+	line "Et ta maman elle"
+	line "s'inquiète pas?"
+	done
+else
 	text "You're traveling"
 	line "all alone?"
 
 	para "Isn't your mom"
 	line "worried?"
 	done
+endc
 
 GenericTrainerTwinsMegandpeg1:
 	generictrainer TWINS, MEGANDPEG1, EVENT_BEAT_TWINS_MEG_AND_PEG, TwinsMegandpeg1SeenText, TwinsMegandpeg1BeatenText
 
+if DEF(_LOCALE_FR)
+	text "On est des filles!"
+	line "Pas des bébés!"
+	line "Compris?"
+	done
+else
 	text "Baby is a rude"
 	line "name to call us"
 	cont "girls!"
 	done
+endc
 
 GenericTrainerTwinsMegandpeg2:
 	generictrainer TWINS, MEGANDPEG2, EVENT_BEAT_TWINS_MEG_AND_PEG, TwinsMegandpeg2SeenText, TwinsMegandpeg2BeatenText
 
+if DEF(_LOCALE_FR)
+	text "Les enfants sont"
+	line "plus malins que"
+	line "les adultes!"
+	done
+else
 	text "Sometimes, kids"
 	line "are smarter than"
 	cont "grown-ups!"
 	done
+endc
 
 GenericTrainerPsychicRodney:
 	generictrainer PSYCHIC_T, RODNEY, EVENT_BEAT_PSYCHIC_RODNEY, PsychicRodneySeenText, PsychicRodneyBeatenText
 
+if DEF(_LOCALE_FR)
+	text "Je sais: tu peux"
+	line "écouter la radio"
+	line "de JOHTO sur le"
+	line "BATEAU EXPRESS."
+	done
+else
 	text "I get it. You can"
 	line "hear Johto's radio"
 	cont "on the Fast Ship."
 	done
+endc
 
 GenericTrainerPokefanmJeremy:
 	generictrainer POKEFANM, JEREMY, EVENT_BEAT_POKEFANM_JEREMY, PokefanmJeremySeenText, PokefanmJeremyBeatenText
 
+if DEF(_LOCALE_FR)
+	text "Je dois aller au"
+	line "SALON #MON et les"
+	line "toiletter!"
+	done
+else
 	text "I must go to the"
 	line "#mon Salon and"
 	cont "fix them up nice!"
 	done
+endc
 
 GenericTrainerPokefanfGeorgia:
 	generictrainer POKEFANF, GEORGIA, EVENT_BEAT_POKEFANF_GEORGIA, PokefanfGeorgiaSeenText, PokefanfGeorgiaBeatenText
 
+if DEF(_LOCALE_FR)
+	text "Ah oui! Je dois"
+	line "aller chercher mon"
+	line "#MON à la PENSION!"
+	done
+else
 	text "Oh, yes! I have to"
 	line "get my #mon out"
 	cont "of Day-Care!"
 	done
+endc
 
 GenericTrainerSupernerdShawn:
 	generictrainer SUPER_NERD, SHAWN, EVENT_BEAT_SUPER_NERD_SHAWN, SupernerdShawnSeenText, SupernerdShawnBeatenText
 
+if DEF(_LOCALE_FR)
+	text "Il faut utiliser"
+	line "les bonnes BALLS"
+	line "en fonction de la"
+	line "situation."
+	done
+else
 	text "You should use the"
 	line "right Balls to fit"
 	cont "the situation."
 	done
+endc
 
 SSAquaCaptainsCabinWarpsToGrandpasCabinMovement:
 	run_step_right
@@ -193,6 +244,14 @@ SSAquaGranddaughterEntersCabinMovement:
 	step_end
 
 SSAquaCaptainExhaustingText:
+if DEF(_LOCALE_FR)
+	text "Fouiii! Merci"
+	line "d'être venu."
+	line "S'occuper de cette"
+	line "petite fille est"
+	line "crevant."
+	done
+else
 	text "Whew! Thanks for"
 	line "coming along."
 
@@ -200,8 +259,15 @@ SSAquaCaptainExhaustingText:
 	line "tle girl amused"
 	cont "was exhausting."
 	done
+endc
 
 SSAquaCaptainHowDoYouLikeText:
+if DEF(_LOCALE_FR)
+	text "Tu aimes bien"
+	line "l'AQUARIA? Il vole"
+	line "sur les vagues…"
+	done
+else
 	text "How do you like"
 	line "S.S.Aqua's ride?"
 
@@ -209,8 +275,20 @@ SSAquaCaptainHowDoYouLikeText:
 	line "skates across the"
 	cont "waves."
 	done
+endc
 
 SSAquaCantFindGranddaughterText:
+if DEF(_LOCALE_FR)
+	text "Oh, bonjour… Je ne"
+	line "trouve tou- jours"
+	line "pas ma"
+	line "petite-fille. Elle"
+	line "peut être assez"
+	line "soûlante, j'espère"
+	line "qu'elle n'embête"
+	line "personne."
+	done
+else
 	text "Oh, hello…"
 
 	para "I still can't find"
@@ -225,8 +303,18 @@ SSAquaCantFindGranddaughterText:
 	para "be bugging some-"
 	line "one. I'm worried…"
 	done
+endc
 
 SSAquaEntertainedGranddaughterText:
+if DEF(_LOCALE_FR)
+	text "<PLAYER>? On m'a"
+	line "dit que tu t'étais"
+	line "occupé de ma"
+	line "petite-fille. Je"
+	line "tiens à t'en"
+	line "remercier."
+	done
+else
 	text "<PLAYER>, was it?"
 	line "I heard you enter-"
 	cont "tained my grand-"
@@ -235,26 +323,56 @@ SSAquaEntertainedGranddaughterText:
 	para "I want to thank"
 	line "you for that."
 	done
+endc
 
 SSAquaGrandpaHaveThisText:
+if DEF(_LOCALE_FR)
+	text "Je tiens à ce que"
+	line "tu acceptes ceci!"
+	done
+else
 	text "I know! I'd like"
 	line "you to have this!"
 	done
+endc
 
 SSAquaGrandpaTravellingText:
+if DEF(_LOCALE_FR)
+	text "Nous voyageons"
+	line "autour du monde."
+	done
+else
 	text "We're traveling"
 	line "around the world."
 	done
+endc
 
 SSAquaGranddaughterCaptainPlayWithMeText:
+if DEF(_LOCALE_FR)
+	text "Hé CAPITAINE! Tu"
+	line "joues avec moi?"
+	line "Vazy steuplait!"
+	line "Vazy m'sieur!"
+	done
+else
 	text "Captain, play with"
 	line "me, please?"
 
 	para "I'm bored! I want"
 	line "to play more!"
 	done
+endc
 
 SSAquaGranddaughterHasToFindGrandpaText:
+if DEF(_LOCALE_FR)
+	text "Hé! Tu joues avec"
+	line "moi? Allez! …Oh!"
+	line "Pépé s'inquiète"
+	line "pour moi? Je dois"
+	line "y aller! Je dois"
+	line "trouver mon pépé!"
+	done
+else
 	text "Hi! Will you play"
 	line "with me?"
 
@@ -268,96 +386,204 @@ SSAquaGranddaughterHasToFindGrandpaText:
 	para "I have to go find"
 	line "Grandpa!"
 	done
+endc
 
 SSAquaGranddaughterWasPlayingText:
+if DEF(_LOCALE_FR)
+	text "Me voilà pépé! Je"
+	line "jouais avec le"
+	line "CAPITAINE et cette"
+	line "fille!"
+	done
+else
 	text "Grandpa, here I"
 	line "am! I was playing"
 
 	para "with the Captain"
 	line "and this big kid!"
 	done
+endc
 
 SSAquaGranddaughterHadFunText:
+if DEF(_LOCALE_FR)
+	text "Je me suis super"
+	line "amusée!"
+	done
+else
 	text "I had lots of fun"
 	line "playing!"
 	done
+endc
 
 PokefanmColinSeenText:
+if DEF(_LOCALE_FR)
+	text "Toi! Veux-tu te"
+	line "battre avec moi?"
+	done
+else
 	text "Hey, kid! Want to"
 	line "battle with me?"
 	done
+endc
 
 PokefanmColinBeatenText:
+if DEF(_LOCALE_FR)
+	text "Qu'il est fort!"
+	done
+else
 	text "You're strong!"
 	done
+endc
 
 TwinsMegandpeg1SeenText:
+if DEF(_LOCALE_FR)
+	text "Tu me prends pour"
+	line "un bébé? Ouiiiin!"
+	done
+else
 	text "You think I'm a"
 	line "baby?"
 	cont "That's not fair!"
 	done
+endc
 
 TwinsMegandpeg1BeatenText:
+if DEF(_LOCALE_FR)
+	text "Oh! Perdu!"
+	done
+else
 	text "Oh! We lost!"
 	done
+endc
 
 TwinsMegandpeg2SeenText:
+if DEF(_LOCALE_FR)
+	text "On n'est pas des"
+	line "bébés mais des"
+	line "belles dames!"
+	done
+else
 	text "I'm not a baby!"
 
 	para "That's not nice to"
 	line "say to a lady!"
 	done
+endc
 
 TwinsMegandpeg2BeatenText:
+if DEF(_LOCALE_FR)
+	text "Oh! Perdu!"
+	done
+else
 	text "Oh! We lost!"
 	done
+endc
 
 PsychicRodneySeenText:
+if DEF(_LOCALE_FR)
+	text "Silence! Mon cer-"
+	line "veau capte un"
+	line "signal radio!"
+	done
+else
 	text "Ssh! My brain is"
 	line "picking up radio"
 	cont "signals!"
 	done
+endc
 
 PsychicRodneyBeatenText:
+if DEF(_LOCALE_FR)
+	text "… J'entends"
+	line "quelque chose!"
+	done
+else
 	text "…I hear some-"
 	line "thing!"
 	done
+endc
 
 PokefanmJeremySeenText:
+if DEF(_LOCALE_FR)
+	text "Qu'en penses-tu?"
+	line "Mes #MON sont"
+	line "beaux, non?"
+	done
+else
 	text "What do you think?"
 	line "My #mon are"
 	cont "beautiful, yes?"
 	done
+endc
 
 PokefanmJeremyBeatenText:
+if DEF(_LOCALE_FR)
+	text "Oh, non! Mes beaux"
+	line "#MON!"
+	done
+else
 	text "Oh, no! My beauti-"
 	line "ful #mon!"
 	done
+endc
 
 PokefanfGeorgiaSeenText:
+if DEF(_LOCALE_FR)
+	text "Je vais faire mes"
+	line "courses au GRAND"
+	line "MAGASIN et puis…"
+	done
+else
 	text "I'm going to shop"
 	line "at the Dept.Store"
 	cont "and then…"
 	done
+endc
 
 PokefanfGeorgiaBeatenText:
+if DEF(_LOCALE_FR)
+	text "Qu'est-ce que je"
+	line "devais faire?"
+	done
+else
 	text "What was I going"
 	line "to do?"
 	done
+endc
 
 SupernerdShawnSeenText:
+if DEF(_LOCALE_FR)
+	text "Quels types de #"
+	line "BALLS as-tu sur"
+	line "toi?"
+	done
+else
 	text "What kinds of #"
 	line "Balls do you have"
 	cont "with you?"
 	done
+endc
 
 SupernerdShawnBeatenText:
+if DEF(_LOCALE_FR)
+	text "Attends! Stop!"
+	line "Pitié!"
+	done
+else
 	text "Wait! Stop! Don't!"
 	line "Please!"
 	done
+endc
 
 SSAquaHasArrivedVermilionText:
+if DEF(_LOCALE_FR)
+	text "Le BATEAU EXPRESS"
+	line "AQUARIA est arrivé"
+	line "à CARMIN SUR MER."
+	done
+else
 	text "Fast Ship S.S.Aqua"
 	line "has arrived in"
 	cont "Vermilion City."
 	done
+endc

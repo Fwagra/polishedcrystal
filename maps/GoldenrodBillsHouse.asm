@@ -277,12 +277,19 @@ BillsGrandpa:
 .WrongPokemon:
 	jumpthisopenedtext
 
+if DEF(_LOCALE_FR)
+	text "Hmm? Ce n'est pas"
+	line "le #MON dont on"
+	line "m'a parlé."
+	done
+else
 	text "Hm?"
 
 	para "That's not the"
 	line "#mon that I was"
 	cont "told about."
 	done
+endc
 
 BillsMom:
 	checkevent EVENT_NEVER_MET_BILL
@@ -313,6 +320,16 @@ BillsSister:
 .Refused:
 	jumpthisopenedtext
 
+if DEF(_LOCALE_FR)
+	text "Mon frère a créé"
+	line "un système de"
+	line "stockage pour les"
+	line "#MON par PC."
+	line "J'allais te donner"
+	line "le numéro de télé-"
+	line "phone de LEO…"
+	done
+else
 	text "My brother made"
 	line "the PC #mon"
 	cont "storage system."
@@ -321,8 +338,19 @@ BillsSister:
 	line "give you Bill's"
 	cont "number…"
 	done
+endc
 
 BillsGrandpaIntroText:
+if DEF(_LOCALE_FR)
+	text "Tu connais LEO?"
+	line "C'est mon"
+	line "petit-fils. Il est"
+	line "à JOHTO. Il"
+	line "s'occupe de PC."
+	line "Alors moi je m'oc-"
+	line "cupe de la maison."
+	done
+else
 	text "Hm? You know Bill?"
 	line "He's my grandson."
 
@@ -332,22 +360,42 @@ BillsGrandpaIntroText:
 	para "with PCs, so I'm"
 	line "house-sitting."
 	done
+endc
 
 BillsGrandpaAskToSeeMonText:
+if DEF(_LOCALE_FR)
+	text "Si tu as ce #-"
+	line "MON, peux-tu me le"
+	line "montrer?"
+	done
+else
 	text "If you have that"
 	line "#mon, may I see"
 	cont "it, please?"
 	done
+endc
 
 BillsGrandpaExcitedToSeeText:
+if DEF(_LOCALE_FR)
+	text "Tu vas me le mon-"
+	line "trer? Cool!"
+	done
+else
 	text "You will show me?"
 	line "How good of you!"
 	done
+endc
 
 BillsGrandpaYouDontHaveItTextText:
+if DEF(_LOCALE_FR)
+	text "Tu ne l'as pas?"
+	line "Dommage…"
+	done
+else
 	text "You don't have it?"
 	line "That's too bad…"
 	done
+endc
 
 BillsGrandpaShownPokemonText:
 	text "Ah, so that is"
@@ -361,18 +409,41 @@ BillsGrandpaShownPokemonText:
 	done
 
 BillsGrandpaTokenOfAppreciationText:
+if DEF(_LOCALE_FR)
+	text "Toi t'es gentil!"
+	line "Voilà une petite"
+	line "récompense."
+	done
+else
 	text "Thanks!"
 
 	para "This is a token of"
 	line "my appreciation."
 	done
+endc
 
 BillsGrandpaComeAgainText:
+if DEF(_LOCALE_FR)
+	text "Rends-moi visite"
+	line "des fois."
+	done
+else
 	text "Come visit again"
 	line "sometime."
 	done
+endc
 
 BillsGrandpaShownAllThePokemonText:
+if DEF(_LOCALE_FR)
+	text "Merci de me mon-"
+	line "trer autant de"
+	line "#MON tout mimi."
+	line "C'est vraiment"
+	line "très amusant. Ma"
+	line "vie est belle"
+	line "grâce à toi."
+	done
+else
 	text "Thanks for showing"
 	line "me so many cute"
 	cont "#mon."
@@ -383,8 +454,17 @@ BillsGrandpaShownAllThePokemonText:
 	para "I've lived such a"
 	line "long life."
 	done
+endc
 
 BillsGrandpaSnubbullText:
+if DEF(_LOCALE_FR)
+	text "Mon petit-fils m'a"
+	line "parlé d'un"
+
+	para "petit chien rose"
+	line "à pois bleus."
+	done
+else
 	text "My grandson Bill"
 	line "told me about a"
 
@@ -392,8 +472,20 @@ BillsGrandpaSnubbullText:
 	line "#mon with blue"
 	cont "polka dots."
 	done
+endc
 
 BillsGrandpaTogepiText:
+if DEF(_LOCALE_FR)
+	text "Connais-tu un #MON"
+	line "avec une coquille"
+
+	para "aux triangles"
+	line "rouges et bleus?"
+
+	para "On dit que c'est"
+	line "un porte-bonheur."
+	done
+else
 	text "Do you know of a"
 	line "#mon that has a"
 
@@ -405,8 +497,22 @@ BillsGrandpaTogepiText:
 	line "be a symbol of"
 	cont "good luck."
 	done
+endc
 
 BillsGrandpaMurkrowText:
+if DEF(_LOCALE_FR)
+	text "Connais-tu un"
+	line "#MON Oiseau"
+
+	para "au bec jaune tordu"
+	line "et plumage noir?"
+
+	para "On dit qu'il"
+	line "apparaît la nuit."
+
+	para "J'veux le voir."
+	done
+else
 	text "Do you know of a"
 	line "bird #mon that"
 
@@ -420,8 +526,17 @@ BillsGrandpaMurkrowText:
 	para "I would quite"
 	line "like to see it."
 	done
+endc
 
 BillsGrandpaOddishText:
+if DEF(_LOCALE_FR)
+	text "Mon petit-fils m'a"
+	line "parlé d'un #- MON"
+	line "vert et rond avec"
+	line "des feuilles sur"
+	line "sa tête."
+	done
+else
 	text "Ah, my grandson"
 	line "mentioned a round,"
 
@@ -429,24 +544,56 @@ BillsGrandpaOddishText:
 	line "has leaves growing"
 	cont "on its head."
 	done
+endc
 
 BillsGrandpaJigglypuffText:
+if DEF(_LOCALE_FR)
+	text "Mon petit-fils m'a"
+	line "parlé d'un #MON"
+
+	para "rose à la voix"
+	line "hypnotique."
+	done
+else
 	text "Bill told me about"
 	line "a pink #mon"
 
 	para "with a hypnotic"
 	line "singing voice."
 	done
+endc
 
 BillsGrandpaBellsproutText:
+if DEF(_LOCALE_FR)
+	text "Mon petit-fils m'a"
+	line "parlé d'un #MON"
+
+	para "vert qui marche"
+	line "sur ses racines."
+	done
+else
 	text "My grandson Bill"
 	line "mentioned a green"
 
 	para "#mon that walks"
 	line "on its roots."
 	done
+endc
 
 BillsGrandpaStaryuText:
+if DEF(_LOCALE_FR)
+	text "Connais-tu un #MON"
+	line "marin avec une"
+	line "sphère rouge dans"
+	line "le corps? Tu sais…"
+	line "Celui qui est en"
+	line "forme d'étoile? On"
+	line "dit qu'il appa-"
+	line "raît la nuit."
+	line "J'aimerais tant le"
+	line "voir."
+	done
+else
 	text "Do you know of a"
 	line "sea #mon that"
 
@@ -463,8 +610,17 @@ BillsGrandpaStaryuText:
 	para "I would surely"
 	line "like to see it."
 	done
+endc
 
 BillsGrandpaGrowlitheText:
+if DEF(_LOCALE_FR)
+	text "LEO m'a parlé d'un"
+	line "#MON très loyal"
+	line "envers son dres-"
+	line "seur. On dit qu'il"
+	line "HURLE très bien."
+	done
+else
 	text "Bill told me about"
 	line "a #mon that is"
 
@@ -474,8 +630,20 @@ BillsGrandpaGrowlitheText:
 	para "It's supposed to"
 	line "Roar well."
 	done
+endc
 
 BillsGrandpaPichuText:
+if DEF(_LOCALE_FR)
+	text "Tu connais ce #MON"
+	line "super populaire?"
+	line "Ce #MON qui a un"
+	line "corps jaune et des"
+	line "joues rouges…"
+	line "J'aimerais tant le"
+	line "voir avant qu'il"
+	line "n'évolue."
+	done
+else
 	text "Do you know that"
 	line "hugely popular"
 	cont "#mon?"
@@ -490,8 +658,22 @@ BillsGrandpaPichuText:
 	para "like before it"
 	line "evolves."
 	done
+endc
 
 BillsMomText_BeforeEcruteak:
+if DEF(_LOCALE_FR)
+	text "Tu collectionnes"
+	line "les #MON? Mon fils"
+	line "LEO est un expert."
+	line "Il est allé au"
+	line "CENTRE #MON de"
+	line "ROSALIA. Mon mari"
+	line "en re- vanche est"
+	line "au CASINO… Ne"
+	line "cherche pas à"
+	line "comprendre…"
+	done
+else
 	text "Oh, you collect"
 	line "#mon? My son"
 	cont "Bill is an expert."
@@ -508,8 +690,16 @@ BillsMomText_BeforeEcruteak:
 	para "Corner without"
 	line "being called…"
 	done
+endc
 
 BillsMomText_AfterEcruteak:
+if DEF(_LOCALE_FR)
+	text "Mon tendre époux"
+	line "était jadis un"
+	line "#MANIAC. LEO doit"
+	line "tenir de lui."
+	done
+else
 	text "My husband was"
 	line "once known as a"
 
@@ -525,29 +715,62 @@ BillsMomText_AfterEcruteak:
 	para "just goofs off"
 	line "all day long."
 	done
+endc
 
 BillsSisterUsefulNumberText:
+if DEF(_LOCALE_FR)
+	text "Es-tu un dresseur?"
+	line "J'ai un numéro de"
+	line "téléphone utile"
+	line "pour toi."
+	done
+else
 	text "Are you a trainer?"
 
 	para "I've got a useful"
 	line "phone number for"
 	cont "you."
 	done
+endc
 
 RecordedBillsNumberText:
+if DEF(_LOCALE_FR)
+	text "<PLAYER>"
+	line "enregistre le"
+	line "numéro de télé-"
+	line "phone de LEO."
+	done
+else
 	text "<PLAYER> recorded"
 	line "Bill's number."
 	done
+endc
 
 BillsSisterPhoneFullText:
+if DEF(_LOCALE_FR)
+	text "Mais tu ne peux"
+	line "plus enregistrer"
+	line "de numéros!"
+	done
+else
 	text "You can't record"
 	line "any more numbers."
 	done
+endc
 
 BillsSisterStorageSystemText:
+if DEF(_LOCALE_FR)
+	text "Mon grand frère"
+	line "LEO a fait un"
+	line "super système de"
+	line "stockage de #- MON"
+	line "par PC."
+	done
+else
 	text "My big brother"
 	line "Bill made the PC"
 
 	para "#mon storage"
 	line "system."
 	done
+endc

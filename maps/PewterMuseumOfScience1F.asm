@@ -206,6 +206,10 @@ Museum1FReceptionistScript:
 	ifequalfwd LEFT, .Sneak
 	jumpthistextfaceplayer
 
+if DEF(_LOCALE_FR)
+	text "Bienvenue!"
+	done
+else
 	text "Welcome!"
 
 	para "Thanks to a gene-"
@@ -217,13 +221,20 @@ Museum1FReceptionistScript:
 
 	para "Please go ahead."
 	done
+endc
 
 .Sneak:
 	jumpthistextfaceplayer
 
+if DEF(_LOCALE_FR)
+	text "Pas d'entrée"
+	line "par derrière!"
+	done
+else
 	text "You can't sneak"
 	line "in the back way!"
 	done
+endc
 
 KabutopsFossilSignpostScript:
 	reanchormap
@@ -232,12 +243,22 @@ KabutopsFossilSignpostScript:
 	closepokepic
 	jumpthistext
 
+if DEF(_LOCALE_FR)
+	text "Fossile de"
+	line "KABUTOPS"
+	cont "(DOME)"
+
+	para "Un #MON rare"
+	line "et primitif."
+	done
+else
 	text "Kabutops Fossil"
 	line "(Dome)"
 
 	para "A primitive and"
 	line "rare #mon."
 	done
+endc
 
 OmastarFossilSignpostScript:
 	reanchormap
@@ -246,12 +267,22 @@ OmastarFossilSignpostScript:
 	closepokepic
 	jumpthistext
 
+if DEF(_LOCALE_FR)
+	text "Fossile de"
+	line "OMASTAR"
+	cont "(HELIX)"
+
+	para "Un #MON rare"
+	line "et primitif."
+	done
+else
 	text "Omastar Fossil"
 	line "(Helix)"
 
 	para "A primitive and"
 	line "rare #mon."
 	done
+endc
 
 AerodactylFossilSignpostScript:
 	reanchormap
@@ -260,13 +291,33 @@ AerodactylFossilSignpostScript:
 	closepokepic
 	jumpthistext
 
+if DEF(_LOCALE_FR)
+	text "Fossile de"
+	line "PTERA"
+
+	para "Un #MON rare"
+	line "et primitif."
+	done
+else
 	text "Aerodactyl Fossil"
 
 	para "A primitive and"
 	line "rare #mon."
 	done
+endc
 
 Museum1FScientistText:
+if DEF(_LOCALE_FR)
+	text "Nous exposons"
+	line "trois fossiles"
+
+	para "de #MON rares"
+	line "et préhistoriques."
+
+	para "J'ai aidé à les"
+	line "assembler!"
+	done
+else
 	text "We are proud of"
 	line "three fossils of"
 
@@ -276,8 +327,20 @@ Museum1FScientistText:
 	para "I helped assemble"
 	line "them!"
 	done
+endc
 
 Museum1FFossilScientistText:
+if DEF(_LOCALE_FR)
+	text "Tu sais qu'on peut"
+	line "extraire des"
+
+	para "#MON de fossiles?"
+
+	para "Si tu en as"
+	line "besoin, je m'en"
+	cont "occupe!"
+	done
+else
 	text "Did you know that"
 	line "you can extract"
 
@@ -288,14 +351,35 @@ Museum1FFossilScientistText:
 	line "to, let me take"
 	cont "care of it!"
 	done
+endc
 
 Museum1FGrampsText:
+if DEF(_LOCALE_FR)
+	text "Quel fossile"
+	line "magnifique!"
+	done
+else
 	text "That is one"
 	line "magnificent"
 	cont "fossil!"
 	done
+endc
 
 Museum1FYoungsterText:
+if DEF(_LOCALE_FR)
+	text "J'adore deux"
+	line "endroits!"
+
+	para "Les Ruines"
+	line "d'Alph à Johto…"
+
+	para "Et le Musée de"
+	line "Argenta!"
+
+	para "Je sens l'histoire"
+	line "dans les deux."
+	done
+else
 	text "There are two"
 	line "places that I"
 	cont "love!"
@@ -310,8 +394,24 @@ Museum1FYoungsterText:
 	line "history from both"
 	cont "of them."
 	done
+endc
 
 Museum1FBookshelfSignpostText:
+if DEF(_LOCALE_FR)
+	text "Des livres épais"
+	line "et lus!"
+
+	para "Manuel d'archéo-"
+	line "logie, #MON"
+
+	para "perdus, ancêtres"
+	line "des #MON,"
+
+	para "Etudier le"
+	line "terrain de"
+	cont "Kanto…"
+	done
+else
 	text "Thick and well-"
 	line "read books!"
 
@@ -323,49 +423,100 @@ Museum1FBookshelfSignpostText:
 	line "Loamy Layer of"
 	cont "Kanto…"
 	done
+endc
 
 AskHelixFossilText:
+if DEF(_LOCALE_FR)
+	text "Ressusciter le"
+	line "Fossile Helix?"
+	done
+else
 	text "Do you want to"
 	line "resurrect the"
 	cont "Helix Fossil?"
 	done
+endc
 
 AskDomeFossilText:
+if DEF(_LOCALE_FR)
+	text "Ressusciter le"
+	line "Fossile Dôme?"
+	done
+else
 	text "Do you want to"
 	line "resurrect the"
 	cont "Dome Fossil?"
 	done
+endc
 
 AskOldAmberText:
+if DEF(_LOCALE_FR)
+	text "Ressusciter le"
+	line "Vieil Ambre?"
+	done
+else
 	text "Do you want to"
 	line "resurrect the"
 	cont "Old Amber?"
 	done
+endc
 
 NoFossilsText:
+if DEF(_LOCALE_FR)
+	text "Hep! Tu n'as"
+	line "aucun fossile."
+	done
+else
 	text "Hey! You don't"
 	line "have any fossils."
 	done
+endc
 
 MaybeLaterText:
+if DEF(_LOCALE_FR)
+	text "Reviens si tu"
+	line "changes d'avis."
+	done
+else
 	text "Just talk to me"
 	line "if you change"
 	cont "your mind."
 	done
+endc
 
 ResurrectingPokemonText:
+if DEF(_LOCALE_FR)
+	text "OK! Je ressus-"
+	line "cite le #MON!"
+	done
+else
 	text "OK! I'll resurrect"
 	line "the #mon!"
 	done
+endc
 
 NoRoomForFossilPokemonText:
+if DEF(_LOCALE_FR)
+	text "Hep! Tu n'as plus"
+	line "de place!"
+
+	para "Et ta BOITE est"
+	line "pleine aussi!"
+	done
+else
 	text "Hey! You can't"
 	line "carry another"
 	cont "#mon, and your"
 	cont "Box is full, too!"
 	done
+endc
 
 TakeGoodCareOfItText:
+if DEF(_LOCALE_FR)
+	text "Prends-en soin!"
+	done
+else
 	text "Take good care"
 	line "of it!"
 	done
+endc

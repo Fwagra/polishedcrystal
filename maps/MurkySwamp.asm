@@ -73,6 +73,26 @@ MurkySwampCherylScript:
 	end
 
 .ChallengeText:
+if DEF(_LOCALE_FR)
+	text "Bonjour, je"
+	line "m'appelle Cheryl."
+	line "Et toi…?"
+
+	para "Donc, tu"
+	line "t'appelles"
+	line "<PLAYER>."
+
+	para "Ravie de te"
+	line "rencontrer."
+
+	para "Les fantômes"
+	line "du marais me"
+	cont "font peur, alors…"
+
+	para "Un combat pour"
+	line "les chasser?"
+	done
+else
 	text "Hello, my name's"
 	line "Cheryl."
 	cont "And you are…?"
@@ -90,21 +110,45 @@ MurkySwampCherylScript:
 	para "about a battle to"
 	line "ward them off?"
 	done
+endc
 
 .YesText:
+if DEF(_LOCALE_FR)
+	text "Attention: mes"
+	line "#MON peuvent"
+	cont "être"
+	line "très remuants."
+	done
+else
 	text "I should warn you,"
 	line "my #mon can be"
 	cont "quite rambunc-"
 	cont "tious."
 	done
+endc
 
 .NoText:
+if DEF(_LOCALE_FR)
+	text "Oh, mais mes"
+	line "#MON voulaient"
+	cont "se battre…"
+	done
+else
 	text "Oh, but my #mon"
 	line "were itching for"
 	cont "a battle…"
 	done
+endc
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "Trouver le bon"
+	line "équilibre,"
+	line "attaque/défense…"
+	line "Ce n'est pas"
+	line "facile."
+	done
+else
 	text "Striking the right"
 	line "balance of offense"
 	cont "and defense…"
@@ -112,8 +156,27 @@ MurkySwampCherylScript:
 	para "It's not easy"
 	line "to do."
 	done
+endc
 
 .ItemText:
+if DEF(_LOCALE_FR)
+	text "Merci,"
+	line "<PLAYER>!"
+
+	para "Je peux traverser"
+	line "ce marais"
+	cont "sereine."
+
+	para "Ca me rappelle"
+	line "une forêt loin-"
+	cont "taine…"
+
+	para "Tiens, pour te"
+	line "remercier."
+
+	para "Accepte-le!"
+	done
+else
 	text "Thank you,"
 	line "<PLAYER>!"
 
@@ -130,8 +193,22 @@ MurkySwampCherylScript:
 
 	para "Please accept it!"
 	done
+endc
 
 .GoodbyeText:
+if DEF(_LOCALE_FR)
+	text "Je vais à la"
+	line "Tour de Combat"
+	cont "près d'Olivine."
+
+	para "Tu connais?"
+
+	para "On s'y reverra"
+	line "peut-être!"
+
+	para "A bientôt!"
+	done
+else
 	text "I'm heading to the"
 	line "Battle Tower near"
 	cont "Olivine City."
@@ -144,6 +221,7 @@ MurkySwampCherylScript:
 
 	para "Bye for now!"
 	done
+endc
 
 MurkySwampNurseBeatriceScript:
 	faceplayer
@@ -167,29 +245,58 @@ MurkySwampNurseBeatriceScript:
 	special RestartMapMusic
 	jumpthistext
 
+if DEF(_LOCALE_FR)
+	text "Tout va mieux!"
+	done
+else
 	text "All better now!"
 	done
+endc
 
 .SeenText:
+if DEF(_LOCALE_FR)
+	text "Je suis une"
+	line "Infirmière!"
+
+	para "Bats-moi et je"
+	line "soigne tes #MON!"
+	done
+else
 	text "I'm a Nurse!"
 
 	line "Defeat me and I'll"
 	cont "heal your #mon!"
 	done
+endc
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "Mais d'abord je"
+	line "soigne mes"
+	cont "#MON…"
+	done
+else
 	text "But first I need"
 	line "to heal my own"
 	cont "#mon…"
 	done
+endc
 
 .AfterText:
+if DEF(_LOCALE_FR)
+	text "Soigner les #MON--"
+
+	para "c'est pour ça"
+	line "que je suis là!"
+	done
+else
 	text "Making #mon"
 	line "feel better--"
 
 	para "that's why I"
 	line "came here!"
 	done
+endc
 
 MurkySwampBloodmoonUrsaluna:
 	faceplayer
@@ -215,56 +322,126 @@ MurkySwampBloodmoonUrsaluna:
 	end
 
 BloodmoonUrsalunaText:
+if DEF(_LOCALE_FR)
+	text "Yaaah!"
+	done
+else
 	text "Wa-gaaah!"
 	done
+endc
 
 GenericTrainerBug_catcherOscar:
 	generictrainer BUG_CATCHER, OSCAR, EVENT_BEAT_BUG_CATCHER_OSCAR, .SeenText, .BeatenText
 
+if DEF(_LOCALE_FR)
+	text "Je suis venu"
+	line "chercher des"
+	cont "insectes!"
+
+	para "Personne m'avait"
+	line "prévenu pour"
+	cont "les fantômes!"
+	done
+else
 	text "I came here to"
 	line "find bugs!"
 
 	para "Nobody warned me"
 	line "about ghosts!"
 	done
+endc
 
 .SeenText:
+if DEF(_LOCALE_FR)
+	text "U-un fantôme!"
+	done
+else
 	text "G-g-g-ghost!"
 	done
+endc
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "Sortez-moi d'ici!"
+	done
+else
 	text "Get me outta here!"
 	done
+endc
 
 GenericTrainerHex_maniacMatilda:
 	generictrainer HEX_MANIAC, MATILDA, EVENT_BEAT_HEX_MANIAC_MATILDA, .SeenText, .BeatenText
 
+if DEF(_LOCALE_FR)
+	text "Je marche entre"
+	line "les arbres,"
+
+	para "pour perdre la"
+	line "tête et trouver"
+	cont "mon âme."
+	done
+else
 	text "So off into the"
 	line "trees I stroll,"
 
 	para "to lose my mind"
 	line "and find my soul."
 	done
+endc
 
 .SeenText:
+if DEF(_LOCALE_FR)
+	text "Dans l'ombre,"
+	line "vaste et pro-"
+	cont "fonde, je t'offre"
+	cont "un sommeil"
+	cont "éternel."
+	done
+else
 	text "Within the dark-"
 	line "ness, vast and"
 	cont "deep, I offer you"
 	cont "eternal sleep."
 	done
+endc
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "Gnihihihihi!"
+	line "Forces occultes!"
+	line "Ténèbres… Pâté de"
+	line "foie!"
+	done
+else
 	text "Fufufufu…"
 	done
+endc
 
 GenericTrainerFirebreatherOleg:
 	generictrainer FIREBREATHER, OLEG, EVENT_BEAT_FIREBREATHER_OLEG, .SeenText, .BeatenText
 
+if DEF(_LOCALE_FR)
+	text "Sans feu, il fait"
+	line "froid et sombre…"
+	done
+else
 	text "It's cold and dark"
 	line "without a fire…"
 	done
+endc
 
 .SeenText:
+if DEF(_LOCALE_FR)
+	text "Je veux allumer"
+	line "un feu… mais si"
+
+	para "le gaz du marais"
+	line "s'enflamme, ça"
+	cont "explose?"
+
+	para "Trop risqué!"
+	done
+else
 	text "I want to light a"
 	line "fire… but would it"
 
@@ -273,14 +450,32 @@ GenericTrainerFirebreatherOleg:
 
 	para "It's too risky!"
 	done
+endc
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "J'ai risqué et"
+	line "j'ai perdu!"
+	done
+else
 	text "I risked and lost!"
 	done
+endc
 
 GenericTrainerLassAbigail:
 	generictrainer LASS, ABIGAIL, EVENT_BEAT_LASS_ABIGAIL, .SeenText, .BeatenText
 
+if DEF(_LOCALE_FR)
+	text "On dit qu'une"
+	line "étrange ORBE"
+	cont "rouge apparaît,"
+
+	para "brillant comme"
+	line "une lune de sang."
+
+	para "Ca fait peur."
+	done
+else
 	text "The rumor is that"
 	line "a strange red orb"
 	cont "can be seen,"
@@ -290,20 +485,46 @@ GenericTrainerLassAbigail:
 
 	para "That sounds scary."
 	done
+endc
 
 .SeenText:
+if DEF(_LOCALE_FR)
+	text "Les gens ont peur"
+	line "d'aller au fond"
+	cont "du marais."
+	done
+else
 	text "People are scared"
 	line "to go deep into"
 	cont "the swamp."
 	done
+endc
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "Aaaah!"
+	done
+else
 	text "Eek!"
 	done
+endc
 
 GenericTrainerPokemaniacEnzo:
 	generictrainer POKEMANIAC, ENZO, EVENT_BEAT_POKEMANIAC_ENZO, .SeenText, .BeatenText
 
+if DEF(_LOCALE_FR)
+	text "Je ne pense pas"
+	line "que FANTOMINUS"
+
+	para "puisse faire une"
+	line "lueur rouge"
+
+	para "comme celle que"
+	line "j'ai vue."
+
+	para "C'était quoi?"
+	done
+else
 	text "I don't think"
 	line "Gastly can make"
 
@@ -312,21 +533,51 @@ GenericTrainerPokemaniacEnzo:
 
 	para "What could it be?"
 	done
+endc
 
 .SeenText
+if DEF(_LOCALE_FR)
+	text "J'ai vu une lueur"
+	line "rouge bizarre"
+
+	para "dans les arbres"
+	line "en cherchant des"
+	cont "#MON rares!"
+	done
+else
 	text "I saw a weird red"
 	line "light in the trees"
 
 	para "while looking for"
 	line "rare #mon!"
 	done
+endc
 
 .BeatenText
+if DEF(_LOCALE_FR)
+	text "Tu n'as rien"
+	line "à craindre."
+	done
+else
 	text "You have nothing"
 	line "to be afraid of."
 	done
+endc
 
 MurkySwampPokemaniacText:
+if DEF(_LOCALE_FR)
+	text "Si près de la"
+	line "côte, le sol"
+
+	para "se gorge d'eau."
+
+	para "Mais les #MON"
+	line "rares d'ici"
+
+	para "valent l'explo-"
+	line "ration!"
+	done
+else
 	text "This close to the"
 	line "coast, the land"
 
@@ -339,3 +590,4 @@ MurkySwampPokemaniacText:
 	para "worth exploring"
 	line "anyway!"
 	done
+endc

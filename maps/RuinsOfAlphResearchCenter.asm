@@ -232,11 +232,26 @@ RuinsOfAlphResearchCenterModifiedDexText:
 	done
 
 RuinsOfAlphResearchCenterDexUpgradedText:
+if DEF(_LOCALE_FR)
+	text "Le #DEX de"
+	line "<PLAYER> est"
+	line "amélioré!"
+	done
+else
 	text "<PLAYER>'s #dex"
 	line "was upgraded."
 	done
+endc
 
 RuinsOfAlphResearchCenterScientist3Text:
+if DEF(_LOCALE_FR)
+	text "Les ZARBI capturés"
+	line "seront tous enre-"
+	line "gistrés."
+	line "Découvrez-les"
+	line "tous!"
+	done
+else
 	text "The Unown you"
 	line "catch will all be"
 	cont "recorded."
@@ -251,6 +266,7 @@ RuinsOfAlphResearchCenterScientist3Text:
 	line "thing nice if you"
 	cont "find all of them."
 	done
+endc
 
 RuinsOfAlphResearchCenterScientist3_PrinterAvailable:
 	text "You caught all the"
@@ -303,6 +319,15 @@ RuinsofAlphResearchCenterScientistConclusionText:
 	done
 
 RuinsOfAlphResearchCenterScientist1Text:
+if DEF(_LOCALE_FR)
+	text "Les RUINES sont"
+	line "vieilles d'environ"
+	line "1500 ans. Personne"
+	line "ne sait qui a pu"
+	line "les construire… Ni"
+	line "dans quel but."
+	done
+else
 	text "The ruins are"
 	line "about 1,500 years"
 	cont "old."
@@ -311,14 +336,32 @@ RuinsOfAlphResearchCenterScientist1Text:
 	line "why they were"
 	cont "built--or by whom."
 	done
+endc
 
 RuinsOfAlphResearchCenterScientist1Text_GotUnownDex:
+if DEF(_LOCALE_FR)
+	text "Combien y a-t-il"
+	line "de #MON diffé-"
+	line "rents dans les"
+	line "RUINES?"
+	done
+else
 	text "I wonder how many"
 	line "kinds of #mon"
 	cont "are in the ruins?"
 	done
+endc
 
 RuinsOfAlphResearchCenterScientist1Text_UnownAppeared:
+if DEF(_LOCALE_FR)
+	text "Des #MON sont"
+	line "apparus dans les"
+	line "RUINES? Bah ça"
+	line "pour une nouvelle!"
+	line "Il faut tout de"
+	line "suite y aller!"
+	done
+else
 	text "#mon appeared"
 	line "in the ruins?"
 
@@ -328,8 +371,20 @@ RuinsOfAlphResearchCenterScientist1Text_UnownAppeared:
 	para "We'll need to"
 	line "investigate this."
 	done
+endc
 
 RuinsOfAlphResearchCenterScientist1Text_GotAllUnown:
+if DEF(_LOCALE_FR)
+	text "Grâce à ton aide,"
+	line "notre enquête sur"
+	line "les RUINES donne"
+	line "enfin des"
+	line "résultats. Les"
+	line "RUINES sem- blent"
+	line "être un re- fuge"
+	line "pour les #MON."
+	done
+else
 	text "Our investigation,"
 	line "with your help, is"
 
@@ -342,8 +397,18 @@ RuinsOfAlphResearchCenterScientist1Text_GotAllUnown:
 	para "as a habitat for"
 	line "#mon."
 	done
+endc
 
 RuinsOfAlphResearchCenterScientist2Text:
+if DEF(_LOCALE_FR)
+	text "Il y a des figures"
+	line "étranges sur les"
+	line "murs des RUINES."
+	line "Elles doivent être"
+	line "la clé du mystère"
+	line "des RUINES."
+	done
+else
 	text "There are odd pat-"
 	line "terns drawn on the"
 
@@ -355,8 +420,20 @@ RuinsOfAlphResearchCenterScientist2Text:
 	cont "ing the mystery"
 	cont "of the ruins."
 	done
+endc
 
 RuinsOfAlphResearchCenterScientist2Text_UnownAppeared:
+if DEF(_LOCALE_FR)
+	text "Les étranges #-"
+	line "MON des RUINES?"
+	line "Ils semblent être"
+	line "proches des figu-"
+	line "res sur les murs."
+	line "Hmmm… Cela veut"
+	line "dire qu'il y en a"
+	line "un grand nombre…"
+	done
+else
 	text "The strange #-"
 	line "mon you saw in the"
 	cont "ruins?"
@@ -373,8 +450,19 @@ RuinsOfAlphResearchCenterScientist2Text_UnownAppeared:
 	line "there are many"
 	cont "kinds of them…"
 	done
+endc
 
 RuinsOfAlphResearchCenterScientist2Text_FocusedOurStudies:
+if DEF(_LOCALE_FR)
+	text "Nous pensons que"
+	line "quelque chose a"
+	line "fait apparaître"
+	line "les signes dans"
+	line "les RUINES. Nous"
+	line "nous penchons sur"
+	line "la question."
+	done
+else
 	text "We think something"
 	line "caused the cryptic"
 
@@ -384,8 +472,22 @@ RuinsOfAlphResearchCenterScientist2Text_FocusedOurStudies:
 	para "We've focused our"
 	line "studies on that."
 	done
+endc
 
 RuinsOfAlphResearchCenterScientist2Text_RadioWaves:
+if DEF(_LOCALE_FR)
+	text "D'après mes"
+	line "recherches… Les"
+	line "étranges figu- res"
+	line "sont apparues"
+	line "lorsque le CENTRE"
+	line "#COM a été"
+	line "construit. Les"
+	line "ondes radio"
+	line "doivent avoir une"
+	line "influence…"
+	done
+else
 	text "According to my"
 	line "research…"
 
@@ -401,8 +503,17 @@ RuinsOfAlphResearchCenterScientist2Text_RadioWaves:
 	para "some sort of a"
 	line "link…"
 	done
+endc
 
 RuinsOfAlphResearchCenterScientist2Text_GotAllUnown:
+if DEF(_LOCALE_FR)
+	text "Comment ces drôles"
+	line "de figures ont pu"
+	line "apparaître? C'est"
+	line "dingue! J'y"
+	line "comprends rien…"
+	done
+else
 	text "Why did those"
 	line "ancient patterns"
 
@@ -412,15 +523,30 @@ RuinsOfAlphResearchCenterScientist2Text_GotAllUnown:
 	para "The mystery"
 	line "deepens…"
 	done
+endc
 
 RuinsOfAlphResearchCenterComputerText:
+if DEF(_LOCALE_FR)
+	text "RUINES D'ALPHA"
+	line "Exploration Année"
+	line "10"
+	done
+else
 	text "Ruins of Alph"
 
 	para "Exploration"
 	line "Year 10"
 	done
+endc
 
 RuinsOfAlphResearchCenterComputerText_GotAllUnown:
+if DEF(_LOCALE_FR)
+	text "#MON Mystère Nom:"
+	line "ZARBI Un total de"
+	line "26 types"
+	line "découverts."
+	done
+else
 	text "Mystery #mon"
 	line "Name: Unown"
 
@@ -428,6 +554,7 @@ RuinsOfAlphResearchCenterComputerText_GotAllUnown:
 	text_decimal hScriptVar, 1, 2
 	line "kinds found."
 	done
+endc
 
 RuinsOfAlphResearchCenterPrinterText_DoesntWork:
 	text "It's a printer."
@@ -439,14 +566,30 @@ RuinsOfAlphResearchCenterPrinterText_DoesntWork:
 	done
 
 RuinsOfAlphResearchCenterProfSilktreePhotoText:
+if DEF(_LOCALE_FR)
+	text "C'est une photo du"
+	line "fondateur du"
+	line "CENTRE de RECHER-"
+	line "CHE: le PROF."
+	line "LASOIE."
+	done
+else
 	text "It's a photo of"
 	line "the Research"
 
 	para "Center's founder,"
 	line "Prof.Silktree."
 	done
+endc
 
 RuinsOfAlphResearchCenterAcademicBooksText:
+if DEF(_LOCALE_FR)
+	text "Il y a beaucoup de"
+	line "livres de science."
+	line "Anciennes ruines."
+	line "Antiques mystères."
+	done
+else
 	text "There are many"
 	line "academic books."
 
@@ -454,3 +597,4 @@ RuinsOfAlphResearchCenterAcademicBooksText:
 	line "Mysteries of the"
 	cont "Ancients…"
 	done
+endc

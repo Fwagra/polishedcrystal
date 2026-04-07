@@ -117,6 +117,16 @@ RocketHideoutB4FMeetLeadersScript:
 
 
 .CandelaIntro1Text:
+if DEF(_LOCALE_FR)
+	text "Candela: Je te"
+	line "dis que la force"
+	cont "brute gagne!"
+
+	para "L'entraînement"
+	line "doit être dur,"
+	cont "comme un combat!"
+	done
+else
 	text "Candela: I'm tell-"
 	line "ing you, raw power"
 	cont "wins every time!"
@@ -125,8 +135,19 @@ RocketHideoutB4FMeetLeadersScript:
 	line "tough, like a"
 	cont "battle!"
 	done
+endc
 
 .BlancheIntro1Text:
+if DEF(_LOCALE_FR)
+	text "Blanche: Sans"
+	line "stratégie, la"
+	cont "force est vaine."
+
+	para "Un bon plan fait"
+	line "gagner à chaque"
+	cont "fois."
+	done
+else
 	text "Blanche: Strength"
 	line "is pointless with-"
 	cont "out strategy."
@@ -134,8 +155,19 @@ RocketHideoutB4FMeetLeadersScript:
 	para "Smart planning"
 	line "wins, every time."
 	done
+endc
 
 .SparkIntro1Text:
+if DEF(_LOCALE_FR)
+	text "Spark: Vous"
+	line "n'y êtes pas du"
+	cont "tout!"
+
+	para "L'instinct est la"
+	line "clé… Suis ton"
+	cont "intuition!"
+	done
+else
 	text "Spark: Both of you"
 	line "are missing the"
 	cont "point!"
@@ -143,8 +175,19 @@ RocketHideoutB4FMeetLeadersScript:
 	para "Instinct is key--"
 	line "trust your gut!"
 	done
+endc
 
 .CandelaIntro2Text:
+if DEF(_LOCALE_FR)
+	text "Candela: L'ins-"
+	line "tinct? C'est au"
+	cont "pif!"
+
+	para "Les vrais"
+	line "dresseurs misent"
+	cont "sur la force!"
+	done
+else
 	text "Candela: Instinct?"
 	line "That's just guess-"
 	cont "work!"
@@ -152,8 +195,18 @@ RocketHideoutB4FMeetLeadersScript:
 	para "Real trainers rely"
 	line "on strength!"
 	done
+endc
 
 .BlancheIntro2Text:
+if DEF(_LOCALE_FR)
+	text "Blanche: Candela,"
+	line "Spark, ce n'est"
+	cont "pas le moment!"
+
+	para "Et le projet du"
+	line "Grand Arbre?"
+	done
+else
 	text "Blanche: Candela,"
 	line "Spark, this isn't"
 	cont "the time!"
@@ -162,17 +215,43 @@ RocketHideoutB4FMeetLeadersScript:
 	line "the Great Tree"
 	cont "project?"
 	done
+endc
 
 .SparkIntro2Text:
+if DEF(_LOCALE_FR)
+	text "Spark: Oui! Le"
+	line "grand cerisier--"
+	done
+else
 	text "Spark: Right! The"
 	line "big cherry tree--"
 	done
+endc
 
 .SparkIntro3Text:
+if DEF(_LOCALE_FR)
+	text "Attends, c'est"
+	line "qui, lui?"
+	done
+else
 	text "Wait, who's that?"
 	done
+endc
 
 .CandelaIntro3Text:
+if DEF(_LOCALE_FR)
+	text "Candela: Celui-là"
+	line "a l'air fort!"
+
+	para "Puisque tu es"
+	line "arrivé jusque-là,"
+	cont "bats-toi!"
+
+	para "Si tu gagnes, on"
+	line "te dira tout sur"
+	cont "notre projet!"
+	done
+else
 	text "Candela: Looks"
 	line "like this one has"
 	cont "power!"
@@ -185,6 +264,7 @@ RocketHideoutB4FMeetLeadersScript:
 	line "let you in on our"
 	cont "big project!"
 	done
+endc
 
 RocketHideoutB4FMeetLeadersScene:
 RocketHideoutB4FMetLeadersScene:
@@ -224,31 +304,71 @@ RocketHideoutB4FSparkScript:
 	jumpopenedtext .RefusedText
 
 .GreetingText:
+if DEF(_LOCALE_FR)
+	text "Spark: Hé! Prêt à"
+	line "suivre ton ins-"
+	cont "tinct en combat?"
+	done
+else
 	text "Spark: Hey! Ready"
 	line "to trust your gut?"
 	cont "In a battle?"
 	done
+endc
 
 .SeenText:
+if DEF(_LOCALE_FR)
+	text "Super! Voyons"
+	line "jusqu'où ton ins-"
+	cont "tinct te mène!"
+	done
+else
 	text "Sweet! Let's see"
 	line "how far your inst-"
 	cont "inct takes you!"
 	done
+endc
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "Wow, tu as assuré!"
+
+	para "Ton instinct ne"
+	line "t'a pas trompé!"
+	done
+else
 	text "Whoa, you totally"
 	line "nailed it!"
 
 	para "Guess your gut"
 	line "was right!"
 	done
+endc
 
 .AfterText1:
+if DEF(_LOCALE_FR)
+	text "Spark: Voilà"
+	line "l'APAT MALIN."
+	done
+else
 	text "Spark: Here's the"
 	line "Malign Lure."
 	done
+endc
 
 .AfterText2:
+if DEF(_LOCALE_FR)
+	text "L'APAT MALIN"
+	line "attire une énergie"
+	cont "audacieuse."
+
+	para "C'est ma façon de"
+	line "déclencher la"
+	cont "créativité!"
+
+	para "Utilise-le à fond!"
+	done
+else
 	text "The Malign Lure"
 	line "draws on bold"
 	cont "energy."
@@ -259,8 +379,18 @@ RocketHideoutB4FSparkScript:
 
 	para "Use it boldly!"
 	done
+endc
 
 .RefusedText:
+if DEF(_LOCALE_FR)
+	text "Oh, dommage!"
+	line "Ne laisse pas la"
+	cont "peur te freiner!"
+
+	para "Reviens quand tu"
+	line "te sentiras prêt."
+	done
+else
 	text "Aw, bummer!"
 	line "Don't let fear"
 	cont "hold you back!"
@@ -268,6 +398,7 @@ RocketHideoutB4FSparkScript:
 	para "Come back when"
 	line "you're feeling it."
 	done
+endc
 
 RocketHideoutB4FCandelaScript:
 	faceplayer
@@ -301,31 +432,72 @@ RocketHideoutB4FCandelaScript:
 	jumpopenedtext .RefusedText
 
 .GreetingText:
+if DEF(_LOCALE_FR)
+	text "Candela: Prêt à"
+	line "tester ta force?"
+	done
+else
 	text "Candela: Ready to"
 	line "test out your"
 	cont "strength?"
 	done
+endc
 
 .SeenText:
+if DEF(_LOCALE_FR)
+	text "Voilà l'esprit!"
+	line "Montre ta"
+	cont "puissance!"
+	done
+else
 	text "That's the spirit!"
 	line "Show me your"
 	cont "power!"
 	done
+endc
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "OK, tu as prouvé"
+	line "ta force aujourd'-"
+	cont "hui."
+
+	para "J'admets ma"
+	line "défaite."
+	done
+else
 	text "Alright, you've"
 	line "proven your"
 	cont "strength today."
 
 	para "I'll admit defeat."
 	done
+endc
 
 .AfterText1:
+if DEF(_LOCALE_FR)
+	text "Candela: Voilà"
+	line "l'APAT RUGUEUX."
+	done
+else
 	text "Candela: Here's the"
 	line "Harsh Lure."
 	done
+endc
 
 .AfterText2:
+if DEF(_LOCALE_FR)
+	text "Candela: L'APAT"
+	line "RUGUEUX attire une"
+	cont "puissance féroce."
+
+	para "C'est ma contri-"
+	line "bution à notre"
+	cont "projet."
+
+	para "Utilise-le bien."
+	done
+else
 	text "Candela: The Harsh"
 	line "Lure draws fierce"
 	cont "power."
@@ -336,14 +508,24 @@ RocketHideoutB4FCandelaScript:
 
 	para "Use it wisely."
 	done
+endc
 
 .RefusedText:
+if DEF(_LOCALE_FR)
+	text "Non? T'es pas prêt"
+	line "alors."
+
+	para "Reviens quand tu"
+	line "auras plus de feu!"
+	done
+else
 	text "No? Guess your"
 	line "not ready yet."
 
 	para "Come back when you"
 	line "have more fire!"
 	done
+endc
 
 RocketHideoutB4FBlancheScript:
 	faceplayer
@@ -377,32 +559,73 @@ RocketHideoutB4FBlancheScript:
 	jumpopenedtext .RefusedText
 
 .GreetingText:
+if DEF(_LOCALE_FR)
+	text "Blanche: Tu aimes"
+	line "la stratégie?"
+
+	para "On teste ta tac-"
+	line "tique?"
+	done
+else
 	text "Blanche: Do you"
 	line "value strategy?"
 
 	para "Shall we test"
 	line "your tactics?"
 	done
+endc
 
 .SeenText:
+if DEF(_LOCALE_FR)
+	text "Très bien… Voyons"
+	line "ta technique!"
+	done
+else
 	text "Very well, let's"
 	line "see your"
 	cont "technique!"
 	done
+endc
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "Un plan bien mené,"
+	line "en effet."
+
+	para "Tu m'as battue."
+	done
+else
 	text "A well-executed"
 	line "plan, indeed."
 
 	para "You've bested me."
 	done
+endc
 
 .AfterText1:
+if DEF(_LOCALE_FR)
+	text "Blanche: Voilà"
+	line "l'APAT PUISSANT."
+	done
+else
 	text "Blanche: This is"
 	line "the Potent Lure."
 	done
+endc
 
 .AfterText2:
+if DEF(_LOCALE_FR)
+	text "L'APAT PUISSANT"
+	line "amplifie la"
+	cont "précision."
+
+	para "C'est ma contri-"
+	line "bution à notre"
+	cont "succès."
+
+	para "Utilise-le bien."
+	done
+else
 	text "The Potent Lure"
 	line "amplifies its"
 	cont "precision."
@@ -413,8 +636,17 @@ RocketHideoutB4FBlancheScript:
 
 	para "Use it carefully."
 	done
+endc
 
 .RefusedText:
+if DEF(_LOCALE_FR)
+	text "Hmm… pas confiant?"
+
+	para "Reviens quand tu"
+	line "seras prêt à"
+	cont "anticiper."
+	done
+else
 	text "Hmm, not"
 	line "feeling confident?"
 
@@ -422,6 +654,7 @@ RocketHideoutB4FBlancheScript:
 	line "ready to think"
 	cont "ahead."
 	done
+endc
 
 RocketHideoutB4FYoungsterArdenScript:
 	faceplayer
@@ -446,6 +679,15 @@ RocketHideoutB4FYoungsterArdenScript:
 	end
 
 .GreetingText
+if DEF(_LOCALE_FR)
+	text "Team Valor, c'est…"
+
+	para "Attends--non!"
+
+	para "Enfin… Je crois"
+	line "que je suis perdu!"
+	done
+else
 	text "Team Valor is…"
 
 	para "Wait--no!"
@@ -453,19 +695,36 @@ RocketHideoutB4FYoungsterArdenScript:
 	para "I mean, I think"
 	line "I'm lost!"
 	done
+endc
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "C'était où,"
+	line "l'ascenseur?"
+	done
+else
 	text "Which way was"
 	line "the elevator?"
 	done
+endc
 
 .AfterText:
+if DEF(_LOCALE_FR)
+	text "Oh non, j'ai"
+	line "laissé tomber la"
+	cont "CLE ASC.!"
+
+	para "Candela va être"
+	line "furieuse!"
+	done
+else
 	text "Aww, I dropped"
 	line "the lift key!"
 
 	para "Candela is going"
 	line "to be so mad!"
 	done
+endc
 
 RocketHideoutB4FTeacherSerena:
 	trainer TEACHER_F, SERENA, EVENT_BEAT_TEACHER_SERENA, .SeenText, .AfterText, 0, .Script
@@ -496,6 +755,15 @@ RocketHideoutB4FTeacherSerena:
 	end
 
 .AfterText
+if DEF(_LOCALE_FR)
+	text "Les chefs ne sont"
+	line "là que la nuit."
+
+	para "Le jour, ils"
+	line "travaillent à"
+	cont "l'université."
+	done
+else
 	text "The leaders are"
 	line "only here at"
 	cont "night."
@@ -504,18 +772,33 @@ RocketHideoutB4FTeacherSerena:
 	line "the university"
 	cont "during the day."
 	done
+endc
 
 .SeenText:
+if DEF(_LOCALE_FR)
+	text "Voyons si tu es"
+	line "assez malin"
+
+	para "pour affronter les"
+	line "chefs!"
+	done
+else
 	text "Let me see if you"
 	line "are smart enough"
 
 	para "to take on the"
 	line "leaders!"
 	done
+endc
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "Cours terminé!"
+	done
+else
 	text "Class dismissed!"
 	done
+endc
 
 RocketHideoutB4FSuperNerdNolan:
 	trainer TEACHER_M, NOLAN, EVENT_BEAT_SUPER_NERD_NOLAN, .SeenText, .AfterText, 0, .Script
@@ -546,22 +829,45 @@ RocketHideoutB4FSuperNerdNolan:
 	end
 
 .AfterText
+if DEF(_LOCALE_FR)
+	text "Les chefs se"
+	line "disputent souvent,"
+	cont "mais ils sont"
+	cont "amis."
+	done
+else
 	text "The leaders argue"
 	line "a lot, but they"
 	cont "are good friends."
 	done
+endc
 
 .SeenText:
+if DEF(_LOCALE_FR)
+	text "Tu veux défier les"
+	line "chefs?"
+
+	para "Tu dois d'abord me"
+	line "battre!"
+	done
+else
 	text "You here to chal-"
 	line "lenge the leaders?"
 
 	para "You need to beat"
 	line "me first!"
 	done
+endc
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "Je me suis"
+	line "écroulé!"
+	done
+else
 	text "I choked!"
 	done
+endc
 
 RocketHideoutB4FDefeatedAllLeadersScript:
 	closetext
@@ -575,6 +881,64 @@ RocketHideoutB4FDefeatedAllLeadersScript:
 	end
 
 .FinalText:
+if DEF(_LOCALE_FR)
+	text "Candela: Tu es"
+	line "plus fort que je"
+	cont "ne pensais."
+
+	para "Les sprays qu'on"
+	line "t'a donnés cachent"
+	cont "plus qu'il n'y"
+	cont "paraît."
+
+	para "Blanche: Chaque"
+	line "apat contient"
+
+	para "l'essence d'un"
+	line "oiseau légendaire."
+
+	para "Ils ont été créés"
+	line "pour appeler"
+
+	para "les autres de leur"
+	line "espèce."
+
+	para "Spark: Mais ça ne"
+	line "sert qu'au bon"
+	cont "endroit."
+
+	para "C'est pour ça que"
+	line "le Grand Arbre est"
+	cont "important."
+
+	para "Candela: L'arbre"
+	line "est ancien."
+
+	para "C'est un lieu"
+	line "sacré de repos."
+
+	para "Il est lié à"
+	line "l'énergie de la"
+	cont "région."
+
+	para "Blanche: Des"
+	line "oiseaux très"
+
+	para "puissants s'y"
+	line "rassemblent depuis"
+	cont "des générations."
+
+	para "L'arbre amplifie"
+	line "l'appel des apats."
+
+	para "Spark: Alors si tu"
+	line "les utilises là-"
+	cont "bas…"
+
+	para "qui sait ce qui"
+	line "peut apparaître!"
+	done
+else
 	text "Candela: You're"
 	line "stronger than I"
 	cont "expected."
@@ -630,3 +994,4 @@ RocketHideoutB4FDefeatedAllLeadersScript:
 	para "who knows what"
 	line "might appear!"
 	done
+endc

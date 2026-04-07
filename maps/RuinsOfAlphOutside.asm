@@ -126,11 +126,18 @@ RuinsOfAlphOutsideFisherScript:
 	jumpthisopenedtext
 
 RuinsOfAlphOutsideFisherText2:
+if DEF(_LOCALE_FR)
+	text "Il y a un secret"
+	line "dans les RUINES!"
+	line "Enfin je crois…"
+	done
+else
 	text "The ruins hide a"
 	line "huge secret!"
 
 	para "…I think…"
 	done
+endc
 
 RuinsOfAlphOutsideYoungster1Script:
 	faceplayer
@@ -144,13 +151,32 @@ RuinsOfAlphOutsideYoungster2Script:
 GenericTrainerPsychicNathan:
 	generictrainer PSYCHIC_T, NATHAN, EVENT_BEAT_PSYCHIC_NATHAN, PsychicNathanSeenText, PsychicNathanBeatenText
 
+if DEF(_LOCALE_FR)
+	text "J'aime réfléchir"
+	line "ici."
+	done
+else
 	text "I like thinking"
 	line "here."
 	done
+endc
 
 GenericTrainerSuperNerdStan:
 	generictrainer SUPER_NERD, STAN, EVENT_BEAT_SUPER_NERD_STAN, SuperNerdStanSeenText, SuperNerdStanBeatenText
 
+if DEF(_LOCALE_FR)
+	text "Les RUINES sont"
+	line "vieilles d'environ"
+	line "1500 ans. Personne"
+	line "ne sait qui a pu"
+	line "les construire. On"
+	line "ne sait pas non"
+	line "plus si les sta-"
+	line "tues de #MON ont"
+	line "un sens. Alors ça…"
+	line "C'est du mystère!"
+	done
+else
 	text "The ruins are from"
 	line "about 1,500 years"
 	cont "ago."
@@ -166,6 +192,7 @@ GenericTrainerSuperNerdStan:
 	para "It's all one big"
 	line "mystery…"
 	done
+endc
 
 RuinsOfAlphOutsideScientistWalkToLabMovement:
 	step_right
@@ -212,6 +239,27 @@ RuinsofAlphScientistClimaxLeaveMovementData:
 	step_end
 
 RuinsOfAlphOutsideScientistText:
+if DEF(_LOCALE_FR)
+	text "Hm? C'est un #-"
+	line "DEX, n'est-ce pas?"
+	line "Puis-je le voir?"
+	line "Il y a tant de"
+	line "#MON… Hmm? C'est"
+	line "quoi? Quel est"
+	line "donc ce #MON? Il"
+	line "ressemble aux"
+	line "inscriptions sur"
+	line "les murs des"
+	line "RUINES. Si ces"
+	line "dessins sont des"
+	line "#MON, il doit y en"
+	line "avoir beaucoup"
+	line "d'autres. Je sais!"
+	line "Je vais améliorer"
+	line "ton #DEX…"
+	line "Suis-moi."
+	done
+else
 	text "Hm? That's a #-"
 	line "dex, isn't it?"
 	cont "May I see it?"
@@ -239,47 +287,89 @@ RuinsOfAlphOutsideScientistText:
 	line "grade your #-"
 	cont "dex. Follow me."
 	done
+endc
 
 SuperNerdStanSeenText:
+if DEF(_LOCALE_FR)
+	text "Que veux-tu?"
+	line "J'étudie, là… Me"
+	line "cherche pas!"
+	done
+else
 	text "What do you want?"
 	line "I'm studying--"
 	cont "don't disturb me!"
 	done
+endc
 
 SuperNerdStanBeatenText:
+if DEF(_LOCALE_FR)
+	text "Pardon… Le manque"
+	line "de communication"
+	line "est un tort…"
+	done
+else
 	text "Sorry…"
 	line "I'm frustrated by"
 
 	para "our lack of real"
 	line "understanding…"
 	done
+endc
 
 PsychicNathanSeenText:
+if DEF(_LOCALE_FR)
+	text "Hmmm… C'est"
+	line "bizarre ici."
+	done
+else
 	text "Hmmm… This is a"
 	line "strange place."
 	done
+endc
 
 PsychicNathanBeatenText: ; text > text
 	text "…"
 	done
 
 RuinsOfAlphOutsideMysteryChamberSignText:
+if DEF(_LOCALE_FR)
+	text "PIERRE MYSTERE"
+	line "CHAMBRE du PANNEAU"
+	done
+else
 	text "Mystery Stone"
 	line "Panel Chamber"
 	done
+endc
 
 RuinsOfAlphSignText:
+if DEF(_LOCALE_FR)
+	text "RUINES D'ALPHA"
+	line "Bienvenue"
+	done
+else
 	text "Ruins of Alph"
 	line "Visitors Welcome"
 	done
+endc
 
 RuinsOfAlphResearchCenterSignText:
+if DEF(_LOCALE_FR)
+	text "RUINES D'ALPHA"
+	line "CENTRE de"
+	line "RECHERCHE La"
+	line "référence des"
+	line "RUINES D'ALPHA"
+	done
+else
 	text "Ruins of Alph"
 	line "Research Center"
 
 	para "The Authority On"
 	line "The Ruins of Alph"
 	done
+endc
 
 RuinsOfAlphAdvancedTipsSignText:
 	text "Advanced Tips!"
@@ -305,6 +395,16 @@ MapRuinsofAlphOutsideSealedCaveSign:
 	done
 
 RuinsOfAlphOutsideFisherText1:
+if DEF(_LOCALE_FR)
+	text "En explorant les"
+	line "RUINES, nous avons"
+	line "senti une drôle de"
+	line "présence. On a eu"
+	line "peur et on a filé."
+	line "Fais gaffe. C'est"
+	line "un conseil."
+	done
+else
 	text "While exploring"
 	line "the ruins, we"
 
@@ -317,16 +417,32 @@ RuinsOfAlphOutsideFisherText1:
 	para "You should be"
 	line "careful too."
 	done
+endc
 
 RuinsOfAlphOutsideYoungster1Text:
+if DEF(_LOCALE_FR)
+	text "Il existe des"
+	line "ZARBI différents."
+	line "Nous les utilisons"
+	line "pour nos codes"
+	line "secrets."
+	done
+else
 	text "There are many"
 	line "kinds of Unown, so"
 
 	para "we use them for"
 	line "our secret codes."
 	done
+endc
 
 RuinsOfAlphOutsideYoungster2Text:
+if DEF(_LOCALE_FR)
+	text "D… R… O… I… T…"
+	line "Hmmm… Quoi? Je"
+	line "décode le message!"
+	done
+else
 	text "A… H… E… A… D…"
 	line "Hmm…"
 
@@ -335,6 +451,7 @@ RuinsOfAlphOutsideYoungster2Text:
 	para "I'm decoding this"
 	line "message!"
 	done
+endc
 
 RuinsofAlphScientistClimax1Text:
 	text "That sounded like"

@@ -137,8 +137,16 @@ CherrygroveBayGalarianBirdsScript:
 	done
 
 .NothingHappensText
+if DEF(_LOCALE_FR)
+	text "<PLAYER> fait"
+	line "jaillir de l'eau."
+	line "Mais rien ne se"
+	line "passe…"
+	done
+else
 	text "Nothing happened…"
 	done
+endc
 
 CherrygroveBayHikerScript:
 	faceplayer
@@ -185,8 +193,13 @@ GenericTrainerSwimmermThomas:
 	done
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "Glub…"
+	done
+else
 	text "Glub, glub, glub…"
 	done
+endc
 
 GenericTrainerSwimmerfSally:
 	generictrainer SWIMMERF, SALLY, EVENT_BEAT_SWIMMERF_SALLY, .SeenText, .BeatenText
@@ -248,6 +261,14 @@ GenericTrainerHikerTony:
 	done
 
 .SeenText:
+if DEF(_LOCALE_FR)
+	text "J'ai marché des"
+	line "kilomètres juste"
+
+	para "pour voir l'oiseau"
+	line "#MON légendaire!"
+	done
+else
 	text "I hiked through"
 	line "miles of woods"
 
@@ -255,6 +276,7 @@ GenericTrainerHikerTony:
 	line "legendary bird"
 	cont "#mon!"
 	done
+endc
 
 .BeatenText:
 	text "I'm exhausted…"
@@ -279,6 +301,18 @@ CherrygroveBayFisherText:
 	done
 
 CherrygroveBayHikerText:
+if DEF(_LOCALE_FR)
+	text "Je crois pas aux"
+	line "mythes de créa-"
+	cont "tion."
+
+	para "Johto s'est formé"
+	line "sur des millions"
+
+	para "d'années par la"
+	line "force de la terre!"
+	done
+else
 	text "I don't believe in"
 	line "legendary #mon"
 	cont "creation myths."
@@ -289,32 +323,67 @@ CherrygroveBayHikerText:
 	para "years by the power"
 	line "of the earth!"
 	done
+endc
 
 Text_CherrygroveBayTutorEarthPower:
+if DEF(_LOCALE_FR)
+	text "Je peux enseigner"
+	line "TELLURIFORCE"
+
+	para "à ton #MON contre"
+	line "une Feuille Arg."
+	done
+else
 	text "I can teach your"
 	line "#mon how to"
 
 	para "use Earth Power"
 	line "for a Silver Leaf."
 	done
+endc
 
 Text_CherrygroveBayTutorNoSilverLeaf:
+if DEF(_LOCALE_FR)
+	text "Tu n'as pas de"
+	line "Feuille Argent…"
+	done
+else
 	text "You don't have any"
 	line "Silver Leaves…"
 	done
+endc
 
 Text_CherrygroveBayTutorQuestion:
+if DEF(_LOCALE_FR)
+	text "Je lui enseigne"
+	line "TELLURIFORCE?"
+	done
+else
 	text "Should I teach"
 	line "your #mon"
 	cont "Earth Power?"
 	done
+endc
 
 Text_CherrygroveBayTutorRefused:
+if DEF(_LOCALE_FR)
+	text "Ne sois pas timide"
+	line "si tu veux mon"
+	line "numéro."
+	done
+else
 	text "Oh well."
 	done
+endc
 
 Text_CherrygroveBayTutorTaught:
+if DEF(_LOCALE_FR)
+	text "Ton #MON connaît"
+	line "TELLURIFORCE."
+	done
+else
 	text "Now your #mon"
 	line "knows how to use"
 	cont "Earth Power."
 	done
+endc

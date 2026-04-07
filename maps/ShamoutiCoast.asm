@@ -26,6 +26,15 @@ ShamoutiCoast_MapScriptHeader:
 GenericTrainerArtistRin:
 	generictrainer ARTIST, RIN, EVENT_BEAT_ARTIST_RIN, .SeenText, .BeatenText
 
+if DEF(_LOCALE_FR)
+	text "Les îles dégagent"
+	line "une étrange"
+	cont "puissance."
+
+	para "Je veux capter ça"
+	line "dans mon tableau."
+	done
+else
 	text "There's a strange"
 	line "sense of power"
 	cont "from the islands."
@@ -34,24 +43,51 @@ GenericTrainerArtistRin:
 	line "that in my paint-"
 	cont "ing."
 	done
+endc
 
 .SeenText:
+if DEF(_LOCALE_FR)
+	text "Je peins les trois"
+	line "îles!"
+
+	para "Ne cache pas la"
+	line "vue!"
+	done
+else
 	text "I'm painting the"
 	line "three islands!"
 
 	para "Please don't block"
 	line "my view!"
 	done
+endc
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "Je peux pas"
+	line "peindre et me"
+	cont "battre à la fois."
+	done
+else
 	text "I can't paint and"
 	line "battle at the same"
 	cont "time."
 	done
+endc
 
 GenericTrainerSwimmerfMarina:
 	generictrainer SWIMMERF, MARINA, EVENT_BEAT_SWIMMERF_MARINA, .SeenText, .BeatenText
 
+if DEF(_LOCALE_FR)
+	text "Si j'étais échouée"
+	line "sur une île,"
+
+	para "j'emmènerais…"
+
+	para "mes #MON, bien"
+	line "sûr!"
+	done
+else
 	text "If I were stran-"
 	line "ded on a desert"
 	cont "island, I'd take…"
@@ -59,8 +95,17 @@ GenericTrainerSwimmerfMarina:
 	para "my #mon, of"
 	line "course!"
 	done
+endc
 
 .SeenText:
+if DEF(_LOCALE_FR)
+	text "Si tu étais échoué"
+	line "sur une île,"
+
+	para "tu prendrais quoi,"
+	line "trois choses?"
+	done
+else
 	text "If you were stran-"
 	line "ded on a desert"
 	cont "island, what three"
@@ -68,15 +113,31 @@ GenericTrainerSwimmerfMarina:
 	para "things would you"
 	line "bring?"
 	done
+endc
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "Emportée sans"
+	line "rame!"
+	done
+else
 	text "Washed away with-"
 	line "out a paddle!"
 	done
+endc
 
 GenericTrainerFisherDallas:
 	generictrainer FISHER, DALLAS, EVENT_BEAT_FISHER_DALLAS, .SeenText, .BeatenText
 
+if DEF(_LOCALE_FR)
+	text "Où que je pêche,"
+	line "je ramène des"
+
+	para "Capsules."
+
+	para "Ca me rend dingue!"
+	done
+else
 	text "No matter where I"
 	line "fish, I just keep"
 
@@ -86,20 +147,41 @@ GenericTrainerFisherDallas:
 	para "It's driving me"
 	line "nuts!"
 	done
+endc
 
 .SeenText:
+if DEF(_LOCALE_FR)
+	text "Gah! Encore une!"
+	done
+else
 	text "Gah! Not another"
 	line "one!"
 	done
+endc
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "Hein? Oh, toi"
+	line "ça va."
+	done
+else
 	text "Huh? Oh, not you--"
 	line "you're fine."
 	done
+endc
 
 GenericTrainerSightseerfPilar:
 	generictrainer SIGHTSEERF, PILAR, EVENT_BEAT_SIGHTSEERF_PILAR, .SeenText, .BeatenText
 
+if DEF(_LOCALE_FR)
+	text "Qu'ils sont forts,"
+	line "tes #MON!"
+
+	para "Tu as dû beaucoup"
+	line "voyager pour être"
+	cont "si expérimenté."
+	done
+else
 	text "¡Qué fuertes son"
 	line "tus #mon!"
 
@@ -109,6 +191,7 @@ GenericTrainerSightseerfPilar:
 	para "para tener tanta"
 	line "experiencia."
 	done
+endc
 
 .SeenText:
 	text "¡Hola! He venido"
@@ -128,35 +211,49 @@ GenericTrainerSightseersCyandvi1:
 	generictrainer SIGHTSEERS, CYANDVI1, EVENT_BEAT_SIGHTSEERS_CY_AND_VI, .SeenText, .BeatenText
 
 ; text > text
-	text "Cy: TODO"
+	text "Cy: On voyage pour"
+	line "se retrouver."
 	done
 
 .SeenText: ; text > text
-	text "Cy: TODO"
+	text "Cy: Le monde est"
+	line "vaste, hein?"
 	done
 
 .BeatenText: ; text > text
-	text "Cy: TODO"
+	text "Cy: Oups…"
 	done
 
 GenericTrainerSightseersCyandvi2:
 	generictrainer SIGHTSEERS, CYANDVI2, EVENT_BEAT_SIGHTSEERS_CY_AND_VI, .SeenText, .BeatenText
 
 ; text > text
-	text "Vi: TODO"
+	text "Vi: Et quelle mer!"
 	done
 
 .SeenText: ; text > text
-	text "Vi: TODO"
+	text "Vi: Combattons!"
 	done
 
 .BeatenText: ; text > text
-	text "Vi: TODO"
+	text "Vi: Dommage!"
 	done
 
 GenericTrainerSwimmermAshe:
 	generictrainer SWIMMERM, ASHE, EVENT_BEAT_SWIMMERM_ASHE, .SeenText, .BeatenText
 
+if DEF(_LOCALE_FR)
+	text "Je savais pas"
+	line "nager avant."
+
+	para "Maintenant je nage"
+	line "tellement que"
+
+	para "j'oublie ce que je"
+	line "faisais avant."
+	cont "Haha!"
+	done
+else
 	text "I couldn't swim at"
 	line "all a while ago."
 
@@ -166,14 +263,27 @@ GenericTrainerSwimmermAshe:
 	para "remember what I"
 	line "did before. Haha!"
 	done
+endc
 
 .SeenText:
+if DEF(_LOCALE_FR)
+	text "Nager? Moi?"
+	line "Ouais, j'adore."
+	done
+else
 	text "Swimming? Me?"
 	line "Yeah, I dig it."
 	done
+endc
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "J'ai cette impres-"
+	line "sion de couler…"
+	done
+else
 	text "I have that sink-"
 	line "ing feeling…"
 	done
+endc
 

@@ -28,41 +28,80 @@ Route13East_MapScriptHeader:
 GenericTrainerBird_keeperPerry:
 	generictrainer BIRD_KEEPER, PERRY, EVENT_BEAT_BIRD_KEEPER_PERRY, Bird_keeperPerrySeenText, Bird_keeperPerryBeatenText
 
+if DEF(_LOCALE_FR)
+	text "Tes #MON sont très"
+	line "bien entraî- nés."
+	done
+else
 	text "Your #mon are"
 	line "remarkably well-"
 	cont "trained."
 	done
+endc
 
 Bird_keeperPerrySeenText:
+if DEF(_LOCALE_FR)
+	text "L'agilité est LA"
+	line "caractéristique"
+	line "des #MON oiseaux."
+	done
+else
 	text "Agility is the key"
 	line "attribute of bird"
 	cont "#mon."
 	done
+endc
 
 Bird_keeperPerryBeatenText:
+if DEF(_LOCALE_FR)
+	text "Ta vitesse m'a"
+	line "blousé…"
+	done
+else
 	text "You beat me with"
 	line "your speed…"
 	done
+endc
 
 GenericTrainerBird_keeperBret:
 	generictrainer BIRD_KEEPER, BRET, EVENT_BEAT_BIRD_KEEPER_BRET, Bird_keeperBretSeenText, Bird_keeperBretBeatenText
 
+if DEF(_LOCALE_FR)
+	text "Occupe-toi de tes"
+	line "#MON et ils seront"
+	line "heureux."
+	done
+else
 	text "If you groom them,"
 	line "#mon get happy."
 	done
+endc
 
 Bird_keeperBretSeenText:
+if DEF(_LOCALE_FR)
+	text "Mate donc mes bô"
+	line "#MON. Regarde leur"
+	line "joli plumage."
+	line "C'est trop cool."
+	done
+else
 	text "Check out my #-"
 	line "mon. Just look at"
 
 	para "their coloring and"
 	line "their plumage."
 	done
+endc
 
 Bird_keeperBretBeatenText:
+if DEF(_LOCALE_FR)
+	text "Naaaan! Pas glop!"
+	done
+else
 	text "Shoot!"
 	line "Not good enough!"
 	done
+endc
 
 GenericTrainerCamperTanner:
 	generictrainer CAMPER, TANNER, EVENT_BEAT_CAMPER_TANNER, .SeenText, .BeatenText
@@ -149,40 +188,79 @@ GenericTrainerCoupleTimandsue2:
 GenericTrainerPokefanmAlex:
 	generictrainer POKEFANM, ALEX, EVENT_BEAT_POKEFANM_ALEX, PokefanmAlexSeenText, PokefanmAlexBeatenText
 
+if DEF(_LOCALE_FR)
+	text "Un jour je serai"
+	line "roi! Oh que oui!"
+	line "Ha ha ha ha ha!"
+	done
+else
 	text "Doesn't everyone"
 	line "wish to someday be"
 	cont "a king?"
 	done
+endc
 
 PokefanmAlexSeenText:
+if DEF(_LOCALE_FR)
+	text "A genoux devant"
+	line "mes #MON!"
+	done
+else
 	text "Bow down before my"
 	line "regal #mon!"
 	done
+endc
 
 PokefanmAlexBeatenText:
+if DEF(_LOCALE_FR)
+	text "Comment oses-tu???"
+	line "Sacrilège!"
+	done
+else
 	text "How… How dare you"
 	line "mock royalty!"
 	done
+endc
 
 GenericTrainerPokefanmJoshua:
 	generictrainer POKEFANM, JOSHUA, EVENT_BEAT_POKEFANM_JOSHUA, PokefanmJoshuaSeenText, PokefanmJoshuaBeatenText
 
+if DEF(_LOCALE_FR)
+	text "Tu dois avoir"
+	line "beaucoup de #-"
+	line "MON, mais PIKACHU"
+	line "est le meilleur."
+	done
+else
 	text "You look like you"
 	line "have many #mon,"
 
 	para "but Pikachu is"
 	line "still the best."
 	done
+endc
 
 PokefanmJoshuaSeenText:
+if DEF(_LOCALE_FR)
+	text "Gnihihi! Tu veux"
+	line "te mesurer à mon"
+	line "gang PIKACHU?"
+	done
+else
 	text "Nihihi! Would you"
 	line "like to battle my"
 	cont "Pikachu gang?"
 	done
+endc
 
 PokefanmJoshuaBeatenText:
+if DEF(_LOCALE_FR)
+	text "PI-PIKACHU!"
+	done
+else
 	text "Pi-Pikachu!"
 	done
+endc
 
 Route13EastGrampsScript:
 	special CheckIfTrendyPhraseIsLucky
@@ -207,12 +285,19 @@ Route13EastGrampsText2:
 	done
 
 Route13TrainerTips1Text:
+if DEF(_LOCALE_FR)
+	text "ASTUCE Regardez à"
+	line "gauche de cette"
+	line "pancarte."
+	done
+else
 	text "Trainer Tips"
 
 	para "Look! Right there,"
 	line "at the left side"
 	cont "of the post."
 	done
+endc
 
 Route13TrainerTips2Text:
 	text "Trainer Tips"
@@ -229,8 +314,14 @@ Route13TrainerTips2Text:
 	done
 
 Route13SignText:
+if DEF(_LOCALE_FR)
+	text "ROUTE 13 Nord du"
+	line "PONT du SILENCE"
+	done
+else
 	text "Route 13"
 
 	para "North to Silence"
 	line "Bridge"
 	done
+endc

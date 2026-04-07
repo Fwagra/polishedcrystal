@@ -68,9 +68,23 @@ BellTowerPaintingScript:
 	closepokepic
 	jumpthistext
 
+if DEF(_LOCALE_FR)
+	text "On dit que les"
+	line "deux TOURS furent"
+	line "construites pour"
+	line "sceller l'amitié"
+	line "entre #MON et"
+	line "humains. C'était"
+	line "il y a 700 ans,"
+	line "mais l'idée reste"
+	line "la même"
+	line "aujourd'hui."
+	done
+else
 	text "    Friendship"
 	line "     and Hope"
 	done
+endc
 
 KabutoPuzzleScript:
 	checkevent EVENT_SOLVED_KABUTO_PUZZLE
@@ -130,10 +144,19 @@ EmptyDisplayText:
 	done
 
 TowerRelicText:
+if DEF(_LOCALE_FR)
+	text "Une fresque"
+	line "ancienne"
+
+	para "d'un #MON"
+	line "mystérieux."
+	done
+else
 	text "An ancient mural"
 	line "depicting a mys-"
 	cont "terious #mon."
 	done
+endc
 
 GoldenrodMuseum2FSightseerMScript:
 	checkevent EVENT_FOUGHT_SUICUNE
@@ -144,6 +167,17 @@ GoldenrodMuseum2FSightseerMScript:
 	iffalse_jumptextfaceplayer GoldenrodMuseum2FSightseerMNoPaintingText
 	jumpthistextfaceplayer
 
+if DEF(_LOCALE_FR)
+	text "Ces tableaux sont"
+	line "superbes!"
+
+	para "Un jour, j'espère"
+	line "voir mon art"
+
+	para "accroché dans un"
+	line "musée aussi."
+	done
+else
 	text "These paintings"
 	line "are beautiful!"
 
@@ -153,8 +187,23 @@ GoldenrodMuseum2FSightseerMScript:
 	para "museum for all to"
 	line "see too."
 	done
+endc
 
 GoldenrodMuseum2FSightseerMNoPaintingText:
+if DEF(_LOCALE_FR)
+	text "Oh…! SMEARGLE et"
+	line "moi sommes venus"
+
+	para "pour le grand"
+	line "opening."
+
+	para "Mais on dirait que"
+	line "c'est une rumeur…"
+
+	para "Cette galerie"
+	line "n'est pas finie!"
+	done
+else
 	text "Aww…! Smeargle and"
 	line "I came because we"
 
@@ -170,10 +219,16 @@ GoldenrodMuseum2FSightseerMNoPaintingText:
 	para "This art gallery"
 	line "isn't finished!"
 	done
+endc
 
 GoldenrodMuseum2FSmeargleText:
+if DEF(_LOCALE_FR)
+	text "SMEARGLE: Smeer!"
+	done
+else
 	text "Smeargle: Smeer!"
 	done
+endc
 
 GoldenrodMuseum2FScientistScript:
 	checkevent EVENT_SOLVED_KABUTO_PUZZLE
@@ -186,6 +241,18 @@ GoldenrodMuseum2FScientistScript:
 	iffalse_jumptextfaceplayer GoldenrodMuseum2FScientistNoArtifactsText
 	jumpthistextfaceplayer
 
+if DEF(_LOCALE_FR)
+	text "Ces reliques sont"
+	line "fascinantes!"
+
+	para "Dommage que ce"
+	line "soient des copies…"
+
+	para "J'aimerais étudier"
+	line "les vraies"
+	cont "de près."
+	done
+else
 	text "These artifacts"
 	line "are fascinating!"
 
@@ -196,8 +263,20 @@ GoldenrodMuseum2FScientistScript:
 	line "the real thing"
 	cont "up close."
 	done
+endc
 
 GoldenrodMuseum2FScientistNoArtifactsText:
+if DEF(_LOCALE_FR)
+	text "Je sais qu'il"
+	line "vient d'ouvrir,"
+	cont "mais"
+
+	para "je m'attendais à"
+	line "plus d'expos…"
+
+	para "Où est tout?"
+	done
+else
 	text "I realize this"
 	line "museum has only"
 
@@ -210,6 +289,7 @@ GoldenrodMuseum2FScientistNoArtifactsText:
 	para "Where is every-"
 	line "thing?"
 	done
+endc
 
 GoldenrodMuseum2FTeacherScript:
 	faceplayer
@@ -243,6 +323,25 @@ GoldenrodMuseum2FTutorBatonPassScript:
 	jumpopenedtext GoldenrodMuseum2FTutorTaught
 
 GoldenrodMuseum2FTutorIntroText:
+if DEF(_LOCALE_FR)
+	text "Avant la nouvelle"
+	line "TOUR RADIO,"
+
+	para "il y avait une"
+	line "vieille tour en"
+	cont "bois."
+
+	para "Cette fresque"
+	line "venait de là."
+
+	para "Ici, on préserve"
+	line "un bout de"
+	cont "l'histoire."
+
+	para "Même les #MON"
+	line "comprennent ça!"
+	done
+else
 	text "Before the con-"
 	line "struction of the"
 
@@ -269,32 +368,66 @@ GoldenrodMuseum2FTutorIntroText:
 	para "the value of"
 	line "preservation!"
 	done
+endc
 
 GoldenrodMuseum2FTutorBatonPassText:
+if DEF(_LOCALE_FR)
+	text "Je peux enseigner"
+	line "RELAIS"
+
+	para "à ton #MON contre"
+	line "une Feuille Arg."
+	done
+else
 	text "I can teach your"
 	line "#mon to use"
 
 	para "Baton Pass for one"
 	line "Silver Leaf."
 	done
+endc
 
 GoldenrodMuseum2FTutorNoSilverLeaf:
+if DEF(_LOCALE_FR)
+	text "Tu n'as pas de"
+	line "Feuille Arg…"
+	done
+else
 	text "You don't have a"
 	line "Silver Leaf!"
 	done
+endc
 
 GoldenrodMuseum2FTutorQuestion:
+if DEF(_LOCALE_FR)
+	text "Je lui enseigne"
+	line "RELAIS?"
+	done
+else
 	text "Should I teach"
 	line "your #mon"
 	cont "Baton Pass?"
 	done
+endc
 
 GoldenrodMuseum2FTutorRefused:
+if DEF(_LOCALE_FR)
+	text "Vendeur: Bon, si"
+	line "vous voulez."
+	done
+else
 	text "If you say so."
 	done
+endc
 
 GoldenrodMuseum2FTutorTaught:
+if DEF(_LOCALE_FR)
+	text "Ton #MON connaît"
+	line "RELAIS!"
+	done
+else
 	text "Now your #mon"
 	line "knows how to use"
 	cont "Baton Pass!"
 	done
+endc

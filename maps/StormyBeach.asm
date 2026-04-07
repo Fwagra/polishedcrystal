@@ -66,9 +66,14 @@ GenericTrainerBird_keeperJulian:
 	done
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "Perdu…"
+	done
+else
 	text "I lost…"
 	line "What a pity!"
 	done
+endc
 
 GenericTrainerCamperFelix:
 	generictrainer CAMPER, FELIX, EVENT_BEAT_CAMPER_FELIX, .SeenText, .BeatenText

@@ -111,18 +111,38 @@ Leaf:
 	end
 
 LeafText: ; text > text
+if DEF(_LOCALE_FR)
+	text "…Oh, c'est toi."
+	line "Je cherche un"
+	line "#MON légendaire…"
+
+	para "Mais y'a rien!"
+
+	para "Ca m'énerve!"
+
+	para "Je vais t'écraser!"
+	done
+else
 	text "…………"
 	line "…………!"
 	done
+endc
 
 LeafWinLossText: ; text > text
 	text "…!"
 	done
 
 LeafAfterText: ; text > text
+if DEF(_LOCALE_FR)
+	text "…Pff… T'as gagné."
+
+	para "Je reviendrai."
+	done
+else
 	text "…………"
 	line "…………"
 	done
+endc
 
 NavelRockRoofPanUpMovementData:
 	slow_step_up

@@ -44,105 +44,233 @@ NoisyForest_MapScriptHeader:
 GenericTrainerBug_maniacPierre:
 	generictrainer BUG_MANIAC, PIERRE, EVENT_BEAT_BUG_MANIAC_PIERRE, .SeenText, .BeatenText
 
+if DEF(_LOCALE_FR)
+	text "Bzzz… Bzzz…"
+
+	para "Ce bruit me reste"
+	line "dans la tête…"
+	done
+else
 	text "Bzzz… Bzzz…"
 
 	para "That noise is"
 	line "stuck in my head…"
 	done
+endc
 
 .SeenText:
+if DEF(_LOCALE_FR)
+	text "Mes #mon aiment"
+	line "cette forêt."
+
+	para "Ils bourdonnent"
+	line "sans arrêt ici!"
+	done
+else
 	text "My #mon love"
 	line "this forest."
 
 	para "They buzz nonstop"
 	line "here!"
 	done
+endc
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "Bzzz! J'ai perdu!"
+	done
+else
 	text "Bzzz! I lost!"
 	done
+endc
 
 GenericTrainerBug_maniacDylan:
 	generictrainer BUG_MANIAC, DYLAN, EVENT_BEAT_BUG_MANIAC_DYLAN, .SeenText, .BeatenText
 
+if DEF(_LOCALE_FR)
+	text "Il y a quelque"
+	line "chose dans le"
+
+	para "bourdonnement de"
+	line "cette forêt"
+	cont "que les insectes"
+	cont "adorent."
+	done
+else
 	text "There's something"
 	line "about the buzz of"
 
 	para "this forest that"
 	line "bugs just love."
 	done
+endc
 
 .SeenText:
+if DEF(_LOCALE_FR)
+	text "Je n'ai jamais vu"
+	line "mes insectes"
+	cont "si heureux!"
+	done
+else
 	text "I've never seen my"
 	line "bugs this happy!"
 	done
+endc
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "Oh non, ils"
+	line "etaient"
+	line "si heureux!"
+	done
+else
 	text "Aw, but they were"
 	line "so happy!"
 	done
+endc
 
 GenericTrainerGuitaristfJaclyn:
 	generictrainer GUITARISTF, JACLYN, EVENT_BEAT_GUITARISTF_JACLYN, .SeenText, .BeatenText
 
+if DEF(_LOCALE_FR)
+	text "Attends! Je n'ai"
+	line "pas fini de"
+	cont "chanter!"
+	done
+else
 	text "Wait up! I'm not"
 	line "done singing!"
 	done
+endc
 
 .SeenText:
+if DEF(_LOCALE_FR)
+	text "Laisse ma guitare"
+	line "hurler!"
+
+	para "Ecoute-moi crier!"
+	done
+else
 	text "Let my guitar"
 	line "howl!"
 
 	para "Hear me scream!"
 	done
+endc
 
 .BeatenText:
+if DEF(_LOCALE_FR)
 	text "Giyaaaah!"
 	done
+else
+	text "Giyaaaah!"
+	done
+endc
 
 GenericTrainerGuitaristmEzekiel:
 	generictrainer GUITARISTM, EZEKIEL, EVENT_BEAT_GUITARISTM_EZEKIEL, .SeenText, .BeatenText
 
+if DEF(_LOCALE_FR)
+	text "Si tu ecoutes"
+	line "bien, tu entends"
+
+	para "le rythme du"
+	line "bourdonnement"
+	cont "de la foret."
+	done
+else
 	text "If you listen"
 	line "carefully, you can"
 
 	para "hear the rhythm of"
 	line "the forest's hum."
 	done
+endc
 
 .SeenText:
+if DEF(_LOCALE_FR)
+	text "Un combat? OK."
+	line "Je suis partant."
+	done
+else
 	text "Battle? Yeah, I'm"
 	line "up for that."
 	done
+endc
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "Wow. Pas mal."
+	done
+else
 	text "Wow. Good stuff."
 	done
+endc
 
 GenericTrainerHikerLester:
 	generictrainer HIKER, LESTER, EVENT_BEAT_HIKER_LESTER, .SeenText, .BeatenText
 
+if DEF(_LOCALE_FR)
+	text "Quoi, un RANDO"
+	line "ne peut pas"
+
+	para "explorer une foret"
+	line "au lieu d'une"
+	cont "montagne?"
+
+	para "De temps en temps!"
+	done
+else
 	text "What, can't a Hiker"
 	line "explore a forest"
 
 	para "instead of a moun-"
 	line "tain now and then?"
 	done
+endc
 
 .SeenText:
+if DEF(_LOCALE_FR)
+	text "VANESSA: Ouaiis!"
+	line "On est vendredi!"
+	line "Je suis VANESSA du"
+	line "vendredi! Bonjour"
+	line "toi!"
+	done
+else
 	text "Yahoo!"
 	done
+endc
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "Gweh! Touss!"
+
+	para "A force de crier,"
+	line "je m'etouffe!"
+	done
+else
 	text "Gweh! Cough!"
 
 	para "Hollering choked"
 	line "me up!"
 	done
+endc
 
 GenericTrainerBird_keeperTrent:
 	generictrainer BIRD_KEEPER, TRENT, EVENT_BEAT_BIRD_KEEPER_TRENT, .SeenText, .BeatenText
 
+if DEF(_LOCALE_FR)
+	text "Je me leve tot"
+	line "chaque jour"
+	cont "pour entrainer"
+	cont "mes oiseaux."
+
+	para "Ce vacarme fait"
+	line "partie de"
+	cont "l'entrainement."
+	done
+else
 	text "I get up early"
 	line "every day to train"
 	cont "my birds here."
@@ -150,18 +278,40 @@ GenericTrainerBird_keeperTrent:
 	para "The din is part of"
 	line "our training."
 	done
+endc
 
 .SeenText:
+if DEF(_LOCALE_FR)
+	text "L'oiseau matinal"
+	line "attrape le ver!"
+	done
+else
 	text "The early bird"
 	line "catches the worm!"
 	done
+endc
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "On dirait que"
+	line "j'etais le ver…"
+	done
+else
 	text "Looks like I was"
 	line "the worm…"
 	done
+endc
 
 NoisyForestTeacherText:
+if DEF(_LOCALE_FR)
+	text "Je viens ici pour"
+	line "ma balade matinale"
+
+	para "J'ai meme un"
+	line "podometre pour"
+	cont "compter mes pas!"
+	done
+else
 	text "I come here for my"
 	line "morning stroll."
 
@@ -169,11 +319,18 @@ NoisyForestTeacherText:
 	line "ometer that counts"
 	cont "my steps!"
 	done
+endc
 
 NoisyForestChildText:
+if DEF(_LOCALE_FR)
+	text "Gah! Ici, c'est"
+	line "assourdissant!"
+	done
+else
 	text "Gah! This place"
 	line "is deafening!"
 	done
+endc
 
 NoisyForestPikabluScript:
 	showcrytext .PikabluText, MARILL
@@ -202,21 +359,47 @@ NoisyForestPikabluScript:
 	sjump .Leave
 
 .PikabluText:
+if DEF(_LOCALE_FR)
 	text "Marill: Rill!"
 	done
+else
+	text "Marill: Rill!"
+	done
+endc
 
 .OwnerText1:
+if DEF(_LOCALE_FR)
+	text "Merci mon petit!"
+	done
+else
 	text "You found my"
 	line "Pikablu!"
 	cont "Thank you!"
 	done
+endc
 
 .OwnerText2:
+if DEF(_LOCALE_FR)
+	text "Tiens, prends"
+	line "un petit cadeau."
+	done
+else
 	text "Let me give you a"
 	line "little something."
 	done
+endc
 
 .OwnerText3:
+if DEF(_LOCALE_FR)
+	text "Un souvenir de ton"
+	line "séjour à SHAMOUTI!"
+
+	para "C'est bizarre,"
+	line "hein?"
+
+	para "Salut, et merci!"
+	done
+else
 	text "A souvenir of your"
 	line "time on Shamouti"
 	cont "Island!"
@@ -227,8 +410,18 @@ NoisyForestPikabluScript:
 	para "Bye, and thanks"
 	line "again!"
 	done
+endc
 
 .OwnerText4:
+if DEF(_LOCALE_FR)
+	text "Oh, ton SAC est"
+	line "plein."
+
+	para "Passe me voir près"
+	line "du CENTRE #MON si"
+	cont "tu le veux."
+	done
+else
 	text "Oh, you can't carry"
 	line "it right now."
 
@@ -236,6 +429,7 @@ NoisyForestPikabluScript:
 	line "the #mon Center"
 	cont "if you want it."
 	done
+endc
 
 .WalkToYou:
 	step_right
@@ -301,6 +495,17 @@ KatyScript:
 .Done
 	jumpthisopenedtext
 
+if DEF(_LOCALE_FR)
+	text "Que tes prochaines"
+	line "aventures soient"
+
+	para "douces et belles"
+	line "comme un dessert."
+
+	para "Allez, bonne"
+	line "route. A bientôt!"
+	done
+else
 	text "May your future"
 	line "adventures be as"
 
@@ -311,8 +516,23 @@ KatyScript:
 	line "Until we meet"
 	cont "again!"
 	done
+endc
 
 .RewardText:
+if DEF(_LOCALE_FR)
+	text "Ta force a monté"
+	line "pendant le combat"
+
+	para "comme un bon pain"
+	line "au four."
+
+	para "Je dois travailler"
+	line "ma force aussi!"
+
+	para "Accepte ceci pour"
+	line "ta victoire!"
+	done
+else
 	text "Your strength rose"
 	line "during our battle"
 
@@ -329,8 +549,42 @@ KatyScript:
 	para "this for your"
 	line "victory!"
 	done
+endc
 
 .IntroText:
+if DEF(_LOCALE_FR)
+	text "Bonjour!"
+	line "Je suis Katy."
+
+	para "Je tiens une"
+	line "pâtisserie"
+
+	para "dans une région"
+	line "lointaine."
+
+	para "Oh? Oui, je ne"
+	line "suis pas à la"
+	cont "boutique."
+
+	para "Je collecte des"
+	line "ingrédients."
+
+	para "Des douceurs qui"
+	line "rendent heureux"
+
+	para "en une bouchée…"
+
+	para "Des #mon"
+	line "INSECTE"
+	line "cachés dans les"
+	cont "feuilles…"
+
+	para "C'est petit, mais"
+	line "très puissant."
+
+	para "Tu veux goûter?"
+	done
+else
 	text "Hello there!"
 	line "My name is Katy."
 
@@ -357,8 +611,23 @@ KatyScript:
 	para "Shall I give you"
 	line "a taste?"
 	done
+endc
 
 .RematchText:
+if DEF(_LOCALE_FR)
+	text "Rebonjour,"
+	line "<PLAYER>!"
+
+	para "Tu avais l'air de"
+	line "bien t'amuser"
+
+	para "pendant notre"
+	line "dernier combat."
+
+	para "Et si on remettait"
+	line "ca?"
+	done
+else
 	text "Hello again,"
 	line "<PLAYER>!"
 
@@ -372,8 +641,16 @@ KatyScript:
 	para "How about a second"
 	line "helping?"
 	done
+endc
 
 .SeenText:
+if DEF(_LOCALE_FR)
+	text "Garde ta garde!"
+
+	para "Sinon, tu risques"
+	line "de tomber!"
+	done
+else
 	text "Don't let your"
 	line "guard down unless"
 
@@ -381,21 +658,41 @@ KatyScript:
 	line "be knocked off"
 	cont "your feet!"
 	done
+endc
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "Mes petits #mon"
+	line "sont tombés!"
+	done
+else
 	text "My sweet little"
 	line "#mon dropped"
 	cont "like flies!"
 	done
+endc
 
 .RefusedText:
+if DEF(_LOCALE_FR)
+	text "Oooh. Pas encore?"
+
+	para "Reviens quand tu"
+	line "seras prêt!"
+	done
+else
 	text "Awww. Not yet?"
 	line "Do come back when"
 
 	para "you're good and"
 	line "ready!"
 	done
+endc
 
 NoisyForestSignpostText:
+if DEF(_LOCALE_FR)
+	text "Forêt Bruyante"
+	done
+else
 	text "Noisy Forest"
 	done
+endc

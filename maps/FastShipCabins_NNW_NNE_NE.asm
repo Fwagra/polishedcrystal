@@ -47,23 +47,45 @@ GenericTrainerPILooker:
 GenericTrainerCooltrainermSean:
 	generictrainer COOLTRAINERM, SEAN, EVENT_BEAT_COOLTRAINERM_SEAN, CooltrainermSeanSeenText, CooltrainermSeanBeatenText
 
+if DEF(_LOCALE_FR)
+	text "Les dresseurs de"
+	line "JOHTO peuvent af-"
+	line "fronter les CHAM-"
+	line "PIONS de KANTO."
+	done
+else
 	text "Trainers from"
 	line "Johto can battle"
 
 	para "with Kanto Gym"
 	line "Leaders."
 	done
+endc
 
 GenericTrainerCooltrainerfCarol:
 	generictrainer COOLTRAINERF, CAROL, EVENT_BEAT_COOLTRAINERF_CAROL, CooltrainerfCarolSeenText, CooltrainerfCarolBeatenText
 
+if DEF(_LOCALE_FR)
+	text "J'te battrai un"
+	line "jour! Oh oui!"
+	done
+else
 	text "I'm going to beat"
 	line "you someday!"
 	done
+endc
 
 GenericTrainerPokemaniacEthan:
 	generictrainer POKEMANIAC, ETHAN, EVENT_BEAT_POKEMANIAC_ETHAN, PokemaniacEthanSeenText, PokemaniacEthanBeatenText
 
+if DEF(_LOCALE_FR)
+	text "PETRA est cool"
+	line "mais LULA est top!"
+	line "J'veux connaître"
+	line "les stations de"
+	line "radio de JOHTO!"
+	done
+else
 	text "Lily's nice, but"
 	line "Mary's the best!"
 
@@ -71,36 +93,60 @@ GenericTrainerPokemaniacEthan:
 	line "out Johto's radio"
 	cont "programs!"
 	done
+endc
 
 GenericTrainerHikerNoland:
 	generictrainer HIKER, NOLAND, EVENT_BEAT_HIKER_NOLAND, HikerNolandSeenText, HikerNolandBeatenText
 
+if DEF(_LOCALE_FR)
+	text "Tu crois qu'il y a"
+	line "de belles monta-"
+	line "gnes à KANTO?"
+	done
+else
 	text "I wonder if there"
 	line "are any mountains"
 
 	para "worth climbing in"
 	line "Kanto?"
 	done
+endc
 
 GenericTrainerGentlemanEdward:
 	generictrainer GENTLEMAN, EDWARD, EVENT_BEAT_GENTLEMAN_EDWARD, GentlemanEdwardSeenText, GentlemanEdwardBeatenText
 
+if DEF(_LOCALE_FR)
+	text "Je laisse tomber."
+	line "Ce n'est pas la"
+	line "peine de chercher."
+	line "Oublie!"
+	done
+else
 	text "I give up."
 	line "You don't have to"
 
 	para "look. Just forget"
 	line "about it!"
 	done
+endc
 
 GenericTrainerBurglarCorey:
 	generictrainer BURGLAR, COREY, EVENT_BEAT_BURGLAR_COREY, BurglarCoreySeenText, BurglarCoreyBeatenText
 
+if DEF(_LOCALE_FR)
+	text "J'ai trouvé une"
+	line "belle pièce."
+	line "Quelqu'un a dû la"
+	line "perdre…"
+	done
+else
 	text "I found a pretty"
 	line "coin here."
 
 	para "Someone must have"
 	line "lost it…"
 	done
+endc
 
 FastShipLazySailorScript:
 	special SaveMusic
@@ -164,45 +210,104 @@ PILookerBeatenText:
 	done
 
 CooltrainermSeanSeenText:
+if DEF(_LOCALE_FR)
+	text "Je vais à KANTO"
+	line "pour m'entraîner."
+	done
+else
 	text "I'm going to Kanto"
 	line "to test my skills."
 	done
+endc
 
 CooltrainermSeanBeatenText:
+if DEF(_LOCALE_FR)
+	text "J'voulais gagner!"
+	done
+else
 	text "I wanted to win!"
 	done
+endc
 
 CooltrainerfCarolSeenText:
+if DEF(_LOCALE_FR)
+	text "J'm'entraîne pour"
+	line "être la meilleure!"
+	done
+else
 	text "I'm training to"
 	line "become the Champ!"
 	done
+endc
 
 CooltrainerfCarolBeatenText:
+if DEF(_LOCALE_FR)
+	text "Pourquoi t'es"
+	line "meilleur?"
+	done
+else
 	text "What's so differ-"
 	line "ent between us?"
 	done
+endc
 
 PokemaniacEthanSeenText:
+if DEF(_LOCALE_FR)
+	text "Tu connais PETRA?"
+	line "C'est un super DJ"
+	line "de KANTO."
+	done
+else
 	text "Do you know Lily?"
 	line "She's a hot DJ in"
 	cont "Kanto."
 	done
+endc
 
 PokemaniacEthanBeatenText:
+if DEF(_LOCALE_FR)
 	text "Gyaaaah!"
 	done
+else
+	text "Gyaaaah!"
+	done
+endc
 
 HikerNolandSeenText:
+if DEF(_LOCALE_FR)
+	text "T'es tout seul?"
+	line "Alors…COMBAT!"
+	done
+else
 	text "Are you alone?"
 	line "Then let's battle!"
 	done
+endc
 
 HikerNolandBeatenText:
+if DEF(_LOCALE_FR)
+	text "T'es trop, toi!"
+	line "Pfouiii!"
+	done
+else
 	text "That's too much to"
 	line "handle!"
 	done
+endc
 
 SailorStanlySeenText:
+if DEF(_LOCALE_FR)
+	text "Ouaip. Moi j'suis"
+	line "un marin. Un vrai"
+	line "de vrai. Pur"
+	line "boeuf! J'suis"
+	line "grand. J'suis"
+	line "beau. Je sens le"
+	line "sable chaud. Oh!"
+	line "Tu m'écoutes?"
+	line "…COMBAT!"
+	done
+else
 	text "Yeah, I'm a sail-"
 	line "or, all right."
 
@@ -216,37 +321,74 @@ SailorStanlySeenText:
 	para "Ah, forget it!"
 	line "Let's battle!"
 	done
+endc
 
 SailorStanlyBeatenText:
+if DEF(_LOCALE_FR)
+	text "Heu… Comment? De"
+	line "quoi?"
+	done
+else
 	text "Sorry! It's all my"
 	line "fault!"
 	done
+endc
 
 SailorStanlyAfterBattleText:
+if DEF(_LOCALE_FR)
+	text "Dans la mariiine,"
+	line "on n'est pas des"
+	line "p'tites filles!"
+	line "Dans la mariiine!"
+	done
+else
 	text "Being a sailor, I"
 	line "have to do phys-"
 	cont "ical labor. It's"
 	cont "exhausting!"
 	done
+endc
 
 GentlemanEdwardSeenText:
+if DEF(_LOCALE_FR)
+	text "J'ai perdu un truc"
+	line "super important…"
+	done
+else
 	text "Oh, no. I've lost"
 	line "something that's"
 	cont "very important."
 	done
+endc
 
 GentlemanEdwardBeatenText:
+if DEF(_LOCALE_FR)
+	text "J'le…trouve…"
+	line "…pas!!!"
+	done
+else
 	text "I… I can't find"
 	line "it…"
 	done
+endc
 
 BurglarCoreySeenText:
+if DEF(_LOCALE_FR)
+	text "Ouaiiis! Le bol!"
+	done
+else
 	text "Yeehaw!"
 	line "Lucky!"
 	done
+endc
 
 BurglarCoreyBeatenText:
+if DEF(_LOCALE_FR)
+	text "Ooooh! Pas d'bol!"
+	done
+else
 	text "How unlucky!"
 	line "I lost!"
 	done
+endc
 

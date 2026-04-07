@@ -126,6 +126,14 @@ AbraDollSentHomeText:
 	done
 
 CeladonEusineText1:
+if DEF(_LOCALE_FR)
+	text "EUSINE: Bonjour!"
+	line "Je suis de retour"
+	line "dans ma ville"
+	line "natale. Ca faisait"
+	line "bien longtemps."
+	done
+else
 	text "Eusine: Hi!"
 
 	para "I'm back visiting"
@@ -134,8 +142,24 @@ CeladonEusineText1:
 	para "It's been quite a"
 	line "while."
 	done
+endc
 
 EusineLeavesCeladonText:
+if DEF(_LOCALE_FR)
+	text "<PLAYER>, es-tu au"
+	line "courant? On"
+	line "raconte qu'un #MON"
+	line "aux cou- leurs de"
+	line "l'arc- en-ciel est"
+	line "apparu à la TOUR"
+	line "FERRAILLE. Je"
+	line "viens de soi- gner"
+	line "mon équipe. Je"
+	line "retourne à"
+	line "ROSALIA. A très"
+	line "bientôt, <PLAYER>!"
+	done
+else
 	text "<PLAYER>, have you"
 	line "heard?"
 
@@ -155,8 +179,22 @@ EusineLeavesCeladonText:
 	para "I'll be seeing"
 	line "you, <PLAYER>!"
 	done
+endc
 
 EusineNoBeastsText:
+if DEF(_LOCALE_FR)
+	text "Au fait, <PLAYER>."
+	line "As-tu capturé les"
+
+	para "#MON légendaires?"
+	line "………………"
+
+	para "Bon…"
+
+	para "Tiens, mes notes"
+	line "de recherche."
+	done
+else
 	text "Oh, by the way,"
 	line "<PLAYER>."
 
@@ -171,6 +209,7 @@ EusineNoBeastsText:
 	para "Let me give you"
 	line "my research notes."
 	done
+endc
 
 EusineShowsRaikouText:
 	text "This is Raikou:"
@@ -186,6 +225,19 @@ EusineShowsSuicuneText:
 	done
 
 EusineQuestHintText:
+if DEF(_LOCALE_FR)
+	text "Au fait, <PLAYER>."
+	line "As-tu attrapé les"
+	line "#MON légendai- res"
+	line "RAIKOU et ENTEI?"
+	line "…… …… ……"
+	line "D'accord… Si tu en"
+	line "attrapes un,"
+	line "préviens-moi. Je"
+	line "compte sur toi,"
+	line "<PLAYER>!"
+	done
+else
 	text "If you catch even"
 	line "one, I hope that"
 	cont "you'll inform me."
@@ -193,6 +245,7 @@ EusineQuestHintText:
 	para "I'm counting on"
 	line "you, <PLAYER>!"
 	done
+endc
 
 EusinesHouseGrampsGrandsonHomeText:
 	text "My grandson came"
@@ -201,6 +254,20 @@ EusinesHouseGrampsGrandsonHomeText:
 	done
 
 EusinesHouseGrampsEusineSearchingForSuicuneText:
+if DEF(_LOCALE_FR)
+	text "Mon petit-fils"
+	line "EUSINE est à"
+	cont "JOHTO,"
+
+	para "il cherche SUICUNE"
+	line "partout."
+
+	para "Je lui ai tout"
+	line "appris sur les"
+
+	para "#MON légendaires!"
+	done
+else
 	text "My grandson Eusine"
 	line "is in Johto,"
 
@@ -211,6 +278,7 @@ EusinesHouseGrampsEusineSearchingForSuicuneText:
 	line "about the legend-"
 	cont "ary #mon!"
 	done
+endc
 
 EusinesHouseGrampsEusineSearchingForHoOhText:
 	text "My grandson Eusine"

@@ -45,9 +45,15 @@ DimCave5FSetUpStoneTable:
 	earthquake 80
 	jumpthistext
 
+if DEF(_LOCALE_FR)
+	text "Le rocher a"
+	line "traversé."
+	done
+else
 	text "The boulder fell"
 	line "through."
 	done
+endc
 
 DimCave5FRileyScript:
 	faceplayer
@@ -103,12 +109,20 @@ DimCave5FRileyScript:
 	done
 
 .YesText:
+if DEF(_LOCALE_FR)
+	text "On va se donner"
+	line "à fond pour"
+
+	para "écraser tes #MON."
+	done
+else
 	text "We're pulling out"
 	line "all the stops to"
 
 	para "put your #mon"
 	line "down."
 	done
+endc
 
 .NoText:
 	text "Oh, all right."
@@ -117,6 +131,15 @@ DimCave5FRileyScript:
 	done
 
 .BeatenText:
+if DEF(_LOCALE_FR)
+	text "Parfois, on"
+	line "combat, parfois en"
+	line "équipe. C'est fou"
+	line "comme les"
+	line "dresseurs se"
+	line "croisent."
+	done
+else
 	text "At times we bat-"
 	line "tle, and sometimes"
 	cont "we team up."
@@ -125,8 +148,26 @@ DimCave5FRileyScript:
 	line "trainers can"
 	cont "interact."
 	done
+endc
 
 .ItemText:
+if DEF(_LOCALE_FR)
+	text "Connais ton"
+	line "ennemi."
+
+	para "Si tu connais les"
+	line "#MON et attaques"
+
+	para "de ton adversaire,"
+	line "tu gagnes mieux."
+
+	para "Mais renforcer ton"
+	line "équipe compte"
+	cont "aussi."
+
+	para "Tiens."
+	done
+else
 	text "Know your enemy."
 
 	para "If you know your"
@@ -143,8 +184,13 @@ DimCave5FRileyScript:
 	para "This will help you"
 	line "to do so."
 	done
+endc
 
 .GoodbyeText:
+if DEF(_LOCALE_FR)
+	text "TOUR DE COMBAT"
+	done
+else
 	text "Battling with you"
 	line "was very enjoy-"
 	cont "able."
@@ -158,6 +204,7 @@ DimCave5FRileyScript:
 	para "Take care on the"
 	line "way out."
 	done
+endc
 
 GenericTrainerSuper_nerdFoote:
 	generictrainer SUPER_NERD, FOOTE, EVENT_BEAT_SUPER_NERD_FOOTE, .SeenText, .BeatenText
@@ -173,6 +220,17 @@ GenericTrainerSuper_nerdFoote:
 	done
 
 .SeenText:
+if DEF(_LOCALE_FR)
+	text "J'ai un dilemme"
+	line "pour toi!"
+
+	para "Pousser un #MON"
+	line "devant un wagon"
+
+	para "pour en sauver"
+	line "cinq?"
+	done
+else
 	text "I have a conundrum"
 	line "for you!"
 
@@ -182,6 +240,7 @@ GenericTrainerSuper_nerdFoote:
 	para "of a mine cart to"
 	line "save five?"
 	done
+endc
 
 .BeatenText:
 	text "You answered"

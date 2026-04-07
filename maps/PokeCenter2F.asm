@@ -183,10 +183,17 @@ LinkReceptionistScript_HasMail:
 Script_TradeCenterClosed:
 	jumpthistextfaceplayer
 
+if DEF(_LOCALE_FR)
+	text "La MACHINE à"
+	line "ECHANGES est en"
+	line "réparation."
+	done
+else
 	text "I'm sorry--the"
 	line "Trade Machine is"
 	cont "being adjusted."
 	done
+endc
 
 LinkReceptionistScript_Battle:
 if !DEF(DEBUG)
@@ -204,10 +211,17 @@ endc
 .BattleRoomClosed:
 	jumpthistextfaceplayer
 
+if DEF(_LOCALE_FR)
+	text "La MACHINE à"
+	line "COMBATS est en"
+	line "réparation."
+	done
+else
 	text "I'm sorry--the"
 	line "Battle Machine is"
 	cont "being adjusted."
 	done
+endc
 
 PokeCenter2F_EnterRoom:
 	applymovementlasttalked PokeCenter2FMovementData_ReceptionistWalksUpAndLeft_LookRight
@@ -254,6 +268,15 @@ PokeCenter2FMovementData_ReceptionistStepsRightAndDown:
 	step_end
 
 Text_BattleReceptionistIntro:
+if DEF(_LOCALE_FR)
+	text "Bienvenue au COLI-"
+	line "SEE du CLUB LINK."
+	line "Vous pouvez y af-"
+	line "fronter un ami."
+	line "Voulez-vous faire"
+	line "un combat?"
+	done
+else
 	text "Welcome to Cable"
 	line "Club Colosseum."
 
@@ -263,8 +286,19 @@ Text_BattleReceptionistIntro:
 	para "Would you like to"
 	line "battle?"
 	done
+endc
 
 Text_TradeReceptionistIntro:
+if DEF(_LOCALE_FR)
+	text "Bienvenue au CEN-"
+	line "TRE TROC du CLUB"
+	line "LINK. Vous pouvez"
+	line "y échanger vos #-"
+	line "MON avec un ami."
+	line "Voulez-vous faire"
+	line "des échanges?"
+	done
+else
 	text "Welcome to Cable"
 	line "Trade Center."
 
@@ -275,23 +309,51 @@ Text_TradeReceptionistIntro:
 	para "Would you like to"
 	line "trade?"
 	done
+endc
 
 Text_FriendNotReady:
+if DEF(_LOCALE_FR)
+	text "Votre ami n'est"
+	line "pas prêt."
+	prompt
+else
 	text "Your friend is not"
 	line "ready."
 	prompt
+endc
 
 Text_MustSaveGame:
+if DEF(_LOCALE_FR)
+	text "Avant toute conne-"
+	line "xion, vous devez"
+	line "sauvegarder."
+	done
+else
 	text "Before opening the"
 	line "link, you must"
 	cont "save your game."
 	done
+endc
 
 Text_PleaseWait:
+if DEF(_LOCALE_FR)
+	text "Attendre s.v.p."
+	done
+else
 	text "Please wait."
 	done
+endc
 
 Text_LinkTimedOut:
+if DEF(_LOCALE_FR)
+	text "Pas de réponse: la"
+	line "connexion a été"
+	line "fermée. Contactez"
+	line "votre ami et"
+	line "recommencez plus"
+	line "tard."
+	prompt
+else
 	text "The link has been"
 	line "closed because of"
 	cont "inactivity."
@@ -300,19 +362,37 @@ Text_LinkTimedOut:
 	line "your friend and"
 	cont "come again."
 	prompt
+endc
 
 Text_PleaseComeAgain:
+if DEF(_LOCALE_FR)
+	text "A bientôt."
+	prompt
+else
 	text "Please come again."
 	prompt
+endc
 
 Text_PleaseComeIn:
+if DEF(_LOCALE_FR)
+	text "Entrez s.v.p."
+	prompt
+else
 	text "Please come in."
 	prompt
+endc
 
 Text_CantLinkToThePast:
+if DEF(_LOCALE_FR)
+	text "Vous ne pouvez pas"
+	line "vous connecter au"
+	line "passé ici."
+	prompt
+else
 	text "You can't link to"
 	line "the past here."
 	prompt
+endc
 
 Text_OldVersionDetected:
 	text "You are connected"
@@ -366,9 +446,16 @@ Text_WrongOptions:
 	prompt
 
 Text_IncompatibleRooms:
+if DEF(_LOCALE_FR)
+	text "Votre ami(e) a"
+	line "choisi une salle"
+	line "différente."
+	prompt
+else
 	text "Incompatible rooms"
 	line "were chosen."
 	prompt
+endc
 
 Text_TimeCapsuleClosed:
 	text "I'm sorry--the"

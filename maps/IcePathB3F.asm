@@ -95,6 +95,25 @@ LoreleiAfterRematchIntroScript:
 	jumpthisopenedtext
 
 LoreleiRematchAfterText:
+if DEF(_LOCALE_FR)
+	text "Ton voyage n'est"
+	line "pas fini."
+
+	para "Tu peux gagner"
+	line "des BADGES à"
+	cont "KANTO,"
+
+	para "attraper de nou-"
+	line "veaux #MON,"
+
+	para "te surpasser,"
+	line "toi et ton équipe."
+
+	para "Devenir MAITRE"
+	line "#MON, c'est"
+	cont "pour la vie."
+	done
+else
 	text "Your journey isn't"
 	line "over, you know."
 
@@ -111,6 +130,7 @@ LoreleiRematchAfterText:
 	line "#mon master is"
 	cont "a life's work."
 	done
+endc
 
 LoreleiReintroductionScript:
 	writetext LoreleiRematchIntroAgainText
@@ -126,6 +146,26 @@ Text_IcePathB3FIceRock:
 	done
 
 LoreleiIntroText:
+if DEF(_LOCALE_FR)
+	text "OLGA: Bonjour."
+	line "Je suis OLGA."
+
+	para "Tu vois ce rocher"
+	line "glacé?"
+
+	para "Il émet une"
+	line "énergie inconnue."
+
+	para "Jamais vue ici."
+
+	para "Experte du type"
+	line "Glace, je devais"
+	cont "l'étudier."
+
+	para "Et toi, que fais-"
+	line "tu ici?"
+	done
+else
 	text "Lorelei: Hello"
 	line "there, trainer."
 	cont "I am Lorelei."
@@ -145,8 +185,19 @@ LoreleiIntroText:
 	para "And what are you"
 	line "doing here?"
 	done
+endc
 
 LoreleiAfterIntroText:
+if DEF(_LOCALE_FR)
+	text "OLGA: Tu tentes"
+	line "la LIGUE #MON."
+
+	para "Je vois. Ironique."
+
+	para "Et si je testais"
+	line "ton niveau?"
+	done
+else
 	text "Lorelei: You're"
 	line "taking the #mon"
 
@@ -157,6 +208,7 @@ LoreleiAfterIntroText:
 	para "Why don't I test"
 	line "your skill?"
 	done
+endc
 
 LoreleiNoBattleText:
 	text "If you can't face"
@@ -178,6 +230,13 @@ LoreleiBeatenText:
 	done
 
 LoreleiRewardText:
+if DEF(_LOCALE_FR)
+	text "Tu sais gérer le"
+	line "type Glace."
+
+	para "Alors prends ça."
+	done
+else
 	text "You know how to"
 	line "handle Ice-type"
 	cont "#mon."
@@ -185,6 +244,7 @@ LoreleiRewardText:
 	para "Then you can use"
 	line "this item."
 	done
+endc
 
 LoreleiRematchIntroAgainText:
 	text "Lorelei: Hello"
@@ -212,6 +272,14 @@ LoreleiRematchBeatenText:
 	done
 
 LoreleiOneMoreBadgeText:
+if DEF(_LOCALE_FR)
+	text "Continue. Avec un"
+	line "BADGE de plus,"
+
+	para "tu peux défier"
+	line "la LIGUE #MON."
+	done
+else
 	text "Go on ahead. You"
 	line "can challenge the"
 
@@ -219,11 +287,21 @@ LoreleiOneMoreBadgeText:
 	line "with one more"
 	cont "Badge."
 	done
+endc
 
 LoreleiAllBadgesText:
+if DEF(_LOCALE_FR)
+	text "Continue. Tu as"
+	line "assez de BADGES"
+
+	para "pour défier la"
+	line "LIGUE #MON."
+	done
+else
 	text "Go on ahead. You"
 	line "have enough Badges"
 
 	para "to challenge the"
 	line "#mon League."
 	done
+endc

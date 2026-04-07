@@ -254,43 +254,95 @@ OlivinePortApproachFastShipAfterHOFRightMovement:
 	step_end
 
 OlivinePortSailorGetOnBoardText:
+if DEF(_LOCALE_FR)
+	text "Le départ est"
+	line "proche. Tout le"
+	line "monde à bord."
+	done
+else
 	text "We're departing"
 	line "soon. Please get"
 	cont "on board."
 	done
+endc
 
 OlivinePortCantBoardText:
+if DEF(_LOCALE_FR)
+	text "On ne monte plus à"
+	line "bord."
+	done
+else
 	text "Sorry. You can't"
 	line "board now."
 	done
+endc
 
 OlivinePortAskBoardText:
+if DEF(_LOCALE_FR)
+	text "Bienvenue au"
+	line "BATEAU EXPRESS"
+	line "AQUARIA."
+	line "Allez-vous monter"
+	line "à bord?"
+	done
+else
 	text "Welcome to Fast"
 	line "Ship S.S.Aqua."
 
 	para "Will you be board-"
 	line "ing today?"
 	done
+endc
 
 OlivinePortAskTicketText:
+if DEF(_LOCALE_FR)
+	text "Puis-je voir votre"
+	line "PASSE BATEAU?"
+	done
+else
 	text "May I see your"
 	line "S.S.Ticket?"
 	done
+endc
 
 OlivinePortComeAgainText:
+if DEF(_LOCALE_FR)
+	text "A bientot!"
+	done
+else
 	text "We hope to see you"
 	line "again!"
 	done
+endc
 
 OlivinePortFlashTicketText:
+if DEF(_LOCALE_FR)
+	text "<PLAYER> montre"
+	line "son PASSE BATEAU."
+	line "Parfait. Merci"
+	line "monsieur!"
+	done
+else
 	text "<PLAYER> flashed"
 	line "the S.S.Ticket."
 
 	para "That's it."
 	line "Thank you!"
 	done
+endc
 
 OlivinePortNoTicketText:
+if DEF(_LOCALE_FR)
+	text "<PLAYER> voudrait"
+	line "bien montrer son"
+	line "PASSE BATEAU… Mais"
+	line "il n'en a pas!"
+	line "Désolé! On ne"
+	line "monte à bord que"
+	line "sur présenta- tion"
+	line "d'un PASSE."
+	done
+else
 	text "<PLAYER> tried to"
 	line "show the S.S."
 	cont "Ticket…"
@@ -303,26 +355,58 @@ OlivinePortNoTicketText:
 	para "if you have an"
 	line "S.S.Ticket."
 	done
+endc
 
 OlivinePortMondayShipText:
+if DEF(_LOCALE_FR)
+	text "Le BATEAU EXPRESS"
+	line "partira lundi"
+	line "prochain."
+	done
+else
 	text "The Fast Ship will"
 	line "sail next Monday."
 	done
+endc
 
 OlivinePortFridayShipText:
+if DEF(_LOCALE_FR)
+	text "Le BATEAU EXPRESS"
+	line "partira vendredi"
+	line "prochain."
+	done
+else
 	text "The Fast Ship will"
 	line "sail next Friday."
 	done
+endc
 
 OlivinePortFishingGuru1Text:
+if DEF(_LOCALE_FR)
+	text "Les KOKIYAS sont"
+	line "faciles à choper"
+	line "dans le coin. Ils"
+	line "sont plus rares"
+	line "ailleurs."
+	done
+else
 	text "Shellder are easy"
 	line "to catch here."
 
 	para "They're kind of"
 	line "rare elsewhere."
 	done
+endc
 
 OlivinePortFishingGuru2Text:
+if DEF(_LOCALE_FR)
+	text "Combien de CANNES"
+	line "as-tu? Des CANNES"
+	line "diffé- rentes"
+	line "attrapent des #MON"
+	line "diffé- rents."
+	done
+else
 	text "How many Rods do"
 	line "you have?"
 
@@ -330,24 +414,48 @@ OlivinePortFishingGuru2Text:
 	line "catch different"
 	cont "#mon."
 	done
+endc
 
 OlivinePortYoungsterText:
+if DEF(_LOCALE_FR)
+	text "L'AQUARIA a des"
+	line "propulseurs pour"
+	line "foncer sur l'eau!"
+	done
+else
 	text "S.S.Aqua uses jets"
 	line "to skim over the"
 	cont "waves!"
 	done
+endc
 
 OlivinePortCooltrainerFText:
+if DEF(_LOCALE_FR)
+	text "Il y a plein de"
+	line "#MON à KANTO."
+	line "J'aimerais tant y"
+	line "aller…"
+	done
+else
 	text "There are lots of"
 	line "#mon in Kanto."
 
 	para "I wish I could go…"
 	done
+endc
 
 OlivinePortSailorBeforeHOFText:
+if DEF(_LOCALE_FR)
+	text "On ne veut pas que"
+	line "tu tombes à l'eau"
+	line "alors tu ne peux"
+	line "pas passer."
+	done
+else
 	text "We don't want you"
 	line "to fall into the"
 
 	para "sea, so you're not"
 	line "allowed in."
 	done
+endc

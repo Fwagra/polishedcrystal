@@ -324,6 +324,15 @@ RematchBrown2Script:
 	sjump RematchAgathaScript
 
 FightingDojoBlackBeltText:
+if DEF(_LOCALE_FR)
+	text "Bonjour! Le KING"
+	line "KARATE, le maître"
+	line "du DOJO est dans"
+	line "une caverne de"
+	line "JOHTO pour"
+	line "s'entraîner."
+	done
+else
 	text "Hello!"
 
 	para "Karate King, the"
@@ -333,8 +342,20 @@ FightingDojoBlackBeltText:
 	line "cave in Johto for"
 	cont "training."
 	done
+endc
 
 BlackBeltText_ExplainsRematches:
+if DEF(_LOCALE_FR)
+	text "Des CHAMPIONS"
+	line "de KANTO et JOHTO"
+
+	para "viennent ici"
+	line "s'entraîner."
+
+	para "Tu devrais faire"
+	line "pareil!"
+	done
+else
 	text "Gym Leaders from"
 	line "Kanto and Johto"
 
@@ -345,16 +366,30 @@ BlackBeltText_ExplainsRematches:
 	para "You should join"
 	line "them!"
 	done
+endc
 
 FightingDojoSign1Text:
+if DEF(_LOCALE_FR)
+	text "Le riz il est"
+	line "cuit! (proverbe)"
+	done
+else
 	text "What goes around"
 	line "comes around!"
 	done
+endc
 
 FightingDojoSign2Text:
+if DEF(_LOCALE_FR)
+	text "Tape aussi fort"
+	line "que t'es beau!"
+	line "(proverbe)"
+	done
+else
 	text "Enemies on every"
 	line "side!"
 	done
+endc
 
 MACRO rematch_script
 	; rematch_script name, trainer, flag
@@ -439,6 +474,22 @@ RematchYellowScript:
 	rematch_script Yellow, YELLOW, ENGINE_GYM_LEADER_REMATCH_3
 
 BrockText_Greeting:
+if DEF(_LOCALE_FR)
+	text "J'adore les"
+	line "#mon"
+	line "ROCHE."
+
+	para "Solides et rudes,"
+	line "mais fragiles"
+	cont "aussi."
+
+	para "Tu verras comme"
+	line "mes #mon ROCHE"
+
+	para "sont devenus plus"
+	line "forts!"
+	done
+else
 	text "I like Rock-type"
 	line "#mon best."
 
@@ -452,8 +503,21 @@ BrockText_Greeting:
 	para "rock #mon have"
 	line "become!"
 	done
+endc
 
 MistyText_Greeting:
+if DEF(_LOCALE_FR)
+	text "J'ai entendu"
+	line "beaucoup de bien"
+
+	para "sur toi depuis"
+	line "notre dernier"
+	cont "combat."
+
+	para "Je vais voir"
+	line "jusqu'où tu vas!"
+	done
+else
 	text "I've heard a lot"
 	line "of good things"
 
@@ -463,8 +527,22 @@ MistyText_Greeting:
 	para "Let me test how"
 	line "good you are!"
 	done
+endc
 
 SurgeText_Greeting:
+if DEF(_LOCALE_FR)
+	text "Je sens une"
+	line "puissance elec-"
+	cont "trique énorme"
+
+	para "près de la gare du"
+	line "MAGNET TRAIN!"
+
+	para "J'suis à fond pour"
+	line "un combat"
+	cont "electrisant!"
+	done
+else
 	text "I can feel great"
 	line "electric power"
 
@@ -475,8 +553,23 @@ SurgeText_Greeting:
 	line "an electrifying"
 	cont "battle!"
 	done
+endc
 
 ErikaText_Greeting:
+if DEF(_LOCALE_FR)
+	text "Contente de te"
+	line "revoir!"
+
+	para "Comment vas-tu?"
+
+	para "Cet endroit ne me"
+	line "va pas trop,"
+	cont "mais…"
+
+	para "Oublions ca et"
+	line "battons-nous!"
+	done
+else
 	text "Good to see you"
 	line "again!"
 
@@ -489,39 +582,84 @@ ErikaText_Greeting:
 	para "let's ignore that"
 	line "and battle!"
 	done
+endc
 
 JanineText_Greeting:
+if DEF(_LOCALE_FR)
+	text "Je ne peux pas"
+	line "user de mes"
+	cont "techniques ninja,"
+
+	para "mais je ne te"
+	line "laisserai pas"
+	cont "gagner!"
+	done
+else
 	text "I can't use my"
 	line "ninja technique,"
 
 	para "but I won't let"
 	line "you win!"
 	done
+endc
 
 SabrinaText_Greeting:
+if DEF(_LOCALE_FR)
+	text "Je savais que tu"
+	line "reviendrais."
+
+	para "Je l'avais senti."
+	done
+else
 	text "I knew you'd come"
 	line "battle me again."
 
 	para "I had a feeling."
 	done
+endc
 
 BlaineText_Greeting:
+if DEF(_LOCALE_FR)
+	text "Mon ARENE est"
+	line "toujours détruite."
+
+	para "Alors on fait la"
+	line "revanche ici!"
+	done
+else
 	text "My Gym is still"
 	line "gone, so let's"
 
 	para "hold our rematch"
 	line "right here!"
 	done
+endc
 
 BlueText_Greeting:
+if DEF(_LOCALE_FR)
+	text "Bien! T'es là."
+
+	para "Merci d'être venu"
+	line "perdre contre moi!"
+	done
+else
 	text "Good! You're"
 	line "here too."
 
 	para "Thanks for coming"
 	line "to lose to me!"
 	done
+endc
 
 FalknerText_Greeting:
+if DEF(_LOCALE_FR)
+	text "Je suis en super"
+	line "forme aujourd'hui."
+
+	para "C'est un plaisir"
+	line "de te reaffronter!"
+	done
+else
 	text "I'm in top form"
 	line "today."
 
@@ -529,14 +667,33 @@ FalknerText_Greeting:
 	line "be able to battle"
 	cont "you again!"
 	done
+endc
 
 BugsyText_Greeting:
+if DEF(_LOCALE_FR)
+	text "Content de te"
+	line "revoir! Admire mes"
+
+	para "recherches"
+	line "INSECTE!"
+	done
+else
 	text "Good to see you"
 	line "again! Behold my"
 	cont "bug research!"
 	done
+endc
 
 WhitneyText_Greeting:
+if DEF(_LOCALE_FR)
+	text "Salut, <PLAYER>!"
+
+	para "Puisqu'on est là,"
+	line "on se bat!"
+
+	para "T'es prêt?"
+	done
+else
 	text "Hi, <PLAYER>!"
 	line "Since we're both"
 
@@ -545,8 +702,20 @@ WhitneyText_Greeting:
 
 	para "Are you ready?"
 	done
+endc
 
 MortyText_Greeting:
+if DEF(_LOCALE_FR)
+	text "Le #mon"
+	line "légendaire"
+	line "ne m'a pas choisi…"
+
+	para "Mais je n'ai pas"
+	line "perdu mon avenir."
+
+	para "Bats-toi!"
+	done
+else
 	text "The legendary"
 	line "#mon did not"
 	cont "choose me…"
@@ -557,15 +726,34 @@ MortyText_Greeting:
 	para "out on my future."
 	line "Let's battle!"
 	done
+endc
 
 ChuckText_Greeting:
+if DEF(_LOCALE_FR)
+	text "Te voilà!"
+
+	para "Goûte à mon"
+	line "entraînement"
+	cont "24h/24!"
+	done
+else
 	text "There you are!"
 
 	para "Taste my 24-hour"
 	line "training!"
 	done
+endc
 
 JasmineText_Greeting:
+if DEF(_LOCALE_FR)
+	text "Bonjour, <PLAYER>…"
+	line "Comment ca va?"
+	cont "Moi, ca va…"
+
+	para "Bref, tu es prêt"
+	line "à me reaffronter?"
+	done
+else
 	text "Hello, <PLAYER>…"
 	line "How are you?"
 	cont "I'm doing well…"
@@ -574,22 +762,60 @@ JasmineText_Greeting:
 	line "prepared to"
 	cont "battle me again?"
 	done
+endc
 
 PryceText_Greeting:
+if DEF(_LOCALE_FR)
+	text "Pas besoin de"
+	line "mots. Un combat"
+
+	para "#mon, c'est"
+	line "notre langage."
+	done
+else
 	text "No need for words."
 	line "A #mon battle"
 
 	para "is the way for us"
 	line "to communicate."
 	done
+endc
 
 ClairText_Greeting:
+if DEF(_LOCALE_FR)
+	text "…Te voilà."
+
+	para "Bats-toi!"
+	done
+else
 	text "…So you are here."
 
 	para "Now let's battle!"
 	done
+endc
 
 PalmerText_Greeting:
+if DEF(_LOCALE_FR)
+	text "Ainsi, tu es allé"
+	line "jusque-là!"
+
+	para "En tant que LORD"
+	line "de la TOUR,"
+
+	para "je dois tout"
+	line "donner."
+
+	para "C'est comme ça que"
+	line "les meilleurs"
+
+	para "se respectent:"
+	line "en se battant à"
+	cont "fond,"
+
+	para "en vrais élèves"
+	line "des #mon!"
+	done
+else
 	text "So, you've come"
 	line "this far!"
 
@@ -611,8 +837,19 @@ PalmerText_Greeting:
 	para "students of"
 	line "#mon!"
 	done
+endc
 
 LoreleiText_Greeting:
+if DEF(_LOCALE_FR)
+	text "Rebonjour,"
+	line "<PLAYER>."
+
+	para "Ici, je suis chez"
+	line "moi."
+
+	para "Je ne perdrai pas!"
+	done
+else
 	text "Hello again,"
 	line "<PLAYER>."
 
@@ -621,8 +858,23 @@ LoreleiText_Greeting:
 
 	para "I won't lose!"
 	done
+endc
 
 AgathaText_Greeting:
+if DEF(_LOCALE_FR)
+	text "Bonjour, petit."
+
+	para "Tu remplis encore"
+	line "un #dex pour"
+	cont "ce vieux Chêne?"
+
+	para "Les #mon, c'est"
+	line "pour se battre!"
+
+	para "Montre-moi ton"
+	line "vrai talent!"
+	done
+else
 	text "Hello, child."
 
 	para "You're still"
@@ -638,8 +890,19 @@ AgathaText_Greeting:
 	line "real talent"
 	cont "as a trainer!"
 	done
+endc
 
 WalkerText_Greeting:
+if DEF(_LOCALE_FR)
+	text "Hé, <PLAYER>!"
+
+	para "On dirait que j'ai"
+	line "raté mon fils,"
+	cont "Falkner…"
+
+	para "Alors, on se bat?"
+	done
+else
 	text "Hey there,"
 	line "<PLAYER>!"
 
@@ -652,8 +915,22 @@ WalkerText_Greeting:
 	para "How about if we"
 	line "battle instead?"
 	done
+endc
 
 YellowText_Greeting:
+if DEF(_LOCALE_FR)
+	text "Salut, <PLAYER>!"
+
+	para "Voyons voir…"
+
+	para "Oui! Tu prends"
+	line "toujours soin de"
+	cont "tes #mon!"
+
+	para "Tu es plus fort,"
+	line "et moi aussi!"
+	done
+else
 	text "Hi, <PLAYER>!"
 
 	para "Let me see…"
@@ -666,51 +943,110 @@ YellowText_Greeting:
 	line "stronger, but so"
 	cont "have I!"
 	done
+endc
 
 BrockText_WinLoss:
+if DEF(_LOCALE_FR)
+	text "J'ai encore perdu…"
+
+	para "Tu n'aventures"
+	line "pas pour rien!"
+	done
+else
 	text "I've lost again…"
 
 	para "You aren't adven-"
 	line "turing around"
 	cont "for nothing!"
 	done
+endc
 
 MistyText_WinLoss:
+if DEF(_LOCALE_FR)
+	text "Wow! Tu deviens"
+	line "plus fort en"
+	cont "combattant!"
+	done
+else
 	text "Wow! You're"
 	line "getting stronger"
 	cont "by the battle!"
 	done
+endc
 
 SurgeText_WinLoss:
+if DEF(_LOCALE_FR)
+	text "Tu es très fort!"
+
+	para "Mais je te le"
+	line "rendrai un jour!"
+	done
+else
 	text "You're very"
 	line "strong!"
 
 	para "But I'll repay my"
 	line "debt someday!"
 	done
+endc
 
 ErikaText_WinLoss:
+if DEF(_LOCALE_FR)
+	text "Tu es devenu"
+	line "encore plus fort…"
+	done
+else
 	text "You have grown"
 	line "even stronger…"
 	done
+endc
 
 JanineText_WinLoss:
+if DEF(_LOCALE_FR)
+	text "J'ai perdu"
+	line "aujourd'hui,"
+
+	para "mais je gagnerai"
+	line "la prochaine fois!"
+	done
+else
 	text "I lost today, but"
 	line "I'll win next time!"
 	done
+endc
 
 SabrinaText_WinLoss:
+if DEF(_LOCALE_FR)
+	text "Je sais… On se"
+	line "reverra un jour."
+	done
+else
 	text "I know… we will"
 	line "meet again some-"
 	cont "time."
 	done
+endc
 
 BlaineText_WinLoss:
+if DEF(_LOCALE_FR)
+	text "Waaah! Je suis"
+	line "encore grillé!"
+	done
+else
 	text "Waaah! I've burned"
 	line "out again!"
 	done
+endc
 
 BlueText_WinLoss:
+if DEF(_LOCALE_FR)
+	text "Comme prévu!"
+
+	para "Pas étonnant que"
+	line "tu sois le"
+	cont "Maître…"
+	done
+else
 	text "Just as I"
 	line "expected!"
 
@@ -718,80 +1054,173 @@ BlueText_WinLoss:
 	line "become the"
 	cont "Champion…"
 	done
+endc
 
 FalknerText_WinLoss:
+if DEF(_LOCALE_FR)
+	text "Mmm… Il me reste"
+	line "du chemin pour"
+	cont "être le meilleur…"
+	done
+else
 	text "Mmm… It's still a"
 	line "long way to become"
 	cont "the best trainer…"
 	done
+endc
 
 BugsyText_WinLoss:
+if DEF(_LOCALE_FR)
+	text "Tu as beaucoup"
+	line "étudié les #MON!"
+	done
+else
 	text "You must have"
 	line "studied a lot"
 	cont "about #mon!"
 	done
+endc
 
 WhitneyText_WinLoss:
+if DEF(_LOCALE_FR)
+	text "Tu es vraiment"
+	line "fort!"
+
+	para "Mais je perdrai"
+	line "pas la prochaine!"
+	done
+else
 	text "You really are"
 	line "strong!"
 
 	para "But I won't lose"
 	line "next time!"
 	done
+endc
 
 MortyText_WinLoss:
+if DEF(_LOCALE_FR)
+	text "J'ai encore perdu…"
+	line "Tu as quelque"
+
+	para "chose de plus que"
+	line "la force."
+	done
+else
 	text "I've lost again…"
 	line "You have something"
 
 	para "more than just"
 	line "strength."
 	done
+endc
 
 ChuckText_WinLoss:
+if DEF(_LOCALE_FR)
+	text "Wahaha!"
+	line "On s'ennuie"
+	cont "jamais avec toi!"
+	done
+else
 	text "Wahaha!"
 	line "A battle with you"
 	cont "is never boring!"
 	done
+endc
 
 JasmineText_WinLoss:
+if DEF(_LOCALE_FR)
+	text "Fidèle à ta"
+	line "réputation…"
+	done
+else
 	text "True to your"
 	line "reputation…"
 	done
+endc
 
 PryceText_WinLoss:
+if DEF(_LOCALE_FR)
+	text "Mmm… Impression-"
+	line "nant!"
+	done
+else
 	text "Mmm… Impressive!"
 	done
+endc
 
 ClairText_WinLoss:
+if DEF(_LOCALE_FR)
+	text "Bien joué."
+	line "…"
+
+	para "Maintenant, donne"
+	line "tout!"
+	done
+else
 	text "Way to go."
 	line "…"
 
 	para "Now give it"
 	line "your all!"
 	done
+endc
 
 PalmerText_WinLoss:
+if DEF(_LOCALE_FR)
+	text "Bravo! Je sens"
+	line "mon coeur vibrer!"
+	done
+else
 	text "Bravo! I feel"
 	line "inspired in my"
 	cont "heart!"
 	done
+endc
 
 LoreleiText_WinLoss:
+if DEF(_LOCALE_FR)
+	text "Comment oses-tu!"
+	done
+else
 	text "How dare you!"
 	done
+endc
 
 AgathaText_WinLoss:
+if DEF(_LOCALE_FR)
+	text "Wouhou!"
+	done
+else
 	text "Woo-hoo!"
 	done
+endc
 
 WalkerText_WinLoss:
+if DEF(_LOCALE_FR)
+	text "Je faisais pas"
+	line "le poids!"
+	done
+else
 	text "I was no match"
 	line "for you!"
 	done
+endc
 
 YellowText_WinLoss:
+if DEF(_LOCALE_FR)
+	text "Hahaha! Très"
+	line "ennuyeux. C'était"
+	line "trop fa- cile"
+	line "d'envahir cet"
+	line "endroit! Allez les"
+	line "petits! Faites-moi"
+	line "encore rire!"
+	done
+else
 	text "Hahaha!"
 	done
+endc
 
 BrockText_Done:
 MistyText_Done:
@@ -814,71 +1243,155 @@ LoreleiText_Done:
 AgathaText_Done:
 WalkerText_Done:
 YellowText_Done:
+if DEF(_LOCALE_FR)
+	text "C'est bon pour"
+	line "aujourd'hui."
+	done
+else
 	text "I'm done battling"
 	line "for today."
 	done
+endc
 
 FightingDojoScheduleQuestionText:
+if DEF(_LOCALE_FR)
+	text "Un planning!"
+	line "Tu lis?"
+	done
+else
 	text "It's a training"
 	line "schedule! Read it?"
 	done
+endc
 
 FightingDojoScheduleSundayText:
+if DEF(_LOCALE_FR)
+	text "Dim: Jasmine,"
+	line "Erika, Sabrina"
+	done
+else
 	text "Sunday: Jasmine,"
 	line "Erika, Sabrina"
 	done
+endc
 
 FightingDojoScheduleMondayText:
+if DEF(_LOCALE_FR)
+	text "Lun: Falkner,"
+	line "Janine, ???"
+	done
+else
 	text "Monday: Falkner,"
 	line "Janine, ???"
 	done
+endc
 
 FightingDojoScheduleMondayWalkerText:
+if DEF(_LOCALE_FR)
+	text "Lun: Falkner,"
+	line "Janine, Walker"
+	done
+else
 	text "Monday: Falkner,"
 	line "Janine, Walker"
 	done
+endc
 
 FightingDojoScheduleTuesdayText:
+if DEF(_LOCALE_FR)
+	text "Mar: Pryce,"
+	line "Blaine, ???"
+	done
+else
 	text "Tuesday: Pryce,"
 	line "Blaine, ???"
 	done
+endc
 
 FightingDojoScheduleTuesdayLoreleiText:
+if DEF(_LOCALE_FR)
+	text "Mar: Pryce,"
+	line "Blaine, Lorelei"
+	done
+else
 	text "Tuesday: Pryce,"
 	line "Blaine, Lorelei"
 	done
+endc
 
 FightingDojoScheduleWednesdayText:
+if DEF(_LOCALE_FR)
+	text "Mer: Brock,"
+	line "Misty, Blue"
+	done
+else
 	text "Wednesday: Brock,"
 	line "Misty, Blue"
 	done
+endc
 
 FightingDojoScheduleThursdayText:
+if DEF(_LOCALE_FR)
+	text "Jeu: Bugsy,"
+	line "???, Morty"
+	done
+else
 	text "Thursday: Bugsy,"
 	line "???, Morty"
 	done
+endc
 
 FightingDojoScheduleThursdayPalmerText:
+if DEF(_LOCALE_FR)
+	text "Jeu: Bugsy,"
+	line "Palmer, Morty"
+	done
+else
 	text "Thursday: Bugsy,"
 	line "Palmer, Morty"
 	done
+endc
 
 FightingDojoScheduleFridayText:
+if DEF(_LOCALE_FR)
+	text "Ven: Lt.Surge,"
+	line "???, Clair"
+	done
+else
 	text "Friday: Lt.Surge,"
 	line "???, Clair"
 	done
+endc
 
 FightingDojoScheduleFridayYellowText:
+if DEF(_LOCALE_FR)
+	text "Ven: Lt.Surge,"
+	line "Yellow, Clair"
+	done
+else
 	text "Friday: Lt.Surge,"
 	line "Yellow, Clair"
 	done
+endc
 
 FightingDojoScheduleSaturdayText:
+if DEF(_LOCALE_FR)
+	text "Sam: Whitney,"
+	line "Chuck, ???"
+	done
+else
 	text "Saturday: Whitney,"
 	line "Chuck, ???"
 	done
+endc
 
 FightingDojoScheduleSaturdayAgathaText:
+if DEF(_LOCALE_FR)
+	text "Sam: Whitney,"
+	line "Chuck, Agatha"
+	done
+else
 	text "Saturday: Whitney,"
 	line "Chuck, Agatha"
 	done
+endc

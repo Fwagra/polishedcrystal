@@ -112,6 +112,14 @@ WiseTriosRoomSageAllowsPassageMovement:
 	step_end
 
 WiseTriosRoomSage1Text:
+if DEF(_LOCALE_FR)
+	text "Dingue… SUICUNE,"
+	line "ENTEI et RAIKOU se"
+	line "sont réveillés… La"
+	line "légende est- elle"
+	line "vraie?"
+	done
+else
 	text "Astounding…"
 
 	para "Suicune, Entei and"
@@ -121,8 +129,20 @@ WiseTriosRoomSage1Text:
 	para "Is the legend"
 	line "coming true?"
 	done
+endc
 
 WiseTriosRoomSage2Text:
+if DEF(_LOCALE_FR)
+	text "On s'entraîne à la"
+	line "TOUR CENDREE mais"
+	line "on n'a jamais vu"
+	line "de trou s'ouvrir"
+	line "jusqu'à présent."
+	line "Quelqu'un doit en"
+	line "être le"
+	line "responsable."
+	done
+else
 	text "We train at the"
 	line "Burned Tower, but"
 
@@ -135,8 +155,22 @@ WiseTriosRoomSage2Text:
 	para "deliberately made"
 	line "by someone."
 	done
+endc
 
 WiseTriosRoomSage3BlocksExitText:
+if DEF(_LOCALE_FR)
+	text "La TOUR FERRAILLE"
+	line "est accessible aux"
+	line "porteurs du BADGE"
+	line "de ROSALIA."
+	line "Toutefois, depuis"
+	line "le réveil de"
+	line "SUICUNE, RAIKOU et"
+	line "d'ENTEI, je ne"
+	line "peux pas vous"
+	line "laisser entrer!"
+	done
+else
 	text "Bell Tower may be"
 	line "entered by those"
 
@@ -152,16 +186,44 @@ WiseTriosRoomSage3BlocksExitText:
 	para "to refrain from"
 	line "entering!"
 	done
+endc
 
 WiseTriosRoomSage3Text:
+if DEF(_LOCALE_FR)
+	text "Nous, le TRIO des"
+	line "SAGES, sommes les"
+	line "gardiens des #-"
+	line "MON légendaires."
+	done
+else
 	text "We, the Wise Trio,"
 	line "are the protectors"
 
 	para "of the legendary"
 	line "#mon."
 	done
+endc
 
 ElderGakuSeenText:
+if DEF(_LOCALE_FR)
+	text "La légende dit que"
+	line "la venue d'un"
+	line "dresseur pouvant"
+	line "toucher l'âme des"
+	line "#MON, un #MON"
+	line "viendra mettre ce"
+	line "dresseur à"
+	line "l'épreuve dans la"
+	line "TOUR FERRAILLE. La"
+	line "légende s'est"
+	line "réalisée! Le #MON"
+	line "légendaire SUICUNE"
+	line "est arrivé! Nous,"
+	line "le TRIO des SAGES,"
+	line "te mettons au défi"
+	line "d'entrer!"
+	done
+else
 	text "Legend has it that"
 	line "upon the emergence"
 
@@ -190,13 +252,30 @@ ElderGakuSeenText:
 	para "worthiness to go"
 	line "inside!"
 	done
+endc
 
 ElderGakuBeatenText:
+if DEF(_LOCALE_FR)
+	text "Trop de puissance!"
+	done
+else
 	text "Stronger than we"
 	line "thought? Perhaps…"
 	done
+endc
 
 SageGakuAfterBattleText:
+if DEF(_LOCALE_FR)
+	text "Tu prétends donc"
+	line "avoir vu SUICUNE,"
+	line "ENTEI et RAIKOU"
+	line "endormis?"
+	line "Incroyable! La"
+	line "légende dit bien"
+	line "qu'on ne peut pas"
+	line "les voir dormir…"
+	done
+else
 	text "Ah, so it is you"
 	line "who claim to have"
 
@@ -210,21 +289,68 @@ SageGakuAfterBattleText:
 	line "they can't be seen"
 	cont "while they sleep…"
 	done
+endc
 
 ElderMasaSeenText:
+if DEF(_LOCALE_FR)
+	text "Doit-on te faire"
+	line "confiance? Je dois"
+	line "te mettre à"
+	line "l'épreuve."
+	done
+else
 	text "Can you be trusted"
 	line "with the truth?"
 
 	para "I must ascertain"
 	line "your worthiness."
 	done
+endc
 
 ElderMasaBeatenText:
+if DEF(_LOCALE_FR)
+	text "…Je dirai la"
+	line "vérité…"
+	done
+else
 	text "…I will tell you"
 	line "the truth…"
 	done
+endc
 
 SageMasaAfterBattleText:
+if DEF(_LOCALE_FR)
+	text "Il y a longtemps,"
+	line "il y avait deux"
+	line "tours ici. La TOUR"
+	line "de CUIVRE, qui"
+	line "pouvait éveil- ler"
+	line "les #MON, et la"
+	line "TOUR FER- RAILLE,"
+	line "où les #MON se"
+	line "reposaient. La vue"
+	line "depuis le sommet"
+	line "des TOURS devait"
+	line "être magnifique."
+	line "En ce temps-là, un"
+	line "immense #MON"
+	line "argenté avait fait"
+	line "son nid en haut de"
+	line "la TOUR de CUIVRE."
+	line "Toutefois… Il y a"
+	line "150 ans, un éclair"
+	line "frappa l'une des"
+	line "TOURS. Elle prit"
+	line "feu et brûla"
+	line "pendant trois"
+	line "jours. Et puis une"
+	line "pluie violente eut"
+	line "raison du brasier."
+	line "Voici comment la"
+	line "TOUR CENDREE est"
+	line "née."
+	done
+else
 	text "In the past, there"
 	line "were two nine-tier"
 	cont "towers here."
@@ -281,26 +407,61 @@ endc
 	line "the Burned Tower"
 	cont "came to be."
 	done
+endc
 
 ElderKojiSeenText:
+if DEF(_LOCALE_FR)
+	text "Montre-moi ta"
+	line "force!"
+	done
+else
 	text "Let me see your"
 	line "power!"
 	done
+endc
 
 ElderKojiBeatenText:
+if DEF(_LOCALE_FR)
+	text "Trop de puissance!"
+	line "Pourquoi?"
+	done
+else
 	text "Too strong!"
 	line "Why?"
 	done
+endc
 
 SageKojiAfterBattleQuestionText:
+if DEF(_LOCALE_FR)
+	text "Toi… Es-tu là pour"
+	line "les #MON"
+	line "légendaires?"
+	done
+else
 	text "You… Are you the"
 	line "trainer who is"
 
 	para "awaited by the"
 	line "legendary #mon?"
 	done
+endc
 
 SageKojiAfterBattleSpeechText:
+if DEF(_LOCALE_FR)
+	text "Je vois… Nous, le"
+	line "TRIO des SAGES,"
+	line "avons le devoir de"
+	line "protéger les #MON"
+	line "légen- daires."
+	line "Nous ne laissons"
+	line "passer que ceux au"
+	line "coeur pur. Entre"
+	line "et découvre la"
+	line "TOUR FERRAILLE."
+	line "SUICUNE te mettra"
+	line "à l'épreuve."
+	done
+else
 	text "I see…"
 
 	para "We, the Wise Trio,"
@@ -325,10 +486,18 @@ SageKojiAfterBattleSpeechText:
 	para "Suicune will put"
 	line "you to the test."
 	done
+endc
 
 SageKojiAfterBattleFinalText:
+if DEF(_LOCALE_FR)
+	text "Va. SUICUNE te"
+	line "mettra à"
+	line "l'épreuve."
+	done
+else
 	text "Please, do go on."
 
 	para "Suicune will put"
 	line "you to the test."
 	done
+endc

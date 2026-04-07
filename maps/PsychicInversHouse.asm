@@ -98,12 +98,17 @@ PsychicInverGreetingText:
 	done
 
 PsychicInverNoText:
+if DEF(_LOCALE_FR)
+	text "A bientôt."
+	done
+else
 	text "Oh, I see… That's"
 	line "too bad."
 
 	para "If you change your"
 	line "mind, come again."
 	done
+endc
 
 PsychicInverYesText:
 	text "Super effective"
@@ -113,12 +118,20 @@ PsychicInverYesText:
 	done
 
 PsychicInverBeatenText:
+if DEF(_LOCALE_FR)
+	text "Ce combat m'a"
+	line "épuisé plus que"
+
+	para "mes #MON…"
+	done
+else
 	text "That battle may"
 	line "have tired me out"
 
 	para "even more than my"
 	line "#mon…"
 	done
+endc
 
 InverseBattle0PointRewardText:
 	text "I'm not sure if"
